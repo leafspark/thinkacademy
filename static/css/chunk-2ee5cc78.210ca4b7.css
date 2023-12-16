@@ -1,0 +1,12 @@
+.page-boot[data-v-68bb5433] {
+    height: 100vh;
+    overflow: hidden
+}
+
+.page-boot .logo[data-v-68bb5433] {
+    width: 170px;
+    height: 155px;
+    margin: 160px auto 0 auto;
+    background: #fff url(../../static/img/logo-boot.6895fc68.png) no-repeat 50%;
+    background-size: cover
+}

@@ -1,0 +1,679 @@
+.fill-blank-container[data-v-283dd63a] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 999;
+    animation: show-283dd63a .4s ease forwards;
+    opacity: 0
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] {
+    width: 100%;
+    height: auto;
+    background: url(../../static/img/input_bg.30a0b25a.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fill-blank-container .keyboard-input .expand-btn[data-v-283dd63a] {
+    width: 7.8%;
+    height: auto;
+    left: 6.9%;
+    position: absolute;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-input .expand-btn[data-v-283dd63a]:hover {
+    animation: scaleLarge-283dd63a .08s linear
+}
+
+.fill-blank-container .keyboard-input .input-container[data-v-283dd63a] {
+    width: 61.66667vh;
+    height: 11.38889vh;
+    margin: 2.08333vh 0 2.63889vh 0;
+    position: relative
+}
+
+.fill-blank-container .keyboard-input .input-container .placeholder[data-v-283dd63a] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #643315;
+    font-size: 2.5vh
+}
+
+.fill-blank-container .keyboard-input .input-container .math-input[data-v-283dd63a] {
+    width: 61.66667vh;
+    height: 11.38889vh;
+    background: url(../../static/img/input_container.e52b57a8.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #6e3205
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-root-block {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-cursor:only-child:after,
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-empty:after {
+    border: none
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-denominator .content,
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-numerator {
+    border-radius: .27778vh;
+    border: .27778vh dotted #ccc;
+    min-width: 3.88889vh
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-numerator {
+    width: fit-content;
+    margin: 0 auto
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-denominator .content {
+    display: inline-block
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-hasCursor {
+    border: .27778vh dotted #8e4814 !important
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode .mq-non-leaf .mq-line {
+    margin-top: .27778vh;
+    border: none;
+    background-color: #8e4814
+}
+
+.fill-blank-container .keyboard-input .submit-btn[data-v-283dd63a] {
+    width: 16.7%;
+    height: auto;
+    right: 2.3%;
+    position: absolute;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-input .submit-btn span[data-v-283dd63a] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.22222vh
+}
+
+.fill-blank-container .keyboard-input[data-v-283dd63a] .mq-math-mode * {
+    font-size: 2.5vh;
+    font-family: SFProRounded-Medium, SFProRounded
+}
+
+.fill-blank-container .keyboard-container[data-v-283dd63a] {
+    position: relative;
+    width: 100%;
+    padding: 1.52778vh 0;
+    background: url(../../static/img/keyboard_bg.a33f8378.png)
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel[data-v-283dd63a] {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item[data-v-283dd63a] {
+    width: 9%;
+    height: auto;
+    position: relative;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item img[data-v-283dd63a] {
+    width: 100%;
+    height: 100%
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item .text[data-v-283dd63a] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.22222vh
+}
+
+.fill-blank-container .hover_style[data-v-283dd63a] {
+    animation: scaleLarge-283dd63a .08s linear
+}
+
+.fill-blank-container .click-style[data-v-283dd63a] {
+    animation: scaleSmall-283dd63a .2s linear
+}
+
+@keyframes scaleLarge-283dd63a {
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes scaleSmall-283dd63a {
+    to {
+        transform: scale(.9)
+    }
+}
+
+@keyframes show-283dd63a {
+    0% {
+        transform: translateY(41.66667vh);
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.vote-result-isCorrect[data-v-283dd63a] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 67
+}
+
+.vote-result-isCorrect .vote-dialog[data-v-283dd63a] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10
+}
+
+.vote-result-isCorrect .is-correct-wrapper[data-v-283dd63a] {
+    width: 36.11111vh;
+    height: 27.08333vh;
+    background: url(../../static/img/congratulations.e6652dd6.png) no-repeat;
+    background-size: cover
+}
+
+.vote-result-isCorrect .is-correct-wrapper .title[data-v-283dd63a] {
+    position: absolute;
+    top: 4.72222vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3.61111vh;
+    color: #fff;
+    height: 4.16667vh;
+    line-height: 4.16667vh;
+    font-weight: 600
+}
+
+.vote-result-isCorrect .is-correct-wrapper .tip[data-v-283dd63a] {
+    position: absolute;
+    top: 11.11111vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.77778vh;
+    color: #ffe4c0
+}
+
+.vote-result-isCorrect .is-correct-wrapper .get-coins[data-v-283dd63a] {
+    position: absolute;
+    bottom: 1.80556vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.vote-result-isCorrect .is-correct-wrapper .coin-img[data-v-283dd63a] {
+    width: 6.11111vh;
+    height: 6.11111vh;
+    margin-right: 1.38889vh
+}
+
+.vote-result-isCorrect .is-correct-wrapper .coin-num[data-v-283dd63a] {
+    font-size: 3.33333vh;
+    color: #fff
+}
+
+.myAnswer-container[data-v-283dd63a] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    background: url(../../static/img/myAnswer_bg.c13e4aea.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 999;
+    padding: 2.91667vh 0;
+    justify-content: space-between
+}
+
+.myAnswer-container .note-container[data-v-283dd63a],
+.myAnswer-container[data-v-283dd63a] {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.myAnswer-container .note-container .note-img[data-v-283dd63a] {
+    width: 5%;
+    height: auto;
+    margin-left: 4.5%;
+    margin-right: .83333vh
+}
+
+.myAnswer-container .note-container .answer-desc[data-v-283dd63a] {
+    font-weight: 600;
+    color: #6e3205;
+    font-size: 2.5vh
+}
+
+.myAnswer-container .lottie-img[data-v-283dd63a] {
+    width: 8.25%;
+    margin-right: 4.5%;
+    height: auto
+}
+
+.myAnswer-container .answer-text[data-v-283dd63a] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.05556vh
+}
+
+.myAnswer-container .mq-math-mode[data-v-283dd63a] {
+    border: none
+}
+
+.toast-tips[data-v-283dd63a] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 1.11111vh;
+    width: 41.66667vh;
+    height: 11.11111vh;
+    font-size: 2.77778vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fill-blank-container[data-v-59776a62] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 999;
+    animation: show-59776a62 .4s ease forwards;
+    opacity: 0
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] {
+    width: 100%;
+    height: auto;
+    background: url(../../static/img/input_bg.30a0b25a.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fill-blank-container .keyboard-input .expand-btn[data-v-59776a62] {
+    width: 7.8%;
+    height: auto;
+    left: 6.9%;
+    position: absolute;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-input .expand-btn[data-v-59776a62]:hover {
+    animation: scaleLarge-59776a62 .08s linear
+}
+
+.fill-blank-container .keyboard-input .input-container[data-v-59776a62] {
+    width: 61.66667vh;
+    height: 11.38889vh;
+    margin: 2.08333vh 0 2.63889vh 0;
+    position: relative
+}
+
+.fill-blank-container .keyboard-input .input-container .placeholder[data-v-59776a62] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #643315;
+    font-size: 2.5vh
+}
+
+.fill-blank-container .keyboard-input .input-container .math-input[data-v-59776a62] {
+    width: 61.66667vh;
+    height: 11.38889vh;
+    background: url(../../static/img/input_container.e52b57a8.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #6e3205
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-root-block {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-cursor:only-child:after,
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-empty:after {
+    border: none
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-denominator .content,
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-numerator {
+    border-radius: .27778vh;
+    border: .27778vh dotted #ccc;
+    min-width: 3.88889vh
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-numerator {
+    width: fit-content;
+    margin: 0 auto
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-denominator .content {
+    display: inline-block
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-hasCursor {
+    border: .27778vh dotted #8e4814 !important
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode .mq-non-leaf .mq-line {
+    margin-top: .27778vh;
+    border: none;
+    background-color: #8e4814
+}
+
+.fill-blank-container .keyboard-input .submit-btn[data-v-59776a62] {
+    width: 16.7%;
+    height: auto;
+    right: 2.3%;
+    position: absolute;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-input .submit-btn span[data-v-59776a62] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.22222vh
+}
+
+.fill-blank-container .keyboard-input[data-v-59776a62] .mq-math-mode * {
+    font-size: 2.5vh;
+    font-family: SFProRounded-Medium, SFProRounded
+}
+
+.fill-blank-container .keyboard-container[data-v-59776a62] {
+    position: relative;
+    width: 100%;
+    padding: 1.52778vh 0;
+    background: url(../../static/img/keyboard_bg.a33f8378.png)
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel[data-v-59776a62] {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item[data-v-59776a62] {
+    width: 9%;
+    height: auto;
+    position: relative;
+    cursor: pointer
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item img[data-v-59776a62] {
+    width: 100%;
+    height: 100%
+}
+
+.fill-blank-container .keyboard-container .keyboard-panel .keyboard-item .text[data-v-59776a62] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.22222vh
+}
+
+.fill-blank-container .hover_style[data-v-59776a62] {
+    animation: scaleLarge-59776a62 .08s linear
+}
+
+.fill-blank-container .click-style[data-v-59776a62] {
+    animation: scaleSmall-59776a62 .2s linear
+}
+
+@keyframes scaleLarge-59776a62 {
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes scaleSmall-59776a62 {
+    to {
+        transform: scale(.9)
+    }
+}
+
+@keyframes show-59776a62 {
+    0% {
+        transform: translateY(41.66667vh);
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.vote-result-isCorrect[data-v-59776a62] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 67
+}
+
+.vote-result-isCorrect .vote-dialog[data-v-59776a62] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10
+}
+
+.vote-result-isCorrect .is-correct-wrapper[data-v-59776a62] {
+    width: 36.11111vh;
+    height: 27.08333vh;
+    background: url(../../static/img/congratulations.e6652dd6.png) no-repeat;
+    background-size: cover
+}
+
+.vote-result-isCorrect .is-correct-wrapper .title[data-v-59776a62] {
+    position: absolute;
+    top: 4.72222vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3.61111vh;
+    color: #fff;
+    height: 4.16667vh;
+    line-height: 4.16667vh;
+    font-weight: 600
+}
+
+.vote-result-isCorrect .is-correct-wrapper .tip[data-v-59776a62] {
+    position: absolute;
+    top: 11.11111vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.77778vh;
+    color: #ffe4c0
+}
+
+.vote-result-isCorrect .is-correct-wrapper .get-coins[data-v-59776a62] {
+    position: absolute;
+    bottom: 1.80556vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.vote-result-isCorrect .is-correct-wrapper .coin-img[data-v-59776a62] {
+    width: 6.11111vh;
+    height: 6.11111vh;
+    margin-right: 1.38889vh
+}
+
+.vote-result-isCorrect .is-correct-wrapper .coin-num[data-v-59776a62] {
+    font-size: 3.33333vh;
+    color: #fff
+}
+
+.myAnswer-container[data-v-59776a62] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    background: url(../../static/img/myAnswer_bg.c13e4aea.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 999;
+    padding: 2.91667vh 0;
+    justify-content: space-between
+}
+
+.myAnswer-container .note-container[data-v-59776a62],
+.myAnswer-container[data-v-59776a62] {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.myAnswer-container .note-container .note-img[data-v-59776a62] {
+    width: 5%;
+    height: auto;
+    margin-left: 4.5%;
+    margin-right: .83333vh
+}
+
+.myAnswer-container .note-container .answer-desc[data-v-59776a62] {
+    font-weight: 600;
+    color: #6e3205;
+    font-size: 2.5vh
+}
+
+.myAnswer-container .lottie-img[data-v-59776a62] {
+    width: 8.25%;
+    margin-right: 4.5%;
+    height: auto
+}
+
+.myAnswer-container .answer-text[data-v-59776a62] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.05556vh
+}
+
+.myAnswer-container .mq-math-mode[data-v-59776a62] {
+    border: none
+}
+
+.toast-tips[data-v-59776a62] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 1.11111vh;
+    width: 41.66667vh;
+    height: 11.11111vh;
+    font-size: 2.77778vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
