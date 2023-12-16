@@ -1,5 +1,7 @@
 The whole app is just a glorified web browser. It's pretty much just Electron and hosts an web interface at localhost:10010 which is 
-accessible without any authentication. The homework questions also are just (a web browser) to 
+accessible without any authentication.
+
+The homework questions also are just (a web browser) to 
 https://student-homework.thethinkacademy.com/exam? with these arguments:
 pageType=answer
 token=REDACTED (also absurdly long)
@@ -12,7 +14,7 @@ studentId=xxxxxxx (7 character long numerical ID)
 classId=xxxxx (Fall, Spring, Pre-Algebra)
 homeworkType=0 (Probably for like exams/tests)
 
-Data sent every time an answer is submitted:
+Data sent every time an answer is submitted (console):
 ​ {
   "distinct_id": "7 chars long probably student id",
   "lib": {
@@ -21,23 +23,26 @@ Data sent every time an answer is submitted:
     "$lib_version": "1.16.5"
   },
   "properties": {
+    #Timezone offset; 480 is for Pacific PST time
     "$timezone_offset": 480,
+    #Again useless tracking parameters
     "$screen_height": 1440,
     "$screen_width": 2560,
     "$lib": "js",
     "$lib_version": "1.16.5",
-    "$latest_traffic_source_type": "引荐流量",
-    "$latest_search_keyword": "未取到值",
+    "$latest_traffic_source_type": "引荐流量 (Referral traffic)",
+    "$latest_search_keyword": "未取到值 (Value not obtained)",
     "$latest_referrer": "http://localhost:10010/",
     "$referrer": "http://localhost:10010/",
     "$url": "[Covered in previous section]",
     "$url_path": "/exam",
-    "$title": "作业详情",
+    "$title": "作业详情 (Assignment details)",
+    #First class
     "$is_first_day": false,
     "$is_first_time": false,
     "$referrer_host": "localhost"
   },
-  "login_id": "",
+  "login_id": "(This was blank originally)", 
   "anonymous_id": "UUID here",
   "type": "track",
   "event": "$pageview",
