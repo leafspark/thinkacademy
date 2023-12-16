@@ -17,3 +17,10 @@ There are hundreds of warnings, errors, and verbose logs every second.
 Website: https://web.archive.org/web/20231112054724/https://www.thethinkacademy.com/
 (Archive.org because there's like infinite trackers and analytics on their site)
 
+Sketchy as shit:
+https://www.scmp.com/yp/discover/news/hong-kong/article/3058858/tearful-parents-think-academy-international-school
+(Students hate it)
+Failed to properly register school
+Plus recent layoffs in the US
+
+Shutdown in China due to private tutoring laws
