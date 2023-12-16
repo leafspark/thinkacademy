@@ -32,3 +32,5 @@ https://github.com/LeafSpark/thinkacademy/blob/main/basicData.txt
 https://github.com/LeafSpark/thinkacademy/blob/main/homework.txt
 https://github.com/LeafSpark/thinkacademy/blob/main/appchangelog
 
+The code is nearly impossible to work with, so the best way to analyze it is watching it live.
+
