@@ -1,4 +1,4 @@
-# thinkacademy
+# thinkacademy-reverse-engineered
 Reverse-engineering of the ThinkAcademy classroom app
 
 View as raw for correct formatting because I'm too lazy to use markdown.
