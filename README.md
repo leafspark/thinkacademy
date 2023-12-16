@@ -4,7 +4,10 @@ Reverse-engineering of the ThinkAcademy classroom app
 View as raw for correct formatting because I'm too lazy to use markdown.
 
 (Gonna be split into separate pages soon)
-Unpack the agar files (Electron app)
+Unpack the asar files (Electron app)
+"npx @electron/asar extract app.asar ."
+Windows command (Node.js required)
+
 Once installed use Chromium DevTools to examine
 
 Why? Because this garbage is horrible, laggy and the app sucks.
@@ -24,3 +27,4 @@ Failed to properly register school
 Plus recent layoffs in the US
 
 Shutdown in China due to private tutoring laws
+
