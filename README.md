@@ -25,6 +25,10 @@ https://www.scmp.com/yp/discover/news/hong-kong/article/3058858/tearful-parents-
 (Students hate it)
 Failed to properly register school
 Plus recent layoffs in the US
-
 Shutdown in China due to private tutoring laws
+
+Find docs:
+https://github.com/LeafSpark/thinkacademy/blob/main/basicData.txt
+https://github.com/LeafSpark/thinkacademy/blob/main/homework.txt
+https://github.com/LeafSpark/thinkacademy/blob/main/appchangelog
 
