@@ -48,3 +48,5 @@ Data sent every time an answer is submitted (console):
   "event": "$pageview",
   "_track_id": [9 char long numerical string]
 }
+
+MathJax is used, however the interface is laggy with 200ms-2000ms delays on keystrokes.
