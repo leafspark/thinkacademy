@@ -2807,313 +2807,313 @@
     function (e, t) {
         e.exports = require('path');
     },
-    function (e, t, n) {
+    function (e, input_0, value_0) {
         'use strict';
-        n.r(t);
-        n.d(t, 'forget', function () {
+        value_0.r(input_0);
+        value_0.d(input_0, 'forget', function () {
             return r.a;
         });
-        n.d(t, 'htmlTreeAsString', function () {
+        value_0.d(input_0, 'htmlTreeAsString', function () {
             return a.b;
         });
-        n.d(t, 'getLocationHref', function () {
+        value_0.d(input_0, 'getLocationHref', function () {
             return a.a;
         });
-        n.d(t, 'dsnToString', function () {
+        value_0.d(input_0, 'dsnToString', function () {
             return i.a;
         });
-        n.d(t, 'makeDsn', function () {
+        value_0.d(input_0, 'makeDsn', function () {
             return i.b;
         });
-        n.d(t, 'SeverityLevels', function () {
+        value_0.d(input_0, 'SeverityLevels', function () {
             return o.a;
         });
-        n.d(t, 'SentryError', function () {
+        value_0.d(input_0, 'SentryError', function () {
             return s.a;
         });
-        n.d(t, 'getGlobalObject', function () {
+        value_0.d(input_0, 'getGlobalObject', function () {
             return u.a;
         });
-        n.d(t, 'addInstrumentationHandler', function () {
+        value_0.d(input_0, 'addInstrumentationHandler', function () {
             return T;
         });
-        n.d(t, 'isError', function () {
+        value_0.d(input_0, 'isError', function () {
             return p.d;
         });
-        n.d(t, 'isErrorEvent', function () {
+        value_0.d(input_0, 'isErrorEvent', function () {
             return p.e;
         });
-        n.d(t, 'isDOMError', function () {
+        value_0.d(input_0, 'isDOMError', function () {
             return p.a;
         });
-        n.d(t, 'isDOMException', function () {
+        value_0.d(input_0, 'isDOMException', function () {
             return p.b;
         });
-        n.d(t, 'isString', function () {
+        value_0.d(input_0, 'isString', function () {
             return p.l;
         });
-        n.d(t, 'isPrimitive', function () {
+        value_0.d(input_0, 'isPrimitive', function () {
             return p.j;
         });
-        n.d(t, 'isPlainObject', function () {
+        value_0.d(input_0, 'isPlainObject', function () {
             return p.i;
         });
-        n.d(t, 'isEvent', function () {
+        value_0.d(input_0, 'isEvent', function () {
             return p.f;
         });
-        n.d(t, 'isElement', function () {
+        value_0.d(input_0, 'isElement', function () {
             return p.c;
         });
-        n.d(t, 'isRegExp', function () {
+        value_0.d(input_0, 'isRegExp', function () {
             return p.k;
         });
-        n.d(t, 'isThenable', function () {
+        value_0.d(input_0, 'isThenable', function () {
             return p.n;
         });
-        n.d(t, 'isSyntheticEvent', function () {
+        value_0.d(input_0, 'isSyntheticEvent', function () {
             return p.m;
         });
-        n.d(t, 'isNaN', function () {
+        value_0.d(input_0, 'isNaN', function () {
             return p.h;
         });
-        n.d(t, 'isInstanceOf', function () {
+        value_0.d(input_0, 'isInstanceOf', function () {
             return p.g;
         });
-        n.d(t, 'CONSOLE_LEVELS', function () {
+        value_0.d(input_0, 'CONSOLE_LEVELS', function () {
             return d.a;
         });
-        n.d(t, 'consoleSandbox', function () {
+        value_0.d(input_0, 'consoleSandbox', function () {
             return d.b;
         });
-        n.d(t, 'logger', function () {
+        value_0.d(input_0, 'logger', function () {
             return d.c;
         });
-        n.d(t, 'memoBuilder', function () {
+        value_0.d(input_0, 'memoBuilder', function () {
             return N.a;
         });
-        n.d(t, 'uuid4', function () {
+        value_0.d(input_0, 'uuid4', function () {
             return Y.i;
         });
-        n.d(t, 'parseUrl', function () {
+        value_0.d(input_0, 'parseUrl', function () {
             return Y.g;
         });
-        n.d(t, 'getEventDescription', function () {
+        value_0.d(input_0, 'getEventDescription', function () {
             return Y.e;
         });
-        n.d(t, 'addExceptionTypeValue', function () {
+        value_0.d(input_0, 'addExceptionTypeValue', function () {
             return Y.c;
         });
-        n.d(t, 'addExceptionMechanism', function () {
+        value_0.d(input_0, 'addExceptionMechanism', function () {
             return Y.b;
         });
-        n.d(t, 'parseSemver', function () {
+        value_0.d(input_0, 'parseSemver', function () {
             return Y.f;
         });
-        n.d(t, 'addContextToFrame', function () {
+        value_0.d(input_0, 'addContextToFrame', function () {
             return Y.a;
         });
-        n.d(t, 'stripUrlQueryAndFragment', function () {
+        value_0.d(input_0, 'stripUrlQueryAndFragment', function () {
             return Y.h;
         });
-        n.d(t, 'checkOrSetAlreadyCaught', function () {
+        value_0.d(input_0, 'checkOrSetAlreadyCaught', function () {
             return Y.d;
         });
-        n.d(t, 'isNodeEnv', function () {
+        value_0.d(input_0, 'isNodeEnv', function () {
             return R.b;
         });
-        n.d(t, 'dynamicRequire', function () {
+        value_0.d(input_0, 'dynamicRequire', function () {
             return R.a;
         });
-        n.d(t, 'loadModule', function () {
+        value_0.d(input_0, 'loadModule', function () {
             return R.c;
         });
-        n.d(t, 'normalize', function () {
+        value_0.d(input_0, 'normalize', function () {
             return z.a;
         });
-        n.d(t, 'normalizeToSize', function () {
+        value_0.d(input_0, 'normalizeToSize', function () {
             return z.b;
         });
-        n.d(t, 'walk', function () {
+        value_0.d(input_0, 'walk', function () {
             return z.c;
         });
-        n.d(t, 'fill', function () {
+        value_0.d(input_0, 'fill', function () {
             return h.d;
         });
-        n.d(t, 'addNonEnumerableProperty', function () {
+        value_0.d(input_0, 'addNonEnumerableProperty', function () {
             return h.a;
         });
-        n.d(t, 'markFunctionWrapped', function () {
+        value_0.d(input_0, 'markFunctionWrapped', function () {
             return h.g;
         });
-        n.d(t, 'getOriginalFunction', function () {
+        value_0.d(input_0, 'getOriginalFunction', function () {
             return h.e;
         });
-        n.d(t, 'urlEncode', function () {
+        value_0.d(input_0, 'urlEncode', function () {
             return h.i;
         });
-        n.d(t, 'getWalkSource', function () {
+        value_0.d(input_0, 'getWalkSource', function () {
             return h.f;
         });
-        n.d(t, 'extractExceptionKeysForMessage', function () {
+        value_0.d(input_0, 'extractExceptionKeysForMessage', function () {
             return h.c;
         });
-        n.d(t, 'dropUndefinedKeys', function () {
+        value_0.d(input_0, 'dropUndefinedKeys', function () {
             return h.b;
         });
-        n.d(t, 'objectify', function () {
+        value_0.d(input_0, 'objectify', function () {
             return h.h;
         });
-        n.d(t, 'resolve', function () {
+        value_0.d(input_0, 'resolve', function () {
             return B.g;
         });
-        n.d(t, 'relative', function () {
+        value_0.d(input_0, 'relative', function () {
             return B.f;
         });
-        n.d(t, 'normalizePath', function () {
+        value_0.d(input_0, 'normalizePath', function () {
             return B.e;
         });
-        n.d(t, 'isAbsolute', function () {
+        value_0.d(input_0, 'isAbsolute', function () {
             return B.c;
         });
-        n.d(t, 'join', function () {
+        value_0.d(input_0, 'join', function () {
             return B.d;
         });
-        n.d(t, 'dirname', function () {
+        value_0.d(input_0, 'dirname', function () {
             return B.b;
         });
-        n.d(t, 'basename', function () {
+        value_0.d(input_0, 'basename', function () {
             return B.a;
         });
-        n.d(t, 'makePromiseBuffer', function () {
+        value_0.d(input_0, 'makePromiseBuffer', function () {
             return H.a;
         });
-        n.d(t, 'severityFromString', function () {
+        value_0.d(input_0, 'severityFromString', function () {
             return U.a;
         });
-        n.d(t, 'createStackParser', function () {
+        value_0.d(input_0, 'createStackParser', function () {
             return m.a;
         });
-        n.d(t, 'stripSentryFramesAndReverse', function () {
+        value_0.d(input_0, 'stripSentryFramesAndReverse', function () {
             return m.c;
         });
-        n.d(t, 'getFunctionName', function () {
+        value_0.d(input_0, 'getFunctionName', function () {
             return m.b;
         });
-        n.d(t, 'eventStatusFromHttpCode', function () {
+        value_0.d(input_0, 'eventStatusFromHttpCode', function () {
             return q.a;
         });
-        n.d(t, 'truncate', function () {
+        value_0.d(input_0, 'truncate', function () {
             return W.e;
         });
-        n.d(t, 'snipLine', function () {
+        value_0.d(input_0, 'snipLine', function () {
             return W.d;
         });
-        n.d(t, 'safeJoin', function () {
+        value_0.d(input_0, 'safeJoin', function () {
             return W.c;
         });
-        n.d(t, 'isMatchingPattern', function () {
+        value_0.d(input_0, 'isMatchingPattern', function () {
             return W.b;
         });
-        n.d(t, 'escapeStringForRegex', function () {
+        value_0.d(input_0, 'escapeStringForRegex', function () {
             return W.a;
         });
-        n.d(t, 'supportsErrorEvent', function () {
+        value_0.d(input_0, 'supportsErrorEvent', function () {
             return f;
         });
-        n.d(t, 'supportsDOMError', function () {
+        value_0.d(input_0, 'supportsDOMError', function () {
             return g;
         });
-        n.d(t, 'supportsDOMException', function () {
+        value_0.d(input_0, 'supportsDOMException', function () {
             return y;
         });
-        n.d(t, 'supportsFetch', function () {
+        value_0.d(input_0, 'supportsFetch', function () {
             return v;
         });
-        n.d(t, 'isNativeFetch', function () {
+        value_0.d(input_0, 'isNativeFetch', function () {
             return _;
         });
-        n.d(t, 'supportsNativeFetch', function () {
+        value_0.d(input_0, 'supportsNativeFetch', function () {
             return b;
         });
-        n.d(t, 'supportsReportingObserver', function () {
+        value_0.d(input_0, 'supportsReportingObserver', function () {
             return w;
         });
-        n.d(t, 'supportsReferrerPolicy', function () {
+        value_0.d(input_0, 'supportsReferrerPolicy', function () {
             return k;
         });
-        n.d(t, 'supportsHistory', function () {
+        value_0.d(input_0, 'supportsHistory', function () {
             return x;
         });
-        n.d(t, 'resolvedSyncPromise', function () {
+        value_0.d(input_0, 'resolvedSyncPromise', function () {
             return $.c;
         });
-        n.d(t, 'rejectedSyncPromise', function () {
+        value_0.d(input_0, 'rejectedSyncPromise', function () {
             return $.b;
         });
-        n.d(t, 'SyncPromise', function () {
+        value_0.d(input_0, 'SyncPromise', function () {
             return $.a;
         });
-        n.d(t, 'dateTimestampInSeconds', function () {
+        value_0.d(input_0, 'dateTimestampInSeconds', function () {
             return G.c;
         });
-        n.d(t, 'timestampInSeconds', function () {
+        value_0.d(input_0, 'timestampInSeconds', function () {
             return G.d;
         });
-        n.d(t, 'timestampWithMs', function () {
+        value_0.d(input_0, 'timestampWithMs', function () {
             return G.e;
         });
-        n.d(t, 'usingPerformanceAPI', function () {
+        value_0.d(input_0, 'usingPerformanceAPI', function () {
             return G.f;
         });
-        n.d(t, '_browserPerformanceTimeOriginMode', function () {
+        value_0.d(input_0, '_browserPerformanceTimeOriginMode', function () {
             return G.a;
         });
-        n.d(t, 'browserPerformanceTimeOrigin', function () {
+        value_0.d(input_0, 'browserPerformanceTimeOrigin', function () {
             return G.b;
         });
-        n.d(t, 'TRACEPARENT_REGEXP', function () {
+        value_0.d(input_0, 'TRACEPARENT_REGEXP', function () {
             return K.a;
         });
-        n.d(t, 'extractTraceparentData', function () {
+        value_0.d(input_0, 'extractTraceparentData', function () {
             return K.b;
         });
-        n.d(t, 'isDebugBuild', function () {
+        value_0.d(input_0, 'isDebugBuild', function () {
             return l.b;
         });
-        n.d(t, 'isBrowserBundle', function () {
+        value_0.d(input_0, 'isBrowserBundle', function () {
             return l.a;
         });
-        n.d(t, 'createEnvelope', function () {
+        value_0.d(input_0, 'createEnvelope', function () {
             return V.b;
         });
-        n.d(t, 'addItemToEnvelope', function () {
+        value_0.d(input_0, 'addItemToEnvelope', function () {
             return V.a;
         });
-        n.d(t, 'getEnvelopeType', function () {
+        value_0.d(input_0, 'getEnvelopeType', function () {
             return V.c;
         });
-        n.d(t, 'serializeEnvelope', function () {
+        value_0.d(input_0, 'serializeEnvelope', function () {
             return V.d;
         });
-        n.d(t, 'createClientReportEnvelope', function () {
+        value_0.d(input_0, 'createClientReportEnvelope', function () {
             return J;
         });
-        n.d(t, 'DEFAULT_RETRY_AFTER', function () {
+        value_0.d(input_0, 'DEFAULT_RETRY_AFTER', function () {
             return X.a;
         });
-        n.d(t, 'parseRetryAfterHeader', function () {
+        value_0.d(input_0, 'parseRetryAfterHeader', function () {
             return X.d;
         });
-        n.d(t, 'disabledUntil', function () {
+        value_0.d(input_0, 'disabledUntil', function () {
             return X.b;
         });
-        n.d(t, 'isRateLimited', function () {
+        value_0.d(input_0, 'isRateLimited', function () {
             return X.c;
         });
-        n.d(t, 'updateRateLimits', function () {
+        value_0.d(input_0, 'updateRateLimits', function () {
             return X.e;
         });
-        var r = n(348), a = n(89), i = n(48), o = n(107), s = n(34), u = n(17), c = n(0), l = n(16), p = n(10), d = n(20), h = n(25), m = n(71);
+        var r = value_0(348), a = value_0(89), i = value_0(48), o = value_0(107), s = value_0(34), u = value_0(17), c = value_0(0), l = value_0(16), p = value_0(10), d = value_0(20), h = value_0(25), m = value_0(71);
         function f() {
             try {
                 return new ErrorEvent(''), true;
@@ -3473,7 +3473,7 @@
                 }
             };
         }
-        var P = null, I = null, N = n(105), Y = n(61), R = n(56), z = n(143), B = n(341), H = n(342), U = n(347), q = n(344), W = n(45), $ = n(46), G = n(57), K = n(350), V = n(47);
+        var P = null, I = null, N = value_0(105), Y = value_0(61), R = value_0(56), z = value_0(143), B = value_0(341), H = value_0(342), U = value_0(347), q = value_0(344), W = value_0(45), $ = value_0(46), G = value_0(57), K = value_0(350), V = value_0(47);
         function J(e, t, n) {
             var r = [
                 { type: 'client_report' },
@@ -3484,7 +3484,7 @@
             ];
             return Object(V.b)(t ? { dsn: t } : {}, [r]);
         }
-        var X = n(343);
+        var X = value_0(343);
     },
     function (e, t, n) {
         var r;
@@ -19897,7 +19897,8 @@
                         r && fi(e, t, r) && (t = n);
                         e = fs(e);
                         t = vs({}, t, a, Ka);
-                        var i, o, s = vs({}, t.imports, a.imports, Ka), u = Ls(s), c = Ht(s, u), l = 0, p = t.interpolate || /($^)/, d = '__p += \'', h = De((t.escape || /($^)/).source + '|' + p.source + '|' + (p === /<%=([\s\S]+?)%>/g ? /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g : /($^)/).source + '|' + (t.evaluate || /($^)/).source + '|$', 'g'), m = '//# sourceURL=' + (Fe.call(t, 'sourceURL') ? (t.sourceURL + '').replace(/\s/g, ' ') : 'lodash.templateSources[' + ++Je + ']') + '\n';
+                        var i, o, s = vs({}, t.imports, a.imports, Ka), u = Ls(s), c = Ht(s, u), l = 0, p = t.interpolate || /($^)/, d = '__p += \'', h = De((t.escape || /($^)/).source + '|' + p.source + '|' + (false ? /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g : /($^)/).source + '|' + (t.evaluate || /($^)/).source + '|$', 'g'), m = '//# sourceURL=' + (Fe.call(t, 'sourceURL') ? (t.sourceURL + '').replace(/\s/g, ' ') : 'lodash.templateSources[' + ++Je + ']') + '\n';
+                        // Replaced with "false" [p === /<%=([\s\S]+?)%>/g]
                         e.replace(h, function (t, n, r, a, s, u) {
                             return r || (r = a), d += e.slice(l, u).replace(/['\n\r\u2028\u2029\\]/g, Vt), n && (i = true, d += '\' +\n__e(' + n + ') +\n\''), s && (o = true, d += '\';\n' + s + ';\n__p += \''), r && (d += '\' +\n((__t = (' + r + ')) == null ? \'\' : __t) +\n\''), l = u + t.length, t;
                         });

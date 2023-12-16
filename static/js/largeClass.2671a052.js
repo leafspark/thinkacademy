@@ -60,24 +60,24 @@
         var t = [];
         a[e] ? t.push(a[e]) : 0 !== a[e] && s[e] && t.push(a[e] = new Promise(function (t, s) {
             for (var o = 'static/css/' + ({}[e] || e) + '.' + {
-                        'chunk-09d4164c': 'd95d103b',
-                        'chunk-14a97d99': 'a4c2b5ac',
-                        'chunk-74ddfa26': '31d6cfe0',
-                        'chunk-16c075d8': 'dc899aec',
-                        'chunk-2e9cf93e': '31d6cfe0',
-                        'chunk-2ec16a41': 'c08f8ea4',
-                        'chunk-3d75fc56': '9282e18c',
-                        'chunk-4cfb0224': '8111d05f',
-                        'chunk-5125c77c': 'd1738e4f',
-                        'chunk-21cb9dbc': 'b2c05241',
-                        'chunk-6e54407c': '0722f961',
-                        'chunk-6fa24106': '0ac66689',
-                        'chunk-7f66cf6e': '6624d027',
-                        'chunk-9c37b028': '98858406',
-                        'chunk-9c43f55c': '442c9dd5',
-                        'chunk-2d0d67ce': '31d6cfe0',
-                        'chunk-d5156d36': '21154e7f'
-                    }[e] + '.css', n = c.p + o, r = document.getElementsByTagName('link'), i = 0; i < r.length; i++) {
+                'chunk-09d4164c': 'd95d103b',
+                'chunk-14a97d99': 'a4c2b5ac',
+                'chunk-74ddfa26': '31d6cfe0',
+                'chunk-16c075d8': 'dc899aec',
+                'chunk-2e9cf93e': '31d6cfe0',
+                'chunk-2ec16a41': 'c08f8ea4',
+                'chunk-3d75fc56': '9282e18c',
+                'chunk-4cfb0224': '8111d05f',
+                'chunk-5125c77c': 'd1738e4f',
+                'chunk-21cb9dbc': 'b2c05241',
+                'chunk-6e54407c': '0722f961',
+                'chunk-6fa24106': '0ac66689',
+                'chunk-7f66cf6e': '6624d027',
+                'chunk-9c37b028': '98858406',
+                'chunk-9c43f55c': '442c9dd5',
+                'chunk-2d0d67ce': '31d6cfe0',
+                'chunk-d5156d36': '21154e7f'
+            }[e] + '.css', n = c.p + o, r = document.getElementsByTagName('link'), i = 0; i < r.length; i++) {
                 var l = r[i], u = l.getAttribute('data-href') || l.getAttribute('href');
                 if ('stylesheet' === l.rel && (u === o || u === n)) {
                     return t();
@@ -176,9 +176,9 @@
         }
         var s = Object.create(null);
         if (c.r(s), Object.defineProperty(s, 'default', {
-                enumerable: true,
-                value: e
-            }), 2 & t && 'string' != typeof e) {
+            enumerable: true,
+            value: e
+        }), 2 & t && 'string' != typeof e) {
             for (var o in e)
                 c.d(s, o, function (t) {
                     return e[t];
@@ -252,8 +252,8 @@
             }
             function s(e) {
                 var t = e.statements.skipped, s = e.branches.skipped, o = e.functions.skipped, a = function (e, t, s) {
-                        return 0 === e ? [] : ''.concat(e, ' ').concat(t).concat(1 === e ? '' : s);
-                    }, n = [].concat(a(t, 'statement', 's'), a(o, 'function', 's'), a(s, 'branch', 'es'));
+                    return 0 === e ? [] : ''.concat(e, ' ').concat(t).concat(1 === e ? '' : s);
+                }, n = [].concat(a(t, 'statement', 's'), a(o, 'function', 's'), a(s, 'branch', 'es'));
                 return 0 === n.length ? '' : '\n             <div class=\'fl pad1y\'>\n                 <span class="strong">'.concat(n.join(', '), '</span>\n                 <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;\n             </div>\n         ');
             }
             return '\n <!doctype html>\n <html lang="en">\n '.concat(h(e), '\n <body>\n <div class=\'wrapper\'>\n     <div class=\'pad1\'>\n         <h1>').concat(e.pathHtml, '</h1>\n         <div class=\'clearfix\'>\n             ').concat(t(e.metrics.statements, 'Statements'), '\n             ').concat(t(e.metrics.branches, 'Branches'), '\n             ').concat(t(e.metrics.functions, 'Functions'), '\n             ').concat(t(e.metrics.lines, 'Lines'), '\n             ').concat(s(e.metrics), '\n         </div>\n         <p class="quiet">\n             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.\n         </p>\n         <template id="filterTemplate">\n             <div class="quiet">\n                 Filter:\n                 <input oninput="onInput()" type="search" id="fileSearch">\n             </div>\n         </template>\n     </div>\n     <div class=\'status-line ').concat(e.reportClass, '\'></div>\n     ');
@@ -263,12 +263,12 @@
         }
         function v(e) {
             var t = new Array(e.maxLines).fill().map(function (e, t) {
-                    return t + 1;
-                }), s = function (e) {
-                    return '<a name=\'L'.concat(e, '\'></a><a href=\'#L').concat(e, '\'>').concat(e, '</a>');
-                }, o = function (e) {
-                    return '<span class="cline-any cline-'.concat(e.covered, '">').concat(e.hits, '</span>');
-                };
+                return t + 1;
+            }), s = function (e) {
+                return '<a name=\'L'.concat(e, '\'></a><a href=\'#L').concat(e, '\'>').concat(e, '</a>');
+            }, o = function (e) {
+                return '<span class="cline-any cline-'.concat(e.covered, '">').concat(e.hits, '</span>');
+            };
             return [
                 '<tr>',
                 '<td class="line-count quiet">'.concat(t.map(s).join('\n'), '</td>'),
@@ -298,43 +298,43 @@
         ].join('\n');
         function C(e) {
             var t = e.reportClasses, s = e.metrics, o = e.file, a = e.output, n = function (e) {
-                    if (!isFinite(e)) {
-                        return '';
-                    }
-                    var t = ['cover-fill'];
-                    return 100 === e && t.push('cover-full'), e = Math.floor(e), [
-                        '<div class="'.concat(t.join(' '), '" style="width: ').concat(e, '%"></div>'),
-                        '<div class="cover-empty" style="width: '.concat(100 - e, '%"></div>')
-                    ].join('');
-                }, r = function (e) {
-                    var o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], a = s[e], r = t[e], i = [
-                            '<td data-value="'.concat(a.pct, '" class="pct ').concat(r, '">').concat(a.pct, '%</td>'),
-                            '<td data-value="'.concat(a.total, '" class="abs ').concat(r, '">').concat(a.covered, '/').concat(a.total, '</td>')
-                        ];
-                    return o && i.unshift('<td data-value="'.concat(a.pct, '" class="pic ').concat(r, '">'), '<div class="chart">'.concat(n(a.pct), '</div>'), '</td>'), i;
-                };
+                if (!isFinite(e)) {
+                    return '';
+                }
+                var t = ['cover-fill'];
+                return 100 === e && t.push('cover-full'), e = Math.floor(e), [
+                    '<div class="'.concat(t.join(' '), '" style="width: ').concat(e, '%"></div>'),
+                    '<div class="cover-empty" style="width: '.concat(100 - e, '%"></div>')
+                ].join('');
+            }, r = function (e) {
+                var o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], a = s[e], r = t[e], i = [
+                    '<td data-value="'.concat(a.pct, '" class="pct ').concat(r, '">').concat(a.pct, '%</td>'),
+                    '<td data-value="'.concat(a.total, '" class="abs ').concat(r, '">').concat(a.covered, '/').concat(a.total, '</td>')
+                ];
+                return o && i.unshift('<td data-value="'.concat(a.pct, '" class="pic ').concat(r, '">'), '<div class="chart">'.concat(n(a.pct), '</div>'), '</td>'), i;
+            };
             return [].concat('<tr>', '<td class="file '.concat(t.statements, '" data-value="').concat(l.escape(o), '"><a href="').concat(l.escape(a), '">').concat(l.escape(o), '</a></td>'), r('statements', true), r('branches'), r('functions'), r('lines'), '</tr>\n').join('\n\t');
         }
         var b = [
-                '</tbody>',
-                '</table>',
-                '</div>'
-            ].join('\n'), w = {
-                getPath: function (e) {
-                    if ('string' === typeof e) {
-                        return e;
-                    }
-                    var t = e.getQualifiedName();
-                    return e.isSummary() ? '' !== t ? t += '/index.html' : t = 'index.html' : t += '.html', t;
-                },
-                relativePath: function (e, t) {
-                    var s = this.getPath(t), o = c.dirname(this.getPath(e));
-                    return c.posix.relative(o, s);
-                },
-                assetPath: function (e, t) {
-                    return this.relativePath(this.getPath(e), t);
+            '</tbody>',
+            '</table>',
+            '</div>'
+        ].join('\n'), w = {
+            getPath: function (e) {
+                if ('string' === typeof e) {
+                    return e;
                 }
-            };
+                var t = e.getQualifiedName();
+                return e.isSummary() ? '' !== t ? t += '/index.html' : t = 'index.html' : t += '.html', t;
+            },
+            relativePath: function (e, t) {
+                var s = this.getPath(t), o = c.dirname(this.getPath(e));
+                return c.posix.relative(o, s);
+            },
+            assetPath: function (e, t) {
+                return this.relativePath(this.getPath(e), t);
+            }
+        };
         function y(e) {
             return Object.keys(S).forEach(function (t) {
                 e[t].pct = 0;
@@ -425,16 +425,16 @@
                             var a = o.getCoverageSummary(), i = a.isEmpty();
                             if (!n || !i) {
                                 var c = i ? S : {
-                                        statements: t.classForPercent('statements', a.statements.pct),
-                                        lines: t.classForPercent('lines', a.lines.pct),
-                                        functions: t.classForPercent('functions', a.functions.pct),
-                                        branches: t.classForPercent('branches', a.branches.pct)
-                                    }, l = {
-                                        metrics: i ? y(a) : a,
-                                        reportClasses: c,
-                                        file: o.getRelativeName(),
-                                        output: s.relativePath(e, o)
-                                    };
+                                    statements: t.classForPercent('statements', a.statements.pct),
+                                    lines: t.classForPercent('lines', a.lines.pct),
+                                    functions: t.classForPercent('functions', a.functions.pct),
+                                    branches: t.classForPercent('branches', a.branches.pct)
+                                }, l = {
+                                    metrics: i ? y(a) : a,
+                                    reportClasses: c,
+                                    file: o.getRelativeName(),
+                                    output: s.relativePath(e, o)
+                                };
                                 r.write(C(l) + '\n');
                             }
                         });
@@ -510,74 +510,74 @@
     '217d': function (e, t, s) {
         'use strict';
         var o = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    staticClass: 'audio-waves',
-                    class: [
-                        e.skinClass,
-                        e.size
-                    ]
-                }, [e.animation ? t('div', { staticClass: 'waves-wrapper' }, [
-                        t('span', {
-                            staticClass: 'waves-item waves-animation waves1',
-                            class: e.animationTypeClass
-                        }),
-                        t('span', {
-                            staticClass: 'waves-item waves-animation waves2',
-                            class: e.animationTypeClass
-                        }),
-                        t('span', {
-                            staticClass: 'waves-item waves-animation waves3',
-                            class: e.animationTypeClass
-                        }),
-                        t('span', {
-                            staticClass: 'waves-item waves-animation waves4',
-                            class: e.animationTypeClass
-                        }),
-                        'large' === e.size ? t('span', {
-                            staticClass: 'waves-item waves-animation waves5',
-                            class: e.animationTypeClass
-                        }) : e._e(),
-                        'large' === e.size ? t('span', {
-                            staticClass: 'waves-item waves-animation waves6',
-                            class: e.animationTypeClass
-                        }) : e._e()
-                    ]) : t('div', { staticClass: 'waves-wrapper' }, [
-                        t('span', { staticClass: 'waves-item default-bg waves1' }),
-                        t('span', { staticClass: 'waves-item default-bg waves2' }),
-                        t('span', { staticClass: 'waves-item default-bg waves3' }),
-                        t('span', { staticClass: 'waves-item default-bg waves4' }),
-                        'large' === e.size ? t('span', { staticClass: 'waves-item default-bg waves5' }) : e._e(),
-                        'large' === e.size ? t('span', { staticClass: 'waves-item default-bg waves6' }) : e._e()
-                    ])]);
-            }, a = [], n = {
-                props: {
-                    animation: {
-                        default: false,
-                        type: Boolean
-                    },
-                    animationType: {
-                        default: 'liner',
-                        type: String
-                    },
-                    size: {
-                        default: 'large',
-                        type: String
-                    },
-                    skin: {
-                        default: 'orange',
-                        type: String
-                    }
+            var e = this, t = e._self._c;
+            return t('div', {
+                staticClass: 'audio-waves',
+                class: [
+                    e.skinClass,
+                    e.size
+                ]
+            }, [e.animation ? t('div', { staticClass: 'waves-wrapper' }, [
+                t('span', {
+                    staticClass: 'waves-item waves-animation waves1',
+                    class: e.animationTypeClass
+                }),
+                t('span', {
+                    staticClass: 'waves-item waves-animation waves2',
+                    class: e.animationTypeClass
+                }),
+                t('span', {
+                    staticClass: 'waves-item waves-animation waves3',
+                    class: e.animationTypeClass
+                }),
+                t('span', {
+                    staticClass: 'waves-item waves-animation waves4',
+                    class: e.animationTypeClass
+                }),
+                'large' === e.size ? t('span', {
+                    staticClass: 'waves-item waves-animation waves5',
+                    class: e.animationTypeClass
+                }) : e._e(),
+                'large' === e.size ? t('span', {
+                    staticClass: 'waves-item waves-animation waves6',
+                    class: e.animationTypeClass
+                }) : e._e()
+            ]) : t('div', { staticClass: 'waves-wrapper' }, [
+                t('span', { staticClass: 'waves-item default-bg waves1' }),
+                t('span', { staticClass: 'waves-item default-bg waves2' }),
+                t('span', { staticClass: 'waves-item default-bg waves3' }),
+                t('span', { staticClass: 'waves-item default-bg waves4' }),
+                'large' === e.size ? t('span', { staticClass: 'waves-item default-bg waves5' }) : e._e(),
+                'large' === e.size ? t('span', { staticClass: 'waves-item default-bg waves6' }) : e._e()
+            ])]);
+        }, a = [], n = {
+            props: {
+                animation: {
+                    default: false,
+                    type: Boolean
                 },
-                computed: {
-                    skinClass: function () {
-                        return console.info('对象函数 skinClass,filePath:renderer/components/Common/AudioWaves.vue'), 'skin-'.concat(this.skin);
-                    },
-                    animationTypeClass: function () {
-                        return console.info('对象函数 animationTypeClass,filePath:renderer/components/Common/AudioWaves.vue'), 'animation-'.concat(this.animationType);
-                    }
+                animationType: {
+                    default: 'liner',
+                    type: String
+                },
+                size: {
+                    default: 'large',
+                    type: String
+                },
+                skin: {
+                    default: 'orange',
+                    type: String
                 }
-            }, r = n, i = (s('29df'), s('2877')), c = Object(i.a)(r, o, a, false, null, '1051bd64', null);
+            },
+            computed: {
+                skinClass: function () {
+                    return console.info('对象函数 skinClass,filePath:renderer/components/Common/AudioWaves.vue'), 'skin-'.concat(this.skin);
+                },
+                animationTypeClass: function () {
+                    return console.info('对象函数 animationTypeClass,filePath:renderer/components/Common/AudioWaves.vue'), 'animation-'.concat(this.animationType);
+                }
+            }
+        }, r = n, i = (s('29df'), s('2877')), c = Object(i.a)(r, o, a, false, null, '1051bd64', null);
         t.a = c.exports;
     },
     '27cf': function (e, t, s) {
@@ -993,162 +993,162 @@
         s.r(t);
         s('dc5a');
         var o, a = s('56cd'), n = (s('3b18'), s('f64c')), r = (s('2ef0'), s('9839')), i = (s('6ba6'), s('5efb')), c = (s('1273'), s('f2ca')), l = (s('fbd8'), s('55f1')), u = (s('9d5c'), s('a600')), d = (s('fbd6'), s('160c')), m = (s('cd17'), s('ed3b')), h = (s('8fb1'), s('0c63')), p = s('c1f6'), f = (s('c618'), s('8bbf')), v = s.n(f), g = (s('9e1b'), s('d4ec')), C = s('bee2'), b = s('262e'), S = s('2caf'), w = s('1e89'), y = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return console.info('函数申明 LiveFameWork(opts)', e, 'filePath:renderer/components/Classroom/LargeClass/framework/index.js'), Object(g.a)(this, s), t.call(this, e);
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return console.info('函数申明 LiveFameWork(opts)', e, 'filePath:renderer/components/Classroom/LargeClass/framework/index.js'), Object(g.a)(this, s), t.call(this, e);
+            }
+            return Object(C.a)(s, null, [{
+                key: 'getInstance',
+                value: function (e) {
+                    return this.instance || (this.instance = new s(e)), this.instance;
                 }
-                return Object(C.a)(s, null, [{
-                        key: 'getInstance',
-                        value: function (e) {
-                            return this.instance || (this.instance = new s(e)), this.instance;
-                        }
-                    }]), s;
-            }(w.a), P = s('c7eb'), A = s('1da1'), k = s('15fd'), L = s('d0db'), I = s('8c9b'), x = s('e417'), O = ['code'], j = ['code'], T = ['code'], M = ['code'], R = ['code'], E = ['code'], V = ['code'], N = ['code'], D = ['code'], B = ['code'], U = ['code'], G = ['code'], H = function (e) {
-                return '[object Function]' === function call() { [native code] }(e);
-            }, _ = function () {
-                function e(t) {
-                    console.info('函数申明 LiveLogger(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/logger/index.js');
-                    Object(g.a)(this, e);
-                    this.initLogger(t);
-                    this.liveInfo = {};
-                    this.ircHaveStartSensor = false;
-                }
-                return Object(C.a)(e, [
-                    {
-                        key: 'initLogger',
-                        value: function (e) {
-                        }
-                    },
-                    {
-                        key: 'eventHandler',
-                        value: function (e) {
-                            'customirc' == e.type && H(this[e.data.logType]) && this[e.data.logType](e.data.logData);
-                        }
-                    },
-                    {
-                        key: 'onLiveInfo',
-                        value: function (e) {
-                            this.liveInfo = e.liveInfo;
-                        }
-                    },
-                    {
-                        key: 'ircinit',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, O);
-                            Object(x.c)({
-                                result: 'start',
-                                liveInfo: this.liveInfo
-                            });
-                            this.ircHaveStartSensor = true;
-                            0 == t ? this.sendLogger('irc 调用初始化方法成功') : (this.sendLogger('irc 调用初始化方法失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '初始化失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'setLiveInfo',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, j);
-                            0 == t ? this.sendLogger('irc 设置直播信息成功') : (this.sendLogger('irc 设置直播信息失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '设置直播信息失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'setSdkProperties',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, T);
-                            0 == t ? this.sendLogger('irc 设置配置信息成功') : (this.sendLogger('irc 设置配置信息失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '设置配置信息失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'loginWithMode',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, M);
-                            0 == t ? this.sendLogger('irc 调用登录接口成功') : (this.sendLogger('irc 调用登录接口失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '调用登录接口失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'onSDKProvisionStatusNotice',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, R);
-                            '[hw_irc_join_room]触发irc调度服务回调'.concat(t);
-                            this.ircHaveStartSensor || Object(x.c)({
-                                result: 'start',
-                                liveInfo: this.liveInfo
-                            });
-                            this.ircHaveStartSensor = false;
-                            0 == t ? this.sendLogger('irc 连接调度服务成功') : (this.sendLogger('irc 连接调度服务失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '调度失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'onLoginResponse',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, E);
-                            '[hw_irc_join_room]触发登陆回调'.concat(t);
-                            0 == t ? this.sendLogger('irc 登陆回调返回成功') : (this.sendLogger('irc 登陆回调返回失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '登录失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'joinChatRoomsWithJoinMode',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, V);
-                            0 === t ? this.sendLogger('irc调用加入房间接口成功') : (this.sendLogger('irc调用加入房间接口失败,code:'.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '调用加入房间接口失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'onNetStatusChanged',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            }]), s;
+        }(w.a), P = s('c7eb'), A = s('1da1'), k = s('15fd'), L = s('d0db'), I = s('8c9b'), x = s('e417'), O = ['code'], j = ['code'], T = ['code'], M = ['code'], R = ['code'], E = ['code'], V = ['code'], N = ['code'], D = ['code'], B = ['code'], U = ['code'], G = ['code'], H = function (e) {
+            return '[object Function]' === function call() { [native,] }(e);
+        }, _ = function () {
+            function e(t) {
+                console.info('函数申明 LiveLogger(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/logger/index.js');
+                Object(g.a)(this, e);
+                this.initLogger(t);
+                this.liveInfo = {};
+                this.ircHaveStartSensor = false;
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'initLogger',
+                    value: function (e) {
+                    }
+                },
+                {
+                    key: 'eventHandler',
+                    value: function (e) {
+                        'customirc' == e.type && H(this[e.data.logType]) && this[e.data.logType](e.data.logData);
+                    }
+                },
+                {
+                    key: 'onLiveInfo',
+                    value: function (e) {
+                        this.liveInfo = e.liveInfo;
+                    }
+                },
+                {
+                    key: 'ircinit',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, O);
+                        Object(x.c)({
+                            result: 'start',
+                            liveInfo: this.liveInfo
+                        });
+                        this.ircHaveStartSensor = true;
+                        0 == t ? this.sendLogger('irc 调用初始化方法成功') : (this.sendLogger('irc 调用初始化方法失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '初始化失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'setLiveInfo',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, j);
+                        0 == t ? this.sendLogger('irc 设置直播信息成功') : (this.sendLogger('irc 设置直播信息失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '设置直播信息失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'setSdkProperties',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, T);
+                        0 == t ? this.sendLogger('irc 设置配置信息成功') : (this.sendLogger('irc 设置配置信息失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '设置配置信息失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'loginWithMode',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, M);
+                        0 == t ? this.sendLogger('irc 调用登录接口成功') : (this.sendLogger('irc 调用登录接口失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '调用登录接口失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'onSDKProvisionStatusNotice',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, R);
+                        '[hw_irc_join_room]触发irc调度服务回调'.concat(t);
+                        this.ircHaveStartSensor || Object(x.c)({
+                            result: 'start',
+                            liveInfo: this.liveInfo
+                        });
+                        this.ircHaveStartSensor = false;
+                        0 == t ? this.sendLogger('irc 连接调度服务成功') : (this.sendLogger('irc 连接调度服务失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '调度失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'onLoginResponse',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, E);
+                        '[hw_irc_join_room]触发登陆回调'.concat(t);
+                        0 == t ? this.sendLogger('irc 登陆回调返回成功') : (this.sendLogger('irc 登陆回调返回失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '登录失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'joinChatRoomsWithJoinMode',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, V);
+                        0 === t ? this.sendLogger('irc调用加入房间接口成功') : (this.sendLogger('irc调用加入房间接口失败,code:'.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '调用加入房间接口失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
+                    }
+                },
+                {
+                    key: 'onNetStatusChanged',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (s = t.code, Object(k.a)(t, N), '[hw_irc_join_room]触发网络状态回调'.concat(s), 4 == s) {
                                                 e.next = 15;
                                                 break;
                                             }
                                             if (o = {
-                                                    0: '未知',
-                                                    1: '网络不可用',
-                                                    2: '服务器连接失败',
-                                                    3: '服务器连接中',
-                                                    5: '服务器断开连接'
-                                                }, this.sendLogger('irc 网络状态改变,'.concat(o[s]), {}, 3 == s ? 'info' : 'error'), 0 != s && 1 != s && 2 != s) {
+                                                0: '未知',
+                                                1: '网络不可用',
+                                                2: '服务器连接失败',
+                                                3: '服务器连接中',
+                                                5: '服务器断开连接'
+                                            }, this.sendLogger('irc 网络状态改变,'.concat(o[s]), {}, 3 == s ? 'info' : 'error'), 0 != s && 1 != s && 2 != s) {
                                                 e.next = 12;
                                                 break;
                                             }
@@ -1175,142 +1175,142 @@
                                         case 16:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 onNetStatusChanged(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/logger/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'onJoinRoomResponse',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, D);
-                            '[hw_irc_join_room]触发加入房间回调'.concat(t);
-                            0 == t ? (this.sendLogger('irc 加入房间回调成功'), Object(x.c)({
-                                result: 'success',
-                                liveInfo: this.liveInfo
-                            })) : (this.sendLogger('irc 加入房间回调失败,code: '.concat(t), s, 'error'), Object(x.c)({
-                                result: 'fail',
-                                errorType: '登录加入房间失败失败',
-                                code: t,
-                                liveInfo: this.liveInfo
-                            }));
-                        }
-                    },
-                    {
-                        key: 'onSendRoomMessageResponse',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, B);
-                            0 == t ? Object(x.c)({
-                                type: 'message',
-                                result: 'success',
-                                msg: '群聊'
-                            }) : (Object(x.c)({
-                                type: 'message',
-                                result: 'fail',
-                                errorType: '群聊消息发送失败',
-                                msg: '群聊',
-                                code: t,
-                                msgInfo: s
-                            }), this.sendLogger('irc 群聊消息发送失败,code: '.concat(t), s, 'error'));
-                        }
-                    },
-                    {
-                        key: 'onSendRoomBinMessageResp',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, U);
-                            0 == t ? Object(x.c)({
-                                type: 'message',
-                                result: 'success',
-                                msg: '群聊二进制'
-                            }) : (Object(x.c)({
-                                type: 'message',
-                                result: 'fail',
-                                errorType: '群聊二进制消息发送失败',
-                                msg: '群聊二进制',
-                                code: t,
-                                msgInfo: s
-                            }), this.sendLogger('irc 发送二进制涂鸦消息失败,code: '.concat(t), s, 'error'));
-                        }
-                    },
-                    {
-                        key: 'onSendPeerMessageResponse',
-                        value: function (e) {
-                            var t = e.code, s = Object(k.a)(e, G);
-                            0 == t ? Object(x.c)({
-                                type: 'message',
-                                result: 'success',
-                                msg: '私聊'
-                            }) : (Object(x.c)({
-                                type: 'message',
-                                result: 'fail',
-                                errorType: '私聊消息发送失败',
-                                msg: '私聊',
-                                code: t,
-                                msgInfo: s
-                            }), this.sendLogger('irc 发送私聊失败,code: '.concat(t), s, 'error'));
-                        }
-                    },
-                    {
-                        key: 'onKickoutNotice',
-                        value: function (e) {
-                            this.sendLogger('irc 被其他客户端顶掉:'.concat(JSON.stringify(e)), {}, 'error');
-                        }
-                    },
-                    {
-                        key: 'onRecvRoomMessage',
-                        value: function (e) {
-                            this.sendLogger('irc 收到群聊消息:'.concat(JSON.stringify(e)));
-                        }
-                    },
-                    {
-                        key: 'onRecvPeerMessage',
-                        value: function (e) {
-                            this.sendLogger('irc 收到私聊消息:'.concat(JSON.stringify(e)));
-                        }
-                    },
-                    {
-                        key: 'sendLogger',
-                        value: function (e) {
-                            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
-                            L.a.send({
-                                tag: L.b.irc,
-                                level: s,
-                                content: {
-                                    msg: e,
-                                    params: t
                                 }
-                            });
+                            }, e, this);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 onNetStatusChanged(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/logger/index.js'), e.apply(this, arguments);
                         }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'onJoinRoomResponse',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, D);
+                        '[hw_irc_join_room]触发加入房间回调'.concat(t);
+                        0 == t ? (this.sendLogger('irc 加入房间回调成功'), Object(x.c)({
+                            result: 'success',
+                            liveInfo: this.liveInfo
+                        })) : (this.sendLogger('irc 加入房间回调失败,code: '.concat(t), s, 'error'), Object(x.c)({
+                            result: 'fail',
+                            errorType: '登录加入房间失败失败',
+                            code: t,
+                            liveInfo: this.liveInfo
+                        }));
                     }
-                ]), e;
-            }(), F = s('5530'), W = (s('d9e2'), s('ac1f'), s('841c'), s('99af'), s('caad'), s('2532'), s('b0c0'), s('d3b7'), s('25f0'), s('832e'), s('9c59')), K = s.n(W), q = s('418d'), z = s('3cd0'), J = s('9277'), Q = s('c342'), Z = s('a5bc'), Y = s('02fc'), X = s('e39c'), $ = s('099c'), ee = function (e) {
-                console.info('箭头函数 getProtocolByVideoUrl(url)', e, 'filePath:renderer/components/Classroom/LargeClass/base/initer/utils.js');
-                var t = window.PSProtocol;
-                if (t) {
-                    return e.indexOf('.mp4') > 0 ? (console.info('if(url.indexOf(\'.mp4\') > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js'), t.PS_MP4) : e.indexOf('.m3u8') > 0 ? (console.info('if(url.indexOf(\'.m3u8\') > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js'), t.PS_HLS) : void 0;
+                },
+                {
+                    key: 'onSendRoomMessageResponse',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, B);
+                        0 == t ? Object(x.c)({
+                            type: 'message',
+                            result: 'success',
+                            msg: '群聊'
+                        }) : (Object(x.c)({
+                            type: 'message',
+                            result: 'fail',
+                            errorType: '群聊消息发送失败',
+                            msg: '群聊',
+                            code: t,
+                            msgInfo: s
+                        }), this.sendLogger('irc 群聊消息发送失败,code: '.concat(t), s, 'error'));
+                    }
+                },
+                {
+                    key: 'onSendRoomBinMessageResp',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, U);
+                        0 == t ? Object(x.c)({
+                            type: 'message',
+                            result: 'success',
+                            msg: '群聊二进制'
+                        }) : (Object(x.c)({
+                            type: 'message',
+                            result: 'fail',
+                            errorType: '群聊二进制消息发送失败',
+                            msg: '群聊二进制',
+                            code: t,
+                            msgInfo: s
+                        }), this.sendLogger('irc 发送二进制涂鸦消息失败,code: '.concat(t), s, 'error'));
+                    }
+                },
+                {
+                    key: 'onSendPeerMessageResponse',
+                    value: function (e) {
+                        var t = e.code, s = Object(k.a)(e, G);
+                        0 == t ? Object(x.c)({
+                            type: 'message',
+                            result: 'success',
+                            msg: '私聊'
+                        }) : (Object(x.c)({
+                            type: 'message',
+                            result: 'fail',
+                            errorType: '私聊消息发送失败',
+                            msg: '私聊',
+                            code: t,
+                            msgInfo: s
+                        }), this.sendLogger('irc 发送私聊失败,code: '.concat(t), s, 'error'));
+                    }
+                },
+                {
+                    key: 'onKickoutNotice',
+                    value: function (e) {
+                        this.sendLogger('irc 被其他客户端顶掉:'.concat(JSON.stringify(e)), {}, 'error');
+                    }
+                },
+                {
+                    key: 'onRecvRoomMessage',
+                    value: function (e) {
+                        this.sendLogger('irc 收到群聊消息:'.concat(JSON.stringify(e)));
+                    }
+                },
+                {
+                    key: 'onRecvPeerMessage',
+                    value: function (e) {
+                        this.sendLogger('irc 收到私聊消息:'.concat(JSON.stringify(e)));
+                    }
+                },
+                {
+                    key: 'sendLogger',
+                    value: function (e) {
+                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
+                        L.a.send({
+                            tag: L.b.irc,
+                            level: s,
+                            content: {
+                                msg: e,
+                                params: t
+                            }
+                        });
+                    }
                 }
-                console.info('if(!PSProtocol)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js');
-            }, te = s('0a4b'), se = s('3898'), oe = s('92e5'), ae = s('5f9e'), ne = s('2b6b'), re = window.location.search, ie = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return console.info('函数申明 WebLive(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), Object(g.a)(this, s), e = t.call(this, o), e.requestParams = {}, e.initModuleParams = {}, e.init(), ae.a.methods.initWebVitals(), e;
-                }
-                return Object(C.a)(s, [
-                    {
-                        key: 'init',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a, n, r, i;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            ]), e;
+        }(), F = s('5530'), W = (s('d9e2'), s('ac1f'), s('841c'), s('99af'), s('caad'), s('2532'), s('b0c0'), s('d3b7'), s('25f0'), s('832e'), s('9c59')), K = s.n(W), q = s('418d'), z = s('3cd0'), J = s('9277'), Q = s('c342'), Z = s('a5bc'), Y = s('02fc'), X = s('e39c'), $ = s('099c'), ee = function (e) {
+            console.info('箭头函数 getProtocolByVideoUrl(url)', e, 'filePath:renderer/components/Classroom/LargeClass/base/initer/utils.js');
+            var t = window.PSProtocol;
+            if (t) {
+                return e.indexOf('.mp4') > 0 ? (console.info('if(url.indexOf(\'.mp4\') > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js'), t.PS_MP4) : e.indexOf('.m3u8') > 0 ? (console.info('if(url.indexOf(\'.m3u8\') > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js'), t.PS_HLS) : void 0;
+            }
+            console.info('if(!PSProtocol)为true触发return,path: /renderer/components/Classroom/LargeClass/base/initer/utils.js');
+        }, te = s('0a4b'), se = s('3898'), oe = s('92e5'), ae = s('5f9e'), ne = s('2b6b'), re = window.location.search, ie = function (e) {
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return console.info('函数申明 WebLive(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), Object(g.a)(this, s), e = t.call(this, o), e.requestParams = {}, e.initModuleParams = {}, e.init(), ae.a.methods.initWebVitals(), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'init',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a, n, r, i;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return t = new Date().getTime(), e.next = 3, this.initDom();
                                         case 3:
@@ -1352,12 +1352,12 @@
                                             }), this.showError(), e.abrupt('return', false);
                                         case 27:
                                             if (this.roomInfo = a, r = a.isPlayBack, L.a.send({
-                                                    tag: 'userTrack',
-                                                    content: {
-                                                        msg: '大班-学生进入'.concat(1 == r ? '回放' : '直播'),
-                                                        tag: 'init'
-                                                    }
-                                                }), r) {
+                                                tag: 'userTrack',
+                                                content: {
+                                                    msg: '大班-学生进入'.concat(1 == r ? '回放' : '直播'),
+                                                    tag: 'init'
+                                                }
+                                            }), r) {
                                                 e.next = 34;
                                                 break;
                                             }
@@ -1406,24 +1406,24 @@
                                         case 43:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 init, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'getParams',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 init, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'getParams',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             for (s in (t = K.a.parse(re), t))
                                                 /^[0-9]*$/.test(t[s]) && (t[s] = 1 * t[s]);
@@ -1431,24 +1431,24 @@
                                         case 4:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e);
-                            }));
-                            function t() {
-                                return console.info('函数申明 getParams, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'initDom',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e);
+                        }));
+                        function t() {
+                            return console.info('函数申明 getParams, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'initDom',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, Object(se.a)();
                                         case 2:
@@ -1478,24 +1478,24 @@
                                         case 8:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e);
-                            }));
-                            function t() {
-                                return console.info('函数申明 initDom, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'getInfo',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n, r, i, c, l, u, d, m, h, p, f, v, g, C, b, S, w, y, A, k, I, O, j, T, M, R, E, V, N, D, B, U, G, H, _, W, K, q, $, te, se, oe, ae, re, ie, ce, le, ue, de, me, he, pe, fe, ve, ge, Ce, be, Se, we, ye, Pe, Ae, ke, Le, Ie, xe, Oe, je, Te, Me, Re, Ee, Ve, Ne, De, Be, Ue, Ge, He, _e, Fe, We, Ke, qe, ze, Je, Qe, Ze, Ye, Xe, $e, et, tt, st;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e);
+                        }));
+                        function t() {
+                            return console.info('函数申明 initDom, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'getInfo',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n, r, i, c, l, u, d, m, h, p, f, v, g, C, b, S, w, y, A, k, I, O, j, T, M, R, E, V, N, D, B, U, G, H, _, W, K, q, $, te, se, oe, ae, re, ie, ce, le, ue, de, me, he, pe, fe, ve, ge, Ce, be, Se, we, ye, Pe, Ae, ke, Le, Ie, xe, Oe, je, Te, Me, Re, Ee, Ve, Ne, De, Be, Ue, Ge, He, _e, Fe, We, Ke, qe, ze, Je, Qe, Ze, Ye, Xe, $e, et, tt, st;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return s = 1800, o = 900, a = 0, n = 0, r = 0, e.next = 7, Object(Q.m)(this.requestParams);
                                         case 7:
@@ -1523,16 +1523,16 @@
                                                 break;
                                             }
                                             if (i = i.data, i.planInfo.etime = i.planInfo.endStampTime, i.planInfo.stime = i.planInfo.startStampTime, window.__requestBasicStartTakeClassTime = i.planInfo.startStampTime, window._requestHeadersData.subjectIds = i.planInfo.subjectIds, window._requestHeadersData.gradeIds = i.planInfo.gradeIds, window._requestBasicTime = new Date().getTime(), window._requestBasicEnterServerTime = i.nowTime, (1 * i.nowTime - 1 * i.planInfo.etime > s || 1 == t.playback) && (a = 1), r = i.planInfo.stime - i.nowTime, r < o && (n = 1), u = {
-                                                    classId: i.stuLiveInfo.classId,
-                                                    planId: i.stuLiveInfo.planId,
-                                                    isPlayBack: a,
-                                                    classType: t.subPlatformType,
-                                                    isParent: !!t.isParent,
-                                                    packageId: i.planInfo.packageId,
-                                                    from: t.from,
-                                                    lessonType: t.lessonType,
-                                                    isStartClass: false
-                                                }, Object(X.A)(i.planInfo.startStampTime, i.planInfo.endStampTime) && (u.isStartClass = true), Object(x.b)(u), !a) {
+                                                classId: i.stuLiveInfo.classId,
+                                                planId: i.stuLiveInfo.planId,
+                                                isPlayBack: a,
+                                                classType: t.subPlatformType,
+                                                isParent: !!t.isParent,
+                                                packageId: i.planInfo.packageId,
+                                                from: t.from,
+                                                lessonType: t.lessonType,
+                                                isStartClass: false
+                                            }, Object(X.A)(i.planInfo.startStampTime, i.planInfo.endStampTime) && (u.isStartClass = true), Object(x.b)(u), !a) {
                                                 e.next = 40;
                                                 break;
                                             }
@@ -1798,31 +1798,31 @@
                                         case 107:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 getInfo(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'initModule',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 getInfo(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'initModule',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, Object(Q.p)(this.initModuleParams);
                                         case 2:
                                             if (t = e.sent, L.a.send({
-                                                    tag: 'init',
-                                                    content: { msg: '获取初始化module'.concat(JSON.stringify(t)) }
-                                                }), s = {}, 0 !== t.code) {
+                                                tag: 'init',
+                                                content: { msg: '获取初始化module'.concat(JSON.stringify(t)) }
+                                            }), s = {}, 0 !== t.code) {
                                                 e.next = 11;
                                                 break;
                                             }
@@ -1835,24 +1835,24 @@
                                         case 12:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 initModule, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'sendLogger',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n, r, i;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 initModule, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'sendLogger',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n, r, i;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (s = t.isPlayBack, !s) {
                                                 e.next = 4;
@@ -1878,35 +1878,35 @@
                                         case 17:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 sendLogger(_x2)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'hideLoading',
-                        value: function (e, t) {
-                            new Date().getTime();
-                            L.a.send({
-                                tag: 'init',
-                                content: { msg: '结束loading状态' }
-                            });
-                            this.app.liveLoading.style.display = 'none';
+                                }
+                            }, e);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 sendLogger(_x2)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'showError',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a, n, r, i, c, l, u, d, m, h, p, f, v, g, C, b, S;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                        return t;
+                    }()
+                },
+                {
+                    key: 'hideLoading',
+                    value: function (e, t) {
+                        new Date().getTime();
+                        L.a.send({
+                            tag: 'init',
+                            content: { msg: '结束loading状态' }
+                        });
+                        this.app.liveLoading.style.display = 'none';
+                    }
+                },
+                {
+                    key: 'showError',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a, n, r, i, c, l, u, d, m, h, p, f, v, g, C, b, S;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, this.getParams();
                                         case 2:
@@ -1923,24 +1923,24 @@
                                         case 26:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 showError, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'initRtcEngine',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 showError, filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'initRtcEngine',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return s = window.RTC_COMMON.RtcEngine, e.next = 3, te.nativeApi.getPathByName('userData');
                                         case 3:
@@ -1968,224 +1968,224 @@
                                         case 10:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 initRtcEngine(_x3)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    }
-                ]), s;
-            }(q.a), ce = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'live-main' }, [
-                    t('div', { staticClass: 'live-ppt' }, [t('PptArea', {
-                            ref: 'ppt',
-                            attrs: {
-                                options: e.commonOption,
-                                configs: e.configs,
-                                ircconfig: e.ircconfig,
-                                isInClass: e.isInClass
-                            }
-                        })], 1),
-                    t('MediaSecurityAccess', { attrs: { visible: true } }),
-                    0 == e.classType || 1 == e.classType ? t('LargeClassLiveVideo', {
-                        attrs: {
-                            options: e.commonOption,
-                            rtcConfig: e.configs.rtcConfig
-                        },
-                        on: { updateLiveState: e.updateLiveState }
-                    }) : e._e(),
-                    2 == e.classType ? t('SmallClassLiveVideo', {
-                        attrs: {
-                            options: e.commonOption,
-                            rtcConfig: e.configs.rtcConfig
-                        },
-                        on: { updateLiveState: e.updateLiveState }
-                    }) : e._e(),
-                    t('ScreenThumbnail')
-                ], 1);
-            }, le = [], ue = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    ref: 'ppt-area',
-                    staticClass: 'ppt-area-container',
-                    attrs: { id: 'ppt-area-container' }
-                }, [
-                    e.showCanvas && !e.isInClass ? t('div', { staticClass: 'wait-teacher' }, [t('div', { staticClass: 'wait-dialog' }, [t('div', { staticClass: 'notice-content' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.coursewareBoard.classSoonNotice')) + ' ')])])]) : e._e(),
-                    t('H5Courseware', {
-                        ref: 'h5CoursewareMian',
-                        attrs: {
-                            ircconfig: e.ircconfig,
-                            options: e.options
-                        },
-                        on: {
-                            courseWareReady: e.courseWareReady,
-                            changePageId: e.changePageId,
-                            clear: e.clear
+                                }
+                            }, e);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 initRtcEngine(_x3)', t, 'filePath:renderer/components/Classroom/LargeClass/base/initer/index.js'), e.apply(this, arguments);
                         }
-                    }),
-                    e.showCanvas ? t('white-board-canvas', { ref: 'WhiteBoard' }) : e._e(),
-                    e.showCanvas ? t('white-board-tools', { ref: 'WhiteBoardTools' }) : e._e(),
-                    e.showEaxmIframe ? t('div', {
-                        ref: 'exam-wrapper',
-                        staticClass: 'exam-container'
-                    }, [t('iframe', {
-                            attrs: {
-                                id: 'class-examination',
-                                src: e.examUrl
-                            }
-                        })]) : e._e()
-                ], 1);
-            }, de = [], me = (s('907a'), s('986a'), s('1d02'), s('3c5d'), s('1b3b'), s('3d71'), s('c6e3'), s('159b'), s('20bf'), s('e260'), s('ace4'), s('5cc6'), s('9a8c'), s('a975'), s('735e'), s('c1ac'), s('d139'), s('3a7b'), s('d5d6'), s('82f8'), s('e91f'), s('60bd'), s('5f96'), s('3280'), s('3fcc'), s('ca91'), s('25a1'), s('cd26'), s('2954'), s('649e'), s('219c'), s('170b'), s('b39a'), s('72f7'), s('a9e3'), s('5319'), function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    staticClass: 'h5coursewareContainer',
-                    class: { topZindex: 'error' === e.coursewareState }
-                }, [
-                    t('NeLoading', { attrs: { visible: 'loading' === e.coursewareState } }),
-                    t('NeDialog', { attrs: { visible: 'error' === e.coursewareState } }, [
-                        t('h3', [e._v('Courseware failed to load')]),
-                        t('p', [
-                            e._v('Your courseware failed to load.'),
-                            t('br'),
-                            e._v('Please click "Reload" to try again')
-                        ]),
-                        t('div', {
-                            attrs: { slot: 'footer' },
-                            slot: 'footer'
-                        }, [t('button', {
-                                staticClass: 'button',
-                                on: { click: e.reloadCourseWare }
-                            }, [e._v('Reload')])])
+                        return t;
+                    }()
+                }
+            ]), s;
+        }(q.a), ce = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'live-main' }, [
+                t('div', { staticClass: 'live-ppt' }, [t('PptArea', {
+                    ref: 'ppt',
+                    attrs: {
+                        options: e.commonOption,
+                        configs: e.configs,
+                        ircconfig: e.ircconfig,
+                        isInClass: e.isInClass
+                    }
+                })], 1),
+                t('MediaSecurityAccess', { attrs: { visible: true } }),
+                0 == e.classType || 1 == e.classType ? t('LargeClassLiveVideo', {
+                    attrs: {
+                        options: e.commonOption,
+                        rtcConfig: e.configs.rtcConfig
+                    },
+                    on: { updateLiveState: e.updateLiveState }
+                }) : e._e(),
+                2 == e.classType ? t('SmallClassLiveVideo', {
+                    attrs: {
+                        options: e.commonOption,
+                        rtcConfig: e.configs.rtcConfig
+                    },
+                    on: { updateLiveState: e.updateLiveState }
+                }) : e._e(),
+                t('ScreenThumbnail')
+            ], 1);
+        }, le = [], ue = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                ref: 'ppt-area',
+                staticClass: 'ppt-area-container',
+                attrs: { id: 'ppt-area-container' }
+            }, [
+                e.showCanvas && !e.isInClass ? t('div', { staticClass: 'wait-teacher' }, [t('div', { staticClass: 'wait-dialog' }, [t('div', { staticClass: 'notice-content' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.coursewareBoard.classSoonNotice')) + ' ')])])]) : e._e(),
+                t('H5Courseware', {
+                    ref: 'h5CoursewareMian',
+                    attrs: {
+                        ircconfig: e.ircconfig,
+                        options: e.options
+                    },
+                    on: {
+                        courseWareReady: e.courseWareReady,
+                        changePageId: e.changePageId,
+                        clear: e.clear
+                    }
+                }),
+                e.showCanvas ? t('white-board-canvas', { ref: 'WhiteBoard' }) : e._e(),
+                e.showCanvas ? t('white-board-tools', { ref: 'WhiteBoardTools' }) : e._e(),
+                e.showEaxmIframe ? t('div', {
+                    ref: 'exam-wrapper',
+                    staticClass: 'exam-container'
+                }, [t('iframe', {
+                    attrs: {
+                        id: 'class-examination',
+                        src: e.examUrl
+                    }
+                })]) : e._e()
+            ], 1);
+        }, de = [], me = (s('907a'), s('986a'), s('1d02'), s('3c5d'), s('1b3b'), s('3d71'), s('c6e3'), s('159b'), s('20bf'), s('e260'), s('ace4'), s('5cc6'), s('9a8c'), s('a975'), s('735e'), s('c1ac'), s('d139'), s('3a7b'), s('d5d6'), s('82f8'), s('e91f'), s('60bd'), s('5f96'), s('3280'), s('3fcc'), s('ca91'), s('25a1'), s('cd26'), s('2954'), s('649e'), s('219c'), s('170b'), s('b39a'), s('72f7'), s('a9e3'), s('5319'), function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                staticClass: 'h5coursewareContainer',
+                class: { topZindex: 'error' === e.coursewareState }
+            }, [
+                t('NeLoading', { attrs: { visible: 'loading' === e.coursewareState } }),
+                t('NeDialog', { attrs: { visible: 'error' === e.coursewareState } }, [
+                    t('h3', [e._v('Courseware failed to load')]),
+                    t('p', [
+                        e._v('Your courseware failed to load.'),
+                        t('br'),
+                        e._v('Please click "Reload" to try again')
                     ]),
-                    t('img', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: e.blackBoardImg,
-                                expression: 'blackBoardImg'
-                            }],
-                        staticClass: 'blackBoardImg',
-                        attrs: { src: e.blackBoardImg }
-                    }),
-                    t('ShowPhotoWall', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: e.photoWallImg,
-                                expression: 'photoWallImg'
-                            }],
-                        attrs: {
-                            options: e.options,
-                            photoWallImg: e.photoWallImg
-                        }
-                    }),
                     t('div', {
-                        ref: 'h5courseware',
-                        staticClass: 'h5courseware',
-                        attrs: { id: 'h5CoursewareContent' }
-                    })
-                ], 1);
-            }), he = [], pe = s('2909'), fe = (s('b680'), s('b047')), ve = s.n(fe), ge = s('1bff'), Ce = s.n(ge), be = s('ceab'), Se = function () {
-                var e = this, t = e._self._c;
-                return e.visible ? t('div', {
-                    staticClass: 'game-courseware-mask-bg',
-                    class: e.showCover
-                }, [e._m(0)]) : e._e();
-            }, we = [function () {
-                    var e = this, t = e._self._c;
-                    return t('div', { staticClass: 'loading-contenter' }, [
-                        t('div', { staticClass: 'loading-logo' }),
-                        t('div', { staticClass: 'loading-animation' })
-                    ]);
-                }], ye = {
-                name: 'NeLoading',
-                props: {
-                    visible: {
-                        type: Boolean,
-                        default: false
-                    },
-                    cover: {
-                        type: Boolean,
-                        default: true
+                        attrs: { slot: 'footer' },
+                        slot: 'footer'
+                    }, [t('button', {
+                        staticClass: 'button',
+                        on: { click: e.reloadCourseWare }
+                    }, [e._v('Reload')])])
+                ]),
+                t('img', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: e.blackBoardImg,
+                        expression: 'blackBoardImg'
+                    }],
+                    staticClass: 'blackBoardImg',
+                    attrs: { src: e.blackBoardImg }
+                }),
+                t('ShowPhotoWall', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: e.photoWallImg,
+                        expression: 'photoWallImg'
+                    }],
+                    attrs: {
+                        options: e.options,
+                        photoWallImg: e.photoWallImg
                     }
+                }),
+                t('div', {
+                    ref: 'h5courseware',
+                    staticClass: 'h5courseware',
+                    attrs: { id: 'h5CoursewareContent' }
+                })
+            ], 1);
+        }), he = [], pe = s('2909'), fe = (s('b680'), s('b047')), ve = s.n(fe), ge = s('1bff'), Ce = s.n(ge), be = s('ceab'), Se = function () {
+            var e = this, t = e._self._c;
+            return e.visible ? t('div', {
+                staticClass: 'game-courseware-mask-bg',
+                class: e.showCover
+            }, [e._m(0)]) : e._e();
+        }, we = [function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'loading-contenter' }, [
+                t('div', { staticClass: 'loading-logo' }),
+                t('div', { staticClass: 'loading-animation' })
+            ]);
+        }], ye = {
+            name: 'NeLoading',
+            props: {
+                visible: {
+                    type: Boolean,
+                    default: false
                 },
-                computed: {
-                    showCover: function () {
-                        return console.info('对象函数 showCover,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/loading/index.vue'), this.cover ? '' : 'no-mask';
-                    }
+                cover: {
+                    type: Boolean,
+                    default: true
                 }
-            }, Pe = ye, Ae = (s('82d3'), s('2877')), ke = Object(Ae.a)(Pe, Se, we, false, null, '588dbd9d', null), Le = ke.exports, Ie = function () {
-                var e = this, t = e._self._c;
-                return e.visible ? t('div', { staticClass: 'game-courseware-mask-bg' }, [t('div', { staticClass: 'dialog-contenter' }, [
-                        t('div', { staticClass: 'ne-dialog--body' }, [e._t('default')], 2),
-                        e.$slots.footer ? t('div', { staticClass: 'ne-dialog--footer' }, [e._t('footer')], 2) : e._e()
-                    ])]) : e._e();
-            }, xe = [], Oe = {
-                name: 'NeLoading',
-                props: {
-                    visible: {
-                        type: Boolean,
-                        default: false
-                    }
+            },
+            computed: {
+                showCover: function () {
+                    return console.info('对象函数 showCover,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/loading/index.vue'), this.cover ? '' : 'no-mask';
                 }
-            }, je = Oe, Te = (s('aed8'), Object(Ae.a)(je, Ie, xe, false, null, '3a8d0640', null)), Me = Te.exports, Re = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    ref: 'showPhotoWall',
-                    staticClass: 'showPhotoWall'
-                }, [
-                    t('NeLoading', {
-                        attrs: {
-                            visible: e.photoLoading,
-                            cover: false
-                        }
-                    }),
-                    e.photoLoading ? e._e() : t('img', {
-                        ref: 'photoImg',
-                        attrs: { src: e.photoWallImg }
-                    })
-                ], 1);
-            }, Ee = [], Ve = s('b795'), Ne = s.n(Ve), De = s('954e'), Be = s.n(De), Ue = s('a12d'), Ge = s.n(Ue), He = s('ac04'), _e = s.n(He), Fe = s('0555'), We = s.n(Fe), Ke = s('3605'), qe = s.n(Ke), ze = s('7a38'), Je = s.n(ze), Qe = s('3fa5'), Ze = s.n(Qe), Ye = {
-                name: 'showPhotoWall',
-                data: function () {
-                    return { photoLoading: true };
-                },
-                props: {
-                    photoWallImg: {
-                        type: String,
-                        default: ''
-                    },
-                    options: {
-                        type: Object,
-                        default: {}
+            }
+        }, Pe = ye, Ae = (s('82d3'), s('2877')), ke = Object(Ae.a)(Pe, Se, we, false, null, '588dbd9d', null), Le = ke.exports, Ie = function () {
+            var e = this, t = e._self._c;
+            return e.visible ? t('div', { staticClass: 'game-courseware-mask-bg' }, [t('div', { staticClass: 'dialog-contenter' }, [
+                t('div', { staticClass: 'ne-dialog--body' }, [e._t('default')], 2),
+                e.$slots.footer ? t('div', { staticClass: 'ne-dialog--footer' }, [e._t('footer')], 2) : e._e()
+            ])]) : e._e();
+        }, xe = [], Oe = {
+            name: 'NeLoading',
+            props: {
+                visible: {
+                    type: Boolean,
+                    default: false
+                }
+            }
+        }, je = Oe, Te = (s('aed8'), Object(Ae.a)(je, Ie, xe, false, null, '3a8d0640', null)), Me = Te.exports, Re = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                ref: 'showPhotoWall',
+                staticClass: 'showPhotoWall'
+            }, [
+                t('NeLoading', {
+                    attrs: {
+                        visible: e.photoLoading,
+                        cover: false
                     }
+                }),
+                e.photoLoading ? e._e() : t('img', {
+                    ref: 'photoImg',
+                    attrs: { src: e.photoWallImg }
+                })
+            ], 1);
+        }, Ee = [], Ve = s('b795'), Ne = s.n(Ve), De = s('954e'), Be = s.n(De), Ue = s('a12d'), Ge = s.n(Ue), He = s('ac04'), _e = s.n(He), Fe = s('0555'), We = s.n(Fe), Ke = s('3605'), qe = s.n(Ke), ze = s('7a38'), Je = s.n(ze), Qe = s('3fa5'), Ze = s.n(Qe), Ye = {
+            name: 'showPhotoWall',
+            data: function () {
+                return { photoLoading: true };
+            },
+            props: {
+                photoWallImg: {
+                    type: String,
+                    default: ''
                 },
-                components: { NeLoading: Le },
-                methods: {
-                    handlePhotoWall: function (e) {
-                        var t = this;
-                        console.info('对象函数 handlePhotoWall(imgUrl)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
-                        this.photoLoading = true;
-                        !this.options.isAudition && this.createLikeContainer();
-                        var s = new Image();
-                        s.src = e;
-                        s.onload = function () {
-                            var e = document.getElementById('photoWallLikeContainer');
-                            e && (e.style.display = 'block');
-                            t.photoLoading = false;
-                        };
-                    },
-                    createLikeContainer: function () {
-                        return Object(A.a)(Object(P.a)().mark(function e() {
-                            var t, s;
-                            return Object(P.a)().wrap(function (e) {
-                                while (1) {
-                                    switch (e.prev = e.next) {
+                options: {
+                    type: Object,
+                    default: {}
+                }
+            },
+            components: { NeLoading: Le },
+            methods: {
+                handlePhotoWall: function (e) {
+                    var t = this;
+                    console.info('对象函数 handlePhotoWall(imgUrl)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
+                    this.photoLoading = true;
+                    !this.options.isAudition && this.createLikeContainer();
+                    var s = new Image();
+                    s.src = e;
+                    s.onload = function () {
+                        var e = document.getElementById('photoWallLikeContainer');
+                        e && (e.style.display = 'block');
+                        t.photoLoading = false;
+                    };
+                },
+                createLikeContainer: function () {
+                    return Object(A.a)(Object(P.a)().mark(function e() {
+                        var t, s;
+                        return Object(P.a)().wrap(function (e) {
+                            while (1) {
+                                switch (e.prev = e.next) {
                                     case 0:
                                         if (console.info('对象函数 createLikeContainer,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue'), t = document.getElementById('photoWallLikeContainer'), !t) {
                                             e.next = 5;
@@ -2211,69 +2211,69 @@
                                     case 11:
                                     case 'end':
                                         return e.stop();
-                                    }
                                 }
-                            }, e);
-                        }))();
-                    },
-                    destroyLike: function () {
-                        return Object(A.a)(Object(P.a)().mark(function e() {
-                            var t;
-                            return Object(P.a)().wrap(function (e) {
-                                while (1) {
-                                    switch (e.prev = e.next) {
+                            }
+                        }, e);
+                    }))();
+                },
+                destroyLike: function () {
+                    return Object(A.a)(Object(P.a)().mark(function e() {
+                        var t;
+                        return Object(P.a)().wrap(function (e) {
+                            while (1) {
+                                switch (e.prev = e.next) {
                                     case 0:
                                         console.info('对象函数 destroyLike,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue'), t = document.getElementById('photoWallLikeContainer'), t && t.parentNode.removeChild(t), Ne.a.destroy();
                                     case 4:
                                     case 'end':
                                         return e.stop();
-                                    }
                                 }
-                            }, e);
-                        }))();
-                    }
-                },
-                beforeDestroy: function () {
-                    console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
-                    this.destroyLike();
-                },
-                watch: {
-                    photoWallImg: function (e) {
-                        console.info('对象函数 photoWallImg(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
-                        e ? this.handlePhotoWall(e) : this.destroyLike();
-                    }
+                            }
+                        }, e);
+                    }))();
                 }
-            }, Xe = Ye, $e = (s('db99'), s('d871'), Object(Ae.a)(Xe, Re, Ee, false, null, 'a369118a', null)), et = $e.exports, tt = s('c5ee'), st = {
-                props: [
-                    'ircconfig',
-                    'playback',
-                    'options'
-                ],
-                data: function () {
-                    return {
-                        coursewareInfo: null,
-                        coursewarePlayer: null,
-                        coursewareState: 'loading',
-                        blackBoardImg: null,
-                        photoWallImg: null,
-                        localUrl: null,
-                        coursewareStartLoadTime: 0,
-                        pageId: 0,
-                        currentCourseWareData: {}
-                    };
-                },
-                components: {
-                    NeLoading: Le,
-                    NeDialog: Me,
-                    ShowPhotoWall: et
-                },
-                created: function () {
-                    var e = this;
-                    return Object(A.a)(Object(P.a)().mark(function t() {
-                        var s, o, a, n, r, i;
-                        return Object(P.a)().wrap(function (t) {
-                            while (1) {
-                                switch (t.prev = t.next) {
+            },
+            beforeDestroy: function () {
+                console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
+                this.destroyLike();
+            },
+            watch: {
+                photoWallImg: function (e) {
+                    console.info('对象函数 photoWallImg(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/showPhotoWall.vue');
+                    e ? this.handlePhotoWall(e) : this.destroyLike();
+                }
+            }
+        }, Xe = Ye, $e = (s('db99'), s('d871'), Object(Ae.a)(Xe, Re, Ee, false, null, 'a369118a', null)), et = $e.exports, tt = s('c5ee'), st = {
+            props: [
+                'ircconfig',
+                'playback',
+                'options'
+            ],
+            data: function () {
+                return {
+                    coursewareInfo: null,
+                    coursewarePlayer: null,
+                    coursewareState: 'loading',
+                    blackBoardImg: null,
+                    photoWallImg: null,
+                    localUrl: null,
+                    coursewareStartLoadTime: 0,
+                    pageId: 0,
+                    currentCourseWareData: {}
+                };
+            },
+            components: {
+                NeLoading: Le,
+                NeDialog: Me,
+                ShowPhotoWall: et
+            },
+            created: function () {
+                var e = this;
+                return Object(A.a)(Object(P.a)().mark(function t() {
+                    var s, o, a, n, r, i;
+                    return Object(P.a)().wrap(function (t) {
+                        while (1) {
+                            switch (t.prev = t.next) {
                                 case 0:
                                     return s = Object(X.o)('planId'), t.next = 3, te.nativeApi.getClientInfo();
                                 case 3:
@@ -2292,8 +2292,8 @@
                                     return console.info('if(courseware.data.list.length === 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue'), e.coursewareState = 'error', e.sendLogger('error', '接口返回课件为空'), t.abrupt('return');
                                 case 19:
                                     if (r.data.list.forEach(function (t) {
-                                            16 == t.id && (e.coursewareInfo = t);
-                                        }), e.coursewareInfo) {
+                                        16 == t.id && (e.coursewareInfo = t);
+                                    }), e.coursewareInfo) {
                                         t.next = 25;
                                         break;
                                     }
@@ -2324,16 +2324,16 @@
                                                 return Object(P.a)().wrap(function (e) {
                                                     while (1) {
                                                         switch (e.prev = e.next) {
-                                                        case 0:
-                                                            try {
-                                                                s = s && JSON.parse(s);
-                                                                t(s);
-                                                            } catch (o) {
-                                                                console.error('error latest message', s);
-                                                            }
-                                                        case 1:
-                                                        case 'end':
-                                                            return e.stop();
+                                                            case 0:
+                                                                try {
+                                                                    s = s && JSON.parse(s);
+                                                                    t(s);
+                                                                } catch (o) {
+                                                                    console.error('error latest message', s);
+                                                                }
+                                                            case 1:
+                                                            case 'end':
+                                                                return e.stop();
                                                         }
                                                     }
                                                 }, e);
@@ -2352,30 +2352,30 @@
                                 case 37:
                                 case 'end':
                                     return t.stop();
-                                }
                             }
-                        }, t);
-                    }))();
-                },
-                mounted: function () {
-                    var e = this;
-                    this.$nextTick(function () {
-                        e.$bus.$on('liveRefresh', function () {
-                            console.info('箭头函数 监听 liveRefresh,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                            e.reloadCourseWare();
-                        });
-                        te.nativeApi.setWindowAble('maximize', true);
-                        te.nativeApi.setWindowAble('fullscreen', true);
-                        te.nativeApi.setFullScreen(true);
+                        }
+                    }, t);
+                }))();
+            },
+            mounted: function () {
+                var e = this;
+                this.$nextTick(function () {
+                    e.$bus.$on('liveRefresh', function () {
+                        console.info('箭头函数 监听 liveRefresh,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                        e.reloadCourseWare();
                     });
+                    te.nativeApi.setWindowAble('maximize', true);
+                    te.nativeApi.setWindowAble('fullscreen', true);
+                    te.nativeApi.setFullScreen(true);
+                });
+            },
+            methods: {
+                reloadCourseWare: function () {
+                    console.info('对象函数 reloadCourseWare,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                    this.coursewarePlayer.init(this.initCoursewareParams);
                 },
-                methods: {
-                    reloadCourseWare: function () {
-                        console.info('对象函数 reloadCourseWare,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                        this.coursewarePlayer.init(this.initCoursewareParams);
-                    },
-                    onEvent: function (e, t) {
-                        switch (console.info('对象函数 onEvent(event, data)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue'), e) {
+                onEvent: function (e, t) {
+                    switch (console.info('对象函数 onEvent(event, data)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue'), e) {
                         case 'error':
                             this.handleError(t);
                             break;
@@ -2385,64 +2385,64 @@
                         case 'statusChange':
                             this.handleStatusChange(t);
                             break;
+                    }
+                },
+                handleError: function () {
+                    console.info('对象函数 handleError,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                    this.coursewareState = 'error';
+                    this.$emit('courseWareReady', false);
+                    this.sendLogger('error', 'iframe 加载错误');
+                },
+                handleLoadingProgress: function (e) {
+                    L.a.send({
+                        tag: 'courseware',
+                        content: {
+                            msg: '课件加载中',
+                            data: e
                         }
-                    },
-                    handleError: function () {
-                        console.info('对象函数 handleError,filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                        this.coursewareState = 'error';
-                        this.$emit('courseWareReady', false);
-                        this.sendLogger('error', 'iframe 加载错误');
-                    },
-                    handleLoadingProgress: function (e) {
-                        L.a.send({
+                    });
+                    e.loaded / e.total * 100 >= this.initCoursewareParams.showPagePercent ? (this.$emit('courseWareReady', true), this.coursewareState = 'loaded') : this.coursewareState = 'loading';
+                },
+                handleStatusChange: function (e) {
+                    console.info('对象函数 handleStatusChange(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                    this.localUrl;
+                    this.$bus.$emit('corewareLoadStatus', e);
+                    'loaded' === e.status && this.sendLogger('loaded');
+                },
+                getAllStoredData: function (e) {
+                    console.info('对象函数 getAllStoredData(callback)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                },
+                handleSwitchCourseware: function (e) {
+                    if (console.info('对象函数 handleSwitchCourseware(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue'), e && e.currentCourseWare) {
+                        this.currentCourseWareData = e.currentCourseWare;
+                        var t = e.currentCourseWare, s = t.blackBoardType, o = t.imgUrl, a = t.jsString, n = t.photoWallImageArray, r = t.pageId;
+                        this.$bus.$emit('photoWallShow', false);
+                        this.blackBoardImg = this.photoWallImg = '';
+                        1 === s && o && (L.a.send({
+                            tag: 'courseware',
+                            content: { msg: '显示黑板' }
+                        }), this.blackBoardImg = o);
+                        3 === s && n && (this.photoWallImg = n[0], this.$bus.$emit('photoWallShow', true), L.a.send({
                             tag: 'courseware',
                             content: {
-                                msg: '课件加载中',
-                                data: e
+                                msg: '图片上墙',
+                                photoWallImg: this.photoWallImg
                             }
-                        });
-                        e.loaded / e.total * 100 >= this.initCoursewareParams.showPagePercent ? (this.$emit('courseWareReady', true), this.coursewareState = 'loaded') : this.coursewareState = 'loading';
-                    },
-                    handleStatusChange: function (e) {
-                        console.info('对象函数 handleStatusChange(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                        this.localUrl;
-                        this.$bus.$emit('corewareLoadStatus', e);
-                        'loaded' === e.status && this.sendLogger('loaded');
-                    },
-                    getAllStoredData: function (e) {
-                        console.info('对象函数 getAllStoredData(callback)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                    },
-                    handleSwitchCourseware: function (e) {
-                        if (console.info('对象函数 handleSwitchCourseware(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue'), e && e.currentCourseWare) {
-                            this.currentCourseWareData = e.currentCourseWare;
-                            var t = e.currentCourseWare, s = t.blackBoardType, o = t.imgUrl, a = t.jsString, n = t.photoWallImageArray, r = t.pageId;
-                            this.$bus.$emit('photoWallShow', false);
-                            this.blackBoardImg = this.photoWallImg = '';
-                            1 === s && o && (L.a.send({
-                                tag: 'courseware',
-                                content: { msg: '显示黑板' }
-                            }), this.blackBoardImg = o);
-                            3 === s && n && (this.photoWallImg = n[0], this.$bus.$emit('photoWallShow', true), L.a.send({
-                                tag: 'courseware',
-                                content: {
-                                    msg: '图片上墙',
-                                    photoWallImg: this.photoWallImg
-                                }
-                            }));
-                            0 === s && a && this.coursewarePlayer && this.coursewarePlayer.handleRoomItsMessage(JSON.parse(a));
-                            this.pageId = r;
-                            this.$emit('changePageId', r, this.currentCourseWareData);
-                        } else {
-                            console.info('if(!data || !data.currentCourseWare)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
-                        }
-                    },
-                    sendLogger: function (e) {
-                        var t = arguments, s = this;
-                        return Object(A.a)(Object(P.a)().mark(function o() {
-                            var a, n, r, i, c;
-                            return Object(P.a)().wrap(function (o) {
-                                while (1) {
-                                    switch (o.prev = o.next) {
+                        }));
+                        0 === s && a && this.coursewarePlayer && this.coursewarePlayer.handleRoomItsMessage(JSON.parse(a));
+                        this.pageId = r;
+                        this.$emit('changePageId', r, this.currentCourseWareData);
+                    } else {
+                        console.info('if(!data || !data.currentCourseWare)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/h5courseware/index.vue');
+                    }
+                },
+                sendLogger: function (e) {
+                    var t = arguments, s = this;
+                    return Object(A.a)(Object(P.a)().mark(function o() {
+                        var a, n, r, i, c;
+                        return Object(P.a)().wrap(function (o) {
+                            while (1) {
+                                switch (o.prev = o.next) {
                                     case 0:
                                         return a = t.length > 1 && void 0 !== t[1] ? t[1] : '', n = ((new Date().getTime() - s.coursewareStartLoadTime) / 1000).toFixed(2), r = s.localUrl ? s.localUrl : '', i = '', s.coursewareInfo && (r || (r = s.coursewareInfo.detail.compressIndexUrl), i = s.coursewareInfo.detail.id), c = {
                                             coursewareId: i,
@@ -2459,50 +2459,50 @@
                                     case 8:
                                     case 'end':
                                         return o.stop();
-                                    }
                                 }
-                            }, o);
-                        }))();
-                    }
+                            }
+                        }, o);
+                    }))();
                 }
-            }, ot = st, at = (s('bf30'), Object(Ae.a)(ot, me, he, false, null, 'f44e5934', null)), nt = at.exports, rt = (s('9b02'), s('7b1b')), it = s('ae97'), ct = s('f3f2'), lt = s.n(ct), ut = (s('bcac'), s('281f')), dt = s.n(ut), mt = (s('8d67'), s('c58d')), ht = (s('612a'), s('97a4')), pt = {
-                name: 'ppt-area',
-                components: {
-                    H5Courseware: nt,
-                    WhiteBoardCanvas: lt.a.WhiteBoardCanvas,
-                    WhiteBoardTools: dt.a
-                },
-                props: [
-                    'ircconfig',
-                    'isInClass',
-                    'options',
-                    'configs'
-                ],
-                data: function () {
-                    return {
-                        pageId: 0,
-                        showCanvas: false,
-                        examUrl: '',
-                        showEaxmIframe: false,
-                        useInfo: window.localStorage.getItem('userInfo'),
-                        isBanned: false,
-                        currentThickness: 4,
-                        currentLineDashed: false,
-                        eraserSize: 50,
-                        containerWidth: 0,
-                        containerHeight: 0,
-                        currentCourseWareData: {},
-                        currentDbKey: '',
-                        canvasScale: 2
-                    };
-                },
-                mixins: [rt.a],
-                mounted: function () {
-                    var e = this;
-                    return Object(A.a)(Object(P.a)().mark(function t() {
-                        return Object(P.a)().wrap(function (t) {
-                            while (1) {
-                                switch (t.prev = t.next) {
+            }
+        }, ot = st, at = (s('bf30'), Object(Ae.a)(ot, me, he, false, null, 'f44e5934', null)), nt = at.exports, rt = (s('9b02'), s('7b1b')), it = s('ae97'), ct = s('f3f2'), lt = s.n(ct), ut = (s('bcac'), s('281f')), dt = s.n(ut), mt = (s('8d67'), s('c58d')), ht = (s('612a'), s('97a4')), pt = {
+            name: 'ppt-area',
+            components: {
+                H5Courseware: nt,
+                WhiteBoardCanvas: lt.a.WhiteBoardCanvas,
+                WhiteBoardTools: dt.a
+            },
+            props: [
+                'ircconfig',
+                'isInClass',
+                'options',
+                'configs'
+            ],
+            data: function () {
+                return {
+                    pageId: 0,
+                    showCanvas: false,
+                    examUrl: '',
+                    showEaxmIframe: false,
+                    useInfo: window.localStorage.getItem('userInfo'),
+                    isBanned: false,
+                    currentThickness: 4,
+                    currentLineDashed: false,
+                    eraserSize: 50,
+                    containerWidth: 0,
+                    containerHeight: 0,
+                    currentCourseWareData: {},
+                    currentDbKey: '',
+                    canvasScale: 2
+                };
+            },
+            mixins: [rt.a],
+            mounted: function () {
+                var e = this;
+                return Object(A.a)(Object(P.a)().mark(function t() {
+                    return Object(P.a)().wrap(function (t) {
+                        while (1) {
+                            switch (t.prev = t.next) {
                                 case 0:
                                     return t.next = 2, Object(mt.a)();
                                 case 2:
@@ -2514,440 +2514,440 @@
                                 case 4:
                                 case 'end':
                                     return t.stop();
-                                }
                             }
-                        }, t);
-                    }))();
+                        }
+                    }, t);
+                }))();
+            },
+            destroy: function () {
+                console.info('对象函数 destroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                this.$bus.$off('classExamination');
+                window.removeEventListener('resize', this.setCanvasScale);
+            },
+            beforeDestroy: function () {
+                console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                this.$refs.WhiteBoard && this.$refs.WhiteBoard.uninit();
+            },
+            watch: {
+                showCanvas: function (e) {
+                    var t = this;
+                    console.info('对象函数 showCanvas(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    e && this.$nextTick(function () {
+                        t.initBoard();
+                    });
+                }
+            },
+            methods: {
+                init: function () {
+                    console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.listenerEvent();
                 },
-                destroy: function () {
-                    console.info('对象函数 destroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                    this.$bus.$off('classExamination');
-                    window.removeEventListener('resize', this.setCanvasScale);
-                },
-                beforeDestroy: function () {
-                    console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                    this.$refs.WhiteBoard && this.$refs.WhiteBoard.uninit();
-                },
-                watch: {
-                    showCanvas: function (e) {
-                        var t = this;
-                        console.info('对象函数 showCanvas(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        e && this.$nextTick(function () {
-                            t.initBoard();
+                initBoard: function () {
+                    var e = this;
+                    console.info('对象函数 initBoard,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.getCurrentCanvasSize();
+                    var t = {
+                        canvas: {
+                            penType: 'Bspline',
+                            strokeType: 'none',
+                            scale: this.canvasScale,
+                            pageChangeReport: false,
+                            sendRoomCanvasMessage: this.sendRoomCanvasMessage.bind(this),
+                            getHistoryMessage: this.getHistoryMessage.bind(this),
+                            enableKeyboardDelete: true,
+                            enableFittingShape: false
+                        },
+                        common: {
+                            liveId: String(this.options.planInfo.id),
+                            role: 'student',
+                            dataVersion: '1',
+                            courseId: '',
+                            userId: this.options.stuId + '',
+                            userName: this.options.nickName,
+                            screenWidth: this.containerWidth,
+                            screenHeight: this.containerHeight,
+                            roomIds: [this.options.roomlist[0]],
+                            fastFrequency: 2000,
+                            slowFrequency: 3000,
+                            serverTimestamp: +new Date() + this.options.timeOffset
+                        },
+                        accessControl: {
+                            showMenu: false,
+                            mode: 'itsAndCanvas',
+                            isBanned: this.isBanned,
+                            enableHistoryMessage: true,
+                            showCursor: true,
+                            enableRetrySend: true,
+                            enableLogSend: false,
+                            enableFittingShape: false
+                        }
+                    };
+                    if (this.sendLogger('大班涂鸦初始化参数params: '.concat(JSON.stringify(t))), this.$refs.WhiteBoard) {
+                        this.$refs.WhiteBoard.uninit();
+                        this.$refs.WhiteBoard.init(t);
+                        this.$refs.WhiteBoard.handleMouse('default');
+                        var s = this.$refs.WhiteBoard.getMainBoardHandWritting(), o = this.$refs.WhiteBoard.getPluginManager(), a = this.$refs.WhiteBoard;
+                        this.$refs.WhiteBoardTools.handleMenuEnable(false);
+                        this.$refs.WhiteBoardTools.init(a, s, o);
+                        var n = [
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            1000
+                        ];
+                        n.forEach(function (t) {
+                            1000 === t ? o.registerEvent('WhiteboardResize', t, e.toolsMessageHandler('WhiteboardResize', t)) : o.registerEvent('ReceiveBinaryData', t, e.toolsMessageHandler('ReceiveBinaryData', t));
                         });
+                        this.$refs.WhiteBoardTools.setWBToolsStatus(false);
+                        this.currentDbKey && this.initCatalogueInfo(this.currentDbKey);
                     }
                 },
-                methods: {
-                    init: function () {
-                        console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.listenerEvent();
-                    },
-                    initBoard: function () {
-                        var e = this;
-                        console.info('对象函数 initBoard,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.getCurrentCanvasSize();
-                        var t = {
-                            canvas: {
-                                penType: 'Bspline',
-                                strokeType: 'none',
-                                scale: this.canvasScale,
-                                pageChangeReport: false,
-                                sendRoomCanvasMessage: this.sendRoomCanvasMessage.bind(this),
-                                getHistoryMessage: this.getHistoryMessage.bind(this),
-                                enableKeyboardDelete: true,
-                                enableFittingShape: false
-                            },
-                            common: {
-                                liveId: String(this.options.planInfo.id),
-                                role: 'student',
-                                dataVersion: '1',
-                                courseId: '',
-                                userId: this.options.stuId + '',
-                                userName: this.options.nickName,
-                                screenWidth: this.containerWidth,
-                                screenHeight: this.containerHeight,
-                                roomIds: [this.options.roomlist[0]],
-                                fastFrequency: 2000,
-                                slowFrequency: 3000,
-                                serverTimestamp: +new Date() + this.options.timeOffset
-                            },
-                            accessControl: {
-                                showMenu: false,
-                                mode: 'itsAndCanvas',
-                                isBanned: this.isBanned,
-                                enableHistoryMessage: true,
-                                showCursor: true,
-                                enableRetrySend: true,
-                                enableLogSend: false,
-                                enableFittingShape: false
-                            }
-                        };
-                        if (this.sendLogger('大班涂鸦初始化参数params: '.concat(JSON.stringify(t))), this.$refs.WhiteBoard) {
-                            this.$refs.WhiteBoard.uninit();
-                            this.$refs.WhiteBoard.init(t);
-                            this.$refs.WhiteBoard.handleMouse('default');
-                            var s = this.$refs.WhiteBoard.getMainBoardHandWritting(), o = this.$refs.WhiteBoard.getPluginManager(), a = this.$refs.WhiteBoard;
-                            this.$refs.WhiteBoardTools.handleMenuEnable(false);
-                            this.$refs.WhiteBoardTools.init(a, s, o);
-                            var n = [
-                                11,
-                                12,
-                                13,
-                                14,
-                                15,
-                                1000
-                            ];
-                            n.forEach(function (t) {
-                                1000 === t ? o.registerEvent('WhiteboardResize', t, e.toolsMessageHandler('WhiteboardResize', t)) : o.registerEvent('ReceiveBinaryData', t, e.toolsMessageHandler('ReceiveBinaryData', t));
-                            });
-                            this.$refs.WhiteBoardTools.setWBToolsStatus(false);
-                            this.currentDbKey && this.initCatalogueInfo(this.currentDbKey);
-                        }
-                    },
-                    toolsMessageHandler: function (e, t) {
-                        var s = this;
-                        return console.info('对象函数 toolsMessageHandler(actionType, toolType)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), function (o) {
-                            s.$refs.WhiteBoardTools.receiveBinaryData(e, t, s.pageId, o);
-                        };
-                    },
-                    initCatalogueInfo: function (e) {
-                        console.info('对象函数 initCatalogueInfo(dbKey)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        var t = [{
-                                index: 0,
-                                isHide: 0,
-                                pageId: this.pageId,
-                                title: '标题',
-                                type: 'course'
-                            }];
+                toolsMessageHandler: function (e, t) {
+                    var s = this;
+                    return console.info('对象函数 toolsMessageHandler(actionType, toolType)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), function (o) {
+                        s.$refs.WhiteBoardTools.receiveBinaryData(e, t, s.pageId, o);
+                    };
+                },
+                initCatalogueInfo: function (e) {
+                    console.info('对象函数 initCatalogueInfo(dbKey)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    var t = [{
+                        index: 0,
+                        isHide: 0,
+                        pageId: this.pageId,
+                        title: '标题',
+                        type: 'course'
+                    }];
+                    try {
+                        this.$refs.WhiteBoard && (this.$refs.WhiteBoard.handleCatalogueChange(t), this.$refs.WhiteBoard.handleResetImComingDbkey(e), this.$refs.WhiteBoard.handlePageChange(String(this.pageId)), this.$refs.WhiteBoardTools.handlePageChange(String(this.pageId)));
+                    } catch (s) {
+                        console.error('initCatalogueInfo中JSON.parse异常捕获', s);
+                    }
+                },
+                sendRoomCanvasMessage: function (e, t) {
+                    var s = window.ChatClient;
+                    s.RoomChatManager.sendRoomBinMessage([this.options.roomlist[0]], t.dbKey, t.keyMsgId, t.content);
+                    this.sendLogger('sendRoomCanvasMessage: '.concat(JSON.stringify(t)));
+                },
+                getHistoryMessage: function (e) {
+                    var t = this;
+                    console.info('对象函数 getHistoryMessage(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    var s = e.info[0].dbKey;
+                    this.configs;
+                    this.ircconfig;
+                    this.options;
+                    this.sendLogger('发送消息申请拉取数据dbkey: '.concat(s));
+                    Object(ht.a)({
+                        dbkey: s,
+                        appId: this.configs.ircAk,
+                        sk: this.configs.ircSk,
+                        businessId: 3,
+                        liveId: this.options.planInfo.id,
+                        ircApiHost: this.configs.ircApiHost
+                    }).then(function (e) {
+                        console.info('箭头函数 _getHistoryMessage的then(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
                         try {
-                            this.$refs.WhiteBoard && (this.$refs.WhiteBoard.handleCatalogueChange(t), this.$refs.WhiteBoard.handleResetImComingDbkey(e), this.$refs.WhiteBoard.handlePageChange(String(this.pageId)), this.$refs.WhiteBoardTools.handlePageChange(String(this.pageId)));
+                            t.$refs.WhiteBoard && t.$refs.WhiteBoard.handleRecoverHistoryMessage([{ content: e }]);
                         } catch (s) {
-                            console.error('initCatalogueInfo中JSON.parse异常捕获', s);
+                            console.error(s);
+                            t.sendLogger('涂鸦sdk报错 '.concat(s));
                         }
-                    },
-                    sendRoomCanvasMessage: function (e, t) {
-                        var s = window.ChatClient;
-                        s.RoomChatManager.sendRoomBinMessage([this.options.roomlist[0]], t.dbKey, t.keyMsgId, t.content);
-                        this.sendLogger('sendRoomCanvasMessage: '.concat(JSON.stringify(t)));
-                    },
-                    getHistoryMessage: function (e) {
-                        var t = this;
-                        console.info('对象函数 getHistoryMessage(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        var s = e.info[0].dbKey;
-                        this.configs;
-                        this.ircconfig;
-                        this.options;
-                        this.sendLogger('发送消息申请拉取数据dbkey: '.concat(s));
-                        Object(ht.a)({
-                            dbkey: s,
-                            appId: this.configs.ircAk,
-                            sk: this.configs.ircSk,
-                            businessId: 3,
-                            liveId: this.options.planInfo.id,
-                            ircApiHost: this.configs.ircApiHost
-                        }).then(function (e) {
-                            console.info('箭头函数 _getHistoryMessage的then(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                            try {
-                                t.$refs.WhiteBoard && t.$refs.WhiteBoard.handleRecoverHistoryMessage([{ content: e }]);
-                            } catch (s) {
-                                console.error(s);
-                                t.sendLogger('涂鸦sdk报错 '.concat(s));
-                            }
-                        }).catch(function (e) {
-                            console.info('箭头函数 catch(err)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    }).catch(function (e) {
+                        console.info('箭头函数 catch(err)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    });
+                },
+                handleRoomCanvasMessage: function (e) {
+                    this.sendLogger('处理接收到的实时涂鸦消息: '.concat(e.dbKey, ', ').concat(e.msgId, '}'));
+                    this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleRoomCanvasMessage(e);
+                },
+                onSendRoomBinMessageResp: function (e) {
+                    console.info('对象函数 onSendRoomBinMessageResp(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    0 === e.code ? this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleSendMessageSuccess(e.dbKey, e.keyMsgId) : this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleSendMessageError(e.code, e.msg, e.dbKey, e.keyMsgId);
+                },
+                onGetRoomHistoryBinMessageNotice: function (e) {
+                    console.info('对象函数 onGetRoomHistoryBinMessageNotice(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.sendLogger('处理拉取到的涂鸦历史消息');
+                    var t = e;
+                    if (Array.isArray(t)) {
+                        t.forEach(function (e, s) {
+                            t[s].content = Uint8Array.from(e.content);
                         });
-                    },
-                    handleRoomCanvasMessage: function (e) {
-                        this.sendLogger('处理接收到的实时涂鸦消息: '.concat(e.dbKey, ', ').concat(e.msgId, '}'));
-                        this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleRoomCanvasMessage(e);
-                    },
-                    onSendRoomBinMessageResp: function (e) {
-                        console.info('对象函数 onSendRoomBinMessageResp(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        0 === e.code ? this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleSendMessageSuccess(e.dbKey, e.keyMsgId) : this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleSendMessageError(e.code, e.msg, e.dbKey, e.keyMsgId);
-                    },
-                    onGetRoomHistoryBinMessageNotice: function (e) {
-                        console.info('对象函数 onGetRoomHistoryBinMessageNotice(res)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.sendLogger('处理拉取到的涂鸦历史消息');
-                        var t = e;
-                        if (Array.isArray(t)) {
-                            t.forEach(function (e, s) {
-                                t[s].content = Uint8Array.from(e.content);
-                            });
-                            try {
-                                this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleRecoverHistoryMessage([{ content: t }]);
-                            } catch (s) {
-                                console.error('涂鸦sdk报错', s);
-                            }
-                        } else {
-                            console.error('涂鸦历史消息格式错误');
+                        try {
+                            this.$refs.WhiteBoard && this.$refs.WhiteBoard.handleRecoverHistoryMessage([{ content: t }]);
+                        } catch (s) {
+                            console.error('涂鸦sdk报错', s);
                         }
-                    },
-                    listenerEvent: function () {
-                        var e = this;
-                        console.info('对象函数 listenerEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.$bus.$on('classExamination', function (t) {
-                            if (console.info('箭头函数 监听 classExamination(examinationInfo)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), L.a.send({
-                                    tag: 'student.Interact',
-                                    content: {
-                                        msg: '收到课中考试互动',
-                                        examinationInfo: t
-                                    }
-                                }), t.pub) {
-                                e.showEaxmIframe = true;
-                                e.$bus.$emit('setExaminationStatus', true);
-                                var s = e.options.timeOffset, o = +new Date(), a = parseInt((o + s) / 1000), n = a - t.beginTime - 60, r = t.beginTime + t.totaltime - a, i = e.useInfo ? JSON.parse(e.useInfo).unifiedAccessToken : '';
-                                if (1 === t.status && n <= 0 && (r = t.totaltime), !e.examUrl) {
-                                    var c = 'from=live&source=pcLargeClass&classId='.concat(e.options.classId, '&studentId=').concat(e.options.stuId, '&token=').concat(i), l = 'duration='.concat(t.totaltime, '&completed=').concat(3 === t.status ? 1 : 0, '&isLate=').concat(n > 0 ? 1 : 0, '&remainSeconds=').concat(r);
-                                    e.examUrl = ''.concat(t.examUrl, '&platform=3&').concat(c, '&').concat(l);
-                                }
-                                2 === t.status ? e.$nextTick(function () {
-                                    document.getElementById('class-examination').contentWindow.postMessage({
-                                        type: 'updateRemainSecondsTo',
-                                        data: { remainSeconds: r }
-                                    }, '*');
-                                }) : 3 === t.status && e.$nextTick(function () {
-                                    document.getElementById('class-examination').contentWindow.postMessage({ type: 'completeExam' }, '*');
-                                });
-                            } else {
-                                e.showEaxmIframe = false;
-                                e.examUrl = '';
-                                e.$bus.$emit('setExaminationStatus', false);
-                            }
-                        });
-                    },
-                    sendSubmitEaxmToTeacher: function () {
-                        console.info('对象函数 sendSubmitEaxmToTeacher,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        var e = {
-                            roomlist: this.options.roomlist,
-                            content: {
-                                type: 128,
-                                name: this.options.nickName,
-                                msg: '',
-                                submit: true
-                            },
-                            chatMsgPriority: 99
-                        };
-                        2 !== this.options.classType ? it.a.sendRoomMessage(e) : this.thinkClass.SignalService.sendRoomMessage(e);
-                    },
-                    courseWareReady: function (e) {
-                        var t = this;
-                        console.info('对象函数 courseWareReady(flag)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.showCanvas = e;
-                        e && this.$nextTick(function () {
-                            t.setCanvasScale();
-                        });
-                        L.a.send({
-                            tag: 'init',
-                            content: { msg: '课件准备状态'.concat(e) }
-                        });
-                    },
-                    setCanvasScale: ve()(function () {
-                        var e = this;
-                        this.showCanvas ? setTimeout(function () {
-                            e.getCurrentCanvasSize();
-                            e.$refs.WhiteBoard && e.$refs.WhiteBoard.handleResizeCanvas(e.containerWidth, e.containerHeight, true);
-                        }, 0) : console.info('if(!this.showCanvas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                    }, 300),
-                    getCurrentCanvasSize: function () {
-                        var e = this;
-                        console.info('对象函数 getCurrentCanvasSize,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        var t = document.getElementById('ppt-area-container');
-                        this.containerWidth = Math.round(Number(window.getComputedStyle(t).width.replace('px', '')));
-                        this.containerHeight = 3 * this.containerWidth / 4;
-                        var s = Math.round(Number(window.getComputedStyle(t).height.replace('px', ''))), o = (s - this.containerHeight) / 2, a = 0;
-                        if (o < 0) {
-                            var n = 4 * s / 3;
-                            this.containerHeight = s;
-                            a = (this.containerWidth - n) / 2;
-                            o = 0;
-                            this.containerWidth = n;
-                        }
-                        this.$nextTick(function () {
-                            var t = document.querySelector('.ppt-area-container .container');
-                            t.style.top = ''.concat(o, 'px');
-                            t.style.left = ''.concat(a, 'px');
-                            var s = document.querySelector('.showPhotoWall');
-                            s && (s.style.top = ''.concat(o, 'px'), s.style.left = ''.concat(a, 'px'), s.style.width = ''.concat(e.containerWidth, 'px'), s.style.height = ''.concat(e.containerHeight, 'px'));
-                            var n = document.querySelector('.blackBoardImg');
-                            n && (n.style.top = ''.concat(o, 'px'), n.style.left = ''.concat(a, 'px'), n.style.width = ''.concat(e.containerWidth, 'px'), n.style.height = ''.concat(e.containerHeight, 'px'));
-                        });
-                        this.containerWidth;
-                        this.containerHeight;
-                        this.sendLogger('获取当前课件区域的宽高(宽\uFF1A'.concat(this.containerWidth, ', 高\uFF1A').concat(this.containerHeight, '\uFF09'));
-                    },
-                    clear: function () {
-                        console.info('对象函数 clear,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                    },
-                    changePageId: function (e, t) {
-                        var s = this;
-                        console.info('对象函数 changePageId(id, currentCourseWareData)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
-                        this.pageId = e;
-                        this.currentCourseWareData = t;
-                        var o = t.specificLiveKey, a = t.courseWareId, n = t.pageId;
-                        if (!o || !a || !n) {
-                            return console.info('if(!specificLiveKey || !courseWareId || !pageId)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), void console.error('课件信息错误', t);
-                        }
-                        var r = ''.concat(o, '_').concat(a, '_').concat(n);
-                        this.currentDbKey = r;
-                        this.$nextTick(function () {
-                            s.initCatalogueInfo(r);
-                        });
-                    },
-                    sendLogger: function (e) {
-                        L.a.send({
-                            tag: 'largeClass-graffiti',
-                            content: { msg: e }
-                        });
+                    } else {
+                        console.error('涂鸦历史消息格式错误');
                     }
+                },
+                listenerEvent: function () {
+                    var e = this;
+                    console.info('对象函数 listenerEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.$bus.$on('classExamination', function (t) {
+                        if (console.info('箭头函数 监听 classExamination(examinationInfo)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), L.a.send({
+                            tag: 'student.Interact',
+                            content: {
+                                msg: '收到课中考试互动',
+                                examinationInfo: t
+                            }
+                        }), t.pub) {
+                            e.showEaxmIframe = true;
+                            e.$bus.$emit('setExaminationStatus', true);
+                            var s = e.options.timeOffset, o = +new Date(), a = parseInt((o + s) / 1000), n = a - t.beginTime - 60, r = t.beginTime + t.totaltime - a, i = e.useInfo ? JSON.parse(e.useInfo).unifiedAccessToken : '';
+                            if (1 === t.status && n <= 0 && (r = t.totaltime), !e.examUrl) {
+                                var c = 'from=live&source=pcLargeClass&classId='.concat(e.options.classId, '&studentId=').concat(e.options.stuId, '&token=').concat(i), l = 'duration='.concat(t.totaltime, '&completed=').concat(3 === t.status ? 1 : 0, '&isLate=').concat(n > 0 ? 1 : 0, '&remainSeconds=').concat(r);
+                                e.examUrl = ''.concat(t.examUrl, '&platform=3&').concat(c, '&').concat(l);
+                            }
+                            2 === t.status ? e.$nextTick(function () {
+                                document.getElementById('class-examination').contentWindow.postMessage({
+                                    type: 'updateRemainSecondsTo',
+                                    data: { remainSeconds: r }
+                                }, '*');
+                            }) : 3 === t.status && e.$nextTick(function () {
+                                document.getElementById('class-examination').contentWindow.postMessage({ type: 'completeExam' }, '*');
+                            });
+                        } else {
+                            e.showEaxmIframe = false;
+                            e.examUrl = '';
+                            e.$bus.$emit('setExaminationStatus', false);
+                        }
+                    });
+                },
+                sendSubmitEaxmToTeacher: function () {
+                    console.info('对象函数 sendSubmitEaxmToTeacher,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    var e = {
+                        roomlist: this.options.roomlist,
+                        content: {
+                            type: 128,
+                            name: this.options.nickName,
+                            msg: '',
+                            submit: true
+                        },
+                        chatMsgPriority: 99
+                    };
+                    2 !== this.options.classType ? it.a.sendRoomMessage(e) : this.thinkClass.SignalService.sendRoomMessage(e);
+                },
+                courseWareReady: function (e) {
+                    var t = this;
+                    console.info('对象函数 courseWareReady(flag)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.showCanvas = e;
+                    e && this.$nextTick(function () {
+                        t.setCanvasScale();
+                    });
+                    L.a.send({
+                        tag: 'init',
+                        content: { msg: '课件准备状态'.concat(e) }
+                    });
+                },
+                setCanvasScale: ve()(function () {
+                    var e = this;
+                    this.showCanvas ? setTimeout(function () {
+                        e.getCurrentCanvasSize();
+                        e.$refs.WhiteBoard && e.$refs.WhiteBoard.handleResizeCanvas(e.containerWidth, e.containerHeight, true);
+                    }, 0) : console.info('if(!this.showCanvas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                }, 300),
+                getCurrentCanvasSize: function () {
+                    var e = this;
+                    console.info('对象函数 getCurrentCanvasSize,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    var t = document.getElementById('ppt-area-container');
+                    this.containerWidth = Math.round(Number(window.getComputedStyle(t).width.replace('px', '')));
+                    this.containerHeight = 3 * this.containerWidth / 4;
+                    var s = Math.round(Number(window.getComputedStyle(t).height.replace('px', ''))), o = (s - this.containerHeight) / 2, a = 0;
+                    if (o < 0) {
+                        var n = 4 * s / 3;
+                        this.containerHeight = s;
+                        a = (this.containerWidth - n) / 2;
+                        o = 0;
+                        this.containerWidth = n;
+                    }
+                    this.$nextTick(function () {
+                        var t = document.querySelector('.ppt-area-container .container');
+                        t.style.top = ''.concat(o, 'px');
+                        t.style.left = ''.concat(a, 'px');
+                        var s = document.querySelector('.showPhotoWall');
+                        s && (s.style.top = ''.concat(o, 'px'), s.style.left = ''.concat(a, 'px'), s.style.width = ''.concat(e.containerWidth, 'px'), s.style.height = ''.concat(e.containerHeight, 'px'));
+                        var n = document.querySelector('.blackBoardImg');
+                        n && (n.style.top = ''.concat(o, 'px'), n.style.left = ''.concat(a, 'px'), n.style.width = ''.concat(e.containerWidth, 'px'), n.style.height = ''.concat(e.containerHeight, 'px'));
+                    });
+                    this.containerWidth;
+                    this.containerHeight;
+                    this.sendLogger('获取当前课件区域的宽高(宽\uFF1A'.concat(this.containerWidth, ', 高\uFF1A').concat(this.containerHeight, '\uFF09'));
+                },
+                clear: function () {
+                    console.info('对象函数 clear,filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                },
+                changePageId: function (e, t) {
+                    var s = this;
+                    console.info('对象函数 changePageId(id, currentCourseWareData)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue');
+                    this.pageId = e;
+                    this.currentCourseWareData = t;
+                    var o = t.specificLiveKey, a = t.courseWareId, n = t.pageId;
+                    if (!o || !a || !n) {
+                        return console.info('if(!specificLiveKey || !courseWareId || !pageId)为true触发return,path: /renderer/components/Classroom/LargeClass/base/players/components/ppt/index.vue'), void console.error('课件信息错误', t);
+                    }
+                    var r = ''.concat(o, '_').concat(a, '_').concat(n);
+                    this.currentDbKey = r;
+                    this.$nextTick(function () {
+                        s.initCatalogueInfo(r);
+                    });
+                },
+                sendLogger: function (e) {
+                    L.a.send({
+                        tag: 'largeClass-graffiti',
+                        content: { msg: e }
+                    });
                 }
-            }, ft = pt, vt = (s('9280'), Object(Ae.a)(ft, ue, de, false, null, '7a17753a', null)), gt = vt.exports, Ct = s('3b29'), bt = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'live-video-wrapper' }, [
-                    t('div', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: e.teacherVideoStatus,
-                                expression: 'teacherVideoStatus'
-                            }],
-                        ref: 'liveVideoContainer',
-                        staticClass: 'live-video-container',
-                        attrs: { id: 'liveVideoContainer' }
-                    }),
-                    t('div', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: !e.teacherVideoStatus,
-                                expression: '!teacherVideoStatus'
-                            }],
-                        staticClass: 'live-bg'
-                    }),
-                    e.audioMuteStatus ? t('div', { staticClass: 'microphone-container' }, [t('MicrophoneStatus')], 1) : e._e(),
-                    e.teacherOnStageStatus ? t('div', { staticClass: 'teacher-on-stage' }, [t('div', { staticClass: 'wrapper' }, [
-                            t('div', { staticClass: 'teacher-avatar' }, [t('img', { attrs: { src: e.teacherAvatar } })]),
-                            t('div', { staticClass: 'stage-tips' }, [e._v('On Stage')])
-                        ])]) : e._e()
-                ]);
-            }, St = [], wt = s('6543'), yt = function () {
-                function e() {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/rtcClass.js');
-                    Object(g.a)(this, e);
-                    this.rtcConfig = t.rtcConfig;
-                    this.teacherVideoUid = Number(this.rtcConfig.teacherVideoUid);
-                    this.teacherAudioUid = Number(this.rtcConfig.teacherAudioUid);
-                }
-                return Object(C.a)(e, [
-                    {
-                        key: 'createTeacherRtcChannel',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            }
+        }, ft = pt, vt = (s('9280'), Object(Ae.a)(ft, ue, de, false, null, '7a17753a', null)), gt = vt.exports, Ct = s('3b29'), bt = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'live-video-wrapper' }, [
+                t('div', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: e.teacherVideoStatus,
+                        expression: 'teacherVideoStatus'
+                    }],
+                    ref: 'liveVideoContainer',
+                    staticClass: 'live-video-container',
+                    attrs: { id: 'liveVideoContainer' }
+                }),
+                t('div', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: !e.teacherVideoStatus,
+                        expression: '!teacherVideoStatus'
+                    }],
+                    staticClass: 'live-bg'
+                }),
+                e.audioMuteStatus ? t('div', { staticClass: 'microphone-container' }, [t('MicrophoneStatus')], 1) : e._e(),
+                e.teacherOnStageStatus ? t('div', { staticClass: 'teacher-on-stage' }, [t('div', { staticClass: 'wrapper' }, [
+                    t('div', { staticClass: 'teacher-avatar' }, [t('img', { attrs: { src: e.teacherAvatar } })]),
+                    t('div', { staticClass: 'stage-tips' }, [e._v('On Stage')])
+                ])]) : e._e()
+            ]);
+        }, St = [], wt = s('6543'), yt = function () {
+            function e() {
+                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/rtcClass.js');
+                Object(g.a)(this, e);
+                this.rtcConfig = t.rtcConfig;
+                this.teacherVideoUid = Number(this.rtcConfig.teacherVideoUid);
+                this.teacherAudioUid = Number(this.rtcConfig.teacherAudioUid);
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'createTeacherRtcChannel',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return t = window.RTC_COMMON.rtcEngine, s = t.createChannel(), s.muteLocalAudioStream(true), s.muteLocalVideoStream(true), this.teacherRtcChannel = s, window.RTC_COMMON.teacherRtcChannel = s, e.abrupt('return', s);
                                         case 7:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 createTeacherRtcChannel, filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/rtcClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'createVideo',
-                        value: function (e) {
-                            this.teacherRtcChannel.setupRemoteVideo(this.teacherVideoUid, document.getElementById(e));
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 createTeacherRtcChannel, filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/rtcClass.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'destroyVideo',
-                        value: function () {
-                            this.teacherRtcChannel.destroyRemoteVideo(this.teacherVideoUid, document.getElementById(this.teacherVideoUid));
-                        }
-                    },
-                    {
-                        key: 'muteTeacherChannelAudio',
-                        value: function (e) {
-                            this.teacherRtcChannel.muteAllRemoteAudioStreams(e);
-                        }
-                    }
-                ]), e;
-            }(), Pt = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'microphone-status' }, [
-                    t('div', { staticClass: 'icon-mute' }),
-                    t('dic', { staticClass: 'status-text' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.players.mute')) + ' ')])
-                ], 1);
-            }, At = [], kt = (s('e4e0'), {}), Lt = Object(Ae.a)(kt, Pt, At, false, null, '175be238', null), It = Lt.exports, xt = {
-                name: 'liveVideo',
-                components: { MicrophoneStatus: It },
-                props: {
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'createVideo',
+                    value: function (e) {
+                        this.teacherRtcChannel.setupRemoteVideo(this.teacherVideoUid, document.getElementById(e));
                     }
                 },
-                data: function () {
-                    var e = this.options.teacherInfo.avatar;
-                    return {
-                        audioMuteStatus: false,
-                        teacherAvatar: e,
-                        teacherOnStageStatus: false,
-                        teacherVideoStatus: true,
-                        teacherRtcSensor: null
-                    };
+                {
+                    key: 'destroyVideo',
+                    value: function () {
+                        this.teacherRtcChannel.destroyRemoteVideo(this.teacherVideoUid, document.getElementById(this.teacherVideoUid));
+                    }
                 },
-                mounted: function () {
-                    this.init();
+                {
+                    key: 'muteTeacherChannelAudio',
+                    value: function (e) {
+                        this.teacherRtcChannel.muteAllRemoteAudioStreams(e);
+                    }
+                }
+            ]), e;
+        }(), Pt = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'microphone-status' }, [
+                t('div', { staticClass: 'icon-mute' }),
+                t('dic', { staticClass: 'status-text' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.players.mute')) + ' ')])
+            ], 1);
+        }, At = [], kt = (s('e4e0'), {}), Lt = Object(Ae.a)(kt, Pt, At, false, null, '175be238', null), It = Lt.exports, xt = {
+            name: 'liveVideo',
+            components: { MicrophoneStatus: It },
+            props: {
+                options: {
+                    type: Object,
+                    default: function () {
+                        return {};
+                    }
                 },
-                methods: {
-                    init: function () {
-                        console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                        this.rtcClass = new yt({ rtcConfig: this.rtcConfig });
-                        this.initTeacherRtcChannel();
-                        this.bindEvent();
-                    },
-                    bindEvent: function () {
-                        var e = this;
-                        console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                        this.$bus.$on('player.muteTeacherChannelAudio', function (t) {
-                            console.info('箭头函数 监听 player.muteTeacherChannelAudio(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                            e.rtcClass.muteTeacherChannelAudio(t);
-                        });
-                        this.$bus.$on('stageLeavelChannel', function () {
-                            console.info('箭头函数 监听 stageLeavelChannel,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                            e.rtcClass.destroyVideo();
-                            e.teacherVideoStatus = false;
-                        });
-                        this.$bus.$on('teacherOnStageStatus', function (t) {
-                            console.info('箭头函数 监听 teacherOnStageStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                            e.handleTeacherOnStage(t);
-                        });
-                    },
-                    initTeacherRtcChannel: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                rtcConfig: {
+                    type: Object,
+                    default: function () {
+                        return {};
+                    }
+                }
+            },
+            data: function () {
+                var e = this.options.teacherInfo.avatar;
+                return {
+                    audioMuteStatus: false,
+                    teacherAvatar: e,
+                    teacherOnStageStatus: false,
+                    teacherVideoStatus: true,
+                    teacherRtcSensor: null
+                };
+            },
+            mounted: function () {
+                this.init();
+            },
+            methods: {
+                init: function () {
+                    console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                    this.rtcClass = new yt({ rtcConfig: this.rtcConfig });
+                    this.initTeacherRtcChannel();
+                    this.bindEvent();
+                },
+                bindEvent: function () {
+                    var e = this;
+                    console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                    this.$bus.$on('player.muteTeacherChannelAudio', function (t) {
+                        console.info('箭头函数 监听 player.muteTeacherChannelAudio(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                        e.rtcClass.muteTeacherChannelAudio(t);
+                    });
+                    this.$bus.$on('stageLeavelChannel', function () {
+                        console.info('箭头函数 监听 stageLeavelChannel,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                        e.rtcClass.destroyVideo();
+                        e.teacherVideoStatus = false;
+                    });
+                    this.$bus.$on('teacherOnStageStatus', function (t) {
+                        console.info('箭头函数 监听 teacherOnStageStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                        e.handleTeacherOnStage(t);
+                    });
+                },
+                initTeacherRtcChannel: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initTeacherRtcChannel,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue'), t.next = 3, e.rtcClass.createTeacherRtcChannel();
                                     case 3:
@@ -3000,104 +3000,104 @@
                                     case 18:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleTeacherOnStage: function (e) {
-                        console.info('对象函数 handleTeacherOnStage(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
-                        this.teacherOnStageStatus = e;
-                        e ? (this.rtcClass.destroyVideo(), this.teacherVideoStatus = false) : (this.rtcClass.createVideo('liveVideoContainer'), this.teacherVideoStatus = true);
-                    },
-                    sendLogger: function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
-                        L.a.send({
-                            tag: 'liveVideo',
-                            level: s,
-                            content: {
-                                msg: e,
-                                parmas: t
                             }
-                        });
+                        }, t);
+                    }))();
+                },
+                handleTeacherOnStage: function (e) {
+                    console.info('对象函数 handleTeacherOnStage(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/largeClass.vue');
+                    this.teacherOnStageStatus = e;
+                    e ? (this.rtcClass.destroyVideo(), this.teacherVideoStatus = false) : (this.rtcClass.createVideo('liveVideoContainer'), this.teacherVideoStatus = true);
+                },
+                sendLogger: function (e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
+                    L.a.send({
+                        tag: 'liveVideo',
+                        level: s,
+                        content: {
+                            msg: e,
+                            parmas: t
+                        }
+                    });
+                }
+            }
+        }, Ot = xt, jt = (s('6cad'), Object(Ae.a)(Ot, bt, St, false, null, '572b0424', null)), Tt = jt.exports, Mt = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'live-video-wrapper' }, [
+                t('div', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: e.teacherVideoStatus,
+                        expression: 'teacherVideoStatus'
+                    }],
+                    ref: 'liveVideoContainer',
+                    staticClass: 'live-video-container',
+                    attrs: { id: 'liveVideoContainer' }
+                }),
+                t('div', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: !e.teacherVideoStatus,
+                        expression: '!teacherVideoStatus'
+                    }],
+                    staticClass: 'live-bg'
+                }),
+                e.audioMuteStatus ? t('div', { staticClass: 'microphone-container' }, [t('MicrophoneStatus')], 1) : e._e()
+            ]);
+        }, Rt = [], Et = {
+            name: 'liveVideo',
+            components: { MicrophoneStatus: It },
+            props: {
+                options: {
+                    type: Object,
+                    default: function () {
+                        return {};
+                    }
+                },
+                rtcConfig: {
+                    type: Object,
+                    default: function () {
+                        return {};
                     }
                 }
-            }, Ot = xt, jt = (s('6cad'), Object(Ae.a)(Ot, bt, St, false, null, '572b0424', null)), Tt = jt.exports, Mt = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'live-video-wrapper' }, [
-                    t('div', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: e.teacherVideoStatus,
-                                expression: 'teacherVideoStatus'
-                            }],
-                        ref: 'liveVideoContainer',
-                        staticClass: 'live-video-container',
-                        attrs: { id: 'liveVideoContainer' }
-                    }),
-                    t('div', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: !e.teacherVideoStatus,
-                                expression: '!teacherVideoStatus'
-                            }],
-                        staticClass: 'live-bg'
-                    }),
-                    e.audioMuteStatus ? t('div', { staticClass: 'microphone-container' }, [t('MicrophoneStatus')], 1) : e._e()
-                ]);
-            }, Rt = [], Et = {
-                name: 'liveVideo',
-                components: { MicrophoneStatus: It },
-                props: {
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
-                    }
+            },
+            data: function () {
+                return {
+                    audioMuteStatus: false,
+                    teacherVideoUid: Number(this.rtcConfig.teacherVideoUid),
+                    teacherAudioUid: Number(this.rtcConfig.teacherAudioUid),
+                    teacherVideoStatus: false
+                };
+            },
+            mounted: function () {
+                this.init();
+            },
+            methods: {
+                init: function () {
+                    console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
+                    this.bindEvent();
                 },
-                data: function () {
-                    return {
-                        audioMuteStatus: false,
-                        teacherVideoUid: Number(this.rtcConfig.teacherVideoUid),
-                        teacherAudioUid: Number(this.rtcConfig.teacherAudioUid),
-                        teacherVideoStatus: false
-                    };
+                bindEvent: function () {
+                    var e = this;
+                    console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
+                    this.$bus.$on('player.muteTeacherChannelAudio', function (t) {
+                        console.info('箭头函数 监听 player.muteTeacherChannelAudio(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
+                        window.RTC_COMMON.classRtcChannel.muteRemoteAudioStream(e.teacherAudioUid, t);
+                    });
+                    this.$bus.$on('player.smallClassRtcReady', function (t) {
+                        console.info('箭头函数 监听 player.smallClassRtcReady(classRtcChannel)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
+                        e.initTeacherRtcChannel(t);
+                    });
                 },
-                mounted: function () {
-                    this.init();
-                },
-                methods: {
-                    init: function () {
-                        console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
-                        this.bindEvent();
-                    },
-                    bindEvent: function () {
-                        var e = this;
-                        console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
-                        this.$bus.$on('player.muteTeacherChannelAudio', function (t) {
-                            console.info('箭头函数 监听 player.muteTeacherChannelAudio(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
-                            window.RTC_COMMON.classRtcChannel.muteRemoteAudioStream(e.teacherAudioUid, t);
-                        });
-                        this.$bus.$on('player.smallClassRtcReady', function (t) {
-                            console.info('箭头函数 监听 player.smallClassRtcReady(classRtcChannel)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
-                            e.initTeacherRtcChannel(t);
-                        });
-                    },
-                    initTeacherRtcChannel: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                initTeacherRtcChannel: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         console.info('对象函数 initTeacherRtcChannel(classRtcChannel)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue'), e.on('remoteVideoStateChanged', function (s, o) {
                                             console.info('箭头函数 监听 remoteVideoStateChanged(uid, state)', s, o, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/liveVideo/smallClass.vue');
@@ -3125,53 +3125,53 @@
                                     case 6:
                                     case 'end':
                                         return s.stop();
-                                    }
                                 }
-                            }, s);
-                        }))();
-                    },
-                    sendLogger: function (e) {
-                        L.a.send({
-                            tag: 'liveVideo',
-                            content: { msg: e }
-                        });
+                            }
+                        }, s);
+                    }))();
+                },
+                sendLogger: function (e) {
+                    L.a.send({
+                        tag: 'liveVideo',
+                        content: { msg: e }
+                    });
+                }
+            }
+        }, Vt = Et, Nt = (s('84c9'), Object(Ae.a)(Vt, Mt, Rt, false, null, 'afc282fa', null)), Dt = Nt.exports, Bt = function () {
+            var e = this, t = e._self._c;
+            return e.thumbnailBase64 ? t('div', {
+                staticClass: 'thumbnail-wrapper',
+                on: {
+                    click: function (t) {
+                        return t.stopPropagation(), e.handleScreenshotPath.apply(null, arguments);
                     }
                 }
-            }, Vt = Et, Nt = (s('84c9'), Object(Ae.a)(Vt, Mt, Rt, false, null, 'afc282fa', null)), Dt = Nt.exports, Bt = function () {
-                var e = this, t = e._self._c;
-                return e.thumbnailBase64 ? t('div', {
-                    staticClass: 'thumbnail-wrapper',
-                    on: {
-                        click: function (t) {
-                            return t.stopPropagation(), e.handleScreenshotPath.apply(null, arguments);
-                        }
-                    }
-                }, [
-                    t('div', { staticClass: 'thumbnail-img' }, [t('img', { attrs: { src: e.thumbnailBase64 } })]),
-                    t('div', { staticClass: 'thumbnail-text' }, [e._v(' ' + e._s(e.$t('classroom.modules.screenThumbnail.successNotice')) + ' ')])
-                ]) : e._e();
-            }, Ut = [], Gt = s('4bde'), Ht = {
-                data: function () {
-                    return { thumbnailBase64: null };
-                },
-                mounted: function () {
-                    var e = this;
-                    this.$bus.$on('screenThumbnail', function (t) {
-                        console.info('箭头函数 监听 screenThumbnail(thumbnailBase64)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/screenThumbnail/index.vue');
-                        e.thumbnailBase64 = t;
-                        o && clearTimeout(o);
-                        o = setTimeout(function () {
-                            e.thumbnailBase64 = null;
-                        }, 3000);
-                    });
-                },
-                methods: {
-                    handleScreenshotPath: function () {
-                        return Object(A.a)(Object(P.a)().mark(function e() {
-                            var t;
-                            return Object(P.a)().wrap(function (e) {
-                                while (1) {
-                                    switch (e.prev = e.next) {
+            }, [
+                t('div', { staticClass: 'thumbnail-img' }, [t('img', { attrs: { src: e.thumbnailBase64 } })]),
+                t('div', { staticClass: 'thumbnail-text' }, [e._v(' ' + e._s(e.$t('classroom.modules.screenThumbnail.successNotice')) + ' ')])
+            ]) : e._e();
+        }, Ut = [], Gt = s('4bde'), Ht = {
+            data: function () {
+                return { thumbnailBase64: null };
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('screenThumbnail', function (t) {
+                    console.info('箭头函数 监听 screenThumbnail(thumbnailBase64)', t, 'filePath:renderer/components/Classroom/LargeClass/base/players/components/screenThumbnail/index.vue');
+                    e.thumbnailBase64 = t;
+                    o && clearTimeout(o);
+                    o = setTimeout(function () {
+                        e.thumbnailBase64 = null;
+                    }, 3000);
+                });
+            },
+            methods: {
+                handleScreenshotPath: function () {
+                    return Object(A.a)(Object(P.a)().mark(function e() {
+                        var t;
+                        return Object(P.a)().wrap(function (e) {
+                            while (1) {
+                                switch (e.prev = e.next) {
                                     case 0:
                                         return console.info('对象函数 handleScreenshotPath,filePath:renderer/components/Classroom/LargeClass/base/players/components/screenThumbnail/index.vue'), e.next = 3, Object(Gt.b)();
                                     case 3:
@@ -3179,436 +3179,436 @@
                                     case 5:
                                     case 'end':
                                         return e.stop();
-                                    }
                                 }
-                            }, e);
-                        }))();
-                    }
-                },
-                beforeDestroy: function () {
-                    console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/screenThumbnail/index.vue');
-                    this.$bus.$off('screenThumbnail');
+                            }
+                        }, e);
+                    }))();
                 }
-            }, _t = Ht, Ft = (s('ebb8'), Object(Ae.a)(_t, Bt, Ut, false, null, '2ca16823', null)), Wt = Ft.exports, Kt = s('8958'), qt = {
-                components: {
-                    PptArea: gt,
-                    MediaSecurityAccess: Ct.a,
-                    LargeClassLiveVideo: Tt,
-                    SmallClassLiveVideo: Dt,
-                    ScreenThumbnail: Wt
-                },
-                i18n: se.b,
-                props: {
-                    configs: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
-                    },
-                    extraInfo: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
-                    },
-                    commonOption: {
-                        type: Object,
-                        default: function () {
-                            return {};
-                        }
+            },
+            beforeDestroy: function () {
+                console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/players/components/screenThumbnail/index.vue');
+                this.$bus.$off('screenThumbnail');
+            }
+        }, _t = Ht, Ft = (s('ebb8'), Object(Ae.a)(_t, Bt, Ut, false, null, '2ca16823', null)), Wt = Ft.exports, Kt = s('8958'), qt = {
+            components: {
+                PptArea: gt,
+                MediaSecurityAccess: Ct.a,
+                LargeClassLiveVideo: Tt,
+                SmallClassLiveVideo: Dt,
+                ScreenThumbnail: Wt
+            },
+            i18n: se.b,
+            props: {
+                configs: {
+                    type: Object,
+                    default: function () {
+                        return {};
                     }
                 },
-                mixins: [Kt.a],
-                data: function () {
-                    return {
-                        classType: this.commonOption.classType,
-                        ircconfig: null,
-                        liveState: 0
-                    };
-                },
-                computed: {
-                    isInClass: function () {
-                        return console.info('对象函数 isInClass,filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue'), 1 === this.liveState;
+                extraInfo: {
+                    type: Object,
+                    default: function () {
+                        return {};
                     }
                 },
-                mounted: function () {
-                    this.ircconfig = this.configs;
-                    this.addRtcListener();
-                    Object(se.c)();
+                commonOption: {
+                    type: Object,
+                    default: function () {
+                        return {};
+                    }
+                }
+            },
+            mixins: [Kt.a],
+            data: function () {
+                return {
+                    classType: this.commonOption.classType,
+                    ircconfig: null,
+                    liveState: 0
+                };
+            },
+            computed: {
+                isInClass: function () {
+                    return console.info('对象函数 isInClass,filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue'), 1 === this.liveState;
+                }
+            },
+            mounted: function () {
+                this.ircconfig = this.configs;
+                this.addRtcListener();
+                Object(se.c)();
+            },
+            methods: {
+                updateLiveState: function (e) {
+                    console.info('对象函数 updateLiveState(state)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
+                    this.liveState = e;
                 },
-                methods: {
-                    updateLiveState: function (e) {
-                        console.info('对象函数 updateLiveState(state)', e, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
-                        this.liveState = e;
-                    },
-                    addRtcListener: function () {
-                        var e = this;
-                        console.info('对象函数 addRtcListener,filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
-                        window.RTC_COMMON.rtcEngine.on('localVideoStateChanged', function (t, s) {
-                            console.info('箭头函数 监听 localVideoStateChanged(state, err)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
-                            e.showNotification(e.VideoErrorMap, s);
+                addRtcListener: function () {
+                    var e = this;
+                    console.info('对象函数 addRtcListener,filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
+                    window.RTC_COMMON.rtcEngine.on('localVideoStateChanged', function (t, s) {
+                        console.info('箭头函数 监听 localVideoStateChanged(state, err)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
+                        e.showNotification(e.VideoErrorMap, s);
+                    });
+                    window.RTC_COMMON.rtcEngine.on('localAudioStateChanged', function (t, s) {
+                        console.info('箭头函数 监听 localAudioStateChanged(state, err)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
+                        e.showNotification(e.AudioErrorMap, s);
+                    });
+                }
+            }
+        }, zt = qt, Jt = (s('f7794'), Object(Ae.a)(zt, ce, le, false, null, '7c9f6d3e', null)), Qt = Jt.exports, Zt = s('b02e'), Yt = (s('068a'), function (e) {
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return console.info('函数申明 RTCWebLive(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.js'), Object(g.a)(this, s), e = t.call(this, o), e.initPlayer(o.dom), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'createVuePlayer',
+                    value: function (e) {
+                        var t = v.a.extend(e), s = this.createPlayerProps(), o = new t({
+                            i18n: se.b,
+                            propsData: s
                         });
-                        window.RTC_COMMON.rtcEngine.on('localAudioStateChanged', function (t, s) {
-                            console.info('箭头函数 监听 localAudioStateChanged(state, err)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.vue');
-                            e.showNotification(e.AudioErrorMap, s);
+                        return o.$mount(), o;
+                    }
+                },
+                {
+                    key: 'initPlayer',
+                    value: function (e) {
+                        this.vm = this.createVuePlayer(Qt);
+                        this.render(e, this.vm);
+                    }
+                },
+                {
+                    key: 'eventHandler',
+                    value: function (e) {
+                        var t = e.type, s = e.data, o = this.vm.$refs.ppt, a = o.$children[0];
+                        'onRecvRoomBinMessageNotice' === t && o.handleRoomCanvasMessage(s);
+                        'onGetRoomHistoryBinMessageNotice' === t && o.onGetRoomHistoryBinMessageNotice(s);
+                        'canvasSwitchCourseware' === t && a.handleSwitchCourseware(s);
+                    }
+                },
+                {
+                    key: 'sendLogger',
+                    value: function (e, t) {
+                        L.a.send({
+                            tag: 'rtc-live',
+                            content: {
+                                msg: e,
+                                params: t
+                            }
                         });
                     }
                 }
-            }, zt = qt, Jt = (s('f7794'), Object(Ae.a)(zt, ce, le, false, null, '7c9f6d3e', null)), Qt = Jt.exports, Zt = s('b02e'), Yt = (s('068a'), function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return console.info('函数申明 RTCWebLive(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/players/rtc-live.js'), Object(g.a)(this, s), e = t.call(this, o), e.initPlayer(o.dom), e;
-                }
-                return Object(C.a)(s, [
-                    {
-                        key: 'createVuePlayer',
-                        value: function (e) {
-                            var t = v.a.extend(e), s = this.createPlayerProps(), o = new t({
-                                    i18n: se.b,
-                                    propsData: s
-                                });
-                            return o.$mount(), o;
-                        }
-                    },
-                    {
-                        key: 'initPlayer',
-                        value: function (e) {
-                            this.vm = this.createVuePlayer(Qt);
-                            this.render(e, this.vm);
-                        }
-                    },
-                    {
-                        key: 'eventHandler',
-                        value: function (e) {
-                            var t = e.type, s = e.data, o = this.vm.$refs.ppt, a = o.$children[0];
-                            'onRecvRoomBinMessageNotice' === t && o.handleRoomCanvasMessage(s);
-                            'onGetRoomHistoryBinMessageNotice' === t && o.onGetRoomHistoryBinMessageNotice(s);
-                            'canvasSwitchCourseware' === t && a.handleSwitchCourseware(s);
-                        }
-                    },
-                    {
-                        key: 'sendLogger',
-                        value: function (e, t) {
-                            L.a.send({
-                                tag: 'rtc-live',
-                                content: {
-                                    msg: e,
-                                    params: t
-                                }
-                            });
-                        }
-                    }
-                ]), s;
-            }(Zt.a)), Xt = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
+            ]), s;
+        }(Zt.a)), Xt = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                directives: [{
+                    name: 'show',
+                    rawName: 'v-show',
+                    value: e.isShowChat,
+                    expression: 'isShowChat'
+                }],
+                class: e.diffClassStyle
+            }, [t('div', { staticClass: 'chat-container' }, [
+                t('span', {
                     directives: [{
-                            name: 'show',
-                            rawName: 'v-show',
-                            value: e.isShowChat,
-                            expression: 'isShowChat'
-                        }],
-                    class: e.diffClassStyle
-                }, [t('div', { staticClass: 'chat-container' }, [
-                        t('span', {
-                            directives: [{
-                                    name: 'show',
-                                    rawName: 'v-show',
-                                    value: false,
-                                    expression: 'false'
-                                }]
-                        }, [e._v(e._s(e.peopleOnline) + e._s(e.selfChatStatus))]),
-                        t('div', { staticClass: 'content-box' }, [
-                            t('div', {
-                                ref: 'messagesRef',
-                                staticClass: 'messages-wrap',
-                                attrs: { id: 'messagesRef' }
-                            }, [t('MessageArea', {
-                                    ref: 'messageContainerRef',
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: false,
+                        expression: 'false'
+                    }]
+                }, [e._v(e._s(e.peopleOnline) + e._s(e.selfChatStatus))]),
+                t('div', { staticClass: 'content-box' }, [
+                    t('div', {
+                        ref: 'messagesRef',
+                        staticClass: 'messages-wrap',
+                        attrs: { id: 'messagesRef' }
+                    }, [t('MessageArea', {
+                        ref: 'messageContainerRef',
+                        attrs: {
+                            privateMessageStatus: e.privateMessageStatus,
+                            messages: e.messages,
+                            privateMessages: e.privateMessages
+                        }
+                    })], 1),
+                    e.showFooter ? t('Footer', {
+                        attrs: {
+                            privateMessageStatus: e.privateMessageStatus,
+                            privateMessages: e.privateMessages,
+                            inputStatus: e.ChatClass.inputStatus,
+                            hasNewMsg: e.ChatClass.hasNewMsg,
+                            hasPrivateNewMsg: e.ChatClass.hasPrivateNewMsg,
+                            isPlayBack: e.options.isPlayBack,
+                            goodMethod: e.ChatClass.goodMethod,
+                            lockTeacherMessage: e.ChatClass.lockTeacherMessage,
+                            planId: e.options.planId,
+                            options: e.options,
+                            packageId: e.options.planInfo.packageId,
+                            lottieEmojiLists: e.lottieEmojiLists,
+                            handleInputKeyDown: e.handleInputKeyDown
+                        },
+                        on: {
+                            changeInputText: e.handleInputText,
+                            handleSetMessage: e.handleSetMessage,
+                            handleSetNewMsgStatus: e.handleSetNewMsgStatus,
+                            handleSetPrivateMessage: e.handleSetPrivateMessage
+                        }
+                    }) : e._e()
+                ], 1)
+            ])]);
+        }, $t = [], es = (s('fb6a'), s('13d5'), {
+            stu: 1,
+            teacher_f: 2,
+            system: 3,
+            mine: 4
+        }), ts = function (e, t) {
+            if (console.info('箭头函数 replaceExpress(text, isMegList)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), t && '[e]em_18[e]' == e) {
+                return console.info('if(isMegList && text == \'[e]em_18[e]\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '<i class="get-good-method"></i>';
+            }
+            ;
+            return /\[e\](\d+)\[e\]/g.test(e) ? (console.info('if(reg.test(text))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e.replace(/\[e\](\d+)\[e\]/g, function (e, t) {
+                return console.info('箭头函数 replace(em, it)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), t;
+            })) : e && e.replace(/\[e\](em\_[1-9]{1,1}[0-9]{0,1})\[e\]/g, function (e, t) {
+                return console.info('箭头函数 replace(em, item)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '<img src="'.concat(s('4b5d')('./icons/' + t + '.png'), '" />');
+            });
+        }, ss = function (e) {
+            console.info('箭头函数 msgFormType(str)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js');
+            var t = e.substr(0, 2);
+            return 't_' === t ? (console.info('if(prefix === \'t_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 1) : 'f_' === t ? (console.info('if(prefix === \'f_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 0) : 's_' === t || 'ws_' === e.substr(0, 3) ? (console.info('if(prefix === \'s_\' || str.substr(0, 3) === \'ws_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 2) : 3;
+        }, ns = function (e) {
+            return console.info('箭头函数 isTeacher(str)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 't_' === e.substr(0, 2) || 'f_' === e.substr(0, 2);
+        }, rs = function (e) {
+            console.info('箭头函数 getCursortPosition(ele)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js');
+            var t = 0;
+            if (document.selection) {
+                e.focus();
+                var s = document.selection.createRange();
+                s.moveStart('character', -e.value.length);
+                t = s.text.length;
+            } else {
+                (e.selectionStart || '0' == e.selectionStart) && (t = e.selectionStart);
+            }
+            return t;
+        }, is = function (e) {
+            return console.info('箭头函数 replaceExpressName(text)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e ? (console.info('if(text)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e.replace(/\[e\]smiling\[e\]/g, '[e]em_1[e]').replace(/\[e\]grinning\[e\]/g, '[e]em_2[e]').replace(/\[e\]flushe\[e\]/g, '[e]em_3[e]').replace(/\[e\]satisfy\[e\]/g, '[e]em_4[e]').replace(/\[e\]grimacing\[e\]/g, '[e]em_5[e]').replace(/\[e\]winking\[e\]/g, '[e]em_6[e]').replace(/\[e\]sweat\[e\]/g, '[e]em_7[e]').replace(/\[e\]downcast\[e\]/g, '[e]em_8[e]').replace(/\[e\]confounded\[e\]/g, '[e]em_9[e]').replace(/\[e\]disappointed\[e\]/g, '[e]em_10[e]').replace(/\[e\]loudlyCrying\[e\]/g, '[e]em_11[e]').replace(/\[e\]tearsOfJoy\[e\]/g, '[e]em_12[e]').replace(/\[e\]dizzy\[e\]/g, '[e]em_13[e]').replace(/\[e\]pouting\[e\]/g, '[e]em_14[e]').replace(/\[e\]thumbsUp\[e\]/g, '[e]em_15[e]').replace(/\[e\]OK\[e\]/g, '[e]em_16[e]').replace(/\[e\]victory\[e\]/g, '[e]em_17[e]')) : (console.info('if(text)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '');
+        }, ls = [
+            {
+                text: 'smiling',
+                name: 'em_1'
+            },
+            {
+                text: 'grinning',
+                name: 'em_2'
+            },
+            {
+                text: 'flushe',
+                name: 'em_3'
+            },
+            {
+                text: 'satisfy',
+                name: 'em_4'
+            },
+            {
+                text: 'grimacing',
+                name: 'em_5'
+            },
+            {
+                text: 'winking',
+                name: 'em_6'
+            },
+            {
+                text: 'sweat',
+                name: 'em_7'
+            },
+            {
+                text: 'downcast',
+                name: 'em_8'
+            },
+            {
+                text: 'confounded',
+                name: 'em_9'
+            },
+            {
+                text: 'disappointed',
+                name: 'em_10'
+            },
+            {
+                text: 'loudlyCrying',
+                name: 'em_11'
+            },
+            {
+                text: 'tearsOfJoy',
+                name: 'em_12'
+            },
+            {
+                text: 'dizzy',
+                name: 'em_13'
+            },
+            {
+                text: 'pouting',
+                name: 'em_14'
+            },
+            {
+                text: 'thumbsUp',
+                name: 'em_15'
+            },
+            {
+                text: 'OK',
+                name: 'em_16'
+            },
+            {
+                text: 'victory',
+                name: 'em_17'
+            }
+        ], ds = (s('2d1a'), s('bf99')), ms = s('975c'), hs = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                ref: 'messageContainerRef',
+                attrs: { id: 'messageContainerRef' }
+            }, [
+                e.privateMessageStatus ? t('div', { staticClass: 'message-container' }, e._l(e.privateMessages, function (s, o) {
+                    return t('div', {
+                        key: o,
+                        staticClass: 'item-message'
+                    }, [
+                        2 == s.type ? t('div', { staticClass: 'message-teacher teacher-f' }, [
+                            t('section', [
+                                t('div', { staticClass: 'avatar' }, [t('img', { attrs: { src: s.tutor_avatar } })]),
+                                t('span', { staticClass: 'name-label name' }, [e._v(' ' + e._s(s.name) + ' ')])
+                            ]),
+                            t('section', { staticClass: 'message-content' }, [t('span', {
+                                staticClass: 'message',
+                                domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
+                            })])
+                        ]) : e._e(),
+                        s.type === e.msgUserType.mine ? t('div', { staticClass: 'message-student' }, [t('div', { staticClass: 'stu-message-content private-stu-message' }, [
+                            t('section', [t('span', { staticClass: 'self' }, [
+                                t('span', { staticClass: 'name' }, [e._v(' ' + e._s(e.nickName) + ' ')]),
+                                t('img', {
+                                    staticClass: 'stu-avator',
+                                    attrs: { src: e.selfAvatar }
+                                })
+                            ])]),
+                            t('section', { staticClass: 'message-content' }, [t('div', { staticClass: 'content' }, [
+                                t('span', {
+                                    directives: [{
+                                        name: 'show',
+                                        rawName: 'v-show',
+                                        value: s.messageStatus,
+                                        expression: 'item.messageStatus'
+                                    }],
+                                    staticClass: 'send_error'
+                                }),
+                                t('span', {
+                                    staticClass: 'message',
+                                    domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
+                                })
+                            ])])
+                        ])]) : e._e()
+                    ]);
+                }), 0) : e._e(),
+                e.privateMessageStatus ? e._e() : t('div', { staticClass: 'message-container' }, e._l(e.messages, function (s, o) {
+                    return t('div', {
+                        key: o,
+                        staticClass: 'item-message'
+                    }, [
+                        s.type === e.msgUserType.teacher_f ? t('div', { staticClass: 'message-teacher teacher-f' }, [
+                            t('section', [
+                                t('div', { staticClass: 'avatar' }, [t('img', { attrs: { src: s.tutor_avatar } })]),
+                                t('span', { staticClass: 'name-label name' }, [e._v(' ' + e._s(s.name) + ' ')])
+                            ]),
+                            t('section', { staticClass: 'message-content' }, [t('span', {
+                                staticClass: 'message',
+                                domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
+                            })])
+                        ]) : e._e(),
+                        s.type === e.msgUserType.stu || s.type === e.msgUserType.mine ? t('div', { staticClass: 'message-student' }, [t('div', {
+                            staticClass: 'stu-message-content',
+                            class: s.isMe || s.type === e.msgUserType.mine ? 'self-chat-content' : 'others-chat-content'
+                        }, [
+                            t('section', [s.type === e.msgUserType.mine || s.isMe ? t('span', { staticClass: 'self' }, [
+                                t('span', { staticClass: 'name' }, [e._v(' ' + e._s(e.nickName) + ' ')]),
+                                t('img', {
+                                    staticClass: 'stu-avator',
+                                    attrs: { src: e.selfAvatar }
+                                })
+                            ]) : t('span', { staticClass: 'others' }, [
+                                t('img', {
+                                    staticClass: 'stu-avator',
+                                    attrs: { src: s.avatar }
+                                }),
+                                t('span', { staticClass: 'name' }, [e._v(' ' + e._s(s.name) + ' ')])
+                            ])]),
+                            t('section', [t('div', { staticClass: 'content' }, [
+                                t('span', {
+                                    directives: [{
+                                        name: 'show',
+                                        rawName: 'v-show',
+                                        value: s.messageStatus,
+                                        expression: 'item.messageStatus'
+                                    }],
+                                    staticClass: 'send_error'
+                                }),
+                                s.isNewEmoji ? t('EmoticonMessage', {
                                     attrs: {
-                                        privateMessageStatus: e.privateMessageStatus,
-                                        messages: e.messages,
-                                        privateMessages: e.privateMessages
+                                        willAutoClear: false,
+                                        name: s.msg,
+                                        type: s.emojiType,
+                                        emojiId: s.emojiId,
+                                        width: 70,
+                                        height: 70,
+                                        lottieUrl: s.lottieUrl,
+                                        loopLottie: true
                                     }
-                                })], 1),
-                            e.showFooter ? t('Footer', {
-                                attrs: {
-                                    privateMessageStatus: e.privateMessageStatus,
-                                    privateMessages: e.privateMessages,
-                                    inputStatus: e.ChatClass.inputStatus,
-                                    hasNewMsg: e.ChatClass.hasNewMsg,
-                                    hasPrivateNewMsg: e.ChatClass.hasPrivateNewMsg,
-                                    isPlayBack: e.options.isPlayBack,
-                                    goodMethod: e.ChatClass.goodMethod,
-                                    lockTeacherMessage: e.ChatClass.lockTeacherMessage,
-                                    planId: e.options.planId,
-                                    options: e.options,
-                                    packageId: e.options.planInfo.packageId,
-                                    lottieEmojiLists: e.lottieEmojiLists,
-                                    handleInputKeyDown: e.handleInputKeyDown
-                                },
-                                on: {
-                                    changeInputText: e.handleInputText,
-                                    handleSetMessage: e.handleSetMessage,
-                                    handleSetNewMsgStatus: e.handleSetNewMsgStatus,
-                                    handleSetPrivateMessage: e.handleSetPrivateMessage
-                                }
-                            }) : e._e()
-                        ], 1)
-                    ])]);
-            }, $t = [], es = (s('fb6a'), s('13d5'), {
-                stu: 1,
-                teacher_f: 2,
-                system: 3,
-                mine: 4
-            }), ts = function (e, t) {
-                if (console.info('箭头函数 replaceExpress(text, isMegList)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), t && '[e]em_18[e]' == e) {
-                    return console.info('if(isMegList && text == \'[e]em_18[e]\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '<i class="get-good-method"></i>';
+                                }) : t('div', {
+                                    staticClass: 'message',
+                                    domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
+                                })
+                            ], 1)])
+                        ])]) : e._e(),
+                        s.type === e.msgUserType.system ? t('div', { staticClass: 'message-system' }, [t('div', { staticClass: 'message-content' }, [t('span', { staticClass: 'message' }, [e._v(e._s(s.msg))])])]) : e._e()
+                    ]);
+                }), 0)
+            ]);
+        }, ps = [], fs = s('722b'), vs = {
+            data: function () {
+                return {
+                    singleEmoji: {},
+                    emoticonType: 1,
+                    emojiId: 0,
+                    lottieUrl: '',
+                    selfAvatar: '',
+                    nickName: '',
+                    msgTip: this.$t('classroom.largeClass.chats.msgTip'),
+                    msgUserType: es
+                };
+            },
+            components: { EmoticonMessage: fs.a },
+            props: {
+                privateMessageStatus: {
+                    default: false,
+                    type: Boolean
+                },
+                messages: {
+                    default: [],
+                    type: Array
+                },
+                privateMessages: {
+                    default: [],
+                    type: Array
                 }
-                ;
-                return /\[e\](\d+)\[e\]/g.test(e) ? (console.info('if(reg.test(text))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e.replace(/\[e\](\d+)\[e\]/g, function (e, t) {
-                    return console.info('箭头函数 replace(em, it)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), t;
-                })) : e && e.replace(/\[e\](em\_[1-9]{1,1}[0-9]{0,1})\[e\]/g, function (e, t) {
-                    return console.info('箭头函数 replace(em, item)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '<img src="'.concat(s('4b5d')('./icons/' + t + '.png'), '" />');
-                });
-            }, ss = function (e) {
-                console.info('箭头函数 msgFormType(str)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js');
-                var t = e.substr(0, 2);
-                return 't_' === t ? (console.info('if(prefix === \'t_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 1) : 'f_' === t ? (console.info('if(prefix === \'f_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 0) : 's_' === t || 'ws_' === e.substr(0, 3) ? (console.info('if(prefix === \'s_\' || str.substr(0, 3) === \'ws_\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 2) : 3;
-            }, ns = function (e) {
-                return console.info('箭头函数 isTeacher(str)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), 't_' === e.substr(0, 2) || 'f_' === e.substr(0, 2);
-            }, rs = function (e) {
-                console.info('箭头函数 getCursortPosition(ele)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js');
-                var t = 0;
-                if (document.selection) {
-                    e.focus();
-                    var s = document.selection.createRange();
-                    s.moveStart('character', -e.value.length);
-                    t = s.text.length;
-                } else {
-                    (e.selectionStart || '0' == e.selectionStart) && (t = e.selectionStart);
-                }
-                return t;
-            }, is = function (e) {
-                return console.info('箭头函数 replaceExpressName(text)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e ? (console.info('if(text)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), e.replace(/\[e\]smiling\[e\]/g, '[e]em_1[e]').replace(/\[e\]grinning\[e\]/g, '[e]em_2[e]').replace(/\[e\]flushe\[e\]/g, '[e]em_3[e]').replace(/\[e\]satisfy\[e\]/g, '[e]em_4[e]').replace(/\[e\]grimacing\[e\]/g, '[e]em_5[e]').replace(/\[e\]winking\[e\]/g, '[e]em_6[e]').replace(/\[e\]sweat\[e\]/g, '[e]em_7[e]').replace(/\[e\]downcast\[e\]/g, '[e]em_8[e]').replace(/\[e\]confounded\[e\]/g, '[e]em_9[e]').replace(/\[e\]disappointed\[e\]/g, '[e]em_10[e]').replace(/\[e\]loudlyCrying\[e\]/g, '[e]em_11[e]').replace(/\[e\]tearsOfJoy\[e\]/g, '[e]em_12[e]').replace(/\[e\]dizzy\[e\]/g, '[e]em_13[e]').replace(/\[e\]pouting\[e\]/g, '[e]em_14[e]').replace(/\[e\]thumbsUp\[e\]/g, '[e]em_15[e]').replace(/\[e\]OK\[e\]/g, '[e]em_16[e]').replace(/\[e\]victory\[e\]/g, '[e]em_17[e]')) : (console.info('if(text)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-conf.js'), '');
-            }, ls = [
-                {
-                    text: 'smiling',
-                    name: 'em_1'
-                },
-                {
-                    text: 'grinning',
-                    name: 'em_2'
-                },
-                {
-                    text: 'flushe',
-                    name: 'em_3'
-                },
-                {
-                    text: 'satisfy',
-                    name: 'em_4'
-                },
-                {
-                    text: 'grimacing',
-                    name: 'em_5'
-                },
-                {
-                    text: 'winking',
-                    name: 'em_6'
-                },
-                {
-                    text: 'sweat',
-                    name: 'em_7'
-                },
-                {
-                    text: 'downcast',
-                    name: 'em_8'
-                },
-                {
-                    text: 'confounded',
-                    name: 'em_9'
-                },
-                {
-                    text: 'disappointed',
-                    name: 'em_10'
-                },
-                {
-                    text: 'loudlyCrying',
-                    name: 'em_11'
-                },
-                {
-                    text: 'tearsOfJoy',
-                    name: 'em_12'
-                },
-                {
-                    text: 'dizzy',
-                    name: 'em_13'
-                },
-                {
-                    text: 'pouting',
-                    name: 'em_14'
-                },
-                {
-                    text: 'thumbsUp',
-                    name: 'em_15'
-                },
-                {
-                    text: 'OK',
-                    name: 'em_16'
-                },
-                {
-                    text: 'victory',
-                    name: 'em_17'
-                }
-            ], ds = (s('2d1a'), s('bf99')), ms = s('975c'), hs = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    ref: 'messageContainerRef',
-                    attrs: { id: 'messageContainerRef' }
-                }, [
-                    e.privateMessageStatus ? t('div', { staticClass: 'message-container' }, e._l(e.privateMessages, function (s, o) {
-                        return t('div', {
-                            key: o,
-                            staticClass: 'item-message'
-                        }, [
-                            2 == s.type ? t('div', { staticClass: 'message-teacher teacher-f' }, [
-                                t('section', [
-                                    t('div', { staticClass: 'avatar' }, [t('img', { attrs: { src: s.tutor_avatar } })]),
-                                    t('span', { staticClass: 'name-label name' }, [e._v(' ' + e._s(s.name) + ' ')])
-                                ]),
-                                t('section', { staticClass: 'message-content' }, [t('span', {
-                                        staticClass: 'message',
-                                        domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
-                                    })])
-                            ]) : e._e(),
-                            s.type === e.msgUserType.mine ? t('div', { staticClass: 'message-student' }, [t('div', { staticClass: 'stu-message-content private-stu-message' }, [
-                                    t('section', [t('span', { staticClass: 'self' }, [
-                                            t('span', { staticClass: 'name' }, [e._v(' ' + e._s(e.nickName) + ' ')]),
-                                            t('img', {
-                                                staticClass: 'stu-avator',
-                                                attrs: { src: e.selfAvatar }
-                                            })
-                                        ])]),
-                                    t('section', { staticClass: 'message-content' }, [t('div', { staticClass: 'content' }, [
-                                            t('span', {
-                                                directives: [{
-                                                        name: 'show',
-                                                        rawName: 'v-show',
-                                                        value: s.messageStatus,
-                                                        expression: 'item.messageStatus'
-                                                    }],
-                                                staticClass: 'send_error'
-                                            }),
-                                            t('span', {
-                                                staticClass: 'message',
-                                                domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
-                                            })
-                                        ])])
-                                ])]) : e._e()
-                        ]);
-                    }), 0) : e._e(),
-                    e.privateMessageStatus ? e._e() : t('div', { staticClass: 'message-container' }, e._l(e.messages, function (s, o) {
-                        return t('div', {
-                            key: o,
-                            staticClass: 'item-message'
-                        }, [
-                            s.type === e.msgUserType.teacher_f ? t('div', { staticClass: 'message-teacher teacher-f' }, [
-                                t('section', [
-                                    t('div', { staticClass: 'avatar' }, [t('img', { attrs: { src: s.tutor_avatar } })]),
-                                    t('span', { staticClass: 'name-label name' }, [e._v(' ' + e._s(s.name) + ' ')])
-                                ]),
-                                t('section', { staticClass: 'message-content' }, [t('span', {
-                                        staticClass: 'message',
-                                        domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
-                                    })])
-                            ]) : e._e(),
-                            s.type === e.msgUserType.stu || s.type === e.msgUserType.mine ? t('div', { staticClass: 'message-student' }, [t('div', {
-                                    staticClass: 'stu-message-content',
-                                    class: s.isMe || s.type === e.msgUserType.mine ? 'self-chat-content' : 'others-chat-content'
-                                }, [
-                                    t('section', [s.type === e.msgUserType.mine || s.isMe ? t('span', { staticClass: 'self' }, [
-                                            t('span', { staticClass: 'name' }, [e._v(' ' + e._s(e.nickName) + ' ')]),
-                                            t('img', {
-                                                staticClass: 'stu-avator',
-                                                attrs: { src: e.selfAvatar }
-                                            })
-                                        ]) : t('span', { staticClass: 'others' }, [
-                                            t('img', {
-                                                staticClass: 'stu-avator',
-                                                attrs: { src: s.avatar }
-                                            }),
-                                            t('span', { staticClass: 'name' }, [e._v(' ' + e._s(s.name) + ' ')])
-                                        ])]),
-                                    t('section', [t('div', { staticClass: 'content' }, [
-                                            t('span', {
-                                                directives: [{
-                                                        name: 'show',
-                                                        rawName: 'v-show',
-                                                        value: s.messageStatus,
-                                                        expression: 'item.messageStatus'
-                                                    }],
-                                                staticClass: 'send_error'
-                                            }),
-                                            s.isNewEmoji ? t('EmoticonMessage', {
-                                                attrs: {
-                                                    willAutoClear: false,
-                                                    name: s.msg,
-                                                    type: s.emojiType,
-                                                    emojiId: s.emojiId,
-                                                    width: 70,
-                                                    height: 70,
-                                                    lottieUrl: s.lottieUrl,
-                                                    loopLottie: true
-                                                }
-                                            }) : t('div', {
-                                                staticClass: 'message',
-                                                domProps: { innerHTML: e._s(e.replaceExpress(s.msg, true)) }
-                                            })
-                                        ], 1)])
-                                ])]) : e._e(),
-                            s.type === e.msgUserType.system ? t('div', { staticClass: 'message-system' }, [t('div', { staticClass: 'message-content' }, [t('span', { staticClass: 'message' }, [e._v(e._s(s.msg))])])]) : e._e()
-                        ]);
-                    }), 0)
-                ]);
-            }, ps = [], fs = s('722b'), vs = {
-                data: function () {
-                    return {
-                        singleEmoji: {},
-                        emoticonType: 1,
-                        emojiId: 0,
-                        lottieUrl: '',
-                        selfAvatar: '',
-                        nickName: '',
-                        msgTip: this.$t('classroom.largeClass.chats.msgTip'),
-                        msgUserType: es
-                    };
-                },
-                components: { EmoticonMessage: fs.a },
-                props: {
-                    privateMessageStatus: {
-                        default: false,
-                        type: Boolean
-                    },
-                    messages: {
-                        default: [],
-                        type: Array
-                    },
-                    privateMessages: {
-                        default: [],
-                        type: Array
-                    }
-                },
-                methods: {
-                    replaceExpress: ts,
-                    getUserAvatar: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o, a;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+            },
+            methods: {
+                replaceExpress: ts,
+                getUserAvatar: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o, a;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 getUserAvatar,filePath:renderer/components/Classroom/LargeClass/base/chats/components/messageArea.vue'), t.next = 3, Object(oe.a)();
                                     case 3:
@@ -3616,435 +3616,435 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    }
-                },
-                mounted: function () {
-                    this.getUserAvatar();
+                            }
+                        }, t);
+                    }))();
                 }
-            }, gs = vs, Cs = (s('b1b7'), Object(Ae.a)(gs, hs, ps, false, null, '6f6907bd', null)), bs = Cs.exports, Ss = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'chat-footer-wrapper' }, [
-                    e.showTeacherOnly ? e._e() : t('PrivateMessageNum', {
-                        attrs: {
-                            privateMessages: e.privateMessages,
-                            options: e.options
-                        }
-                    }),
-                    true === e.privateMessageStatus ? t('div', { staticClass: 'chat-footer-container' }, [
-                        t('div', { staticClass: 'footer-live-box' }, [t('div', { staticClass: 'send-message-box' }, [t('div', { staticClass: 'message-box private-message-box' }, [t('div', { staticClass: 'input-wrap' }, [
-                                        t('input', {
-                                            directives: [{
-                                                    name: 'model',
-                                                    rawName: 'v-model',
-                                                    value: e.privateInputStatus.text,
-                                                    expression: 'privateInputStatus.text'
-                                                }],
-                                            ref: 'inputBox',
-                                            attrs: {
-                                                type: 'text',
-                                                placeholder: e.$t('classroom.largeClass.chats.inputPlaceholder'),
-                                                autocomplete: 'off',
-                                                maxlength: '200'
-                                            },
-                                            domProps: { value: e.privateInputStatus.text },
-                                            on: {
-                                                keydown: [
-                                                    function (t) {
-                                                        return !t.type.indexOf('key') && e._k(t.keyCode, 'enter', 13, t.key, 'Enter') ? (console.info('if(!$event.type.indexOf(\'key\') && _vm._k($event.keyCode, \'enter\', 13, $event.key, \'Enter\'))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), null) : e.handleSetPrivateMessage.apply(null, arguments);
-                                                    },
-                                                    e.handleInputKeyDown
-                                                ],
-                                                keyup: e.handleInputKeyDown,
-                                                input: function (t) {
-                                                    t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : e.$set(e.privateInputStatus, 'text', t.target.value);
-                                                }
-                                            }
-                                        }),
-                                        t('div', {
-                                            staticClass: 'send-button',
-                                            class: { red: e.privateInputStatus.text.length > 0 },
-                                            on: { click: e.handleSetPrivateMessage }
-                                        }, [t('span')])
-                                    ])])])]),
-                        t('div', {
+            },
+            mounted: function () {
+                this.getUserAvatar();
+            }
+        }, gs = vs, Cs = (s('b1b7'), Object(Ae.a)(gs, hs, ps, false, null, '6f6907bd', null)), bs = Cs.exports, Ss = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'chat-footer-wrapper' }, [
+                e.showTeacherOnly ? e._e() : t('PrivateMessageNum', {
+                    attrs: {
+                        privateMessages: e.privateMessages,
+                        options: e.options
+                    }
+                }),
+                true === e.privateMessageStatus ? t('div', { staticClass: 'chat-footer-container' }, [
+                    t('div', { staticClass: 'footer-live-box' }, [t('div', { staticClass: 'send-message-box' }, [t('div', { staticClass: 'message-box private-message-box' }, [t('div', { staticClass: 'input-wrap' }, [
+                        t('input', {
                             directives: [{
+                                name: 'model',
+                                rawName: 'v-model',
+                                value: e.privateInputStatus.text,
+                                expression: 'privateInputStatus.text'
+                            }],
+                            ref: 'inputBox',
+                            attrs: {
+                                type: 'text',
+                                placeholder: e.$t('classroom.largeClass.chats.inputPlaceholder'),
+                                autocomplete: 'off',
+                                maxlength: '200'
+                            },
+                            domProps: { value: e.privateInputStatus.text },
+                            on: {
+                                keydown: [
+                                    function (t) {
+                                        return !t.type.indexOf('key') && e._k(t.keyCode, 'enter', 13, t.key, 'Enter') ? (console.info('if(!$event.type.indexOf(\'key\') && _vm._k($event.keyCode, \'enter\', 13, $event.key, \'Enter\'))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), null) : e.handleSetPrivateMessage.apply(null, arguments);
+                                    },
+                                    e.handleInputKeyDown
+                                ],
+                                keyup: e.handleInputKeyDown,
+                                input: function (t) {
+                                    t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : e.$set(e.privateInputStatus, 'text', t.target.value);
+                                }
+                            }
+                        }),
+                        t('div', {
+                            staticClass: 'send-button',
+                            class: { red: e.privateInputStatus.text.length > 0 },
+                            on: { click: e.handleSetPrivateMessage }
+                        }, [t('span')])
+                    ])])])]),
+                    t('div', {
+                        directives: [{
+                            name: 'show',
+                            rawName: 'v-show',
+                            value: e.hasPrivateNewMsg,
+                            expression: 'hasPrivateNewMsg'
+                        }],
+                        staticClass: 'new-meg-tip',
+                        on: { click: e.handleNewMsg }
+                    }, [t('i', { staticClass: 'icon-more-bottom' })])
+                ]) : e._e(),
+                false === e.privateMessageStatus ? t('div', { staticClass: 'chat-footer-container' }, [
+                    t('div', { staticClass: 'footer-live-box' }, [
+                        t('div', {
+                            staticClass: 'send-message-box',
+                            class: { lock: e.needLoak }
+                        }, [
+                            t('div', {
+                                directives: [{
                                     name: 'show',
                                     rawName: 'v-show',
-                                    value: e.hasPrivateNewMsg,
-                                    expression: 'hasPrivateNewMsg'
+                                    value: e.needLoak,
+                                    expression: 'needLoak'
                                 }],
-                            staticClass: 'new-meg-tip',
-                            on: { click: e.handleNewMsg }
-                        }, [t('i', { staticClass: 'icon-more-bottom' })])
-                    ]) : e._e(),
-                    false === e.privateMessageStatus ? t('div', { staticClass: 'chat-footer-container' }, [
-                        t('div', { staticClass: 'footer-live-box' }, [
+                                staticClass: 'message-box message-box-lock'
+                            }, [t('div', { staticClass: 'chatbox-closed' }, [e._v(' ' + e._s(e.inputStatus.text) + ' ')])]),
                             t('div', {
-                                staticClass: 'send-message-box',
-                                class: { lock: e.needLoak }
+                                directives: [{
+                                    name: 'show',
+                                    rawName: 'v-show',
+                                    value: !e.needLoak,
+                                    expression: '!needLoak'
+                                }],
+                                staticClass: 'message-box'
                             }, [
                                 t('div', {
-                                    directives: [{
-                                            name: 'show',
-                                            rawName: 'v-show',
-                                            value: e.needLoak,
-                                            expression: 'needLoak'
-                                        }],
-                                    staticClass: 'message-box message-box-lock'
-                                }, [t('div', { staticClass: 'chatbox-closed' }, [e._v(' ' + e._s(e.inputStatus.text) + ' ')])]),
-                                t('div', {
-                                    directives: [{
-                                            name: 'show',
-                                            rawName: 'v-show',
-                                            value: !e.needLoak,
-                                            expression: '!needLoak'
-                                        }],
-                                    staticClass: 'message-box'
-                                }, [
-                                    t('div', {
-                                        staticClass: 'express',
-                                        class: e.showEmojiPane ? 'select-express' : '',
-                                        attrs: { id: 'emoji-icon' },
-                                        on: { click: e.handleShowExpress }
+                                    staticClass: 'express',
+                                    class: e.showEmojiPane ? 'select-express' : '',
+                                    attrs: { id: 'emoji-icon' },
+                                    on: { click: e.handleShowExpress }
+                                }),
+                                t('div', { staticClass: 'input-wrap' }, [
+                                    t('span', {
+                                        staticClass: 'quick-fadeback',
+                                        attrs: { id: 'quick-fadeback' },
+                                        on: { click: e.handleOpenHotWord }
                                     }),
-                                    t('div', { staticClass: 'input-wrap' }, [
-                                        t('span', {
-                                            staticClass: 'quick-fadeback',
-                                            attrs: { id: 'quick-fadeback' },
-                                            on: { click: e.handleOpenHotWord }
-                                        }),
-                                        t('input', {
-                                            directives: [{
-                                                    name: 'model',
-                                                    rawName: 'v-model',
-                                                    value: e.inputStatus.text,
-                                                    expression: 'inputStatus.text'
-                                                }],
-                                            ref: 'inputBox',
-                                            class: { disabled: e.needLoak },
-                                            attrs: {
-                                                type: 'text',
-                                                placeholder: e.$t('classroom.largeClass.chats.inputPlaceholder'),
-                                                autocomplete: 'off',
-                                                disabled: e.needLoak,
-                                                maxlength: '200'
-                                            },
-                                            domProps: { value: e.inputStatus.text },
-                                            on: {
-                                                keydown: [
-                                                    function (t) {
-                                                        return !t.type.indexOf('key') && e._k(t.keyCode, 'enter', 13, t.key, 'Enter') ? (console.info('if(!$event.type.indexOf(\'key\') && _vm._k($event.keyCode, \'enter\', 13, $event.key, \'Enter\'))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), null) : e.handleSendMessage.apply(null, arguments);
-                                                    },
-                                                    e.handleInputKeyDown
-                                                ],
-                                                keyup: e.handleInputKeyDown,
-                                                input: function (t) {
-                                                    t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : e.$set(e.inputStatus, 'text', t.target.value);
-                                                }
-                                            }
-                                        }),
-                                        t('div', {
-                                            staticClass: 'send-button',
-                                            class: { red: e.inputStatus.text.length > 0 && !e.needLoak },
-                                            on: { click: e.handleSendMessage }
-                                        }, [t('span')])
-                                    ])
-                                ]),
-                                e.needLoak ? e._e() : t('div', {
-                                    staticClass: 'teacher-only',
-                                    on: {
-                                        mouseenter: e.handleTeacherOnlyMouseenter,
-                                        mouseleave: e.handleTeacherOnlyMouseleave
-                                    }
-                                }, [
-                                    t('div', {
-                                        staticClass: 'icon-button',
-                                        on: { click: e.handleTeacherOnly }
-                                    }),
-                                    e.showTeacherOnly ? t('div', { staticClass: 'operation-content' }, [
-                                        t('div', { staticClass: 'operation-title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.chats.teacherOnly')) + ' ')]),
-                                        t('div', { staticClass: 'operation-switch' }, [t('a-switch', {
-                                                on: { change: e.changeTeacherOnly },
-                                                model: {
-                                                    value: e.lockTeacherMessage,
-                                                    callback: function (t) {
-                                                        e.lockTeacherMessage = t;
-                                                    },
-                                                    expression: 'lockTeacherMessage'
-                                                }
-                                            })], 1)
-                                    ]) : e._e()
-                                ])
-                            ]),
-                            t('div', {
-                                staticClass: 'emoji-container',
-                                attrs: { id: 'emoji-container-id' }
-                            }, [t('LargeEmojiPane', {
-                                    directives: [{
-                                            name: 'clickoutside',
-                                            rawName: 'v-clickoutside',
-                                            value: e.closeEmojiPane,
-                                            expression: 'closeEmojiPane'
+                                    t('input', {
+                                        directives: [{
+                                            name: 'model',
+                                            rawName: 'v-model',
+                                            value: e.inputStatus.text,
+                                            expression: 'inputStatus.text'
                                         }],
-                                    ref: 'emojiPaneRef',
-                                    attrs: {
-                                        showEmojiPane: e.showEmojiPane,
-                                        lottieEmojiLists: e.lottieEmojiLists,
-                                        options: e.options,
-                                        packageId: e.packageId
-                                    },
-                                    on: { closeLargeEmojiPane: e.closeLargeEmojiPane }
-                                })], 1),
-                            t('div', {
-                                directives: [
-                                    {
-                                        name: 'clickoutside',
-                                        rawName: 'v-clickoutside',
-                                        value: e.closeHotWordPane,
-                                        expression: 'closeHotWordPane'
-                                    },
-                                    {
-                                        name: 'show',
-                                        rawName: 'v-show',
-                                        value: e.showHotWord,
-                                        expression: 'showHotWord'
-                                    }
-                                ],
-                                staticClass: 'express-box express-bot-box'
-                            }, [t('ul', e._l(e.hotWordList, function (s, o) {
-                                    return t('li', {
-                                        key: o,
-                                        staticClass: 'express-item-bot',
-                                        domProps: { innerHTML: e._s(s) },
+                                        ref: 'inputBox',
+                                        class: { disabled: e.needLoak },
+                                        attrs: {
+                                            type: 'text',
+                                            placeholder: e.$t('classroom.largeClass.chats.inputPlaceholder'),
+                                            autocomplete: 'off',
+                                            disabled: e.needLoak,
+                                            maxlength: '200'
+                                        },
+                                        domProps: { value: e.inputStatus.text },
                                         on: {
-                                            click: function (t) {
-                                                return e.handleSelectHotWord(s);
+                                            keydown: [
+                                                function (t) {
+                                                    return !t.type.indexOf('key') && e._k(t.keyCode, 'enter', 13, t.key, 'Enter') ? (console.info('if(!$event.type.indexOf(\'key\') && _vm._k($event.keyCode, \'enter\', 13, $event.key, \'Enter\'))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), null) : e.handleSendMessage.apply(null, arguments);
+                                                },
+                                                e.handleInputKeyDown
+                                            ],
+                                            keyup: e.handleInputKeyDown,
+                                            input: function (t) {
+                                                t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : e.$set(e.inputStatus, 'text', t.target.value);
                                             }
                                         }
-                                    });
-                                }), 0)])
+                                    }),
+                                    t('div', {
+                                        staticClass: 'send-button',
+                                        class: { red: e.inputStatus.text.length > 0 && !e.needLoak },
+                                        on: { click: e.handleSendMessage }
+                                    }, [t('span')])
+                                ])
+                            ]),
+                            e.needLoak ? e._e() : t('div', {
+                                staticClass: 'teacher-only',
+                                on: {
+                                    mouseenter: e.handleTeacherOnlyMouseenter,
+                                    mouseleave: e.handleTeacherOnlyMouseleave
+                                }
+                            }, [
+                                t('div', {
+                                    staticClass: 'icon-button',
+                                    on: { click: e.handleTeacherOnly }
+                                }),
+                                e.showTeacherOnly ? t('div', { staticClass: 'operation-content' }, [
+                                    t('div', { staticClass: 'operation-title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.chats.teacherOnly')) + ' ')]),
+                                    t('div', { staticClass: 'operation-switch' }, [t('a-switch', {
+                                        on: { change: e.changeTeacherOnly },
+                                        model: {
+                                            value: e.lockTeacherMessage,
+                                            callback: function (t) {
+                                                e.lockTeacherMessage = t;
+                                            },
+                                            expression: 'lockTeacherMessage'
+                                        }
+                                    })], 1)
+                                ]) : e._e()
+                            ])
                         ]),
                         t('div', {
+                            staticClass: 'emoji-container',
+                            attrs: { id: 'emoji-container-id' }
+                        }, [t('LargeEmojiPane', {
                             directives: [{
+                                name: 'clickoutside',
+                                rawName: 'v-clickoutside',
+                                value: e.closeEmojiPane,
+                                expression: 'closeEmojiPane'
+                            }],
+                            ref: 'emojiPaneRef',
+                            attrs: {
+                                showEmojiPane: e.showEmojiPane,
+                                lottieEmojiLists: e.lottieEmojiLists,
+                                options: e.options,
+                                packageId: e.packageId
+                            },
+                            on: { closeLargeEmojiPane: e.closeLargeEmojiPane }
+                        })], 1),
+                        t('div', {
+                            directives: [
+                                {
+                                    name: 'clickoutside',
+                                    rawName: 'v-clickoutside',
+                                    value: e.closeHotWordPane,
+                                    expression: 'closeHotWordPane'
+                                },
+                                {
                                     name: 'show',
                                     rawName: 'v-show',
-                                    value: e.hasNewMsg,
-                                    expression: 'hasNewMsg'
-                                }],
-                            staticClass: 'new-meg-tip',
-                            on: { click: e.handleNewMsg }
-                        }, [t('i', { staticClass: 'icon-more-bottom' })])
-                    ]) : e._e()
-                ], 1);
-            }, ws = [], ys = (s('498a2'), s('5e38')), Ps = s.n(ys), As = function () {
-                var e = this, t = e._self._c;
-                return t('div', [
-                    e.privateMessageStatus ? t('div', { staticClass: 'private-message-entry' }, [t('div', {
-                            staticClass: 'icon-goback',
-                            on: {
-                                click: function (t) {
-                                    return e.handleChangeStatus(false);
+                                    value: e.showHotWord,
+                                    expression: 'showHotWord'
                                 }
-                            }
-                        })]) : e._e(),
-                    e.showPrivateMessageEntry ? t('div', { staticClass: 'private-message-entry' }, [t('div', {
-                            staticClass: 'icon-private-msg-num',
-                            on: {
-                                click: function (t) {
-                                    return e.handleChangeStatus(true);
-                                }
-                            }
-                        }, [e.showPrivateMessageNum ? t('div', { staticClass: 'msg-num' }, [e._v(e._s(e.messageNumAlias))]) : e._e()])]) : e._e()
-                ]);
-            }, ks = [], Ls = {
-                props: {
-                    privateMessages: {
-                        default: [],
-                        type: Array
-                    },
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), {};
-                        }
-                    }
-                },
-                data: function () {
-                    return {
-                        privateMessageStatus: false,
-                        messageNum: 0
-                    };
-                },
-                computed: {
-                    showPrivateMessageEntry: function () {
-                        return console.info('对象函数 showPrivateMessageEntry,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.privateMessages.length > 0 && !this.privateMessageStatus;
-                    },
-                    showPrivateMessageNum: function () {
-                        return console.info('对象函数 showPrivateMessageNum,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.messageNum > 0;
-                    },
-                    messageNumAlias: function () {
-                        return console.info('对象函数 messageNumAlias,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.messageNum > 99 ? (console.info('if(this.messageNum > 99)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), '99+') : this.messageNum;
-                    }
-                },
-                mounted: function () {
-                    this.initEvent();
-                },
-                methods: {
-                    initEvent: function () {
-                        var e = this;
-                        console.info('对象函数 initEvent,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
-                        this.$bus.$on('chats.privateMessagePush', function () {
-                            console.info('箭头函数 监听 chats.privateMessagePush,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
-                            e.messageNum = e.messageNum + 1;
-                        });
-                    },
-                    handleChangeStatus: function (e) {
-                        console.info('对象函数 handleChangeStatus(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
-                        this.privateMessageStatus = e;
-                        this.$bus.$emit('chats.changePrivateMessageStatus', e);
-                        this.messageNum = 0;
-                        Object(x.e)('hw_classroom_tutor_message', this.options);
-                    }
-                }
-            }, Is = Ls, xs = (s('77132'), Object(Ae.a)(Is, As, ks, false, null, 'dd662714', null)), Os = xs.exports, js = function () {
-                var e = this, t = e._self._c;
-                return e.showEmojiPane ? t('div', {
-                    directives: [{
-                            name: 'clickoutside',
-                            rawName: 'v-clickoutside',
-                            value: e.closeEmojiPane,
-                            expression: 'closeEmojiPane'
-                        }],
-                    staticClass: 'emojis-pane-container',
-                    class: e.allOnStage ? 'allOnStage-pane-container' : ''
-                }, [
-                    t('section', { staticClass: 'emojis-nav' }, [t('ul', e._l(e.lottieEmojiLists, function (o, a) {
+                            ],
+                            staticClass: 'express-box express-bot-box'
+                        }, [t('ul', e._l(e.hotWordList, function (s, o) {
                             return t('li', {
-                                key: o.emojiPackageId,
-                                staticClass: 'emoji-nav-content',
-                                class: o.emojiPackageId == e.currentOrderId ? 'active' : '',
+                                key: o,
+                                staticClass: 'express-item-bot',
+                                domProps: { innerHTML: e._s(s) },
                                 on: {
                                     click: function (t) {
-                                        return e.selectedEmoji(o.emojiPackageId, a);
+                                        return e.handleSelectHotWord(s);
                                     }
                                 }
-                            }, [o.isLocal ? t('img', {
-                                    attrs: {
-                                        src: s('ff63'),
-                                        alt: ''
-                                    }
-                                }) : t('img', {
-                                    attrs: {
-                                        src: o.picture,
-                                        alt: ''
-                                    }
-                                })]);
-                        }), 0)]),
-                    t('section', { staticClass: 'emojis-list' }, [t('div', {
-                            ref: 'scrollWrapper',
-                            staticClass: 'emoji-scroll-wrapper'
-                        }, e._l(e.lottieEmojiLists, function (s) {
-                            return t('div', {
-                                key: s.emojiPackageId,
-                                staticClass: 'emoji-show-list',
-                                class: {
-                                    'native-emoji': 1 == s.isLocal,
-                                    'overshow-style': 1 == s.isOver && 1 == s.overShow
-                                },
-                                style: e.synamicWidthStyle(s.isLocal, s.content.length)
-                            }, [1 == s.isOver && 1 == s.overShow ? [t('div', { staticClass: 'emojiGroup-overShow' }, [
-                                        t('span', { staticClass: 'overShow-emoji' }, [
-                                            t('img', { attrs: { src: s.picture } }),
-                                            t('span')
-                                        ]),
-                                        t('p', { staticClass: 'overShow-tips top' }, [e._v(' ' + e._s(e.$t('classroom.smallClass.dynamicEmoji[0]')) + ' ')]),
-                                        t('p', { staticClass: 'overShow-tips' }, [e._v(e._s(e.$t('classroom.smallClass.dynamicEmoji[1]')))])
-                                    ])] : e._l(s.content, function (o, a) {
-                                    return t('div', {
-                                        key: a,
-                                        staticClass: 'emoji-group-item'
-                                    }, [s.isLocal ? t('Emoticon', {
-                                            attrs: {
-                                                name: o.name,
-                                                type: o.type,
-                                                enableHover: true,
-                                                hoverWidth: 45,
-                                                hoverHeight: 45,
-                                                width: 40,
-                                                height: 40
-                                            },
-                                            on: {
-                                                handleClick: function (t) {
-                                                    return e.handleLocalClick(arguments, s, a);
-                                                }
-                                            }
-                                        }) : t('div', {
-                                            staticClass: 'dynamic-emoji',
-                                            on: {
-                                                click: function (t) {
-                                                    return e.handleLottieClick(o, s);
-                                                }
-                                            }
-                                        }, [t('img', {
-                                                attrs: {
-                                                    src: o.emojiPicture,
-                                                    alt: ''
-                                                }
-                                            })])], 1);
-                                })], 2);
+                            });
                         }), 0)])
-                ]) : e._e();
-            }, Ts = [], Ms = (s('8a79'), s('90ea')), Rs = s('c02a'), Es = {
-                name: 'EmojiPane',
-                components: { Emoticon: Ms.a },
-                data: function () {
-                    return {
-                        emoticonList: '',
-                        showEmojiPane: false,
-                        nickName: '',
-                        avatar: '',
-                        currentOrderId: 0,
-                        dynamicEmolist: []
-                    };
-                },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    allOnStage: {
-                        type: Boolean,
-                        default: false
-                    },
-                    showEmojiPane: {
-                        type: Boolean,
-                        default: false
-                    },
-                    packageId: {
-                        type: Number,
-                        default: 0
-                    },
-                    lottieEmojiLists: {
-                        default: [],
-                        type: Array
+                    ]),
+                    t('div', {
+                        directives: [{
+                            name: 'show',
+                            rawName: 'v-show',
+                            value: e.hasNewMsg,
+                            expression: 'hasNewMsg'
+                        }],
+                        staticClass: 'new-meg-tip',
+                        on: { click: e.handleNewMsg }
+                    }, [t('i', { staticClass: 'icon-more-bottom' })])
+                ]) : e._e()
+            ], 1);
+        }, ws = [], ys = (s('498a2'), s('5e38')), Ps = s.n(ys), As = function () {
+            var e = this, t = e._self._c;
+            return t('div', [
+                e.privateMessageStatus ? t('div', { staticClass: 'private-message-entry' }, [t('div', {
+                    staticClass: 'icon-goback',
+                    on: {
+                        click: function (t) {
+                            return e.handleChangeStatus(false);
+                        }
                     }
+                })]) : e._e(),
+                e.showPrivateMessageEntry ? t('div', { staticClass: 'private-message-entry' }, [t('div', {
+                    staticClass: 'icon-private-msg-num',
+                    on: {
+                        click: function (t) {
+                            return e.handleChangeStatus(true);
+                        }
+                    }
+                }, [e.showPrivateMessageNum ? t('div', { staticClass: 'msg-num' }, [e._v(e._s(e.messageNumAlias))]) : e._e()])]) : e._e()
+            ]);
+        }, ks = [], Ls = {
+            props: {
+                privateMessages: {
+                    default: [],
+                    type: Array
                 },
-                computed: {},
-                mounted: function () {
-                    this.getUserInfo();
+                options: {
+                    type: Object,
+                    default: function () {
+                        return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), {};
+                    }
+                }
+            },
+            data: function () {
+                return {
+                    privateMessageStatus: false,
+                    messageNum: 0
+                };
+            },
+            computed: {
+                showPrivateMessageEntry: function () {
+                    return console.info('对象函数 showPrivateMessageEntry,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.privateMessages.length > 0 && !this.privateMessageStatus;
                 },
-                methods: {
-                    getUserInfo: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o, a;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                showPrivateMessageNum: function () {
+                    return console.info('对象函数 showPrivateMessageNum,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.messageNum > 0;
+                },
+                messageNumAlias: function () {
+                    return console.info('对象函数 messageNumAlias,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), this.messageNum > 99 ? (console.info('if(this.messageNum > 99)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue'), '99+') : this.messageNum;
+                }
+            },
+            mounted: function () {
+                this.initEvent();
+            },
+            methods: {
+                initEvent: function () {
+                    var e = this;
+                    console.info('对象函数 initEvent,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
+                    this.$bus.$on('chats.privateMessagePush', function () {
+                        console.info('箭头函数 监听 chats.privateMessagePush,filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
+                        e.messageNum = e.messageNum + 1;
+                    });
+                },
+                handleChangeStatus: function (e) {
+                    console.info('对象函数 handleChangeStatus(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/privateMessageNum.vue');
+                    this.privateMessageStatus = e;
+                    this.$bus.$emit('chats.changePrivateMessageStatus', e);
+                    this.messageNum = 0;
+                    Object(x.e)('hw_classroom_tutor_message', this.options);
+                }
+            }
+        }, Is = Ls, xs = (s('77132'), Object(Ae.a)(Is, As, ks, false, null, 'dd662714', null)), Os = xs.exports, js = function () {
+            var e = this, t = e._self._c;
+            return e.showEmojiPane ? t('div', {
+                directives: [{
+                    name: 'clickoutside',
+                    rawName: 'v-clickoutside',
+                    value: e.closeEmojiPane,
+                    expression: 'closeEmojiPane'
+                }],
+                staticClass: 'emojis-pane-container',
+                class: e.allOnStage ? 'allOnStage-pane-container' : ''
+            }, [
+                t('section', { staticClass: 'emojis-nav' }, [t('ul', e._l(e.lottieEmojiLists, function (o, a) {
+                    return t('li', {
+                        key: o.emojiPackageId,
+                        staticClass: 'emoji-nav-content',
+                        class: o.emojiPackageId == e.currentOrderId ? 'active' : '',
+                        on: {
+                            click: function (t) {
+                                return e.selectedEmoji(o.emojiPackageId, a);
+                            }
+                        }
+                    }, [o.isLocal ? t('img', {
+                        attrs: {
+                            src: s('ff63'),
+                            alt: ''
+                        }
+                    }) : t('img', {
+                        attrs: {
+                            src: o.picture,
+                            alt: ''
+                        }
+                    })]);
+                }), 0)]),
+                t('section', { staticClass: 'emojis-list' }, [t('div', {
+                    ref: 'scrollWrapper',
+                    staticClass: 'emoji-scroll-wrapper'
+                }, e._l(e.lottieEmojiLists, function (s) {
+                    return t('div', {
+                        key: s.emojiPackageId,
+                        staticClass: 'emoji-show-list',
+                        class: {
+                            'native-emoji': 1 == s.isLocal,
+                            'overshow-style': 1 == s.isOver && 1 == s.overShow
+                        },
+                        style: e.synamicWidthStyle(s.isLocal, s.content.length)
+                    }, [1 == s.isOver && 1 == s.overShow ? [t('div', { staticClass: 'emojiGroup-overShow' }, [
+                        t('span', { staticClass: 'overShow-emoji' }, [
+                            t('img', { attrs: { src: s.picture } }),
+                            t('span')
+                        ]),
+                        t('p', { staticClass: 'overShow-tips top' }, [e._v(' ' + e._s(e.$t('classroom.smallClass.dynamicEmoji[0]')) + ' ')]),
+                        t('p', { staticClass: 'overShow-tips' }, [e._v(e._s(e.$t('classroom.smallClass.dynamicEmoji[1]')))])
+                    ])] : e._l(s.content, function (o, a) {
+                        return t('div', {
+                            key: a,
+                            staticClass: 'emoji-group-item'
+                        }, [s.isLocal ? t('Emoticon', {
+                            attrs: {
+                                name: o.name,
+                                type: o.type,
+                                enableHover: true,
+                                hoverWidth: 45,
+                                hoverHeight: 45,
+                                width: 40,
+                                height: 40
+                            },
+                            on: {
+                                handleClick: function (t) {
+                                    return e.handleLocalClick(arguments, s, a);
+                                }
+                            }
+                        }) : t('div', {
+                            staticClass: 'dynamic-emoji',
+                            on: {
+                                click: function (t) {
+                                    return e.handleLottieClick(o, s);
+                                }
+                            }
+                        }, [t('img', {
+                            attrs: {
+                                src: o.emojiPicture,
+                                alt: ''
+                            }
+                        })])], 1);
+                    })], 2);
+                }), 0)])
+            ]) : e._e();
+        }, Ts = [], Ms = (s('8a79'), s('90ea')), Rs = s('c02a'), Es = {
+            name: 'EmojiPane',
+            components: { Emoticon: Ms.a },
+            data: function () {
+                return {
+                    emoticonList: '',
+                    showEmojiPane: false,
+                    nickName: '',
+                    avatar: '',
+                    currentOrderId: 0,
+                    dynamicEmolist: []
+                };
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
+                },
+                allOnStage: {
+                    type: Boolean,
+                    default: false
+                },
+                showEmojiPane: {
+                    type: Boolean,
+                    default: false
+                },
+                packageId: {
+                    type: Number,
+                    default: 0
+                },
+                lottieEmojiLists: {
+                    default: [],
+                    type: Array
+                }
+            },
+            computed: {},
+            mounted: function () {
+                this.getUserInfo();
+            },
+            methods: {
+                getUserInfo: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o, a;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 getUserInfo,filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue'), t.next = 3, Object(oe.a)();
                                     case 3:
@@ -4052,457 +4052,457 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
-                                }
-                            }, t);
-                        }))();
-                    },
-                    handleClick: function (e, t, s) {
-                        console.info('对象函数 handleClick(params, emojiGroup, key)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        this.$bus.$emit('handleLargeNativeEmoji', e);
-                        this.$emit('closeLargeEmojiPane');
-                        this.currentOrderId = 0;
-                        Object(ms.c)(this.options, e, t, s, this.allOnStage, this.packageId);
-                        Rs.c({
-                            type: 4,
-                            contentType: 'emoji',
-                            msg: ''.concat(e.name)
-                        });
-                    },
-                    handleLocalClick: function (e, t, s) {
-                        console.info('对象函数 handleLocalClick(params, emojiGroup, key)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '学生选择本地表情发送' }
-                        });
-                        this.handleClick(e[0], t, s);
-                    },
-                    handleLottieClick: function (e, t) {
-                        console.info('对象函数 handleLottieClick(params, emojiGroup)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '学生选择动态表情发送' }
-                        });
-                        var s = e.lottieUrl.endsWith('.json') ? 2 : 3, o = Object(F.a)(Object(F.a)({}, e), {}, {
-                                type: s,
-                                name: e.emojiName
-                            });
-                        this.handleClick(o, t);
-                    },
-                    synamicWidthStyle: function (e, t) {
-                        console.info('对象函数 synamicWidthStyle(isLocal, len)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        var n = (t - 6) / 2 * 70 + 300;
-                        return { width: ''.concat(e ? 488 : n, 'px') };
-                    },
-                    selectedEmoji: function (e, t) {
-                        console.info('对象函数 selectedEmoji(emojiPackageId, key)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '学生选择表情类型' }
-                        });
-                        this.currentOrderId = e;
-                        var s = document.getElementsByClassName('emoji-show-list')[t];
-                        s && s.scrollIntoView({ inline: 'center' });
-                    },
-                    changeNavPos: function () {
-                        console.info('对象函数 changeNavPos,filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
-                        this.currentOrderId = 0;
-                    }
-                }
-            }, Vs = Es, Ns = (s('712f'), Object(Ae.a)(Vs, js, Ts, false, null, '7eaf38f4', null)), Ds = Ns.exports, Bs = s('a5d8'), Us = {
-                components: {
-                    PrivateMessageNum: Os,
-                    LargeEmojiPane: Ds
-                },
-                props: {
-                    privateMessageStatus: {
-                        type: Boolean,
-                        default: false
-                    },
-                    privateMessages: {
-                        default: [],
-                        type: Array
-                    },
-                    inputStatus: {
-                        type: Object,
-                        default: function () {
-                            return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), {
-                                status: 5,
-                                text: this.$t('classroom.largeClass.chats.inputStatusMap')[5]
-                            };
-                        }
-                    },
-                    isPlayBack: { default: false },
-                    planId: { default: '' },
-                    allOnStage: false,
-                    lottieEmojiLists: {
-                        default: [],
-                        type: Array
-                    },
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), {};
-                        }
-                    },
-                    packageId: {
-                        type: Number,
-                        default: 0
-                    },
-                    hasNewMsg: Boolean,
-                    hasPrivateNewMsg: Boolean,
-                    handleInputKeyDown: Function,
-                    goodMethod: Boolean,
-                    lockTeacherMessage: Boolean
-                },
-                directives: { Clickoutside: Bs.a },
-                data: function () {
-                    return {
-                        expressList: ls,
-                        showHotWord: false,
-                        showTeacherOnly: false,
-                        inputBox: null,
-                        showEmojiPane: false,
-                        rightLabel: '',
-                        teacherOnlyTimer: null,
-                        privateInputStatus: { text: '' }
-                    };
-                },
-                computed: {
-                    needLoak: function () {
-                        return console.info('对象函数 needLoak,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), 3 != this.inputStatus.status && 4 != this.inputStatus.status;
-                    },
-                    msgTip: function () {
-                        return console.info('对象函数 msgTip,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$t('classroom.largeClass.chats.msgTip');
-                    },
-                    hotWordList: function () {
-                        return console.info('对象函数 hotWordList,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$t('classroom.largeClass.chats.hotWordList');
-                    }
-                },
-                watch: {
-                    showHotWord: function (e) {
-                        console.info('对象函数 showHotWord(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        e && this.reSensorEvent('hw_classroom_chat_shortcut_show');
-                    },
-                    needLoak: function (e) {
-                        console.info('对象函数 needLoak(isNeedLoak)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: {
-                                msg: '老师禁言',
-                                params: {
-                                    isNeedLoak: e,
-                                    showEmojiPane: this.showEmojiPane
                                 }
                             }
-                        });
-                        e && this.showEmojiPane && this.closeLargeEmojiPane();
-                    }
+                        }, t);
+                    }))();
                 },
-                mounted: function () {
-                    var e = this;
-                    this.inputBox = this.$refs.inputBox;
-                    J.a.emit('interaction', {
-                        type: 'onContinueRightLabel',
-                        data: function (t) {
-                            e.rightLabel = t;
-                        }
+                handleClick: function (e, t, s) {
+                    console.info('对象函数 handleClick(params, emojiGroup, key)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    this.$bus.$emit('handleLargeNativeEmoji', e);
+                    this.$emit('closeLargeEmojiPane');
+                    this.currentOrderId = 0;
+                    Object(ms.c)(this.options, e, t, s, this.allOnStage, this.packageId);
+                    Rs.c({
+                        type: 4,
+                        contentType: 'emoji',
+                        msg: ''.concat(e.name)
                     });
                 },
-                methods: {
-                    reSensorEvent: function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                        console.info('对象函数 reSensorEvent(eventName, params)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        Object(x.e)(e, this.options, t);
-                    },
-                    handleShowExpress: function () {
-                        console.info('对象函数 handleShowExpress,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: {
-                                msg: '点击表情icon切换显示隐藏',
-                                privateMessageStatus: this.privateMessageStatus,
-                                needLoak: this.needLoak
+                handleLocalClick: function (e, t, s) {
+                    console.info('对象函数 handleLocalClick(params, emojiGroup, key)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '学生选择本地表情发送' }
+                    });
+                    this.handleClick(e[0], t, s);
+                },
+                handleLottieClick: function (e, t) {
+                    console.info('对象函数 handleLottieClick(params, emojiGroup)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '学生选择动态表情发送' }
+                    });
+                    var s = e.lottieUrl.endsWith('.json') ? 2 : 3, o = Object(F.a)(Object(F.a)({}, e), {}, {
+                        type: s,
+                        name: e.emojiName
+                    });
+                    this.handleClick(o, t);
+                },
+                synamicWidthStyle: function (e, t) {
+                    console.info('对象函数 synamicWidthStyle(isLocal, len)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    var n = (t - 6) / 2 * 70 + 300;
+                    return { width: ''.concat(e ? 488 : n, 'px') };
+                },
+                selectedEmoji: function (e, t) {
+                    console.info('对象函数 selectedEmoji(emojiPackageId, key)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '学生选择表情类型' }
+                    });
+                    this.currentOrderId = e;
+                    var s = document.getElementsByClassName('emoji-show-list')[t];
+                    s && s.scrollIntoView({ inline: 'center' });
+                },
+                changeNavPos: function () {
+                    console.info('对象函数 changeNavPos,filePath:renderer/components/Classroom/LargeClass/base/chats/components/LargeEmojiPane/index.vue');
+                    this.currentOrderId = 0;
+                }
+            }
+        }, Vs = Es, Ns = (s('712f'), Object(Ae.a)(Vs, js, Ts, false, null, '7eaf38f4', null)), Ds = Ns.exports, Bs = s('a5d8'), Us = {
+            components: {
+                PrivateMessageNum: Os,
+                LargeEmojiPane: Ds
+            },
+            props: {
+                privateMessageStatus: {
+                    type: Boolean,
+                    default: false
+                },
+                privateMessages: {
+                    default: [],
+                    type: Array
+                },
+                inputStatus: {
+                    type: Object,
+                    default: function () {
+                        return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), {
+                            status: 5,
+                            text: this.$t('classroom.largeClass.chats.inputStatusMap')[5]
+                        };
+                    }
+                },
+                isPlayBack: { default: false },
+                planId: { default: '' },
+                allOnStage: false,
+                lottieEmojiLists: {
+                    default: [],
+                    type: Array
+                },
+                options: {
+                    type: Object,
+                    default: function () {
+                        return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), {};
+                    }
+                },
+                packageId: {
+                    type: Number,
+                    default: 0
+                },
+                hasNewMsg: Boolean,
+                hasPrivateNewMsg: Boolean,
+                handleInputKeyDown: Function,
+                goodMethod: Boolean,
+                lockTeacherMessage: Boolean
+            },
+            directives: { Clickoutside: Bs.a },
+            data: function () {
+                return {
+                    expressList: ls,
+                    showHotWord: false,
+                    showTeacherOnly: false,
+                    inputBox: null,
+                    showEmojiPane: false,
+                    rightLabel: '',
+                    teacherOnlyTimer: null,
+                    privateInputStatus: { text: '' }
+                };
+            },
+            computed: {
+                needLoak: function () {
+                    return console.info('对象函数 needLoak,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), 3 != this.inputStatus.status && 4 != this.inputStatus.status;
+                },
+                msgTip: function () {
+                    return console.info('对象函数 msgTip,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$t('classroom.largeClass.chats.msgTip');
+                },
+                hotWordList: function () {
+                    return console.info('对象函数 hotWordList,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$t('classroom.largeClass.chats.hotWordList');
+                }
+            },
+            watch: {
+                showHotWord: function (e) {
+                    console.info('对象函数 showHotWord(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    e && this.reSensorEvent('hw_classroom_chat_shortcut_show');
+                },
+                needLoak: function (e) {
+                    console.info('对象函数 needLoak(isNeedLoak)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: {
+                            msg: '老师禁言',
+                            params: {
+                                isNeedLoak: e,
+                                showEmojiPane: this.showEmojiPane
                             }
-                        });
-                        this.privateMessageStatus || !this.needLoak ? (this.showEmojiPane = !this.showEmojiPane, this.showEmojiPane ? (this.dynamicDealPaneZindex('add'), Object(ms.b)(this.options, this.allOnStage, this.packageId)) : this.dynamicDealPaneZindex('remove')) : console.info('if(!this.privateMessageStatus && this.needLoak)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                    },
-                    closeEmojiPane: function (e) {
-                        console.info('对象函数 closeEmojiPane(e)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        var t = document.querySelector('#emoji-icon'), s = t == e.target;
-                        if (s) {
-                            return console.info('if(clickDom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), void (this.showEmojiPane = true);
                         }
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '点击外部关闭表情弹窗' }
-                        });
-                        this.showEmojiPane = false;
-                        this.dynamicDealPaneZindex('remove');
-                        this.$refs.emojiPaneRef.changeNavPos();
-                    },
-                    closeLargeEmojiPane: function () {
-                        console.info('对象函数 closeLargeEmojiPane,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '关闭表情面板' }
-                        });
-                        this.showEmojiPane = false;
-                        this.dynamicDealPaneZindex('remove');
-                    },
-                    dynamicDealPaneZindex: function (e) {
-                        console.info('对象函数 dynamicDealPaneZindex(type)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        var t = document.getElementById('emoji-container-id');
-                        'add' === e ? Object(X.a)(t, 'emoji-z-index') : 'remove' === e && Object(X.w)(t, 'emoji-z-index');
-                    },
-                    handleSelectEmoji: function (e) {
-                        console.info('对象函数 handleSelectEmoji(word)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        var t = this.privateMessageStatus ? this.privateInputStatus : this.inputStatus, s = t.text;
-                        if (s.length + e.length > 100) {
-                            console.info('if(text.length + word.length > 100)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        } else {
-                            var o = rs(this.inputBox), a = s.substring(0, o) + '[e]' + e + '[e]' + s.substring(o, s.length);
-                            this.privateMessageStatus ? this.privateInputStatus.text = a : this.$emit('changeInputText', a);
-                            this.inputBox.focus();
+                    });
+                    e && this.showEmojiPane && this.closeLargeEmojiPane();
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.inputBox = this.$refs.inputBox;
+                J.a.emit('interaction', {
+                    type: 'onContinueRightLabel',
+                    data: function (t) {
+                        e.rightLabel = t;
+                    }
+                });
+            },
+            methods: {
+                reSensorEvent: function (e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                    console.info('对象函数 reSensorEvent(eventName, params)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    Object(x.e)(e, this.options, t);
+                },
+                handleShowExpress: function () {
+                    console.info('对象函数 handleShowExpress,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: {
+                            msg: '点击表情icon切换显示隐藏',
+                            privateMessageStatus: this.privateMessageStatus,
+                            needLoak: this.needLoak
                         }
-                    },
-                    handleSelectHotWord: function (e) {
-                        if (console.info('对象函数 handleSelectHotWord(word)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), L.a.send({
-                                tag: 'action',
-                                content: { msg: '选择热词' }
-                            }), this.showHotWord = false, this.handleIn3s()) {
-                            console.info('if(this.handleIn3s())为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        } else {
-                            var t = {
-                                type: es.mine,
-                                name: this.msgTip.SPEECH_MINE,
-                                msg: e,
-                                evenexc: this.rightLabel
-                            };
-                            this.$emit('handleSetMessage', false, t);
-                            this.reSensorEvent('hw_classroom_chat_shortcut', { sentence_content: e });
-                            Rs.c(t);
-                        }
-                    },
-                    handleOpenHotWord: function () {
-                        console.info('对象函数 handleOpenHotWord,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '打开热词面板' }
-                        });
-                        this.showHotWord = true;
-                    },
-                    closeHotWordPane: function (e) {
-                        console.info('对象函数 closeHotWordPane(e)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '关闭热词面板' }
-                        });
-                        var t = document.querySelector('#quick-fadeback'), s = t == e.target;
-                        s ? console.info('if(clickDom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : this.showHotWord = s;
-                    },
-                    handleSendMessage: function () {
-                        console.info('对象函数 handleSendMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: {
-                                msg: '发送消息',
-                                inputStatus: this.inputStatus
-                            }
-                        });
-                        var e = this.inputStatus, t = e.text, s = e.status;
-                        t.length ? this.handleIn3s() ? console.info('if(this.handleIn3s())为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : (t.trim().length > 0 && 3 === s && (this.inputStatus.text = '', this.$emit('handleSetMessage', false, {
+                    });
+                    this.privateMessageStatus || !this.needLoak ? (this.showEmojiPane = !this.showEmojiPane, this.showEmojiPane ? (this.dynamicDealPaneZindex('add'), Object(ms.b)(this.options, this.allOnStage, this.packageId)) : this.dynamicDealPaneZindex('remove')) : console.info('if(!this.privateMessageStatus && this.needLoak)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                },
+                closeEmojiPane: function (e) {
+                    console.info('对象函数 closeEmojiPane(e)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    var t = document.querySelector('#emoji-icon'), s = t == e.target;
+                    if (s) {
+                        return console.info('if(clickDom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), void (this.showEmojiPane = true);
+                    }
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '点击外部关闭表情弹窗' }
+                    });
+                    this.showEmojiPane = false;
+                    this.dynamicDealPaneZindex('remove');
+                    this.$refs.emojiPaneRef.changeNavPos();
+                },
+                closeLargeEmojiPane: function () {
+                    console.info('对象函数 closeLargeEmojiPane,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '关闭表情面板' }
+                    });
+                    this.showEmojiPane = false;
+                    this.dynamicDealPaneZindex('remove');
+                },
+                dynamicDealPaneZindex: function (e) {
+                    console.info('对象函数 dynamicDealPaneZindex(type)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    var t = document.getElementById('emoji-container-id');
+                    'add' === e ? Object(X.a)(t, 'emoji-z-index') : 'remove' === e && Object(X.w)(t, 'emoji-z-index');
+                },
+                handleSelectEmoji: function (e) {
+                    console.info('对象函数 handleSelectEmoji(word)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    var t = this.privateMessageStatus ? this.privateInputStatus : this.inputStatus, s = t.text;
+                    if (s.length + e.length > 100) {
+                        console.info('if(text.length + word.length > 100)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    } else {
+                        var o = rs(this.inputBox), a = s.substring(0, o) + '[e]' + e + '[e]' + s.substring(o, s.length);
+                        this.privateMessageStatus ? this.privateInputStatus.text = a : this.$emit('changeInputText', a);
+                        this.inputBox.focus();
+                    }
+                },
+                handleSelectHotWord: function (e) {
+                    if (console.info('对象函数 handleSelectHotWord(word)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), L.a.send({
+                        tag: 'action',
+                        content: { msg: '选择热词' }
+                    }), this.showHotWord = false, this.handleIn3s()) {
+                        console.info('if(this.handleIn3s())为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    } else {
+                        var t = {
                             type: es.mine,
                             name: this.msgTip.SPEECH_MINE,
-                            msg: Ps()(t).trim(),
+                            msg: e,
                             evenexc: this.rightLabel
-                        }), this.reSensorEvent('hw_classroom_chat_send'), Rs.c({
-                            type: es.mine,
-                            msg: Ps()(t).trim()
-                        })), this.inputBox.focus()) : console.info('if(!text.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                    },
-                    handleSetPrivateMessage: function () {
-                        console.info('对象函数 handleSetPrivateMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        var e = this.privateInputStatus.text;
-                        L.a.send({
-                            tag: 'action',
-                            content: {
-                                msg: '发送私聊消息',
-                                privateInputStatus: this.privateInputStatus
-                            }
-                        });
-                        e.length ? e.trim().length > 0 && (this.inputBox.blur(), this.privateInputStatus.text = '', this.$emit('handleSetPrivateMessage', {
-                            type: es.mine,
-                            name: this.msgTip.SPEECH_MINE,
-                            msg: Ps()(e).trim()
-                        }), this.reSensorEvent('hw_classroom_tutor_message_reply')) : console.info('if(!text.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                    },
-                    handleIn3s: function () {
-                        return console.info('对象函数 handleIn3s,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), 4 === this.inputStatus.status && (console.info('if(this.inputStatus.status === 4)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$emit('handleSetMessage', false, {
-                            type: es.system,
-                            name: this.msgTip.SPEECH_SYS,
-                            msg: this.msgTip.SPEECH_INTERVAL
-                        }), true);
-                    },
-                    handleNewMsg: function () {
-                        console.info('对象函数 handleNewMsg,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '点击新消息事件' }
-                        });
-                        this.$emit('handleSetNewMsgStatus', false);
-                        J.a.emit('logger', {
-                            type: 'interactive',
-                            data: {
-                                logtype: 'newMessage',
-                                isPlayBack: this.isPlayBack,
-                                planId: this.planId
-                            }
-                        });
-                    },
-                    handleTeacherOnly: function () {
-                        console.info('对象函数 handleTeacherOnly,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        this.showTeacherOnly = !this.showTeacherOnly;
-                        this.showTeacherOnly && (this.reSensorEvent('hw_classroom_teacher_only_show'), this.showHotWord = false);
-                    },
-                    changeTeacherOnly: function () {
-                        console.info('对象函数 changeTeacherOnly,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        this.$parent.handleSwitchMessage();
-                        this.reSensorEvent('hw_classroom_teacher_only_switch', { switch_type: this.lockTeacherMessage ? 1 : 0 });
-                    },
-                    handleTeacherOnlyMouseenter: function () {
-                        console.info('对象函数 handleTeacherOnlyMouseenter,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        this.teacherOnlyTimer && clearTimeout(this.teacherOnlyTimer);
-                    },
-                    handleTeacherOnlyMouseleave: function () {
-                        var e = this;
-                        console.info('对象函数 handleTeacherOnlyMouseleave,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
-                        this.teacherOnlyTimer = setTimeout(function () {
-                            e.showTeacherOnly = false;
-                        }, 500);
+                        };
+                        this.$emit('handleSetMessage', false, t);
+                        this.reSensorEvent('hw_classroom_chat_shortcut', { sentence_content: e });
+                        Rs.c(t);
+                    }
+                },
+                handleOpenHotWord: function () {
+                    console.info('对象函数 handleOpenHotWord,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '打开热词面板' }
+                    });
+                    this.showHotWord = true;
+                },
+                closeHotWordPane: function (e) {
+                    console.info('对象函数 closeHotWordPane(e)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '关闭热词面板' }
+                    });
+                    var t = document.querySelector('#quick-fadeback'), s = t == e.target;
+                    s ? console.info('if(clickDom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : this.showHotWord = s;
+                },
+                handleSendMessage: function () {
+                    console.info('对象函数 handleSendMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: {
+                            msg: '发送消息',
+                            inputStatus: this.inputStatus
+                        }
+                    });
+                    var e = this.inputStatus, t = e.text, s = e.status;
+                    t.length ? this.handleIn3s() ? console.info('if(this.handleIn3s())为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue') : (t.trim().length > 0 && 3 === s && (this.inputStatus.text = '', this.$emit('handleSetMessage', false, {
+                        type: es.mine,
+                        name: this.msgTip.SPEECH_MINE,
+                        msg: Ps()(t).trim(),
+                        evenexc: this.rightLabel
+                    }), this.reSensorEvent('hw_classroom_chat_send'), Rs.c({
+                        type: es.mine,
+                        msg: Ps()(t).trim()
+                    })), this.inputBox.focus()) : console.info('if(!text.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                },
+                handleSetPrivateMessage: function () {
+                    console.info('对象函数 handleSetPrivateMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    var e = this.privateInputStatus.text;
+                    L.a.send({
+                        tag: 'action',
+                        content: {
+                            msg: '发送私聊消息',
+                            privateInputStatus: this.privateInputStatus
+                        }
+                    });
+                    e.length ? e.trim().length > 0 && (this.inputBox.blur(), this.privateInputStatus.text = '', this.$emit('handleSetPrivateMessage', {
+                        type: es.mine,
+                        name: this.msgTip.SPEECH_MINE,
+                        msg: Ps()(e).trim()
+                    }), this.reSensorEvent('hw_classroom_tutor_message_reply')) : console.info('if(!text.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                },
+                handleIn3s: function () {
+                    return console.info('对象函数 handleIn3s,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), 4 === this.inputStatus.status && (console.info('if(this.inputStatus.status === 4)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/components/footer.vue'), this.$emit('handleSetMessage', false, {
+                        type: es.system,
+                        name: this.msgTip.SPEECH_SYS,
+                        msg: this.msgTip.SPEECH_INTERVAL
+                    }), true);
+                },
+                handleNewMsg: function () {
+                    console.info('对象函数 handleNewMsg,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '点击新消息事件' }
+                    });
+                    this.$emit('handleSetNewMsgStatus', false);
+                    J.a.emit('logger', {
+                        type: 'interactive',
+                        data: {
+                            logtype: 'newMessage',
+                            isPlayBack: this.isPlayBack,
+                            planId: this.planId
+                        }
+                    });
+                },
+                handleTeacherOnly: function () {
+                    console.info('对象函数 handleTeacherOnly,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    this.showTeacherOnly = !this.showTeacherOnly;
+                    this.showTeacherOnly && (this.reSensorEvent('hw_classroom_teacher_only_show'), this.showHotWord = false);
+                },
+                changeTeacherOnly: function () {
+                    console.info('对象函数 changeTeacherOnly,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    this.$parent.handleSwitchMessage();
+                    this.reSensorEvent('hw_classroom_teacher_only_switch', { switch_type: this.lockTeacherMessage ? 1 : 0 });
+                },
+                handleTeacherOnlyMouseenter: function () {
+                    console.info('对象函数 handleTeacherOnlyMouseenter,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    this.teacherOnlyTimer && clearTimeout(this.teacherOnlyTimer);
+                },
+                handleTeacherOnlyMouseleave: function () {
+                    var e = this;
+                    console.info('对象函数 handleTeacherOnlyMouseleave,filePath:renderer/components/Classroom/LargeClass/base/chats/components/footer.vue');
+                    this.teacherOnlyTimer = setTimeout(function () {
+                        e.showTeacherOnly = false;
+                    }, 500);
+                }
+            }
+        }, Gs = Us, Hs = (s('fb75'), Object(Ae.a)(Gs, Ss, ws, false, null, '51c3aeb6', null)), _s = Hs.exports, Fs = (s('ef91'), {
+            components: {
+                MessageArea: bs,
+                Footer: _s
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: function () {
+                        return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), {
+                            counselorInfo: {},
+                            isPlayBack: false,
+                            planId: ''
+                        };
                     }
                 }
-            }, Gs = Us, Hs = (s('fb75'), Object(Ae.a)(Gs, Ss, ws, false, null, '51c3aeb6', null)), _s = Hs.exports, Fs = (s('ef91'), {
-                components: {
-                    MessageArea: bs,
-                    Footer: _s
-                },
-                props: {
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return console.info('对象函数 default,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), {
-                                counselorInfo: {},
-                                isPlayBack: false,
-                                planId: ''
-                            };
+            },
+            data: function () {
+                var e = this.$t('classroom.largeClass.chats');
+                return {
+                    msgTip: e.msgTip,
+                    smallClassSwitchType: 'video',
+                    privateMessageStatus: false,
+                    lottieEmojiLists: [],
+                    teamSwitchStatus: null,
+                    ChatClass: {
+                        inputStatus: {
+                            status: 5,
+                            text: ''
                         }
                     }
+                };
+            },
+            computed: {
+                classType: function () {
+                    return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.options.classType;
                 },
-                data: function () {
-                    var e = this.$t('classroom.largeClass.chats');
-                    return {
-                        msgTip: e.msgTip,
-                        smallClassSwitchType: 'video',
-                        privateMessageStatus: false,
-                        lottieEmojiLists: [],
-                        teamSwitchStatus: null,
-                        ChatClass: {
-                            inputStatus: {
-                                status: 5,
-                                text: ''
-                            }
-                        }
-                    };
+                showFooter: function () {
+                    return console.info('对象函数 showFooter,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), !this.options.isAudition;
                 },
-                computed: {
-                    classType: function () {
-                        return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.options.classType;
-                    },
-                    showFooter: function () {
-                        return console.info('对象函数 showFooter,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), !this.options.isAudition;
-                    },
-                    isShowChat: function () {
-                        return console.info('对象函数 isShowChat,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), !this.classType || 'video' !== this.smallClassSwitchType || (console.info('if(this.classType && this.smallClassSwitchType === \'video\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), false);
-                    },
-                    diffClassStyle: function () {
-                        return console.info('对象函数 diffClassStyle,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), 1 === this.classType || 2 === this.classType ? (console.info('if(this.classType === 1 || this.classType === 2)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'small-class-chat-wrapper') : 0 === this.classType && false === this.teamSwitchStatus ? (console.info('if(this.classType === 0 && this.teamSwitchStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'chat-wrapper-no-video') : 0 === this.classType && true === this.teamSwitchStatus ? (console.info('if(this.classType === 0 && this.teamSwitchStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'chat-wrapper-video') : void 0;
-                    },
-                    peopleOnline: function () {
-                        console.info('对象函数 peopleOnline,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        var e = this.ChatClass.userList, t = e ? e.length : 0;
-                        return Object(z.c)() && Object(ds.b)({ onlineNum: t }), t;
-                    },
-                    messages: function () {
-                        console.info('对象函数 messages,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        var e = this.ChatClass.messages, t = e || [];
-                        return t;
-                    },
-                    privateMessages: function () {
-                        console.info('对象函数 privateMessages,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        var e = this.ChatClass.privateMessages, t = e || [];
-                        return t;
-                    },
-                    inputText: function () {
-                        return console.info('对象函数 inputText,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.ChatClass.inputStatus.text;
-                    },
-                    selfChatStatus: function () {
-                        console.info('对象函数 selfChatStatus,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.ChatClass;
-                        var e = this.ChatClass.inputStatus || {}, t = e.status, s = void 0 === t ? 5 : t;
-                        return 2 === s ? sessionStorage.setItem('stopSpeaking', true) : sessionStorage.setItem('stopSpeaking', false), s;
-                    }
+                isShowChat: function () {
+                    return console.info('对象函数 isShowChat,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), !this.classType || 'video' !== this.smallClassSwitchType || (console.info('if(this.classType && this.smallClassSwitchType === \'video\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), false);
                 },
-                mounted: function () {
+                diffClassStyle: function () {
+                    return console.info('对象函数 diffClassStyle,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), 1 === this.classType || 2 === this.classType ? (console.info('if(this.classType === 1 || this.classType === 2)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'small-class-chat-wrapper') : 0 === this.classType && false === this.teamSwitchStatus ? (console.info('if(this.classType === 0 && this.teamSwitchStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'chat-wrapper-no-video') : 0 === this.classType && true === this.teamSwitchStatus ? (console.info('if(this.classType === 0 && this.teamSwitchStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), 'chat-wrapper-video') : void 0;
+                },
+                peopleOnline: function () {
+                    console.info('对象函数 peopleOnline,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    var e = this.ChatClass.userList, t = e ? e.length : 0;
+                    return Object(z.c)() && Object(ds.b)({ onlineNum: t }), t;
+                },
+                messages: function () {
+                    console.info('对象函数 messages,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    var e = this.ChatClass.messages, t = e || [];
+                    return t;
+                },
+                privateMessages: function () {
+                    console.info('对象函数 privateMessages,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    var e = this.ChatClass.privateMessages, t = e || [];
+                    return t;
+                },
+                inputText: function () {
+                    return console.info('对象函数 inputText,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.ChatClass.inputStatus.text;
+                },
+                selfChatStatus: function () {
+                    console.info('对象函数 selfChatStatus,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.ChatClass;
+                    var e = this.ChatClass.inputStatus || {}, t = e.status, s = void 0 === t ? 5 : t;
+                    return 2 === s ? sessionStorage.setItem('stopSpeaking', true) : sessionStorage.setItem('stopSpeaking', false), s;
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.options;
+                this.$bus.$on('handleLargeNativeEmoji', function (t) {
+                    console.info('箭头函数 监听 handleLargeNativeEmoji(params)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    e.handleSetNewSingleEmoji(t);
+                });
+                this.getTeamSwitchStatus();
+                this.bindEvent();
+                this.initDynamicEmoji();
+                this.$nextTick(function () {
+                    window.addEventListener('scroll', e.handleOnScroll, true);
+                });
+            },
+            methods: {
+                handleOnScroll: function () {
+                    console.info('对象函数 handleOnScroll,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    var e = document.getElementById('messagesRef'), s = e.scrollTop + e.clientHeight + 1;
+                    e.scrollHeight <= s && (this.ChatClass.hasNewMsg = false, this.ChatClass.hasPrivateNewMsg = false);
+                },
+                bindEvent: function () {
                     var e = this;
-                    this.options;
-                    this.$bus.$on('handleLargeNativeEmoji', function (t) {
-                        console.info('箭头函数 监听 handleLargeNativeEmoji(params)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        e.handleSetNewSingleEmoji(t);
+                    console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.$bus.$on('updateTeamSwitchStatus', function (t) {
+                        console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                        e.teamSwitchStatus = t;
                     });
-                    this.getTeamSwitchStatus();
-                    this.bindEvent();
-                    this.initDynamicEmoji();
-                    this.$nextTick(function () {
-                        window.addEventListener('scroll', e.handleOnScroll, true);
+                    this.$bus.$on('chats.changePrivateMessageStatus', function (t) {
+                        console.info('箭头函数 监听 chats.changePrivateMessageStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                        e.privateMessageStatus = t;
+                        setTimeout(function () {
+                            e.handleSetNewMsgStatus();
+                        }, 0);
+                    });
+                    this.$bus.$on('switchVideoAndChat', function (t) {
+                        console.info('箭头函数 监听 switchVideoAndChat(type)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                        L.a.send({
+                            tag: 'action',
+                            content: { msg: '伪小班模式切换视频和聊天' }
+                        });
+                        e.smallClassSwitchType = t;
                     });
                 },
-                methods: {
-                    handleOnScroll: function () {
-                        console.info('对象函数 handleOnScroll,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        var e = document.getElementById('messagesRef'), s = e.scrollTop + e.clientHeight + 1;
-                        e.scrollHeight <= s && (this.ChatClass.hasNewMsg = false, this.ChatClass.hasPrivateNewMsg = false);
-                    },
-                    bindEvent: function () {
-                        var e = this;
-                        console.info('对象函数 bindEvent,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.$bus.$on('updateTeamSwitchStatus', function (t) {
-                            console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                            e.teamSwitchStatus = t;
-                        });
-                        this.$bus.$on('chats.changePrivateMessageStatus', function (t) {
-                            console.info('箭头函数 监听 chats.changePrivateMessageStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                            e.privateMessageStatus = t;
-                            setTimeout(function () {
-                                e.handleSetNewMsgStatus();
-                            }, 0);
-                        });
-                        this.$bus.$on('switchVideoAndChat', function (t) {
-                            console.info('箭头函数 监听 switchVideoAndChat(type)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                            L.a.send({
-                                tag: 'action',
-                                content: { msg: '伪小班模式切换视频和聊天' }
-                            });
-                            e.smallClassSwitchType = t;
-                        });
-                    },
-                    getTeamSwitchStatus: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                getTeamSwitchStatus: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 getTeamSwitchStatus,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), t.next = 3, window.thinkApi.ipc.invoke('getStoreValue', 'videoGroupSwitchStatus_'.concat(e.options.planId));
                                     case 3:
@@ -4510,51 +4510,51 @@
                                     case 6:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleSwitchMessage: function () {
-                        console.info('对象函数 handleSwitchMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.ChatClass.lockTeacherMessage = !this.ChatClass.lockTeacherMessage;
-                        this.ChatClass.lockTeacherMessage;
-                    },
-                    handleSetMessage: function (e, t) {
-                        if (console.info('对象函数 handleSetMessage(flag, data)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), e) {
-                            return console.info('if(flag)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.ChatClass.messages = [], this.ChatClass.userNotInMegBottom = false, void J.a.emit('logger', {
-                                type: 'interactive',
-                                data: {
-                                    logtype: 'clearScreen',
-                                    isPlayBack: this.options.isPlayBack,
-                                    planId: this.options.planId
-                                }
-                            });
-                        }
-                        var s = t.type, o = t.name, a = t.msg, n = t.evenexc, r = t.lottieUrl, i = t.emojiType, c = t.emojiId, l = t.isNewEmoji, u = t.emojiPicture, d = void 0 === u ? '' : u;
-                        try {
-                            a = is(a);
-                        } catch (m) {
-                            console.error('handleSetMessage replaceExpressName', a, m);
-                        }
-                        this.ChatClass.setMessage({
-                            type: s,
-                            emojiPicture: d,
-                            name: o,
-                            msg: a,
-                            lottieUrl: r,
-                            emojiId: c,
-                            emojiType: i,
-                            isNewEmoji: l,
-                            evenexc: n
+                            }
+                        }, t);
+                    }))();
+                },
+                handleSwitchMessage: function () {
+                    console.info('对象函数 handleSwitchMessage,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.ChatClass.lockTeacherMessage = !this.ChatClass.lockTeacherMessage;
+                    this.ChatClass.lockTeacherMessage;
+                },
+                handleSetMessage: function (e, t) {
+                    if (console.info('对象函数 handleSetMessage(flag, data)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), e) {
+                        return console.info('if(flag)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/index.vue'), this.ChatClass.messages = [], this.ChatClass.userNotInMegBottom = false, void J.a.emit('logger', {
+                            type: 'interactive',
+                            data: {
+                                logtype: 'clearScreen',
+                                isPlayBack: this.options.isPlayBack,
+                                planId: this.options.planId
+                            }
                         });
-                    },
-                    initDynamicEmoji: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                    }
+                    var s = t.type, o = t.name, a = t.msg, n = t.evenexc, r = t.lottieUrl, i = t.emojiType, c = t.emojiId, l = t.isNewEmoji, u = t.emojiPicture, d = void 0 === u ? '' : u;
+                    try {
+                        a = is(a);
+                    } catch (m) {
+                        console.error('handleSetMessage replaceExpressName', a, m);
+                    }
+                    this.ChatClass.setMessage({
+                        type: s,
+                        emojiPicture: d,
+                        name: o,
+                        msg: a,
+                        lottieUrl: r,
+                        emojiId: c,
+                        emojiType: i,
+                        isNewEmoji: l,
+                        evenexc: n
+                    });
+                },
+                initDynamicEmoji: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initDynamicEmoji,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue'), t.next = 3, Object(ms.a)().then(function (t) {
                                             e.lottieEmojiLists = t;
@@ -4562,579 +4562,579 @@
                                     case 3:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
+                            }
+                        }, t);
+                    }))();
+                },
+                handleSetPrivateMessage: function (e) {
+                    console.info('对象函数 handleSetPrivateMessage(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    var t = e.type, s = e.name, o = e.msg;
+                    try {
+                        o = is(o);
+                    } catch (a) {
+                        console.error('handleSetPrivateMessage', o, a);
+                    }
+                    this.ChatClass.setPrivateMessage({
+                        type: t,
+                        name: s,
+                        msg: o
+                    });
+                },
+                handleInputKeyDown: function () {
+                    console.info('对象函数 handleInputKeyDown,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.ChatClass.inputStatus.text = this.ChatClass.inputStatus.text.slice(0, 200);
+                },
+                handleInputText: function (e) {
+                    console.info('对象函数 handleInputText(newText)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.ChatClass.inputStatus.text = e;
+                },
+                handleSetNewMsgStatus: function (e) {
+                    console.info('对象函数 handleSetNewMsgStatus(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.ChatClass.hasNewMsg = e;
+                    this.ChatClass.hasPrivateNewMsg = e;
+                    this.ChatClass.messagesRef.scrollTop = this.ChatClass.messagesRef.scrollHeight;
+                },
+                handleSetNewSingleEmoji: function (e) {
+                    console.info('对象函数 handleSetNewSingleEmoji(params)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                    this.handleSetMessage(false, {
+                        type: es.mine,
+                        name: this.msgTip.SPEECH_MINE,
+                        msg: e.name,
+                        emojiType: e.type,
+                        emojiPicture: e.emojiPicture,
+                        emojiId: e.emojiId ? e.emojiId : 0,
+                        lottieUrl: e.lottieUrl ? e.lottieUrl : '',
+                        isNewEmoji: true
+                    });
+                }
+            },
+            beforeDestroy: function () {
+                console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
+                this.$bus.$off('handleLargeNativeEmoji');
+                window.removeEventListener('scroll', this.handleOnScroll);
+            }
+        }), Ws = Fs, Ks = (s('6ffc'), Object(Ae.a)(Ws, Xt, $t, false, null, '4c214308', null)), qs = Ks.exports, zs = s('bc80'), Js = (s('14d9'), s('cca6'), s('4de4'), s('d396')), Qs = function () {
+            function e() {
+                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                console.info('函数申明 ChatMain(options)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                Object(g.a)(this, e);
+                this.options = t;
+                this.msgTip = t.msgTip;
+                this.inputStatusMap = t.inputStatusMap;
+                this.blurTimer = null;
+                this.isWindowBlur = false;
+                var s = {
+                    stuInRoom: false,
+                    teaInRoom: false,
+                    lockTeacherMessage: false,
+                    hasNewMsg: false,
+                    hasPrivateNewMsg: false,
+                    userNotInMegBottom: true,
+                    myName: '',
+                    messages: [],
+                    privateMessages: [],
+                    encourageData: [],
+                    encourageStatus: false,
+                    userList: [],
+                    inputStatus: {
+                        openChat: false,
+                        text: this.inputStatusMap[5],
+                        status: 5
                     },
-                    handleSetPrivateMessage: function (e) {
-                        console.info('对象函数 handleSetPrivateMessage(data)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        var t = e.type, s = e.name, o = e.msg;
+                    messagesRef: document.getElementById('messagesRef'),
+                    parentData: {},
+                    playBackData: {
+                        originMessages: [],
+                        streamTime: 0,
+                        preventRequestCon: 0,
+                        lessDataCon: 0,
+                        msgEndTime: null
+                    },
+                    discussInteractionData: {},
+                    isBrokenLine: true,
+                    sendRoomMessageFail: false,
+                    sendPrivateMessageFail: false
+                }, o = Object.assign(s, t);
+                this.stuInRoom = o.stuInRoom;
+                this.teaInRoom = o.teaInRoom;
+                this.lockTeacherMessage = o.lockTeacherMessage;
+                this.messages = o.messages;
+                this.privateMessages = o.privateMessages;
+                this.encourageData = o.encourageData;
+                this.userList = o.userList;
+                this.inputStatus = o.inputStatus;
+                this.parentData = o.chatOptions;
+                this.playBackData = o.playBackData;
+                this.messagesRef = o.messagesRef;
+                this.userNotInMegBottom = o.userNotInMegBottom;
+                this.hasNewMsg = o.hasNewMsg;
+                this.hasPrivateNewMsg = o.hasPrivateNewMsg;
+                this.sendMsgFrom = 'flv';
+                this.discussInteractionData = o.discussInteractionData;
+                this.isBrokenLine = o.isBrokenLine;
+                this.encourageStatus = o.encourageStatus;
+                this.sendRoomMessageFail = o.sendRoomMessageFail;
+                this.sendPrivateMessageFail = o.sendPrivateMessageFail;
+                this.mode = this.parentData.streamMode;
+                this.goodMethod = false;
+                var a = this.parentData.nickName;
+                this.myName = a;
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'init',
+                    value: function () {
+                        var e = this;
                         try {
-                            o = is(o);
-                        } catch (a) {
-                            console.error('handleSetPrivateMessage', o, a);
+                            this.initPrivateMessagesHistory();
+                            var t = this.parentData, s = t.roomlist, o = t.planId, a = t.stuId;
+                            window.onbeforeunload = function () {
+                                if (e.stuInRoom) {
+                                    var t = {
+                                        live_id: o,
+                                        uid: a,
+                                        roomlist: s,
+                                        loginStatus: 'onbeforeunload'
+                                    };
+                                    J.a.emit('logger', {
+                                        type: 'sys',
+                                        data: {
+                                            logData: t,
+                                            logType: 'irc'
+                                        }
+                                    });
+                                } else {
+                                    console.info('if(!_this.stuInRoom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                                }
+                            };
+                        } catch (n) {
+                            console.error('%c报错信息', 'color: red;', n.message);
                         }
-                        this.ChatClass.setPrivateMessage({
-                            type: t,
-                            name: s,
-                            msg: o
-                        });
-                    },
-                    handleInputKeyDown: function () {
-                        console.info('对象函数 handleInputKeyDown,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.ChatClass.inputStatus.text = this.ChatClass.inputStatus.text.slice(0, 200);
-                    },
-                    handleInputText: function (e) {
-                        console.info('对象函数 handleInputText(newText)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.ChatClass.inputStatus.text = e;
-                    },
-                    handleSetNewMsgStatus: function (e) {
-                        console.info('对象函数 handleSetNewMsgStatus(status)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.ChatClass.hasNewMsg = e;
-                        this.ChatClass.hasPrivateNewMsg = e;
-                        this.ChatClass.messagesRef.scrollTop = this.ChatClass.messagesRef.scrollHeight;
-                    },
-                    handleSetNewSingleEmoji: function (e) {
-                        console.info('对象函数 handleSetNewSingleEmoji(params)', e, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                        this.handleSetMessage(false, {
-                            type: es.mine,
-                            name: this.msgTip.SPEECH_MINE,
-                            msg: e.name,
-                            emojiType: e.type,
-                            emojiPicture: e.emojiPicture,
-                            emojiId: e.emojiId ? e.emojiId : 0,
-                            lottieUrl: e.lottieUrl ? e.lottieUrl : '',
-                            isNewEmoji: true
-                        });
                     }
                 },
-                beforeDestroy: function () {
-                    console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/chats/index.vue');
-                    this.$bus.$off('handleLargeNativeEmoji');
-                    window.removeEventListener('scroll', this.handleOnScroll);
-                }
-            }), Ws = Fs, Ks = (s('6ffc'), Object(Ae.a)(Ws, Xt, $t, false, null, '4c214308', null)), qs = Ks.exports, zs = s('bc80'), Js = (s('14d9'), s('cca6'), s('4de4'), s('d396')), Qs = function () {
-                function e() {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    console.info('函数申明 ChatMain(options)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                    Object(g.a)(this, e);
-                    this.options = t;
-                    this.msgTip = t.msgTip;
-                    this.inputStatusMap = t.inputStatusMap;
-                    this.blurTimer = null;
-                    this.isWindowBlur = false;
-                    var s = {
-                            stuInRoom: false,
-                            teaInRoom: false,
-                            lockTeacherMessage: false,
-                            hasNewMsg: false,
-                            hasPrivateNewMsg: false,
-                            userNotInMegBottom: true,
-                            myName: '',
-                            messages: [],
-                            privateMessages: [],
-                            encourageData: [],
-                            encourageStatus: false,
-                            userList: [],
-                            inputStatus: {
-                                openChat: false,
-                                text: this.inputStatusMap[5],
-                                status: 5
-                            },
-                            messagesRef: document.getElementById('messagesRef'),
-                            parentData: {},
-                            playBackData: {
-                                originMessages: [],
-                                streamTime: 0,
-                                preventRequestCon: 0,
-                                lessDataCon: 0,
-                                msgEndTime: null
-                            },
-                            discussInteractionData: {},
-                            isBrokenLine: true,
-                            sendRoomMessageFail: false,
-                            sendPrivateMessageFail: false
-                        }, o = Object.assign(s, t);
-                    this.stuInRoom = o.stuInRoom;
-                    this.teaInRoom = o.teaInRoom;
-                    this.lockTeacherMessage = o.lockTeacherMessage;
-                    this.messages = o.messages;
-                    this.privateMessages = o.privateMessages;
-                    this.encourageData = o.encourageData;
-                    this.userList = o.userList;
-                    this.inputStatus = o.inputStatus;
-                    this.parentData = o.chatOptions;
-                    this.playBackData = o.playBackData;
-                    this.messagesRef = o.messagesRef;
-                    this.userNotInMegBottom = o.userNotInMegBottom;
-                    this.hasNewMsg = o.hasNewMsg;
-                    this.hasPrivateNewMsg = o.hasPrivateNewMsg;
-                    this.sendMsgFrom = 'flv';
-                    this.discussInteractionData = o.discussInteractionData;
-                    this.isBrokenLine = o.isBrokenLine;
-                    this.encourageStatus = o.encourageStatus;
-                    this.sendRoomMessageFail = o.sendRoomMessageFail;
-                    this.sendPrivateMessageFail = o.sendPrivateMessageFail;
-                    this.mode = this.parentData.streamMode;
-                    this.goodMethod = false;
-                    var a = this.parentData.nickName;
-                    this.myName = a;
-                }
-                return Object(C.a)(e, [
-                    {
-                        key: 'init',
-                        value: function () {
-                            var e = this;
-                            try {
-                                this.initPrivateMessagesHistory();
-                                var t = this.parentData, s = t.roomlist, o = t.planId, a = t.stuId;
-                                window.onbeforeunload = function () {
-                                    if (e.stuInRoom) {
-                                        var t = {
-                                            live_id: o,
-                                            uid: a,
-                                            roomlist: s,
-                                            loginStatus: 'onbeforeunload'
-                                        };
-                                        J.a.emit('logger', {
-                                            type: 'sys',
-                                            data: {
-                                                logData: t,
-                                                logType: 'irc'
-                                            }
-                                        });
-                                    } else {
-                                        console.info('if(!_this.stuInRoom)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                                    }
-                                };
-                            } catch (n) {
-                                console.error('%c报错信息', 'color: red;', n.message);
-                            }
-                        }
-                    },
-                    {
-                        key: 'onRecvRoomDataUpdateNotice',
-                        value: function (e) {
-                            var t = this;
-                            e.datas ? e.datas.forEach(function (e, s) {
-                                var o = JSON.parse(e.value), a = o[s];
-                                switch (s) {
+                {
+                    key: 'onRecvRoomDataUpdateNotice',
+                    value: function (e) {
+                        var t = this;
+                        e.datas ? e.datas.forEach(function (e, s) {
+                            var o = JSON.parse(e.value), a = o[s];
+                            switch (s) {
                                 case 'openchat':
                                     t.handleUpdateNoticeByOpenchat(a);
                                     break;
                                 case 'peer_mute_chat':
                                     t.handleUpdateNoticeByPeerMuteChat(a);
                                     break;
-                                }
-                            }) : console.info('if(!data.datas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                        }
-                    },
-                    {
-                        key: 'handleUpdateNoticeByOpenchat',
-                        value: function (e) {
-                            e ? this.setInputStatus(3) : this.setInputStatus(1);
-                            L.a.send({
-                                tag: 'chatbox',
-                                content: { msg: e ? '主讲老师开启聊天区' : '主讲老师关闭聊天区' }
-                            });
-                        }
-                    },
-                    {
-                        key: 'handleUpdateNoticeByPeerMuteChat',
-                        value: function (e) {
-                            var t = e.stuId, s = e.mute;
-                            t == this.parentData.stuId && (s ? (this.setInputStatus(2), this.setMessage({
-                                type: es.system,
-                                name: this.msgTip.SPEECH_SYS,
-                                msg: this.msgTip.BAN_SPEECH
-                            }), L.a.send({
-                                tag: 'chatbox',
-                                content: { msg: '已被禁言' }
-                            })) : (this.inputStatus.openChat ? this.setInputStatus(3) : this.setInputStatus(1), this.setMessage({
-                                type: es.system,
-                                name: this.msgTip.SPEECH_SYS,
-                                msg: this.msgTip.RELIEVE_SPEECH
-                            }), L.a.send({
-                                tag: 'chatbox',
-                                content: { msg: '解除禁言' }
-                            })));
-                        }
-                    },
-                    {
-                        key: 'onGetRoomHistoryMessageResponse',
-                        value: function (e) {
-                            var t = this;
-                            if (0 == e.code) {
-                                var s = e.content;
-                                if (s && s.length) {
-                                    var o = [];
-                                    s.forEach(function (e) {
-                                        if (e.priority === 99) {
-                                            var s;
-                                            try {
-                                                s = JSON.parse(e.text);
-                                            } catch (d) {
-                                                console.error(d);
-                                            }
-                                            var a, n, r, i, c, l = {}, u = ss(e.sender);
-                                            if (u === 0 && (l = {
-                                                    type: es.teacher_f,
-                                                    name: s.name,
-                                                    msg: s.msg,
-                                                    tutor_avatar: s.tutor_avatar
-                                                }), 'send_emoji' == s.ircType || 'animation_emoji' == s.ircType) {
+                            }
+                        }) : console.info('if(!data.datas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                    }
+                },
+                {
+                    key: 'handleUpdateNoticeByOpenchat',
+                    value: function (e) {
+                        e ? this.setInputStatus(3) : this.setInputStatus(1);
+                        L.a.send({
+                            tag: 'chatbox',
+                            content: { msg: e ? '主讲老师开启聊天区' : '主讲老师关闭聊天区' }
+                        });
+                    }
+                },
+                {
+                    key: 'handleUpdateNoticeByPeerMuteChat',
+                    value: function (e) {
+                        var t = e.stuId, s = e.mute;
+                        t == this.parentData.stuId && (s ? (this.setInputStatus(2), this.setMessage({
+                            type: es.system,
+                            name: this.msgTip.SPEECH_SYS,
+                            msg: this.msgTip.BAN_SPEECH
+                        }), L.a.send({
+                            tag: 'chatbox',
+                            content: { msg: '已被禁言' }
+                        })) : (this.inputStatus.openChat ? this.setInputStatus(3) : this.setInputStatus(1), this.setMessage({
+                            type: es.system,
+                            name: this.msgTip.SPEECH_SYS,
+                            msg: this.msgTip.RELIEVE_SPEECH
+                        }), L.a.send({
+                            tag: 'chatbox',
+                            content: { msg: '解除禁言' }
+                        })));
+                    }
+                },
+                {
+                    key: 'onGetRoomHistoryMessageResponse',
+                    value: function (e) {
+                        var t = this;
+                        if (0 == e.code) {
+                            var s = e.content;
+                            if (s && s.length) {
+                                var o = [];
+                                s.forEach(function (e) {
+                                    if (e.priority === 99) {
+                                        var s;
+                                        try {
+                                            s = JSON.parse(e.text);
+                                        } catch (d) {
+                                            console.error(d);
+                                        }
+                                        var a, n, r, i, c, l = {}, u = ss(e.sender);
+                                        if (u === 0 && (l = {
+                                            type: es.teacher_f,
+                                            name: s.name,
+                                            msg: s.msg,
+                                            tutor_avatar: s.tutor_avatar
+                                        }), 'send_emoji' == s.ircType || 'animation_emoji' == s.ircType) {
+                                            l = {
+                                                type: es.stu,
+                                                name: e.sender === t.options.configs.stuIrcId ? t.msgTip.SPEECH_MINE : null === (a = s.from) || void 0 === a ? void 0 : a.username,
+                                                isMe: e.sender === t.options.configs.stuIrcId,
+                                                msg: s.data.name,
+                                                emojiType: s.data.type,
+                                                lottieUrl: (null === (n = s.data.resource) || void 0 === n ? void 0 : n.lottieUrl) || '',
+                                                emojiId: (null === (r = s.data.resource) || void 0 === r ? void 0 : r.emojiId) || 0,
+                                                isNewEmoji: true,
+                                                avatar: e.sender === t.options.configs.stuIrcId ? '' : null === (i = s.from) || void 0 === i ? void 0 : i.path
+                                            };
+                                        } else {
+                                            if (u === 2 && s.type === 130) {
                                                 l = {
                                                     type: es.stu,
-                                                    name: e.sender === t.options.configs.stuIrcId ? t.msgTip.SPEECH_MINE : null === (a = s.from) || void 0 === a ? void 0 : a.username,
+                                                    name: e.sender === t.options.configs.stuIrcId ? t.msgTip.SPEECH_MINE : s.name,
                                                     isMe: e.sender === t.options.configs.stuIrcId,
-                                                    msg: s.data.name,
-                                                    emojiType: s.data.type,
-                                                    lottieUrl: (null === (n = s.data.resource) || void 0 === n ? void 0 : n.lottieUrl) || '',
-                                                    emojiId: (null === (r = s.data.resource) || void 0 === r ? void 0 : r.emojiId) || 0,
-                                                    isNewEmoji: true,
-                                                    avatar: e.sender === t.options.configs.stuIrcId ? '' : null === (i = s.from) || void 0 === i ? void 0 : i.path
+                                                    msg: s.msg,
+                                                    isNewEmoji: false,
+                                                    avatar: (null === (c = s) || void 0 === c ? void 0 : c.path) || ''
                                                 };
-                                            } else {
-                                                if (u === 2 && s.type === 130) {
-                                                    l = {
-                                                        type: es.stu,
-                                                        name: e.sender === t.options.configs.stuIrcId ? t.msgTip.SPEECH_MINE : s.name,
-                                                        isMe: e.sender === t.options.configs.stuIrcId,
-                                                        msg: s.msg,
-                                                        isNewEmoji: false,
-                                                        avatar: (null === (c = s) || void 0 === c ? void 0 : c.path) || ''
-                                                    };
-                                                }
                                             }
-                                            o.push(l);
                                         }
-                                    });
-                                    o.reverse();
-                                    o.length ? (this.messages = o, this.hasNewMsg = false, setTimeout(function () {
-                                        t.messagesRef.scrollTop = t.messagesRef.scrollHeight;
-                                    }, 20)) : console.info('if(!tempMessage.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                                } else {
-                                    console.info('if(!messageList || !messageList.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                                }
-                            } else {
-                                console.info('if(data.code != 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                            }
-                        }
-                    },
-                    {
-                        key: 'onLogoutNotice',
-                        value: function (e) {
-                            if (e.userInfo) {
-                                var t, s = e.userInfo.nickname;
-                                t = !!ns(s);
-                                t ? (this.teaInRoom = false, J.a.emit('interaction', {
-                                    type: 'onStuAndTeaStatus',
-                                    data: {
-                                        stuInRoom: this.stuInRoom,
-                                        teaInRoom: this.teaInRoom
+                                        o.push(l);
                                     }
-                                })) : this.userList = this.userList.filter(function (e) {
-                                    return e !== s;
                                 });
+                                o.reverse();
+                                o.length ? (this.messages = o, this.hasNewMsg = false, setTimeout(function () {
+                                    t.messagesRef.scrollTop = t.messagesRef.scrollHeight;
+                                }, 20)) : console.info('if(!tempMessage.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                             } else {
-                                console.info('if(!res.userInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                                console.info('if(!messageList || !messageList.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                             }
+                        } else {
+                            console.info('if(data.code != 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                         }
-                    },
-                    {
-                        key: 'recvPeerMessageT',
-                        value: function (e) {
-                            this.stuInRoom = false;
-                            J.a.emit('interaction', {
-                                type: 'onStuAndTeaStatus',
-                                data: {
-                                    stuInRoom: this.stuInRoom,
-                                    teaInRoom: this.teaInRoomx
-                                }
-                            });
-                            this.userList = [];
-                            this.setInputStatus(5);
-                            this.setMessage({
-                                type: es.system,
-                                name: this.msgTip.SPEECH_SYS,
-                                msg: this.msgTip.REMOTE_LOGIN
-                            });
-                            v.a.prototype.$bus.$emit('live-kickout', true);
-                        }
-                    },
-                    {
-                        key: 'onKickoutNotice',
-                        value: function (e) {
-                            301 === e.code && (L.a.send({ tag: 'student.IRCKick' }), L.a.send({
-                                tag: 'ircStatus',
-                                content: { msg: 'Kickout: '.concat(JSON.stringify(e)) }
-                            }), this.recvPeerMessageT(true));
-                        }
-                    },
-                    {
-                        key: 'serverUnkown',
-                        value: function () {
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 0);
-                        }
-                    },
-                    {
-                        key: 'serverUnavailable',
-                        value: function () {
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 1);
-                        }
-                    },
-                    {
-                        key: 'serverFailed',
-                        value: function () {
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 2);
-                            L.a.send({
-                                tag: 'ircStatus',
-                                content: { msg: 'Connection failed' }
-                            });
-                        }
-                    },
-                    {
-                        key: 'serverConnection',
-                        value: function () {
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 3);
-                            this.setMessage({
-                                type: es.system,
-                                name: this.msgTip.SPEECH_SYS,
-                                msg: this.msgTip.RECONNECT
-                            });
-                            this.userList = [];
-                            this.isBrokenLine = true;
-                            L.a.send({
-                                tag: 'ircStatus',
-                                content: { msg: 'Connecting' }
-                            });
-                        }
-                    },
-                    {
-                        key: 'serverConnected',
-                        value: function () {
-                            v.a.prototype.$Notification.destroy();
-                            document.getElementById('interactionFullPage').removeAttribute('style');
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 4);
-                            L.a.send({
-                                tag: 'ircStatus',
-                                content: { msg: 'Connection successful' }
-                            });
-                        }
-                    },
-                    {
-                        key: 'disconnect',
-                        value: function () {
-                            ;
-                            v.a.prototype.$bus.$emit('ircConnectStatus', 5);
-                            L.a.send({
-                                tag: 'ircStatus',
-                                content: { msg: 'Disconnect' }
-                            });
-                        }
-                    },
-                    {
-                        key: 'onJoinRoomResponse',
-                        value: function (e) {
-                            0 == e.code ? (this.isBrokenLine = false, this.setMessage({
-                                type: es.system,
-                                name: this.msgTip.SPEECH_SYS,
-                                msg: this.msgTip.CONNECT
-                            }), this.setInputStatus(3), this.stuInRoom = true, J.a.emit('interaction', {
+                    }
+                },
+                {
+                    key: 'onLogoutNotice',
+                    value: function (e) {
+                        if (e.userInfo) {
+                            var t, s = e.userInfo.nickname;
+                            t = !!ns(s);
+                            t ? (this.teaInRoom = false, J.a.emit('interaction', {
                                 type: 'onStuAndTeaStatus',
                                 data: {
                                     stuInRoom: this.stuInRoom,
                                     teaInRoom: this.teaInRoom
                                 }
-                            })) : console.info('if(res.code != 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                            })) : this.userList = this.userList.filter(function (e) {
+                                return e !== s;
+                            });
+                        } else {
+                            console.info('if(!res.userInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                         }
-                    },
-                    {
-                        key: 'setInputStatus',
-                        value: function (e) {
-                            this.inputStatus.status = e;
-                            this.inputStatus.text = this.inputStatusMap[e];
-                            1 == e && (this.inputStatus.openChat = false);
-                            3 == e && (this.inputStatus.openChat = true);
+                    }
+                },
+                {
+                    key: 'recvPeerMessageT',
+                    value: function (e) {
+                        this.stuInRoom = false;
+                        J.a.emit('interaction', {
+                            type: 'onStuAndTeaStatus',
+                            data: {
+                                stuInRoom: this.stuInRoom,
+                                teaInRoom: this.teaInRoomx
+                            }
+                        });
+                        this.userList = [];
+                        this.setInputStatus(5);
+                        this.setMessage({
+                            type: es.system,
+                            name: this.msgTip.SPEECH_SYS,
+                            msg: this.msgTip.REMOTE_LOGIN
+                        });
+                        v.a.prototype.$bus.$emit('live-kickout', true);
+                    }
+                },
+                {
+                    key: 'onKickoutNotice',
+                    value: function (e) {
+                        301 === e.code && (L.a.send({ tag: 'student.IRCKick' }), L.a.send({
+                            tag: 'ircStatus',
+                            content: { msg: 'Kickout: '.concat(JSON.stringify(e)) }
+                        }), this.recvPeerMessageT(true));
+                    }
+                },
+                {
+                    key: 'serverUnkown',
+                    value: function () {
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 0);
+                    }
+                },
+                {
+                    key: 'serverUnavailable',
+                    value: function () {
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 1);
+                    }
+                },
+                {
+                    key: 'serverFailed',
+                    value: function () {
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 2);
+                        L.a.send({
+                            tag: 'ircStatus',
+                            content: { msg: 'Connection failed' }
+                        });
+                    }
+                },
+                {
+                    key: 'serverConnection',
+                    value: function () {
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 3);
+                        this.setMessage({
+                            type: es.system,
+                            name: this.msgTip.SPEECH_SYS,
+                            msg: this.msgTip.RECONNECT
+                        });
+                        this.userList = [];
+                        this.isBrokenLine = true;
+                        L.a.send({
+                            tag: 'ircStatus',
+                            content: { msg: 'Connecting' }
+                        });
+                    }
+                },
+                {
+                    key: 'serverConnected',
+                    value: function () {
+                        v.a.prototype.$Notification.destroy();
+                        document.getElementById('interactionFullPage').removeAttribute('style');
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 4);
+                        L.a.send({
+                            tag: 'ircStatus',
+                            content: { msg: 'Connection successful' }
+                        });
+                    }
+                },
+                {
+                    key: 'disconnect',
+                    value: function () {
+                        ;
+                        v.a.prototype.$bus.$emit('ircConnectStatus', 5);
+                        L.a.send({
+                            tag: 'ircStatus',
+                            content: { msg: 'Disconnect' }
+                        });
+                    }
+                },
+                {
+                    key: 'onJoinRoomResponse',
+                    value: function (e) {
+                        0 == e.code ? (this.isBrokenLine = false, this.setMessage({
+                            type: es.system,
+                            name: this.msgTip.SPEECH_SYS,
+                            msg: this.msgTip.CONNECT
+                        }), this.setInputStatus(3), this.stuInRoom = true, J.a.emit('interaction', {
+                            type: 'onStuAndTeaStatus',
+                            data: {
+                                stuInRoom: this.stuInRoom,
+                                teaInRoom: this.teaInRoom
+                            }
+                        })) : console.info('if(res.code != 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
+                    }
+                },
+                {
+                    key: 'setInputStatus',
+                    value: function (e) {
+                        this.inputStatus.status = e;
+                        this.inputStatus.text = this.inputStatusMap[e];
+                        1 == e && (this.inputStatus.openChat = false);
+                        3 == e && (this.inputStatus.openChat = true);
+                    }
+                },
+                {
+                    key: 'onSendRoomMessageResponse',
+                    value: function (e) {
+                        var t;
+                        this.sendRoomMessageFail = 0 !== e.code;
+                        var s = this.messages.length - 1;
+                        (null === (t = this.messages[s]) || void 0 === t ? void 0 : t.type) === es.mine && v.a.prototype.$set(this.messages[s], 'messageStatus', this.sendRoomMessageFail);
+                    }
+                },
+                {
+                    key: 'onSendPeerMessageResponse',
+                    value: function (e) {
+                        var t;
+                        this.sendPrivateMessageFail = 0 !== e.code;
+                        var s = this.privateMessages.length - 1;
+                        (null === (t = this.privateMessages[s]) || void 0 === t ? void 0 : t.type) === es.mine && v.a.prototype.$set(this.privateMessages[s], 'messageStatus', this.sendPrivateMessageFail);
+                    }
+                },
+                {
+                    key: 'onJoinRoomNotice',
+                    value: function (e) {
+                        if (e.userInfo) {
+                            var t = e.userInfo.nickname;
+                            if (ns(t)) {
+                                return console.info('if(isTeacher(nickname))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), this.teaInRoom = true, void J.a.emit('interaction', {
+                                    type: 'onStuAndTeaStatus',
+                                    data: {
+                                        stuInRoom: this.stuInRoom,
+                                        teaInRoom: this.teaInRoom
+                                    }
+                                });
+                            }
+                            this.userList.push(e.userInfo.nickname);
+                        } else {
+                            console.info('if(!res.userInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                         }
-                    },
-                    {
-                        key: 'onSendRoomMessageResponse',
-                        value: function (e) {
-                            var t;
-                            this.sendRoomMessageFail = 0 !== e.code;
-                            var s = this.messages.length - 1;
-                            (null === (t = this.messages[s]) || void 0 === t ? void 0 : t.type) === es.mine && v.a.prototype.$set(this.messages[s], 'messageStatus', this.sendRoomMessageFail);
-                        }
-                    },
-                    {
-                        key: 'onSendPeerMessageResponse',
-                        value: function (e) {
-                            var t;
-                            this.sendPrivateMessageFail = 0 !== e.code;
-                            var s = this.privateMessages.length - 1;
-                            (null === (t = this.privateMessages[s]) || void 0 === t ? void 0 : t.type) === es.mine && v.a.prototype.$set(this.privateMessages[s], 'messageStatus', this.sendPrivateMessageFail);
-                        }
-                    },
-                    {
-                        key: 'onJoinRoomNotice',
-                        value: function (e) {
-                            if (e.userInfo) {
-                                var t = e.userInfo.nickname;
-                                if (ns(t)) {
-                                    return console.info('if(isTeacher(nickname))为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), this.teaInRoom = true, void J.a.emit('interaction', {
+                    }
+                },
+                {
+                    key: 'onRecvRoomUserList',
+                    value: function (e) {
+                        var t = this;
+                        if (this.teaInRoom = false, J.a.emit('interaction', {
+                            type: 'onStuAndTeaStatus',
+                            data: {
+                                stuInRoom: this.stuInRoom,
+                                teaInRoom: this.teaInRoom
+                            }
+                        }), e.userList.filter(function (e) {
+                            var s = e.nickname;
+                            t.userList.includes(s) || t.userList.push(s);
+                        }), 53 === e.code) {
+                            for (var s = 0; s < this.userList.length; s++) {
+                                if (ns(this.userList[s])) {
+                                    this.teaInRoom = true;
+                                    J.a.emit('interaction', {
                                         type: 'onStuAndTeaStatus',
                                         data: {
                                             stuInRoom: this.stuInRoom,
                                             teaInRoom: this.teaInRoom
                                         }
                                     });
+                                    break;
                                 }
-                                this.userList.push(e.userInfo.nickname);
+                            }
+                        }
+                    }
+                },
+                {
+                    key: 'onLeaveRoomNotice',
+                    value: function (e) {
+                        if (e.userInfo) {
+                            var t = e.userInfo.nickname;
+                            ns(t) ? (this.teaInRoom = false, J.a.emit('interaction', {
+                                type: 'onStuAndTeaStatus',
+                                data: {
+                                    stuInRoom: this.stuInRoom,
+                                    teaInRoom: this.teaInRoom
+                                }
+                            })) : this.userList = this.userList.filter(function (e) {
+                                return e !== t;
+                            });
+                        }
+                    }
+                },
+                {
+                    key: 'onRecvRoomMessage',
+                    value: function (e) {
+                        var t = e.messagePriority, s = e.content, o = e.fromUserInfo, a = void 0 === o ? {} : o, n = a.nickname, r = void 0 === n ? '' : n, i = ss(r), c = JSON.parse(s);
+                        t === 99 && this.recvRoomMessagePri(c, i);
+                    }
+                },
+                {
+                    key: 'recvRoomMessagePri',
+                    value: function (e, t) {
+                        var s = e.type, o = e.name, a = e.msg, n = e.tutor_avatar, r = void 0 === n ? '' : n;
+                        if (e.type == 142) {
+                            return console.info('if(data.type == ircMsgType.CONTINUS_CORRECT)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), void v.a.prototype.$bus.$emit('chats.correctMedalData', e);
+                        }
+                        var i = {};
+                        if (1 * s === 130) {
+                            (o !== this.myName || this.options.commonOption.isParent) && (t === 0 && (i = {
+                                type: es.teacher_f,
+                                name: o,
+                                msg: a,
+                                tutor_avatar: r
+                            }), t === 2 && (i = {
+                                type: es.stu,
+                                name: o,
+                                msg: a,
+                                avatar: e.path || ''
+                            }));
+                        } else {
+                            var c, l, u, d = {
+                                type: es.stu,
+                                name: null === (c = e.from) || void 0 === c ? void 0 : c.username,
+                                isMe: false,
+                                msg: null === (l = e.data) || void 0 === l ? void 0 : l.name,
+                                isNewEmoji: true,
+                                avatar: (null === (u = e.from) || void 0 === u ? void 0 : u.path) || ''
+                            };
+                            if ('send_emoji' == e.ircType && 1 == e.data.type) {
+                                i = d;
                             } else {
-                                console.info('if(!res.userInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                            }
-                        }
-                    },
-                    {
-                        key: 'onRecvRoomUserList',
-                        value: function (e) {
-                            var t = this;
-                            if (this.teaInRoom = false, J.a.emit('interaction', {
-                                    type: 'onStuAndTeaStatus',
-                                    data: {
-                                        stuInRoom: this.stuInRoom,
-                                        teaInRoom: this.teaInRoom
-                                    }
-                                }), e.userList.filter(function (e) {
-                                    var s = e.nickname;
-                                    t.userList.includes(s) || t.userList.push(s);
-                                }), 53 === e.code) {
-                                for (var s = 0; s < this.userList.length; s++) {
-                                    if (ns(this.userList[s])) {
-                                        this.teaInRoom = true;
-                                        J.a.emit('interaction', {
-                                            type: 'onStuAndTeaStatus',
-                                            data: {
-                                                stuInRoom: this.stuInRoom,
-                                                teaInRoom: this.teaInRoom
-                                            }
-                                        });
-                                        break;
-                                    }
+                                if ('animation_emoji' == e.ircType && (2 == e.data.type || 3 == e.data.type)) {
+                                    var m, h;
+                                    i = Object(F.a)(Object(F.a)({}, d), {}, {
+                                        lottieUrl: (null === (m = e.data.resource) || void 0 === m ? void 0 : m.lottieUrl) || '',
+                                        emojiId: (null === (h = e.data.resource) || void 0 === h ? void 0 : h.emojiId) || 0,
+                                        emojiType: e.data.type
+                                    });
                                 }
                             }
                         }
-                    },
-                    {
-                        key: 'onLeaveRoomNotice',
-                        value: function (e) {
-                            if (e.userInfo) {
-                                var t = e.userInfo.nickname;
-                                ns(t) ? (this.teaInRoom = false, J.a.emit('interaction', {
-                                    type: 'onStuAndTeaStatus',
-                                    data: {
-                                        stuInRoom: this.stuInRoom,
-                                        teaInRoom: this.teaInRoom
-                                    }
-                                })) : this.userList = this.userList.filter(function (e) {
-                                    return e !== t;
-                                });
+                        this.setMessage(i);
+                    }
+                },
+                {
+                    key: 'onRecvPeerMessage',
+                    value: function (e) {
+                        var t = e.msgPriority, s = e.content, o = e.fromUserInfo, a = void 0 === o ? {} : o, n = a.nickname, r = void 0 === n ? '' : n, i = ss(r), c = JSON.parse(s);
+                        t === 99 && this.recvPeerMessagePri(c, i);
+                    }
+                },
+                {
+                    key: 'recvPeerMessagePri',
+                    value: function (e) {
+                        var t = e.type, s = e.name, o = e.msg, a = e.tutor_avatar, n = e.suid;
+                        if (this.parentData, t == 130 && n == this.parentData.stuId && (this.setPrivateMessage({
+                            type: es.teacher_f,
+                            name: s,
+                            msg: o,
+                            isPrivateMsg: true,
+                            tutor_avatar: a
+                        }), v.a.prototype.$bus.$emit('chats.privateMessagePush')), 140 == t) {
+                            var r = e.parameter ? e.parameter : e.msg, i = JSON.parse(r).correct_picrure_t;
+                            if (!i) {
+                                return void console.info('if(!correctPicrure)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
                             }
+                            v.a.prototype.$bus.$emit('chats.assignmentCheckedPush', i);
                         }
-                    },
-                    {
-                        key: 'onRecvRoomMessage',
-                        value: function (e) {
-                            var t = e.messagePriority, s = e.content, o = e.fromUserInfo, a = void 0 === o ? {} : o, n = a.nickname, r = void 0 === n ? '' : n, i = ss(r), c = JSON.parse(s);
-                            t === 99 && this.recvRoomMessagePri(c, i);
-                        }
-                    },
-                    {
-                        key: 'recvRoomMessagePri',
-                        value: function (e, t) {
-                            var s = e.type, o = e.name, a = e.msg, n = e.tutor_avatar, r = void 0 === n ? '' : n;
-                            if (e.type == 142) {
-                                return console.info('if(data.type == ircMsgType.CONTINUS_CORRECT)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), void v.a.prototype.$bus.$emit('chats.correctMedalData', e);
-                            }
-                            var i = {};
-                            if (1 * s === 130) {
-                                (o !== this.myName || this.options.commonOption.isParent) && (t === 0 && (i = {
-                                    type: es.teacher_f,
-                                    name: o,
-                                    msg: a,
-                                    tutor_avatar: r
-                                }), t === 2 && (i = {
-                                    type: es.stu,
-                                    name: o,
-                                    msg: a,
-                                    avatar: e.path || ''
-                                }));
-                            } else {
-                                var c, l, u, d = {
-                                        type: es.stu,
-                                        name: null === (c = e.from) || void 0 === c ? void 0 : c.username,
-                                        isMe: false,
-                                        msg: null === (l = e.data) || void 0 === l ? void 0 : l.name,
-                                        isNewEmoji: true,
-                                        avatar: (null === (u = e.from) || void 0 === u ? void 0 : u.path) || ''
-                                    };
-                                if ('send_emoji' == e.ircType && 1 == e.data.type) {
-                                    i = d;
-                                } else {
-                                    if ('animation_emoji' == e.ircType && (2 == e.data.type || 3 == e.data.type)) {
-                                        var m, h;
-                                        i = Object(F.a)(Object(F.a)({}, d), {}, {
-                                            lottieUrl: (null === (m = e.data.resource) || void 0 === m ? void 0 : m.lottieUrl) || '',
-                                            emojiId: (null === (h = e.data.resource) || void 0 === h ? void 0 : h.emojiId) || 0,
-                                            emojiType: e.data.type
-                                        });
-                                    }
-                                }
-                            }
-                            this.setMessage(i);
-                        }
-                    },
-                    {
-                        key: 'onRecvPeerMessage',
-                        value: function (e) {
-                            var t = e.msgPriority, s = e.content, o = e.fromUserInfo, a = void 0 === o ? {} : o, n = a.nickname, r = void 0 === n ? '' : n, i = ss(r), c = JSON.parse(s);
-                            t === 99 && this.recvPeerMessagePri(c, i);
-                        }
-                    },
-                    {
-                        key: 'recvPeerMessagePri',
-                        value: function (e) {
-                            var t = e.type, s = e.name, o = e.msg, a = e.tutor_avatar, n = e.suid;
-                            if (this.parentData, t == 130 && n == this.parentData.stuId && (this.setPrivateMessage({
-                                    type: es.teacher_f,
-                                    name: s,
-                                    msg: o,
-                                    isPrivateMsg: true,
-                                    tutor_avatar: a
-                                }), v.a.prototype.$bus.$emit('chats.privateMessagePush')), 140 == t) {
-                                var r = e.parameter ? e.parameter : e.msg, i = JSON.parse(r).correct_picrure_t;
-                                if (!i) {
-                                    return void console.info('if(!correctPicrure)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js');
-                                }
-                                v.a.prototype.$bus.$emit('chats.assignmentCheckedPush', i);
-                            }
-                        }
-                    },
-                    {
-                        key: 'setPrivateMessage',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                    }
+                },
+                {
+                    key: 'setPrivateMessage',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (this.privateMessages.length >= 300 && (this.privateMessages = this.privateMessages.slice(-299)), this.privateMessages.push(t), t.type !== es.mine) {
                                                 e.next = 10;
@@ -5152,39 +5152,39 @@
                                         case 11:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 setPrivateMessage(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'setMessagejudge',
-                        value: function (e) {
-                            this.lockTeacherMessage && e.type === es.stu ? console.info('if(this.lockTeacherMessage && data.type === msgUserType.stu)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js') : (this.messages.length >= 300 && (this.messages = this.messages.slice(-299)), this.parentData.isPlayBack ? this.messages.push(e) : this.liveJudge(e), this.handleNewMessageTip(e));
+                                }
+                            }, e, this);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 setPrivateMessage(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'handleNewMessageTip',
-                        value: function (e) {
-                            var s = this.messagesRef, o = s.scrollHeight <= s.scrollTop + s.clientHeight + 1;
-                            o || e.type === es.mine ? v.a.prototype.$nextTick(function () {
-                                s.scrollTop = s.scrollHeight;
-                            }) : (e.type !== es.mine && (this.hasNewMsg = true), e.type == es.teacher_f && (this.hasPrivateNewMsg = true));
-                        }
-                    },
-                    {
-                        key: 'liveJudge',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n, r, i, c, l, u, d = this;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                        return t;
+                    }()
+                },
+                {
+                    key: 'setMessagejudge',
+                    value: function (e) {
+                        this.lockTeacherMessage && e.type === es.stu ? console.info('if(this.lockTeacherMessage && data.type === msgUserType.stu)为true触发return,path: /renderer/components/Classroom/LargeClass/base/chats/chat-main.js') : (this.messages.length >= 300 && (this.messages = this.messages.slice(-299)), this.parentData.isPlayBack ? this.messages.push(e) : this.liveJudge(e), this.handleNewMessageTip(e));
+                    }
+                },
+                {
+                    key: 'handleNewMessageTip',
+                    value: function (e) {
+                        var s = this.messagesRef, o = s.scrollHeight <= s.scrollTop + s.clientHeight + 1;
+                        o || e.type === es.mine ? v.a.prototype.$nextTick(function () {
+                            s.scrollTop = s.scrollHeight;
+                        }) : (e.type !== es.mine && (this.hasNewMsg = true), e.type == es.teacher_f && (this.hasPrivateNewMsg = true));
+                    }
+                },
+                {
+                    key: 'liveJudge',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n, r, i, c, l, u, d = this;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (!this.isBrokenLine) {
                                                 e.next = 4;
@@ -5236,24 +5236,24 @@
                                         case 17:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 liveJudge(_x2)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'sendMegToInterface',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t, s, o) {
-                                var a, n, r, i, c, l, u, d, m, h;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 liveJudge(_x2)', t, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'sendMegToInterface',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t, s, o) {
+                            var a, n, r, i, c, l, u, d, m, h;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return a = this.parentData, n = a.bizId, r = a.planId, i = a.nick, c = a.psId, l = a.imgPath, u = a.stuName, d = a.classId, m = a.teamId, e.next = 3, Js.a.post(o, {
                                                 bizId: n,
@@ -5290,50 +5290,50 @@
                                         case 6:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t, s, o) {
-                                return console.info('函数申明 sendMegToInterface(_x3, _x4, _x5)', t, s, o, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'setMessage',
-                        value: function (e) {
-                            this.setMessagejudge(e);
+                                }
+                            }, e, this);
+                        }));
+                        function t(t, s, o) {
+                            return console.info('函数申明 sendMegToInterface(_x3, _x4, _x5)', t, s, o, 'filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'baseCommonUserInfo',
-                        value: function (e, t) {
-                            return {
-                                from: this.sendMsgFrom,
-                                name: this.myName,
-                                msg: e.msg,
-                                type: 130,
-                                evenexc: e.evenexc,
-                                path: t
-                            };
-                        }
-                    },
-                    {
-                        key: 'getBaseTime',
-                        value: function () {
-                            var e = this.parentData, t = e.gotoClassTime, s = e.stime;
-                            return t || parseInt(s);
-                        }
-                    },
-                    {
-                        key: 'initPrivateMessagesHistory',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a, n = this;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                        return t;
+                    }()
+                },
+                {
+                    key: 'setMessage',
+                    value: function (e) {
+                        this.setMessagejudge(e);
+                    }
+                },
+                {
+                    key: 'baseCommonUserInfo',
+                    value: function (e, t) {
+                        return {
+                            from: this.sendMsgFrom,
+                            name: this.myName,
+                            msg: e.msg,
+                            type: 130,
+                            evenexc: e.evenexc,
+                            path: t
+                        };
+                    }
+                },
+                {
+                    key: 'getBaseTime',
+                    value: function () {
+                        var e = this.parentData, t = e.gotoClassTime, s = e.stime;
+                        return t || parseInt(s);
+                    }
+                },
+                {
+                    key: 'initPrivateMessagesHistory',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a, n = this;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, Object(Q.q)({
                                                 planId: this.parentData.planId,
@@ -5371,106 +5371,106 @@
                                         case 15:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 initPrivateMessagesHistory, filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    }
-                ]), e;
-            }(), Zs = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return console.info('函数申明 Chat(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.js'), Object(g.a)(this, s), e = t.call(this), e.options = o, e.initChat(o.dom), e;
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 initPrivateMessagesHistory, filePath:renderer/components/Classroom/LargeClass/base/chats/chat-main.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
                 }
-                return Object(C.a)(s, [
-                    {
-                        key: 'initChat',
-                        value: function (e) {
-                            this.vm = this.createVueChat(qs);
-                            this.render(e, this.vm);
-                            var t = this.vm.$t('classroom.largeClass.chats');
-                            this.vm.ChatClass = new Qs(Object(F.a)(Object(F.a)({
-                                msgTip: t.msgTip,
-                                inputStatusMap: t.inputStatusMap
-                            }, this.options), {}, { sendMsgFrom: 'flv' }));
-                        }
-                    },
-                    {
-                        key: 'createChatProps',
-                        value: function () {
-                            var e = {
-                                skinType: this.options.configs.skinType,
-                                options: this.options.commonOption
-                            };
-                            return e;
-                        }
-                    },
-                    {
-                        key: 'createVueChat',
-                        value: function (e) {
-                            var t = v.a.extend(e), s = null, o = this.createChatProps();
-                            return s = new t({
-                                i18n: se.b,
-                                propsData: o
-                            }), s.$mount(), this.vm = s, s;
-                        }
-                    },
-                    {
-                        key: 'eventHandler',
-                        value: function (e) {
-                            this.options;
-                            this.vm;
-                            var t = e.type, s = e.data;
-                            this.vm.ChatClass[t] && this.vm.ChatClass[t](s);
-                        }
+            ]), e;
+        }(), Zs = function (e) {
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return console.info('函数申明 Chat(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/chats/index.js'), Object(g.a)(this, s), e = t.call(this), e.options = o, e.initChat(o.dom), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'initChat',
+                    value: function (e) {
+                        this.vm = this.createVueChat(qs);
+                        this.render(e, this.vm);
+                        var t = this.vm.$t('classroom.largeClass.chats');
+                        this.vm.ChatClass = new Qs(Object(F.a)(Object(F.a)({
+                            msgTip: t.msgTip,
+                            inputStatusMap: t.inputStatusMap
+                        }, this.options), {}, { sendMsgFrom: 'flv' }));
                     }
-                ]), s;
-            }(zs.a), Ys = s('257e'), Xs = s('ade3'), $s = s('9f67'), eo = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    for (var e, o = arguments.length, a = new Array(o), n = 0; n < o; n++) {
-                        a[n] = arguments[n];
+                },
+                {
+                    key: 'createChatProps',
+                    value: function () {
+                        var e = {
+                            skinType: this.options.configs.skinType,
+                            options: this.options.commonOption
+                        };
+                        return e;
                     }
-                    return console.info('函数申明 LiveExceptionHandler(args)', a, 'filePath:renderer/components/Classroom/LargeClass/base/exception-handler/index.js'), Object(g.a)(this, s), e = t.call.apply(t, [this].concat(a)), Object(Xs.a)(Object(Ys.a)(e), 'isShow', false), e;
+                },
+                {
+                    key: 'createVueChat',
+                    value: function (e) {
+                        var t = v.a.extend(e), s = null, o = this.createChatProps();
+                        return s = new t({
+                            i18n: se.b,
+                            propsData: o
+                        }), s.$mount(), this.vm = s, s;
+                    }
+                },
+                {
+                    key: 'eventHandler',
+                    value: function (e) {
+                        this.options;
+                        this.vm;
+                        var t = e.type, s = e.data;
+                        this.vm.ChatClass[t] && this.vm.ChatClass[t](s);
+                    }
                 }
-                return Object(C.a)(s, [
-                    {
-                        key: 'eventHandler',
-                        value: function () {
-                            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = e.level, s = e.data;
-                            Object(z.e)(this[t]) && this[t](s);
-                        }
-                    },
-                    {
-                        key: 'networkError',
-                        value: function () {
-                            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                            4 != e.netStatus ? this.showNotice() : this.closeNotice();
-                        }
-                    },
-                    {
-                        key: 'onSDKProvisionStatusNotice',
-                        value: function () {
-                            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                            0 != e.status ? this.showNotice() : this.closeNotice();
-                        }
-                    },
-                    {
-                        key: 'showNotice',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            ]), s;
+        }(zs.a), Ys = s('257e'), Xs = s('ade3'), $s = s('9f67'), eo = function (e) {
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                for (var e, o = arguments.length, a = new Array(o), n = 0; n < o; n++) {
+                    a[n] = arguments[n];
+                }
+                return console.info('函数申明 LiveExceptionHandler(args)', a, 'filePath:renderer/components/Classroom/LargeClass/base/exception-handler/index.js'), Object(g.a)(this, s), e = t.call.apply(t, [this].concat(a)), Object(Xs.a)(Object(Ys.a)(e), 'isShow', false), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'eventHandler',
+                    value: function () {
+                        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = e.level, s = e.data;
+                        Object(z.e)(this[t]) && this[t](s);
+                    }
+                },
+                {
+                    key: 'networkError',
+                    value: function () {
+                        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                        4 != e.netStatus ? this.showNotice() : this.closeNotice();
+                    }
+                },
+                {
+                    key: 'onSDKProvisionStatusNotice',
+                    value: function () {
+                        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                        0 != e.status ? this.showNotice() : this.closeNotice();
+                    }
+                },
+                {
+                    key: 'showNotice',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (this.$createElement, !this.isShow) {
                                                 e.next = 4;
@@ -5516,378 +5516,378 @@
                                         case 10:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 showNotice, filePath:renderer/components/Classroom/LargeClass/base/exception-handler/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'closeNotice',
-                        value: function () {
-                            this.isShow = false;
-                            Vue.prototype.$Notification.destroy();
-                            document.getElementById('interactionFullPage').removeAttribute('style');
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 showNotice, filePath:renderer/components/Classroom/LargeClass/base/exception-handler/index.js'), e.apply(this, arguments);
                         }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'closeNotice',
+                    value: function () {
+                        this.isShow = false;
+                        Vue.prototype.$Notification.destroy();
+                        document.getElementById('interactionFullPage').removeAttribute('style');
                     }
-                ]), s;
-            }($s.a), to = s('5880'), so = s.n(to), oo = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'header-wrapper' }, [
-                    t('Toolbar', { attrs: { 'dark-theme': true } }),
-                    t('div', {
-                        staticClass: 'live-header',
-                        class: e.triggerClass,
+                }
+            ]), s;
+        }($s.a), to = s('5880'), so = s.n(to), oo = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'header-wrapper' }, [
+                t('Toolbar', { attrs: { 'dark-theme': true } }),
+                t('div', {
+                    staticClass: 'live-header',
+                    class: e.triggerClass,
+                    on: {
+                        mouseenter: e.handleMouseenter,
+                        mouseleave: e.handleMouseleave
+                    }
+                }, [t('div', { staticClass: 'wrapper' }, [
+                    t('div', { staticClass: 'left' }, [t('div', {
+                        staticClass: 'icon-goback',
+                        on: { click: e.handleBack }
+                    })]),
+                    t('div', { staticClass: 'center' }, [t('div', { staticClass: 'title' }, [e.planName ? t('span', { staticClass: 'plan-name' }, [e._v(' ' + e._s(e.planName) + ' ')]) : e._e()])]),
+                    t('div', { staticClass: 'right' }, [
+                        t('div', { staticClass: 'operation-button' }, [
+                            e.isPlayBack ? e._e() : t('div', { staticClass: 'item' }, [t('NetworkStatus', { on: { 'update-network-quality': e.updateNetworkQuality } })], 1),
+                            t('PrintScreen', { on: { click: e.printScrenClick } }),
+                            e.showFeedbackButton ? t('div', { staticClass: 'item' }, [t('div', {
+                                staticClass: 'button button-feedback',
+                                on: { click: e.handleFeedbackShow }
+                            })]) : e._e(),
+                            e.showExamReportButton ? t('div', { staticClass: 'item' }, [t('div', {
+                                staticClass: 'button button-exam',
+                                on: { click: e.handleExamResult }
+                            })]) : e._e(),
+                            e.showHomeworkButton ? t('div', { staticClass: 'item' }, [t('div', {
+                                staticClass: 'button button-homework',
+                                on: { click: e.handleOpenAssignmentBox }
+                            }, [e.haveNewMessage ? t('span') : e._e()])]) : e._e(),
+                            t('div', { staticClass: 'item' }, [t('div', {
+                                staticClass: 'button button-refresh',
+                                on: { click: e.handleRefresh }
+                            })]),
+                            this.isPlayBack ? e._e() : t('div', { staticClass: 'item' }, [t('div', {
+                                staticClass: 'button button-more',
+                                on: { click: e.handleMore }
+                            })])
+                        ], 1),
+                        t('div', {
+                            directives: [{
+                                name: 'show',
+                                rawName: 'v-show',
+                                value: e.showMore,
+                                expression: 'showMore'
+                            }],
+                            staticClass: 'operation-more'
+                        }, [
+                            e.showTeamSwitch ? t('TeamSwitch', {
+                                attrs: {
+                                    'plan-id': e.planInfo.id,
+                                    options: e.options
+                                }
+                            }) : e._e(),
+                            t('DeviceTest')
+                        ], 1)
+                    ])
+                ])]),
+                t('div', { staticClass: 'components-box' }, [
+                    t('AssignmentBox', {
+                        ref: 'assignmentBoxRef',
+                        attrs: {
+                            'plan-id': e.planInfo.id,
+                            options: e.options
+                        },
                         on: {
-                            mouseenter: e.handleMouseenter,
-                            mouseleave: e.handleMouseleave
-                        }
-                    }, [t('div', { staticClass: 'wrapper' }, [
-                            t('div', { staticClass: 'left' }, [t('div', {
-                                    staticClass: 'icon-goback',
-                                    on: { click: e.handleBack }
-                                })]),
-                            t('div', { staticClass: 'center' }, [t('div', { staticClass: 'title' }, [e.planName ? t('span', { staticClass: 'plan-name' }, [e._v(' ' + e._s(e.planName) + ' ')]) : e._e()])]),
-                            t('div', { staticClass: 'right' }, [
-                                t('div', { staticClass: 'operation-button' }, [
-                                    e.isPlayBack ? e._e() : t('div', { staticClass: 'item' }, [t('NetworkStatus', { on: { 'update-network-quality': e.updateNetworkQuality } })], 1),
-                                    t('PrintScreen', { on: { click: e.printScrenClick } }),
-                                    e.showFeedbackButton ? t('div', { staticClass: 'item' }, [t('div', {
-                                            staticClass: 'button button-feedback',
-                                            on: { click: e.handleFeedbackShow }
-                                        })]) : e._e(),
-                                    e.showExamReportButton ? t('div', { staticClass: 'item' }, [t('div', {
-                                            staticClass: 'button button-exam',
-                                            on: { click: e.handleExamResult }
-                                        })]) : e._e(),
-                                    e.showHomeworkButton ? t('div', { staticClass: 'item' }, [t('div', {
-                                            staticClass: 'button button-homework',
-                                            on: { click: e.handleOpenAssignmentBox }
-                                        }, [e.haveNewMessage ? t('span') : e._e()])]) : e._e(),
-                                    t('div', { staticClass: 'item' }, [t('div', {
-                                            staticClass: 'button button-refresh',
-                                            on: { click: e.handleRefresh }
-                                        })]),
-                                    this.isPlayBack ? e._e() : t('div', { staticClass: 'item' }, [t('div', {
-                                            staticClass: 'button button-more',
-                                            on: { click: e.handleMore }
-                                        })])
-                                ], 1),
-                                t('div', {
-                                    directives: [{
-                                            name: 'show',
-                                            rawName: 'v-show',
-                                            value: e.showMore,
-                                            expression: 'showMore'
-                                        }],
-                                    staticClass: 'operation-more'
-                                }, [
-                                    e.showTeamSwitch ? t('TeamSwitch', {
-                                        attrs: {
-                                            'plan-id': e.planInfo.id,
-                                            options: e.options
-                                        }
-                                    }) : e._e(),
-                                    t('DeviceTest')
-                                ], 1)
-                            ])
-                        ])]),
-                    t('div', { staticClass: 'components-box' }, [
-                        t('AssignmentBox', {
-                            ref: 'assignmentBoxRef',
-                            attrs: {
-                                'plan-id': e.planInfo.id,
-                                options: e.options
-                            },
-                            on: {
-                                hideHeader: e.hideHeader,
-                                handleShowMessageTip: e.handleShowMessageTip,
-                                handleHideMessageTip: e.handleHideMessageTip
-                            }
-                        }),
-                        t('Feedback', {
-                            ref: 'Feedback',
-                            attrs: {
-                                options: e.options,
-                                rtcConfig: e.rtcConfig,
-                                downlinkNetworkQuality: e.downlinkNetworkQuality
-                            }
-                        }),
-                        t('ExamReport', { attrs: { commonOptions: e.options } })
-                    ], 1)
-                ], 1);
-            }, ao = [], no = s('dfa8'), ro = (s('a4d3'), s('e01a'), function () {
-                var e = this, t = e._self._c;
-                return e.networkStatus ? t('div', {
-                    staticClass: 'network-status',
-                    class: e.networkStatusClass
-                }, [
-                    t('div', {
-                        staticClass: 'status-button',
-                        on: {
-                            mouseenter: e.handleMouseenter,
-                            mouseleave: e.handleMouseleave
+                            hideHeader: e.hideHeader,
+                            handleShowMessageTip: e.handleShowMessageTip,
+                            handleHideMessageTip: e.handleHideMessageTip
                         }
                     }),
-                    e.showStatusPanel ? t('div', { staticClass: 'status-panel' }, [t('div', { staticClass: 'panel-wrapper' }, [
-                            t('div', { staticClass: 'title-wrapper' }, [
-                                t('div', { staticClass: 'icon' }),
-                                t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.statusConfig.title) + ' ')])
-                            ]),
-                            e.statusConfig.description ? t('div', { staticClass: 'description' }, [e._v(' ' + e._s(e.statusConfig.description) + ' ')]) : e._e()
-                        ])]) : e._e()
-                ]) : e._e();
-            }), io = [], co = {
-                data: function () {
-                    return {
-                        rtcengine: null,
-                        downlinkNetworkQuality: -1,
-                        showStatusPanel: false
-                    };
+                    t('Feedback', {
+                        ref: 'Feedback',
+                        attrs: {
+                            options: e.options,
+                            rtcConfig: e.rtcConfig,
+                            downlinkNetworkQuality: e.downlinkNetworkQuality
+                        }
+                    }),
+                    t('ExamReport', { attrs: { commonOptions: e.options } })
+                ], 1)
+            ], 1);
+        }, ao = [], no = s('dfa8'), ro = (s('a4d3'), s('e01a'), function () {
+            var e = this, t = e._self._c;
+            return e.networkStatus ? t('div', {
+                staticClass: 'network-status',
+                class: e.networkStatusClass
+            }, [
+                t('div', {
+                    staticClass: 'status-button',
+                    on: {
+                        mouseenter: e.handleMouseenter,
+                        mouseleave: e.handleMouseleave
+                    }
+                }),
+                e.showStatusPanel ? t('div', { staticClass: 'status-panel' }, [t('div', { staticClass: 'panel-wrapper' }, [
+                    t('div', { staticClass: 'title-wrapper' }, [
+                        t('div', { staticClass: 'icon' }),
+                        t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.statusConfig.title) + ' ')])
+                    ]),
+                    e.statusConfig.description ? t('div', { staticClass: 'description' }, [e._v(' ' + e._s(e.statusConfig.description) + ' ')]) : e._e()
+                ])]) : e._e()
+            ]) : e._e();
+        }), io = [], co = {
+            data: function () {
+                return {
+                    rtcengine: null,
+                    downlinkNetworkQuality: -1,
+                    showStatusPanel: false
+                };
+            },
+            computed: {
+                networkStatus: function () {
+                    console.info('对象函数 networkStatus,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
+                    ;
+                    return e[this.downlinkNetworkQuality] || '';
                 },
-                computed: {
-                    networkStatus: function () {
-                        console.info('对象函数 networkStatus,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
-                        ;
-                        return e[this.downlinkNetworkQuality] || '';
-                    },
-                    statusConfig: function () {
-                        console.info('对象函数 statusConfig,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
-                        var e = this.$t('classroom.modules.networkStatus.statusMap'), t = {
-                                good: { title: e.good.title },
-                                normal: { title: e.normal.title },
-                                weak: {
-                                    title: e.weak.title,
-                                    description: e.weak.description
+                statusConfig: function () {
+                    console.info('对象函数 statusConfig,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
+                    var e = this.$t('classroom.modules.networkStatus.statusMap'), t = {
+                        good: { title: e.good.title },
+                        normal: { title: e.normal.title },
+                        weak: {
+                            title: e.weak.title,
+                            description: e.weak.description
+                        }
+                    };
+                    return t[this.networkStatus] || {};
+                },
+                networkStatusClass: function () {
+                    return console.info('对象函数 networkStatusClass,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue'), this.networkStatus ? 'status-'.concat(this.networkStatus) : '';
+                }
+            },
+            mounted: function () {
+                this.networkStatusListener();
+            },
+            methods: {
+                networkStatusListener: function () {
+                    var e = this;
+                    console.info('对象函数 networkStatusListener,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
+                    var t = window.RTC_COMMON.teacherRtcChannel;
+                    t && t.on('localNetworkQuality', function (t, s) {
+                        e.downlinkNetworkQuality = s;
+                        e.$emit('update-network-quality', s);
+                    });
+                },
+                handleMouseenter: function () {
+                    console.info('对象函数 handleMouseenter,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
+                    this.showStatusPanel = true;
+                },
+                handleMouseleave: function () {
+                    console.info('对象函数 handleMouseleave,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
+                    this.showStatusPanel = false;
+                }
+            }
+        }, lo = co, uo = (s('61c1'), Object(Ae.a)(lo, ro, io, false, null, '6ecf2946', null)), mo = uo.exports, ho = function () {
+            var e = this, t = e._self._c;
+            return e.showStatus ? t('div', { staticClass: 'feedback-wrapper' }, [t('div', { staticClass: 'feedback-popup' }, [
+                t('div', {
+                    staticClass: 'popup-close',
+                    on: { click: e.handleHide }
+                }),
+                t('div', { staticClass: 'popup-wrapper' }, [
+                    t('div', { staticClass: 'popup-header' }, [e._v(' ' + e._s(e.$t('classroom.modules.feedback.headerName')) + ' ')]),
+                    t('div', { staticClass: 'popup-contenter' }, [
+                        t('FeedbackOptions', { on: { 'update-checked-info': e.updateCheckedInfo } }),
+                        t('div', { staticClass: 'feedback-textarea' }, [t('textarea', {
+                            directives: [{
+                                name: 'model',
+                                rawName: 'v-model',
+                                value: e.content,
+                                expression: 'content'
+                            }],
+                            attrs: {
+                                maxlength: '500',
+                                placeholder: e.$t('classroom.modules.feedback.placeholder')
+                            },
+                            domProps: { value: e.content },
+                            on: {
+                                input: function (t) {
+                                    t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue') : e.content = t.target.value;
                                 }
-                            };
-                        return t[this.networkStatus] || {};
-                    },
-                    networkStatusClass: function () {
-                        return console.info('对象函数 networkStatusClass,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue'), this.networkStatus ? 'status-'.concat(this.networkStatus) : '';
-                    }
-                },
-                mounted: function () {
-                    this.networkStatusListener();
-                },
-                methods: {
-                    networkStatusListener: function () {
-                        var e = this;
-                        console.info('对象函数 networkStatusListener,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
-                        var t = window.RTC_COMMON.teacherRtcChannel;
-                        t && t.on('localNetworkQuality', function (t, s) {
-                            e.downlinkNetworkQuality = s;
-                            e.$emit('update-network-quality', s);
-                        });
-                    },
-                    handleMouseenter: function () {
-                        console.info('对象函数 handleMouseenter,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
-                        this.showStatusPanel = true;
-                    },
-                    handleMouseleave: function () {
-                        console.info('对象函数 handleMouseleave,filePath:renderer/components/Classroom/LargeClass/base/room/header/NetworkStatus.vue');
-                        this.showStatusPanel = false;
-                    }
-                }
-            }, lo = co, uo = (s('61c1'), Object(Ae.a)(lo, ro, io, false, null, '6ecf2946', null)), mo = uo.exports, ho = function () {
-                var e = this, t = e._self._c;
-                return e.showStatus ? t('div', { staticClass: 'feedback-wrapper' }, [t('div', { staticClass: 'feedback-popup' }, [
+                            }
+                        })]),
                         t('div', {
-                            staticClass: 'popup-close',
-                            on: { click: e.handleHide }
-                        }),
-                        t('div', { staticClass: 'popup-wrapper' }, [
-                            t('div', { staticClass: 'popup-header' }, [e._v(' ' + e._s(e.$t('classroom.modules.feedback.headerName')) + ' ')]),
-                            t('div', { staticClass: 'popup-contenter' }, [
-                                t('FeedbackOptions', { on: { 'update-checked-info': e.updateCheckedInfo } }),
-                                t('div', { staticClass: 'feedback-textarea' }, [t('textarea', {
-                                        directives: [{
-                                                name: 'model',
-                                                rawName: 'v-model',
-                                                value: e.content,
-                                                expression: 'content'
-                                            }],
-                                        attrs: {
-                                            maxlength: '500',
-                                            placeholder: e.$t('classroom.modules.feedback.placeholder')
-                                        },
-                                        domProps: { value: e.content },
-                                        on: {
-                                            input: function (t) {
-                                                t.target.composing ? console.info('if($event.target.composing)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue') : e.content = t.target.value;
-                                            }
-                                        }
-                                    })]),
-                                t('div', {
-                                    staticClass: 'agree-wrapper',
-                                    on: { click: e.handleClickAgree }
-                                }, [
-                                    t('div', { staticClass: 'agree-checkbox' }, [e.agreeChecked ? t('div', { staticClass: 'icon-checked' }) : e._e()]),
-                                    e._v(' ' + e._s(e.$t('classroom.modules.feedback.screenshotTips')) + ' ')
-                                ]),
-                                t('div', { staticClass: 'button-wrapper' }, [t('a-button', {
-                                        attrs: {
-                                            block: '',
-                                            type: 'primary',
-                                            shape: 'round',
-                                            size: 'large'
-                                        },
-                                        on: { click: e.handleSend }
-                                    }, [e._v(' ' + e._s(e.$t('common.send')) + ' ')])], 1)
-                            ], 1)
-                        ])
-                    ])]) : e._e();
-            }, po = [], fo = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'feedback-options' }, e._l(e.options, function (s, o) {
-                    return t('div', {
-                        key: o,
-                        staticClass: 'item',
-                        class: { active: e.checkedCode == s.code },
-                        on: {
-                            click: function (t) {
-                                return e.handleClickOption(s);
-                            }
+                            staticClass: 'agree-wrapper',
+                            on: { click: e.handleClickAgree }
+                        }, [
+                            t('div', { staticClass: 'agree-checkbox' }, [e.agreeChecked ? t('div', { staticClass: 'icon-checked' }) : e._e()]),
+                            e._v(' ' + e._s(e.$t('classroom.modules.feedback.screenshotTips')) + ' ')
+                        ]),
+                        t('div', { staticClass: 'button-wrapper' }, [t('a-button', {
+                            attrs: {
+                                block: '',
+                                type: 'primary',
+                                shape: 'round',
+                                size: 'large'
+                            },
+                            on: { click: e.handleSend }
+                        }, [e._v(' ' + e._s(e.$t('common.send')) + ' ')])], 1)
+                    ], 1)
+                ])
+            ])]) : e._e();
+        }, po = [], fo = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'feedback-options' }, e._l(e.options, function (s, o) {
+                return t('div', {
+                    key: o,
+                    staticClass: 'item',
+                    class: { active: e.checkedCode == s.code },
+                    on: {
+                        click: function (t) {
+                            return e.handleClickOption(s);
                         }
-                    }, [
-                        e.checkedCode == s.code ? t('div', { staticClass: 'icon-checked' }) : e._e(),
-                        t('div', { staticClass: 'item-name' }, [e._v(e._s(s.name))])
-                    ]);
-                }), 0);
-            }, vo = [], go = {
-                data: function () {
-                    var e = this.$t('classroom.modules.feedback.optionNames');
-                    return {
-                        options: [
-                            {
-                                code: 'study-question',
-                                name: e[0]
-                            },
-                            {
-                                code: 'app-problem',
-                                name: e[1]
-                            },
-                            {
-                                code: 'inappropriate-behavior',
-                                name: e[2]
-                            },
-                            {
-                                code: 'others',
-                                name: e[3]
-                            }
-                        ],
-                        checkedCode: '',
-                        checkedName: ''
-                    };
-                },
-                methods: {
-                    handleClickOption: function (e) {
-                        if (console.info('对象函数 handleClickOption(item)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/feedbackOptions.vue'), e.code == this.checkedCode) {
-                            return console.info('if(item.code == this.checkedCode)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/feedback/feedbackOptions.vue'), this.checkedCode = '', this.checkedName = '', void this.$emit('update-checked-info', '', '');
-                        }
-                        this.checkedCode = e.code;
-                        this.checkedName = e.name;
-                        this.$emit('update-checked-info', e.code, e.name);
                     }
+                }, [
+                    e.checkedCode == s.code ? t('div', { staticClass: 'icon-checked' }) : e._e(),
+                    t('div', { staticClass: 'item-name' }, [e._v(e._s(s.name))])
+                ]);
+            }), 0);
+        }, vo = [], go = {
+            data: function () {
+                var e = this.$t('classroom.modules.feedback.optionNames');
+                return {
+                    options: [
+                        {
+                            code: 'study-question',
+                            name: e[0]
+                        },
+                        {
+                            code: 'app-problem',
+                            name: e[1]
+                        },
+                        {
+                            code: 'inappropriate-behavior',
+                            name: e[2]
+                        },
+                        {
+                            code: 'others',
+                            name: e[3]
+                        }
+                    ],
+                    checkedCode: '',
+                    checkedName: ''
+                };
+            },
+            methods: {
+                handleClickOption: function (e) {
+                    if (console.info('对象函数 handleClickOption(item)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/feedbackOptions.vue'), e.code == this.checkedCode) {
+                        return console.info('if(item.code == this.checkedCode)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/feedback/feedbackOptions.vue'), this.checkedCode = '', this.checkedName = '', void this.$emit('update-checked-info', '', '');
+                    }
+                    this.checkedCode = e.code;
+                    this.checkedName = e.name;
+                    this.$emit('update-checked-info', e.code, e.name);
                 }
-            }, Co = go, bo = (s('0e0e'), Object(Ae.a)(Co, fo, vo, false, null, '49d099ad', null)), So = bo.exports, wo = s('bcaf'), yo = s('1a37'), Po = s('3631'), Ao = {
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    },
-                    downlinkNetworkQuality: {
-                        type: Number,
-                        default: null
-                    }
+            }
+        }, Co = go, bo = (s('0e0e'), Object(Ae.a)(Co, fo, vo, false, null, '49d099ad', null)), So = bo.exports, wo = s('bcaf'), yo = s('1a37'), Po = s('3631'), Ao = {
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                components: { FeedbackOptions: So },
-                data: function () {
-                    return {
-                        showStatus: false,
-                        agreeChecked: true,
-                        content: '',
-                        checkedCode: '',
-                        checkedName: ''
-                    };
+                rtcConfig: {
+                    type: Object,
+                    default: null
                 },
-                mounted: function () {
-                    this.options;
-                    this.rtcConfig;
+                downlinkNetworkQuality: {
+                    type: Number,
+                    default: null
+                }
+            },
+            components: { FeedbackOptions: So },
+            data: function () {
+                return {
+                    showStatus: false,
+                    agreeChecked: true,
+                    content: '',
+                    checkedCode: '',
+                    checkedName: ''
+                };
+            },
+            mounted: function () {
+                this.options;
+                this.rtcConfig;
+            },
+            methods: {
+                handleShow: function () {
+                    console.info('对象函数 handleShow,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.showStatus = true;
                 },
-                methods: {
-                    handleShow: function () {
-                        console.info('对象函数 handleShow,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.showStatus = true;
-                    },
-                    handleHide: function () {
-                        console.info('对象函数 handleHide,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.showStatus = false;
-                    },
-                    handleClickAgree: function () {
-                        console.info('对象函数 handleClickAgree,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.agreeChecked = !this.agreeChecked;
-                    },
-                    handleSend: function () {
-                        var e = this;
-                        console.info('对象函数 handleSend,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.handleHide();
-                        this.$Message.info(this.$t('classroom.modules.feedback.sendSuccessNotice'));
-                        this.agreeChecked ? this.uploadScreenshot(function (t) {
-                            console.info('箭头函数 uploadScreenshot(screenshotUrl)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                            e.sendMessage(t);
-                        }) : this.sendMessage();
-                        this.sendLogger('点击Send按钮: '.concat(JSON.stringify({
-                            checkedName: this.checkedName,
-                            content: this.content.replace(/[\r\n]/g, ' '),
-                            agreeChecked: this.agreeChecked
-                        })));
-                        Object(x.e)('hw_classroom_toolbar_problem', this.options, { problem_type: this.checkedName });
-                    },
-                    sendMessage: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            var o, a, n, r, i, c;
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                handleHide: function () {
+                    console.info('对象函数 handleHide,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.showStatus = false;
+                },
+                handleClickAgree: function () {
+                    console.info('对象函数 handleClickAgree,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.agreeChecked = !this.agreeChecked;
+                },
+                handleSend: function () {
+                    var e = this;
+                    console.info('对象函数 handleSend,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.handleHide();
+                    this.$Message.info(this.$t('classroom.modules.feedback.sendSuccessNotice'));
+                    this.agreeChecked ? this.uploadScreenshot(function (t) {
+                        console.info('箭头函数 uploadScreenshot(screenshotUrl)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                        e.sendMessage(t);
+                    }) : this.sendMessage();
+                    this.sendLogger('点击Send按钮: '.concat(JSON.stringify({
+                        checkedName: this.checkedName,
+                        content: this.content.replace(/[\r\n]/g, ' '),
+                        agreeChecked: this.agreeChecked
+                    })));
+                    Object(x.e)('hw_classroom_toolbar_problem', this.options, { problem_type: this.checkedName });
+                },
+                sendMessage: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        var o, a, n, r, i, c;
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         return console.info('对象函数 sendMessage(screenshotUrl)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue'), s.next = 3, Object(Y.f)();
                                     case 3:
                                         return a = s.sent, s.next = 6, te.nativeApi.getDeviceInfo();
                                     case 6:
                                         if (n = s.sent, r = t.content.replace(/[\r\n]/g, ' '), i = JSON.stringify({
-                                                type: 150,
-                                                from: 'flv',
-                                                name: t.options.nickName,
-                                                msg: 'I send a feedback',
-                                                parameter: {
-                                                    schoolCode: a,
-                                                    planId: t.options.planId,
-                                                    roomId: t.options.classId,
-                                                    studentId: t.options.stuIRCId,
-                                                    uid: t.options.stuId,
-                                                    teacherId: t.options.teacherInfo.id,
-                                                    teacherName: t.options.teacherInfo.name,
-                                                    teacherRoomId: null === (o = t.rtcConfig) || void 0 === o ? void 0 : o.teacherRoomId,
-                                                    startTime: t.options.stime,
-                                                    currenTime: new Date().getTime(),
-                                                    device: n.platform,
-                                                    deviceVersion: n.osVersion,
-                                                    AppVersion: n.appVersion,
-                                                    question: t.checkedName,
-                                                    question_msg: r,
-                                                    question_url: e || ''
-                                                }
-                                            }), c = window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: t.options.configs.tutorIrcId }], i, wo.a.privMsg), t.resetData(), 0 == c) {
+                                            type: 150,
+                                            from: 'flv',
+                                            name: t.options.nickName,
+                                            msg: 'I send a feedback',
+                                            parameter: {
+                                                schoolCode: a,
+                                                planId: t.options.planId,
+                                                roomId: t.options.classId,
+                                                studentId: t.options.stuIRCId,
+                                                uid: t.options.stuId,
+                                                teacherId: t.options.teacherInfo.id,
+                                                teacherName: t.options.teacherInfo.name,
+                                                teacherRoomId: null === (o = t.rtcConfig) || void 0 === o ? void 0 : o.teacherRoomId,
+                                                startTime: t.options.stime,
+                                                currenTime: new Date().getTime(),
+                                                device: n.platform,
+                                                deviceVersion: n.osVersion,
+                                                AppVersion: n.appVersion,
+                                                question: t.checkedName,
+                                                question_msg: r,
+                                                question_url: e || ''
+                                            }
+                                        }), c = window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: t.options.configs.tutorIrcId }], i, wo.a.privMsg), t.resetData(), 0 == c) {
                                             s.next = 16;
                                             break;
                                         }
@@ -5897,18 +5897,18 @@
                                     case 17:
                                     case 'end':
                                         return s.stop();
-                                    }
                                 }
-                            }, s);
-                        }))();
-                    },
-                    uploadScreenshot: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            var o, a, n, r;
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                            }
+                        }, s);
+                    }))();
+                },
+                uploadScreenshot: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        var o, a, n, r;
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         return console.info('对象函数 uploadScreenshot(callback)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue'), s.prev = 1, s.next = 4, Object(Po.default)({
                                             thumbnailWidth: 1024,
@@ -5935,99 +5935,99 @@
                                     case 15:
                                     case 'end':
                                         return s.stop();
-                                    }
                                 }
-                            }, s, null, [[
-                                    1,
-                                    11
-                                ]]);
-                        }))();
-                    },
-                    updateCheckedInfo: function (e, t) {
-                        console.info('对象函数 updateCheckedInfo(code, name)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.checkedCode = e;
-                        this.checkedName = t;
-                    },
-                    resetData: function () {
-                        console.info('对象函数 resetData,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
-                        this.content = '';
-                        this.checkedCode = '';
-                        this.checkedName = '';
-                    },
-                    sendLogger: function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 'info';
-                        L.a.send({
-                            tag: 'liveFeedback',
-                            content: {
-                                msg: e,
-                                level: t
                             }
-                        });
+                        }, s, null, [[
+                            1,
+                            11
+                        ]]);
+                    }))();
+                },
+                updateCheckedInfo: function (e, t) {
+                    console.info('对象函数 updateCheckedInfo(code, name)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.checkedCode = e;
+                    this.checkedName = t;
+                },
+                resetData: function () {
+                    console.info('对象函数 resetData,filePath:renderer/components/Classroom/LargeClass/base/room/header/feedback/index.vue');
+                    this.content = '';
+                    this.checkedCode = '';
+                    this.checkedName = '';
+                },
+                sendLogger: function (e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 'info';
+                    L.a.send({
+                        tag: 'liveFeedback',
+                        content: {
+                            msg: e,
+                            level: t
+                        }
+                    });
+                }
+            }
+        }, ko = Ao, Lo = (s('006b'), Object(Ae.a)(ko, ho, po, false, null, '0d4f9390', null)), Io = Lo.exports, xo = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'team-switch' }, [t('div', { staticClass: 'switch-wrapper' }, [
+                t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.header.groupVideoButtonName')) + ' ')]),
+                t('div', { staticClass: 'switch' }, [t('a-switch', {
+                    attrs: { disabled: e.disabledStatus },
+                    on: { change: e.handleSwitchButton },
+                    model: {
+                        value: e.status,
+                        callback: function (t) {
+                            e.status = t;
+                        },
+                        expression: 'status'
+                    }
+                })], 1)
+            ])]);
+        }, Oo = [], jo = {
+            props: {
+                planId: {
+                    type: Number,
+                    default: 0
+                },
+                options: {
+                    type: Object,
+                    default: function () {
+                        return {};
                     }
                 }
-            }, ko = Ao, Lo = (s('006b'), Object(Ae.a)(ko, ho, po, false, null, '0d4f9390', null)), Io = Lo.exports, xo = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'team-switch' }, [t('div', { staticClass: 'switch-wrapper' }, [
-                        t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.header.groupVideoButtonName')) + ' ')]),
-                        t('div', { staticClass: 'switch' }, [t('a-switch', {
-                                attrs: { disabled: e.disabledStatus },
-                                on: { change: e.handleSwitchButton },
-                                model: {
-                                    value: e.status,
-                                    callback: function (t) {
-                                        e.status = t;
-                                    },
-                                    expression: 'status'
-                                }
-                            })], 1)
-                    ])]);
-            }, Oo = [], jo = {
-                props: {
-                    planId: {
-                        type: Number,
-                        default: 0
-                    },
-                    options: {
-                        type: Object,
-                        default: function () {
-                            return {};
+            },
+            data: function () {
+                return {
+                    status: false,
+                    disabledStatus: false
+                };
+            },
+            mounted: function () {
+                var e = this;
+                this.getSwitchStatus();
+                this.$bus.$on('teamSwitchDisabled', function (t) {
+                    console.info('箭头函数 监听 teamSwitchDisabled(disabledStatus)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue');
+                    e.disabledStatus = t;
+                });
+            },
+            methods: {
+                handleSwitchButton: function () {
+                    console.info('对象函数 handleSwitchButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: {
+                            msg: '点击切换videoGroup显示状态',
+                            disabledStatus: this.disabledStatus,
+                            status: this.status
                         }
-                    }
-                },
-                data: function () {
-                    return {
-                        status: false,
-                        disabledStatus: false
-                    };
-                },
-                mounted: function () {
-                    var e = this;
-                    this.getSwitchStatus();
-                    this.$bus.$on('teamSwitchDisabled', function (t) {
-                        console.info('箭头函数 监听 teamSwitchDisabled(disabledStatus)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue');
-                        e.disabledStatus = t;
                     });
+                    this.disabledStatus ? console.info('if(this.disabledStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue') : (Rs.e(this.status), this.status, this.updateSwitchStatus());
                 },
-                methods: {
-                    handleSwitchButton: function () {
-                        console.info('对象函数 handleSwitchButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: {
-                                msg: '点击切换videoGroup显示状态',
-                                disabledStatus: this.disabledStatus,
-                                status: this.status
-                            }
-                        });
-                        this.disabledStatus ? console.info('if(this.disabledStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue') : (Rs.e(this.status), this.status, this.updateSwitchStatus());
-                    },
-                    getSwitchStatus: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                getSwitchStatus: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 getSwitchStatus,filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue'), t.next = 3, window.thinkApi.ipc.invoke('getStoreValue', 'videoGroupSwitchStatus_'.concat(e.planId));
                                     case 3:
@@ -6035,17 +6035,17 @@
                                     case 5:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    updateSwitchStatus: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                updateSwitchStatus: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 updateSwitchStatus,filePath:renderer/components/Classroom/LargeClass/base/room/header/TeamSwitch.vue'), t.next = 3, window.thinkApi.ipc.invoke('setStoreValue', 'videoGroupSwitchStatus_'.concat(e.planId), e.status);
                                     case 3:
@@ -6053,40 +6053,40 @@
                                     case 5:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    }
+                            }
+                        }, t);
+                    }))();
                 }
-            }, To = jo, Mo = (s('a027'), Object(Ae.a)(To, xo, Oo, false, null, 'c8fa3f0e', null)), Ro = Mo.exports, Eo = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'device-test' }, [t('div', {
-                        staticClass: 'device-test-wrapper',
-                        on: { click: e.handleClick }
-                    }, [t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.header.deviceTestButtonName')) + ' ')])])]);
-            }, Vo = [], No = {
-                methods: {
-                    handleClick: function () {
-                        console.info('对象函数 handleClick,filePath:renderer/components/Classroom/LargeClass/base/room/header/DeviceTest.vue');
-                        this.$bus.$emit('room.deviceTestShow');
-                    }
+            }
+        }, To = jo, Mo = (s('a027'), Object(Ae.a)(To, xo, Oo, false, null, 'c8fa3f0e', null)), Ro = Mo.exports, Eo = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'device-test' }, [t('div', {
+                staticClass: 'device-test-wrapper',
+                on: { click: e.handleClick }
+            }, [t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.header.deviceTestButtonName')) + ' ')])])]);
+        }, Vo = [], No = {
+            methods: {
+                handleClick: function () {
+                    console.info('对象函数 handleClick,filePath:renderer/components/Classroom/LargeClass/base/room/header/DeviceTest.vue');
+                    this.$bus.$emit('room.deviceTestShow');
                 }
-            }, Do = No, Bo = (s('dd90'), Object(Ae.a)(Do, Eo, Vo, false, null, '55062aa6', null)), Uo = Bo.exports, Go = s('6cd4'), Ho = s('234d'), _o = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    staticClass: 'print-screen-container',
-                    on: { click: e.handleClick }
-                });
-            }, Fo = [], Wo = false, Ko = {
-                methods: {
-                    handleClick: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+            }
+        }, Do = No, Bo = (s('dd90'), Object(Ae.a)(Do, Eo, Vo, false, null, '55062aa6', null)), Uo = Bo.exports, Go = s('6cd4'), Ho = s('234d'), _o = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                staticClass: 'print-screen-container',
+                on: { click: e.handleClick }
+            });
+        }, Fo = [], Wo = false, Ko = {
+            methods: {
+                handleClick: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         if (console.info('对象函数 handleClick,filePath:renderer/components/Classroom/LargeClass/base/room/header/print-screen/printScreen.vue'), e.$emit('click'), !Wo) {
                                             t.next = 5;
@@ -6106,84 +6106,84 @@
                                     case 14:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    }
+                            }
+                        }, t);
+                    }))();
                 }
-            }, qo = Ko, zo = (s('0781'), Object(Ae.a)(qo, _o, Fo, false, null, '4ab02bdd', null)), Jo = zo.exports, Qo = s('36e6'), Zo = s('c6c8'), Yo = s('cf14'), Xo = {
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    },
-                    planInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    planName: {
-                        type: String,
-                        default: ''
-                    }
+            }
+        }, qo = Ko, zo = (s('0781'), Object(Ae.a)(qo, _o, Fo, false, null, '4ab02bdd', null)), Jo = zo.exports, Qo = s('36e6'), Zo = s('c6c8'), Yo = s('cf14'), Xo = {
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                components: {
-                    Toolbar: no.a,
-                    Feedback: Io,
-                    AssignmentBox: Go.a,
-                    NetworkStatus: mo,
-                    TeamSwitch: Ro,
-                    DeviceTest: Uo,
-                    PrintScreen: Jo,
-                    ExamReport: Zo.a
+                stuInfo: {
+                    type: Object,
+                    default: null
                 },
-                data: function () {
-                    return {
-                        isPlayBack: this.options.isPlayBack,
-                        showHeader: true,
-                        showMore: false,
-                        local: '',
-                        haveNewMessage: false,
-                        downlinkNetworkQuality: -1,
-                        checkRefreshBox: true,
-                        backUrl: '',
-                        reportBtnVisible: false,
-                        checkNetHealthIntervalId: null,
-                        lessonType: ''
-                    };
+                rtcConfig: {
+                    type: Object,
+                    default: null
                 },
-                computed: {
-                    triggerClass: function () {
-                        return console.info('对象函数 triggerClass,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), this.showHeader ? 'show' : 'hide';
-                    },
-                    showTeamSwitch: function () {
-                        return console.info('对象函数 showTeamSwitch,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition;
-                    },
-                    showHomeworkButton: function () {
-                        return console.info('对象函数 showHomeworkButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), 'uk' != this.local && !this.options.isAudition;
-                    },
-                    showFeedbackButton: function () {
-                        return console.info('对象函数 showFeedbackButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition;
-                    },
-                    showExamReportButton: function () {
-                        return console.info('对象函数 showExamReportButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition && this.reportBtnVisible;
-                    }
+                planInfo: {
+                    type: Object,
+                    default: null
                 },
-                mounted: function () {
-                    var e = this;
-                    return Object(A.a)(Object(P.a)().mark(function t() {
-                        var s;
-                        return Object(P.a)().wrap(function (t) {
-                            while (1) {
-                                switch (t.prev = t.next) {
+                planName: {
+                    type: String,
+                    default: ''
+                }
+            },
+            components: {
+                Toolbar: no.a,
+                Feedback: Io,
+                AssignmentBox: Go.a,
+                NetworkStatus: mo,
+                TeamSwitch: Ro,
+                DeviceTest: Uo,
+                PrintScreen: Jo,
+                ExamReport: Zo.a
+            },
+            data: function () {
+                return {
+                    isPlayBack: this.options.isPlayBack,
+                    showHeader: true,
+                    showMore: false,
+                    local: '',
+                    haveNewMessage: false,
+                    downlinkNetworkQuality: -1,
+                    checkRefreshBox: true,
+                    backUrl: '',
+                    reportBtnVisible: false,
+                    checkNetHealthIntervalId: null,
+                    lessonType: ''
+                };
+            },
+            computed: {
+                triggerClass: function () {
+                    return console.info('对象函数 triggerClass,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), this.showHeader ? 'show' : 'hide';
+                },
+                showTeamSwitch: function () {
+                    return console.info('对象函数 showTeamSwitch,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition;
+                },
+                showHomeworkButton: function () {
+                    return console.info('对象函数 showHomeworkButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), 'uk' != this.local && !this.options.isAudition;
+                },
+                showFeedbackButton: function () {
+                    return console.info('对象函数 showFeedbackButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition;
+                },
+                showExamReportButton: function () {
+                    return console.info('对象函数 showExamReportButton,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), !this.options.isAudition && this.reportBtnVisible;
+                }
+            },
+            mounted: function () {
+                var e = this;
+                return Object(A.a)(Object(P.a)().mark(function t() {
+                    var s;
+                    return Object(P.a)().wrap(function (t) {
+                        while (1) {
+                            switch (t.prev = t.next) {
                                 case 0:
                                     return t.next = 2, Object(Y.c)();
                                 case 2:
@@ -6195,41 +6195,41 @@
                                 case 11:
                                 case 'end':
                                     return t.stop();
-                                }
                             }
-                        }, t);
-                    }))();
+                        }
+                    }, t);
+                }))();
+            },
+            beforeDestroy: function () {
+                console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                this.checkNetHealthIntervalId && clearInterval(this.checkNetHealthIntervalId);
+            },
+            methods: {
+                reSensorEvent: function (e) {
+                    console.info('对象函数 reSensorEvent(toolName)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    Object(x.e)('hw_classroom_toolbar_click', this.options, { tool_name: e });
                 },
-                beforeDestroy: function () {
-                    console.info('对象函数 beforeDestroy,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                    this.checkNetHealthIntervalId && clearInterval(this.checkNetHealthIntervalId);
+                printScrenClick: function () {
+                    console.info('对象函数 printScrenClick,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '学生点击header截屏' }
+                    });
+                    this.reSensorEvent('截屏');
                 },
-                methods: {
-                    reSensorEvent: function (e) {
-                        console.info('对象函数 reSensorEvent(toolName)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        Object(x.e)('hw_classroom_toolbar_click', this.options, { tool_name: e });
-                    },
-                    printScrenClick: function () {
-                        console.info('对象函数 printScrenClick,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '学生点击header截屏' }
-                        });
-                        this.reSensorEvent('截屏');
-                    },
-                    handleHideLiveHeader: function () {
-                        var e = this;
-                        console.info('对象函数 handleHideLiveHeader,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        setTimeout(function () {
-                            e.showHeader = false;
-                        }, 5000);
-                    },
-                    handleBack: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                handleHideLiveHeader: function () {
+                    var e = this;
+                    console.info('对象函数 handleHideLiveHeader,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    setTimeout(function () {
+                        e.showHeader = false;
+                    }, 5000);
+                },
+                handleBack: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         if (console.info('对象函数 handleBack,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), localStorage.setItem('largeClassTestCoverage', JSON.stringify(window.__coverage__)), !e.options.isPlayBack) {
                                             t.next = 5;
@@ -6269,48 +6269,48 @@
                                     case 6:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleFeedbackShow: function () {
-                        console.info('对象函数 handleFeedbackShow,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        this.$refs.Feedback.handleShow();
-                        this.reSensorEvent('反馈');
-                        this.$refs.assignmentBoxRef.hideAssignmentBoxOnly();
-                    },
-                    handleRefresh: function () {
-                        console.info('对象函数 handleRefresh,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '点击header刷新' }
-                        });
-                        this.reSensorEvent('刷新');
-                        this.$bus.$emit('liveRefresh');
-                        var e = this.planInfo, t = e.startStampTime, s = void 0 === t ? '' : t, o = e.endStampTime, a = void 0 === o ? '' : o;
-                        Object(X.A)(s, a) && this.$sensors.track('refresh_livePage', { course_type: this.lessonType });
-                    },
-                    handleExamResult: function () {
-                        console.info('对象函数 handleExamResult,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        this.$bus.$emit('handleOpenExamReport', true);
-                    },
-                    handleMore: function () {
-                        console.info('对象函数 handleMore,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '点击更多按钮' }
-                        });
-                        this.reSensorEvent('小组视频');
-                        this.showMore = !this.showMore;
-                    },
-                    queryReadMessage: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                handleFeedbackShow: function () {
+                    console.info('对象函数 handleFeedbackShow,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    this.$refs.Feedback.handleShow();
+                    this.reSensorEvent('反馈');
+                    this.$refs.assignmentBoxRef.hideAssignmentBoxOnly();
+                },
+                handleRefresh: function () {
+                    console.info('对象函数 handleRefresh,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '点击header刷新' }
+                    });
+                    this.reSensorEvent('刷新');
+                    this.$bus.$emit('liveRefresh');
+                    var e = this.planInfo, t = e.startStampTime, s = void 0 === t ? '' : t, o = e.endStampTime, a = void 0 === o ? '' : o;
+                    Object(X.A)(s, a) && this.$sensors.track('refresh_livePage', { course_type: this.lessonType });
+                },
+                handleExamResult: function () {
+                    console.info('对象函数 handleExamResult,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    this.$bus.$emit('handleOpenExamReport', true);
+                },
+                handleMore: function () {
+                    console.info('对象函数 handleMore,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '点击更多按钮' }
+                    });
+                    this.reSensorEvent('小组视频');
+                    this.showMore = !this.showMore;
+                },
+                queryReadMessage: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 queryReadMessage,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), t.next = 3, Object(Ho.b)(e, { planId: e.planInfo.id });
                                     case 3:
@@ -6318,72 +6318,72 @@
                                     case 5:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleShowMessageTip: function () {
-                        console.info('对象函数 handleShowMessageTip,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '新的作业盒子消息' }
-                        });
-                        this.haveNewMessage = true;
-                    },
-                    handleHideMessageTip: function () {
-                        console.info('对象函数 handleHideMessageTip,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '取消作业盒子消息提醒' }
-                        });
-                        this.haveNewMessage = false;
-                    },
-                    handleOpenAssignmentBox: function () {
-                        var e = this;
-                        console.info('对象函数 handleOpenAssignmentBox,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '打开作业盒子' }
-                        });
-                        this.reSensorEvent('作业盒子');
-                        this.$nextTick(function () {
-                            e.$refs.assignmentBoxRef.handleOpenAssignmentBox();
-                        });
-                        this.$refs.Feedback.handleHide();
-                    },
-                    handleMouseenter: function () {
-                        console.info('对象函数 handleMouseenter,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '显示头部导航栏' }
-                        });
-                        this.showHeader = true;
-                        this.showMore = false;
-                    },
-                    hideHeader: function () {
-                        console.info('对象函数 hideHeader,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        this.showHeader = false;
-                    },
-                    handleMouseleave: function () {
-                        console.info('对象函数 handleMouseleave,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        L.a.send({
-                            tag: 'action',
-                            content: { msg: '移出头部导航栏' }
-                        });
-                        this.$refs.assignmentBoxRef.showAssignmentBox || (this.showHeader = false);
-                    },
-                    updateNetworkQuality: function (e) {
-                        console.info('对象函数 updateNetworkQuality(downlinkNetworkQuality)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
-                        this.downlinkNetworkQuality = e;
-                    },
-                    initShowReportBtn: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                handleShowMessageTip: function () {
+                    console.info('对象函数 handleShowMessageTip,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '新的作业盒子消息' }
+                    });
+                    this.haveNewMessage = true;
+                },
+                handleHideMessageTip: function () {
+                    console.info('对象函数 handleHideMessageTip,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '取消作业盒子消息提醒' }
+                    });
+                    this.haveNewMessage = false;
+                },
+                handleOpenAssignmentBox: function () {
+                    var e = this;
+                    console.info('对象函数 handleOpenAssignmentBox,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '打开作业盒子' }
+                    });
+                    this.reSensorEvent('作业盒子');
+                    this.$nextTick(function () {
+                        e.$refs.assignmentBoxRef.handleOpenAssignmentBox();
+                    });
+                    this.$refs.Feedback.handleHide();
+                },
+                handleMouseenter: function () {
+                    console.info('对象函数 handleMouseenter,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '显示头部导航栏' }
+                    });
+                    this.showHeader = true;
+                    this.showMore = false;
+                },
+                hideHeader: function () {
+                    console.info('对象函数 hideHeader,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    this.showHeader = false;
+                },
+                handleMouseleave: function () {
+                    console.info('对象函数 handleMouseleave,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    L.a.send({
+                        tag: 'action',
+                        content: { msg: '移出头部导航栏' }
+                    });
+                    this.$refs.assignmentBoxRef.showAssignmentBox || (this.showHeader = false);
+                },
+                updateNetworkQuality: function (e) {
+                    console.info('对象函数 updateNetworkQuality(downlinkNetworkQuality)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue');
+                    this.downlinkNetworkQuality = e;
+                },
+                initShowReportBtn: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initShowReportBtn,filePath:renderer/components/Classroom/LargeClass/base/room/header/header.vue'), t.next = 3, Object(Qo.a)({
                                             planId: e.planInfo.id,
@@ -6400,188 +6400,188 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
-                                }
-                            }, t);
-                        }))();
-                    }
-                }
-            }, $o = Xo, ea = (s('9654'), Object(Ae.a)($o, oo, ao, false, null, '6543ab99', null)), ta = ea.exports, sa = function () {
-                var e = this, t = e._self._c;
-                return t('div', [
-                    0 === e.classType ? t('LargeClass', {
-                        attrs: {
-                            options: e.options,
-                            stuInfo: e.stuInfo,
-                            rtcConfig: e.rtcConfig
-                        }
-                    }) : e._e(),
-                    1 === e.classType || 2 === e.classType ? t('SmallClass', {
-                        attrs: {
-                            options: e.options,
-                            stuInfo: e.stuInfo,
-                            rtcConfig: e.rtcConfig,
-                            classType: e.classType
-                        }
-                    }) : e._e()
-                ], 1);
-            }, oa = [], aa = function () {
-                var e = this, t = e._self._c;
-                return t('div', [
-                    t('Achievement', {
-                        attrs: {
-                            showAchievement: e.showAchievement,
-                            options: e.options,
-                            type: 'normal'
-                        }
-                    }),
-                    t('div', {
-                        directives: [{
-                                name: 'show',
-                                rawName: 'v-show',
-                                value: true === e.teamSwitchStatus,
-                                expression: 'teamSwitchStatus === true'
-                            }],
-                        staticClass: 'video-group-wrapper class-type-large'
-                    }, [t('div', { staticClass: 'video-group-contenter' }, [
-                            e.options.isParent ? [e.myChildInfo.onlineStatus ? t('RemoteVideo', {
-                                    key: e.myChildInfo.uid,
-                                    attrs: {
-                                        remoteStuInfo: e.myChildInfo,
-                                        showAudioWaves: e.showAudioWaves,
-                                        hideRemoteVideo: e.hideRemoteVideo
-                                    },
-                                    on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
-                                }) : t('OffLineVideo', { attrs: { name: e.myChildInfo.stuName } })] : !e.options.isParent && e.options.isAudition ? [t('VideoItemPad', { attrs: { notice: e.$t('classroom.largeClass.videoGroup.localVideoAudition.notice') } })] : [t('LocalVideo', {
-                                    attrs: {
-                                        options: e.options,
-                                        localStuInfo: e.localStuInfo,
-                                        hideVideoIcon: e.hideLocalVideoIcon
-                                    },
-                                    on: { handleLocalVideoStatus: e.handleLocalVideoStatus }
-                                })],
-                            e._l(e.remoteStuInfo, function (s, o) {
-                                return [t('RemoteVideo', {
-                                        key: o,
-                                        attrs: {
-                                            remoteStuInfo: s,
-                                            showAudioWaves: e.showAudioWaves,
-                                            hideRemoteVideo: e.hideRemoteVideo,
-                                            isExaminationStatus: e.isExaminationStatus
-                                        },
-                                        on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
-                                    })];
-                            }),
-                            e.remoteStuPadNum > 0 ? e._l(e.remoteStuPadNum, function (s) {
-                                return t('VideoItemPad', {
-                                    key: s,
-                                    attrs: { notice: e.canShowOtherChild ? e.$t('classroom.largeClass.videoGroup.textConfig.matching') : '' }
-                                });
-                            }) : e._e()
-                        ], 2)])
-                ], 1);
-            }, na = [], ra = function () {
-                var e = this, t = e._self._c;
-                return e.showAchievement ? t('div', { class: [e.achievementClassName] }, [
-                    'normal' === e.type ? t('div', { staticClass: 'achievement-container' }, [
-                        t('div', { staticClass: 'coins-wrapper' }, [
-                            t('div', {
-                                class: [
-                                    'coins-icon',
-                                    { 'add-coin': e.addCoin }
-                                ]
-                            }),
-                            t('span', { staticClass: 'coins-title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.coins.title')) + ' ')])
-                        ]),
-                        e.addCoin ? t('CountTo', {
-                            staticClass: 'coins-num',
-                            attrs: {
-                                startVal: e.startCoin,
-                                endVal: e.endCoin,
-                                duration: 400,
-                                separator: ''
-                            },
-                            on: {
-                                end: function (t) {
-                                    e.addCoin = false;
                                 }
                             }
-                        }) : t('div', { staticClass: 'coins-num' }, [e._v(e._s(e.gold))])
-                    ], 1) : e._e(),
-                    'simple' === e.type ? t('div', { staticClass: 'achievement-container' }, [
+                        }, t);
+                    }))();
+                }
+            }
+        }, $o = Xo, ea = (s('9654'), Object(Ae.a)($o, oo, ao, false, null, '6543ab99', null)), ta = ea.exports, sa = function () {
+            var e = this, t = e._self._c;
+            return t('div', [
+                0 === e.classType ? t('LargeClass', {
+                    attrs: {
+                        options: e.options,
+                        stuInfo: e.stuInfo,
+                        rtcConfig: e.rtcConfig
+                    }
+                }) : e._e(),
+                1 === e.classType || 2 === e.classType ? t('SmallClass', {
+                    attrs: {
+                        options: e.options,
+                        stuInfo: e.stuInfo,
+                        rtcConfig: e.rtcConfig,
+                        classType: e.classType
+                    }
+                }) : e._e()
+            ], 1);
+        }, oa = [], aa = function () {
+            var e = this, t = e._self._c;
+            return t('div', [
+                t('Achievement', {
+                    attrs: {
+                        showAchievement: e.showAchievement,
+                        options: e.options,
+                        type: 'normal'
+                    }
+                }),
+                t('div', {
+                    directives: [{
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: true === e.teamSwitchStatus,
+                        expression: 'teamSwitchStatus === true'
+                    }],
+                    staticClass: 'video-group-wrapper class-type-large'
+                }, [t('div', { staticClass: 'video-group-contenter' }, [
+                    e.options.isParent ? [e.myChildInfo.onlineStatus ? t('RemoteVideo', {
+                        key: e.myChildInfo.uid,
+                        attrs: {
+                            remoteStuInfo: e.myChildInfo,
+                            showAudioWaves: e.showAudioWaves,
+                            hideRemoteVideo: e.hideRemoteVideo
+                        },
+                        on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
+                    }) : t('OffLineVideo', { attrs: { name: e.myChildInfo.stuName } })] : !e.options.isParent && e.options.isAudition ? [t('VideoItemPad', { attrs: { notice: e.$t('classroom.largeClass.videoGroup.localVideoAudition.notice') } })] : [t('LocalVideo', {
+                        attrs: {
+                            options: e.options,
+                            localStuInfo: e.localStuInfo,
+                            hideVideoIcon: e.hideLocalVideoIcon
+                        },
+                        on: { handleLocalVideoStatus: e.handleLocalVideoStatus }
+                    })],
+                    e._l(e.remoteStuInfo, function (s, o) {
+                        return [t('RemoteVideo', {
+                            key: o,
+                            attrs: {
+                                remoteStuInfo: s,
+                                showAudioWaves: e.showAudioWaves,
+                                hideRemoteVideo: e.hideRemoteVideo,
+                                isExaminationStatus: e.isExaminationStatus
+                            },
+                            on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
+                        })];
+                    }),
+                    e.remoteStuPadNum > 0 ? e._l(e.remoteStuPadNum, function (s) {
+                        return t('VideoItemPad', {
+                            key: s,
+                            attrs: { notice: e.canShowOtherChild ? e.$t('classroom.largeClass.videoGroup.textConfig.matching') : '' }
+                        });
+                    }) : e._e()
+                ], 2)])
+            ], 1);
+        }, na = [], ra = function () {
+            var e = this, t = e._self._c;
+            return e.showAchievement ? t('div', { class: [e.achievementClassName] }, [
+                'normal' === e.type ? t('div', { staticClass: 'achievement-container' }, [
+                    t('div', { staticClass: 'coins-wrapper' }, [
                         t('div', {
                             class: [
-                                'coins-icon-simple',
+                                'coins-icon',
                                 { 'add-coin': e.addCoin }
                             ]
                         }),
-                        e.addCoin ? t('CountTo', {
-                            staticClass: 'count',
-                            attrs: {
-                                startVal: e.startCoin,
-                                endVal: e.endCoin,
-                                duration: 400,
-                                separator: ''
-                            },
-                            on: {
-                                end: function (t) {
-                                    e.addCoin = false;
-                                }
+                        t('span', { staticClass: 'coins-title' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.coins.title')) + ' ')])
+                    ]),
+                    e.addCoin ? t('CountTo', {
+                        staticClass: 'coins-num',
+                        attrs: {
+                            startVal: e.startCoin,
+                            endVal: e.endCoin,
+                            duration: 400,
+                            separator: ''
+                        },
+                        on: {
+                            end: function (t) {
+                                e.addCoin = false;
                             }
-                        }) : t('span', { staticClass: 'count' }, [e._v(e._s(e.gold))])
-                    ], 1) : e._e()
-                ]) : e._e();
-            }, ia = [], ca = s('306f'), la = {
-                components: { CountTo: ca.a },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    type: {
-                        type: String,
-                        default: 'simple'
-                    },
-                    showAchievement: {
-                        type: Boolean,
-                        default: true
-                    }
+                        }
+                    }) : t('div', { staticClass: 'coins-num' }, [e._v(e._s(e.gold))])
+                ], 1) : e._e(),
+                'simple' === e.type ? t('div', { staticClass: 'achievement-container' }, [
+                    t('div', {
+                        class: [
+                            'coins-icon-simple',
+                            { 'add-coin': e.addCoin }
+                        ]
+                    }),
+                    e.addCoin ? t('CountTo', {
+                        staticClass: 'count',
+                        attrs: {
+                            startVal: e.startCoin,
+                            endVal: e.endCoin,
+                            duration: 400,
+                            separator: ''
+                        },
+                        on: {
+                            end: function (t) {
+                                e.addCoin = false;
+                            }
+                        }
+                    }) : t('span', { staticClass: 'count' }, [e._v(e._s(e.gold))])
+                ], 1) : e._e()
+            ]) : e._e();
+        }, ia = [], ca = s('306f'), la = {
+            components: { CountTo: ca.a },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                data: function () {
-                    return {
-                        gold: this.options.goldNum,
-                        addCoin: false,
-                        startCoin: 0,
-                        endCoin: 0
-                    };
+                type: {
+                    type: String,
+                    default: 'simple'
                 },
-                computed: {
-                    achievementClassName: function () {
-                        return console.info('对象函数 achievementClassName,filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'normal' === this.type ? (console.info('if(this.type === \'normal\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'achievement-wrapper-normal') : 'simple' === this.type ? (console.info('if(this.type === \'simple\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'achievement-wrapper-simple') : void 0;
-                    }
+                showAchievement: {
+                    type: Boolean,
+                    default: true
+                }
+            },
+            data: function () {
+                return {
+                    gold: this.options.goldNum,
+                    addCoin: false,
+                    startCoin: 0,
+                    endCoin: 0
+                };
+            },
+            computed: {
+                achievementClassName: function () {
+                    return console.info('对象函数 achievementClassName,filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'normal' === this.type ? (console.info('if(this.type === \'normal\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'achievement-wrapper-normal') : 'simple' === this.type ? (console.info('if(this.type === \'simple\')为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), 'achievement-wrapper-simple') : void 0;
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('updateAchievement', function (t, s) {
+                    console.info('箭头函数 监听 updateAchievement(type, num)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
+                    e[t](s);
+                });
+                this.$bus.$on('addCoin', function (t, s) {
+                    console.info('箭头函数 监听 addCoin(isStart, coin)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
+                    t && (e.addCoin = true, e.startCoin = +e.gold, e.endCoin = e.startCoin + s, e.gold = e.endCoin);
+                });
+            },
+            methods: {
+                add: function (e) {
+                    console.info('对象函数 add(num)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
+                    this.gold = this.gold + parseInt(e);
                 },
-                mounted: function () {
-                    var e = this;
-                    this.$bus.$on('updateAchievement', function (t, s) {
-                        console.info('箭头函数 监听 updateAchievement(type, num)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
-                        e[t](s);
-                    });
-                    this.$bus.$on('addCoin', function (t, s) {
-                        console.info('箭头函数 监听 addCoin(isStart, coin)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
-                        t && (e.addCoin = true, e.startCoin = +e.gold, e.endCoin = e.startCoin + s, e.gold = e.endCoin);
-                    });
-                },
-                methods: {
-                    add: function (e) {
-                        console.info('对象函数 add(num)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue');
-                        this.gold = this.gold + parseInt(e);
-                    },
-                    update: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                update: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         if (console.info('对象函数 update(num)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), e) {
                                             s.next = 5;
@@ -6595,17 +6595,17 @@
                                     case 6:
                                     case 'end':
                                         return s.stop();
-                                    }
                                 }
-                            }, s);
-                        }))();
-                    },
-                    initMedalCoins: function () {
-                        return Object(A.a)(Object(P.a)().mark(function e() {
-                            var t, s, o;
-                            return Object(P.a)().wrap(function (e) {
-                                while (1) {
-                                    switch (e.prev = e.next) {
+                            }
+                        }, s);
+                    }))();
+                },
+                initMedalCoins: function () {
+                    return Object(A.a)(Object(P.a)().mark(function e() {
+                        var t, s, o;
+                        return Object(P.a)().wrap(function (e) {
+                            while (1) {
+                                switch (e.prev = e.next) {
                                     case 0:
                                         return console.info('对象函数 initMedalCoins,filePath:renderer/components/Classroom/LargeClass/base/room/achievement/index.vue'), s = K.a.parse(window.location.search), e.next = 4, Object(Q.w)({ planId: s.planId });
                                     case 4:
@@ -6613,138 +6613,138 @@
                                     case 6:
                                     case 'end':
                                         return e.stop();
-                                    }
                                 }
-                            }, e);
-                        }))();
-                    }
+                            }
+                        }, e);
+                    }))();
                 }
-            }, ua = la, da = (s('0b48'), Object(Ae.a)(ua, ra, ia, false, null, '89ae54b8', null)), ma = da.exports, ha = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'video-item video-local' }, [
-                    0 == this.options.classType ? t('Achievement', {
-                        attrs: {
-                            options: e.options,
-                            type: 'simple'
-                        }
-                    }) : e._e(),
-                    e.localStuInfo.cameraStatus ? [
-                        t('div', { staticClass: 'group-wrapper' }, [
-                            t('div', {
-                                directives: [{
-                                        name: 'show',
-                                        rawName: 'v-show',
-                                        value: e.localStuInfo.displayVideo,
-                                        expression: 'localStuInfo.displayVideo'
-                                    }],
-                                staticClass: 'video-wrapper',
-                                attrs: { id: 'video-group-local' }
-                            }),
-                            e.localStuInfo.displayVideo ? e._e() : t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.localStuInfo.avatar } })])
-                        ]),
-                        e.showMicrophoneIcon ? t('div', {
-                            staticClass: 'microphone-status',
-                            class: [{
-                                    'icon-microphone': e.localStuInfo.microphoneStatus,
-                                    'icon-microphone-disabled': !e.localStuInfo.microphoneStatus
-                                }],
-                            on: { click: e.handleLocalMicrophoneStatus }
-                        }) : e._e(),
-                        e.hideVideoIcon ? e._e() : t('div', {
-                            staticClass: 'camera-status',
-                            class: [{
-                                    'icon-camera': e.localStuInfo.displayVideo,
-                                    'icon-no-camera': !e.localStuInfo.displayVideo
-                                }],
-                            on: { click: e.handleLocalVideoStatus }
-                        })
-                    ] : [
-                        t('div', { staticClass: 'group-wrapper' }, [t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.localStuInfo.avatar } })])]),
-                        e.showMicrophoneIcon ? t('div', {
-                            staticClass: 'microphone-status',
-                            class: [{
-                                    'icon-microphone': e.localStuInfo.microphoneStatus,
-                                    'icon-microphone-disabled': !e.localStuInfo.microphoneStatus
-                                }],
-                            on: { click: e.handleLocalMicrophoneStatus }
-                        }) : e._e(),
+            }
+        }, ua = la, da = (s('0b48'), Object(Ae.a)(ua, ra, ia, false, null, '89ae54b8', null)), ma = da.exports, ha = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'video-item video-local' }, [
+                0 == this.options.classType ? t('Achievement', {
+                    attrs: {
+                        options: e.options,
+                        type: 'simple'
+                    }
+                }) : e._e(),
+                e.localStuInfo.cameraStatus ? [
+                    t('div', { staticClass: 'group-wrapper' }, [
                         t('div', {
-                            staticClass: 'camera-status icon-no-camera',
-                            on: { click: e.showNoAccessNotice }
-                        })
-                    ],
-                    e.localStuInfo.level ? t('div', { staticClass: 'medal-wrapper' }, [
-                        t('span', {
-                            staticClass: 'icon',
-                            class: e.localStuInfo.level ? 'level-'.concat(e.localStuInfo.level) : ''
+                            directives: [{
+                                name: 'show',
+                                rawName: 'v-show',
+                                value: e.localStuInfo.displayVideo,
+                                expression: 'localStuInfo.displayVideo'
+                            }],
+                            staticClass: 'video-wrapper',
+                            attrs: { id: 'video-group-local' }
                         }),
-                        t('span', {
-                            staticClass: 'text',
-                            class: e.smallLevelText
-                        }, [e._v('Lv' + e._s(e.localStuInfo.level))])
-                    ]) : e._e(),
-                    t('div', { staticClass: 'student-name' }, [e._v(e._s(e.localStuInfo.stuName))]),
-                    t('MediaSecurityAccess', {
-                        ref: 'MediaSecurityAccessCamera',
-                        attrs: {
-                            visible: false,
-                            type: 'camera'
-                        }
-                    }),
-                    t('MediaSecurityAccess', {
-                        ref: 'MediaSecurityAccessMicrophone',
-                        attrs: {
-                            visible: false,
-                            type: 'microphone'
-                        }
+                        e.localStuInfo.displayVideo ? e._e() : t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.localStuInfo.avatar } })])
+                    ]),
+                    e.showMicrophoneIcon ? t('div', {
+                        staticClass: 'microphone-status',
+                        class: [{
+                            'icon-microphone': e.localStuInfo.microphoneStatus,
+                            'icon-microphone-disabled': !e.localStuInfo.microphoneStatus
+                        }],
+                        on: { click: e.handleLocalMicrophoneStatus }
+                    }) : e._e(),
+                    e.hideVideoIcon ? e._e() : t('div', {
+                        staticClass: 'camera-status',
+                        class: [{
+                            'icon-camera': e.localStuInfo.displayVideo,
+                            'icon-no-camera': !e.localStuInfo.displayVideo
+                        }],
+                        on: { click: e.handleLocalVideoStatus }
                     })
-                ], 2);
-            }, pa = [], fa = {
-                components: {
-                    Achievement: ma,
-                    MediaSecurityAccess: Ct.a
-                },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    localStuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    hideVideoIcon: {
-                        type: Boolean,
-                        default: false
-                    },
-                    classType: {
-                        type: Number,
-                        default: -1
+                ] : [
+                    t('div', { staticClass: 'group-wrapper' }, [t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.localStuInfo.avatar } })])]),
+                    e.showMicrophoneIcon ? t('div', {
+                        staticClass: 'microphone-status',
+                        class: [{
+                            'icon-microphone': e.localStuInfo.microphoneStatus,
+                            'icon-microphone-disabled': !e.localStuInfo.microphoneStatus
+                        }],
+                        on: { click: e.handleLocalMicrophoneStatus }
+                    }) : e._e(),
+                    t('div', {
+                        staticClass: 'camera-status icon-no-camera',
+                        on: { click: e.showNoAccessNotice }
+                    })
+                ],
+                e.localStuInfo.level ? t('div', { staticClass: 'medal-wrapper' }, [
+                    t('span', {
+                        staticClass: 'icon',
+                        class: e.localStuInfo.level ? 'level-'.concat(e.localStuInfo.level) : ''
+                    }),
+                    t('span', {
+                        staticClass: 'text',
+                        class: e.smallLevelText
+                    }, [e._v('Lv' + e._s(e.localStuInfo.level))])
+                ]) : e._e(),
+                t('div', { staticClass: 'student-name' }, [e._v(e._s(e.localStuInfo.stuName))]),
+                t('MediaSecurityAccess', {
+                    ref: 'MediaSecurityAccessCamera',
+                    attrs: {
+                        visible: false,
+                        type: 'camera'
                     }
-                },
-                computed: {
-                    showMicrophoneIcon: function () {
-                        return console.info('对象函数 showMicrophoneIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue'), !this.hideVideoIcon && 2 == this.classType;
-                    },
-                    smallLevelText: function () {
-                        return console.info('对象函数 smallLevelText,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue'), 'level-'.concat(this.localStuInfo.level);
+                }),
+                t('MediaSecurityAccess', {
+                    ref: 'MediaSecurityAccessMicrophone',
+                    attrs: {
+                        visible: false,
+                        type: 'microphone'
                     }
+                })
+            ], 2);
+        }, pa = [], fa = {
+            components: {
+                Achievement: ma,
+                MediaSecurityAccess: Ct.a
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                data: function () {
-                    return {};
+                localStuInfo: {
+                    type: Object,
+                    default: null
                 },
-                methods: {
-                    handleLocalVideoStatus: ve()(function () {
-                        this.$emit('handleLocalVideoStatus');
-                        Object(x.e)('hw_classroom_my_camera', this.options, { switch_type: this.localStuInfo.displayVideo ? 1 : 0 });
-                    }, 300),
-                    handleLocalMicrophoneStatus: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                hideVideoIcon: {
+                    type: Boolean,
+                    default: false
+                },
+                classType: {
+                    type: Number,
+                    default: -1
+                }
+            },
+            computed: {
+                showMicrophoneIcon: function () {
+                    return console.info('对象函数 showMicrophoneIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue'), !this.hideVideoIcon && 2 == this.classType;
+                },
+                smallLevelText: function () {
+                    return console.info('对象函数 smallLevelText,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue'), 'level-'.concat(this.localStuInfo.level);
+                }
+            },
+            data: function () {
+                return {};
+            },
+            methods: {
+                handleLocalVideoStatus: ve()(function () {
+                    this.$emit('handleLocalVideoStatus');
+                    Object(x.e)('hw_classroom_my_camera', this.options, { switch_type: this.localStuInfo.displayVideo ? 1 : 0 });
+                }, 300),
+                handleLocalMicrophoneStatus: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 handleLocalMicrophoneStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue'), t.next = 3, Object($.f)();
                                     case 3:
@@ -6758,158 +6758,158 @@
                                     case 10:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    showNoAccessNotice: function () {
-                        console.info('对象函数 showNoAccessNotice,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue');
-                        this.$refs.MediaSecurityAccessCamera.checkAccess();
-                    }
+                            }
+                        }, t);
+                    }))();
+                },
+                showNoAccessNotice: function () {
+                    console.info('对象函数 showNoAccessNotice,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/localVideo.vue');
+                    this.$refs.MediaSecurityAccessCamera.checkAccess();
                 }
-            }, va = fa, ga = (s('9234'), Object(Ae.a)(va, ha, pa, false, null, '1659edb8', null)), Ca = ga.exports, ba = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
+            }
+        }, va = fa, ga = (s('9234'), Object(Ae.a)(va, ha, pa, false, null, '1659edb8', null)), Ca = ga.exports, ba = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                directives: [{
+                    name: 'show',
+                    rawName: 'v-show',
+                    value: e.remoteStuInfo.showStatus,
+                    expression: 'remoteStuInfo.showStatus'
+                }],
+                staticClass: 'video-item video-remote'
+            }, [
+                t('div', {
                     directives: [{
-                            name: 'show',
-                            rawName: 'v-show',
-                            value: e.remoteStuInfo.showStatus,
-                            expression: 'remoteStuInfo.showStatus'
-                        }],
-                    staticClass: 'video-item video-remote'
+                        name: 'show',
+                        rawName: 'v-show',
+                        value: e.remoteStuInfo.cameraStatus,
+                        expression: 'remoteStuInfo.cameraStatus'
+                    }],
+                    staticClass: 'item-wrapper'
                 }, [
-                    t('div', {
-                        directives: [{
+                    e.showAudioWaves ? t('div', { staticClass: 'audio-waves-wrapper' }, [t('AudioWaves', {
+                        attrs: {
+                            animation: true,
+                            size: 'small',
+                            skin: 'white',
+                            'animation-type': 'sound'
+                        }
+                    })], 1) : e._e(),
+                    t('div', { staticClass: 'group-wrapper' }, [
+                        t('div', {
+                            directives: [{
                                 name: 'show',
                                 rawName: 'v-show',
-                                value: e.remoteStuInfo.cameraStatus,
-                                expression: 'remoteStuInfo.cameraStatus'
+                                value: e.showRemoteVideo,
+                                expression: 'showRemoteVideo'
                             }],
-                        staticClass: 'item-wrapper'
-                    }, [
-                        e.showAudioWaves ? t('div', { staticClass: 'audio-waves-wrapper' }, [t('AudioWaves', {
-                                attrs: {
-                                    animation: true,
-                                    size: 'small',
-                                    skin: 'white',
-                                    'animation-type': 'sound'
-                                }
-                            })], 1) : e._e(),
-                        t('div', { staticClass: 'group-wrapper' }, [
-                            t('div', {
-                                directives: [{
-                                        name: 'show',
-                                        rawName: 'v-show',
-                                        value: e.showRemoteVideo,
-                                        expression: 'showRemoteVideo'
-                                    }],
-                                staticClass: 'video-wrapper',
-                                attrs: { id: 'remote-' + e.remoteStuInfo.stuId }
-                            }),
-                            e.showRemoteAvatar ? t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.remoteStuInfo.avatar } })]) : e._e()
-                        ]),
-                        e.showCameraStatusIcon ? t('div', {
-                            staticClass: 'camera-status',
-                            class: [{
-                                    'icon-visible': e.remoteStuInfo.displayVideo,
-                                    'icon-invisible': !e.remoteStuInfo.displayVideo
-                                }],
-                            on: { click: e.handleRemoteVideoStatus }
-                        }) : e._e()
-                    ]),
-                    e.remoteStuInfo.cameraStatus ? e._e() : [t('div', { staticClass: 'group-wrapper' }, [t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.remoteStuInfo.avatar } })])])],
-                    t('div', { staticClass: 'student-name' }, [e._v(e._s(e.remoteStuInfo.stuName))]),
-                    !e.showAudioWaves && e.remoteStuInfo.level ? t('div', { staticClass: 'medal-wrapper' }, [
-                        t('span', {
-                            staticClass: 'icon',
-                            class: e.remoteStuInfo.level ? 'level-'.concat(e.remoteStuInfo.level) : ''
+                            staticClass: 'video-wrapper',
+                            attrs: { id: 'remote-' + e.remoteStuInfo.stuId }
                         }),
-                        t('span', {
-                            staticClass: 'text',
-                            class: e.smallLevelText
-                        }, [e._v('Lv' + e._s(e.remoteStuInfo.level))])
-                    ]) : e._e()
-                ], 2);
-            }, Sa = [], wa = s('217d'), ya = {
-                components: { AudioWaves: wa.a },
-                props: {
-                    remoteStuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    showAudioWaves: {
-                        type: Boolean,
-                        default: null
-                    },
-                    hideRemoteVideo: {
-                        type: Boolean,
-                        default: null
-                    },
-                    hideVideoIcon: {
-                        type: Boolean,
-                        default: false
-                    },
-                    isExaminationStatus: {
-                        type: Boolean,
-                        default: false
-                    }
+                        e.showRemoteAvatar ? t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.remoteStuInfo.avatar } })]) : e._e()
+                    ]),
+                    e.showCameraStatusIcon ? t('div', {
+                        staticClass: 'camera-status',
+                        class: [{
+                            'icon-visible': e.remoteStuInfo.displayVideo,
+                            'icon-invisible': !e.remoteStuInfo.displayVideo
+                        }],
+                        on: { click: e.handleRemoteVideoStatus }
+                    }) : e._e()
+                ]),
+                e.remoteStuInfo.cameraStatus ? e._e() : [t('div', { staticClass: 'group-wrapper' }, [t('div', { staticClass: 'avatar-wrapper' }, [t('img', { attrs: { src: e.remoteStuInfo.avatar } })])])],
+                t('div', { staticClass: 'student-name' }, [e._v(e._s(e.remoteStuInfo.stuName))]),
+                !e.showAudioWaves && e.remoteStuInfo.level ? t('div', { staticClass: 'medal-wrapper' }, [
+                    t('span', {
+                        staticClass: 'icon',
+                        class: e.remoteStuInfo.level ? 'level-'.concat(e.remoteStuInfo.level) : ''
+                    }),
+                    t('span', {
+                        staticClass: 'text',
+                        class: e.smallLevelText
+                    }, [e._v('Lv' + e._s(e.remoteStuInfo.level))])
+                ]) : e._e()
+            ], 2);
+        }, Sa = [], wa = s('217d'), ya = {
+            components: { AudioWaves: wa.a },
+            props: {
+                remoteStuInfo: {
+                    type: Object,
+                    default: null
                 },
-                computed: {
-                    showRemoteVideo: function () {
-                        return console.info('对象函数 showRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), this.remoteStuInfo.onlineStatus && this.remoteStuInfo.displayVideo && !this.remoteStuInfo.mutedVideoStatus && !this.hideRemoteVideo && !this.isExaminationStatus;
-                    },
-                    showRemoteAvatar: function () {
-                        return console.info('对象函数 showRemoteAvatar,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), !this.remoteStuInfo.onlineStatus || !this.remoteStuInfo.displayVideo || this.remoteStuInfo.mutedVideoStatus || this.hideRemoteVideo || this.isExaminationStatus;
-                    },
-                    showCameraStatusIcon: function () {
-                        return console.info('对象函数 showCameraStatusIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), this.remoteStuInfo.onlineStatus && !this.remoteStuInfo.mutedVideoStatus && !this.hideVideoIcon;
-                    },
-                    smallLevelText: function () {
-                        return console.info('对象函数 smallLevelText,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), 'level-'.concat(this.remoteStuInfo.level);
-                    }
+                showAudioWaves: {
+                    type: Boolean,
+                    default: null
                 },
-                methods: {
-                    handleRemoteVideoStatus: function () {
-                        console.info('对象函数 handleRemoteVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue');
-                        this.$emit('handleRemoteVideoStatus', this.remoteStuInfo.stuId, !this.remoteStuInfo.displayVideo);
-                    }
+                hideRemoteVideo: {
+                    type: Boolean,
+                    default: null
+                },
+                hideVideoIcon: {
+                    type: Boolean,
+                    default: false
+                },
+                isExaminationStatus: {
+                    type: Boolean,
+                    default: false
                 }
-            }, Pa = ya, Aa = (s('f502'), Object(Ae.a)(Pa, ba, Sa, false, null, '2831850a', null)), ka = Aa.exports, La = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'video-item video-remote video-parent-audition' }, [
-                    t('div', { staticClass: 'notice' }, [e._v(' ' + e._s(e.$t('classroom.smallClass.videoGroup.localVideoAudition.offline')) + ' ')]),
-                    t('div', { staticClass: 'name' }, [e._v(e._s(e.name))])
-                ]);
-            }, Ia = [], xa = {
-                props: {
-                    name: {
-                        type: String,
-                        default: ''
-                    }
+            },
+            computed: {
+                showRemoteVideo: function () {
+                    return console.info('对象函数 showRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), this.remoteStuInfo.onlineStatus && this.remoteStuInfo.displayVideo && !this.remoteStuInfo.mutedVideoStatus && !this.hideRemoteVideo && !this.isExaminationStatus;
+                },
+                showRemoteAvatar: function () {
+                    return console.info('对象函数 showRemoteAvatar,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), !this.remoteStuInfo.onlineStatus || !this.remoteStuInfo.displayVideo || this.remoteStuInfo.mutedVideoStatus || this.hideRemoteVideo || this.isExaminationStatus;
+                },
+                showCameraStatusIcon: function () {
+                    return console.info('对象函数 showCameraStatusIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), this.remoteStuInfo.onlineStatus && !this.remoteStuInfo.mutedVideoStatus && !this.hideVideoIcon;
+                },
+                smallLevelText: function () {
+                    return console.info('对象函数 smallLevelText,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue'), 'level-'.concat(this.remoteStuInfo.level);
                 }
-            }, Oa = xa, ja = (s('58cb'), Object(Ae.a)(Oa, La, Ia, false, null, '34d61130', null)), Ta = ja.exports, Ma = function () {
-                function e() {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js');
-                    Object(g.a)(this, e);
-                    this.options = t.options;
-                    this.stuInfo = t.stuInfo;
-                    this.rtcConfig = t.rtcConfig;
-                    this.classType = t.classType;
-                    this.publishStatus = void 0 === t.publishStatus || t.publishStatus;
-                    this.rtcEngine = null;
-                    this.classRtcChannel = null;
+            },
+            methods: {
+                handleRemoteVideoStatus: function () {
+                    console.info('对象函数 handleRemoteVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/remoteVideo.vue');
+                    this.$emit('handleRemoteVideoStatus', this.remoteStuInfo.stuId, !this.remoteStuInfo.displayVideo);
                 }
-                return Object(C.a)(e, [
-                    {
-                        key: 'init',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            }
+        }, Pa = ya, Aa = (s('f502'), Object(Ae.a)(Pa, ba, Sa, false, null, '2831850a', null)), ka = Aa.exports, La = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'video-item video-remote video-parent-audition' }, [
+                t('div', { staticClass: 'notice' }, [e._v(' ' + e._s(e.$t('classroom.smallClass.videoGroup.localVideoAudition.offline')) + ' ')]),
+                t('div', { staticClass: 'name' }, [e._v(e._s(e.name))])
+            ]);
+        }, Ia = [], xa = {
+            props: {
+                name: {
+                    type: String,
+                    default: ''
+                }
+            }
+        }, Oa = xa, ja = (s('58cb'), Object(Ae.a)(Oa, La, Ia, false, null, '34d61130', null)), Ta = ja.exports, Ma = function () {
+            function e() {
+                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js');
+                Object(g.a)(this, e);
+                this.options = t.options;
+                this.stuInfo = t.stuInfo;
+                this.rtcConfig = t.rtcConfig;
+                this.classType = t.classType;
+                this.publishStatus = void 0 === t.publishStatus || t.publishStatus;
+                this.rtcEngine = null;
+                this.classRtcChannel = null;
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'init',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (this.publishStatus) {
                                                 e.next = 3;
@@ -6941,24 +6941,24 @@
                                         case 27:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 init, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'createClassRtcChannel',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 init, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'createClassRtcChannel',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return t = 2 == this.classType ? this.rtcConfig.token : this.rtcConfig.classToken, s = String(t), this.rtcEngine = window.RTC_COMMON.rtcEngine, e.next = 5, Object(wt.b)(this.rtcEngine);
                                         case 5:
@@ -6966,122 +6966,122 @@
                                         case 11:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 createClassRtcChannel, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'setupLocalVideo',
-                        value: function (e) {
-                            this.rtcEngine.setupLocalVideo(document.getElementById(e));
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 createClassRtcChannel, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/rtcClass.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'setupRemoteVideo',
-                        value: function (e, t) {
-                            this.classRtcChannel.setupRemoteVideo(e, document.getElementById(t));
-                        }
-                    },
-                    {
-                        key: 'muteLocalVideo',
-                        value: function (e) {
-                            this.classRtcChannel.muteLocalVideoStream(e);
-                        }
-                    },
-                    {
-                        key: 'muteLocalAudio',
-                        value: function (e) {
-                            this.classRtcChannel.muteLocalAudioStream(e);
-                        }
-                    },
-                    {
-                        key: 'muteRemoteVideo',
-                        value: function (e, t) {
-                            this.classRtcChannel.muteRemoteVideoStream(Number(e), t);
-                        }
-                    },
-                    {
-                        key: 'muteRemoteAudio',
-                        value: function (e, t) {
-                            this.classRtcChannel.muteRemoteAudioStream(Number(e), t);
-                        }
-                    },
-                    {
-                        key: 'publish',
-                        value: function (e) {
-                            var t = e.publishVideo, s = void 0 === t || t;
-                            this.classRtcChannel.setClientRole(1);
-                            this.classRtcChannel.muteLocalAudioStream(false);
-                            s ? this.classRtcChannel.muteLocalVideoStream(false) : this.classRtcChannel.muteLocalVideoStream(true);
-                        }
-                    },
-                    {
-                        key: 'unpublish',
-                        value: function () {
-                            this.classRtcChannel.setClientRole(0);
-                            this.classRtcChannel.muteLocalAudioStream(true);
-                            this.classRtcChannel.muteLocalVideoStream(true);
-                        }
-                    },
-                    {
-                        key: 'leaveChannel',
-                        value: function () {
-                            this.classRtcChannel.leaveChannel();
-                        }
-                    },
-                    {
-                        key: 'enableLocalVideo',
-                        value: function (e) {
-                            var t;
-                            null === (t = this.rtcEngine) || void 0 === t || t.enableLocalVideo(e);
-                            this.classRtcChannel.muteLocalVideoStream(!e);
-                        }
-                    },
-                    {
-                        key: 'setVideoDevice',
-                        value: function (e) {
-                            this.rtcEngine.setVideoDevice(e);
-                        }
-                    },
-                    {
-                        key: 'setAudioRecordingDevice',
-                        value: function (e) {
-                            this.rtcEngine.setAudioRecordingDevice(e);
-                        }
-                    },
-                    {
-                        key: 'setAudioPlaybackDevice',
-                        value: function (e) {
-                            this.rtcEngine.setAudioPlaybackDevice(e);
-                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'setupLocalVideo',
+                    value: function (e) {
+                        this.rtcEngine.setupLocalVideo(document.getElementById(e));
                     }
-                ]), e;
-            }(), Ra = function () {
-                function e() {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js');
-                    Object(g.a)(this, e);
-                    this.options = t.options;
-                    this.stuInfo = t.stuInfo;
-                    this.rtcConfig = t.rtcConfig;
-                    this.requestTimer = null;
-                    this.groupStudentList = [];
+                },
+                {
+                    key: 'setupRemoteVideo',
+                    value: function (e, t) {
+                        this.classRtcChannel.setupRemoteVideo(e, document.getElementById(t));
+                    }
+                },
+                {
+                    key: 'muteLocalVideo',
+                    value: function (e) {
+                        this.classRtcChannel.muteLocalVideoStream(e);
+                    }
+                },
+                {
+                    key: 'muteLocalAudio',
+                    value: function (e) {
+                        this.classRtcChannel.muteLocalAudioStream(e);
+                    }
+                },
+                {
+                    key: 'muteRemoteVideo',
+                    value: function (e, t) {
+                        this.classRtcChannel.muteRemoteVideoStream(Number(e), t);
+                    }
+                },
+                {
+                    key: 'muteRemoteAudio',
+                    value: function (e, t) {
+                        this.classRtcChannel.muteRemoteAudioStream(Number(e), t);
+                    }
+                },
+                {
+                    key: 'publish',
+                    value: function (e) {
+                        var t = e.publishVideo, s = void 0 === t || t;
+                        this.classRtcChannel.setClientRole(1);
+                        this.classRtcChannel.muteLocalAudioStream(false);
+                        s ? this.classRtcChannel.muteLocalVideoStream(false) : this.classRtcChannel.muteLocalVideoStream(true);
+                    }
+                },
+                {
+                    key: 'unpublish',
+                    value: function () {
+                        this.classRtcChannel.setClientRole(0);
+                        this.classRtcChannel.muteLocalAudioStream(true);
+                        this.classRtcChannel.muteLocalVideoStream(true);
+                    }
+                },
+                {
+                    key: 'leaveChannel',
+                    value: function () {
+                        this.classRtcChannel.leaveChannel();
+                    }
+                },
+                {
+                    key: 'enableLocalVideo',
+                    value: function (e) {
+                        var t;
+                        null === (t = this.rtcEngine) || void 0 === t || t.enableLocalVideo(e);
+                        this.classRtcChannel.muteLocalVideoStream(!e);
+                    }
+                },
+                {
+                    key: 'setVideoDevice',
+                    value: function (e) {
+                        this.rtcEngine.setVideoDevice(e);
+                    }
+                },
+                {
+                    key: 'setAudioRecordingDevice',
+                    value: function (e) {
+                        this.rtcEngine.setAudioRecordingDevice(e);
+                    }
+                },
+                {
+                    key: 'setAudioPlaybackDevice',
+                    value: function (e) {
+                        this.rtcEngine.setAudioPlaybackDevice(e);
+                    }
                 }
-                return Object(C.a)(e, [
-                    {
-                        key: 'sendRtcStatus',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s, o, a, n, r = arguments;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+            ]), e;
+        }(), Ra = function () {
+            function e() {
+                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js');
+                Object(g.a)(this, e);
+                this.options = t.options;
+                this.stuInfo = t.stuInfo;
+                this.rtcConfig = t.rtcConfig;
+                this.requestTimer = null;
+                this.groupStudentList = [];
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'sendRtcStatus',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s, o, a, n, r = arguments;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return t = r.length > 0 && void 0 !== r[0] ? r[0] : {}, s = -1, e.next = 4, Object($.c)();
                                         case 4:
@@ -7105,24 +7105,24 @@
                                         case 18:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 sendRtcStatus, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'queryGroupStudent',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n = this;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 sendRtcStatus, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'queryGroupStudent',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n = this;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (!(this.groupStudentList.length >= 3)) {
                                                 e.next = 3;
@@ -7138,8 +7138,8 @@
                                             });
                                         case 6:
                                             if (s = e.sent, o = s.data || {}, a = o.list || [], a.forEach(function (e) {
-                                                    n.hasUserIdByStudentList(n.groupStudentList, e.userId) || (n.groupStudentList.push(e), t.addStudentCallback && t.addStudentCallback(e));
-                                                }), !o.isFull) {
+                                                n.hasUserIdByStudentList(n.groupStudentList, e.userId) || (n.groupStudentList.push(e), t.addStudentCallback && t.addStudentCallback(e));
+                                            }), !o.isFull) {
                                                 e.next = 13;
                                                 break;
                                             }
@@ -7152,27 +7152,27 @@
                                         case 20:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this, [[
-                                        3,
-                                        16
-                                    ]]);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 queryGroupStudent(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'queryClassStudentList',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                                }
+                            }, e, this, [[
+                                3,
+                                16
+                            ]]);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 queryGroupStudent(_x)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'queryClassStudentList',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, Object(Q.n)({
                                                 planId: this.options.planId,
@@ -7189,34 +7189,34 @@
                                         case 8:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 queryClassStudentList, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'delayQueryGroupStudent',
-                        value: function (e) {
-                            var t = this;
-                            this.requestTimer && clearTimeout(this.requestTimer);
-                            this.requestTimer = setTimeout(function () {
-                                t.queryGroupStudent(e);
-                            }, 10000);
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 queryClassStudentList, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'querySpeakStudentList',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t, s;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                        return t;
+                    }()
+                },
+                {
+                    key: 'delayQueryGroupStudent',
+                    value: function (e) {
+                        var t = this;
+                        this.requestTimer && clearTimeout(this.requestTimer);
+                        this.requestTimer = setTimeout(function () {
+                            t.queryGroupStudent(e);
+                        }, 10000);
+                    }
+                },
+                {
+                    key: 'querySpeakStudentList',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t, s;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, Object(Q.t)({
                                                 classId: this.options.classId,
@@ -7233,33 +7233,33 @@
                                         case 8:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 querySpeakStudentList, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'hasUserIdByStudentList',
-                        value: function (e, t) {
-                            var s = false;
-                            return e.forEach(function (e) {
-                                e.stuId != t && e.userId != t || (s = true);
-                            }), s;
+                                }
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 querySpeakStudentList, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
                         }
-                    },
-                    {
-                        key: 'getTeamSwitchStatus',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e() {
-                                var t;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                        return t;
+                    }()
+                },
+                {
+                    key: 'hasUserIdByStudentList',
+                    value: function (e, t) {
+                        var s = false;
+                        return e.forEach(function (e) {
+                            e.stuId != t && e.userId != t || (s = true);
+                        }), s;
+                    }
+                },
+                {
+                    key: 'getTeamSwitchStatus',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e() {
+                            var t;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, window.thinkApi.ipc.invoke('getStoreValue', 'videoGroupSwitchStatus_'.concat(this.options.planId));
                                         case 2:
@@ -7267,129 +7267,129 @@
                                         case 4:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t() {
-                                return console.info('函数申明 getTeamSwitchStatus, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'sendLogger',
-                        value: function (e) {
-                            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
-                            L.a.send({
-                                tag: 'rtc',
-                                level: s,
-                                content: {
-                                    msg: e,
-                                    params: t
                                 }
-                            });
+                            }, e, this);
+                        }));
+                        function t() {
+                            return console.info('函数申明 getTeamSwitchStatus, filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoGroupClass.js'), e.apply(this, arguments);
                         }
-                    }
-                ]), e;
-            }(), Ea = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'video-item video-remote' }, [t('div', { staticClass: 'notice-text' }, [e._v(e._s(e.notice))])]);
-            }, Va = [], Na = {
-                props: {
-                    notice: {
-                        type: String,
-                        default: ''
+                        return t;
+                    }()
+                },
+                {
+                    key: 'sendLogger',
+                    value: function (e) {
+                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 'info';
+                        L.a.send({
+                            tag: 'rtc',
+                            level: s,
+                            content: {
+                                msg: e,
+                                params: t
+                            }
+                        });
                     }
                 }
-            }, Da = Na, Ba = (s('c7c9'), Object(Ae.a)(Da, Ea, Va, false, null, '0de807bb', null)), Ua = Ba.exports, Ga = s('35ac'), Ha = {
-                components: {
-                    Achievement: ma,
-                    LocalVideo: Ca,
-                    RemoteVideo: ka,
-                    VideoItemPad: Ua,
-                    OffLineVideo: Ta
+            ]), e;
+        }(), Ea = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'video-item video-remote' }, [t('div', { staticClass: 'notice-text' }, [e._v(e._s(e.notice))])]);
+        }, Va = [], Na = {
+            props: {
+                notice: {
+                    type: String,
+                    default: ''
+                }
+            }
+        }, Da = Na, Ba = (s('c7c9'), Object(Ae.a)(Da, Ea, Va, false, null, '0de807bb', null)), Ua = Ba.exports, Ga = s('35ac'), Ha = {
+            components: {
+                Achievement: ma,
+                LocalVideo: Ca,
+                RemoteVideo: ka,
+                VideoItemPad: Ua,
+                OffLineVideo: Ta
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    }
+                stuInfo: {
+                    type: Object,
+                    default: null
                 },
-                data: function () {
-                    return {
-                        myChildInfo: {},
-                        teamSwitchStatus: null,
-                        localStuInfo: {
-                            stuId: this.stuInfo.id,
-                            stuName: this.stuInfo.nickName,
-                            avatar: this.stuInfo.avatar,
-                            displayVideo: false,
-                            cameraStatus: true,
-                            level: this.stuInfo.level
-                        },
-                        remoteStuInfo: [],
-                        speakStudentList: [],
-                        groupSpeakStatus: false,
-                        videoLinkStatus: false,
-                        otherCameraStatus: false,
-                        localVideoDisplayCache: null,
-                        remoteVideoFrameCache: {},
-                        remoteVideoMutedCache: {},
-                        isExaminationStatus: false,
-                        canShowOtherChild: false,
-                        classRtcSensor: null
-                    };
+                rtcConfig: {
+                    type: Object,
+                    default: null
+                }
+            },
+            data: function () {
+                return {
+                    myChildInfo: {},
+                    teamSwitchStatus: null,
+                    localStuInfo: {
+                        stuId: this.stuInfo.id,
+                        stuName: this.stuInfo.nickName,
+                        avatar: this.stuInfo.avatar,
+                        displayVideo: false,
+                        cameraStatus: true,
+                        level: this.stuInfo.level
+                    },
+                    remoteStuInfo: [],
+                    speakStudentList: [],
+                    groupSpeakStatus: false,
+                    videoLinkStatus: false,
+                    otherCameraStatus: false,
+                    localVideoDisplayCache: null,
+                    remoteVideoFrameCache: {},
+                    remoteVideoMutedCache: {},
+                    isExaminationStatus: false,
+                    canShowOtherChild: false,
+                    classRtcSensor: null
+                };
+            },
+            computed: {
+                showAchievement: function () {
+                    return console.info('对象函数 showAchievement,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), !this.options.isAudition && !this.teamSwitchStatus;
                 },
-                computed: {
-                    showAchievement: function () {
-                        return console.info('对象函数 showAchievement,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), !this.options.isAudition && !this.teamSwitchStatus;
-                    },
-                    localVideoPublishStatus: function () {
-                        return console.info('对象函数 localVideoPublishStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), false !== this.localVideoDisplayCache && this.teamSwitchStatus;
-                    },
-                    achievementType: function () {
-                        return console.info('对象函数 achievementType,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.teamSwitchStatus ? (console.info('if(this.teamSwitchStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 'simple') : (console.info('if(this.teamSwitchStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 'normal');
-                    },
-                    showAudioWaves: function () {
-                        return console.info('对象函数 showAudioWaves,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.groupSpeakStatus;
-                    },
-                    hideLocalVideoIcon: function () {
-                        return console.info('对象函数 hideLocalVideoIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.videoLinkStatus || this.otherCameraStatus ? (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), true) : (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), false);
-                    },
-                    hideRemoteVideo: function () {
-                        return console.info('对象函数 hideRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.otherCameraStatus;
-                    },
-                    remoteStuPadNum: function () {
-                        return console.info('对象函数 remoteStuPadNum,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 3 === this.remoteStuInfo.length ? (console.info('if(this.remoteStuInfo.length === 3)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 0) : 3 - this.remoteStuInfo.length;
-                    }
+                localVideoPublishStatus: function () {
+                    return console.info('对象函数 localVideoPublishStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), false !== this.localVideoDisplayCache && this.teamSwitchStatus;
                 },
-                mounted: function () {
-                    var e = {
-                        options: this.options,
-                        stuInfo: this.stuInfo,
-                        rtcConfig: this.rtcConfig,
-                        publishStatus: !this.options.isAudition
-                    };
-                    this.rtcClass = new Ma(e);
-                    this.videoGroup = new Ra(e);
-                    this.init();
+                achievementType: function () {
+                    return console.info('对象函数 achievementType,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.teamSwitchStatus ? (console.info('if(this.teamSwitchStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 'simple') : (console.info('if(this.teamSwitchStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 'normal');
                 },
-                methods: {
-                    initVideoShow: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                showAudioWaves: function () {
+                    return console.info('对象函数 showAudioWaves,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.groupSpeakStatus;
+                },
+                hideLocalVideoIcon: function () {
+                    return console.info('对象函数 hideLocalVideoIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.videoLinkStatus || this.otherCameraStatus ? (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), true) : (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), false);
+                },
+                hideRemoteVideo: function () {
+                    return console.info('对象函数 hideRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.otherCameraStatus;
+                },
+                remoteStuPadNum: function () {
+                    return console.info('对象函数 remoteStuPadNum,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 3 === this.remoteStuInfo.length ? (console.info('if(this.remoteStuInfo.length === 3)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), 0) : 3 - this.remoteStuInfo.length;
+                }
+            },
+            mounted: function () {
+                var e = {
+                    options: this.options,
+                    stuInfo: this.stuInfo,
+                    rtcConfig: this.rtcConfig,
+                    publishStatus: !this.options.isAudition
+                };
+                this.rtcClass = new Ma(e);
+                this.videoGroup = new Ra(e);
+                this.init();
+            },
+            methods: {
+                initVideoShow: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         if (console.info('对象函数 initVideoShow,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), !e.options.isParent) {
                                             t.next = 7;
@@ -7404,17 +7404,17 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    init: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                init: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), t.next = 3, e.initVideoShow();
                                     case 3:
@@ -7428,18 +7428,18 @@
                                     case 13:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    initClassRtcChannel: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                initClassRtcChannel: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initClassRtcChannel,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), t.next = 3, e.rtcClass.init();
                                     case 3:
@@ -7482,163 +7482,163 @@
                                     case 16:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    listenBusEvent: function () {
-                        var e = this;
-                        console.info('对象函数 listenBusEvent,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.$bus.$on('setDefaultVideoDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultVideoDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.rtcClass.setVideoDevice(t);
-                        });
-                        this.$bus.$on('setDefaultAudioRecordingDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultAudioRecordingDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.rtcClass.setAudioRecordingDevice(t);
-                        });
-                        this.$bus.$on('setDefaultAudioPlaybackDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultAudioPlaybackDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.rtcClass.setAudioPlaybackDevice(t);
-                        });
-                        this.$bus.$on('updateTeamSwitchStatus', function (t) {
-                            console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.videoGroup.sendLogger('收到视频回显状态变化, status: '.concat(t));
-                            e.teamSwitchStatus = t;
-                            t ? false !== e.localVideoDisplayCache && (e.rtcClass.enableLocalVideo(true), e.setupLocalVideo()) : (e.rtcClass.enableLocalVideo(false), e.hideLocalVideo());
-                        });
-                        this.$bus.$on('cameraStatus', function (t) {
-                            console.info('箭头函数 监听 cameraStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.$bus.$emit('teamSwitchDisabled', t);
-                            t ? e.rtcClass.muteLocalVideo(true) : e.localVideoPublishStatus && e.rtcClass.muteLocalVideo(false);
-                        });
-                        this.$bus.$on('videoLinkStatus', function (t) {
-                            console.info('箭头函数 监听 videoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.$bus.$emit('teamSwitchDisabled', t);
-                            e.videoLinkStatus = t;
-                        });
-                        this.$bus.$on('localVideoLinkStatus', function (t) {
-                            console.info('箭头函数 监听 localVideoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.videoGroup.sendLogger('收到视频连麦互动状态变化, status: '.concat(t));
-                            t ? (e.rtcClass.unpublish(), e.hideLocalVideo()) : (e.rtcClass.publish({ publishVideo: e.localVideoPublishStatus }), e.setupLocalVideo());
-                            e.otherCameraStatus = t;
-                        });
-                        this.$bus.$on('groupSpeakStatus', function (t) {
-                            console.info('箭头函数 监听 groupSpeakStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.videoGroup.sendLogger('收到集体发言互动状态变化, status: '.concat(t));
-                            e.groupSpeakStatus = t;
-                            t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
-                        });
-                        this.$bus.$on('liveQuit', function () {
-                            console.info('箭头函数 监听 liveQuit,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.rtcClass.unpublish();
-                            e.rtcClass.leaveChannel();
-                        });
-                        this.$bus.$on('openExitByCoursewareChange', function (t) {
-                            console.info('箭头函数 监听 openExitByCoursewareChange(backUrl)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            Object(tt.d)(e.$t('classroom.modules.header.backConfirm.exitByCoursewareIdChange'), e.$t('courses.confirmModal.confirm'), t);
-                        });
-                        this.$bus.$on('getLocalDisplayVideoStatus', function (t) {
-                            console.info('箭头函数 监听 getLocalDisplayVideoStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            t && t(e.localVideoPublishStatus);
-                        });
-                        this.$bus.$on('chats.correctSelfMedalData', function (t) {
-                            console.info('箭头函数 监听 chats.correctSelfMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.localStuInfo.level = t.level;
-                        });
-                        this.$bus.$on('chats.correctMedalData', function (t) {
-                            console.info('箭头函数 监听 chats.correctMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.setRemoteStuVal(t.userId, 'level', t.level);
-                        });
-                        this.$bus.$on('setExaminationStatus', function (t) {
-                            console.info('箭头函数 监听 setExaminationStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                            e.isExaminationStatus = t;
-                        });
-                    },
-                    setupLocalVideo: function () {
-                        console.info('对象函数 setupLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        !this.options.isAudition && this.localStuInfo.cameraStatus ? (this.rtcClass.setupLocalVideo('video-group-local'), false !== this.localVideoDisplayCache ? this.localStuInfo.displayVideo = true : console.info('if(this.localVideoDisplayCache === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue')) : console.info('if(this.options.isAudition || !this.localStuInfo.cameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                    },
-                    hideLocalVideo: function () {
-                        console.info('对象函数 hideLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.localStuInfo.displayVideo = false;
-                    },
-                    buildInfo: function (e) {
-                        console.info('对象函数 buildInfo(stuInfo)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        var t = this.remoteVideoFrameCache[e.userId], s = this.remoteVideoMutedCache[e.userId] || false;
-                        return {
-                            showStatus: true,
-                            stuId: e.userId,
-                            stuName: e.nickName,
-                            avatar: e.avatar,
-                            level: e.level,
-                            cameraStatus: !!t,
-                            displayVideo: true,
-                            mutedVideoStatus: s,
-                            onlineStatus: !!t
-                        };
-                    },
-                    setupRemoteVideo: function () {
-                        var e = this;
-                        console.info('对象函数 setupRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.videoGroup.queryGroupStudent({
-                            cameraStatus: this.localStuInfo.cameraStatus ? 1 : 2,
-                            addStudentCallback: function (t) {
-                                var s = e.buildInfo(t);
-                                e.remoteStuInfo.push(s);
-                                e.$nextTick(function () {
-                                    this.rtcClass.muteRemoteAudio(t.userId, true);
-                                    this.rtcClass.setupRemoteVideo(t.userId, 'remote-'.concat(t.userId));
-                                    this.teamSwitchStatus || this.handleRemoteVideoStatus(t.userId, false);
-                                });
                             }
-                        });
-                    },
-                    setupMyChildVideo: function () {
-                        console.info('对象函数 setupMyChildVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        var e = Object(F.a)(Object(F.a)({}, this.localStuInfo), {}, {
-                            userId: this.localStuInfo.stuId,
-                            nickName: this.localStuInfo.stuName
-                        });
-                        this.myChildInfo = this.buildInfo(e);
-                        this.$nextTick(function () {
-                            this.rtcClass.setupRemoteVideo(e.userId, 'remote-'.concat(e.userId));
-                            this.teamSwitchStatus || this.handleRemoteVideoStatus(e.userId, false);
-                        });
-                    },
-                    handleLocalVideoStatus: function () {
-                        console.info('对象函数 handleLocalVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.localStuInfo.displayVideo ? this.rtcClass.muteLocalVideo(true) : (this.rtcClass.muteLocalVideo(false), this.setupLocalVideo());
-                        this.localStuInfo.displayVideo = !this.localStuInfo.displayVideo;
-                        this.localVideoDisplayCache = this.localStuInfo.displayVideo;
-                        this.videoGroup.sendRtcStatus({ displayVideo: this.localStuInfo.displayVideo });
-                        Rs.s(this.localStuInfo.displayVideo);
-                        this.$bus.$emit('updateLocalDisplayVideoStatus', this.localStuInfo.displayVideo);
-                        this.videoGroup.sendLogger('学生操作本地视频开关状态, status: '.concat(this.localStuInfo.displayVideo));
-                    },
-                    handleRemoteVideoStatus: function (e, t) {
-                        console.info('对象函数 handleRemoteVideoStatus(stuId, status)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.setRemoteStuVal(e, 'displayVideo', t);
-                        this.videoGroup.sendLogger('学生操作远端视频开关状态, uid: '.concat(e, ' status: ').concat(t));
-                    },
-                    setRemoteStuVal: function (e, t, s) {
-                        var o = this;
-                        console.info('对象函数 setRemoteStuVal(uid, key, val)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        e ? this.isMyChild(e) ? this.$set(this.myChildInfo, t, s) : this.remoteStuInfo.forEach(function (a, n) {
-                            a.stuId == e && o.$set(o.remoteStuInfo[n], t, s);
-                        }) : console.info('if(!uid)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                    },
-                    isMyChild: function (e) {
-                        return console.info('对象函数 isMyChild(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.options.isParent && e == this.options.stuId;
-                    },
-                    collectiveSpeechOpen: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                        }, t);
+                    }))();
+                },
+                listenBusEvent: function () {
+                    var e = this;
+                    console.info('对象函数 listenBusEvent,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.$bus.$on('setDefaultVideoDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultVideoDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.rtcClass.setVideoDevice(t);
+                    });
+                    this.$bus.$on('setDefaultAudioRecordingDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultAudioRecordingDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.rtcClass.setAudioRecordingDevice(t);
+                    });
+                    this.$bus.$on('setDefaultAudioPlaybackDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultAudioPlaybackDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.rtcClass.setAudioPlaybackDevice(t);
+                    });
+                    this.$bus.$on('updateTeamSwitchStatus', function (t) {
+                        console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.videoGroup.sendLogger('收到视频回显状态变化, status: '.concat(t));
+                        e.teamSwitchStatus = t;
+                        t ? false !== e.localVideoDisplayCache && (e.rtcClass.enableLocalVideo(true), e.setupLocalVideo()) : (e.rtcClass.enableLocalVideo(false), e.hideLocalVideo());
+                    });
+                    this.$bus.$on('cameraStatus', function (t) {
+                        console.info('箭头函数 监听 cameraStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.$bus.$emit('teamSwitchDisabled', t);
+                        t ? e.rtcClass.muteLocalVideo(true) : e.localVideoPublishStatus && e.rtcClass.muteLocalVideo(false);
+                    });
+                    this.$bus.$on('videoLinkStatus', function (t) {
+                        console.info('箭头函数 监听 videoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.$bus.$emit('teamSwitchDisabled', t);
+                        e.videoLinkStatus = t;
+                    });
+                    this.$bus.$on('localVideoLinkStatus', function (t) {
+                        console.info('箭头函数 监听 localVideoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.videoGroup.sendLogger('收到视频连麦互动状态变化, status: '.concat(t));
+                        t ? (e.rtcClass.unpublish(), e.hideLocalVideo()) : (e.rtcClass.publish({ publishVideo: e.localVideoPublishStatus }), e.setupLocalVideo());
+                        e.otherCameraStatus = t;
+                    });
+                    this.$bus.$on('groupSpeakStatus', function (t) {
+                        console.info('箭头函数 监听 groupSpeakStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.videoGroup.sendLogger('收到集体发言互动状态变化, status: '.concat(t));
+                        e.groupSpeakStatus = t;
+                        t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
+                    });
+                    this.$bus.$on('liveQuit', function () {
+                        console.info('箭头函数 监听 liveQuit,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.rtcClass.unpublish();
+                        e.rtcClass.leaveChannel();
+                    });
+                    this.$bus.$on('openExitByCoursewareChange', function (t) {
+                        console.info('箭头函数 监听 openExitByCoursewareChange(backUrl)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        Object(tt.d)(e.$t('classroom.modules.header.backConfirm.exitByCoursewareIdChange'), e.$t('courses.confirmModal.confirm'), t);
+                    });
+                    this.$bus.$on('getLocalDisplayVideoStatus', function (t) {
+                        console.info('箭头函数 监听 getLocalDisplayVideoStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        t && t(e.localVideoPublishStatus);
+                    });
+                    this.$bus.$on('chats.correctSelfMedalData', function (t) {
+                        console.info('箭头函数 监听 chats.correctSelfMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.localStuInfo.level = t.level;
+                    });
+                    this.$bus.$on('chats.correctMedalData', function (t) {
+                        console.info('箭头函数 监听 chats.correctMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.setRemoteStuVal(t.userId, 'level', t.level);
+                    });
+                    this.$bus.$on('setExaminationStatus', function (t) {
+                        console.info('箭头函数 监听 setExaminationStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                        e.isExaminationStatus = t;
+                    });
+                },
+                setupLocalVideo: function () {
+                    console.info('对象函数 setupLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    !this.options.isAudition && this.localStuInfo.cameraStatus ? (this.rtcClass.setupLocalVideo('video-group-local'), false !== this.localVideoDisplayCache ? this.localStuInfo.displayVideo = true : console.info('if(this.localVideoDisplayCache === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue')) : console.info('if(this.options.isAudition || !this.localStuInfo.cameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                },
+                hideLocalVideo: function () {
+                    console.info('对象函数 hideLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.localStuInfo.displayVideo = false;
+                },
+                buildInfo: function (e) {
+                    console.info('对象函数 buildInfo(stuInfo)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    var t = this.remoteVideoFrameCache[e.userId], s = this.remoteVideoMutedCache[e.userId] || false;
+                    return {
+                        showStatus: true,
+                        stuId: e.userId,
+                        stuName: e.nickName,
+                        avatar: e.avatar,
+                        level: e.level,
+                        cameraStatus: !!t,
+                        displayVideo: true,
+                        mutedVideoStatus: s,
+                        onlineStatus: !!t
+                    };
+                },
+                setupRemoteVideo: function () {
+                    var e = this;
+                    console.info('对象函数 setupRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.videoGroup.queryGroupStudent({
+                        cameraStatus: this.localStuInfo.cameraStatus ? 1 : 2,
+                        addStudentCallback: function (t) {
+                            var s = e.buildInfo(t);
+                            e.remoteStuInfo.push(s);
+                            e.$nextTick(function () {
+                                this.rtcClass.muteRemoteAudio(t.userId, true);
+                                this.rtcClass.setupRemoteVideo(t.userId, 'remote-'.concat(t.userId));
+                                this.teamSwitchStatus || this.handleRemoteVideoStatus(t.userId, false);
+                            });
+                        }
+                    });
+                },
+                setupMyChildVideo: function () {
+                    console.info('对象函数 setupMyChildVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    var e = Object(F.a)(Object(F.a)({}, this.localStuInfo), {}, {
+                        userId: this.localStuInfo.stuId,
+                        nickName: this.localStuInfo.stuName
+                    });
+                    this.myChildInfo = this.buildInfo(e);
+                    this.$nextTick(function () {
+                        this.rtcClass.setupRemoteVideo(e.userId, 'remote-'.concat(e.userId));
+                        this.teamSwitchStatus || this.handleRemoteVideoStatus(e.userId, false);
+                    });
+                },
+                handleLocalVideoStatus: function () {
+                    console.info('对象函数 handleLocalVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.localStuInfo.displayVideo ? this.rtcClass.muteLocalVideo(true) : (this.rtcClass.muteLocalVideo(false), this.setupLocalVideo());
+                    this.localStuInfo.displayVideo = !this.localStuInfo.displayVideo;
+                    this.localVideoDisplayCache = this.localStuInfo.displayVideo;
+                    this.videoGroup.sendRtcStatus({ displayVideo: this.localStuInfo.displayVideo });
+                    Rs.s(this.localStuInfo.displayVideo);
+                    this.$bus.$emit('updateLocalDisplayVideoStatus', this.localStuInfo.displayVideo);
+                    this.videoGroup.sendLogger('学生操作本地视频开关状态, status: '.concat(this.localStuInfo.displayVideo));
+                },
+                handleRemoteVideoStatus: function (e, t) {
+                    console.info('对象函数 handleRemoteVideoStatus(stuId, status)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.setRemoteStuVal(e, 'displayVideo', t);
+                    this.videoGroup.sendLogger('学生操作远端视频开关状态, uid: '.concat(e, ' status: ').concat(t));
+                },
+                setRemoteStuVal: function (e, t, s) {
+                    var o = this;
+                    console.info('对象函数 setRemoteStuVal(uid, key, val)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    e ? this.isMyChild(e) ? this.$set(this.myChildInfo, t, s) : this.remoteStuInfo.forEach(function (a, n) {
+                        a.stuId == e && o.$set(o.remoteStuInfo[n], t, s);
+                    }) : console.info('if(!uid)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                },
+                isMyChild: function (e) {
+                    return console.info('对象函数 isMyChild(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), this.options.isParent && e == this.options.stuId;
+                },
+                collectiveSpeechOpen: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 collectiveSpeechOpen,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue'), t.next = 3, e.videoGroup.querySpeakStudentList();
                                     case 3:
@@ -7654,262 +7654,262 @@
                                     case 10:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    collectiveSpeechClose: function () {
-                        var e = this;
-                        console.info('对象函数 collectiveSpeechClose,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
-                        this.speakStudentList.forEach(function (t) {
-                            e.rtcClass.muteRemoteAudio(t, true);
-                        });
-                        this.speakStudentList = [];
-                    }
+                            }
+                        }, t);
+                    }))();
+                },
+                collectiveSpeechClose: function () {
+                    var e = this;
+                    console.info('对象函数 collectiveSpeechClose,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/largeClass.vue');
+                    this.speakStudentList.forEach(function (t) {
+                        e.rtcClass.muteRemoteAudio(t, true);
+                    });
+                    this.speakStudentList = [];
                 }
-            }, _a = Ha, Fa = (s('d672'), Object(Ae.a)(_a, aa, na, false, null, '636c827e', null)), Wa = Fa.exports, Ka = function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'small-class' }, [
-                    t('Achievement', {
-                        attrs: {
-                            options: e.options,
-                            type: 'normal'
+            }
+        }, _a = Ha, Fa = (s('d672'), Object(Ae.a)(_a, aa, na, false, null, '636c827e', null)), Wa = Fa.exports, Ka = function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'small-class' }, [
+                t('Achievement', {
+                    attrs: {
+                        options: e.options,
+                        type: 'normal'
+                    }
+                }),
+                t('div', { staticClass: 'video-group-wrapper class-type-small' }, [
+                    t('VideoChatsSwitch', {
+                        attrs: { videoGroupShowStatus: e.videoGroupShowStatus },
+                        on: {
+                            switchVideoChats: e.handleChangeVideoChat,
+                            handlePrevPage: e.handlePrevPage,
+                            handleNextPage: e.handleNextPage
                         }
                     }),
-                    t('div', { staticClass: 'video-group-wrapper class-type-small' }, [
-                        t('VideoChatsSwitch', {
-                            attrs: { videoGroupShowStatus: e.videoGroupShowStatus },
+                    t('div', {
+                        directives: [{
+                            name: 'show',
+                            rawName: 'v-show',
+                            value: e.videoGroupShowStatus && 'video' === e.showVideoChatType,
+                            expression: 'videoGroupShowStatus && showVideoChatType === \'video\''
+                        }]
+                    }, [t('div', { staticClass: 'video-group-contenter' }, [
+                        t('LocalVideo', {
+                            directives: [{
+                                name: 'show',
+                                rawName: 'v-show',
+                                value: e.localVideoShowStatus,
+                                expression: 'localVideoShowStatus'
+                            }],
+                            attrs: {
+                                options: e.options,
+                                localStuInfo: e.localStuInfo,
+                                hideVideoIcon: e.hideLocalVideoIcon,
+                                classType: e.classType
+                            },
                             on: {
-                                switchVideoChats: e.handleChangeVideoChat,
-                                handlePrevPage: e.handlePrevPage,
-                                handleNextPage: e.handleNextPage
+                                handleLocalVideoStatus: e.handleLocalVideoStatus,
+                                handleLocalMicrophoneStatus: e.handleLocalMicrophoneStatus
                             }
                         }),
-                        t('div', {
-                            directives: [{
-                                    name: 'show',
-                                    rawName: 'v-show',
-                                    value: e.videoGroupShowStatus && 'video' === e.showVideoChatType,
-                                    expression: 'videoGroupShowStatus && showVideoChatType === \'video\''
-                                }]
-                        }, [t('div', { staticClass: 'video-group-contenter' }, [
-                                t('LocalVideo', {
-                                    directives: [{
-                                            name: 'show',
-                                            rawName: 'v-show',
-                                            value: e.localVideoShowStatus,
-                                            expression: 'localVideoShowStatus'
-                                        }],
-                                    attrs: {
-                                        options: e.options,
-                                        localStuInfo: e.localStuInfo,
-                                        hideVideoIcon: e.hideLocalVideoIcon,
-                                        classType: e.classType
-                                    },
-                                    on: {
-                                        handleLocalVideoStatus: e.handleLocalVideoStatus,
-                                        handleLocalMicrophoneStatus: e.handleLocalMicrophoneStatus
-                                    }
-                                }),
-                                e._l(e.remoteStuInfo, function (s) {
-                                    return [t('RemoteVideo', {
-                                            key: s.stuId,
-                                            attrs: {
-                                                remoteStuInfo: s,
-                                                showAudioWaves: e.showAudioWaves,
-                                                hideRemoteVideo: e.hideRemoteVideo,
-                                                isExaminationStatus: e.isExaminationStatus
-                                            },
-                                            on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
-                                        })];
-                                })
-                            ], 2)]),
-                        e.videoGroupShowStatus || 'video' !== e.showVideoChatType ? e._e() : t('div', { staticClass: 'close-video-tag' }, [t('span', [e._v(e._s(e.$t('classroom.largeClass.videoGroup.closedNotice')))])])
-                    ], 1)
-                ], 1);
-            }, qa = [], za = s('b85c'), Ja = (s('4ec9'), s('3ca3'), s('ddb0'), s('7db0'), s('a434'), function () {
-                var e = this, t = e._self._c;
-                return t('div', { staticClass: 'switch' }, [
-                    t('div', {
-                        staticClass: 'arrow-left left',
-                        on: { click: e.prevGroup }
-                    }),
-                    t('div', { staticClass: 'switch-content' }, [
-                        t('div', {
-                            staticClass: 'switch-btn btn-video',
-                            on: {
-                                click: function (t) {
-                                    return e.tabSwitch('video');
-                                }
-                            }
-                        }, [e._v(' ' + e._s(e.$t('classroom.largeClass.videoGroup.tabNames')[0]) + ' ')]),
-                        t('div', {
-                            staticClass: 'switch-btn btn-chats',
-                            on: {
-                                click: function (t) {
-                                    return e.tabSwitch('chat');
-                                }
-                            }
-                        }, [t('span', [
-                                e._v(' ' + e._s(e.$t('classroom.largeClass.videoGroup.tabNames')[1]) + ' '),
-                                'video' === e.switchKey && e.hasPrivateNewMsg ? t('label') : e._e()
-                            ])]),
-                        t('div', {
-                            staticClass: 'switch-bg',
-                            class: 'video' == e.switchKey ? 'left-video' : 'left-chats'
+                        e._l(e.remoteStuInfo, function (s) {
+                            return [t('RemoteVideo', {
+                                key: s.stuId,
+                                attrs: {
+                                    remoteStuInfo: s,
+                                    showAudioWaves: e.showAudioWaves,
+                                    hideRemoteVideo: e.hideRemoteVideo,
+                                    isExaminationStatus: e.isExaminationStatus
+                                },
+                                on: { handleRemoteVideoStatus: e.handleRemoteVideoStatus }
+                            })];
                         })
-                    ]),
+                    ], 2)]),
+                    e.videoGroupShowStatus || 'video' !== e.showVideoChatType ? e._e() : t('div', { staticClass: 'close-video-tag' }, [t('span', [e._v(e._s(e.$t('classroom.largeClass.videoGroup.closedNotice')))])])
+                ], 1)
+            ], 1);
+        }, qa = [], za = s('b85c'), Ja = (s('4ec9'), s('3ca3'), s('ddb0'), s('7db0'), s('a434'), function () {
+            var e = this, t = e._self._c;
+            return t('div', { staticClass: 'switch' }, [
+                t('div', {
+                    staticClass: 'arrow-left left',
+                    on: { click: e.prevGroup }
+                }),
+                t('div', { staticClass: 'switch-content' }, [
                     t('div', {
-                        staticClass: 'arrow-right right',
-                        on: { click: e.nextGroup }
-                    })
-                ]);
-            }), Qa = [], Za = {
-                data: function () {
-                    return {
-                        switchKey: 'video',
-                        hasPrivateNewMsg: false
-                    };
-                },
-                props: {
-                    videoGroupShowStatus: {
-                        type: Boolean,
-                        default: true
-                    }
-                },
-                mounted: function () {
-                    var e = this;
-                    this.$bus.$on('chats.privateMessagePush', function () {
-                        console.info('箭头函数 监听 chats.privateMessagePush,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
-                        'chat' === e.switchKey ? e.hasPrivateNewMsg = false : e.hasPrivateNewMsg = true;
-                    });
-                },
-                methods: {
-                    tabSwitch: function (e) {
-                        console.info('对象函数 tabSwitch(key)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
-                        'chat' === e && (this.hasPrivateNewMsg = false);
-                        this.switchKey = e;
-                        this.$emit('switchVideoChats', e);
-                        this.$bus.$emit('switchVideoAndChat', e);
-                    },
-                    prevGroup: function () {
-                        console.info('对象函数 prevGroup,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
-                        this.$emit('handlePrevPage');
-                    },
-                    nextGroup: function () {
-                        console.info('对象函数 nextGroup,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
-                        this.$emit('handleNextPage');
-                    }
-                },
-                watch: {
-                    videoGroupShowStatus: {
-                        handler: function (e, t) {
-                            console.info('对象函数 handler(newValue, oldValue)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
-                            e ? this.tabSwitch('video') : this.tabSwitch('chat');
+                        staticClass: 'switch-btn btn-video',
+                        on: {
+                            click: function (t) {
+                                return e.tabSwitch('video');
+                            }
                         }
+                    }, [e._v(' ' + e._s(e.$t('classroom.largeClass.videoGroup.tabNames')[0]) + ' ')]),
+                    t('div', {
+                        staticClass: 'switch-btn btn-chats',
+                        on: {
+                            click: function (t) {
+                                return e.tabSwitch('chat');
+                            }
+                        }
+                    }, [t('span', [
+                        e._v(' ' + e._s(e.$t('classroom.largeClass.videoGroup.tabNames')[1]) + ' '),
+                        'video' === e.switchKey && e.hasPrivateNewMsg ? t('label') : e._e()
+                    ])]),
+                    t('div', {
+                        staticClass: 'switch-bg',
+                        class: 'video' == e.switchKey ? 'left-video' : 'left-chats'
+                    })
+                ]),
+                t('div', {
+                    staticClass: 'arrow-right right',
+                    on: { click: e.nextGroup }
+                })
+            ]);
+        }), Qa = [], Za = {
+            data: function () {
+                return {
+                    switchKey: 'video',
+                    hasPrivateNewMsg: false
+                };
+            },
+            props: {
+                videoGroupShowStatus: {
+                    type: Boolean,
+                    default: true
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('chats.privateMessagePush', function () {
+                    console.info('箭头函数 监听 chats.privateMessagePush,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
+                    'chat' === e.switchKey ? e.hasPrivateNewMsg = false : e.hasPrivateNewMsg = true;
+                });
+            },
+            methods: {
+                tabSwitch: function (e) {
+                    console.info('对象函数 tabSwitch(key)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
+                    'chat' === e && (this.hasPrivateNewMsg = false);
+                    this.switchKey = e;
+                    this.$emit('switchVideoChats', e);
+                    this.$bus.$emit('switchVideoAndChat', e);
+                },
+                prevGroup: function () {
+                    console.info('对象函数 prevGroup,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
+                    this.$emit('handlePrevPage');
+                },
+                nextGroup: function () {
+                    console.info('对象函数 nextGroup,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
+                    this.$emit('handleNextPage');
+                }
+            },
+            watch: {
+                videoGroupShowStatus: {
+                    handler: function (e, t) {
+                        console.info('对象函数 handler(newValue, oldValue)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/videoChatsSwitch.vue');
+                        e ? this.tabSwitch('video') : this.tabSwitch('chat');
                     }
                 }
-            }, Ya = Za, Xa = (s('1643'), Object(Ae.a)(Ya, Ja, Qa, false, null, '2bee514c', null)), $a = Xa.exports, en = {
-                components: {
-                    VideoChatsSwitch: $a,
-                    LocalVideo: Ca,
-                    RemoteVideo: ka,
-                    Achievement: ma
+            }
+        }, Ya = Za, Xa = (s('1643'), Object(Ae.a)(Ya, Ja, Qa, false, null, '2bee514c', null)), $a = Xa.exports, en = {
+            components: {
+                VideoChatsSwitch: $a,
+                LocalVideo: Ca,
+                RemoteVideo: ka,
+                Achievement: ma
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
+                stuInfo: {
+                    type: Object,
+                    default: null
+                },
+                rtcConfig: {
+                    type: Object,
+                    default: null
+                },
+                classType: {
+                    type: Number,
+                    default: -1
+                }
+            },
+            data: function () {
+                return {
+                    teamSwitchStatus: null,
+                    showVideoChatType: 'video',
+                    localStuInfo: {
+                        stuId: this.stuInfo.id,
+                        stuName: this.stuInfo.nickName,
+                        avatar: this.stuInfo.avatar,
+                        displayVideo: false,
+                        cameraStatus: true,
+                        microphoneStatus: false,
+                        level: this.stuInfo.level
                     },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    },
-                    classType: {
-                        type: Number,
-                        default: -1
+                    remoteStuInfo: [],
+                    speakStudentList: [],
+                    groupSpeakStatus: false,
+                    videoLinkStatus: false,
+                    otherCameraStatus: false,
+                    localVideoDisplayCache: null,
+                    remoteAudioStatus: false,
+                    pageNum: 1,
+                    pageSize: 6,
+                    classStudentMap: new Map(),
+                    remoteLevelCache: {},
+                    isExaminationStatus: false,
+                    rtcSensor: null
+                };
+            },
+            computed: {
+                localVideoPublishStatus: function () {
+                    return console.info('对象函数 localVideoPublishStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false !== this.localVideoDisplayCache && this.teamSwitchStatus;
+                },
+                videoGroupShowStatus: function () {
+                    return console.info('对象函数 videoGroupShowStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true === this.teamSwitchStatus;
+                },
+                localVideoShowStatus: function () {
+                    return console.info('对象函数 localVideoShowStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1 === this.pageNum && (console.info('if(this.pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true);
+                },
+                showAudioWaves: function () {
+                    return console.info('对象函数 showAudioWaves,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.groupSpeakStatus;
+                },
+                hideLocalVideoIcon: function () {
+                    return console.info('对象函数 hideLocalVideoIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.videoLinkStatus || this.otherCameraStatus ? (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true) : (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false);
+                },
+                hideRemoteVideo: function () {
+                    return console.info('对象函数 hideRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.otherCameraStatus;
+                },
+                pageCount: function () {
+                    console.info('对象函数 pageCount,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var e = this.remoteStuInfo.length, t = this.pageSize - 1;
+                    if (e <= t) {
+                        return console.info('if(totalCount <= onePageCount)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1;
                     }
-                },
-                data: function () {
-                    return {
-                        teamSwitchStatus: null,
-                        showVideoChatType: 'video',
-                        localStuInfo: {
-                            stuId: this.stuInfo.id,
-                            stuName: this.stuInfo.nickName,
-                            avatar: this.stuInfo.avatar,
-                            displayVideo: false,
-                            cameraStatus: true,
-                            microphoneStatus: false,
-                            level: this.stuInfo.level
-                        },
-                        remoteStuInfo: [],
-                        speakStudentList: [],
-                        groupSpeakStatus: false,
-                        videoLinkStatus: false,
-                        otherCameraStatus: false,
-                        localVideoDisplayCache: null,
-                        remoteAudioStatus: false,
-                        pageNum: 1,
-                        pageSize: 6,
-                        classStudentMap: new Map(),
-                        remoteLevelCache: {},
-                        isExaminationStatus: false,
-                        rtcSensor: null
-                    };
-                },
-                computed: {
-                    localVideoPublishStatus: function () {
-                        return console.info('对象函数 localVideoPublishStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false !== this.localVideoDisplayCache && this.teamSwitchStatus;
-                    },
-                    videoGroupShowStatus: function () {
-                        return console.info('对象函数 videoGroupShowStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true === this.teamSwitchStatus;
-                    },
-                    localVideoShowStatus: function () {
-                        return console.info('对象函数 localVideoShowStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1 === this.pageNum && (console.info('if(this.pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true);
-                    },
-                    showAudioWaves: function () {
-                        return console.info('对象函数 showAudioWaves,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.groupSpeakStatus;
-                    },
-                    hideLocalVideoIcon: function () {
-                        return console.info('对象函数 hideLocalVideoIcon,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.videoLinkStatus || this.otherCameraStatus ? (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true) : (console.info('if(this.videoLinkStatus || this.otherCameraStatus)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false);
-                    },
-                    hideRemoteVideo: function () {
-                        return console.info('对象函数 hideRemoteVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), this.otherCameraStatus;
-                    },
-                    pageCount: function () {
-                        console.info('对象函数 pageCount,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var e = this.remoteStuInfo.length, t = this.pageSize - 1;
-                        if (e <= t) {
-                            return console.info('if(totalCount <= onePageCount)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1;
-                        }
-                        var s = e - t;
-                        return Math.floor(s / this.pageSize) + (s % this.pageSize > 0 ? 1 : 0) + 1;
-                    }
-                },
-                mounted: function () {
-                    var e = {
-                        options: this.options,
-                        stuInfo: this.stuInfo,
-                        rtcConfig: this.rtcConfig,
-                        classType: this.classType
-                    };
-                    this.rtcClass = new Ma(e);
-                    this.videoGroup = new Ra(e);
-                    this.init();
-                },
-                methods: {
-                    init: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                    var s = e - t;
+                    return Math.floor(s / this.pageSize) + (s % this.pageSize > 0 ? 1 : 0) + 1;
+                }
+            },
+            mounted: function () {
+                var e = {
+                    options: this.options,
+                    stuInfo: this.stuInfo,
+                    rtcConfig: this.rtcConfig,
+                    classType: this.classType
+                };
+                this.rtcClass = new Ma(e);
+                this.videoGroup = new Ra(e);
+                this.init();
+            },
+            methods: {
+                init: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), t.next = 3, e.videoGroup.getTeamSwitchStatus();
                                     case 3:
@@ -7923,17 +7923,17 @@
                                     case 12:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    initMediaAccess: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                initMediaAccess: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initMediaAccess,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), t.next = 3, Object($.c)();
                                     case 3:
@@ -7943,18 +7943,18 @@
                                     case 9:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    initClassStudent: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                initClassStudent: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initClassStudent,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), t.next = 3, e.videoGroup.queryClassStudentList();
                                     case 3:
@@ -7964,18 +7964,18 @@
                                     case 6:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    updateClassStudent: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            var o, a;
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                updateClassStudent: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        var o, a;
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         return console.info('对象函数 updateClassStudent(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), s.next = 3, t.videoGroup.queryClassStudentList();
                                     case 3:
@@ -7985,18 +7985,18 @@
                                     case 7:
                                     case 'end':
                                         return s.stop();
-                                    }
                                 }
-                            }, s);
-                        }))();
-                    },
-                    initClassRtcChannel: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, s);
+                    }))();
+                },
+                initClassRtcChannel: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 initClassRtcChannel,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), t.next = 3, e.rtcClass.init();
                                     case 3:
@@ -8025,11 +8025,11 @@
                                                 return Object(P.a)().wrap(function (t) {
                                                     while (1) {
                                                         switch (t.prev = t.next) {
-                                                        case 0:
-                                                            console.info('箭头函数 监听 remoteJoinChannel(uid)', s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoGroup.sendLogger('远端学生加入频道, uid: '.concat(s)), o = e.classStudentMap.get(String(s)), o ? e.handleRemoteJoinChannel(s) : e.updateClassStudent(s);
-                                                        case 5:
-                                                        case 'end':
-                                                            return t.stop();
+                                                            case 0:
+                                                                console.info('箭头函数 监听 remoteJoinChannel(uid)', s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoGroup.sendLogger('远端学生加入频道, uid: '.concat(s)), o = e.classStudentMap.get(String(s)), o ? e.handleRemoteJoinChannel(s) : e.updateClassStudent(s);
+                                                            case 5:
+                                                            case 'end':
+                                                                return t.stop();
                                                         }
                                                     }
                                                 }, t);
@@ -8054,240 +8054,240 @@
                                     case 17:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    listenBusEvent: function () {
-                        var e = this;
-                        console.info('对象函数 listenBusEvent,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.$bus.$on('setDefaultVideoDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultVideoDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.rtcClass.setVideoDevice(t);
-                        });
-                        this.$bus.$on('setDefaultAudioRecordingDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultAudioRecordingDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.rtcClass.setAudioRecordingDevice(t);
-                        });
-                        this.$bus.$on('setDefaultAudioPlaybackDevice', function (t) {
-                            console.info('箭头函数 监听 setDefaultAudioPlaybackDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.rtcClass.setAudioPlaybackDevice(t);
-                        });
-                        this.$bus.$on('updateTeamSwitchStatus', function (t) {
-                            console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.videoGroup.sendLogger('收到视频回显状态变化, status: '.concat(t));
-                            e.teamSwitchStatus = t;
-                            t ? false !== e.localVideoDisplayCache && (e.rtcClass.enableLocalVideo(true), e.setupLocalVideo()) : (e.rtcClass.enableLocalVideo(false), e.hideLocalVideo());
-                            e.$bus.$emit('updateLocalDisplayVideoStatus', e.localVideoPublishStatus);
-                        });
-                        this.$bus.$on('cameraStatus', function (t) {
-                            console.info('箭头函数 监听 cameraStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.$bus.$emit('teamSwitchDisabled', t);
-                            t ? e.rtcClass.muteLocalVideo(true) : e.localVideoPublishStatus && e.rtcClass.muteLocalVideo(false);
-                        });
-                        this.$bus.$on('videoLinkStatus', function (t) {
-                            console.info('箭头函数 监听 videoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.$bus.$emit('teamSwitchDisabled', t);
-                            e.videoLinkStatus = t;
-                        });
-                        this.$bus.$on('localVideoLinkStatus', function (t) {
-                            console.info('箭头函数 监听 localVideoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.videoGroup.sendLogger('收到视频连麦互动状态变化, status: '.concat(t));
-                            2 == e.classType ? t ? e.hideLocalVideo() : e.setupLocalVideo() : t ? (e.rtcClass.unpublish(), e.hideLocalVideo()) : (e.rtcClass.publish({ publishVideo: e.localVideoPublishStatus }), e.setupLocalVideo());
-                            e.otherCameraStatus = t;
-                        });
-                        this.$bus.$on('multVideoLinkStatus', function (t) {
-                            var s = t.pub, o = t.status, a = t.stuId;
-                            if (console.info('箭头函数 监听 multVideoLinkStatus(pub, status, stuId)', s, o, a, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), !s) {
-                                return console.info('if(!pub)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoLinkStatus = false, e.$bus.$emit('teamSwitchDisabled', false), void (e.remoteAudioStatus && e.collectiveSpeechOpen());
                             }
-                            if (s && 1 == o) {
-                                return console.info('if(pub && status == 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoLinkStatus = true, e.$bus.$emit('teamSwitchDisabled', true), void (e.remoteAudioStatus && e.collectiveSpeechClose());
-                            }
-                            if (a) {
-                                var n = a == e.localStuInfo.stuId;
-                                2 == o && (n ? e.hideLocalVideo() : e.setRemoteStuVal(a, 'displayVideo', false));
-                                3 == o && (n ? e.setupLocalVideo() : (e.setRemoteStuVal(a, 'displayVideo', true), e.$nextTick(function () {
-                                    this.rtcClass.setupRemoteVideo(Number(a), 'remote-'.concat(a));
-                                })));
-                            } else {
-                                console.info('if(!stuId)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            }
-                        });
-                        this.$bus.$on('groupSpeakStatus', function (t) {
-                            console.info('箭头函数 监听 groupSpeakStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.videoGroup.sendLogger('收到集体发言互动状态变化, status: '.concat(t));
-                            e.groupSpeakStatus = t;
-                            t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
-                        });
-                        this.$bus.$on('remoteAudioStatus', function (t) {
-                            console.info('箭头函数 监听 remoteAudioStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.videoGroup.sendLogger('收到语音管理状态变化, status: '.concat(t));
-                            e.remoteAudioStatus = t;
-                            t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
-                        });
-                        this.$bus.$on('liveQuit', function () {
-                            console.info('箭头函数 监听 liveQuit,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.rtcClass.unpublish();
-                            e.rtcClass.leaveChannel();
-                        });
-                        this.$bus.$on('getLocalDisplayVideoStatus', function (t) {
-                            console.info('箭头函数 监听 getLocalDisplayVideoStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            t && t(e.localVideoPublishStatus);
-                        });
-                        this.$bus.$on('getLocalMicrophoneStatus', function (t) {
-                            console.info('箭头函数 监听 getLocalMicrophoneStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            t && t(e.localStuInfo.microphoneStatus);
-                        });
-                        this.$bus.$on('chats.correctSelfMedalData', function (t) {
-                            console.info('箭头函数 监听 chats.correctSelfMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.localStuInfo.level = t.level;
-                        });
-                        this.$bus.$on('chats.correctMedalData', function (t) {
-                            console.info('箭头函数 监听 chats.correctMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.setRemoteStuVal(t.userId, 'level', t.level);
-                            e.remoteLevelCache[t.userId] = t.level;
-                        });
-                        this.$bus.$on('setExaminationStatus', function (t) {
-                            console.info('箭头函数 监听 setExaminationStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            e.isExaminationStatus = t;
-                        });
-                    },
-                    setupLocalVideo: function () {
-                        console.info('对象函数 setupLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.localStuInfo.cameraStatus ? (this.rtcClass.setupLocalVideo('video-group-local'), false !== this.localVideoDisplayCache ? this.localStuInfo.displayVideo = true : console.info('if(this.localVideoDisplayCache === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue')) : console.info('if(!this.localStuInfo.cameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                    },
-                    handleChangeVideoChat: function (e) {
-                        console.info('对象函数 handleChangeVideoChat(type)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.showVideoChatType = e;
-                    },
-                    hideLocalVideo: function () {
-                        console.info('对象函数 hideLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.localStuInfo.displayVideo = false;
-                    },
-                    handleRemoteJoinChannel: function (e) {
-                        console.info('对象函数 handleRemoteJoinChannel(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var t = this.classStudentMap.get(String(e));
-                        if (t) {
-                            if (this.videoGroup.hasUserIdByStudentList(this.remoteStuInfo, e)) {
-                                console.info('if(this.videoGroup.hasUserIdByStudentList(this.remoteStuInfo, uid))为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                            } else {
-                                this.remoteStuInfo.push({
-                                    showStatus: false,
-                                    stuId: t.userId,
-                                    stuName: t.nickName,
-                                    avatar: t.avatar,
-                                    level: this.remoteLevelCache[e] || t.level,
-                                    cameraStatus: false,
-                                    displayVideo: true,
-                                    mutedVideoStatus: false,
-                                    onlineStatus: true
-                                });
-                                var s = this.hasPageByUid(e);
-                                s && this.setRemoteStuVal(e, 'showStatus', true);
-                                this.remoteStuInfo;
-                            }
-                        } else {
-                            console.info('if(!stuInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        }, t);
+                    }))();
+                },
+                listenBusEvent: function () {
+                    var e = this;
+                    console.info('对象函数 listenBusEvent,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.$bus.$on('setDefaultVideoDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultVideoDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.rtcClass.setVideoDevice(t);
+                    });
+                    this.$bus.$on('setDefaultAudioRecordingDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultAudioRecordingDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.rtcClass.setAudioRecordingDevice(t);
+                    });
+                    this.$bus.$on('setDefaultAudioPlaybackDevice', function (t) {
+                        console.info('箭头函数 监听 setDefaultAudioPlaybackDevice(deviceId)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.rtcClass.setAudioPlaybackDevice(t);
+                    });
+                    this.$bus.$on('updateTeamSwitchStatus', function (t) {
+                        console.info('箭头函数 监听 updateTeamSwitchStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.videoGroup.sendLogger('收到视频回显状态变化, status: '.concat(t));
+                        e.teamSwitchStatus = t;
+                        t ? false !== e.localVideoDisplayCache && (e.rtcClass.enableLocalVideo(true), e.setupLocalVideo()) : (e.rtcClass.enableLocalVideo(false), e.hideLocalVideo());
+                        e.$bus.$emit('updateLocalDisplayVideoStatus', e.localVideoPublishStatus);
+                    });
+                    this.$bus.$on('cameraStatus', function (t) {
+                        console.info('箭头函数 监听 cameraStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.$bus.$emit('teamSwitchDisabled', t);
+                        t ? e.rtcClass.muteLocalVideo(true) : e.localVideoPublishStatus && e.rtcClass.muteLocalVideo(false);
+                    });
+                    this.$bus.$on('videoLinkStatus', function (t) {
+                        console.info('箭头函数 监听 videoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.$bus.$emit('teamSwitchDisabled', t);
+                        e.videoLinkStatus = t;
+                    });
+                    this.$bus.$on('localVideoLinkStatus', function (t) {
+                        console.info('箭头函数 监听 localVideoLinkStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.videoGroup.sendLogger('收到视频连麦互动状态变化, status: '.concat(t));
+                        2 == e.classType ? t ? e.hideLocalVideo() : e.setupLocalVideo() : t ? (e.rtcClass.unpublish(), e.hideLocalVideo()) : (e.rtcClass.publish({ publishVideo: e.localVideoPublishStatus }), e.setupLocalVideo());
+                        e.otherCameraStatus = t;
+                    });
+                    this.$bus.$on('multVideoLinkStatus', function (t) {
+                        var s = t.pub, o = t.status, a = t.stuId;
+                        if (console.info('箭头函数 监听 multVideoLinkStatus(pub, status, stuId)', s, o, a, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), !s) {
+                            return console.info('if(!pub)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoLinkStatus = false, e.$bus.$emit('teamSwitchDisabled', false), void (e.remoteAudioStatus && e.collectiveSpeechOpen());
                         }
-                    },
-                    handleRemoteLeaveChannel: function (e) {
-                        var t = this;
-                        console.info('对象函数 handleRemoteLeaveChannel(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var s = -1;
-                        if (this.remoteStuInfo.forEach(function (t, o) {
-                                t.stuId == e && (s = o);
-                            }), -1 !== s) {
-                            this.remoteStuInfo.splice(s, 1);
-                            var o = this.getIndexRangeByPageNum(this.pageNum), a = 0;
-                            this.remoteStuInfo.forEach(function (e, s) {
-                                s >= o.start && s <= o.end && !e.showStatus && (t.$set(t.remoteStuInfo[s], 'showStatus', true), a++);
+                        if (s && 1 == o) {
+                            return console.info('if(pub && status == 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e.videoLinkStatus = true, e.$bus.$emit('teamSwitchDisabled', true), void (e.remoteAudioStatus && e.collectiveSpeechClose());
+                        }
+                        if (a) {
+                            var n = a == e.localStuInfo.stuId;
+                            2 == o && (n ? e.hideLocalVideo() : e.setRemoteStuVal(a, 'displayVideo', false));
+                            3 == o && (n ? e.setupLocalVideo() : (e.setRemoteStuVal(a, 'displayVideo', true), e.$nextTick(function () {
+                                this.rtcClass.setupRemoteVideo(Number(a), 'remote-'.concat(a));
+                            })));
+                        } else {
+                            console.info('if(!stuId)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        }
+                    });
+                    this.$bus.$on('groupSpeakStatus', function (t) {
+                        console.info('箭头函数 监听 groupSpeakStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.videoGroup.sendLogger('收到集体发言互动状态变化, status: '.concat(t));
+                        e.groupSpeakStatus = t;
+                        t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
+                    });
+                    this.$bus.$on('remoteAudioStatus', function (t) {
+                        console.info('箭头函数 监听 remoteAudioStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.videoGroup.sendLogger('收到语音管理状态变化, status: '.concat(t));
+                        e.remoteAudioStatus = t;
+                        t ? e.collectiveSpeechOpen() : e.collectiveSpeechClose();
+                    });
+                    this.$bus.$on('liveQuit', function () {
+                        console.info('箭头函数 监听 liveQuit,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.rtcClass.unpublish();
+                        e.rtcClass.leaveChannel();
+                    });
+                    this.$bus.$on('getLocalDisplayVideoStatus', function (t) {
+                        console.info('箭头函数 监听 getLocalDisplayVideoStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        t && t(e.localVideoPublishStatus);
+                    });
+                    this.$bus.$on('getLocalMicrophoneStatus', function (t) {
+                        console.info('箭头函数 监听 getLocalMicrophoneStatus(callback)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        t && t(e.localStuInfo.microphoneStatus);
+                    });
+                    this.$bus.$on('chats.correctSelfMedalData', function (t) {
+                        console.info('箭头函数 监听 chats.correctSelfMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.localStuInfo.level = t.level;
+                    });
+                    this.$bus.$on('chats.correctMedalData', function (t) {
+                        console.info('箭头函数 监听 chats.correctMedalData(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.setRemoteStuVal(t.userId, 'level', t.level);
+                        e.remoteLevelCache[t.userId] = t.level;
+                    });
+                    this.$bus.$on('setExaminationStatus', function (t) {
+                        console.info('箭头函数 监听 setExaminationStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        e.isExaminationStatus = t;
+                    });
+                },
+                setupLocalVideo: function () {
+                    console.info('对象函数 setupLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.localStuInfo.cameraStatus ? (this.rtcClass.setupLocalVideo('video-group-local'), false !== this.localVideoDisplayCache ? this.localStuInfo.displayVideo = true : console.info('if(this.localVideoDisplayCache === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue')) : console.info('if(!this.localStuInfo.cameraStatus)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                },
+                handleChangeVideoChat: function (e) {
+                    console.info('对象函数 handleChangeVideoChat(type)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.showVideoChatType = e;
+                },
+                hideLocalVideo: function () {
+                    console.info('对象函数 hideLocalVideo,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.localStuInfo.displayVideo = false;
+                },
+                handleRemoteJoinChannel: function (e) {
+                    console.info('对象函数 handleRemoteJoinChannel(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var t = this.classStudentMap.get(String(e));
+                    if (t) {
+                        if (this.videoGroup.hasUserIdByStudentList(this.remoteStuInfo, e)) {
+                            console.info('if(this.videoGroup.hasUserIdByStudentList(this.remoteStuInfo, uid))为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                        } else {
+                            this.remoteStuInfo.push({
+                                showStatus: false,
+                                stuId: t.userId,
+                                stuName: t.nickName,
+                                avatar: t.avatar,
+                                level: this.remoteLevelCache[e] || t.level,
+                                cameraStatus: false,
+                                displayVideo: true,
+                                mutedVideoStatus: false,
+                                onlineStatus: true
                             });
-                            0 === a && (this.pageNum = this.getValidPageNum(this.pageNum), this.pageNum, this.changePageRender());
+                            var s = this.hasPageByUid(e);
+                            s && this.setRemoteStuVal(e, 'showStatus', true);
                             this.remoteStuInfo;
-                        } else {
-                            console.info('if(stuIndex === -1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
                         }
-                    },
-                    handleLocalVideoStatus: function () {
-                        console.info('对象函数 handleLocalVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.localStuInfo.displayVideo ? this.rtcClass.enableLocalVideo(false) : this.rtcClass.enableLocalVideo(true);
-                        this.localStuInfo.displayVideo = !this.localStuInfo.displayVideo;
-                        this.localVideoDisplayCache = this.localStuInfo.displayVideo;
-                        this.videoGroup.sendRtcStatus({ displayVideo: this.localStuInfo.displayVideo });
-                        this.$bus.$emit('updateLocalDisplayVideoStatus', this.localStuInfo.displayVideo);
-                        this.videoGroup.sendLogger('学生操作本地视频开关状态, status: '.concat(this.localStuInfo.displayVideo));
-                    },
-                    handleLocalMicrophoneStatus: function () {
-                        console.info('对象函数 handleLocalMicrophoneStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.localStuInfo.microphoneStatus = !this.localStuInfo.microphoneStatus;
-                        this.rtcClass.muteLocalAudio(!this.localStuInfo.microphoneStatus);
-                        this.$bus.$emit('updateMicrophoneStatus', this.localStuInfo.microphoneStatus);
-                    },
-                    handleRemoteVideoStatus: function (e, t) {
-                        console.info('对象函数 handleRemoteVideoStatus(stuId, status)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.setRemoteStuVal(e, 'displayVideo', t);
-                        this.videoGroup.sendLogger('学生操作远端视频开关状态, uid: '.concat(e, ' status: ').concat(t));
-                    },
-                    setRemoteStuVal: function (e, t, s) {
-                        var o = this;
-                        console.info('对象函数 setRemoteStuVal(uid, key, val)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        e ? this.remoteStuInfo.forEach(function (a, n) {
-                            a.stuId == e && o.$set(o.remoteStuInfo[n], t, s);
-                        }) : console.info('if(!uid)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                    },
-                    handlePrevPage: function () {
-                        console.info('对象函数 handlePrevPage,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        1 !== this.pageNum ? (this.pageNum--, this.changePageRender()) : console.info('if(this.pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                    },
-                    handleNextPage: function () {
-                        console.info('对象函数 handleNextPage,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.pageNum >= this.pageCount ? console.info('if(this.pageNum >= this.pageCount)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue') : (this.pageNum++, this.changePageRender());
-                    },
-                    changePageRender: function () {
-                        var e = this;
-                        console.info('对象函数 changePageRender,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        this.remoteStuInfo.forEach(function (t, s) {
-                            e.$set(e.remoteStuInfo[s], 'showStatus', false);
+                    } else {
+                        console.info('if(!stuInfo)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    }
+                },
+                handleRemoteLeaveChannel: function (e) {
+                    var t = this;
+                    console.info('对象函数 handleRemoteLeaveChannel(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var s = -1;
+                    if (this.remoteStuInfo.forEach(function (t, o) {
+                        t.stuId == e && (s = o);
+                    }), -1 !== s) {
+                        this.remoteStuInfo.splice(s, 1);
+                        var o = this.getIndexRangeByPageNum(this.pageNum), a = 0;
+                        this.remoteStuInfo.forEach(function (e, s) {
+                            s >= o.start && s <= o.end && !e.showStatus && (t.$set(t.remoteStuInfo[s], 'showStatus', true), a++);
                         });
-                        this.remoteStuInfo.forEach(function (t, s) {
-                            var o = e.hasPageByUid(t.stuId);
-                            o && e.$set(e.remoteStuInfo[s], 'showStatus', true);
-                        });
-                    },
-                    getIndexRangeByPageNum: function (e) {
-                        return console.info('对象函数 getIndexRangeByPageNum(pageNum)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1 === e ? (console.info('if(pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), {
-                            start: 0,
-                            end: this.pageSize - 2
-                        }) : {
-                            start: (e - 1) * this.pageSize - 1,
-                            end: e * this.pageSize - 2
-                        };
-                    },
-                    hasPageByUid: function (e) {
-                        console.info('对象函数 hasPageByUid(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var t = this.getIndexRangeByPageNum(this.pageNum), s = -1;
-                        return this.remoteStuInfo.forEach(function (t, o) {
-                            t.stuId == e && (s = o);
-                        }), -1 == s ? (console.info('if(uidIndex == -1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false) : s >= t.start && s <= t.end ? (console.info('if(uidIndex >= indexRange.start && uidIndex <= indexRange.end)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true) : (console.info('if(uidIndex >= indexRange.start && uidIndex <= indexRange.end)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false);
-                    },
-                    getValidPageNum: function (e) {
-                        if (console.info('对象函数 getValidPageNum(pageNum)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e <= 1) {
-                            return console.info('if(pageNum <= 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1;
-                        }
-                        var t = this.getIndexRangeByPageNum(e), s = 0;
-                        return this.remoteStuInfo.forEach(function (e, o) {
-                            o >= t.start && o <= t.end && s++;
-                        }), s > 0 ? (console.info('if(pageRangeCount > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e) : this.getValidPageNum(e - 1);
-                    },
-                    collectiveSpeechOpen: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                        0 === a && (this.pageNum = this.getValidPageNum(this.pageNum), this.pageNum, this.changePageRender());
+                        this.remoteStuInfo;
+                    } else {
+                        console.info('if(stuIndex === -1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    }
+                },
+                handleLocalVideoStatus: function () {
+                    console.info('对象函数 handleLocalVideoStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.localStuInfo.displayVideo ? this.rtcClass.enableLocalVideo(false) : this.rtcClass.enableLocalVideo(true);
+                    this.localStuInfo.displayVideo = !this.localStuInfo.displayVideo;
+                    this.localVideoDisplayCache = this.localStuInfo.displayVideo;
+                    this.videoGroup.sendRtcStatus({ displayVideo: this.localStuInfo.displayVideo });
+                    this.$bus.$emit('updateLocalDisplayVideoStatus', this.localStuInfo.displayVideo);
+                    this.videoGroup.sendLogger('学生操作本地视频开关状态, status: '.concat(this.localStuInfo.displayVideo));
+                },
+                handleLocalMicrophoneStatus: function () {
+                    console.info('对象函数 handleLocalMicrophoneStatus,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.localStuInfo.microphoneStatus = !this.localStuInfo.microphoneStatus;
+                    this.rtcClass.muteLocalAudio(!this.localStuInfo.microphoneStatus);
+                    this.$bus.$emit('updateMicrophoneStatus', this.localStuInfo.microphoneStatus);
+                },
+                handleRemoteVideoStatus: function (e, t) {
+                    console.info('对象函数 handleRemoteVideoStatus(stuId, status)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.setRemoteStuVal(e, 'displayVideo', t);
+                    this.videoGroup.sendLogger('学生操作远端视频开关状态, uid: '.concat(e, ' status: ').concat(t));
+                },
+                setRemoteStuVal: function (e, t, s) {
+                    var o = this;
+                    console.info('对象函数 setRemoteStuVal(uid, key, val)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    e ? this.remoteStuInfo.forEach(function (a, n) {
+                        a.stuId == e && o.$set(o.remoteStuInfo[n], t, s);
+                    }) : console.info('if(!uid)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                },
+                handlePrevPage: function () {
+                    console.info('对象函数 handlePrevPage,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    1 !== this.pageNum ? (this.pageNum--, this.changePageRender()) : console.info('if(this.pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                },
+                handleNextPage: function () {
+                    console.info('对象函数 handleNextPage,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.pageNum >= this.pageCount ? console.info('if(this.pageNum >= this.pageCount)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue') : (this.pageNum++, this.changePageRender());
+                },
+                changePageRender: function () {
+                    var e = this;
+                    console.info('对象函数 changePageRender,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    this.remoteStuInfo.forEach(function (t, s) {
+                        e.$set(e.remoteStuInfo[s], 'showStatus', false);
+                    });
+                    this.remoteStuInfo.forEach(function (t, s) {
+                        var o = e.hasPageByUid(t.stuId);
+                        o && e.$set(e.remoteStuInfo[s], 'showStatus', true);
+                    });
+                },
+                getIndexRangeByPageNum: function (e) {
+                    return console.info('对象函数 getIndexRangeByPageNum(pageNum)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1 === e ? (console.info('if(pageNum === 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), {
+                        start: 0,
+                        end: this.pageSize - 2
+                    }) : {
+                        start: (e - 1) * this.pageSize - 1,
+                        end: e * this.pageSize - 2
+                    };
+                },
+                hasPageByUid: function (e) {
+                    console.info('对象函数 hasPageByUid(uid)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var t = this.getIndexRangeByPageNum(this.pageNum), s = -1;
+                    return this.remoteStuInfo.forEach(function (t, o) {
+                        t.stuId == e && (s = o);
+                    }), -1 == s ? (console.info('if(uidIndex == -1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false) : s >= t.start && s <= t.end ? (console.info('if(uidIndex >= indexRange.start && uidIndex <= indexRange.end)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), true) : (console.info('if(uidIndex >= indexRange.start && uidIndex <= indexRange.end)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), false);
+                },
+                getValidPageNum: function (e) {
+                    if (console.info('对象函数 getValidPageNum(pageNum)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e <= 1) {
+                        return console.info('if(pageNum <= 1)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), 1;
+                    }
+                    var t = this.getIndexRangeByPageNum(e), s = 0;
+                    return this.remoteStuInfo.forEach(function (e, o) {
+                        o >= t.start && o <= t.end && s++;
+                    }), s > 0 ? (console.info('if(pageRangeCount > 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), e) : this.getValidPageNum(e - 1);
+                },
+                collectiveSpeechOpen: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         console.info('对象函数 collectiveSpeechOpen,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue'), s = e.getSpeakStudentList(), s.forEach(function (t) {
                                             e.rtcClass.muteRemoteAudio(t, false);
@@ -8295,117 +8295,117 @@
                                     case 4:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    collectiveSpeechClose: function () {
-                        var e = this;
-                        console.info('对象函数 collectiveSpeechClose,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var t = this.getSpeakStudentList();
-                        t.forEach(function (t) {
-                            e.rtcClass.muteRemoteAudio(t, true);
-                        });
-                    },
-                    getSpeakStudentList: function () {
-                        console.info('对象函数 getSpeakStudentList,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
-                        var e, t = [], s = Object(za.a)(this.classStudentMap.keys());
-                        try {
-                            for (s.s(); !(e = s.n()).done;) {
-                                var o = e.value;
-                                t.push(o);
                             }
-                        } catch (a) {
-                            s.e(a);
-                        } finally {
-                            s.f();
+                        }, t);
+                    }))();
+                },
+                collectiveSpeechClose: function () {
+                    var e = this;
+                    console.info('对象函数 collectiveSpeechClose,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var t = this.getSpeakStudentList();
+                    t.forEach(function (t) {
+                        e.rtcClass.muteRemoteAudio(t, true);
+                    });
+                },
+                getSpeakStudentList: function () {
+                    console.info('对象函数 getSpeakStudentList,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/smallClass.vue');
+                    var e, t = [], s = Object(za.a)(this.classStudentMap.keys());
+                    try {
+                        for (s.s(); !(e = s.n()).done;) {
+                            var o = e.value;
+                            t.push(o);
                         }
-                        return t;
+                    } catch (a) {
+                        s.e(a);
+                    } finally {
+                        s.f();
                     }
+                    return t;
                 }
-            }, tn = en, sn = (s('f813'), Object(Ae.a)(tn, Ka, qa, false, null, '0bc5e710', null)), on = sn.exports, an = s('34bb'), nn = {
-                components: {
-                    LargeClass: Wa,
-                    SmallClass: on
+            }
+        }, tn = en, sn = (s('f813'), Object(Ae.a)(tn, Ka, qa, false, null, '0bc5e710', null)), on = sn.exports, an = s('34bb'), nn = {
+            components: {
+                LargeClass: Wa,
+                SmallClass: on
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    }
+                stuInfo: {
+                    type: Object,
+                    default: null
                 },
-                data: function () {
-                    return {
-                        blurTimer: null,
-                        isWindowBlur: null,
-                        startTime: '',
-                        endTime: ''
-                    };
+                rtcConfig: {
+                    type: Object,
+                    default: null
+                }
+            },
+            data: function () {
+                return {
+                    blurTimer: null,
+                    isWindowBlur: null,
+                    startTime: '',
+                    endTime: ''
+                };
+            },
+            computed: {
+                classType: function () {
+                    return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue'), this.options.classType;
+                }
+            },
+            mounted: function () {
+                this.windowBlur();
+            },
+            methods: {
+                windowBlur: function () {
+                    console.info('对象函数 windowBlur,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
+                    var e = this.options, t = (e.commonOption, e.configs), s = e.planInfo;
+                    this.options.isParent || this.options.isAudition ? console.info('if(this.options.isParent || this.options.isAudition)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue') : this.focusHandler({
+                        studentId: this.stuInfo.id,
+                        tutorIrcId: t.tutorIrcId,
+                        planId: s.id
+                    });
                 },
-                computed: {
-                    classType: function () {
-                        return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue'), this.options.classType;
-                    }
+                focusHandler: function (e) {
+                    var t = this, s = e.studentId, o = e.tutorIrcId, a = e.planId;
+                    console.info('对象函数 focusHandler(studentId, tutorIrcId, planId)', s, o, a, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
+                    an.ipcRenderer.on('window_blur', function (e, n) {
+                        if (clearTimeout(t.blurTimer), t.isWindowBlur !== n) {
+                            var r = n ? 5000 : 0, i = JSON.stringify({
+                                type: '180',
+                                isFunction: true,
+                                msg: 'isBlur',
+                                parameter: { isBlur: n }
+                            });
+                            t.blurTimer = setTimeout(function () {
+                                window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: o }], i, wo.a.notice);
+                                n ? t.startTime = new Date().getTime() : (t.endTime = new Date().getTime(), t.startTime && t.reportData({
+                                    studentId: s,
+                                    planId: a
+                                }));
+                                t.isWindowBlur = n;
+                                L.a.send({
+                                    tag: '开小差',
+                                    content: i,
+                                    tutorIrcId: o
+                                });
+                                Rs.a(n);
+                            }, r);
+                        } else {
+                            console.info('if(_this.isWindowBlur === arg)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
+                        }
+                    });
                 },
-                mounted: function () {
-                    this.windowBlur();
-                },
-                methods: {
-                    windowBlur: function () {
-                        console.info('对象函数 windowBlur,filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
-                        var e = this.options, t = (e.commonOption, e.configs), s = e.planInfo;
-                        this.options.isParent || this.options.isAudition ? console.info('if(this.options.isParent || this.options.isAudition)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue') : this.focusHandler({
-                            studentId: this.stuInfo.id,
-                            tutorIrcId: t.tutorIrcId,
-                            planId: s.id
-                        });
-                    },
-                    focusHandler: function (e) {
-                        var t = this, s = e.studentId, o = e.tutorIrcId, a = e.planId;
-                        console.info('对象函数 focusHandler(studentId, tutorIrcId, planId)', s, o, a, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
-                        an.ipcRenderer.on('window_blur', function (e, n) {
-                            if (clearTimeout(t.blurTimer), t.isWindowBlur !== n) {
-                                var r = n ? 5000 : 0, i = JSON.stringify({
-                                        type: '180',
-                                        isFunction: true,
-                                        msg: 'isBlur',
-                                        parameter: { isBlur: n }
-                                    });
-                                t.blurTimer = setTimeout(function () {
-                                    window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: o }], i, wo.a.notice);
-                                    n ? t.startTime = new Date().getTime() : (t.endTime = new Date().getTime(), t.startTime && t.reportData({
-                                        studentId: s,
-                                        planId: a
-                                    }));
-                                    t.isWindowBlur = n;
-                                    L.a.send({
-                                        tag: '开小差',
-                                        content: i,
-                                        tutorIrcId: o
-                                    });
-                                    Rs.a(n);
-                                }, r);
-                            } else {
-                                console.info('if(_this.isWindowBlur === arg)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue');
-                            }
-                        });
-                    },
-                    reportData: function (e) {
-                        var t = this;
-                        return Object(A.a)(Object(P.a)().mark(function s() {
-                            var o, a, n, r, i;
-                            return Object(P.a)().wrap(function (s) {
-                                while (1) {
-                                    switch (s.prev = s.next) {
+                reportData: function (e) {
+                    var t = this;
+                    return Object(A.a)(Object(P.a)().mark(function s() {
+                        var o, a, n, r, i;
+                        return Object(P.a)().wrap(function (s) {
+                            while (1) {
+                                switch (s.prev = s.next) {
                                     case 0:
                                         return o = e.studentId, a = e.planId, console.info('对象函数 reportData(studentId, planId)', o, a, 'filePath:renderer/components/Classroom/LargeClass/base/room/videoGroup/index.vue'), n = t.startTime, r = t.endTime, i = parseInt((r - n) / 1000), s.next = 7, Object(Q.k)({
                                             planId: a,
@@ -8424,146 +8424,146 @@
                                     case 7:
                                     case 'end':
                                         return s.stop();
-                                    }
-                                }
-                            }, s);
-                        }))();
-                    }
-                }
-            }, rn = nn, cn = Object(Ae.a)(rn, sa, oa, false, null, null, null), ln = cn.exports, un = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    ref: 'controller',
-                    staticClass: 'controller-container'
-                }, [
-                    t('div', {
-                        ref: 'controllerBox',
-                        staticClass: 'controller-box'
-                    }, [
-                        t('div', { staticClass: 'time-area' }, [e._v(' ' + e._s(e._f('formatSeconds')(e.curTime)) + '/' + e._s(e._f('formatSeconds')(e.planInfo.etime - e.planInfo.stime)) + ' ')]),
-                        t('div', { staticClass: 'infrastructure-box' }, [t('RaiseHand', { attrs: { options: e.options } })], 1)
-                    ]),
-                    t('ClassInfoDataReport', {
-                        attrs: {
-                            moduleInfo: e.moduleInfo,
-                            planInfo: e.planInfo,
-                            options: e.options
-                        }
-                    })
-                ], 1);
-            }, dn = [], mn = (s('b7ef'), s('e6cf'), s('466d'), function (e) {
-                if (e < 0) {
-                    return console.info('if(value < 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/utils/index.js'), '00:00:00';
-                }
-                var t = parseInt(e), s = 0, o = 0;
-                return t > 60 && (s = parseInt(t / 60), t = parseInt(t % 60), s > 60 && (o = parseInt(s / 60), s = parseInt(s % 60))), ''.concat(parseInt(o) > 9 ? parseInt(o) : '0' + parseInt(o), ':').concat(parseInt(s) > 9 ? parseInt(s) : '0' + parseInt(s), ':').concat(parseInt(t) > 9 ? parseInt(t) : '0' + parseInt(t));
-            }), hn = function () {
-                var e = this, t = e._self._c;
-                return e.classType ? t('div', { staticClass: 'raiseHand' }, [
-                    e.showRaiseHand ? t('div', {
-                        staticClass: 'raiseHand-btn',
-                        class: { disabled: e.disabled },
-                        on: { click: e.handleRaiseHand }
-                    }, [
-                        t('i'),
-                        t('div', { staticClass: 'raiseHand-name' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.raiseHand.buttonName')) + ' ')])
-                    ]) : t('div', { staticClass: 'countdown' }, [
-                        t('span', { staticClass: 'show-time' }, [e._v(e._s(e.countdownTime) + 's')]),
-                        t('a-progress', {
-                            attrs: {
-                                percent: e.percent,
-                                strokeWidth: 20,
-                                showInfo: false,
-                                strokeLinecap: 'square',
-                                strokeColor: {
-                                    from: 'rgba(255, 213, 24, 1)',
-                                    to: 'rgba(255, 170, 10, 1)'
                                 }
                             }
-                        })
-                    ], 1),
-                    !e.multVideoLinkStatus || e.disabled || e.fiveEnd ? e._e() : t('div', { staticClass: 'raiseHand-tips' })
-                ]) : e._e();
-            }, pn = [], fn = {
-                props: {
-                    options: {
-                        type: Object,
-                        default: function () {
+                        }, s);
+                    }))();
+                }
+            }
+        }, rn = nn, cn = Object(Ae.a)(rn, sa, oa, false, null, null, null), ln = cn.exports, un = function () {
+            var e = this, t = e._self._c;
+            return t('div', {
+                ref: 'controller',
+                staticClass: 'controller-container'
+            }, [
+                t('div', {
+                    ref: 'controllerBox',
+                    staticClass: 'controller-box'
+                }, [
+                    t('div', { staticClass: 'time-area' }, [e._v(' ' + e._s(e._f('formatSeconds')(e.curTime)) + '/' + e._s(e._f('formatSeconds')(e.planInfo.etime - e.planInfo.stime)) + ' ')]),
+                    t('div', { staticClass: 'infrastructure-box' }, [t('RaiseHand', { attrs: { options: e.options } })], 1)
+                ]),
+                t('ClassInfoDataReport', {
+                    attrs: {
+                        moduleInfo: e.moduleInfo,
+                        planInfo: e.planInfo,
+                        options: e.options
+                    }
+                })
+            ], 1);
+        }, dn = [], mn = (s('b7ef'), s('e6cf'), s('466d'), function (e) {
+            if (e < 0) {
+                return console.info('if(value < 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/utils/index.js'), '00:00:00';
+            }
+            var t = parseInt(e), s = 0, o = 0;
+            return t > 60 && (s = parseInt(t / 60), t = parseInt(t % 60), s > 60 && (o = parseInt(s / 60), s = parseInt(s % 60))), ''.concat(parseInt(o) > 9 ? parseInt(o) : '0' + parseInt(o), ':').concat(parseInt(s) > 9 ? parseInt(s) : '0' + parseInt(s), ':').concat(parseInt(t) > 9 ? parseInt(t) : '0' + parseInt(t));
+        }), hn = function () {
+            var e = this, t = e._self._c;
+            return e.classType ? t('div', { staticClass: 'raiseHand' }, [
+                e.showRaiseHand ? t('div', {
+                    staticClass: 'raiseHand-btn',
+                    class: { disabled: e.disabled },
+                    on: { click: e.handleRaiseHand }
+                }, [
+                    t('i'),
+                    t('div', { staticClass: 'raiseHand-name' }, [e._v(' ' + e._s(e.$t('classroom.largeClass.raiseHand.buttonName')) + ' ')])
+                ]) : t('div', { staticClass: 'countdown' }, [
+                    t('span', { staticClass: 'show-time' }, [e._v(e._s(e.countdownTime) + 's')]),
+                    t('a-progress', {
+                        attrs: {
+                            percent: e.percent,
+                            strokeWidth: 20,
+                            showInfo: false,
+                            strokeLinecap: 'square',
+                            strokeColor: {
+                                from: 'rgba(255, 213, 24, 1)',
+                                to: 'rgba(255, 170, 10, 1)'
+                            }
                         }
+                    })
+                ], 1),
+                !e.multVideoLinkStatus || e.disabled || e.fiveEnd ? e._e() : t('div', { staticClass: 'raiseHand-tips' })
+            ]) : e._e();
+        }, pn = [], fn = {
+            props: {
+                options: {
+                    type: Object,
+                    default: function () {
                     }
+                }
+            },
+            data: function () {
+                return {
+                    showRaiseHand: true,
+                    countdownTime: 10,
+                    progressTime: 100,
+                    percent: 0,
+                    disabled: false,
+                    teacherType: 'tutor',
+                    fiveEnd: false,
+                    cameraStatus: null,
+                    microphoneStatus: null,
+                    multVideoLinkStatus: false
+                };
+            },
+            computed: {
+                classType: function () {
+                    return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.options.classType;
+                }
+            },
+            watch: {
+                multVideoLinkStatus: function (e) {
+                    var t = this;
+                    e ? setTimeout(function () {
+                        t.fiveEnd = true;
+                    }, 5000) : this.fiveEnd = false;
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('raiseHandForMultVideoLink', function (t) {
+                    console.info('箭头函数 监听 raiseHandForMultVideoLink(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    e.multVideoLinkStatus = t;
+                });
+                this.$bus.$on('raiseHandDisabled', function (t) {
+                    console.info('箭头函数 监听 raiseHandDisabled(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    e.disabled = !!t;
+                });
+                this.$bus.$on('updateLocalDisplayVideoStatus', function (t) {
+                    console.info('箭头函数 监听 updateLocalDisplayVideoStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    e.cameraStatus = t;
+                });
+                this.$bus.$on('updateMicrophoneStatus', function (t) {
+                    console.info('箭头函数 监听 updateMicrophoneStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    e.microphoneStatus = t;
+                });
+                this.$bus.$on('raiseHandSendMessageToTeacher', function (t) {
+                    var s = t.type;
+                    console.info('箭头函数 监听 raiseHandSendMessageToTeacher(type)', s, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    e.sendPeerMessageToTeacher({ type: s });
+                });
+            },
+            methods: {
+                handleRaiseHand: function () {
+                    console.info('对象函数 handleRaiseHand,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    this.showRaiseHand = false;
+                    this.setCountdown();
+                    this.setProgressPercent();
+                    this.sendPeerMessage();
+                    this.sendLogger('学员举手');
                 },
-                data: function () {
-                    return {
-                        showRaiseHand: true,
-                        countdownTime: 10,
-                        progressTime: 100,
-                        percent: 0,
-                        disabled: false,
-                        teacherType: 'tutor',
-                        fiveEnd: false,
-                        cameraStatus: null,
-                        microphoneStatus: null,
-                        multVideoLinkStatus: false
-                    };
+                sendPeerMessage: function () {
+                    console.info('对象函数 sendPeerMessage,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    this.sendPeerMessageToTour();
+                    this.multVideoLinkStatus && this.sendPeerMessageToTeacher({ type: 125 });
                 },
-                computed: {
-                    classType: function () {
-                        return console.info('对象函数 classType,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.options.classType;
-                    }
-                },
-                watch: {
-                    multVideoLinkStatus: function (e) {
-                        var t = this;
-                        e ? setTimeout(function () {
-                            t.fiveEnd = true;
-                        }, 5000) : this.fiveEnd = false;
-                    }
-                },
-                mounted: function () {
+                sendPeerMessageToTour: function () {
                     var e = this;
-                    this.$bus.$on('raiseHandForMultVideoLink', function (t) {
-                        console.info('箭头函数 监听 raiseHandForMultVideoLink(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        e.multVideoLinkStatus = t;
-                    });
-                    this.$bus.$on('raiseHandDisabled', function (t) {
-                        console.info('箭头函数 监听 raiseHandDisabled(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        e.disabled = !!t;
-                    });
-                    this.$bus.$on('updateLocalDisplayVideoStatus', function (t) {
-                        console.info('箭头函数 监听 updateLocalDisplayVideoStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        e.cameraStatus = t;
-                    });
-                    this.$bus.$on('updateMicrophoneStatus', function (t) {
-                        console.info('箭头函数 监听 updateMicrophoneStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        e.microphoneStatus = t;
-                    });
-                    this.$bus.$on('raiseHandSendMessageToTeacher', function (t) {
-                        var s = t.type;
-                        console.info('箭头函数 监听 raiseHandSendMessageToTeacher(type)', s, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        e.sendPeerMessageToTeacher({ type: s });
-                    });
-                },
-                methods: {
-                    handleRaiseHand: function () {
-                        console.info('对象函数 handleRaiseHand,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        this.showRaiseHand = false;
-                        this.setCountdown();
-                        this.setProgressPercent();
-                        this.sendPeerMessage();
-                        this.sendLogger('学员举手');
-                    },
-                    sendPeerMessage: function () {
-                        console.info('对象函数 sendPeerMessage,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        this.sendPeerMessageToTour();
-                        this.multVideoLinkStatus && this.sendPeerMessageToTeacher({ type: 125 });
-                    },
-                    sendPeerMessageToTour: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o, a;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o, a;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 sendPeerMessageToTour,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), t.next = 3, Object(Y.f)();
                                     case 3:
@@ -8590,140 +8590,140 @@
                                     case 9:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    sendPeerMessageToTeacher: function (e) {
-                        var t = e.type;
-                        console.info('对象函数 sendPeerMessageToTeacher(type)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
-                        var s = {
-                            type: t || 125,
-                            status: 6,
-                            stuId: this.options.stuId,
-                            cameraIsOpen: this.cameraStatus ? 1 : 2,
-                            mikeAvailable: this.microphoneStatus ? 1 : 2
-                        };
-                        window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: this.options.configs.teacherIrcId }], JSON.stringify(s), wo.a.notice);
-                    },
-                    setProgressPercent: function () {
-                        var e = this;
-                        if (console.info('对象函数 setProgressPercent,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.progressTime <= 0) {
-                            return console.info('if(this.progressTime <= 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.progressTime = 100;
-                        }
-                        this.progressTime--;
-                        this.percent = this.calcProgressPercent(100, this.progressTime);
-                        var t = setTimeout(function () {
-                            e.setProgressPercent();
-                            clearTimeout(t);
-                            t = null;
-                        }, 100);
-                    },
-                    setCountdown: function () {
-                        var e = this;
-                        if (console.info('对象函数 setCountdown,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.countdownTime <= 0) {
-                            return console.info('if(this.countdownTime <= 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.countdownTime = 10, void (this.showRaiseHand = true);
-                        }
-                        this.countdownTime--;
-                        var t = setTimeout(function () {
-                            e.setCountdown();
-                            clearTimeout(t);
-                            t = null;
-                        }, 1000);
-                    },
-                    calcProgressPercent: function (e, t) {
-                        if (console.info('对象函数 calcProgressPercent(total, completed)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), e = parseInt(e, 10), t = parseInt(t, 10), 0 === e || 0 === t) {
-                            return console.info('if(total === 0 || completed === 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), 0;
-                        }
-                        var s = (e - t) / e * 100;
-                        return parseFloat(s.toFixed(2));
-                    },
-                    sendLogger: function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '';
-                        L.a.send({
-                            tag: 'student.Interact',
-                            content: {
-                                msg: e,
-                                interactType: 'stu_handsup',
-                                interactId: '',
-                                interactStage: t
                             }
-                        });
-                    }
-                }
-            }, vn = fn, gn = (s('db90'), Object(Ae.a)(vn, hn, pn, false, null, '785ce806', null)), Cn = gn.exports, bn = s('1651'), Sn = (bn.a, function () {
-                var e = this, t = e._self._c;
-                return t('div');
-            }), wn = [], yn = {
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    moduleInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    planInfo: {
-                        type: Object,
-                        default: null
-                    }
+                        }, t);
+                    }))();
                 },
-                data: function () {
-                    return {
-                        durationTimestamp: new Date().getTime(),
-                        durationModuleInfo: this.moduleInfo['11'] || null,
-                        timer: null,
-                        kejianStatus: 1,
-                        ircCodeCount: {
-                            0: 0,
-                            1: 0,
-                            2: 0,
-                            3: 0,
-                            4: 0,
-                            5: 0
-                        },
-                        ircCurrentCode: 0,
-                        rtcRoundTripDelayed: 0,
-                        rtcDownlinkPacketLossRate: 0,
-                        cameraStatus: 1
+                sendPeerMessageToTeacher: function (e) {
+                    var t = e.type;
+                    console.info('对象函数 sendPeerMessageToTeacher(type)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue');
+                    var s = {
+                        type: t || 125,
+                        status: 6,
+                        stuId: this.options.stuId,
+                        cameraIsOpen: this.cameraStatus ? 1 : 2,
+                        mikeAvailable: this.microphoneStatus ? 1 : 2
                     };
+                    window.ChatClient.PeerChatManager.sendPeerMessage([{ nickname: this.options.configs.teacherIrcId }], JSON.stringify(s), wo.a.notice);
                 },
-                mounted: function () {
-                    this.initEventListeners();
-                    this.delayDurationPush();
+                setProgressPercent: function () {
+                    var e = this;
+                    if (console.info('对象函数 setProgressPercent,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.progressTime <= 0) {
+                        return console.info('if(this.progressTime <= 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.progressTime = 100;
+                    }
+                    this.progressTime--;
+                    this.percent = this.calcProgressPercent(100, this.progressTime);
+                    var t = setTimeout(function () {
+                        e.setProgressPercent();
+                        clearTimeout(t);
+                        t = null;
+                    }, 100);
                 },
-                methods: {
-                    initEventListeners: function () {
-                        var e = this;
-                        console.info('对象函数 initEventListeners,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                        this.$bus.$on('corewareLoadStatus', function (t) {
-                            console.info('箭头函数 监听 corewareLoadStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                            e.kejianStatus = t.isLocal ? 1 : 2;
-                        });
-                        this.$bus.$on('ircConnectStatus', function (t) {
-                            console.info('箭头函数 监听 ircConnectStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                            e.ircCodeCount[t] = e.ircCodeCount[t] + 1;
-                            e.ircCurrentCode = t;
-                        });
-                        this.$bus.$on('teacherRtcChannelStats', function (t) {
-                            console.info('箭头函数 监听 teacherRtcChannelStats(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                            e.rtcRoundTripDelayed = t.gatewayRtt;
-                            e.rtcDownlinkPacketLossRate = t.rxPacketLossRate;
-                        });
-                        this.$bus.$on('updateLocalDisplayVideoStatus', function (t) {
-                            console.info('箭头函数 监听 updateLocalDisplayVideoStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                            e.cameraStatus = t ? 1 : 2;
-                        });
+                setCountdown: function () {
+                    var e = this;
+                    if (console.info('对象函数 setCountdown,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.countdownTime <= 0) {
+                        return console.info('if(this.countdownTime <= 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), this.countdownTime = 10, void (this.showRaiseHand = true);
+                    }
+                    this.countdownTime--;
+                    var t = setTimeout(function () {
+                        e.setCountdown();
+                        clearTimeout(t);
+                        t = null;
+                    }, 1000);
+                },
+                calcProgressPercent: function (e, t) {
+                    if (console.info('对象函数 calcProgressPercent(total, completed)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), e = parseInt(e, 10), t = parseInt(t, 10), 0 === e || 0 === t) {
+                        return console.info('if(total === 0 || completed === 0)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/components/raiseHand/index.vue'), 0;
+                    }
+                    var s = (e - t) / e * 100;
+                    return parseFloat(s.toFixed(2));
+                },
+                sendLogger: function (e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '';
+                    L.a.send({
+                        tag: 'student.Interact',
+                        content: {
+                            msg: e,
+                            interactType: 'stu_handsup',
+                            interactId: '',
+                            interactStage: t
+                        }
+                    });
+                }
+            }
+        }, vn = fn, gn = (s('db90'), Object(Ae.a)(vn, hn, pn, false, null, '785ce806', null)), Cn = gn.exports, bn = s('1651'), Sn = (bn.a, function () {
+            var e = this, t = e._self._c;
+            return t('div');
+        }), wn = [], yn = {
+            props: {
+                options: {
+                    type: Object,
+                    default: null
+                },
+                moduleInfo: {
+                    type: Object,
+                    default: null
+                },
+                planInfo: {
+                    type: Object,
+                    default: null
+                }
+            },
+            data: function () {
+                return {
+                    durationTimestamp: new Date().getTime(),
+                    durationModuleInfo: this.moduleInfo['11'] || null,
+                    timer: null,
+                    kejianStatus: 1,
+                    ircCodeCount: {
+                        0: 0,
+                        1: 0,
+                        2: 0,
+                        3: 0,
+                        4: 0,
+                        5: 0
                     },
-                    durationPush: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            var s, o, a;
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                    ircCurrentCode: 0,
+                    rtcRoundTripDelayed: 0,
+                    rtcDownlinkPacketLossRate: 0,
+                    cameraStatus: 1
+                };
+            },
+            mounted: function () {
+                this.initEventListeners();
+                this.delayDurationPush();
+            },
+            methods: {
+                initEventListeners: function () {
+                    var e = this;
+                    console.info('对象函数 initEventListeners,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                    this.$bus.$on('corewareLoadStatus', function (t) {
+                        console.info('箭头函数 监听 corewareLoadStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                        e.kejianStatus = t.isLocal ? 1 : 2;
+                    });
+                    this.$bus.$on('ircConnectStatus', function (t) {
+                        console.info('箭头函数 监听 ircConnectStatus(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                        e.ircCodeCount[t] = e.ircCodeCount[t] + 1;
+                        e.ircCurrentCode = t;
+                    });
+                    this.$bus.$on('teacherRtcChannelStats', function (t) {
+                        console.info('箭头函数 监听 teacherRtcChannelStats(data)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                        e.rtcRoundTripDelayed = t.gatewayRtt;
+                        e.rtcDownlinkPacketLossRate = t.rxPacketLossRate;
+                    });
+                    this.$bus.$on('updateLocalDisplayVideoStatus', function (t) {
+                        console.info('箭头函数 监听 updateLocalDisplayVideoStatus(status)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                        e.cameraStatus = t ? 1 : 2;
+                    });
+                },
+                durationPush: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        var s, o, a;
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 durationPush,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue'), s = String(e.planInfo.id), o = 60000, a = 60, e.durationTimestamp = new Date().getTime(), t.next = 7, Object(Q.c)({
                                             planId: s,
@@ -8741,581 +8741,581 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    delayDurationPush: function (e) {
-                        var t = this;
-                        console.info('对象函数 delayDurationPush(interval)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                        this.resetPrevMinuteReportData();
-                        this.timer && clearTimeout(this.timer);
-                        this.timer = setTimeout(function () {
-                            t.durationPush();
-                        }, e);
-                    },
-                    resetPrevMinuteReportData: function () {
-                        console.info('对象函数 resetPrevMinuteReportData,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
-                        this.ircCodeCount = {
-                            0: 0,
-                            1: 0,
-                            2: 0,
-                            3: 0,
-                            4: 0,
-                            5: 0
-                        };
-                        this.kejianStatus = 1;
-                        this.rtcRoundTripDelayed = 0;
-                        this.rtcDownlinkPacketLossRate = 0;
-                        this.ircCurrentCode = 0;
-                    }
+                            }
+                        }, t);
+                    }))();
+                },
+                delayDurationPush: function (e) {
+                    var t = this;
+                    console.info('对象函数 delayDurationPush(interval)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                    this.resetPrevMinuteReportData();
+                    this.timer && clearTimeout(this.timer);
+                    this.timer = setTimeout(function () {
+                        t.durationPush();
+                    }, e);
+                },
+                resetPrevMinuteReportData: function () {
+                    console.info('对象函数 resetPrevMinuteReportData,filePath:renderer/components/Classroom/LargeClass/base/room/controller/components/classInfoDataReport/index.vue');
+                    this.ircCodeCount = {
+                        0: 0,
+                        1: 0,
+                        2: 0,
+                        3: 0,
+                        4: 0,
+                        5: 0
+                    };
+                    this.kejianStatus = 1;
+                    this.rtcRoundTripDelayed = 0;
+                    this.rtcDownlinkPacketLossRate = 0;
+                    this.ircCurrentCode = 0;
                 }
-            }, Pn = yn, An = Object(Ae.a)(Pn, Sn, wn, false, null, null, null), kn = An.exports, Ln = (s('2ef0e'), {
-                components: {
-                    RaiseHand: Cn,
-                    ClassInfoDataReport: kn
-                },
-                filters: {
-                    timer: function (e) {
-                        if (console.info('对象函数 timer(value)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue'), !e) {
-                            return console.info('if(!value)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue'), '00:00:00';
-                        }
-                        e = parseInt(e);
-                        var t = Math.floor(e / 3600), s = Math.floor(e % 3600 / 60), o = e % 60;
-                        return (t >= 10 ? t : '0' + t) + ':' + (s >= 10 ? s : '0' + s) + ':' + (o >= 10 ? o : '0' + o);
-                    },
-                    formatSeconds: mn
-                },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    moduleInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    planInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    isPlayBack: {
-                        type: Number,
-                        default: 0
+            }
+        }, Pn = yn, An = Object(Ae.a)(Pn, Sn, wn, false, null, null, null), kn = An.exports, Ln = (s('2ef0e'), {
+            components: {
+                RaiseHand: Cn,
+                ClassInfoDataReport: kn
+            },
+            filters: {
+                timer: function (e) {
+                    if (console.info('对象函数 timer(value)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue'), !e) {
+                        return console.info('if(!value)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue'), '00:00:00';
                     }
+                    e = parseInt(e);
+                    var t = Math.floor(e / 3600), s = Math.floor(e % 3600 / 60), o = e % 60;
+                    return (t >= 10 ? t : '0' + t) + ':' + (s >= 10 ? s : '0' + s) + ':' + (o >= 10 ? o : '0' + o);
                 },
-                data: function () {
-                    return { curTime: 0 };
+                formatSeconds: mn
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
                 },
-                mounted: function () {
-                    this.options;
-                    this.moduleInfo;
-                    this.planInfo;
-                    this.init();
+                moduleInfo: {
+                    type: Object,
+                    default: null
                 },
-                methods: {
-                    init: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                planInfo: {
+                    type: Object,
+                    default: null
+                },
+                isPlayBack: {
+                    type: Number,
+                    default: 0
+                }
+            },
+            data: function () {
+                return { curTime: 0 };
+            },
+            mounted: function () {
+                this.options;
+                this.moduleInfo;
+                this.planInfo;
+                this.init();
+            },
+            methods: {
+                init: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         console.info('对象函数 init,filePath:renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue'), e.startTime();
                                     case 2:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    startTime: function () {
-                        var e = this;
-                        console.info('对象函数 startTime,filePath:renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue');
-                        setInterval(function () {
-                            e.curTime = new Date().getTime() / 1000 - e.planInfo.stime;
-                        }, 1000);
-                    }
-                }
-            }), In = Ln, xn = (s('bf00'), Object(Ae.a)(In, un, dn, false, null, '6442ac90', null)), On = xn.exports, jn = function () {
-                var e = this, t = e._self._c;
-                return t('div', [
-                    t('CountDown', { attrs: { options: e.options } }),
-                    t('OrientationCoins', { attrs: { options: e.options } }),
-                    t('ContinuousCorrect', { attrs: { options: e.options } }),
-                    t('ClassPraise', { attrs: { options: e.options } }),
-                    t('LiveKickout', { attrs: { options: e.options } }),
-                    t('TutorVideoLink', {
-                        attrs: {
-                            options: e.options,
-                            stuInfo: e.stuInfo,
-                            rtcConfig: e.rtcConfig
-                        }
-                    }),
-                    t('SmallClassRank', { attrs: { options: e.options } }),
-                    t('DeviceTest'),
-                    t('SmallClassGraffitiCorrect'),
-                    t('TeacherOnStage', {
-                        attrs: {
-                            options: e.options,
-                            rtcConfig: e.rtcConfig
-                        }
-                    })
-                ], 1);
-            }, Tn = [], Mn = s('d9de'), Rn = s('cab4'), En = s('ac6d'), Vn = s('6c5d'), Nn = function () {
-                var e = this, t = e._self._c;
-                return e.isShowLink ? t('div', { staticClass: 'tutor-video-link-wrapper' }, [
-                    t('div', {
-                        staticClass: 'tutor-video',
-                        class: {
-                            error: e.isError,
-                            normal: !e.isError
-                        }
-                    }, [
-                        t('div', {
-                            directives: [{
-                                    name: 'show',
-                                    rawName: 'v-show',
-                                    value: !e.isError,
-                                    expression: '!isError'
-                                }],
-                            staticClass: 'tutor-video-container'
-                        }, [t('div', { attrs: { id: e.tutorId } })]),
-                        e.isError ? t('div', { staticClass: 'icon-error' }) : e._e()
-                    ]),
-                    t('div', { staticClass: 'title-bar' }, [
-                        t('div', { staticClass: 'dot' }),
-                        t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.title')) + ' ')])
-                    ]),
-                    t('div', { staticClass: 'video-link-info' }, [e.isError ? t('div', { staticClass: 'tutor-video-error' }, [
-                            t('div', { staticClass: 'notice' }, [
-                                e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.errorMsg')[0])),
-                                t('br'),
-                                e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.errorMsg')[1]) + ' ')
-                            ]),
-                            t('div', {
-                                staticClass: 'button',
-                                on: { click: e.handleExit }
-                            }, [e._v(' ' + e._s(e.$t('common.exit')) + ' ')])
-                        ]) : t('div', [
-                            t('div', { staticClass: 'avatar-info' }, [
-                                t('div', {
-                                    staticClass: 'avatar-tutor',
-                                    class: { 'default-avatar': !e.tutorAvatarUrl }
-                                }, [e.tutorAvatarUrl ? t('img', { attrs: { src: e.tutorAvatarUrl } }) : e._e()]),
-                                t('div', { staticClass: 'icon-vocal-print' }),
-                                t('div', { staticClass: 'avatar-student' }, [t('img', { attrs: { src: e.studentAvatarUrl } })])
-                            ]),
-                            t('div', { staticClass: 'link-time' }, [e._v(e._s(e.formatTime))])
-                        ])])
-                ]) : e._e();
-            }, Dn = [], Bn = function () {
-                function e() {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/rtcClass.js');
-                    Object(g.a)(this, e);
-                    this.options = t.options;
-                    this.rtcConfig = t.rtcConfig;
-                    this.teacherAudioUid = this.rtcConfig.teacherAudioUid;
-                    this.tutorUid = this.options.counselorInfo.id;
-                    this.teacherRtcChannel = window.RTC_COMMON.teacherRtcChannel || null;
-                    this.classRtcChannel = window.RTC_COMMON.classRtcChannel || null;
-                }
-                return Object(C.a)(e, [
-                    {
-                        key: 'tutorVideoLinkStart',
-                        value: function (e) {
-                            this.classRtcChannel.muteRemoteAudioStream(this.tutorUid, false);
-                            this.classRtcChannel.muteRemoteVideoStream(this.tutorUid, false);
-                            this.classRtcChannel.setupRemoteVideo(this.tutorUid, document.getElementById(e));
-                        }
-                    },
-                    {
-                        key: 'tutorVideoLinkEnd',
-                        value: function () {
-                            this.classRtcChannel.muteRemoteAudioStream(this.tutorUid, true);
-                            this.classRtcChannel.muteRemoteVideoStream(this.tutorUid, true);
-                            this.classRtcChannel.destroyRemoteVideo(this.tutorUid, document.getElementById(this.tutorUid));
-                        }
-                    }
-                ]), e;
-            }(), Un = {
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    }
+                            }
+                        }, t);
+                    }))();
                 },
-                computed: {
-                    tutorId: function () {
-                        return console.info('对象函数 tutorId,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), 'remote-'.concat(this.options.counselorInfo.id);
-                    },
-                    tutorAvatarUrl: function () {
-                        return console.info('对象函数 tutorAvatarUrl,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), this.options.counselorInfo.avatar || '';
-                    },
-                    studentAvatarUrl: function () {
-                        return console.info('对象函数 studentAvatarUrl,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), this.stuInfo.avatar || '';
-                    },
-                    formatTime: function () {
-                        console.info('对象函数 formatTime,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        var e = this.timerCounter, t = Math.floor(e / 60), s = e % 60;
-                        return ''.concat(Object(X.u)(t), ':').concat(Object(X.u)(s));
-                    }
-                },
-                data: function () {
-                    return {
-                        isShowLink: false,
-                        isError: false,
-                        isFirstMsg: false,
-                        status: 0,
-                        callback: null,
-                        timerCounter: 0,
-                        timer: null,
-                        highEncoderConfig: {
-                            width: 320,
-                            height: 240,
-                            bitrate: 120,
-                            frameRate: 10
-                        },
-                        lowEncoderConfig: {
-                            bitrate: 80,
-                            frameRate: 10,
-                            width: 160,
-                            height: 120
-                        }
-                    };
-                },
-                mounted: function () {
+                startTime: function () {
                     var e = this;
-                    this.$bus.$on('room.tutorVideoLink', function (t, s) {
-                        console.info('箭头函数 监听 room.tutorVideoLink(noticeContent, callback)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        e.sendLogger('收到辅导连麦消息: '.concat(JSON.stringify(t)));
-                        var o = t.studentId, a = t.status;
-                        if (o == e.stuInfo.id) {
-                            var n, r, i, c;
-                            if (1 == a && (e.isFirstMsg = true), e.status = a, e.callback = s, e.isFirstMsg && 2 == a) {
-                                null === (n = window.RTC_COMMON) || void 0 === n || null === (r = n.classRtcChannel) || void 0 === r || r.setVideoEncoderConfiguration(e.highEncoderConfig);
-                                e.startLink();
-                                Rs.o('', 'guiding_teacher', true);
-                            }
-                            if (e.isFirstMsg && 3 == a) {
-                                null === (i = window.RTC_COMMON) || void 0 === i || null === (c = i.classRtcChannel) || void 0 === c || c.setVideoEncoderConfiguration(e.lowEncoderConfig);
-                                e.endLink();
-                                Rs.o('', 'guiding_teacher', false);
-                            }
-                        } else {
-                            console.info('if(studentId != _this.stuInfo.id)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        }
-                    });
-                },
-                methods: {
-                    startLink: function () {
-                        var e = this;
-                        console.info('对象函数 startLink,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.isShowLink = true;
-                        this.isError = false;
-                        this.timerCounter = 0;
-                        this.rtcClass = new Bn({
-                            options: this.options,
-                            rtcConfig: this.rtcConfig
-                        });
-                        this.addEventListen();
-                        this.$nextTick(function () {
-                            e.$bus.$emit('player.muteTeacherChannelAudio', true);
-                            e.rtcClass.tutorVideoLinkStart(e.tutorId);
-                            e.callback && e.callback({ status: true });
-                            e.startTimerCounter();
-                            e.sendLogger('开始辅导连麦', 'start');
-                        });
-                    },
-                    endLink: function () {
-                        console.info('对象函数 endLink,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.$bus.$emit('player.muteTeacherChannelAudio', false);
-                        this.rtcClass.tutorVideoLinkEnd();
-                        this.removeEventListen();
-                        this.startTimerCounter();
-                        this.isShowLink = false;
-                        this.isError = false;
-                        this.isFirstMsg = false;
-                        this.status = 0;
-                        this.callback && this.callback({ status: false });
-                        this.callback = null;
-                        this.sendLogger('结束辅导连麦', 'end');
-                    },
-                    addEventListen: function () {
-                        console.info('对象函数 addEventListen,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.rtcClass.classRtcChannel.on('remoteVideoStateChanged', this.listenRemoteVideoStateChanged);
-                        this.rtcClass.classRtcChannel.on('connectionStateChanged', this.listenConnectionStateChanged);
-                    },
-                    removeEventListen: function () {
-                        console.info('对象函数 removeEventListen,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.rtcClass.classRtcChannel.off('remoteVideoStateChanged', this.listenRemoteVideoStateChanged);
-                        this.rtcClass.classRtcChannel.off('connectionStateChanged', this.listenConnectionStateChanged);
-                    },
-                    listenRemoteVideoStateChanged: function (e, t, s) {
-                        console.info('对象函数 listenRemoteVideoStateChanged(uid, state, reason)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        var o = this.options.counselorInfo.id;
-                        e == o && (0 == t && 5 == s && (this.isError = true, this.sendLogger('视频显示失败')), 0 == t && 7 == s && this.endLink(), 2 == t && (this.isError = false, this.sendLogger('视频显示成功')));
-                    },
-                    listenConnectionStateChanged: function (e, t) {
-                        console.info('对象函数 listenConnectionStateChanged(state, reason)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        1 !== e && 4 !== e && 5 !== e || (this.isError = true);
-                        3 === e && (this.isError = false);
-                    },
-                    handleExit: function () {
-                        console.info('对象函数 handleExit,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.endLink();
-                        this.sendLogger('学生点击Exit按钮, 主动退出辅导连麦');
-                    },
-                    startTimerCounter: function () {
-                        var e = this;
-                        console.info('对象函数 startTimerCounter,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        this.timer && clearTimeout(this.timer);
-                        this.timer = setTimeout(function () {
-                            ++e.timerCounter;
-                            e.startTimerCounter();
-                        }, 1000);
-                    },
-                    endTimerCounter: function () {
-                        console.info('对象函数 endTimerCounter,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
-                        clearTimeout(this.timer);
-                        this.timer = null;
-                        this.timerCounter = 0;
-                    },
-                    sendLogger: function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '';
-                        L.a.send({
-                            tag: 'student.Interact',
-                            content: {
-                                msg: e,
-                                interactType: 'TutorLinkMic',
-                                interactStage: t
-                            }
-                        });
-                    }
+                    console.info('对象函数 startTime,filePath:renderer/components/Classroom/LargeClass/base/room/controller/live/controller.vue');
+                    setInterval(function () {
+                        e.curTime = new Date().getTime() / 1000 - e.planInfo.stime;
+                    }, 1000);
                 }
-            }, Gn = Un, Hn = (s('ffa1'), Object(Ae.a)(Gn, Nn, Dn, false, null, 'af963950', null)), _n = Hn.exports, Fn = s('e99b'), Wn = function () {
-                var e = this, t = e._self._c;
-                return t('a-modal', {
+            }
+        }), In = Ln, xn = (s('bf00'), Object(Ae.a)(In, un, dn, false, null, '6442ac90', null)), On = xn.exports, jn = function () {
+            var e = this, t = e._self._c;
+            return t('div', [
+                t('CountDown', { attrs: { options: e.options } }),
+                t('OrientationCoins', { attrs: { options: e.options } }),
+                t('ContinuousCorrect', { attrs: { options: e.options } }),
+                t('ClassPraise', { attrs: { options: e.options } }),
+                t('LiveKickout', { attrs: { options: e.options } }),
+                t('TutorVideoLink', {
                     attrs: {
-                        width: 400,
-                        maskClosable: false,
-                        closable: false,
-                        centered: true,
-                        title: e.$t('classroom.modules.deviceTest.dialogTitle'),
-                        dialogClass: 'modal-simple',
-                        okText: e.$t('common.confirm'),
-                        cancelText: e.$t('common.cancel')
-                    },
-                    on: { ok: e.handleOk },
-                    model: {
-                        value: e.visible,
-                        callback: function (t) {
-                            e.visible = t;
-                        },
-                        expression: 'visible'
+                        options: e.options,
+                        stuInfo: e.stuInfo,
+                        rtcConfig: e.rtcConfig
                     }
-                }, [t('div', { staticClass: 'modal-device-test' }, [
-                        t('div', { staticClass: 'device-item' }, [
-                            t('div', { staticClass: 'device-head' }, [
-                                t('div', { staticClass: 'title' }, [
-                                    t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.cameraTitle')) + ' ')]),
-                                    e._v(' ' + e._s(e.cameraStatusInfo.text) + ' ')
-                                ]),
-                                t('div', {
-                                    staticClass: 'icon',
-                                    class: e.cameraStatusInfo.className
-                                })
-                            ]),
-                            t('a-select', {
-                                staticStyle: { width: '340px' },
-                                attrs: {
-                                    value: e.defaultVideoDeviceId,
-                                    'default-value': e.defaultVideoDeviceId,
-                                    suffixIcon: e.suffixIcon
-                                },
-                                on: { change: e.handleChangeVideoDevice },
-                                scopedSlots: e._u([{
-                                        key: 'suffixIcon',
-                                        fn: function () {
-                                            return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
-                                        },
-                                        proxy: true
-                                    }])
-                            }, e._l(e.videoDevices, function (s, o) {
-                                return t('a-select-option', {
-                                    key: o,
-                                    attrs: { value: s.deviceid }
-                                }, [e._v(' ' + e._s(s.devicename) + ' ')]);
-                            }), 1),
-                            e.isMac && false === e.cameraStatus ? t('div', { staticClass: 'authorize-guide' }, [
-                                e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[0]) + ' '),
-                                t('span', { on: { click: e.handleCameraAccess } }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[1]) + ' ')])
-                            ]) : e._e()
-                        ], 1),
-                        t('div', { staticClass: 'device-item' }, [
-                            t('div', { staticClass: 'device-head' }, [
-                                t('div', { staticClass: 'title' }, [
-                                    t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.microphoneTitle')) + ' ')]),
-                                    e._v(' ' + e._s(e.microphoneStatusInfo.text) + ' ')
-                                ]),
-                                t('div', {
-                                    staticClass: 'icon',
-                                    class: e.microphoneStatusInfo.className
-                                })
-                            ]),
-                            t('a-select', {
-                                staticStyle: { width: '340px' },
-                                attrs: {
-                                    value: e.defaultAudioRecordingDeviceId,
-                                    'default-value': e.defaultAudioRecordingDeviceId,
-                                    suffixIcon: e.suffixIcon
-                                },
-                                on: { change: e.handleChangeAudioRecordingDevice },
-                                scopedSlots: e._u([{
-                                        key: 'suffixIcon',
-                                        fn: function () {
-                                            return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
-                                        },
-                                        proxy: true
-                                    }])
-                            }, e._l(e.audioRecordingDevices, function (s, o) {
-                                return t('a-select-option', {
-                                    key: o,
-                                    attrs: { value: s.deviceid }
-                                }, [e._v(' ' + e._s(s.devicename) + ' ')]);
-                            }), 1),
-                            e.isMac && false === e.microphoneStatus ? t('div', { staticClass: 'authorize-guide' }, [
-                                e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[0]) + ' '),
-                                t('span', { on: { click: e.handleMicrophoneAccess } }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[1]) + ' ')])
-                            ]) : e._e()
-                        ], 1),
-                        t('div', { staticClass: 'device-item' }, [
-                            t('div', { staticClass: 'device-head' }, [
-                                t('div', { staticClass: 'title' }, [
-                                    t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.audioTitle')) + ' ')]),
-                                    e._v(' ' + e._s(e.audioPlaybackStatusInfo.text) + ' ')
-                                ]),
-                                t('div', {
-                                    staticClass: 'icon',
-                                    class: e.audioPlaybackStatusInfo.className
-                                })
-                            ]),
-                            t('a-select', {
-                                staticStyle: { width: '340px' },
-                                attrs: {
-                                    value: e.defaultAudioPlaybackDeviceId,
-                                    'default-value': e.defaultAudioPlaybackDeviceId,
-                                    suffixIcon: e.suffixIcon
-                                },
-                                on: { change: e.handleChangeAudioPlaybackDevice },
-                                scopedSlots: e._u([{
-                                        key: 'suffixIcon',
-                                        fn: function () {
-                                            return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
-                                        },
-                                        proxy: true
-                                    }])
-                            }, e._l(e.audioPlaybackDevices, function (s, o) {
-                                return t('a-select-option', {
-                                    key: o,
-                                    attrs: { value: s.deviceid }
-                                }, [e._v(' ' + e._s(s.devicename) + ' ')]);
-                            }), 1)
-                        ], 1)
-                    ])]);
-            }, Kn = [], qn = s('ff07'), zn = s.n(qn), Jn = {
-                data: function () {
-                    return {
-                        isMac: Object(X.s)(),
-                        arrowBottomSvg: zn.a,
-                        visible: false,
-                        rtcEngine: null,
-                        videoDevices: [],
-                        audioRecordingDevices: [],
-                        audioPlaybackDevices: [],
-                        defaultVideoDeviceId: '',
-                        defaultAudioRecordingDeviceId: '',
-                        defaultAudioPlaybackDeviceId: '',
-                        cameraStatus: null,
-                        microphoneStatus: null
-                    };
-                },
-                computed: {
-                    statusNames: function () {
-                        return console.info('对象函数 statusNames,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.$t('classroom.modules.deviceTest.statusNames');
-                    },
-                    cameraStatusInfo: function () {
-                        return console.info('对象函数 cameraStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.videoDevices.length ? true === this.cameraStatus ? (console.info('if(this.cameraStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-success',
-                            text: this.statusNames.usable
-                        }) : false === this.cameraStatus ? (console.info('if(this.cameraStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-warn',
-                            text: this.statusNames.unauthorized
-                        }) : (console.info('if(this.cameraStatus === false)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {}) : (console.info('if(!this.videoDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-error',
-                            text: this.statusNames.disabled
-                        });
-                    },
-                    microphoneStatusInfo: function () {
-                        return console.info('对象函数 microphoneStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.audioRecordingDevices.length ? true === this.microphoneStatus ? (console.info('if(this.microphoneStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-success',
-                            text: this.statusNames.usable
-                        }) : false === this.microphoneStatus ? (console.info('if(this.microphoneStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-warn',
-                            text: this.statusNames.unauthorized
-                        }) : (console.info('if(this.microphoneStatus === false)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {}) : (console.info('if(!this.audioRecordingDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-error',
-                            text: this.statusNames.disabled
-                        });
-                    },
-                    audioPlaybackStatusInfo: function () {
-                        return console.info('对象函数 audioPlaybackStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.audioPlaybackDevices.length ? (console.info('if(!this.audioPlaybackDevices.length)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-success',
-                            text: this.statusNames.usable
-                        }) : (console.info('if(!this.audioPlaybackDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
-                            className: 'icon-error',
-                            text: this.statusNames.disabled
-                        });
+                }),
+                t('SmallClassRank', { attrs: { options: e.options } }),
+                t('DeviceTest'),
+                t('SmallClassGraffitiCorrect'),
+                t('TeacherOnStage', {
+                    attrs: {
+                        options: e.options,
+                        rtcConfig: e.rtcConfig
+                    }
+                })
+            ], 1);
+        }, Tn = [], Mn = s('d9de'), Rn = s('cab4'), En = s('ac6d'), Vn = s('6c5d'), Nn = function () {
+            var e = this, t = e._self._c;
+            return e.isShowLink ? t('div', { staticClass: 'tutor-video-link-wrapper' }, [
+                t('div', {
+                    staticClass: 'tutor-video',
+                    class: {
+                        error: e.isError,
+                        normal: !e.isError
+                    }
+                }, [
+                    t('div', {
+                        directives: [{
+                            name: 'show',
+                            rawName: 'v-show',
+                            value: !e.isError,
+                            expression: '!isError'
+                        }],
+                        staticClass: 'tutor-video-container'
+                    }, [t('div', { attrs: { id: e.tutorId } })]),
+                    e.isError ? t('div', { staticClass: 'icon-error' }) : e._e()
+                ]),
+                t('div', { staticClass: 'title-bar' }, [
+                    t('div', { staticClass: 'dot' }),
+                    t('div', { staticClass: 'title' }, [e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.title')) + ' ')])
+                ]),
+                t('div', { staticClass: 'video-link-info' }, [e.isError ? t('div', { staticClass: 'tutor-video-error' }, [
+                    t('div', { staticClass: 'notice' }, [
+                        e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.errorMsg')[0])),
+                        t('br'),
+                        e._v(' ' + e._s(e.$t('classroom.modules.tutorVideoLink.errorMsg')[1]) + ' ')
+                    ]),
+                    t('div', {
+                        staticClass: 'button',
+                        on: { click: e.handleExit }
+                    }, [e._v(' ' + e._s(e.$t('common.exit')) + ' ')])
+                ]) : t('div', [
+                    t('div', { staticClass: 'avatar-info' }, [
+                        t('div', {
+                            staticClass: 'avatar-tutor',
+                            class: { 'default-avatar': !e.tutorAvatarUrl }
+                        }, [e.tutorAvatarUrl ? t('img', { attrs: { src: e.tutorAvatarUrl } }) : e._e()]),
+                        t('div', { staticClass: 'icon-vocal-print' }),
+                        t('div', { staticClass: 'avatar-student' }, [t('img', { attrs: { src: e.studentAvatarUrl } })])
+                    ]),
+                    t('div', { staticClass: 'link-time' }, [e._v(e._s(e.formatTime))])
+                ])])
+            ]) : e._e();
+        }, Dn = [], Bn = function () {
+            function e() {
+                var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                console.info('函数申明 _default(opts)', t, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/rtcClass.js');
+                Object(g.a)(this, e);
+                this.options = t.options;
+                this.rtcConfig = t.rtcConfig;
+                this.teacherAudioUid = this.rtcConfig.teacherAudioUid;
+                this.tutorUid = this.options.counselorInfo.id;
+                this.teacherRtcChannel = window.RTC_COMMON.teacherRtcChannel || null;
+                this.classRtcChannel = window.RTC_COMMON.classRtcChannel || null;
+            }
+            return Object(C.a)(e, [
+                {
+                    key: 'tutorVideoLinkStart',
+                    value: function (e) {
+                        this.classRtcChannel.muteRemoteAudioStream(this.tutorUid, false);
+                        this.classRtcChannel.muteRemoteVideoStream(this.tutorUid, false);
+                        this.classRtcChannel.setupRemoteVideo(this.tutorUid, document.getElementById(e));
                     }
                 },
-                mounted: function () {
+                {
+                    key: 'tutorVideoLinkEnd',
+                    value: function () {
+                        this.classRtcChannel.muteRemoteAudioStream(this.tutorUid, true);
+                        this.classRtcChannel.muteRemoteVideoStream(this.tutorUid, true);
+                        this.classRtcChannel.destroyRemoteVideo(this.tutorUid, document.getElementById(this.tutorUid));
+                    }
+                }
+            ]), e;
+        }(), Un = {
+            props: {
+                options: {
+                    type: Object,
+                    default: null
+                },
+                stuInfo: {
+                    type: Object,
+                    default: null
+                },
+                rtcConfig: {
+                    type: Object,
+                    default: null
+                }
+            },
+            computed: {
+                tutorId: function () {
+                    return console.info('对象函数 tutorId,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), 'remote-'.concat(this.options.counselorInfo.id);
+                },
+                tutorAvatarUrl: function () {
+                    return console.info('对象函数 tutorAvatarUrl,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), this.options.counselorInfo.avatar || '';
+                },
+                studentAvatarUrl: function () {
+                    return console.info('对象函数 studentAvatarUrl,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue'), this.stuInfo.avatar || '';
+                },
+                formatTime: function () {
+                    console.info('对象函数 formatTime,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    var e = this.timerCounter, t = Math.floor(e / 60), s = e % 60;
+                    return ''.concat(Object(X.u)(t), ':').concat(Object(X.u)(s));
+                }
+            },
+            data: function () {
+                return {
+                    isShowLink: false,
+                    isError: false,
+                    isFirstMsg: false,
+                    status: 0,
+                    callback: null,
+                    timerCounter: 0,
+                    timer: null,
+                    highEncoderConfig: {
+                        width: 320,
+                        height: 240,
+                        bitrate: 120,
+                        frameRate: 10
+                    },
+                    lowEncoderConfig: {
+                        bitrate: 80,
+                        frameRate: 10,
+                        width: 160,
+                        height: 120
+                    }
+                };
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('room.tutorVideoLink', function (t, s) {
+                    console.info('箭头函数 监听 room.tutorVideoLink(noticeContent, callback)', t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    e.sendLogger('收到辅导连麦消息: '.concat(JSON.stringify(t)));
+                    var o = t.studentId, a = t.status;
+                    if (o == e.stuInfo.id) {
+                        var n, r, i, c;
+                        if (1 == a && (e.isFirstMsg = true), e.status = a, e.callback = s, e.isFirstMsg && 2 == a) {
+                            null === (n = window.RTC_COMMON) || void 0 === n || null === (r = n.classRtcChannel) || void 0 === r || r.setVideoEncoderConfiguration(e.highEncoderConfig);
+                            e.startLink();
+                            Rs.o('', 'guiding_teacher', true);
+                        }
+                        if (e.isFirstMsg && 3 == a) {
+                            null === (i = window.RTC_COMMON) || void 0 === i || null === (c = i.classRtcChannel) || void 0 === c || c.setVideoEncoderConfiguration(e.lowEncoderConfig);
+                            e.endLink();
+                            Rs.o('', 'guiding_teacher', false);
+                        }
+                    } else {
+                        console.info('if(studentId != _this.stuInfo.id)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    }
+                });
+            },
+            methods: {
+                startLink: function () {
                     var e = this;
-                    this.$bus.$on('room.deviceTestShow', function () {
-                        console.info('箭头函数 监听 room.deviceTestShow,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        e.sendLogger('点击打开设备检测弹窗');
-                        e.showModal();
+                    console.info('对象函数 startLink,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.isShowLink = true;
+                    this.isError = false;
+                    this.timerCounter = 0;
+                    this.rtcClass = new Bn({
+                        options: this.options,
+                        rtcConfig: this.rtcConfig
+                    });
+                    this.addEventListen();
+                    this.$nextTick(function () {
+                        e.$bus.$emit('player.muteTeacherChannelAudio', true);
+                        e.rtcClass.tutorVideoLinkStart(e.tutorId);
+                        e.callback && e.callback({ status: true });
+                        e.startTimerCounter();
+                        e.sendLogger('开始辅导连麦', 'start');
                     });
                 },
-                methods: {
-                    showModal: function () {
-                        console.info('对象函数 showModal,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.visible = true;
-                        this.rtcEngine = window.RTC_COMMON.rtcEngine;
-                        this.getDevices();
-                        this.getDefaultDevices();
-                        this.getMediaAccess();
+                endLink: function () {
+                    console.info('对象函数 endLink,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.$bus.$emit('player.muteTeacherChannelAudio', false);
+                    this.rtcClass.tutorVideoLinkEnd();
+                    this.removeEventListen();
+                    this.startTimerCounter();
+                    this.isShowLink = false;
+                    this.isError = false;
+                    this.isFirstMsg = false;
+                    this.status = 0;
+                    this.callback && this.callback({ status: false });
+                    this.callback = null;
+                    this.sendLogger('结束辅导连麦', 'end');
+                },
+                addEventListen: function () {
+                    console.info('对象函数 addEventListen,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.rtcClass.classRtcChannel.on('remoteVideoStateChanged', this.listenRemoteVideoStateChanged);
+                    this.rtcClass.classRtcChannel.on('connectionStateChanged', this.listenConnectionStateChanged);
+                },
+                removeEventListen: function () {
+                    console.info('对象函数 removeEventListen,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.rtcClass.classRtcChannel.off('remoteVideoStateChanged', this.listenRemoteVideoStateChanged);
+                    this.rtcClass.classRtcChannel.off('connectionStateChanged', this.listenConnectionStateChanged);
+                },
+                listenRemoteVideoStateChanged: function (e, t, s) {
+                    console.info('对象函数 listenRemoteVideoStateChanged(uid, state, reason)', e, t, s, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    var o = this.options.counselorInfo.id;
+                    e == o && (0 == t && 5 == s && (this.isError = true, this.sendLogger('视频显示失败')), 0 == t && 7 == s && this.endLink(), 2 == t && (this.isError = false, this.sendLogger('视频显示成功')));
+                },
+                listenConnectionStateChanged: function (e, t) {
+                    console.info('对象函数 listenConnectionStateChanged(state, reason)', e, t, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    1 !== e && 4 !== e && 5 !== e || (this.isError = true);
+                    3 === e && (this.isError = false);
+                },
+                handleExit: function () {
+                    console.info('对象函数 handleExit,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.endLink();
+                    this.sendLogger('学生点击Exit按钮, 主动退出辅导连麦');
+                },
+                startTimerCounter: function () {
+                    var e = this;
+                    console.info('对象函数 startTimerCounter,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    this.timer && clearTimeout(this.timer);
+                    this.timer = setTimeout(function () {
+                        ++e.timerCounter;
+                        e.startTimerCounter();
+                    }, 1000);
+                },
+                endTimerCounter: function () {
+                    console.info('对象函数 endTimerCounter,filePath:renderer/components/Classroom/LargeClass/base/room/modules/tutorVideoLink/index.vue');
+                    clearTimeout(this.timer);
+                    this.timer = null;
+                    this.timerCounter = 0;
+                },
+                sendLogger: function (e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '';
+                    L.a.send({
+                        tag: 'student.Interact',
+                        content: {
+                            msg: e,
+                            interactType: 'TutorLinkMic',
+                            interactStage: t
+                        }
+                    });
+                }
+            }
+        }, Gn = Un, Hn = (s('ffa1'), Object(Ae.a)(Gn, Nn, Dn, false, null, 'af963950', null)), _n = Hn.exports, Fn = s('e99b'), Wn = function () {
+            var e = this, t = e._self._c;
+            return t('a-modal', {
+                attrs: {
+                    width: 400,
+                    maskClosable: false,
+                    closable: false,
+                    centered: true,
+                    title: e.$t('classroom.modules.deviceTest.dialogTitle'),
+                    dialogClass: 'modal-simple',
+                    okText: e.$t('common.confirm'),
+                    cancelText: e.$t('common.cancel')
+                },
+                on: { ok: e.handleOk },
+                model: {
+                    value: e.visible,
+                    callback: function (t) {
+                        e.visible = t;
                     },
-                    hideModal: function () {
-                        console.info('对象函数 hideModal,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.visible = false;
-                    },
-                    handleOk: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                    expression: 'visible'
+                }
+            }, [t('div', { staticClass: 'modal-device-test' }, [
+                t('div', { staticClass: 'device-item' }, [
+                    t('div', { staticClass: 'device-head' }, [
+                        t('div', { staticClass: 'title' }, [
+                            t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.cameraTitle')) + ' ')]),
+                            e._v(' ' + e._s(e.cameraStatusInfo.text) + ' ')
+                        ]),
+                        t('div', {
+                            staticClass: 'icon',
+                            class: e.cameraStatusInfo.className
+                        })
+                    ]),
+                    t('a-select', {
+                        staticStyle: { width: '340px' },
+                        attrs: {
+                            value: e.defaultVideoDeviceId,
+                            'default-value': e.defaultVideoDeviceId,
+                            suffixIcon: e.suffixIcon
+                        },
+                        on: { change: e.handleChangeVideoDevice },
+                        scopedSlots: e._u([{
+                            key: 'suffixIcon',
+                            fn: function () {
+                                return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
+                            },
+                            proxy: true
+                        }])
+                    }, e._l(e.videoDevices, function (s, o) {
+                        return t('a-select-option', {
+                            key: o,
+                            attrs: { value: s.deviceid }
+                        }, [e._v(' ' + e._s(s.devicename) + ' ')]);
+                    }), 1),
+                    e.isMac && false === e.cameraStatus ? t('div', { staticClass: 'authorize-guide' }, [
+                        e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[0]) + ' '),
+                        t('span', { on: { click: e.handleCameraAccess } }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[1]) + ' ')])
+                    ]) : e._e()
+                ], 1),
+                t('div', { staticClass: 'device-item' }, [
+                    t('div', { staticClass: 'device-head' }, [
+                        t('div', { staticClass: 'title' }, [
+                            t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.microphoneTitle')) + ' ')]),
+                            e._v(' ' + e._s(e.microphoneStatusInfo.text) + ' ')
+                        ]),
+                        t('div', {
+                            staticClass: 'icon',
+                            class: e.microphoneStatusInfo.className
+                        })
+                    ]),
+                    t('a-select', {
+                        staticStyle: { width: '340px' },
+                        attrs: {
+                            value: e.defaultAudioRecordingDeviceId,
+                            'default-value': e.defaultAudioRecordingDeviceId,
+                            suffixIcon: e.suffixIcon
+                        },
+                        on: { change: e.handleChangeAudioRecordingDevice },
+                        scopedSlots: e._u([{
+                            key: 'suffixIcon',
+                            fn: function () {
+                                return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
+                            },
+                            proxy: true
+                        }])
+                    }, e._l(e.audioRecordingDevices, function (s, o) {
+                        return t('a-select-option', {
+                            key: o,
+                            attrs: { value: s.deviceid }
+                        }, [e._v(' ' + e._s(s.devicename) + ' ')]);
+                    }), 1),
+                    e.isMac && false === e.microphoneStatus ? t('div', { staticClass: 'authorize-guide' }, [
+                        e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[0]) + ' '),
+                        t('span', { on: { click: e.handleMicrophoneAccess } }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.authorizeGuide')[1]) + ' ')])
+                    ]) : e._e()
+                ], 1),
+                t('div', { staticClass: 'device-item' }, [
+                    t('div', { staticClass: 'device-head' }, [
+                        t('div', { staticClass: 'title' }, [
+                            t('span', { staticClass: 'color-gray' }, [e._v(' ' + e._s(e.$t('classroom.modules.deviceTest.audioTitle')) + ' ')]),
+                            e._v(' ' + e._s(e.audioPlaybackStatusInfo.text) + ' ')
+                        ]),
+                        t('div', {
+                            staticClass: 'icon',
+                            class: e.audioPlaybackStatusInfo.className
+                        })
+                    ]),
+                    t('a-select', {
+                        staticStyle: { width: '340px' },
+                        attrs: {
+                            value: e.defaultAudioPlaybackDeviceId,
+                            'default-value': e.defaultAudioPlaybackDeviceId,
+                            suffixIcon: e.suffixIcon
+                        },
+                        on: { change: e.handleChangeAudioPlaybackDevice },
+                        scopedSlots: e._u([{
+                            key: 'suffixIcon',
+                            fn: function () {
+                                return [t('a-icon', { attrs: { component: e.arrowBottomSvg } })];
+                            },
+                            proxy: true
+                        }])
+                    }, e._l(e.audioPlaybackDevices, function (s, o) {
+                        return t('a-select-option', {
+                            key: o,
+                            attrs: { value: s.deviceid }
+                        }, [e._v(' ' + e._s(s.devicename) + ' ')]);
+                    }), 1)
+                ], 1)
+            ])]);
+        }, Kn = [], qn = s('ff07'), zn = s.n(qn), Jn = {
+            data: function () {
+                return {
+                    isMac: Object(X.s)(),
+                    arrowBottomSvg: zn.a,
+                    visible: false,
+                    rtcEngine: null,
+                    videoDevices: [],
+                    audioRecordingDevices: [],
+                    audioPlaybackDevices: [],
+                    defaultVideoDeviceId: '',
+                    defaultAudioRecordingDeviceId: '',
+                    defaultAudioPlaybackDeviceId: '',
+                    cameraStatus: null,
+                    microphoneStatus: null
+                };
+            },
+            computed: {
+                statusNames: function () {
+                    return console.info('对象函数 statusNames,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.$t('classroom.modules.deviceTest.statusNames');
+                },
+                cameraStatusInfo: function () {
+                    return console.info('对象函数 cameraStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.videoDevices.length ? true === this.cameraStatus ? (console.info('if(this.cameraStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-success',
+                        text: this.statusNames.usable
+                    }) : false === this.cameraStatus ? (console.info('if(this.cameraStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-warn',
+                        text: this.statusNames.unauthorized
+                    }) : (console.info('if(this.cameraStatus === false)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {}) : (console.info('if(!this.videoDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-error',
+                        text: this.statusNames.disabled
+                    });
+                },
+                microphoneStatusInfo: function () {
+                    return console.info('对象函数 microphoneStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.audioRecordingDevices.length ? true === this.microphoneStatus ? (console.info('if(this.microphoneStatus === true)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-success',
+                        text: this.statusNames.usable
+                    }) : false === this.microphoneStatus ? (console.info('if(this.microphoneStatus === false)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-warn',
+                        text: this.statusNames.unauthorized
+                    }) : (console.info('if(this.microphoneStatus === false)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {}) : (console.info('if(!this.audioRecordingDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-error',
+                        text: this.statusNames.disabled
+                    });
+                },
+                audioPlaybackStatusInfo: function () {
+                    return console.info('对象函数 audioPlaybackStatusInfo,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), this.audioPlaybackDevices.length ? (console.info('if(!this.audioPlaybackDevices.length)为false,触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-success',
+                        text: this.statusNames.usable
+                    }) : (console.info('if(!this.audioPlaybackDevices.length)为true触发return,path: /renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), {
+                        className: 'icon-error',
+                        text: this.statusNames.disabled
+                    });
+                }
+            },
+            mounted: function () {
+                var e = this;
+                this.$bus.$on('room.deviceTestShow', function () {
+                    console.info('箭头函数 监听 room.deviceTestShow,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    e.sendLogger('点击打开设备检测弹窗');
+                    e.showModal();
+                });
+            },
+            methods: {
+                showModal: function () {
+                    console.info('对象函数 showModal,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.visible = true;
+                    this.rtcEngine = window.RTC_COMMON.rtcEngine;
+                    this.getDevices();
+                    this.getDefaultDevices();
+                    this.getMediaAccess();
+                },
+                hideModal: function () {
+                    console.info('对象函数 hideModal,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.visible = false;
+                },
+                handleOk: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 handleOk,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), t.next = 3, Object(wt.e)(e.defaultVideoDeviceId);
                                     case 3:
@@ -9327,45 +9327,45 @@
                                     case 12:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleChangeVideoDevice: function (e) {
-                        console.info('对象函数 handleChangeVideoDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.defaultVideoDeviceId = e;
-                    },
-                    handleChangeAudioRecordingDevice: function (e) {
-                        console.info('对象函数 handleChangeAudioRecordingDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.defaultAudioRecordingDeviceId = e;
-                    },
-                    handleChangeAudioPlaybackDevice: function (e) {
-                        console.info('对象函数 handleChangeAudioPlaybackDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.defaultAudioPlaybackDeviceId = e;
-                    },
-                    getDevices: function () {
-                        console.info('对象函数 getDevices,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        var e = this.rtcEngine.getVideoDevices(), t = this.rtcEngine.getAudioRecordingDevices(), s = this.rtcEngine.getAudioPlaybackDevices();
-                        this.videoDevices = e;
-                        this.audioRecordingDevices = t;
-                        this.audioPlaybackDevices = s;
-                        this.sendLogger('查询设备列表, 摄像头: '.concat(JSON.stringify(e), ', 麦克风: ').concat(JSON.stringify(t), ', 扬声器: ').concat(JSON.stringify(s)));
-                    },
-                    getDefaultDevices: function () {
-                        console.info('对象函数 getDefaultDevices,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        var e = this.rtcEngine.getCurrentVideoDevice(), t = this.rtcEngine.getCurrentAudioRecordingDevice(), s = this.rtcEngine.getCurrentAudioPlaybackDevice();
-                        this.defaultVideoDeviceId = e;
-                        this.defaultAudioRecordingDeviceId = t;
-                        this.defaultAudioPlaybackDeviceId = s;
-                        this.sendLogger('查询当前默认使用设备, 摄像头: '.concat(e, ', 麦克风: ').concat(t, ', 扬声器: ').concat(s));
-                    },
-                    getMediaAccess: function () {
-                        var e = this;
-                        return Object(A.a)(Object(P.a)().mark(function t() {
-                            return Object(P.a)().wrap(function (t) {
-                                while (1) {
-                                    switch (t.prev = t.next) {
+                            }
+                        }, t);
+                    }))();
+                },
+                handleChangeVideoDevice: function (e) {
+                    console.info('对象函数 handleChangeVideoDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.defaultVideoDeviceId = e;
+                },
+                handleChangeAudioRecordingDevice: function (e) {
+                    console.info('对象函数 handleChangeAudioRecordingDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.defaultAudioRecordingDeviceId = e;
+                },
+                handleChangeAudioPlaybackDevice: function (e) {
+                    console.info('对象函数 handleChangeAudioPlaybackDevice(val)', e, 'filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.defaultAudioPlaybackDeviceId = e;
+                },
+                getDevices: function () {
+                    console.info('对象函数 getDevices,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    var e = this.rtcEngine.getVideoDevices(), t = this.rtcEngine.getAudioRecordingDevices(), s = this.rtcEngine.getAudioPlaybackDevices();
+                    this.videoDevices = e;
+                    this.audioRecordingDevices = t;
+                    this.audioPlaybackDevices = s;
+                    this.sendLogger('查询设备列表, 摄像头: '.concat(JSON.stringify(e), ', 麦克风: ').concat(JSON.stringify(t), ', 扬声器: ').concat(JSON.stringify(s)));
+                },
+                getDefaultDevices: function () {
+                    console.info('对象函数 getDefaultDevices,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    var e = this.rtcEngine.getCurrentVideoDevice(), t = this.rtcEngine.getCurrentAudioRecordingDevice(), s = this.rtcEngine.getCurrentAudioPlaybackDevice();
+                    this.defaultVideoDeviceId = e;
+                    this.defaultAudioRecordingDeviceId = t;
+                    this.defaultAudioPlaybackDeviceId = s;
+                    this.sendLogger('查询当前默认使用设备, 摄像头: '.concat(e, ', 麦克风: ').concat(t, ', 扬声器: ').concat(s));
+                },
+                getMediaAccess: function () {
+                    var e = this;
+                    return Object(A.a)(Object(P.a)().mark(function t() {
+                        return Object(P.a)().wrap(function (t) {
+                            while (1) {
+                                switch (t.prev = t.next) {
                                     case 0:
                                         return console.info('对象函数 getMediaAccess,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue'), t.next = 3, Object($.c)();
                                     case 3:
@@ -9375,147 +9375,147 @@
                                     case 8:
                                     case 'end':
                                         return t.stop();
-                                    }
                                 }
-                            }, t);
-                        }))();
-                    },
-                    handleCameraAccess: function () {
-                        console.info('对象函数 handleCameraAccess,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.sendLogger('点击打开摄像头权限设置');
-                        te.nativeApi.openPreferences('security', 'camera');
-                    },
-                    handleMicrophoneAccess: function () {
-                        console.info('对象函数 handleMicrophoneAccess,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
-                        this.sendLogger('点击打开麦克风权限设置');
-                        te.nativeApi.openPreferences('security', 'microphone');
-                    },
-                    sendLogger: function (e) {
-                        L.a.send({
-                            tag: 'deviceTest',
-                            content: { msg: e }
-                        });
-                    }
-                }
-            }, Qn = Jn, Zn = (s('bcf1'), Object(Ae.a)(Qn, Wn, Kn, false, null, '78fd127c', null)), Yn = Zn.exports, Xn = s('9f80'), $n = s('5f8e'), er = s('4a3d'), tr = {
-                components: {
-                    CountDown: Mn.a,
-                    OrientationCoins: Rn.a,
-                    ContinuousCorrect: En.a,
-                    ClassPraise: Vn.a,
-                    TutorVideoLink: _n,
-                    DeviceTest: Yn,
-                    SmallClassRank: Fn.a,
-                    LiveKickout: Xn.a,
-                    SmallClassGraffitiCorrect: $n.a,
-                    TeacherOnStage: er.a
+                            }
+                        }, t);
+                    }))();
                 },
-                props: {
-                    options: {
-                        type: Object,
-                        default: null
-                    },
-                    stuInfo: {
-                        type: Object,
-                        default: null
-                    },
-                    rtcConfig: {
-                        type: Object,
-                        default: null
-                    }
+                handleCameraAccess: function () {
+                    console.info('对象函数 handleCameraAccess,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.sendLogger('点击打开摄像头权限设置');
+                    te.nativeApi.openPreferences('security', 'camera');
+                },
+                handleMicrophoneAccess: function () {
+                    console.info('对象函数 handleMicrophoneAccess,filePath:renderer/components/Classroom/LargeClass/base/room/modules/deviceTest/index.vue');
+                    this.sendLogger('点击打开麦克风权限设置');
+                    te.nativeApi.openPreferences('security', 'microphone');
+                },
+                sendLogger: function (e) {
+                    L.a.send({
+                        tag: 'deviceTest',
+                        content: { msg: e }
+                    });
                 }
-            }, sr = tr, or = Object(Ae.a)(sr, jn, Tn, false, null, null, null), ar = or.exports, nr = s('1c07');
+            }
+        }, Qn = Jn, Zn = (s('bcf1'), Object(Ae.a)(Qn, Wn, Kn, false, null, '78fd127c', null)), Yn = Zn.exports, Xn = s('9f80'), $n = s('5f8e'), er = s('4a3d'), tr = {
+            components: {
+                CountDown: Mn.a,
+                OrientationCoins: Rn.a,
+                ContinuousCorrect: En.a,
+                ClassPraise: Vn.a,
+                TutorVideoLink: _n,
+                DeviceTest: Yn,
+                SmallClassRank: Fn.a,
+                LiveKickout: Xn.a,
+                SmallClassGraffitiCorrect: $n.a,
+                TeacherOnStage: er.a
+            },
+            props: {
+                options: {
+                    type: Object,
+                    default: null
+                },
+                stuInfo: {
+                    type: Object,
+                    default: null
+                },
+                rtcConfig: {
+                    type: Object,
+                    default: null
+                }
+            }
+        }, sr = tr, or = Object(Ae.a)(sr, jn, Tn, false, null, null, null), ar = or.exports, nr = s('1c07');
         v.a.use(so.a);
         var rr = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return console.info('函数申明 Room(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/room/live.js'), Object(g.a)(this, s), e = t.call(this), e.options = o, e.initRoom(), e;
-                }
-                return Object(C.a)(s, [
-                    {
-                        key: 'initRoom',
-                        value: function () {
-                            this.options;
-                            var e = this.options, t = e.videoGroupDom, s = e.controllerDom, o = e.headerDom, a = e.roomModulesDom;
-                            this.videoGroup = this.init(t, ln);
-                            this.controllerVm = this.init(s, On);
-                            this.headerVm = this.init(o, ta);
-                            this.roomModulesVm = this.init(a, ar);
-                        }
-                    },
-                    {
-                        key: 'init',
-                        value: function (e, t) {
-                            var s = this.createVueRoom(t);
-                            return this.render(e, s), s;
-                        }
-                    },
-                    {
-                        key: 'createVueRoom',
-                        value: function (e) {
-                            var t = v.a.extend(e), s = null, o = this.createRoomProps();
-                            return s = new t({
-                                i18n: se.b,
-                                propsData: o
-                            }), s.$mount(), s;
-                        }
-                    },
-                    {
-                        key: 'createRoomProps',
-                        value: function () {
-                            this.options;
-                            var e = this.options.roomMessage, t = e.moduleInfo, s = e.roomInfo, o = {
-                                    options: s.commonOption,
-                                    stuInfo: s.stuInfo,
-                                    moduleInfo: t,
-                                    planId: s.planInfo.id,
-                                    planName: s.planInfo.name,
-                                    skinType: s.configs.skinType,
-                                    isPlayBack: s.isPlayBack,
-                                    playerOptions: s.playerOptions,
-                                    planInfo: s.planInfo,
-                                    rtcConfig: s.configs.rtcConfig
-                                };
-                            return o;
-                        }
-                    },
-                    {
-                        key: 'eventHandler',
-                        value: function (e) {
-                        }
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e, o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return console.info('函数申明 Room(options)', o, 'filePath:renderer/components/Classroom/LargeClass/base/room/live.js'), Object(g.a)(this, s), e = t.call(this), e.options = o, e.initRoom(), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'initRoom',
+                    value: function () {
+                        this.options;
+                        var e = this.options, t = e.videoGroupDom, s = e.controllerDom, o = e.headerDom, a = e.roomModulesDom;
+                        this.videoGroup = this.init(t, ln);
+                        this.controllerVm = this.init(s, On);
+                        this.headerVm = this.init(o, ta);
+                        this.roomModulesVm = this.init(a, ar);
                     }
-                ]), s;
-            }(nr.a), ir = s('8138'), cr = s('5e36'), lr = s('6ce8'), ur = function (e) {
-                Object(b.a)(s, e);
-                var t = Object(S.a)(s);
-                function s() {
-                    var e;
-                    return console.info('函数申明 InteractionHandler, filePath:renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), Object(g.a)(this, s), e = t.call(this), e.options = null, e.isAudition = false, e.interactionList = wo.b, e.submit = false, e.tutorVideoLinkStatus = false, e.interactionMap = new Map(), e;
+                },
+                {
+                    key: 'init',
+                    value: function (e, t) {
+                        var s = this.createVueRoom(t);
+                        return this.render(e, s), s;
+                    }
+                },
+                {
+                    key: 'createVueRoom',
+                    value: function (e) {
+                        var t = v.a.extend(e), s = null, o = this.createRoomProps();
+                        return s = new t({
+                            i18n: se.b,
+                            propsData: o
+                        }), s.$mount(), s;
+                    }
+                },
+                {
+                    key: 'createRoomProps',
+                    value: function () {
+                        this.options;
+                        var e = this.options.roomMessage, t = e.moduleInfo, s = e.roomInfo, o = {
+                            options: s.commonOption,
+                            stuInfo: s.stuInfo,
+                            moduleInfo: t,
+                            planId: s.planInfo.id,
+                            planName: s.planInfo.name,
+                            skinType: s.configs.skinType,
+                            isPlayBack: s.isPlayBack,
+                            playerOptions: s.playerOptions,
+                            planInfo: s.planInfo,
+                            rtcConfig: s.configs.rtcConfig
+                        };
+                        return o;
+                    }
+                },
+                {
+                    key: 'eventHandler',
+                    value: function (e) {
+                    }
                 }
-                return Object(C.a)(s, [
-                    {
-                        key: 'eventHandler',
-                        value: function (e) {
-                            var t = e.type, s = e.data, o = e.roomMessage;
-                            this.options = o;
-                            this.isAudition = o.roomInfo.commonOption.isAudition;
-                            'onRecvRoomDataUpdateNotice' === t && this.handleRoomNotice(s);
-                        }
-                    },
-                    {
-                        key: 'handleRoomNotice',
-                        value: function (e) {
-                            var t = this;
-                            if (e.datas) {
-                                var s = !e.msgId;
-                                e.datas.forEach(function () {
-                                    var e = Object(A.a)(Object(P.a)().mark(function e(o, a) {
-                                        var n, r, i, c, l, u, d, m, h, p, f, g, C, b, S, w, y, A, k, I, x, O, j, T, M, R;
-                                        return Object(P.a)().wrap(function (e) {
-                                            while (1) {
-                                                switch (e.prev = e.next) {
+            ]), s;
+        }(nr.a), ir = s('8138'), cr = s('5e36'), lr = s('6ce8'), ur = function (e) {
+            Object(b.a)(s, e);
+            var t = Object(S.a)(s);
+            function s() {
+                var e;
+                return console.info('函数申明 InteractionHandler, filePath:renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), Object(g.a)(this, s), e = t.call(this), e.options = null, e.isAudition = false, e.interactionList = wo.b, e.submit = false, e.tutorVideoLinkStatus = false, e.interactionMap = new Map(), e;
+            }
+            return Object(C.a)(s, [
+                {
+                    key: 'eventHandler',
+                    value: function (e) {
+                        var t = e.type, s = e.data, o = e.roomMessage;
+                        this.options = o;
+                        this.isAudition = o.roomInfo.commonOption.isAudition;
+                        'onRecvRoomDataUpdateNotice' === t && this.handleRoomNotice(s);
+                    }
+                },
+                {
+                    key: 'handleRoomNotice',
+                    value: function (e) {
+                        var t = this;
+                        if (e.datas) {
+                            var s = !e.msgId;
+                            e.datas.forEach(function () {
+                                var e = Object(A.a)(Object(P.a)().mark(function e(o, a) {
+                                    var n, r, i, c, l, u, d, m, h, p, f, g, C, b, S, w, y, A, k, I, x, O, j, T, M, R;
+                                    return Object(P.a)().wrap(function (e) {
+                                        while (1) {
+                                            switch (e.prev = e.next) {
                                                 case 0:
                                                     if (!t.isAudition || !cr.a.includes(a)) {
                                                         e.next = 3;
@@ -9549,12 +9549,12 @@
                                                     }), e.abrupt('return');
                                                 case 23:
                                                     if (u = '收到KV消息('.concat(s ? '历史' : '实时', ') => ').concat(a), L.a.send({
-                                                            tag: 'irc',
-                                                            content: {
-                                                                msg: u,
-                                                                params: i
-                                                            }
-                                                        }), 'countDown' !== a) {
+                                                        tag: 'irc',
+                                                        content: {
+                                                            msg: u,
+                                                            params: i
+                                                        }
+                                                    }), 'countDown' !== a) {
                                                         e.next = 29;
                                                         break;
                                                     }
@@ -9701,34 +9701,34 @@
                                                 case 112:
                                                 case 'end':
                                                     return e.stop();
-                                                }
                                             }
-                                        }, e);
-                                    }));
-                                    return function (t, s) {
-                                        return e.apply(this, arguments);
-                                    };
-                                }());
-                            } else {
-                                console.info('if(!data.datas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js');
-                            }
+                                        }
+                                    }, e);
+                                }));
+                                return function (t, s) {
+                                    return e.apply(this, arguments);
+                                };
+                            }());
+                        } else {
+                            console.info('if(!data.datas)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js');
                         }
-                    },
-                    {
-                        key: 'addExtraTimeParams',
-                        value: function (e) {
-                            this.interactionContent.sendTime = e.sendTime < 1000 * window._requestBasicEnterServerTime ? 1000 * window._requestBasicEnterServerTime + (new Date().getTime() - window._requestBasicTime) : e.sendTime;
-                            this.interactionContent.getIrcLocalTime = new Date().getTime();
-                        }
-                    },
-                    {
-                        key: 'render',
-                        value: function () {
-                            var e = Object(A.a)(Object(P.a)().mark(function e(t) {
-                                var s, o, a, n, r, i, c, l;
-                                return Object(P.a)().wrap(function (e) {
-                                    while (1) {
-                                        switch (e.prev = e.next) {
+                    }
+                },
+                {
+                    key: 'addExtraTimeParams',
+                    value: function (e) {
+                        this.interactionContent.sendTime = e.sendTime < 1000 * window._requestBasicEnterServerTime ? 1000 * window._requestBasicEnterServerTime + (new Date().getTime() - window._requestBasicTime) : e.sendTime;
+                        this.interactionContent.getIrcLocalTime = new Date().getTime();
+                    }
+                },
+                {
+                    key: 'render',
+                    value: function () {
+                        var e = Object(A.a)(Object(P.a)().mark(function e(t) {
+                            var s, o, a, n, r, i, c, l;
+                            return Object(P.a)().wrap(function (e) {
+                                while (1) {
+                                    switch (e.prev = e.next) {
                                         case 0:
                                             if (s = t.key, o = t.isHistory, a = t.noticeContent, n = t.sendTime, r = this.interactionList[s], !r) {
                                                 e.next = 11;
@@ -9750,40 +9750,40 @@
                                         case 12:
                                         case 'end':
                                             return e.stop();
-                                        }
                                     }
-                                }, e, this);
-                            }));
-                            function t(t) {
-                                return console.info('函数申明 render(_x3)', t, 'filePath:renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), e.apply(this, arguments);
-                            }
-                            return t;
-                        }()
-                    },
-                    {
-                        key: 'destroy',
-                        value: function (e) {
-                            var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1], s = this.interactionMap.get(e);
-                            if (s) {
-                                var o = s.instance, a = s.ircMsg;
-                                if (this.interactionMap.delete(e), o.vm.destroyInteraction) {
-                                    return console.info('if(interaction.vm.destroyInteraction)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), void o.vm.destroyInteraction({
-                                        ircMsg: a,
-                                        isNeedSubmit: t
-                                    });
                                 }
-                                o.destroy({
-                                    options: this.options,
-                                    submit: this.submit,
-                                    ircMsg: a
+                            }, e, this);
+                        }));
+                        function t(t) {
+                            return console.info('函数申明 render(_x3)', t, 'filePath:renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), e.apply(this, arguments);
+                        }
+                        return t;
+                    }()
+                },
+                {
+                    key: 'destroy',
+                    value: function (e) {
+                        var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1], s = this.interactionMap.get(e);
+                        if (s) {
+                            var o = s.instance, a = s.ircMsg;
+                            if (this.interactionMap.delete(e), o.vm.destroyInteraction) {
+                                return console.info('if(interaction.vm.destroyInteraction)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js'), void o.vm.destroyInteraction({
+                                    ircMsg: a,
+                                    isNeedSubmit: t
                                 });
-                            } else {
-                                console.info('if(!interactionObj)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js');
                             }
+                            o.destroy({
+                                options: this.options,
+                                submit: this.submit,
+                                ircMsg: a
+                            });
+                        } else {
+                            console.info('if(!interactionObj)为true触发return,path: /renderer/components/Classroom/LargeClass/base/interaction-handler/index.js');
                         }
                     }
-                ]), s;
-            }(ir.a);
+                }
+            ]), s;
+        }(ir.a);
         s('e8a0');
         s('0b2c');
         window.RTC_COMMON = { RtcEngine: p.a };
@@ -9809,9 +9809,9 @@
                 options: {}
             },
             Player: [{
-                    module: Yt,
-                    options: {}
-                }],
+                module: Yt,
+                options: {}
+            }],
             SignalService: {
                 module: it.a,
                 options: {}
@@ -9825,9 +9825,9 @@
                 options: {}
             },
             Room: [{
-                    module: rr,
-                    options: {}
-                }],
+                module: rr,
+                options: {}
+            }],
             ExceptionHandler: {
                 module: eo,
                 options: {}
@@ -9869,99 +9869,99 @@
         'use strict';
         s('c7cd');
         var o = function () {
-                var e = this, t = e._self._c;
-                return t('div', {
-                    staticClass: 'toolbar',
-                    class: [{
-                            transparent: e.transparent,
-                            fixed: e.fixed,
-                            'white-button': e.whiteButton,
-                            'theme-dark': e.darkTheme
-                        }],
-                    attrs: { 'data-log': '原生菜单栏' }
-                }, [
-                    t('div', {
-                        staticClass: 'drag-bar',
-                        attrs: { 'data-log': 'drag-bar' }
-                    }),
-                    t('WindowsActionBar')
-                ], 1);
-            }, a = [], n = function () {
-                var e = this, t = e._self._c;
-                return 'win' === e.platform ? t('div', {
-                    staticClass: 'windows-action-bar',
-                    attrs: { 'data-log': 'window菜单栏' }
-                }, [
-                    t('div', {
-                        staticClass: 'item',
-                        attrs: { 'data-log': '最小化' },
-                        on: { click: e.handleMinimizeWindow }
-                    }, [t('span', { staticClass: 'icon icon-minimize' })]),
-                    e.disabledMaximize ? e._e() : t('div', {
-                        staticClass: 'item',
-                        attrs: { 'data-log': '最大化' },
-                        on: { click: e.handleMaximizeWindow }
-                    }, [e.isMaximized ? t('span', { staticClass: 'icon icon-exit-full-screen' }) : t('span', { staticClass: 'icon icon-full-screen' })]),
-                    t('div', {
-                        staticClass: 'item',
-                        attrs: { 'data-log': '关闭' },
-                        on: { click: e.handleCloseWindow }
-                    }, [t('span', { staticClass: 'icon icon-close' })])
-                ]) : e._e();
-            }, r = [], i = s('0a4b'), c = s('e39c'), l = (s('18b0'), {
-                name: 'WindowsActionBar',
-                data: function () {
-                    return {
-                        platform: Object(c.k)(),
-                        isMaximized: false
-                    };
+            var e = this, t = e._self._c;
+            return t('div', {
+                staticClass: 'toolbar',
+                class: [{
+                    transparent: e.transparent,
+                    fixed: e.fixed,
+                    'white-button': e.whiteButton,
+                    'theme-dark': e.darkTheme
+                }],
+                attrs: { 'data-log': '原生菜单栏' }
+            }, [
+                t('div', {
+                    staticClass: 'drag-bar',
+                    attrs: { 'data-log': 'drag-bar' }
+                }),
+                t('WindowsActionBar')
+            ], 1);
+        }, a = [], n = function () {
+            var e = this, t = e._self._c;
+            return 'win' === e.platform ? t('div', {
+                staticClass: 'windows-action-bar',
+                attrs: { 'data-log': 'window菜单栏' }
+            }, [
+                t('div', {
+                    staticClass: 'item',
+                    attrs: { 'data-log': '最小化' },
+                    on: { click: e.handleMinimizeWindow }
+                }, [t('span', { staticClass: 'icon icon-minimize' })]),
+                e.disabledMaximize ? e._e() : t('div', {
+                    staticClass: 'item',
+                    attrs: { 'data-log': '最大化' },
+                    on: { click: e.handleMaximizeWindow }
+                }, [e.isMaximized ? t('span', { staticClass: 'icon icon-exit-full-screen' }) : t('span', { staticClass: 'icon icon-full-screen' })]),
+                t('div', {
+                    staticClass: 'item',
+                    attrs: { 'data-log': '关闭' },
+                    on: { click: e.handleCloseWindow }
+                }, [t('span', { staticClass: 'icon icon-close' })])
+            ]) : e._e();
+        }, r = [], i = s('0a4b'), c = s('e39c'), l = (s('18b0'), {
+            name: 'WindowsActionBar',
+            data: function () {
+                return {
+                    platform: Object(c.k)(),
+                    isMaximized: false
+                };
+            },
+            methods: {
+                handleMinimizeWindow: function () {
+                    console.info('对象函数 handleMinimizeWindow,filePath:renderer/components/Common/windowsActionBar.vue');
+                    i.nativeApi.minimizeWindow();
                 },
-                methods: {
-                    handleMinimizeWindow: function () {
-                        console.info('对象函数 handleMinimizeWindow,filePath:renderer/components/Common/windowsActionBar.vue');
-                        i.nativeApi.minimizeWindow();
-                    },
-                    handleMaximizeWindow: function () {
-                        var e = this;
-                        console.info('对象函数 handleMaximizeWindow,filePath:renderer/components/Common/windowsActionBar.vue');
-                        i.nativeApi.getWindowState(function (t) {
-                            console.info('箭头函数 getWindowState(windwoState)', t, 'filePath:renderer/components/Common/windowsActionBar.vue');
-                            'isMaximized' === t ? (i.nativeApi.normalWindow(), e.isMaximized = false) : (i.nativeApi.maximizeWindow(), e.isMaximized = true);
-                        });
-                    },
-                    handleCloseWindow: function () {
-                        console.info('对象函数 handleCloseWindow,filePath:renderer/components/Common/windowsActionBar.vue');
-                        localStorage.removeItem('largeClassTestCoverage');
-                        localStorage.removeItem('smallClassTestCoverage');
-                        i.nativeApi.closeWindow(true);
-                    }
+                handleMaximizeWindow: function () {
+                    var e = this;
+                    console.info('对象函数 handleMaximizeWindow,filePath:renderer/components/Common/windowsActionBar.vue');
+                    i.nativeApi.getWindowState(function (t) {
+                        console.info('箭头函数 getWindowState(windwoState)', t, 'filePath:renderer/components/Common/windowsActionBar.vue');
+                        'isMaximized' === t ? (i.nativeApi.normalWindow(), e.isMaximized = false) : (i.nativeApi.maximizeWindow(), e.isMaximized = true);
+                    });
+                },
+                handleCloseWindow: function () {
+                    console.info('对象函数 handleCloseWindow,filePath:renderer/components/Common/windowsActionBar.vue');
+                    localStorage.removeItem('largeClassTestCoverage');
+                    localStorage.removeItem('smallClassTestCoverage');
+                    i.nativeApi.closeWindow(true);
                 }
-            }), u = l, d = (s('97e5'), s('2877')), m = Object(d.a)(u, n, r, false, null, '6d913dee', null), h = m.exports, p = {
-                name: 'Toolbar',
-                components: { WindowsActionBar: h },
-                props: {
-                    transparent: {
-                        default: false,
-                        type: Boolean
-                    },
-                    fixed: {
-                        default: false,
-                        type: Boolean
-                    },
-                    whiteButton: {
-                        default: false,
-                        type: Boolean
-                    },
-                    disabledMaximize: {
-                        default: false,
-                        type: Boolean
-                    },
-                    darkTheme: {
-                        default: false,
-                        type: Boolean
-                    }
+            }
+        }), u = l, d = (s('97e5'), s('2877')), m = Object(d.a)(u, n, r, false, null, '6d913dee', null), h = m.exports, p = {
+            name: 'Toolbar',
+            components: { WindowsActionBar: h },
+            props: {
+                transparent: {
+                    default: false,
+                    type: Boolean
+                },
+                fixed: {
+                    default: false,
+                    type: Boolean
+                },
+                whiteButton: {
+                    default: false,
+                    type: Boolean
+                },
+                disabledMaximize: {
+                    default: false,
+                    type: Boolean
+                },
+                darkTheme: {
+                    default: false,
+                    type: Boolean
                 }
-            }, f = p, v = (s('3ed8'), Object(d.a)(f, o, a, false, null, '3bd2c296', null));
+            }
+        }, f = p, v = (s('3ed8'), Object(d.a)(f, o, a, false, null, '3bd2c296', null));
         t.a = v.exports;
     },
     e4e0: function (e, t, s) {
@@ -10028,13 +10028,13 @@
             var s = e.b, a = e.branchMap;
             s && Object.entries(s).forEach(function (e) {
                 var s, i, c, l, u, d, h, p, f, v, g = o(e, 2), C = g[0], b = g[1], S = b.reduce(function (e, t) {
-                        return e + t;
-                    }, 0), w = a[C].locations;
+                    return e + t;
+                }, 0), w = a[C].locations;
                 if (S > 0 || 0 === S && 1 === b.length) {
                     for ('if' === a[C].type && 2 === b.length && 1 === w.length && 0 === b[1] && (w[1] = {
-                            start: {},
-                            end: {}
-                        }), s = 0; s < b.length && s < w.length; s += 1) {
+                        start: {},
+                        end: {}
+                    }), s = 0; s < b.length && s < w.length; s += 1) {
                         if (i = b[s], c = w[s], l = c.start.column, u = c.end.column + 1, d = c.start.line, h = c.end.line, p = '\x01span class="branch-' + s + ' ' + (c.skip ? 'cbranch-skip' : 'cbranch-no') + '"' + m('branch not covered') + '\x02', f = '\x01/span\x02', 0 === i && void 0 === d && 'if' === a[C].type) {
                             var y = w[s - 1];
                             l = y.start.column;
@@ -10051,13 +10051,13 @@
             var s, o;
             try {
                 var n = t.getSource(e.path), r = n.split(/(?:\r?\n)|\r/), i = 0, c = r.map(function (e) {
-                        return i += 1, {
-                            line: i,
-                            covered: 'neutral',
-                            hits: 0,
-                            text: new a(e, true)
-                        };
-                    });
+                    return i += 1, {
+                        line: i,
+                        covered: 'neutral',
+                        hits: 0,
+                        text: new a(e, true)
+                    };
+                });
                 return c.unshift({
                     line: 0,
                     covered: null,
@@ -10076,9 +10076,9 @@
                 };
             } catch (l) {
                 return s = [l.message], o = [{
-                        covered: 'no',
-                        hits: 0
-                    }], String(l.stack || '').split(/\r?\n/).forEach(function (e) {
+                    covered: 'no',
+                    hits: 0
+                }], String(l.stack || '').split(/\r?\n/).forEach(function (e) {
                     s.push(e);
                     o.push({
                         covered: 'no',

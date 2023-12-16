@@ -305,11 +305,31 @@
 .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item {
     width: 25%;
     float: left;
-    -webkit-box-align: center .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows, .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item;
-    -webkit-align-items: center .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows, .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item;
-    -moz-box-align: center .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows, .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item;
-    -ms-flex-align: center .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows, .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item;
-    align-items: center .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows, .talqs .talqs_options .talqs_options_columns_4 .talqs_options_columns_item
+    -webkit-box-align: center;
+    talqs: talqs_options;
+    talqs_options_list_4: talqs_options_rows, ;
+    talqs: talqs_options;
+    talqs_options_columns_4: talqs_options_columns_item;
+    -webkit-align-items: center;
+    talqs: talqs_options;
+    talqs_options_list_4: talqs_options_rows, ;
+    talqs: talqs_options;
+    talqs_options_columns_4: talqs_options_columns_item;
+    -moz-box-align: center;
+    talqs: talqs_options;
+    talqs_options_list_4: talqs_options_rows, ;
+    talqs: talqs_options;
+    talqs_options_columns_4: talqs_options_columns_item;
+    -ms-flex-align: center;
+    talqs: talqs_options;
+    talqs_options_list_4: talqs_options_rows, ;
+    talqs: talqs_options;
+    talqs_options_columns_4: talqs_options_columns_item;
+    align-items: center;
+    talqs: talqs_options;
+    talqs_options_list_4: talqs_options_rows, ;
+    talqs: talqs_options;
+    talqs_options_columns_4: talqs_options_columns_item
 }
 
 .talqs .talqs_options .talqs_options_list_4 .talqs_options_rows :nth-child(4n+5),
