@@ -1,0 +1,36 @@
+{
+  "name": "thinkacademy",
+  "productName": "ThinkAcademy",
+  "description": "ThinkAcademy Student Client",
+  "version": "2.14.0",
+  "private": true,
+  "main": "background.js",
+  "author": "Tal Education Technology Co., Ltd.",
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
+    "lodash.get": "^4.4.2",
+    "lodash.throttle": "^4.1.1",
+    "loudness": "^0.4.1",
+    "ws": "^7.3.1"
+  },
+  "overrides": {
+    "vue-cli-plugin-electron-builder": {
+      "electron-builder": "^23.0.3"
+    }
+  },
+  "resolutions": {
+    "vue-cli-plugin-electron-builder/electron-builder": "^23.0.3"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
