@@ -1,1 +1,5 @@
-
+ThinkAcademy uses a system of coins to reward its students for purchasing classes. I've looked into the code and it appears coins are handled server side with a "red packet" token.
+The "redpacket" token is used during sessions where the instructor gives coins the students, where I think this is used to verify the coins are actually legit.
+I suppose the coins are pretty difficult to hack as they provide exchange for Amazon gift cards, toys, electronics such as Apple Watch, Beats headphones, various stationary, and LEGO sets.
+These can be fairly pricy and I think they have an authentication system for this set up. The "Coin Mall" is avaliable during the holiday season for Christmas, and orders take about a month
+to arrive shipping with the textbooks. Coins are just honestly a way to entice students and parents to keep spending money on the classes. 
