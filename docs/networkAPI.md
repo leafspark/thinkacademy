@@ -1,6 +1,8 @@
-![image](https://github.com/LeafSpark/thinkacademy/assets/78000825/1046ec9e-1b6d-48af-b267-127108c373c3)https://oversea-api.thethinkacademy.com/
 ## Used to get course data and etc
 
+https://oversea-api.thethinkacademy.com/
+
+![image](https://github.com/LeafSpark/thinkacademy/assets/78000825/1046ec9e-1b6d-48af-b267-127108c373c3)
 
 https://pa-web.us-west-1.log.aliyuncs.com/logstores/pa-web-prod/track
 ![image](https://github.com/LeafSpark/thinkacademy/assets/78000825/42283d78-bec8-42e9-a625-b1c02c510cee)
@@ -68,5 +70,19 @@ x-token: (Long token version)
 ~~~
 ### Image of https://student-h5.thethinkacademy.com/coinsMall
 ![image](https://github.com/LeafSpark/thinkacademy/assets/78000825/1c35ee4c-3d65-4817-ba8b-9b45ab511e12)
+
+### App Upgrade check (block this URL not domain)
+
+Also checks when exiting a class
+
+https://oversea-api.thethinkacademy.com/app-upgrade/check
+
+Sends token and other data like device type
+
+### Init URL
+
+Triggered when entering a class
+
+https://one-akamai.thethinkacademy.com/v1/config/init
 
 
