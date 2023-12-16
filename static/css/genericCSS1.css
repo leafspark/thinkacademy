@@ -1,46 +1,46 @@
-.assignment[data-v-0bda17d7] {
+.tips[data-v-d9ac05ac] {
+    height: 500px
+}
+
+.assignment[data-v-d9ac05ac] {
     height: calc(100vh - 25px);
     overflow-y: hidden
 }
 
-.assignment .iframe[data-v-0bda17d7] {
+.assignment .iframe[data-v-d9ac05ac] {
     width: 100%;
     height: 100%;
     border: none
 }
 
-.tips[data-v-0bda17d7] {
-    height: 500px
-}
-
-[data-v-0bda17d7] .ant-modal-mask {
+[data-v-d9ac05ac] .ant-modal-mask {
     background-color: rgba(0, 0, 0, .4)
 }
 
-[data-v-0bda17d7] .ant-modal-header {
+[data-v-d9ac05ac] .ant-modal-header {
     display: none
 }
 
-[data-v-0bda17d7] .ant-modal-content {
+[data-v-d9ac05ac] .ant-modal-content {
     border-radius: 16px
 }
 
-[data-v-0bda17d7] .ant-modal {
+[data-v-d9ac05ac] .ant-modal {
     height: 200px;
     top: 50%;
     margin-top: -150px
 }
 
-[data-v-0bda17d7] .ant-modal .ant-modal-body {
+[data-v-d9ac05ac] .ant-modal .ant-modal-body {
     height: 200px;
     padding: 0
 }
 
-[data-v-0bda17d7] .ant-modal .content {
+[data-v-d9ac05ac] .ant-modal .content {
     text-align: center
 }
 
-[data-v-0bda17d7] .ant-modal .content .label img {
+[data-v-d9ac05ac] .ant-modal .content .label img {
     display: inline-block;
     width: 400px;
     position: absolute;
@@ -48,7 +48,7 @@
     top: -60px
 }
 
-[data-v-0bda17d7] .ant-modal .content .text {
+[data-v-d9ac05ac] .ant-modal .content .text {
     margin-top: 60px;
     display: inline-block;
     text-align: center;
@@ -59,8 +59,8 @@
     line-height: 21px
 }
 
-[data-v-0bda17d7] .ant-modal .content .text label,
-[data-v-0bda17d7] .ant-modal .content .text span {
+[data-v-d9ac05ac] .ant-modal .content .text label,
+[data-v-d9ac05ac] .ant-modal .content .text span {
     font-size: 24px;
     font-weight: 600;
     color: #ff503f;
@@ -69,17 +69,17 @@
     margin-right: 5px
 }
 
-[data-v-0bda17d7] .ant-modal .content .sub-text {
+[data-v-d9ac05ac] .ant-modal .content .sub-text {
     font-size: 16px;
     color: #a2aab8
 }
 
-[data-v-0bda17d7] .ant-modal .content .sub-text label {
+[data-v-d9ac05ac] .ant-modal .content .sub-text label {
     color: #ff503f;
     margin-right: 4px
 }
 
-[data-v-0bda17d7] .ant-modal .content .ant-btn.ant-btn-primary {
+[data-v-d9ac05ac] .ant-modal .content .ant-btn.ant-btn-primary {
     width: 330px;
     margin-top: 25px
 }

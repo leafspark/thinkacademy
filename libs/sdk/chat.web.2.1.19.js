@@ -1,14 +1,14 @@
-! function (t, e) {
-    "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = t || self).ChatClient = e()
+! function (var_chat1, var_chat2) {
+    "object" == typeof exports && "undefined" != typeof module ? module.exports = var_chat2() : "function" == typeof define && define.amd ? define(var_chat2) : (var_chat1 = var_chat1 || self).ChatClient = var_chat2()
 }(this, function () {
     "use strict";
     var p = "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 
-    function to() {
+    function chatFunc1() {
         throw new Error("Dynamic requires are not currently supported by rollup-plugin-commonjs")
     }
 
-    function t(t, e) {
+    function chatFunc2(t, e) {
         return t(e = {
             exports: {}
         }, e.exports), e.exports
@@ -40,36 +40,36 @@
     }
 
     function f(t, e) {
-        if (!C(t)) return t;
+        if (!objectVar0(t)) return t;
         var r, o;
-        if (e && "function" == typeof (r = t.toString) && !C(o = r.call(t))) return o;
-        if ("function" == typeof (r = t.valueOf) && !C(o = r.call(t))) return o;
-        if (!e && "function" == typeof (r = t.toString) && !C(o = r.call(t))) return o;
+        if (e && "function" == typeof (r = t.toString) && !objectVar0(o = r.call(t))) return o;
+        if ("function" == typeof (r = t.valueOf) && !objectVar0(o = r.call(t))) return o;
+        if (!e && "function" == typeof (r = t.toString) && !objectVar0(o = r.call(t))) return o;
         throw TypeError("Can't convert object to primitive value")
     }
 
     function i(t) {
-        return M ? S.createElement(t) : {}
+        return M ? objectVar4.createElement(t) : {}
     }
 
-    function d(e, r) {
+    function genericOrange(e, r) {
         try {
-            q(j, e, r)
+            q(generalVariable0, e, r)
         } catch (t) {
-            j[e] = r
+            generalVariable0[e] = r
         }
         return r
     }
 
-    function a(t) {
+    function chatFunc3(t) {
         return "Symbol(" + String(void 0 === t ? "" : t) + ")_" + (++U + G).toString(36)
     }
 
     function r(t) {
-        return H[t] || (H[t] = a(t))
+        return H[t] || (H[t] = chatFunc3(t))
     }
     var o, s, u, m = "object",
-        j = e(typeof globalThis == m && globalThis) || e(typeof window == m && window) || e(typeof self == m && self) || e(typeof p == m && p) || Function("return this")(),
+        generalVariable0 = e(typeof globalThis == m && globalThis) || e(typeof window == m && window) || e(typeof self == m && self) || e(typeof p == m && p) || Function("return this")(),
         A = !F(function () {
             return 7 != Object.defineProperty({}, "a", {
                 get: function () {
@@ -102,15 +102,15 @@
         }) ? function (t) {
             return "String" == n(t) ? R.call(t, "") : Object(t)
         } : Object,
-        C = function (t) {
+        objectVar0 = function (t) {
             return "object" == typeof t ? null !== t : "function" == typeof t
         },
-        w = {}.hasOwnProperty,
-        k = function (t, e) {
-            return w.call(t, e)
+        objectVar1 = {}.hasOwnProperty,
+        objectVar3 = function (t, e) {
+            return objectVar1.call(t, e)
         },
-        S = j.document,
-        M = C(S) && C(S.createElement),
+        objectVar4 = generalVariable0.document,
+        M = objectVar0(objectVar4) && objectVar0(objectVar4.createElement),
         b = !A && !F(function () {
             return 7 != Object.defineProperty(i("div"), "a", {
                 get: function () {
@@ -124,21 +124,21 @@
                 if (t = c(t), e = f(e, !0), b) try {
                     return I(t, e)
                 } catch (t) { }
-                if (k(t, e)) return P(!y.f.call(t, e), t[e])
+                if (objectVar3(t, e)) return P(!y.f.call(t, e), t[e])
             }
         },
         B = function (t) {
-            if (!C(t)) throw TypeError(String(t) + " is not an object");
+            if (!objectVar0(t)) throw TypeError(String(t) + " is not an object");
             return t
         },
-        T = Object.defineProperty,
+        genericVar0 = Object.defineProperty,
         x = {
-            f: A ? T : function (t, e, r) {
-                if (B(t), e = f(e, !0), B(r), b) try {
-                    return T(t, e, r)
+            f: A ? genericVar0 : function (var_100, var_200, var_300) {
+                if (B(var_100), var_200 = f(var_200, !0), B(var_300), b) try {
+                    return genericVar0(var_100, var_200, var_300)
                 } catch (t) { }
-                if ("get" in r || "set" in r) throw TypeError("Accessors not supported");
-                return "value" in r && (t[e] = r.value), t
+                if ("get" in var_300 || "set" in var_300) throw TypeError("Accessors not supported");
+                return "value" in var_300 && (var_100[var_200] = var_300.value), var_100
             }
         },
         q = A ? function (t, e, r) {
@@ -146,45 +146,45 @@
         } : function (t, e, r) {
             return t[e] = r, t
         },
-        O = t(function (t) {
+        objectVar5 = chatFunc2(function (objectVarInternal_1) {
             var e = "__core-js_shared__",
-                r = j[e] || d(e, {});
-            (t.exports = function (t, e) {
-                return r[t] || (r[t] = void 0 !== e ? e : {})
+                genericApple = generalVariable0[e] || genericOrange(e, {});
+            (objectVarInternal_1.exports = function (t, insideLoop) {
+                return genericApple[t] || (genericApple[t] = void 0 !== insideLoop ? insideLoop : {})
             })("versions", []).push({
                 version: "3.2.1",
                 mode: "global",
                 copyright: "© 2019 Denis Pushkarev (zloirock.ru)"
             })
         }),
-        D = O("native-function-to-string", Function.toString),
-        E = j.WeakMap,
+        D = objectVar5("native-function-to-string", Function.toString),
+        E = generalVariable0.WeakMap,
         N = "function" == typeof E && /native code/.test(D.call(E)),
         U = 0,
         G = Math.random(),
-        H = O("keys"),
+        H = objectVar5("keys"),
         V = {},
-        K = j.WeakMap;
+        K = generalVariable0.WeakMap;
     if (N) {
         var Y = new K,
-            W = Y.get,
-            J = Y.has,
+            internalVar2 = Y.get,
+            internalVar0 = Y.has,
             z = Y.set;
         o = function (t, e) {
             return z.call(Y, t, e), e
         }, s = function (t) {
-            return W.call(Y, t) || {}
+            return internalVar2.call(Y, t) || {}
         }, u = function (t) {
-            return J.call(Y, t)
+            return internalVar0.call(Y, t)
         }
     } else {
-        var Z = r("state");
-        V[Z] = !0, o = function (t, e) {
-            return q(t, Z, e), e
-        }, s = function (t) {
-            return k(t, Z) ? t[Z] : {}
-        }, u = function (t) {
-            return k(t, Z)
+        var internalVar_0 = r("state");
+        V[internalVar_0] = !0, o = function (t, e) {
+            return q(t, internalVar_0, e), e
+        }, s = function (internalVar3) {
+            return objectVar3(internalVar3, internalVar_0) ? internalVar3[internalVar_0] : {}
+        }, u = function (internalVar4) {
+            return objectVar3(internalVar4, internalVar_0)
         }
     }
 
@@ -193,26 +193,26 @@
     }
 
     function X(t, e) {
-        return arguments.length < 2 ? $(ht[t]) || $(j[t]) : ht[t] && ht[t][e] || j[t] && j[t][e]
+        return arguments.length < 2 ? $(chatRelated0[t]) || $(generalVariable0[t]) : chatRelated0[t] && chatRelated0[t][e] || generalVariable0[t] && generalVariable0[t][e]
     }
 
-    function Q(t) {
-        return isNaN(t = +t) ? 0 : (0 < t ? dt : pt)(t)
+    function argument_0(complexVar2) {
+        return isNaN(complexVar2 = +complexVar2) ? 0 : (0 < complexVar2 ? dcomplex0 : pt)(complexVar2)
     }
 
-    function tt(t) {
-        return 0 < t ? mt(Q(t), 9007199254740991) : 0
+    function objectGrapes(t) {
+        return 0 < t ? objectVar6(argument_0(t), 9007199254740991) : 0
     }
 
     function et(t, e) {
-        var r = Q(t);
-        return r < 0 ? lt(r + e, 0) : gt(r, e)
+        var r = argument_0(t);
+        return r < 0 ? longObject_0(r + e, 0) : gt(r, e)
     }
 
     function rt(a) {
         return function (t, e, r) {
             var o, n = c(t),
-                i = tt(n.length),
+                i = objectGrapes(n.length),
                 s = et(r, i);
             if (a && e != e) {
                 for (; s < i;)
@@ -228,15 +228,15 @@
         var r, o = c(t),
             n = 0,
             i = [];
-        for (r in o) !k(V, r) && k(o, r) && i.push(r);
-        for (; e.length > n;) k(o, r = e[n++]) && (~_t(i, r) || i.push(r));
+        for (r in o) !objectVar3(V, r) && objectVar3(o, r) && i.push(r);
+        for (; e.length > n;) objectVar3(o, r = e[n++]) && (~_t(i, r) || i.push(r));
         return i
     }
 
     function nt(t, e) {
         for (var r = Mt(e), o = x.f, n = L.f, i = 0; i < r.length; i++) {
             var s = r[i];
-            k(t, s) || o(t, s, n(e, s))
+            objectVar3(t, s) || o(t, s, n(e, s))
         }
     }
 
@@ -249,7 +249,7 @@
         var r, o, n, i, s, a = t.target,
             u = t.global,
             c = t.stat;
-        if (r = u ? j : c ? j[a] || d(a, {}) : (j[a] || {}).prototype)
+        if (r = u ? generalVariable0 : c ? generalVariable0[a] || genericOrange(a, {}) : (generalVariable0[a] || {}).prototype)
             for (o in e) {
                 if (i = e[o], n = t.noTargetGet ? (s = Pt(r, o)) && s.value : r[o], !Dt(u ? o : a + (c ? "." : "#") + o, t.forced) && void 0 !== n) {
                     if (typeof i == typeof n) continue;
@@ -273,31 +273,31 @@
         getterFor: function (r) {
             return function (t) {
                 var e;
-                if (!C(t) || (e = s(t)).type !== r) throw TypeError("Incompatible receiver, " + r + " required");
+                if (!objectVar0(t) || (e = s(t)).type !== r) throw TypeError("Incompatible receiver, " + r + " required");
                 return e
             }
         }
     },
-        ft = t(function (t) {
+        ft = chatFunc2(function (t) {
             var e = ct.get,
                 a = ct.enforce,
                 u = String(D).split("toString");
-            O("inspectSource", function (t) {
+            objectVar5("inspectSource", function (t) {
                 return D.call(t)
             }), (t.exports = function (t, e, r, o) {
                 var n = !!o && !!o.unsafe,
                     i = !!o && !!o.enumerable,
                     s = !!o && !!o.noTargetGet;
-                "function" == typeof r && ("string" != typeof e || k(r, "name") || q(r, "name", e), a(r).source = u.join("string" == typeof e ? e : "")), t !== j ? (n ? !s && t[e] && (i = !0) : delete t[e], i ? t[e] = r : q(t, e, r)) : i ? t[e] = r : d(e, r)
+                "function" == typeof r && ("string" != typeof e || objectVar3(r, "name") || q(r, "name", e), a(r).source = u.join("string" == typeof e ? e : "")), t !== generalVariable0 ? (n ? !s && t[e] && (i = !0) : delete t[e], i ? t[e] = r : q(t, e, r)) : i ? t[e] = r : genericOrange(e, r)
             })(Function.prototype, "toString", function () {
                 return "function" == typeof this && e(this).source || D.call(this)
             })
         }),
-        ht = j,
+        chatRelated0 = generalVariable0,
         pt = Math.ceil,
-        dt = Math.floor,
-        mt = Math.min,
-        lt = Math.max,
+        dcomplex0 = Math.floor,
+        objectVar6 = Math.min,
+        longObject_0 = Math.max,
         gt = Math.min,
         yt = {
             includes: rt(!0),
@@ -359,18 +359,18 @@
     V[Ut] = !0;
 
     function At(t) {
-        return re[t] || (re[t] = Ct && ee[t] || (Ct ? ee : a)("Symbol." + t))
+        return re[t] || (re[t] = Ct && ee[t] || (Ct ? ee : chatFunc3)("Symbol." + t))
     }
 
     function xt(t) {
-        var e = ht.Symbol || (ht.Symbol = {});
-        k(e, t) || ne(e, t, {
+        var e = chatRelated0.Symbol || (chatRelated0.Symbol = {});
+        objectVar3(e, t) || ne(e, t, {
             value: oe.f(t)
         })
     }
 
     function qt(t, e, r) {
-        t && !k(t = r ? t : t.prototype, se) && ie(t, se, {
+        t && !objectVar3(t = r ? t : t.prototype, se) && ie(t, se, {
             configurable: !0,
             value: e
         })
@@ -408,7 +408,7 @@
 
     function Kt(t, e) {
         var r;
-        return kt(t) && ("function" != typeof (r = t.constructor) || r !== Array && !kt(r.prototype) ? C(r) && null === (r = r[ae]) && (r = void 0) : r = void 0), new (void 0 === r ? Array : r)(0 === e ? 0 : e)
+        return kt(t) && ("function" != typeof (r = t.constructor) || r !== Array && !kt(r.prototype) ? objectVar0(r) && null === (r = r[ae]) && (r = void 0) : r = void 0), new (void 0 === r ? Array : r)(0 === e ? 0 : e)
     }
 
     function Yt(d) {
@@ -419,7 +419,7 @@
             _ = 6 == d,
             R = 5 == d || _;
         return function (t, e, r, o) {
-            for (var n, i, s = at(t), a = v(s), u = Vt(e, r, 3), c = tt(a.length), f = 0, h = o || Kt, p = m ? h(t, c) : l ? h(t, 0) : void 0; f < c; f++)
+            for (var n, i, s = at(t), a = v(s), u = Vt(e, r, 3), c = objectGrapes(a.length), f = 0, h = o || Kt, p = m ? h(t, c) : l ? h(t, 0) : void 0; f < c; f++)
                 if ((R || f in a) && (i = u(n = a[f], f, s), d))
                     if (m) p[f] = i;
                     else if (i) switch (d) {
@@ -457,9 +457,9 @@
     function zt(t, e) {
         var r = c(t),
             o = f(e, !0);
-        if (r !== ye || !k(Ie, o) || k(Be, o)) {
+        if (r !== ye || !objectVar3(Ie, o) || objectVar3(Be, o)) {
             var n = we(r, o);
-            return !n || !k(Ie, o) || k(r, he) && r[he][o] || (n.enumerable = !0), n
+            return !n || !objectVar3(Ie, o) || objectVar3(r, he) && r[he][o] || (n.enumerable = !0), n
         }
     }
 
@@ -467,7 +467,7 @@
         var e = Me(c(t)),
             r = [];
         return fe(e, function (t) {
-            k(Ie, t) || k(V, t) || r.push(t)
+            objectVar3(Ie, t) || objectVar3(V, t) || r.push(t)
         }), r
     }
     var $t = wt.f,
@@ -484,8 +484,8 @@
                 }(t) : $t(c(t))
             }
         },
-        ee = j.Symbol,
-        re = O("wks"),
+        ee = generalVariable0.Symbol,
+        re = objectVar5("wks"),
         oe = {
             f: At
         },
@@ -511,19 +511,19 @@
         le = ct.set,
         ge = ct.getterFor(pe),
         ye = Object[de],
-        _e = j.Symbol,
-        Re = j.JSON,
+        _e = generalVariable0.Symbol,
+        Re = generalVariable0.JSON,
         ve = Re && Re.stringify,
         we = L.f,
         Se = x.f,
         Me = te.f,
         be = y.f,
-        Ie = O("symbols"),
-        Be = O("op-symbols"),
-        Te = O("string-to-symbol-registry"),
-        Oe = O("symbol-to-string-registry"),
-        De = O("wks"),
-        Pe = j.QObject,
+        Ie = objectVar5("symbols"),
+        Be = objectVar5("op-symbols"),
+        Te = objectVar5("string-to-symbol-registry"),
+        Oe = objectVar5("symbol-to-string-registry"),
+        De = objectVar5("wks"),
+        Pe = generalVariable0.QObject,
         Ce = !Pe || !Pe[de] || !Pe[de].findChild,
         ke = A && F(function () {
             return 7 != jt(Se({}, "a", {
@@ -545,29 +545,29 @@
         Ee = function (t, e, r) {
             t === ye && Ee(Be, e, r), B(t);
             var o = f(e, !0);
-            return B(r), k(Ie, o) ? (r.enumerable ? (k(t, he) && t[he][o] && (t[he][o] = !1), r = jt(r, {
+            return B(r), objectVar3(Ie, o) ? (r.enumerable ? (objectVar3(t, he) && t[he][o] && (t[he][o] = !1), r = jt(r, {
                 enumerable: P(0, !1)
-            })) : (k(t, he) || Se(t, he, P(1, {})), t[he][o] = !0), ke(t, o, r)) : Se(t, o, r)
+            })) : (objectVar3(t, he) || Se(t, he, P(1, {})), t[he][o] = !0), ke(t, o, r)) : Se(t, o, r)
         },
         Ne = function (t) {
             var e = f(t, !0),
                 r = be.call(this, e);
-            return !(this === ye && k(Ie, e) && !k(Be, e)) && (!(r || !k(this, e) || !k(Ie, e) || k(this, he) && this[he][e]) || r)
+            return !(this === ye && objectVar3(Ie, e) && !objectVar3(Be, e)) && (!(r || !objectVar3(this, e) || !objectVar3(Ie, e) || objectVar3(this, he) && this[he][e]) || r)
         },
         Ue = function (t) {
             var e = t === ye,
                 r = Me(e ? Be : c(t)),
                 o = [];
             return fe(r, function (t) {
-                !k(Ie, t) || e && !k(ye, t) || o.push(Ie[t])
+                !objectVar3(Ie, t) || e && !objectVar3(ye, t) || o.push(Ie[t])
             }), o
         };
     Ct || (ft((_e = function (t) {
         if (this instanceof _e) throw TypeError("Symbol is not a constructor");
         var e = arguments.length && void 0 !== t ? String(t) : void 0,
-            r = a(e),
+            r = chatFunc3(e),
             o = function (t) {
-                this === ye && o.call(Be, t), k(this, he) && k(this[he], r) && (this[he][r] = !1), ke(this, r, P(1, t))
+                this === ye && o.call(Be, t), objectVar3(this, he) && objectVar3(this[he], r) && (this[he][r] = !1), ke(this, r, P(1, t))
             };
         return A && Ce && ke(ye, r, {
             configurable: !0,
@@ -600,13 +600,13 @@
     }, {
         for: function (t) {
             var e = String(t);
-            if (k(Te, e)) return Te[e];
+            if (objectVar3(Te, e)) return Te[e];
             var r = _e(e);
             return Te[e] = r, Oe[r] = e, r
         },
         keyFor: function (t) {
             if (!Le(t)) throw TypeError(t + " is not a symbol");
-            if (k(Oe, t)) return Oe[t]
+            if (objectVar3(Oe, t)) return Oe[t]
         },
         useSetter: function () {
             Ce = !0
@@ -655,13 +655,13 @@
     }, {
         stringify: function (t) {
             for (var e, r, o = [t], n = 1; n < arguments.length;) o.push(arguments[n++]);
-            if (r = e = o[1], (C(e) || void 0 !== t) && !Le(t)) return kt(e) || (e = function (t, e) {
+            if (r = e = o[1], (objectVar0(e) || void 0 !== t) && !Le(t)) return kt(e) || (e = function (t, e) {
                 if ("function" == typeof r && (e = r.call(this, t, e)), !Le(e)) return e
             }), o[1] = e, ve.apply(Re, o)
         }
     }), _e[de][me] || q(_e[de], me, _e[de].valueOf), qt(_e, pe), V[he] = !0, xt("asyncIterator");
     var Ge = x.f,
-        Fe = j.Symbol;
+        Fe = generalVariable0.Symbol;
     if (!(!A || "function" != typeof Fe || "description" in Fe.prototype && void 0 === Fe().description)) {
         var je = {},
             Ae = function (t) {
@@ -678,9 +678,9 @@
         Ge(xe, "description", {
             configurable: !0,
             get: function () {
-                var t = C(this) ? this.valueOf() : this,
+                var t = objectVar0(this) ? this.valueOf() : this,
                     e = qe.call(t);
-                if (k(je, t)) return "";
+                if (objectVar3(je, t)) return "";
                 var r = He ? e.slice(7, -1) : e.replace(Ve, "$1");
                 return "" === r ? void 0 : r
             }
@@ -757,7 +757,7 @@
     var $e = !F(function () {
         return Object.isExtensible(Object.preventExtensions({}))
     }),
-        Xe = t(function (t) {
+        Xe = chatFunc2(function (t) {
             function r(t) {
                 e(t, o, {
                     value: {
@@ -767,7 +767,7 @@
                 })
             }
             var e = x.f,
-                o = a("meta"),
+                o = chatFunc3("meta"),
                 n = 0,
                 i = Object.isExtensible || function () {
                     return !0
@@ -775,8 +775,8 @@
                 s = t.exports = {
                     REQUIRED: !1,
                     fastKey: function (t, e) {
-                        if (!C(t)) return "symbol" == typeof t ? t : ("string" == typeof t ? "S" : "P") + t;
-                        if (!k(t, o)) {
+                        if (!objectVar0(t)) return "symbol" == typeof t ? t : ("string" == typeof t ? "S" : "P") + t;
+                        if (!objectVar3(t, o)) {
                             if (!i(t)) return "F";
                             if (!e) return "E";
                             r(t)
@@ -784,7 +784,7 @@
                         return t[o].objectID
                     },
                     getWeakData: function (t, e) {
-                        if (!k(t, o)) {
+                        if (!objectVar3(t, o)) {
                             if (!i(t)) return !0;
                             if (!e) return !1;
                             r(t)
@@ -792,7 +792,7 @@
                         return t[o].weakData
                     },
                     onFreeze: function (t) {
-                        return $e && s.REQUIRED && i(t) && !k(t, o) && r(t), t
+                        return $e && s.REQUIRED && i(t) && !objectVar3(t, o) && r(t), t
                     }
                 };
             V[o] = !0
@@ -809,7 +809,7 @@
         sham: !$e
     }, {
         freeze: function (t) {
-            return tr && C(t) ? tr(Qe(t)) : t
+            return tr && objectVar0(t) ? tr(Qe(t)) : t
         }
     });
 
@@ -851,7 +851,7 @@
             return arguments
         }()),
         pr = At("iterator"),
-        dr = t(function (t) {
+        dr = chatFunc2(function (t) {
             function p(t, e) {
                 this.stopped = t, this.result = e
             } (t.exports = function (t, e, r, o, n) {
@@ -860,7 +860,7 @@
                 else {
                     if ("function" != typeof (s = nr(t))) throw TypeError("Target is not iterable");
                     if (rr(s)) {
-                        for (a = 0, u = tt(t.length); a < u; a++)
+                        for (a = 0, u = objectGrapes(t.length); a < u; a++)
                             if ((c = o ? h(B(f = t[a])[0], f[1]) : h(t[a])) && c instanceof p) return c;
                         return new p(!1)
                     }
@@ -925,7 +925,7 @@
         Rr = r("IE_PROTO"),
         vr = Object.prototype,
         wr = _r ? Object.getPrototypeOf : function (t) {
-            return t = at(t), k(t, Rr) ? t[Rr] : "function" == typeof t.constructor && t instanceof t.constructor ? t.constructor.prototype : t instanceof Object ? vr : null
+            return t = at(t), objectVar3(t, Rr) ? t[Rr] : "function" == typeof t.constructor && t instanceof t.constructor ? t.constructor.prototype : t instanceof Object ? vr : null
         },
         Sr = F(function () {
             wr(1)
@@ -959,7 +959,7 @@
         forced: Ir
     }, {
         isExtensible: function (t) {
-            return !!C(t) && (!br || br(t))
+            return !!objectVar0(t) && (!br || br(t))
         }
     });
     var Br = Object.isFrozen,
@@ -972,7 +972,7 @@
         forced: Tr
     }, {
         isFrozen: function (t) {
-            return !C(t) || !!Br && Br(t)
+            return !objectVar0(t) || !!Br && Br(t)
         }
     });
     var Or = Object.isSealed,
@@ -985,7 +985,7 @@
         forced: Dr
     }, {
         isSealed: function (t) {
-            return !C(t) || !!Or && Or(t)
+            return !objectVar0(t) || !!Or && Or(t)
         }
     });
     var Pr = F(function () {
@@ -1012,7 +1012,7 @@
         sham: !$e
     }, {
         preventExtensions: function (t) {
-            return kr && C(t) ? kr(Cr(t)) : t
+            return kr && objectVar0(t) ? kr(Cr(t)) : t
         }
     });
     var Er = Xe.onFreeze,
@@ -1027,12 +1027,12 @@
         sham: !$e
     }, {
         seal: function (t) {
-            return Nr && C(t) ? Nr(Er(t)) : t
+            return Nr && objectVar0(t) ? Nr(Er(t)) : t
         }
     });
 
     function Gr(t) {
-        if (!C(t) && null !== t) throw TypeError("Can't set " + String(t) + " as a prototype");
+        if (!objectVar0(t) && null !== t) throw TypeError("Can't set " + String(t) + " as a prototype");
         return t
     }
     var Fr = Object.setPrototypeOf || ("__proto__" in {} ? function () {
@@ -1071,7 +1071,7 @@
     });
     var Hr = !F(function () {
         var t = Math.random();
-        __defineSetter__.call(null, t, function () { }), delete j[t]
+        __defineSetter__.call(null, t, function () { }), delete generalVariable0[t]
     });
     A && st({
         target: "Object",
@@ -1141,7 +1141,7 @@
                         return Wr[e](t, r)
                     }(r, t.length, t) : r.apply(e, t)
                 };
-            return C(r.prototype) && (n.prototype = r.prototype), n
+            return objectVar0(r.prototype) && (n.prototype = r.prototype), n
         };
     st({
         target: "Function",
@@ -1167,8 +1167,8 @@
         eo = Function.prototype;
     Qr in eo || x.f(eo, Qr, {
         value: function (t) {
-            if ("function" != typeof this || !C(t)) return !1;
-            if (!C(this.prototype)) return t instanceof this;
+            if ("function" != typeof this || !objectVar0(t)) return !1;
+            if (!objectVar0(this.prototype)) return t instanceof this;
             for (; t = wr(t);)
                 if (this.prototype === t) return !0;
             return !1
@@ -1184,7 +1184,7 @@
             p = 0,
             d = nr(a);
         if (h && (f = Vt(f, 2 < c ? r : void 0, 2)), null == d || u == Array && rr(d))
-            for (n = new u(o = tt(a.length)); p < o; p++) sr(n, p, h ? f(a[p], p) : a[p]);
+            for (n = new u(o = objectGrapes(a.length)); p < o; p++) sr(n, p, h ? f(a[p], p) : a[p]);
         else
             for (s = d.call(a), n = new u; !(i = s.next()).done; p++) sr(n, p, h ? ir(s, f, [i.value, p], !0) : i.value);
         return n.length = p, n
@@ -1269,7 +1269,7 @@
     }
 
     function ho(t) {
-        if (!C(t)) return !1;
+        if (!objectVar0(t)) return !1;
         var e = t[mo];
         return void 0 !== e ? !!e : kt(t)
     }
@@ -1293,7 +1293,7 @@
                 u = 0;
             for (e = -1, o = arguments.length; e < o; e++)
                 if (ho(i = -1 === e ? s : arguments[e])) {
-                    if (n = tt(i.length), lo < u + n) throw TypeError(go);
+                    if (n = objectGrapes(i.length), lo < u + n) throw TypeError(go);
                     for (r = 0; r < n; r++, u++) r in i && sr(a, u, i[r])
                 } else {
                     if (lo <= u) throw TypeError(go);
@@ -1305,7 +1305,7 @@
     var Ro = Math.min,
         vo = [].copyWithin || function (t, e, r) {
             var o = at(this),
-                n = tt(o.length),
+                n = objectGrapes(o.length),
                 i = et(t, n),
                 s = et(e, n),
                 a = 2 < arguments.length ? r : void 0,
@@ -1348,7 +1348,7 @@
     });
 
     function Bo(t, e, r) {
-        for (var o = at(this), n = tt(o.length), i = arguments.length, s = et(1 < i ? e : void 0, n), a = 2 < i ? r : void 0, u = void 0 === a ? n : et(a, n); s < u;) o[s++] = t;
+        for (var o = at(this), n = objectGrapes(o.length), i = arguments.length, s = et(1 < i ? e : void 0, n), a = 2 < i ? r : void 0, u = void 0 === a ? n : et(a, n); s < u;) o[s++] = t;
         return o
     }
     st({
@@ -1398,7 +1398,7 @@
     var Eo = function (t, e, r, o, n, i, s, a) {
         for (var u, c = n, f = 0, h = !!s && Vt(s, a, 3); f < o;) {
             if (f in r) {
-                if (u = h ? h(r[f], f, e) : r[f], 0 < i && kt(u)) c = Eo(t, e, u, tt(u.length), c, i - 1) - 1;
+                if (u = h ? h(r[f], f, e) : r[f], 0 < i && kt(u)) c = Eo(t, e, u, objectGrapes(u.length), c, i - 1) - 1;
                 else {
                     if (9007199254740991 <= c) throw TypeError("Exceed the acceptable array length");
                     t[c] = u
@@ -1417,9 +1417,9 @@
         flat: function (t) {
             var e = arguments.length ? t : void 0,
                 r = at(this),
-                o = tt(r.length),
+                o = objectGrapes(r.length),
                 n = Kt(r, 0);
-            return n.length = No(n, r, r, o, 0, void 0 === e ? 1 : Q(e)), n
+            return n.length = No(n, r, r, o, 0, void 0 === e ? 1 : argument_0(e)), n
         }
     }), st({
         target: "Array",
@@ -1427,7 +1427,7 @@
     }, {
         flatMap: function (t, e) {
             var r, o = at(this),
-                n = tt(o.length);
+                n = objectGrapes(o.length);
             return Ht(t), (r = Kt(o, 0)).length = No(r, o, o, n, 0, 1, t, 1 < arguments.length ? e : void 0), r
         }
     });
@@ -1483,9 +1483,9 @@
         Zo = Jo || zo ? function (t, e) {
             if (Jo) return Wo.apply(this, arguments) || 0;
             var r = c(this),
-                o = tt(r.length),
+                o = objectGrapes(r.length),
                 n = o - 1;
-            for (1 < arguments.length && (n = Yo(n, Q(e))), n < 0 && (n = o + n); 0 <= n; n--)
+            for (1 < arguments.length && (n = Yo(n, argument_0(e))), n < 0 && (n = o + n); 0 <= n; n--)
                 if (n in r && r[n] === t) return n || 0;
             return -1
         } : Wo;
@@ -1512,7 +1512,7 @@
             Ht(e);
             var n = at(t),
                 i = v(n),
-                s = tt(n.length),
+                s = objectGrapes(n.length),
                 a = c ? s - 1 : 0,
                 u = c ? -1 : 1;
             if (r < 2)
@@ -1572,10 +1572,10 @@
     }, {
         slice: function (t, e) {
             var r, o, n, i = c(this),
-                s = tt(i.length),
+                s = objectGrapes(i.length),
                 a = et(t, s),
                 u = et(void 0 === e ? s : e, s);
-            if (kt(i) && ("function" != typeof (r = i.constructor) || r !== Array && !kt(r.prototype) ? C(r) && null === (r = r[nn]) && (r = void 0) : r = void 0, r === Array || void 0 === r)) return sn.call(i, a, u);
+            if (kt(i) && ("function" != typeof (r = i.constructor) || r !== Array && !kt(r.prototype) ? objectVar0(r) && null === (r = r[nn]) && (r = void 0) : r = void 0, r === Array || void 0 === r)) return sn.call(i, a, u);
             for (o = new (void 0 === r ? Array : r)(an(u - a, 0)), n = 0; a < u; a++, n++) a in i && sr(o, n, i[a]);
             return o.length = n, o
         }
@@ -1617,10 +1617,10 @@
     }, {
         splice: function (t, e) {
             var r, o, n, i, s, a, u = at(this),
-                c = tt(u.length),
+                c = objectGrapes(u.length),
                 f = et(t, c),
                 h = arguments.length;
-            if (0 === h ? r = o = 0 : o = 1 === h ? (r = 0, c - f) : (r = h - 2, ln(mn(Q(e), 0), c - f)), 9007199254740991 < c + r - o) throw TypeError("Maximum allowed length exceeded");
+            if (0 === h ? r = o = 0 : o = 1 === h ? (r = 0, c - f) : (r = h - 2, ln(mn(argument_0(e), 0), c - f)), 9007199254740991 < c + r - o) throw TypeError("Maximum allowed length exceeded");
             for (n = Kt(u, o), i = 0; i < o; i++)(s = f + i) in u && sr(n, i, u[s]);
             if (r < (n.length = o)) {
                 for (i = f; i < c - o; i++) a = i + r, (s = i + o) in u ? u[a] = u[s] : delete u[a];
@@ -1646,7 +1646,7 @@
     gn("Array"), Mo("flat"), Mo("flatMap");
     var _n, Rn, vn, wn = At("iterator"),
         Sn = !1;
-    [].keys && ("next" in (vn = [].keys()) ? (Rn = wr(wr(vn))) !== Object.prototype && (_n = Rn) : Sn = !0), null == _n && (_n = {}), k(_n, wn) || q(_n, wn, function () {
+    [].keys && ("next" in (vn = [].keys()) ? (Rn = wr(wr(vn))) !== Object.prototype && (_n = Rn) : Sn = !0), null == _n && (_n = {}), objectVar3(_n, wn) || q(_n, wn, function () {
         return this
     });
 
@@ -1764,7 +1764,7 @@
         stat: !0
     }, {
         raw: function (t) {
-            for (var e = c(t.raw), r = tt(e.length), o = arguments.length, n = [], i = 0; i < r;) n.push(String(e[i++])), i < o && n.push(String(arguments[i]));
+            for (var e = c(t.raw), r = objectGrapes(e.length), o = arguments.length, n = [], i = 0; i < r;) n.push(String(e[i++])), i < o && n.push(String(arguments[i]));
             return n.join("")
         }
     });
@@ -1772,7 +1772,7 @@
     function xn(a) {
         return function (t, e) {
             var r, o, n = String(h(t)),
-                i = Q(e),
+                i = argument_0(e),
                 s = n.length;
             return i < 0 || s <= i ? a ? "" : void 0 : (r = n.charCodeAt(i)) < 55296 || 56319 < r || i + 1 === s || (o = n.charCodeAt(i + 1)) < 56320 || 57343 < o ? a ? n.charAt(i) : r : a ? n.slice(i, i + 2) : o - 56320 + (r - 55296 << 10) + 65536
         }
@@ -1793,7 +1793,7 @@
 
     function Vn(t) {
         var e;
-        return C(t) && (void 0 !== (e = t[Wn]) ? !!e : "RegExp" == n(t))
+        return objectVar0(t) && (void 0 !== (e = t[Wn]) ? !!e : "RegExp" == n(t))
     }
 
     function Kn(t) {
@@ -1825,8 +1825,8 @@
             var r = String(h(this));
             Kn(t);
             var o = 1 < arguments.length ? e : void 0,
-                n = tt(r.length),
-                i = void 0 === o ? n : Zn(tt(o), n),
+                n = objectGrapes(r.length),
+                i = void 0 === o ? n : Zn(objectGrapes(o), n),
                 s = String(t);
             return zn ? zn.call(r, s, i) : r.slice(i - s.length, i) === s
         }
@@ -1945,7 +1945,7 @@
             if (!r.global) return ai(r, o);
             for (var n, i = r.unicode, s = [], a = r.lastIndex = 0; null !== (n = ai(r, o));) {
                 var u = String(n[0]);
-                "" === (s[a] = u) && (r.lastIndex = si(o, tt(r.lastIndex), i)), a++
+                "" === (s[a] = u) && (r.lastIndex = si(o, objectGrapes(r.lastIndex), i)), a++
             }
             return 0 === a ? null : s
         }]
@@ -1959,7 +1959,7 @@
     function mi(t) {
         var e, r, o, n, i, s, a = B(this),
             u = String(t);
-        return e = di(a, RegExp), void 0 === (r = a.flags) && a instanceof RegExp && !("flags" in wi) && (r = $n.call(a)), o = void 0 === r ? "" : String(r), n = new e(e === RegExp ? a.source : a, o), i = !!~o.indexOf("g"), s = !!~o.indexOf("u"), n.lastIndex = tt(a.lastIndex), new Mi(n, u, i, s)
+        return e = di(a, RegExp), void 0 === (r = a.flags) && a instanceof RegExp && !("flags" in wi) && (r = $n.call(a)), o = void 0 === r ? "" : String(r), n = new e(e === RegExp ? a.source : a, o), i = !!~o.indexOf("g"), s = !!~o.indexOf("u"), n.lastIndex = objectGrapes(a.lastIndex), new Mi(n, u, i, s)
     }
     var li = At("species"),
         gi = At("matchAll"),
@@ -1995,7 +1995,7 @@
             return null === o ? {
                 value: void 0,
                 done: t.done = !0
-            } : t.global ? ("" == String(o[0]) && (e.lastIndex = si(r, tt(e.lastIndex), t.unicode)), {
+            } : t.global ? ("" == String(o[0]) && (e.lastIndex = si(r, objectGrapes(e.lastIndex), t.unicode)), {
                 value: o,
                 done: !1
             }) : {
@@ -2018,14 +2018,14 @@
             var o, n, i = String(h(t)),
                 s = i.length,
                 a = void 0 === r ? " " : String(r),
-                u = tt(e);
+                u = objectGrapes(e);
             return u <= s || "" == a ? i : (o = u - s, (n = Ii.call(a, Bi(o / a.length))).length > o && (n = n.slice(0, o)), c ? i + n : n + i)
         }
     }
     var Ii = "".repeat || function (t) {
         var e = String(h(this)),
             r = "",
-            o = Q(t);
+            o = argument_0(t);
         if (o < 0 || o == 1 / 0) throw RangeError("Wrong number of repetitions");
         for (; 0 < o;
             (o >>>= 1) && (e += e)) 1 & o && (r += e);
@@ -2089,11 +2089,11 @@
                 var c = ai(o, n);
                 if (null === c) break;
                 if (u.push(c), !s) break;
-                "" === String(c[0]) && (o.lastIndex = si(n, tt(o.lastIndex), a))
+                "" === String(c[0]) && (o.lastIndex = si(n, objectGrapes(o.lastIndex), a))
             }
             for (var f, h = "", p = 0, d = 0; d < u.length; d++) {
                 c = u[d];
-                for (var m = String(c[0]), l = ki(Li(Q(c.index), n.length), 0), g = [], y = 1; y < c.length; y++) g.push(void 0 === (f = c[y]) ? f : String(f));
+                for (var m = String(c[0]), l = ki(Li(argument_0(c.index), n.length), 0), g = [], y = 1; y < c.length; y++) g.push(void 0 === (f = c[y]) ? f : String(f));
                 var _ = c.groups;
                 if (i) {
                     var R = [m].concat(g, l, n);
@@ -2189,7 +2189,7 @@
             for (var f = 0, h = 0, p = []; h < n.length;) {
                 u.lastIndex = Ai ? h : 0;
                 var d, m = ai(u, Ai ? n : n.slice(h));
-                if (null === m || (d = Fi(tt(u.lastIndex + (Ai ? 0 : h)), n.length)) === f) h = si(n, h, s);
+                if (null === m || (d = Fi(objectGrapes(u.lastIndex + (Ai ? 0 : h)), n.length)) === f) h = si(n, h, s);
                 else {
                     if (p.push(n.slice(f, h)), p.length === c) return p;
                     for (var l = 1; l <= m.length - 1; l++)
@@ -2210,7 +2210,7 @@
         startsWith: function (t, e) {
             var r = String(h(this));
             Kn(t);
-            var o = tt(qi(1 < arguments.length ? e : void 0, r.length)),
+            var o = objectGrapes(qi(1 < arguments.length ? e : void 0, r.length)),
                 n = String(t);
             return xi ? xi.call(r, n, o) : r.slice(o, o + n.length) === n
         }
@@ -2417,12 +2417,12 @@
 
     function fs(t, e, r) {
         var o, n;
-        return Fr && "function" == typeof (o = e.constructor) && o !== r && C(n = o.prototype) && n !== r.prototype && Fr(t, n), t
+        return Fr && "function" == typeof (o = e.constructor) && o !== r && objectVar0(n = o.prototype) && n !== r.prototype && Fr(t, n), t
     }
     var hs = x.f,
         ps = wt.f,
         ds = At("match"),
-        ms = j.RegExp,
+        ms = generalVariable0.RegExp,
         ls = ms.prototype,
         gs = /a/g,
         ys = /a/g,
@@ -2446,7 +2446,7 @@
                 }
             })
         }, ws = ps(ms), Ss = 0; ws.length > Ss;) vs(ws[Ss++]);
-        (ls.constructor = Rs).prototype = ls, ft(j, "RegExp", Rs)
+        (ls.constructor = Rs).prototype = ls, ft(generalVariable0, "RegExp", Rs)
     }
     gn("RegExp"), st({
         target: "RegExp",
@@ -2477,7 +2477,7 @@
         unsafe: !0
     });
     var Os = zi.trim,
-        Ds = j.parseInt,
+        Ds = generalVariable0.parseInt,
         Ps = /^[+-]?0[Xx]/,
         Cs = 8 !== Ds(Ki + "08") || 22 !== Ds(Ki + "0x16") ? function (t, e) {
             var r = Os(String(t));
@@ -2490,7 +2490,7 @@
         parseInt: Cs
     });
     var ks = zi.trim,
-        Ls = j.parseFloat,
+        Ls = generalVariable0.parseFloat,
         Es = 1 / Ls(Ki + "-0") != -1 / 0 ? function (t) {
             var e = ks(String(t)),
                 r = Ls(e);
@@ -2532,7 +2532,7 @@
         Fs = x.f,
         js = zi.trim,
         As = "Number",
-        xs = j[As],
+        xs = generalVariable0[As],
         qs = xs.prototype,
         Hs = n(jt(qs)) == As;
     if (Dt(As, !xs(" 0o1") || !xs("0b1") || xs("+0x1"))) {
@@ -2542,8 +2542,8 @@
             return r instanceof Ks && (Hs ? F(function () {
                 qs.valueOf.call(r)
             }) : n(r) != As) ? fs(new xs(Ns(e)), r, Ks) : Ns(e)
-        }, Ys = A ? Us(xs) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","), Ws = 0; Ys.length > Ws; Ws++) k(xs, Vs = Ys[Ws]) && !k(Ks, Vs) && Fs(Ks, Vs, Gs(xs, Vs));
-        (Ks.prototype = qs).constructor = Ks, ft(j, As, Ks)
+        }, Ys = A ? Us(xs) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","), Ws = 0; Ys.length > Ws; Ws++) objectVar3(xs, Vs = Ys[Ws]) && !objectVar3(Ks, Vs) && Fs(Ks, Vs, Gs(xs, Vs));
+        (Ks.prototype = qs).constructor = Ks, ft(generalVariable0, As, Ks)
     }
     st({
         target: "Number",
@@ -2551,7 +2551,7 @@
     }, {
         EPSILON: Math.pow(2, -52)
     });
-    var Js = j.isFinite,
+    var Js = generalVariable0.isFinite,
         zs = Number.isFinite || function (t) {
             return "number" == typeof t && Js(t)
         };
@@ -2563,7 +2563,7 @@
     });
 
     function Zs(t) {
-        return !C(t) && isFinite(t) && $s(t) === t
+        return !objectVar0(t) && isFinite(t) && $s(t) === t
     }
     var $s = Math.floor;
     st({
@@ -2646,7 +2646,7 @@
                 return e
             }
             var n, i, s, a, u = Qs(this),
-                c = Q(t),
+                c = argument_0(t),
                 f = [0, 0, 0, 0, 0, 0],
                 h = "",
                 p = "0";
@@ -2950,7 +2950,7 @@
     pu in du || q(du, pu, function (t) {
         if ("string" !== t && "number" !== t && "default" !== t) throw TypeError("Incorrect hint");
         return f(B(this), "number" !== t)
-    }), qt(j.JSON, "JSON", !0);
+    }), qt(generalVariable0.JSON, "JSON", !0);
 
     function mu(t, e, r) {
         for (var o in e) ft(t, o, e[o], r);
@@ -2980,15 +2980,15 @@
     }
 
     function Ru(t) {
-        j.postMessage(t + "", bu.protocol + "//" + bu.host)
+        generalVariable0.postMessage(t + "", bu.protocol + "//" + bu.host)
     }
-    var vu, wu, Su, Mu = j.Promise,
-        bu = j.location,
-        Iu = j.setImmediate,
-        Bu = j.clearImmediate,
-        Tu = j.process,
-        Ou = j.MessageChannel,
-        Du = j.Dispatch,
+    var vu, wu, Su, Mu = generalVariable0.Promise,
+        bu = generalVariable0.location,
+        Iu = generalVariable0.setImmediate,
+        Bu = generalVariable0.clearImmediate,
+        Tu = generalVariable0.process,
+        Ou = generalVariable0.MessageChannel,
+        Du = generalVariable0.Dispatch,
         Pu = 0,
         Cu = {},
         ku = "onreadystatechange";
@@ -3003,24 +3003,24 @@
         Tu.nextTick(yu(t))
     } : Du && Du.now ? vu = function (t) {
         Du.now(yu(t))
-    } : Ou ? (Su = (wu = new Ou).port2, wu.port1.onmessage = _u, vu = Vt(Su.postMessage, Su, 1)) : !j.addEventListener || "function" != typeof postMessage || j.importScripts || F(Ru) ? vu = ku in i("script") ? function (t) {
+    } : Ou ? (Su = (wu = new Ou).port2, wu.port1.onmessage = _u, vu = Vt(Su.postMessage, Su, 1)) : !generalVariable0.addEventListener || "function" != typeof postMessage || generalVariable0.importScripts || F(Ru) ? vu = ku in i("script") ? function (t) {
         Nt.appendChild(i("script"))[ku] = function () {
             Nt.removeChild(this), gu(t)
         }
     } : function (t) {
         setTimeout(yu(t), 0)
-    } : (vu = Ru, j.addEventListener("message", _u, !1)));
+    } : (vu = Ru, generalVariable0.addEventListener("message", _u, !1)));
     var Lu, Eu, Nu, Uu, Gu, Fu, ju, Au, xu = {
         set: Iu,
         clear: Bu
     },
         qu = L.f,
         Hu = xu.set,
-        Vu = j.MutationObserver || j.WebKitMutationObserver,
-        Ku = j.process,
-        Yu = j.Promise,
+        Vu = generalVariable0.MutationObserver || generalVariable0.WebKitMutationObserver,
+        Ku = generalVariable0.process,
+        Yu = generalVariable0.Promise,
         Wu = "process" == n(Ku),
-        Ju = qu(j, "queueMicrotask"),
+        Ju = qu(generalVariable0, "queueMicrotask"),
         zu = Ju && Ju.value;
     zu || (Lu = function () {
         var t, e;
@@ -3042,7 +3042,7 @@
     }) : Yu && Yu.resolve ? (ju = Yu.resolve(void 0), Au = ju.then, function () {
         Au.call(ju, Lu)
     }) : function () {
-        Hu.call(j, Lu)
+        Hu.call(generalVariable0, Lu)
     });
 
     function Zu(t) {
@@ -3054,13 +3054,13 @@
     }
 
     function $u(t, e) {
-        if (B(t), C(e) && e.constructor === t) return e;
+        if (B(t), objectVar0(e) && e.constructor === t) return e;
         var r = fc.f(t);
         return (0, r.resolve)(e), r.promise
     }
 
     function Xu(t, e) {
-        var r = j.console;
+        var r = generalVariable0.console;
         r && r.error && (1 === arguments.length ? r.error(t) : r.error(t, e))
     }
 
@@ -3080,7 +3080,7 @@
 
     function tc(t) {
         var e;
-        return !(!C(t) || "function" != typeof (e = t.then)) && e
+        return !(!objectVar0(t) || "function" != typeof (e = t.then)) && e
     }
 
     function ec(h, p, d) {
@@ -3107,10 +3107,10 @@
 
     function rc(t, e, r) {
         var o, n;
-        Tc ? ((o = Rc.createEvent("Event")).promise = e, o.reason = r, o.initEvent(t, !1, !0), j.dispatchEvent(o)) : o = {
+        Tc ? ((o = Rc.createEvent("Event")).promise = e, o.reason = r, o.initEvent(t, !1, !0), generalVariable0.dispatchEvent(o)) : o = {
             promise: e,
             reason: r
-        }, (n = j["on" + t]) ? n(o) : t === Oc && Xu("Unhandled promise rejection", r)
+        }, (n = generalVariable0["on" + t]) ? n(o) : t === Oc && Xu("Unhandled promise rejection", r)
     }
 
     function oc(e, r, o, n) {
@@ -3141,16 +3141,16 @@
         lc = ct.set,
         gc = ct.getterFor(dc),
         yc = Mu,
-        _c = j.TypeError,
-        Rc = j.document,
-        vc = j.process,
-        wc = j.fetch,
+        _c = generalVariable0.TypeError,
+        Rc = generalVariable0.document,
+        vc = generalVariable0.process,
+        wc = generalVariable0.fetch,
         Sc = vc && vc.versions,
         Mc = Sc && Sc.v8 || "",
         bc = fc.f,
         Ic = bc,
         Bc = "process" == n(vc),
-        Tc = !!(Rc && Rc.createEvent && j.dispatchEvent),
+        Tc = !!(Rc && Rc.createEvent && generalVariable0.dispatchEvent),
         Oc = "unhandledrejection",
         Dc = Dt(dc, function () {
             function e() { }
@@ -3164,7 +3164,7 @@
             yc.all(t).catch(function () { })
         }),
         Cc = function (r, o) {
-            hc.call(j, function () {
+            hc.call(generalVariable0, function () {
                 var t, e = o.value;
                 if (kc(o) && (t = Qu(function () {
                     Bc ? vc.emit("unhandledRejection", e, r) : rc(Oc, r, e)
@@ -3175,7 +3175,7 @@
             return 1 !== t.rejection && !t.parent
         },
         Lc = function (t, e) {
-            hc.call(j, function () {
+            hc.call(generalVariable0, function () {
                 Bc ? vc.emit("rejectionHandled", t) : rc("rejectionhandled", t, e.value)
             })
         },
@@ -3247,7 +3247,7 @@
         forced: !0
     }, {
         fetch: function (t) {
-            return $u(yc, wc.apply(j, arguments))
+            return $u(yc, wc.apply(generalVariable0, arguments))
         }
     }))), st({
         global: !0,
@@ -3255,7 +3255,7 @@
         forced: Dc
     }, {
         Promise: yc
-    }), qt(yc, dc, !1), gn(dc), ac = ht[dc], st({
+    }), qt(yc, dc, !1), gn(dc), ac = chatRelated0[dc], st({
         target: dc,
         stat: !0,
         forced: Dc
@@ -3367,16 +3367,16 @@
             ft(a, t, "add" == t ? function (t) {
                 return r.call(this, 0 === t ? 0 : t), this
             } : "delete" == t ? function (t) {
-                return !(i && !C(t)) && r.call(this, 0 === t ? 0 : t)
+                return !(i && !objectVar0(t)) && r.call(this, 0 === t ? 0 : t)
             } : "get" == t ? function (t) {
-                return i && !C(t) ? void 0 : r.call(this, 0 === t ? 0 : t)
+                return i && !objectVar0(t) ? void 0 : r.call(this, 0 === t ? 0 : t)
             } : "has" == t ? function (t) {
-                return !(i && !C(t)) && r.call(this, 0 === t ? 0 : t)
+                return !(i && !objectVar0(t)) && r.call(this, 0 === t ? 0 : t)
             } : function (t, e) {
                 return r.call(this, 0 === t ? 0 : t, e), this
             })
         }
-        var s = j[o],
+        var s = generalVariable0[o],
             a = s && s.prototype,
             u = s,
             c = n ? "set" : "add",
@@ -3579,20 +3579,20 @@
             return mu(s.prototype, {
                 delete: function (t) {
                     var e = a(this);
-                    if (!C(t)) return !1;
+                    if (!objectVar0(t)) return !1;
                     var r = Kc(t);
-                    return !0 === r ? Uc(e).delete(t) : r && k(r, e.id) && delete r[e.id]
+                    return !0 === r ? Uc(e).delete(t) : r && objectVar3(r, e.id) && delete r[e.id]
                 },
                 has: function (t) {
                     var e = a(this);
-                    if (!C(t)) return !1;
+                    if (!objectVar0(t)) return !1;
                     var r = Kc(t);
-                    return !0 === r ? Uc(e).has(t) : r && k(r, e.id)
+                    return !0 === r ? Uc(e).has(t) : r && objectVar3(r, e.id)
                 }
             }), mu(s.prototype, o ? {
                 get: function (t) {
                     var e = a(this);
-                    if (C(t)) {
+                    if (objectVar0(t)) {
                         var r = Kc(t);
                         return !0 === r ? Uc(e).get(t) : r ? r[e.id] : void 0
                     }
@@ -3607,14 +3607,14 @@
             }), s
         }
     },
-        Qc = t(function (t) {
+        Qc = chatFunc2(function (t) {
             function e(e) {
                 return function (t) {
                     return e(this, arguments.length ? t : void 0)
                 }
             }
             var o, n = ct.enforce,
-                r = !j.ActiveXObject && "ActiveXObject" in j,
+                r = !generalVariable0.ActiveXObject && "ActiveXObject" in generalVariable0,
                 i = Object.isExtensible,
                 s = t.exports = Nc("WeakMap", e, Xc, !0, !0);
             if (N && r) {
@@ -3626,22 +3626,22 @@
                     h = a.set;
                 mu(a, {
                     delete: function (t) {
-                        if (!C(t) || i(t)) return u.call(this, t);
+                        if (!objectVar0(t) || i(t)) return u.call(this, t);
                         var e = n(this);
                         return e.frozen || (e.frozen = new o), u.call(this, t) || e.frozen.delete(t)
                     },
                     has: function (t) {
-                        if (!C(t) || i(t)) return c.call(this, t);
+                        if (!objectVar0(t) || i(t)) return c.call(this, t);
                         var e = n(this);
                         return e.frozen || (e.frozen = new o), c.call(this, t) || e.frozen.has(t)
                     },
                     get: function (t) {
-                        if (!C(t) || i(t)) return f.call(this, t);
+                        if (!objectVar0(t) || i(t)) return f.call(this, t);
                         var e = n(this);
                         return e.frozen || (e.frozen = new o), c.call(this, t) ? f.call(this, t) : e.frozen.get(t)
                     },
                     set: function (t, e) {
-                        if (C(t) && !i(t)) {
+                        if (objectVar0(t) && !i(t)) {
                             var r = n(this);
                             r.frozen || (r.frozen = new o), c.call(this, t) ? h.call(this, t, e) : r.frozen.set(t, e)
                         } else h.call(this, t, e);
@@ -3657,23 +3657,23 @@
     }, Xc, !1, !0);
 
     function tf(t) {
-        return C(t) && k(Rf, or(t))
+        return objectVar0(t) && objectVar3(Rf, or(t))
     }
     var ef, rf = x.f,
-        of = j.DataView,
+        of = generalVariable0.DataView,
         nf = of && of.prototype,
-        sf = j.Int8Array,
+        sf = generalVariable0.Int8Array,
         af = sf && sf.prototype,
-        uf = j.Uint8ClampedArray,
+        uf = generalVariable0.Uint8ClampedArray,
         cf = uf && uf.prototype,
         ff = sf && wr(sf),
         hf = af && wr(af),
         pf = Object.prototype,
         df = pf.isPrototypeOf,
         mf = At("toStringTag"),
-        lf = a("TYPED_ARRAY_TAG"),
-        gf = !(!j.ArrayBuffer || !of),
-        yf = gf && !!Fr && "Opera" !== or(j.opera),
+        lf = chatFunc3("TYPED_ARRAY_TAG"),
+        gf = !(!generalVariable0.ArrayBuffer || !of),
+        yf = gf && !!Fr && "Opera" !== or(generalVariable0.opera),
         _f = !1,
         Rf = {
             Int8Array: 1,
@@ -3686,25 +3686,25 @@
             Float32Array: 4,
             Float64Array: 8
         };
-    for (ef in Rf) j[ef] || (yf = !1);
+    for (ef in Rf) generalVariable0[ef] || (yf = !1);
     if ((!yf || "function" != typeof ff || ff === Function.prototype) && (ff = function () {
         throw TypeError("Incorrect invocation")
     }, yf))
-        for (ef in Rf) j[ef] && Fr(j[ef], ff);
+        for (ef in Rf) generalVariable0[ef] && Fr(generalVariable0[ef], ff);
     if ((!yf || !hf || hf === pf) && (hf = ff.prototype, yf))
-        for (ef in Rf) j[ef] && Fr(j[ef].prototype, hf);
-    if (yf && wr(cf) !== hf && Fr(cf, hf), A && !k(hf, mf))
+        for (ef in Rf) generalVariable0[ef] && Fr(generalVariable0[ef].prototype, hf);
+    if (yf && wr(cf) !== hf && Fr(cf, hf), A && !objectVar3(hf, mf))
         for (ef in _f = !0, rf(hf, mf, {
             get: function () {
-                return C(this) ? this[lf] : void 0
+                return objectVar0(this) ? this[lf] : void 0
             }
-        }), Rf) j[ef] && q(j[ef], lf, ef);
+        }), Rf) generalVariable0[ef] && q(generalVariable0[ef], lf, ef);
     gf && Fr && wr(nf) !== pf && Fr(nf, pf);
 
     function vf(t) {
         if (void 0 === t) return 0;
-        var e = Q(t),
-            r = tt(e);
+        var e = argument_0(t),
+            r = objectGrapes(e);
         if (e !== r) throw RangeError("Wrong length or index");
         return r
     }
@@ -3721,8 +3721,8 @@
                 if (df.call(ff, t)) return t
             } else
                 for (var e in Rf)
-                    if (k(Rf, ef)) {
-                        var r = j[e];
+                    if (objectVar3(Rf, ef)) {
+                        var r = generalVariable0[e];
                         if (r && (t === r || df.call(r, t))) return t
                     } throw TypeError("Target is not a typed array constructor")
         },
@@ -3730,8 +3730,8 @@
             if (A) {
                 if (r)
                     for (var o in Rf) {
-                        var n = j[o];
-                        n && k(n.prototype, t) && delete n.prototype[t]
+                        var n = generalVariable0[o];
+                        n && objectVar3(n.prototype, t) && delete n.prototype[t]
                     }
                 hf[t] && !r || ft(hf, t, r ? e : yf && af[t] || e)
             }
@@ -3741,24 +3741,24 @@
             if (A) {
                 if (Fr) {
                     if (r)
-                        for (o in Rf) (n = j[o]) && k(n, t) && delete n[t];
+                        for (o in Rf) (n = generalVariable0[o]) && objectVar3(n, t) && delete n[t];
                     if (ff[t] && !r) return;
                     try {
                         return ft(ff, t, r ? e : yf && sf[t] || e)
                     } catch (t) { }
                 }
-                for (o in Rf) !(n = j[o]) || n[t] && !r || ft(n, t, e)
+                for (o in Rf) !(n = generalVariable0[o]) || n[t] && !r || ft(n, t, e)
             }
         },
         isView: function (t) {
             var e = or(t);
-            return "DataView" === e || k(Rf, e)
+            return "DataView" === e || objectVar3(Rf, e)
         },
         isTypedArray: tf,
         TypedArray: ff,
         TypedArrayPrototype: hf
     },
-        Sf = t(function (t, e) {
+        Sf = chatFunc2(function (t, e) {
             function r(t, e, r) {
                 var o, n, i, s = new Array(r),
                     a = 8 * r - e - 1,
@@ -3848,11 +3848,11 @@
                 R = "DataView",
                 v = "prototype",
                 w = "Wrong index",
-                S = j[_],
+                S = generalVariable0[_],
                 M = S,
-                b = j[R],
-                I = j.Math,
-                B = j.RangeError,
+                b = generalVariable0[R],
+                I = generalVariable0.Math,
+                B = generalVariable0.RangeError,
                 T = I.abs,
                 O = I.pow,
                 D = I.floor,
@@ -3893,9 +3893,9 @@
             }, b = function (t, e, r) {
                 lu(this, b, R), lu(t, M, R);
                 var o = g(t).byteLength,
-                    n = Q(e);
+                    n = argument_0(e);
                 if (n < 0 || o < n) throw B("Wrong offset");
-                if (o < n + (r = void 0 === r ? o - n : tt(r))) throw B("Wrong length");
+                if (o < n + (r = void 0 === r ? o - n : objectGrapes(r))) throw B("Wrong length");
                 y(this, {
                     buffer: t,
                     byteLength: r,
@@ -3957,7 +3957,7 @@
         }),
         Mf = "ArrayBuffer",
         bf = Sf[Mf],
-        If = j[Mf];
+        If = generalVariable0[Mf];
     st({
         global: !0,
         forced: If !== bf
@@ -3984,7 +3984,7 @@
     }, {
         slice: function (t, e) {
             if (void 0 !== Of && void 0 === e) return Of.call(B(this), t);
-            for (var r = B(this).byteLength, o = et(t, r), n = et(void 0 === e ? r : e, r), i = new (di(this, Bf))(tt(n - o)), s = new Tf(this), a = new Tf(i), u = 0; o < n;) a.setUint8(u++, s.getUint8(o++));
+            for (var r = B(this).byteLength, o = et(t, r), n = et(void 0 === e ? r : e, r), i = new (di(this, Bf))(objectGrapes(n - o)), s = new Tf(this), a = new Tf(i), u = 0; o < n;) a.setUint8(u++, s.getUint8(o++));
             return i
         }
     }), st({
@@ -3995,7 +3995,7 @@
     });
 
     function Pf(t, e) {
-        var r = Q(t);
+        var r = argument_0(t);
         if (r < 0 || r % e) throw RangeError("Wrong offset");
         return r
     }
@@ -4008,12 +4008,12 @@
             p = nr(u);
         if (null != p && !rr(p))
             for (a = p.call(u), u = []; !(s = a.next()).done;) u.push(s.value);
-        for (h && 2 < c && (f = Vt(f, r, 2)), n = tt(u.length), i = new (Uf(this))(n), o = 0; o < n; o++) i[o] = h ? f(u[o], o) : u[o];
+        for (h && 2 < c && (f = Vt(f, r, 2)), n = objectGrapes(u.length), i = new (Uf(this))(n), o = 0; o < n; o++) i[o] = h ? f(u[o], o) : u[o];
         return i
     }
     var kf = wf.NATIVE_ARRAY_BUFFER_VIEWS,
-        Lf = j.ArrayBuffer,
-        Ef = j.Int8Array,
+        Lf = generalVariable0.ArrayBuffer,
+        Ef = generalVariable0.Int8Array,
         Nf = !kf || !F(function () {
             Ef(1)
         }) || !F(function () {
@@ -4024,7 +4024,7 @@
             return 1 !== new Ef(new Lf(2), 1, void 0).length
         }),
         Uf = wf.aTypedArrayConstructor,
-        Gf = t(function (t) {
+        Gf = chatFunc2(function (t) {
             function m(t, e) {
                 for (var r = 0, o = e.length, n = new (s(t))(o); r < o;) n[r] = e[r++];
                 return n
@@ -4052,7 +4052,7 @@
             }
 
             function n(t, e, r) {
-                return !(o(t, e = f(e, !0)) && C(r) && k(r, "value")) || k(r, "get") || k(r, "set") || r.configurable || k(r, "writable") && !r.writable || k(r, "enumerable") && !r.enumerable ? _(t, e, r) : (t[e] = r.value, t)
+                return !(o(t, e = f(e, !0)) && objectVar0(r) && objectVar3(r, "value")) || objectVar3(r, "get") || objectVar3(r, "set") || r.configurable || objectVar3(r, "writable") && !r.writable || objectVar3(r, "enumerable") && !r.enumerable ? _(t, e, r) : (t[e] = r.value, t)
             }
             var u = wt.f,
                 c = ce.forEach,
@@ -4061,7 +4061,7 @@
                 _ = x.f,
                 i = L.f,
                 R = Math.round,
-                v = j.RangeError,
+                v = generalVariable0.RangeError,
                 w = Sf.ArrayBuffer,
                 S = Sf.DataView,
                 M = wf.NATIVE_ARRAY_BUFFER_VIEWS,
@@ -4100,26 +4100,26 @@
                 var p = t + (n ? "Clamped" : "") + "Array",
                     o = "get" + t,
                     i = "set" + t,
-                    s = j[p],
+                    s = generalVariable0[p],
                     d = s,
                     r = d && d.prototype,
                     a = {};
                 M ? Nf && (d = e(function (t, e, r, o) {
-                    return lu(t, d, p), C(e) ? l(e) ? void 0 !== o ? new s(e, Pf(r, f), o) : void 0 !== r ? new s(e, Pf(r, f)) : new s(e) : T(e) ? m(d, e) : Cf.call(d, e) : new s(vf(e))
+                    return lu(t, d, p), objectVar0(e) ? l(e) ? void 0 !== o ? new s(e, Pf(r, f), o) : void 0 !== r ? new s(e, Pf(r, f)) : new s(e) : T(e) ? m(d, e) : Cf.call(d, e) : new s(vf(e))
                 }), Fr && Fr(d, I), c(u(s), function (t) {
                     t in d || q(d, t, s[t])
                 }), d.prototype = r) : (d = e(function (t, e, r, o) {
                     lu(t, d, p);
                     var n, i, s, a = 0,
                         u = 0;
-                    if (C(e)) {
+                    if (objectVar0(e)) {
                         if (!l(e)) return T(e) ? m(d, e) : Cf.call(d, e);
                         n = e, u = Pf(r, f);
                         var c = e.byteLength;
                         if (void 0 === o) {
                             if (c % f) throw v(D);
                             if ((i = c - u) < 0) throw v(D)
-                        } else if (c < (i = tt(o) * f) + u) throw v(D);
+                        } else if (c < (i = objectGrapes(o) * f) + u) throw v(D);
                         s = i / f
                     } else s = vf(e), n = new w(i = s * f);
                     for (y(t, {
@@ -4228,7 +4228,7 @@
         return ih.call(uh(this))
     }
     var oh = At("iterator"),
-        nh = j.Uint8Array,
+        nh = generalVariable0.Uint8Array,
         ih = Gn.values,
         sh = Gn.keys,
         ah = Gn.entries,
@@ -4283,7 +4283,7 @@
         var r = Pf(1 < arguments.length ? e : void 0, 1),
             o = this.length,
             n = at(t),
-            i = tt(n.length),
+            i = objectGrapes(n.length),
             s = 0;
         if (o < i + r) throw RangeError("Wrong length");
         for (; s < i;) this[r + s] = n[s++]
@@ -4313,9 +4313,9 @@
         var r = Eh(this),
             o = r.length,
             n = et(t, o);
-        return new (di(r, r.constructor))(r.buffer, r.byteOffset + n * r.BYTES_PER_ELEMENT, tt((void 0 === e ? o : et(e, o)) - n))
+        return new (di(r, r.constructor))(r.buffer, r.byteOffset + n * r.BYTES_PER_ELEMENT, objectGrapes((void 0 === e ? o : et(e, o)) - n))
     });
-    var Nh = j.Int8Array,
+    var Nh = generalVariable0.Int8Array,
         Uh = wf.aTypedArray,
         Gh = [].toLocaleString,
         Fh = [].slice,
@@ -4330,7 +4330,7 @@
     wf.exportProto("toLocaleString", function () {
         return Gh.apply(jh ? Fh.call(Uh(this)) : Uh(this), arguments)
     }, Ah);
-    var xh = j.Uint8Array,
+    var xh = generalVariable0.Uint8Array,
         qh = xh && xh.prototype,
         Hh = [].toString,
         Vh = [].join;
@@ -4389,9 +4389,9 @@
                 return n.push.apply(n, e), new (Jr.apply(t, n))
             }
             var i = o.prototype,
-                s = jt(C(i) ? i : Object.prototype),
+                s = jt(objectVar0(i) ? i : Object.prototype),
                 a = Function.apply.call(t, s, e);
-            return C(a) ? a : s
+            return objectVar0(a) ? a : s
         }
     });
     var Xh = F(function () {
@@ -4433,7 +4433,7 @@
     }, {
         get: function t(e, r) {
             var o, n, i = arguments.length < 3 ? e : arguments[2];
-            return B(e) === i ? e[r] : (o = L.f(e, r)) ? k(o, "value") ? o.value : void 0 === o.get ? void 0 : o.get.call(i) : C(n = wr(e)) ? t(n, r, i) : void 0
+            return B(e) === i ? e[r] : (o = L.f(e, r)) ? objectVar3(o, "value") ? o.value : void 0 === o.get ? void 0 : o.get.call(i) : objectVar0(n = wr(e)) ? t(n, r, i) : void 0
         }
     }), st({
         target: "Reflect",
@@ -4494,11 +4494,11 @@
             var n, i, s = arguments.length < 4 ? e : arguments[3],
                 a = L.f(B(e), r);
             if (!a) {
-                if (C(i = wr(e))) return t(i, r, o, s);
+                if (objectVar0(i = wr(e))) return t(i, r, o, s);
                 a = P(0)
             }
-            if (k(a, "value")) {
-                if (!1 === a.writable || !C(s)) return !1;
+            if (objectVar3(a, "value")) {
+                if (!1 === a.writable || !objectVar0(s)) return !1;
                 if (n = L.f(s, r)) {
                     if (n.get || n.set || !1 === n.writable) return !1;
                     n.value = o, x.f(s, r, n)
@@ -4534,7 +4534,7 @@
         }
         return n
     }
-    var rp = O("metadata"),
+    var rp = objectVar5("metadata"),
         op = rp.store || (rp.store = new Qc),
         np = {
             store: op,
@@ -4893,7 +4893,7 @@
                 updateURL: function () { },
                 updateSearchParams: Fp
             }), void 0 !== u)
-                if (C(u))
+                if (objectVar0(u))
                     if ("function" == typeof (e = nr(u)))
                         for (r = e.call(u); !(o = r.next()).done;) {
                             if ((i = (n = kp(B(o.value))).next()).done || (s = n.next()).done || !n.next().done) throw TypeError("Expected sequence with length 2");
@@ -4902,7 +4902,7 @@
                                 value: s.value + ""
                             })
                         } else
-                        for (a in u) k(u, a) && c.push({
+                        for (a in u) objectVar3(u, a) && c.push({
                             key: a,
                             value: u[a] + ""
                         });
@@ -5073,7 +5073,7 @@
                             p = "", f = $d, h = 0;
                             continue
                         }
-                        if (r && (Jd(t) != k(Wd, p) || "file" == p && (cd(t) || null !== t.port) || "file" == t.scheme && !t.host)) return;
+                        if (r && (Jd(t) != objectVar3(Wd, p) || "file" == p && (cd(t) || null !== t.port) || "file" == t.scheme && !t.host)) return;
                         if (t.scheme = p, r) return void (Jd(t) && Wd[t.scheme] == t.port && (t.port = null));
                         p = "", "file" == t.scheme ? f = um : Jd(t) && o && o.scheme == t.scheme ? f = Xd : Jd(t) ? f = rm : "/" == n[h + 1] ? (f = Qd, h++) : (t.cannotBeABaseURL = !0, t.path.push(""), f = dm)
                     }
@@ -5264,7 +5264,7 @@
         getState: Xp
     },
         _d = qn.codeAt,
-        Rd = j.URL,
+        Rd = generalVariable0.URL,
         vd = yd.URLSearchParams,
         wd = yd.getState,
         Sd = ct.set,
@@ -5385,7 +5385,7 @@
         }),
         Yd = function (t, e) {
             var r = _d(t, 0);
-            return 32 < r && r < 127 && !k(e, t) ? t : encodeURIComponent(t)
+            return 32 < r && r < 127 && !objectVar3(e, t) ? t : encodeURIComponent(t)
         },
         Wd = {
             ftp: 21,
@@ -5397,7 +5397,7 @@
             wss: 443
         },
         Jd = function (t) {
-            return k(Wd, t.scheme)
+            return objectVar3(Wd, t.scheme)
         },
         zd = {},
         Zd = {},
@@ -5592,7 +5592,7 @@
         configurable: !0,
         get: function () {
             var t = at(this),
-                e = tt(t.length);
+                e = objectGrapes(t.length);
             return 0 == e ? 0 : e - 1
         }
     }), Mo("lastIndex"));
@@ -5601,12 +5601,12 @@
         configurable: !0,
         get: function () {
             var t = at(this),
-                e = tt(t.length);
+                e = objectGrapes(t.length);
             return 0 == e ? void 0 : t[e - 1]
         },
         set: function (t) {
             var e = at(this),
-                r = tt(e.length);
+                r = objectGrapes(e.length);
             return e[0 == r ? 0 : r - 1] = t
         }
     }), Mo("lastItem")), st({
@@ -6060,9 +6060,9 @@
     function xm() {
         var t, e, r = Hm,
             o = arguments.length;
-        for (t = 0; t < o; t++) C(e = arguments[t]) && (r = r.next(t, e, !0));
+        for (t = 0; t < o; t++) objectVar0(e = arguments[t]) && (r = r.next(t, e, !0));
         if (this === Object && r === Hm) throw TypeError("Composite keys must contain a non-primitive component");
-        for (t = 0; t < o; t++) C(e = arguments[t]) || (r = r.next(t, e, !1));
+        for (t = 0; t < o; t++) objectVar0(e = arguments[t]) || (r = r.next(t, e, !1));
         return r
     }
 
@@ -6168,7 +6168,7 @@
             if ("string" != typeof t) throw TypeError(zm);
             if (!t.length) throw SyntaxError(zm);
             if ("-" == t.charAt(0) && (n = -1, !(t = t.slice(1)).length)) throw SyntaxError(zm);
-            if ((r = void 0 === e ? 10 : Q(e)) < 2 || 36 < r) throw RangeError("Invalid radix");
+            if ((r = void 0 === e ? 10 : argument_0(e)) < 2 || 36 < r) throw RangeError("Invalid radix");
             if (!Zm.test(t) || (o = Cs(t, r)).toString(r) !== t) throw SyntaxError(zm);
             return n * o
         }
@@ -6310,7 +6310,7 @@
                 next: t,
                 error: 1 < o ? e : void 0,
                 complete: 2 < o ? r : void 0
-            } : C(t) ? t : {}, nl(this).subscriber)
+            } : objectVar0(t) ? t : {}, nl(this).subscriber)
         }
     }), mu(al, {
         from: function (t) {
@@ -6591,7 +6591,7 @@
     }), xt("replaceAll"), xt("asyncDispose"), xt("dispose"), st({
         global: !0
     }, {
-        globalThis: j
+        globalThis: generalVariable0
     });
     var Il = {
         CSSRuleList: 0,
@@ -6627,7 +6627,7 @@
         TouchList: 0
     };
     for (var Bl in Il) {
-        var Tl = j[Bl],
+        var Tl = generalVariable0[Bl],
             Ol = Tl && Tl.prototype;
         if (Ol && Ol.forEach !== Go) try {
             q(Ol, "forEach", Go)
@@ -6639,7 +6639,7 @@
         Pl = At("toStringTag"),
         Cl = Gn.values;
     for (var kl in Il) {
-        var Ll = j[kl],
+        var Ll = generalVariable0[kl],
             El = Ll && Ll.prototype;
         if (El) {
             if (El[Dl] !== Cl) try {
@@ -6656,7 +6656,7 @@
                     }
         }
     }
-    var Ul = !j.setImmediate || !j.clearImmediate;
+    var Ul = !generalVariable0.setImmediate || !generalVariable0.clearImmediate;
     st({
         global: !0,
         bind: !0,
@@ -6666,7 +6666,7 @@
         setImmediate: xu.set,
         clearImmediate: xu.clear
     });
-    var Gl = j.process,
+    var Gl = generalVariable0.process,
         Fl = "process" == n(Gl);
     st({
         global: !0,
@@ -6695,10 +6695,10 @@
         bind: !0,
         forced: xl
     }, {
-        setTimeout: jl(j.setTimeout),
-        setInterval: jl(j.setInterval)
+        setTimeout: jl(generalVariable0.setTimeout),
+        setInterval: jl(generalVariable0.setInterval)
     });
-    t(function (t) {
+    chatFunc2(function (t) {
         var e = function (i) {
             var u, t = Object.prototype,
                 c = t.hasOwnProperty,
@@ -8453,7 +8453,7 @@
             for (s = s << n | a, c += n; 0 < c; t[r + d] = 255 & s, d += m, s /= 256, c -= 8);
             t[r + d - m] |= 128 * l
         },
-        uR = t(function (t, r) {
+        uR = chatFunc2(function (t, r) {
             var e = "function" == typeof Symbol ? Symbol.for("nodejs.util.inspect.custom") : null;
             r.Buffer = h, r.SlowBuffer = function (t) {
                 +t != t && (t = 0);
@@ -9122,7 +9122,7 @@
             }
         }),
         cR = uR.Buffer,
-        fR = (uR.SlowBuffer, uR.INSPECT_MAX_BYTES, uR.kMaxLength, t(function (t) {
+        fR = (uR.SlowBuffer, uR.INSPECT_MAX_BYTES, uR.kMaxLength, chatFunc2(function (t) {
             function i(t, e, r) {
                 var o = t.constructor,
                     n = e - (t = new o(t)).e,
@@ -9341,7 +9341,7 @@
                 return r.prototype = u, r.DP = o, r.RM = n, r.E_NEG = s, r.E_POS = a, r
             }(), t.exports ? (t.exports = r, t.exports.Big = r) : e.Big = r
         })),
-        hR = (fR.Big, t(function (t) {
+        hR = (fR.Big, chatFunc2(function (t) {
             var n = uR.Buffer,
                 h = t.exports = {},
                 i = 4294967296;
@@ -13125,7 +13125,7 @@
             return "function" == typeof t.readFloatLE && "function" == typeof t.slice && WR(t.slice(0, 0))
         }(t) || !!t._isBuffer)
     }
-    var VR = t(function (t) {
+    var VR = chatFunc2(function (t) {
         var i, r;
         i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", r = {
             rotl: function (t, e) {
@@ -13196,7 +13196,7 @@
     function WR(t) {
         return !!t.constructor && "function" == typeof t.constructor.isBuffer && t.constructor.isBuffer(t)
     }
-    var JR = t(function (t) {
+    var JR = chatFunc2(function (t) {
         var y, _, R, v, w;
         y = VR, _ = YR.utf8, R = HR, v = YR.bin, (w = function (t, e) {
             t.constructor == String ? t = e && "binary" === e.encoding ? v.stringToBytes(t) : _.stringToBytes(t) : R(t) ? t = Array.prototype.slice.call(t, 0) : Array.isArray(t) || (t = t.toString());
@@ -13232,7 +13232,7 @@
             return e && e.asBytes ? r : e && e.asString ? v.bytesToString(r) : y.bytesToHex(r)
         }
     }),
-        zR = t(function (Qr, t) {
+        zR = chatFunc2(function (Qr, t) {
             Qr.exports = function () {
                 var e, n;
 
@@ -13843,7 +13843,7 @@
                     var e = null;
                     if (!ce[t] && Qr && Qr.exports) try {
                         e = se._abbr;
-                        var r = to;
+                        var r = chatFunc1;
                         r("./locale/" + t), de(e)
                     } catch (t) { }
                     return ce[t]
@@ -15446,7 +15446,7 @@
     }, Sv.prototype.listenerCount = Bv, Sv.prototype.eventNames = function () {
         return 0 < this._eventsCount ? Reflect.ownKeys(this._events) : []
     };
-    var Ov = t(function (L, t) {
+    var Ov = chatFunc2(function (L, t) {
         ! function () {
             function r(t) {
                 return parseInt(t) === t
@@ -15725,7 +15725,7 @@
     }),
         Dv = new function () { };
     Dv.remoteConfigBackupAddr = "https://platform.xesimg.com/chat/conf/chat.conf", Dv.remoteConfigAddr = "https://chatconf.msg.xescdn.com/chat/v1/getConfig", Dv.remoteConfigRetry = 6, Dv.remoteConfigTimeout = 1e3, Dv.pingTimeout = 2e4, Dv.pingInterval = 8e3, Dv.dispatchList = ["https://chatgslb.xescdn.com/chat/v2/getserver", "https://chatgslb.xesimg.com/chat/v2/getserver"], Dv.reDispatchTimeout = 3e4, Dv.contentMaxLength = 10240, Dv.receiverMaxNum = 400;
-    var Pv, Cv = t(function (t, e) {
+    var Pv, Cv = chatFunc2(function (t, e) {
         var n = p && p.__spreadArrays || function () {
             for (var t = 0, e = 0, r = arguments.length; e < r; e++) t += arguments[e].length;
             var o = Array(t),
