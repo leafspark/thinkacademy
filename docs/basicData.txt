@@ -1,4 +1,16 @@
 Access JS elements at thethinkacademy.com/XXXXX
 
-Interface is here:
+Interface elements are here:
 https://student-h5.thethinkacademy.com/
+
+Download Windows version:
+https://download-pa-s3.thethinkacademy.com/static-pa/package/win-pc-student/ThinkAcademy-2.19.1-win-2610.exe
+Replace the exe with:
+[2.10.3] ThinkAcademy-2.10.3-win-1409.exe
+[2.14.0] ThinkAcademy-2.14.0-win-1813.exe
+Note that it's pretty difficult to get the version because there is a 4 digit identifier at the end. (Build number?)
+
+I am suspicious this app is also a keylogger, because any Ctrl+Shift+I shortcuts get sent to it.
+This could mean that it captures your keystrokes even when not focused. (Version 2.14.0)
+
+iOS and Android apps are a bit better, but they appear to use the same backend.
