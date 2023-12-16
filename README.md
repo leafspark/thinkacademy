@@ -1,6 +1,8 @@
 # thinkacademy
 Reverse-engineering of the ThinkAcademy classroom app
 
+View as raw for correct formatting because I'm too lazy to use markdown.
+
 (Gonna be split into separate pages soon)
 Unpack the agar files (Electron app)
 Once installed use Chromium DevTools to examine
@@ -12,4 +14,6 @@ whether the window is focused and the code is obfuscated to hell. Not only that 
 Unicode references in the code which makes the program a little bit larger and the absurd logging in the javascript.
 There are hundreds of warnings, errors, and verbose logs every second.
 
+Website: https://web.archive.org/web/20231112054724/https://www.thethinkacademy.com/
+(Archive.org because there's like infinite trackers and analytics on their site)
 
