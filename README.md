@@ -1,11 +1,10 @@
 # thinkacademy-reverse-engineered
 Reverse-engineering of the ThinkAcademy classroom app
 
-View as raw for correct formatting because I'm too lazy to use markdown.
-
-(Gonna be split into separate pages soon)
 Unpack the asar files (Electron app)
+
 "npx @electron/asar extract app.asar ."
+
 Windows command (Node.js required)
 
 Once installed use Chromium DevTools to examine
@@ -22,14 +21,21 @@ Website: https://web.archive.org/web/20231112054724/https://www.thethinkacademy.
 
 Sketchy as shit:
 https://www.scmp.com/yp/discover/news/hong-kong/article/3058858/tearful-parents-think-academy-international-school
+
 (Students hate it)
+
 Failed to properly register school
+
 Plus recent layoffs in the US
+
 Shutdown in China due to private tutoring laws
 
 Find docs:
+
 https://github.com/LeafSpark/thinkacademy/blob/main/docs/basicData.txt
+
 https://github.com/LeafSpark/thinkacademy/blob/main/docs/homework.txt
+
 https://github.com/LeafSpark/thinkacademy/blob/main/docs/appchangelog
 
 The code is nearly impossible to work with, so the best way to analyze it is watching it live.
