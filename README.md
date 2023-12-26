@@ -1,8 +1,6 @@
 # thinkacademy-reverse-engineered
 
-ThinkAcademy iOS and Android apps decompiled
-
-### Decrypted from iPhone 7, iOS 15.7.9, TrollDecrypt
+ThinkAcademy/Think Parent Android app decompiled
 
 ### Website: https://web.archive.org/web/20231112054724/https://www.thethinkacademy.com/
 
