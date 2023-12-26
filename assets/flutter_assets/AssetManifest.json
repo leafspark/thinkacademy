@@ -1,1 +1,209 @@
-{"assets/images/common/close_icon.png":["assets/images/common/close_icon.png"],"assets/images/common/common_back_icon@2x.png":["assets/images/common/common_back_icon@2x.png"],"assets/images/common/fail_internet_connection.png":["assets/images/common/fail_internet_connection.png"],"assets/images/common/ic_empty.webp":["assets/images/common/ic_empty.webp"],"assets/images/common/live_icon_time_zone_close.webp":["assets/images/common/live_icon_time_zone_close.webp"],"assets/images/common/second_screen_default_image.png":["assets/images/common/second_screen_default_image.png"],"assets/images/common/switch_course_icon.png":["assets/images/common/switch_course_icon.png"],"assets/images/common/switch_icon.png":["assets/images/common/switch_icon.png"],"assets/images/common/unlogin_logo.png":["assets/images/common/unlogin_logo.png"],"assets/images/course_complete_icon.png":["assets/images/course_complete_icon.png"],"assets/images/course_detail/assignment_icon@2x.png":["assets/images/course_detail/assignment_icon@2x.png"],"assets/images/course_detail/contact_common@2x.png":["assets/images/course_detail/contact_common@2x.png"],"assets/images/course_detail/contact_line@2x.png":["assets/images/course_detail/contact_line@2x.png"],"assets/images/course_detail/contact_wechat@2x.png":["assets/images/course_detail/contact_wechat@2x.png"],"assets/images/course_detail/contact_whatsapp@2x.png":["assets/images/course_detail/contact_whatsapp@2x.png"],"assets/images/course_detail/course_date_icon@2x.png":["assets/images/course_detail/course_date_icon@2x.png"],"assets/images/course_detail/course_detail_down_arrow@2x.png":["assets/images/course_detail/course_detail_down_arrow@2x.png"],"assets/images/course_detail/course_detail_reload@2x.png":["assets/images/course_detail/course_detail_reload@2x.png"],"assets/images/course_detail/course_detail_up_arrow@2x.png":["assets/images/course_detail/course_detail_up_arrow@2x.png"],"assets/images/course_detail/course_expand_arrow@2x.png":["assets/images/course_detail/course_expand_arrow@2x.png"],"assets/images/course_detail/course_expand_lock@2x.png":["assets/images/course_detail/course_expand_lock@2x.png"],"assets/images/course_detail/course_header_icon@2x.png":["assets/images/course_detail/course_header_icon@2x.png"],"assets/images/course_detail/course_record_header_icon.png":["assets/images/course_detail/course_record_header_icon.png"],"assets/images/course_detail/course_stage_exam@2x.png":["assets/images/course_detail/course_stage_exam@2x.png"],"assets/images/course_detail/exam_icon@2x.png":["assets/images/course_detail/exam_icon@2x.png"],"assets/images/course_detail/lession_report_icon@2x.png":["assets/images/course_detail/lession_report_icon@2x.png"],"assets/images/course_detail/material_icon@2x.png":["assets/images/course_detail/material_icon@2x.png"],"assets/images/course_detail/preview_question_icon@2x.png":["assets/images/course_detail/preview_question_icon@2x.png"],"assets/images/course_home/ic_course_home_already_start.png":["assets/images/course_home/ic_course_home_already_start.png"],"assets/images/course_home/ic_course_home_next.png":["assets/images/course_home/ic_course_home_next.png"],"assets/images/course_home/ic_course_home_time.png":["assets/images/course_home/ic_course_home_time.png"],"assets/images/default_image_user.png":["assets/images/default_image_user.png"],"assets/images/dialog_loading.png":["assets/images/dialog_loading.png"],"assets/images/home_reminder_class_close.png":["assets/images/home_reminder_class_close.png"],"assets/images/home_reminder_class_img.png":["assets/images/home_reminder_class_img.png"],"assets/images/lottie/bodong/bodong.json":["assets/images/lottie/bodong/bodong.json"],"assets/images/refresh_loadings/loadingidle-1.png":["assets/images/refresh_loadings/loadingidle-1.png"],"assets/images/refresh_loadings/loadingidle-10.png":["assets/images/refresh_loadings/loadingidle-10.png"],"assets/images/refresh_loadings/loadingidle-11.png":["assets/images/refresh_loadings/loadingidle-11.png"],"assets/images/refresh_loadings/loadingidle-12.png":["assets/images/refresh_loadings/loadingidle-12.png"],"assets/images/refresh_loadings/loadingidle-13.png":["assets/images/refresh_loadings/loadingidle-13.png"],"assets/images/refresh_loadings/loadingidle-14.png":["assets/images/refresh_loadings/loadingidle-14.png"],"assets/images/refresh_loadings/loadingidle-15.png":["assets/images/refresh_loadings/loadingidle-15.png"],"assets/images/refresh_loadings/loadingidle-16.png":["assets/images/refresh_loadings/loadingidle-16.png"],"assets/images/refresh_loadings/loadingidle-17.png":["assets/images/refresh_loadings/loadingidle-17.png"],"assets/images/refresh_loadings/loadingidle-18.png":["assets/images/refresh_loadings/loadingidle-18.png"],"assets/images/refresh_loadings/loadingidle-19.png":["assets/images/refresh_loadings/loadingidle-19.png"],"assets/images/refresh_loadings/loadingidle-2.png":["assets/images/refresh_loadings/loadingidle-2.png"],"assets/images/refresh_loadings/loadingidle-20.png":["assets/images/refresh_loadings/loadingidle-20.png"],"assets/images/refresh_loadings/loadingidle-21.png":["assets/images/refresh_loadings/loadingidle-21.png"],"assets/images/refresh_loadings/loadingidle-22.png":["assets/images/refresh_loadings/loadingidle-22.png"],"assets/images/refresh_loadings/loadingidle-23.png":["assets/images/refresh_loadings/loadingidle-23.png"],"assets/images/refresh_loadings/loadingidle-24.png":["assets/images/refresh_loadings/loadingidle-24.png"],"assets/images/refresh_loadings/loadingidle-25.png":["assets/images/refresh_loadings/loadingidle-25.png"],"assets/images/refresh_loadings/loadingidle-26.png":["assets/images/refresh_loadings/loadingidle-26.png"],"assets/images/refresh_loadings/loadingidle-27.png":["assets/images/refresh_loadings/loadingidle-27.png"],"assets/images/refresh_loadings/loadingidle-28.png":["assets/images/refresh_loadings/loadingidle-28.png"],"assets/images/refresh_loadings/loadingidle-29.png":["assets/images/refresh_loadings/loadingidle-29.png"],"assets/images/refresh_loadings/loadingidle-3.png":["assets/images/refresh_loadings/loadingidle-3.png"],"assets/images/refresh_loadings/loadingidle-30.png":["assets/images/refresh_loadings/loadingidle-30.png"],"assets/images/refresh_loadings/loadingidle-4.png":["assets/images/refresh_loadings/loadingidle-4.png"],"assets/images/refresh_loadings/loadingidle-5.png":["assets/images/refresh_loadings/loadingidle-5.png"],"assets/images/refresh_loadings/loadingidle-6.png":["assets/images/refresh_loadings/loadingidle-6.png"],"assets/images/refresh_loadings/loadingidle-7.png":["assets/images/refresh_loadings/loadingidle-7.png"],"assets/images/refresh_loadings/loadingidle-8.png":["assets/images/refresh_loadings/loadingidle-8.png"],"assets/images/refresh_loadings/loadingidle-9.png":["assets/images/refresh_loadings/loadingidle-9.png"],"packages/cupertino_icons/assets/CupertinoIcons.ttf":["packages/cupertino_icons/assets/CupertinoIcons.ttf"],"packages/fluttertoast/assets/toastify.css":["packages/fluttertoast/assets/toastify.css"],"packages/fluttertoast/assets/toastify.js":["packages/fluttertoast/assets/toastify.js"]}
+{
+    "assets/images/common/close_icon.png": [
+        "assets/images/common/close_icon.png"
+    ],
+    "assets/images/common/common_back_icon@2x.png": [
+        "assets/images/common/common_back_icon@2x.png"
+    ],
+    "assets/images/common/fail_internet_connection.png": [
+        "assets/images/common/fail_internet_connection.png"
+    ],
+    "assets/images/common/ic_empty.webp": [
+        "assets/images/common/ic_empty.webp"
+    ],
+    "assets/images/common/live_icon_time_zone_close.webp": [
+        "assets/images/common/live_icon_time_zone_close.webp"
+    ],
+    "assets/images/common/second_screen_default_image.png": [
+        "assets/images/common/second_screen_default_image.png"
+    ],
+    "assets/images/common/switch_course_icon.png": [
+        "assets/images/common/switch_course_icon.png"
+    ],
+    "assets/images/common/switch_icon.png": [
+        "assets/images/common/switch_icon.png"
+    ],
+    "assets/images/common/unlogin_logo.png": [
+        "assets/images/common/unlogin_logo.png"
+    ],
+    "assets/images/course_complete_icon.png": [
+        "assets/images/course_complete_icon.png"
+    ],
+    "assets/images/course_detail/assignment_icon@2x.png": [
+        "assets/images/course_detail/assignment_icon@2x.png"
+    ],
+    "assets/images/course_detail/contact_common@2x.png": [
+        "assets/images/course_detail/contact_common@2x.png"
+    ],
+    "assets/images/course_detail/contact_line@2x.png": [
+        "assets/images/course_detail/contact_line@2x.png"
+    ],
+    "assets/images/course_detail/contact_wechat@2x.png": [
+        "assets/images/course_detail/contact_wechat@2x.png"
+    ],
+    "assets/images/course_detail/contact_whatsapp@2x.png": [
+        "assets/images/course_detail/contact_whatsapp@2x.png"
+    ],
+    "assets/images/course_detail/course_date_icon@2x.png": [
+        "assets/images/course_detail/course_date_icon@2x.png"
+    ],
+    "assets/images/course_detail/course_detail_down_arrow@2x.png": [
+        "assets/images/course_detail/course_detail_down_arrow@2x.png"
+    ],
+    "assets/images/course_detail/course_detail_reload@2x.png": [
+        "assets/images/course_detail/course_detail_reload@2x.png"
+    ],
+    "assets/images/course_detail/course_detail_up_arrow@2x.png": [
+        "assets/images/course_detail/course_detail_up_arrow@2x.png"
+    ],
+    "assets/images/course_detail/course_expand_arrow@2x.png": [
+        "assets/images/course_detail/course_expand_arrow@2x.png"
+    ],
+    "assets/images/course_detail/course_expand_lock@2x.png": [
+        "assets/images/course_detail/course_expand_lock@2x.png"
+    ],
+    "assets/images/course_detail/course_header_icon@2x.png": [
+        "assets/images/course_detail/course_header_icon@2x.png"
+    ],
+    "assets/images/course_detail/course_record_header_icon.png": [
+        "assets/images/course_detail/course_record_header_icon.png"
+    ],
+    "assets/images/course_detail/course_stage_exam@2x.png": [
+        "assets/images/course_detail/course_stage_exam@2x.png"
+    ],
+    "assets/images/course_detail/exam_icon@2x.png": [
+        "assets/images/course_detail/exam_icon@2x.png"
+    ],
+    "assets/images/course_detail/lession_report_icon@2x.png": [
+        "assets/images/course_detail/lession_report_icon@2x.png"
+    ],
+    "assets/images/course_detail/material_icon@2x.png": [
+        "assets/images/course_detail/material_icon@2x.png"
+    ],
+    "assets/images/course_detail/preview_question_icon@2x.png": [
+        "assets/images/course_detail/preview_question_icon@2x.png"
+    ],
+    "assets/images/course_home/ic_course_home_already_start.png": [
+        "assets/images/course_home/ic_course_home_already_start.png"
+    ],
+    "assets/images/course_home/ic_course_home_next.png": [
+        "assets/images/course_home/ic_course_home_next.png"
+    ],
+    "assets/images/course_home/ic_course_home_time.png": [
+        "assets/images/course_home/ic_course_home_time.png"
+    ],
+    "assets/images/default_image_user.png": [
+        "assets/images/default_image_user.png"
+    ],
+    "assets/images/dialog_loading.png": [
+        "assets/images/dialog_loading.png"
+    ],
+    "assets/images/home_reminder_class_close.png": [
+        "assets/images/home_reminder_class_close.png"
+    ],
+    "assets/images/home_reminder_class_img.png": [
+        "assets/images/home_reminder_class_img.png"
+    ],
+    "assets/images/lottie/bodong/bodong.json": [
+        "assets/images/lottie/bodong/bodong.json"
+    ],
+    "assets/images/refresh_loadings/loadingidle-1.png": [
+        "assets/images/refresh_loadings/loadingidle-1.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-10.png": [
+        "assets/images/refresh_loadings/loadingidle-10.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-11.png": [
+        "assets/images/refresh_loadings/loadingidle-11.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-12.png": [
+        "assets/images/refresh_loadings/loadingidle-12.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-13.png": [
+        "assets/images/refresh_loadings/loadingidle-13.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-14.png": [
+        "assets/images/refresh_loadings/loadingidle-14.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-15.png": [
+        "assets/images/refresh_loadings/loadingidle-15.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-16.png": [
+        "assets/images/refresh_loadings/loadingidle-16.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-17.png": [
+        "assets/images/refresh_loadings/loadingidle-17.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-18.png": [
+        "assets/images/refresh_loadings/loadingidle-18.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-19.png": [
+        "assets/images/refresh_loadings/loadingidle-19.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-2.png": [
+        "assets/images/refresh_loadings/loadingidle-2.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-20.png": [
+        "assets/images/refresh_loadings/loadingidle-20.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-21.png": [
+        "assets/images/refresh_loadings/loadingidle-21.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-22.png": [
+        "assets/images/refresh_loadings/loadingidle-22.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-23.png": [
+        "assets/images/refresh_loadings/loadingidle-23.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-24.png": [
+        "assets/images/refresh_loadings/loadingidle-24.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-25.png": [
+        "assets/images/refresh_loadings/loadingidle-25.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-26.png": [
+        "assets/images/refresh_loadings/loadingidle-26.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-27.png": [
+        "assets/images/refresh_loadings/loadingidle-27.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-28.png": [
+        "assets/images/refresh_loadings/loadingidle-28.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-29.png": [
+        "assets/images/refresh_loadings/loadingidle-29.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-3.png": [
+        "assets/images/refresh_loadings/loadingidle-3.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-30.png": [
+        "assets/images/refresh_loadings/loadingidle-30.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-4.png": [
+        "assets/images/refresh_loadings/loadingidle-4.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-5.png": [
+        "assets/images/refresh_loadings/loadingidle-5.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-6.png": [
+        "assets/images/refresh_loadings/loadingidle-6.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-7.png": [
+        "assets/images/refresh_loadings/loadingidle-7.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-8.png": [
+        "assets/images/refresh_loadings/loadingidle-8.png"
+    ],
+    "assets/images/refresh_loadings/loadingidle-9.png": [
+        "assets/images/refresh_loadings/loadingidle-9.png"
+    ],
+    "packages/cupertino_icons/assets/CupertinoIcons.ttf": [
+        "packages/cupertino_icons/assets/CupertinoIcons.ttf"
+    ],
+    "packages/fluttertoast/assets/toastify.css": [
+        "packages/fluttertoast/assets/toastify.css"
+    ],
+    "packages/fluttertoast/assets/toastify.js": [
+        "packages/fluttertoast/assets/toastify.js"
+    ]
+}

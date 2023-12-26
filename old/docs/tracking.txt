@@ -1,7 +1,0 @@
-Newer versions of this application are seen to track and send analytics to overseas servers. I reccomend blocking all of those analytics and trackers because they contain possibly sensitive data
-or downgrade to a previous version of the app. 
-
-In the 2.19.x version, it appears there are mentions of platform specific commands like "taskkill /f /im +e+" or "pkill -9". It's still unknown why this is present, but I assume it's for closing 
-other processes on the client PC. If this is true, this app should be considered as malicious and removed immediently. There is also list of domains, which may be for filtering but I consider
-this software dangerous, so I have not personally tested it. Note that these changes are not present in previous versions of the application, and no visual changes were made so it is highly
-probable it's more content filtering or tracking.

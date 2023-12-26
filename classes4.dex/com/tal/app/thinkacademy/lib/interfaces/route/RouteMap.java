@@ -1,0 +1,45 @@
+package com.tal.app.thinkacademy.lib.interfaces.route;
+
+public interface RouteMap {
+    public static final String ROUTE_BEFORE_CLASS_BACK_ACTIVITY = "/study/before_class_back";
+    public static final String ROUTE_BEFORE_CLASS_LIVE_ACTIVITY = "/study/before_class_live";
+    public static final String ROUTE_BROWSER_ACTIVITY = "/commui/browser_activity";
+    public static final String ROUTE_CHANGE_NAME_ACTIVITY = "/study/live_change";
+    public static final String ROUTE_CHOOSE_TIME_ZONE = "/login/choose_time_zone";
+    public static final String ROUTE_COINS_ACTIVITY = "/login/coins_activity";
+    public static final String ROUTE_DATA_FRAGMENT = "/home/data_fragment";
+    public static final String ROUTE_DEVICE_TEST_ACTIVITY = "/login/device_test_activity";
+    public static final String ROUTE_HOME_FRAGMENT = "/home/home_fragment";
+    public static final String ROUTE_HW_COMMON_PLAYER_ACTIVITY = "/study/hw_common_player_activity";
+    public static final String ROUTE_HW_HUMMER_ACTIVITY = "/hummer/hw_hummer_activity";
+    public static final String ROUTE_LAUNCH_ACTIVITY = "/home/launch_activity";
+    public static final String ROUTE_LIVE_ACTIVITY = "/live/live_player";
+    public static final String ROUTE_LOGIN_ACTIVITY = "/login/login_activity";
+    public static final String ROUTE_MAIN_ACTIVITY = "/home/main_activity";
+    public static final String ROUTE_ME_FRAGMENT = "/me/me_fragment";
+    public static final String ROUTE_MY_ACCOUNT_ACTIVITY = "/login/my_account_activity";
+    public static final String ROUTE_NOTIFICATION_ACTIVITY = "/app/notification_activity";
+    public static final String ROUTE_PLAYER_ACTIVITY = "/study/player_activity";
+    public static final String ROUTE_PLAY_BACK_ACTIVITY = "/live/player_back";
+    public static final String ROUTE_PREPARE_ACTIVITY = "/study/live_prepare";
+    public static final String ROUTE_PREPARE_PLAYBACK_ACTIVITY = "/study/playback_prepare";
+    public static final String ROUTE_SEARCH_TIME_ZONE = "/login/search_time_zone";
+    public static final String ROUTE_SELECT_GRADE_ACTIVITY = "/login/select_grade_activity";
+    public static final String ROUTE_SELECT_SCHOOL_ACTIVITY = "/login/select_school_activity";
+    public static final String ROUTE_SETTINGS_ACTIVITY = "/login/settings_activity";
+    public static final String ROUTE_SETTINGS_FRAGMENT = "/login/settings_fragment";
+    public static final String ROUTE_SHOP_CLASS_DETAIL_ACTIVITY = "/shop/class_detail_activity";
+    public static final String ROUTE_SHOP_CLASS_LIST_ACTIVITY = "/shop/class_list_activity";
+    public static final String ROUTE_SHOP_FRAGMENT = "/home/shop_fragment";
+    public static final String ROUTE_SHOP_GRADE_AGGREGATE_ACTIVITY = "/shop/grade_aggregate_activity";
+    public static final String ROUTE_SHOP_HOME_NATIVE_FRAGMENT = "/shop/shop_home_native_fragment";
+    public static final String ROUTE_SHOP_TEACHER_DETAILS_ACTIVITY = "/shop/teacher_details_activity";
+    public static final String ROUTE_STUDY_EXAM_NOTE = "/study/exam_note";
+    public static final String ROUTE_STUDY_FRAGMENT = "/study/study_fragment";
+    public static final String ROUTE_STUDY_RECORD_EXAM_NOTE = "/study/record_exam_note";
+    public static final String ROUTE_STUDY_SERVICE = "/study/routeService";
+    public static final String ROUTE_TEMP_LIST_ACTIVITY = "/login/temp_list_activity";
+    public static final String ROUTE_TEMP_REGISTER_ACTIVITY = "/login/temp_register_activity";
+    public static final String ROUTE_TOUCH_STORE_ACTIVITY = "/login/coins_activity";
+    public static final String ROUTE_VOD_CLASS_PLAYER_ACTIVITY = "/study/vod_class_player_activity";
+}

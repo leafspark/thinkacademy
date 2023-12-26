@@ -1,0 +1,389 @@
+package com.tal.app.thinkacademy.lib.network.trace;
+
+import android.os.SystemClock;
+import com.tal.app.thinkacademy.lib.Tag;
+import com.tal.app.thinkacademy.lib.logger.XesLog;
+import com.tal.app.thinkacademy.lib.network.utils.NetWorkUtils;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicLong;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Call;
+import okhttp3.Connection;
+import okhttp3.EventListener;
+import okhttp3.Handshake;
+import okhttp3.Protocol;
+import okhttp3.Request;
+import okhttp3.Response;
+
+@Metadata(d1 = {"\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 G2\u00020\u0001:\u0001GB\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0018\u0010\n\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\u0010\u0010\r\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0010\u0010\u000e\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J*\u0010\u000f\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0016J \u0010\u0016\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0016J\u0018\u0010\u0017\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\u0019H\u0016J\u0018\u0010\u001a\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\u0019H\u0016J&\u0010\u001b\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u001c\u001a\u00020\u001d2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020 0\u001fH\u0016J\u0018\u0010!\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\b\u0010\"\u001a\u00020\u0007H\u0002J\u0018\u0010#\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u001d2\u0006\u0010%\u001a\u00020\u001dH\u0002J\u0018\u0010&\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010'\u001a\u00020\u0003H\u0016J\u0010\u0010(\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0018\u0010)\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010*\u001a\u00020+H\u0016J\u0010\u0010,\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0018\u0010-\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010'\u001a\u00020\u0003H\u0016J\u0010\u0010.\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0018\u0010/\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u00100\u001a\u000201H\u0016J\u0010\u00102\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u0010\u00103\u001a\u00020\u00072\u0006\u00104\u001a\u00020\u001dH\u0002J\"\u00105\u001a\u00020\u00072\u0006\u00106\u001a\u00020\u001d2\u0006\u00107\u001a\u0002082\b\u0010\u0014\u001a\u0004\u0018\u00010\u001dH\u0002J\u0018\u00109\u001a\u00020\u00072\u0006\u0010:\u001a\u00020\u001d2\u0006\u0010;\u001a\u00020\u001dH\u0002J\u0010\u0010<\u001a\u00020\u00072\u0006\u0010=\u001a\u000208H\u0002J \u0010>\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u001d2\u0006\u0010?\u001a\u00020\u001d2\u0006\u0010@\u001a\u00020\u001dH\u0002J\u001a\u0010A\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\b\u0010B\u001a\u0004\u0018\u00010CH\u0016J\u0010\u0010D\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\f\u0010E\u001a\u00020\u001d*\u00020FH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0003X\u000e¢\u0006\u0002\n\u0000¨\u0006H"}, d2 = {"Lcom/tal/app/thinkacademy/lib/network/trace/NetTraceEventListener;", "Lokhttp3/EventListener;", "callId", "", "callStartNanos", "(JJ)V", "callEnd", "", "call", "Lokhttp3/Call;", "callFailed", "ioe", "Ljava/io/IOException;", "callStart", "canceled", "connectEnd", "inetSocketAddress", "Ljava/net/InetSocketAddress;", "proxy", "Ljava/net/Proxy;", "protocol", "Lokhttp3/Protocol;", "connectStart", "connectionAcquired", "connection", "Lokhttp3/Connection;", "connectionReleased", "dnsEnd", "domainName", "", "inetAddressList", "", "Ljava/net/InetAddress;", "dnsStart", "generateTraceData", "printEvent", "url", "name", "requestBodyEnd", "byteCount", "requestBodyStart", "requestHeadersEnd", "request", "Lokhttp3/Request;", "requestHeadersStart", "responseBodyEnd", "responseBodyStart", "responseHeadersEnd", "response", "Lokhttp3/Response;", "responseHeadersStart", "saveEvent", "eventName", "saveHost", "ip", "port", "", "saveParams", "params", "requestId", "saveStatus", "code", "saveUrl", "method", "path", "secureConnectEnd", "handshake", "Lokhttp3/Handshake;", "secureConnectStart", "makeJson", "Lcom/tal/app/thinkacademy/lib/network/trace/NetworkTraceBean;", "Factory", "lib_library_release"}, k = 1, mv = {1, 6, 0}, xi = 48)
+/* compiled from: NetTraceEventListener.kt */
+public final class NetTraceEventListener extends EventListener {
+    public static final Factory Factory = new Factory((DefaultConstructorMarker) null);
+    /* access modifiers changed from: private */
+    public static final AtomicLong nextCallId = new AtomicLong(1);
+    private long callId;
+    private long callStartNanos;
+
+    public NetTraceEventListener(long j, long j2) {
+        this.callId = j;
+        this.callStartNanos = j2;
+    }
+
+    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/tal/app/thinkacademy/lib/network/trace/NetTraceEventListener$Factory;", "Lokhttp3/EventListener$Factory;", "()V", "nextCallId", "Ljava/util/concurrent/atomic/AtomicLong;", "create", "Lokhttp3/EventListener;", "call", "Lokhttp3/Call;", "lib_library_release"}, k = 1, mv = {1, 6, 0}, xi = 48)
+    /* compiled from: NetTraceEventListener.kt */
+    public static final class Factory implements EventListener.Factory {
+        public /* synthetic */ Factory(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Factory() {
+        }
+
+        public EventListener create(Call call) {
+            Intrinsics.checkNotNullParameter(call, "call");
+            return new NetTraceEventListener(NetTraceEventListener.nextCallId.getAndIncrement(), System.nanoTime());
+        }
+    }
+
+    private final void printEvent(String str, String str2) {
+        long nanoTime = System.nanoTime() - this.callStartNanos;
+        XesLog.it("NetTime", str + " : " + str2 + "  : " + (((double) nanoTime) / 1.0E9d));
+    }
+
+    public void callStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Request request = call.request();
+        saveUrl(request.url().toString(), request.method(), request.url().encodedPath());
+        saveEvent(NetworkTraceBean.CALL_START);
+    }
+
+    public void dnsStart(Call call, String str) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(str, "domainName");
+        saveEvent(NetworkTraceBean.DNS_START);
+    }
+
+    public void dnsEnd(Call call, String str, List<? extends InetAddress> list) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(str, "domainName");
+        Intrinsics.checkNotNullParameter(list, "inetAddressList");
+        saveEvent(NetworkTraceBean.DNS_END);
+    }
+
+    public void connectionReleased(Call call, Connection connection) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        NetTraceEventListener.super.connectionReleased(call, connection);
+    }
+
+    public void connectionAcquired(Call call, Connection connection) {
+        String hostAddress;
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        NetTraceEventListener.super.connectionAcquired(call, connection);
+        InetAddress inetAddress = connection.socket().getInetAddress();
+        String str = "";
+        if (!(inetAddress == null || (hostAddress = inetAddress.getHostAddress()) == null)) {
+            str = hostAddress;
+        }
+        InetSocketAddress socketAddress = connection.route().socketAddress();
+        saveHost(str, socketAddress == null ? 0 : socketAddress.getPort(), connection.protocol().toString());
+    }
+
+    public void connectStart(Call call, InetSocketAddress inetSocketAddress, Proxy proxy) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(inetSocketAddress, "inetSocketAddress");
+        Intrinsics.checkNotNullParameter(proxy, "proxy");
+        saveEvent(NetworkTraceBean.CONNECT_START);
+    }
+
+    public void secureConnectStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.SECURE_CONNECT_START);
+    }
+
+    public void secureConnectEnd(Call call, Handshake handshake) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.SECURE_CONNECT_END);
+    }
+
+    public void connectEnd(Call call, InetSocketAddress inetSocketAddress, Proxy proxy, Protocol protocol) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(inetSocketAddress, "inetSocketAddress");
+        Intrinsics.checkNotNullParameter(proxy, "proxy");
+        saveEvent(NetworkTraceBean.CONNECT_END);
+    }
+
+    public void requestHeadersStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.REQUEST_HEADERS_START);
+    }
+
+    /* JADX WARNING: Code restructure failed: missing block: B:25:0x0088, code lost:
+        if (r7 != null) goto L_0x008b;
+     */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public void requestHeadersEnd(okhttp3.Call r7, okhttp3.Request r8) {
+        /*
+            r6 = this;
+            java.lang.String r0 = "call"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r7, r0)
+            java.lang.String r7 = "request"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r8, r7)
+            java.lang.String r7 = com.tal.app.thinkacademy.lib.network.trace.NetworkTraceBean.REQUEST_HEADERS_END
+            r6.saveEvent(r7)
+            okhttp3.RequestBody r7 = r8.body()
+            java.lang.String r0 = ""
+            if (r7 != 0) goto L_0x001a
+        L_0x0017:
+            r7 = r0
+            goto L_0x008b
+        L_0x001a:
+            okio.Buffer r1 = new okio.Buffer
+            r1.<init>()
+            r2 = r1
+            okio.BufferedSink r2 = (okio.BufferedSink) r2
+            r7.writeTo(r2)
+            java.lang.String r2 = "UTF-8"
+            java.nio.charset.Charset r2 = java.nio.charset.Charset.forName(r2)
+            okhttp3.MediaType r7 = r7.contentType()
+            if (r7 != 0) goto L_0x0032
+            goto L_0x003a
+        L_0x0032:
+            java.nio.charset.Charset r7 = r7.charset(r2)
+            if (r7 != 0) goto L_0x0039
+            goto L_0x003a
+        L_0x0039:
+            r2 = r7
+        L_0x003a:
+            boolean r7 = com.tal.app.thinkacademy.lib.network.logging.CustomHttpLoggingInterceptor.isPlaintext(r1)
+            if (r7 == 0) goto L_0x0087
+            java.lang.String r7 = "charset"
+            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r2, r7)
+            java.lang.String r7 = r1.readString(r2)
+            java.lang.String r1 = "{"
+            r2 = 0
+            r3 = 2
+            r4 = 0
+            boolean r1 = kotlin.text.StringsKt.startsWith$default(r7, r1, r4, r3, r2)     // Catch:{ Exception -> 0x0088 }
+            r5 = 4
+            if (r1 == 0) goto L_0x006a
+            org.json.JSONObject r1 = new org.json.JSONObject     // Catch:{ Exception -> 0x0088 }
+            r1.<init>(r7)     // Catch:{ Exception -> 0x0088 }
+            boolean r2 = r1 instanceof org.json.JSONObject     // Catch:{ Exception -> 0x0088 }
+            if (r2 != 0) goto L_0x0063
+            java.lang.String r7 = r1.toString(r5)     // Catch:{ Exception -> 0x0088 }
+            goto L_0x0088
+        L_0x0063:
+            org.json.JSONObject r1 = (org.json.JSONObject) r1     // Catch:{ Exception -> 0x0088 }
+            java.lang.String r7 = com.bonree.sdk.agent.engine.external.JSONObjectInstrumentation.toString(r1, r5)     // Catch:{ Exception -> 0x0088 }
+            goto L_0x0088
+        L_0x006a:
+            java.lang.String r1 = "["
+            boolean r1 = kotlin.text.StringsKt.startsWith$default(r7, r1, r4, r3, r2)     // Catch:{ Exception -> 0x0088 }
+            if (r1 == 0) goto L_0x0088
+            org.json.JSONArray r1 = new org.json.JSONArray     // Catch:{ Exception -> 0x0088 }
+            r1.<init>(r7)     // Catch:{ Exception -> 0x0088 }
+            boolean r2 = r1 instanceof org.json.JSONArray     // Catch:{ Exception -> 0x0088 }
+            if (r2 != 0) goto L_0x0080
+            java.lang.String r7 = r1.toString(r5)     // Catch:{ Exception -> 0x0088 }
+            goto L_0x0088
+        L_0x0080:
+            org.json.JSONArray r1 = (org.json.JSONArray) r1     // Catch:{ Exception -> 0x0088 }
+            java.lang.String r7 = com.bonree.sdk.agent.engine.external.JSONArrayInstrumentation.toString(r1, r5)     // Catch:{ Exception -> 0x0088 }
+            goto L_0x0088
+        L_0x0087:
+            r7 = r0
+        L_0x0088:
+            if (r7 != 0) goto L_0x008b
+            goto L_0x0017
+        L_0x008b:
+            java.lang.String r1 = com.tal.app.thinkacademy.lib.network.trace.NetworkTraceBean.TRACE_REQUEST_ID
+            java.lang.String r8 = r8.header(r1)
+            if (r8 != 0) goto L_0x0094
+            goto L_0x0095
+        L_0x0094:
+            r0 = r8
+        L_0x0095:
+            r6.saveParams(r7, r0)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tal.app.thinkacademy.lib.network.trace.NetTraceEventListener.requestHeadersEnd(okhttp3.Call, okhttp3.Request):void");
+    }
+
+    public void requestBodyStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.REQUEST_BODY_START);
+    }
+
+    public void requestBodyEnd(Call call, long j) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.REQUEST_BODY_END);
+    }
+
+    public void responseHeadersStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.RESPONSE_HEADERS_START);
+    }
+
+    public void responseHeadersEnd(Call call, Response response) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(response, "response");
+        saveEvent(NetworkTraceBean.RESPONSE_HEADERS_END);
+        saveStatus(response.code());
+    }
+
+    public void responseBodyStart(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.RESPONSE_BODY_START);
+    }
+
+    public void responseBodyEnd(Call call, long j) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.RESPONSE_BODY_END);
+    }
+
+    public void callFailed(Call call, IOException iOException) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(iOException, "ioe");
+        NetTraceEventListener.super.callFailed(call, iOException);
+        String httpUrl = call.request().url().toString();
+        String message = iOException.getMessage();
+        XesLog.it("callFailed", httpUrl + " :  " + message);
+    }
+
+    public void canceled(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        NetTraceEventListener.super.canceled(call);
+        XesLog.it("canceled", call.request().url().toString());
+    }
+
+    public void callEnd(Call call) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        saveEvent(NetworkTraceBean.CALL_END);
+        generateTraceData();
+        NetworkTraceBean networkTraceBean = NetTimeManager.getTraceMap().get(String.valueOf(this.callId));
+        if (networkTraceBean != null) {
+            if (networkTraceBean.getSuccess()) {
+                XesLog.s(Tag.NET, makeJson(networkTraceBean));
+                return;
+            }
+            XesLog.e(Tag.NET, makeJson(networkTraceBean));
+        }
+    }
+
+    private final void saveEvent(String str) {
+        NetworkTraceBean networkTraceBean = NetTimeManager.getTraceMap().get(String.valueOf(this.callId));
+        if (networkTraceBean != null) {
+            networkTraceBean.getNetworkEventsMap().put(str, Long.valueOf(SystemClock.elapsedRealtime()));
+        }
+    }
+
+    private final void saveUrl(String str, String str2, String str3) {
+        NetworkTraceBean traceBean = NetTimeManager.getTraceBean(String.valueOf(this.callId));
+        if (traceBean != null) {
+            traceBean.setUrl(str);
+        }
+        if (traceBean != null) {
+            traceBean.setPath(str3);
+        }
+        if (traceBean != null) {
+            traceBean.setMethod(str2);
+        }
+    }
+
+    private final void saveParams(String str, String str2) {
+        NetworkTraceBean traceBean = NetTimeManager.getTraceBean(String.valueOf(this.callId));
+        if (traceBean != null) {
+            traceBean.setParams(str);
+        }
+        if (traceBean != null) {
+            traceBean.setRequestId(str2);
+        }
+    }
+
+    private final void saveHost(String str, int i, String str2) {
+        NetworkTraceBean traceBean = NetTimeManager.getTraceBean(String.valueOf(this.callId));
+        if (traceBean != null) {
+            traceBean.setIp(str);
+        }
+        if (traceBean != null) {
+            traceBean.setPort(String.valueOf(i));
+        }
+        if (traceBean != null) {
+            traceBean.setProtocol(str2);
+        }
+    }
+
+    private final void saveStatus(int i) {
+        NetworkTraceBean traceBean = NetTimeManager.getTraceBean(String.valueOf(this.callId));
+        if (traceBean != null) {
+            traceBean.setSuccess(i == 200);
+        }
+        if (traceBean != null) {
+            traceBean.setCode(i);
+        }
+    }
+
+    private final void generateTraceData() {
+        NetworkTraceBean traceBean = NetTimeManager.getTraceBean(String.valueOf(this.callId));
+        if (traceBean != null) {
+            Map networkEventsMap = traceBean.getNetworkEventsMap();
+            Map traceItemList = traceBean.getTraceItemList();
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_TOTAL, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.CALL_START, NetworkTraceBean.CALL_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_DNS, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.DNS_START, NetworkTraceBean.DNS_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_SECURE_CONNECT, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.SECURE_CONNECT_START, NetworkTraceBean.SECURE_CONNECT_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_CONNECT, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.CONNECT_START, NetworkTraceBean.CONNECT_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_SERVICE_TIME, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.REQUEST_HEADERS_START, NetworkTraceBean.RESPONSE_BODY_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_REQUEST_HEADERS, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.REQUEST_HEADERS_START, NetworkTraceBean.REQUEST_HEADERS_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_REQUEST_BODY, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.REQUEST_BODY_START, NetworkTraceBean.REQUEST_BODY_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_RESPONSE_HEADERS, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.RESPONSE_HEADERS_START, NetworkTraceBean.RESPONSE_HEADERS_END)));
+            traceItemList.put(NetworkTraceBean.TRACE_NAME_RESPONSE_BODY, Long.valueOf(NetWorkUtils.getEventCostTime(networkEventsMap, NetworkTraceBean.RESPONSE_BODY_START, NetworkTraceBean.RESPONSE_BODY_END)));
+        }
+    }
+
+    private final String makeJson(NetworkTraceBean networkTraceBean) {
+        Map traceItemList = networkTraceBean.getTraceItemList();
+        StringBuffer stringBuffer = new StringBuffer();
+        Long l = (Long) traceItemList.get(NetworkTraceBean.TRACE_NAME_REQUEST_HEADERS);
+        long j = 0;
+        long longValue = l == null ? 0 : l.longValue();
+        Long l2 = (Long) traceItemList.get(NetworkTraceBean.TRACE_NAME_REQUEST_BODY);
+        long longValue2 = longValue + (l2 == null ? 0 : l2.longValue());
+        Long l3 = (Long) traceItemList.get(NetworkTraceBean.TRACE_NAME_RESPONSE_HEADERS);
+        long longValue3 = l3 == null ? 0 : l3.longValue();
+        Long l4 = (Long) traceItemList.get(NetworkTraceBean.TRACE_NAME_RESPONSE_BODY);
+        if (l4 != null) {
+            j = l4.longValue();
+        }
+        stringBuffer.append("{ \n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_URL + "\" : \"" + networkTraceBean.getUrl() + "\", \n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_PATH + "\" : \"" + networkTraceBean.getPath() + "\", \n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_METHOD + "\" : \"" + networkTraceBean.getMethod() + "\",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_HOST_IP + "\" : \"" + networkTraceBean.getIp() + "\", \n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_RESULT + "\" : \"" + networkTraceBean.getSuccess() + "\",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_CODE + "\" : \"" + networkTraceBean.getCode() + "\",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_TOTAL + "\" : " + traceItemList.get(NetworkTraceBean.TRACE_NAME_TOTAL) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_REQUEST_TIME + "\" : " + longValue2 + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_SECURE_CONNECT + "\" : " + traceItemList.get(NetworkTraceBean.TRACE_NAME_SECURE_CONNECT) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_DNS + "\" : " + traceItemList.get(NetworkTraceBean.TRACE_NAME_DNS) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_CONNECT + "\" : " + traceItemList.get(NetworkTraceBean.TRACE_NAME_CONNECT) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_PARAM + "\" : " + networkTraceBean.getParams() + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_SERVICE_TIME + "\" : " + traceItemList.get(NetworkTraceBean.TRACE_NAME_SERVICE_TIME) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_RESPONSE_TIME + "\" : " + (longValue3 + j) + ",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_PORT + "\" : \"" + networkTraceBean.getPort() + "\",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_REQUEST_ID + "\" : \"" + networkTraceBean.getRequestId() + "\",\n");
+        stringBuffer.append('\"' + NetworkTraceBean.TRACE_NAME_PROTOCOL + "\" : \"" + networkTraceBean.getProtocol() + "\"\n");
+        stringBuffer.append("}");
+        String stringBuffer2 = stringBuffer.toString();
+        Intrinsics.checkNotNullExpressionValue(stringBuffer2, "stringBuffer.toString()");
+        return stringBuffer2;
+    }
+}
