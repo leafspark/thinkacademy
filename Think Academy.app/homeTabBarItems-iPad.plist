@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>itemId</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>上课</string>
+		<key>normal</key>
+		<string>hw_main_learncenter_normal</string>
+		<key>select</key>
+		<string>hw_main_learncenter_selected</string>
+	</dict>
+	<dict>
+		<key>itemId</key>
+		<string>3</string>
+		<key>title</key>
+		<string>我的</string>
+		<key>normal</key>
+		<string>hw_main_pcenter_normal</string>
+		<key>select</key>
+		<string>hw_main_pcenter_selected</string>
+	</dict>
+</array>
+</plist>

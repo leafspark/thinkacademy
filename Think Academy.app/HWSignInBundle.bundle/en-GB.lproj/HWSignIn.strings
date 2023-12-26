@@ -1,0 +1,82 @@
+/* 
+  HWSignIn.strings
+  HWSignIn
+
+  Created by xes on 2020/8/23.
+  Copyright © 2020 xes. All rights reserved.
+*/
+"选择你喜欢的分校" = "Choose an education system";
+"选择你所在的班级" = "Choose a learning stage";
+"一旦选中，就不能更改。" = "Please rest assured to choose,you can edit again after choosing.";
+"开始学习" = "START LEARNING";
+
+"输入您的手机号码，接收OTP进行验证" = "Enter your mobile number to receive an OTP for verification";
+"注册或登录到Think Academy开始你的学习。" = "Sign up or login to start your learning with Think Academy.";
+"继续，即表示您同意Think Academy的使用条款，并确认您已阅读隐私政策。" = "By continuing, you agree to Think Academy’s Terms of Use and confirm that you have read the Privacy Policy.";
+
+"隐私条款, 有儿童隐私"="By continuing, you agree to Think Academy’s Terms of Use and confirm that you have read the Privacy Policy and Children's Privacy Policy.";
+"隐私条款, 无儿童隐私"="By continuing, you agree to Think Academy’s Terms of Use and confirm that you have read the Privacy Policy.";
+"儿童隐私协议" = "Children's Privacy Policy";
+
+"手机号码" = "Mobile Number";
+"电话号码" = "Phone Number";
+"验证码" = "SMS Verification Code";
+"邮箱验证码" = "Verification Code";
+"这个输入是必需的。" = "This input is required.";
+"请输入一个有效的手机号码。" = "Please enter a valid mobile number.";
+"请输入OTP发送到您的手机" = "Please enter OTP sent to your mobile";
+"OTP输入错误。" = "Incorrect OTP entered.";
+"重新发送OTP" = "Resend OTP";
+"重新发送OTP剩余%zds" = "Resend OTP in%zds";
+"验证码验证和处理" = "VERIFY AND PROCEED";
+
+"输入您的电子邮件接收课程信息和资源。" = "Link email with your sign in account to receive course inforamtion and resources.";
+"请输入有效的电子邮件地址。" = "Please enter a valid Email address.";
+"下一步" = "Next Step";
+"邮箱地址" = "Email address";
+"发送" = "Send";
+"重新发送" = "Resend";
+"输入无效" = "*This input is invalid";
+
+"用户协议" = "Terms of Use";
+"隐私协议" = "Privacy Policy";
+"跳过" = "Skip";
+"注册账号" = "Create your account";
+"密码登录" = "Password Login";
+"或者其它密码登录方式" = "or password login with";
+"登录" = "Sign in";
+"取消" = "Cancel";
+"登录标题" = "Login";
+"验证码登录" = "OTP Login";
+"学员编号" = "Student ID";
+"忘记密码" = "Forgot Password?";
+"安全检测" = "Account Verification";
+"设置密码" = "Password Settings";
+"新密码" = "New Password";
+"请输入确认密码" = "Confirm Password";
+"确认修改" = "Confirm";
+"密码修改成功" = "Password set successfully";
+"新密码和确认密码不一致" = "Passwords do not match";
+"输入了数字和字母以外的字符" = "Password format is not accepted.";
+"新密码长度不符合要求" = "Password must be between 6-20 characters";
+"这个密码是家庭所有学员账号共享的家庭密码" = "Universal password for all accounts in your family";
+"6-20位字符，至少包含字母和数字两种元素" = "Please enter 6-20 characters, contains at least one letter and one number. Only letters and numbers are accepted.";
+"为了确保您的账号安全，请先验证身份" = "Please help us confirm your identity and secure your account";
+"您可以登录之后，在我的账号中查到学员编号" = "You can find your child's Student ID in 'My Account' after login.";
+"请输入登录密码" = "Please enter your password";
+"已设置过密码的用户可以使用密码登录，请选择您的登录方式" = "You can sign in with password if you have set it for your account.";
+"设置好密码后，可以通过[账号+密码]登录" = "After setting the password, you can log in via [mobile number + password], or [email + password], or [student number + password]";
+"请先勾选同意法务协议" = "Please confirm the policies below to continue";
+"邮箱" = "Email";
+"邮箱地址" = "Email Address";
+"请关联邮箱" = "Enter your Email address";
+"若该手机号未注册，我们将自动为您创建帐号" = "Don’t have an account? Enter your mobile number to create one.";
+"若该邮箱未注册，我们将自动为您创建帐号" = "Don’t have an account? Enter your email address to create one";
+"关联邮箱，以接受课程信息及学习资料" = "We will use your Email to send you course information and learning resources.";
+"选择教育体系" = "Choose an education system";
+"选择适合您孩子的教育体系，为您推荐相应课程" = "Please choose the education system that you want your child to follow.";
+"选择学习阶段" = "Choose your child's learning stage";
+"选择学习阶段的说明" = "Please select your child's Year Group below.";
+"请放心选择，选择后还可以更改-英国" = "Please select your child's Year Group below.";
+"请放心选择，选择后还可以更改-美国、新加坡" = "Please select your child's grade below.";
+"验证码错误" = "Incorrect OTP entered.";

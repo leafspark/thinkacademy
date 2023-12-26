@@ -1,0 +1,181 @@
+
+"即将开放" = "Coming soon";
+"上新" = "New";
+"热门" = "Popular";
+"剩余%ld" = "%ld Left";
+"满班" = "Full";
+"免费" = "Free";
+"节课" = "lesson";
+"每节课" = "1 lesson";
+"%ld节课" = "%ld lessons";
+"面授" = "In-Person";
+"在线课程" = "Online";
+"起" = "From";
+"单个名额" = "1 Space";
+"%ld名额" = "%ld Spaces";
+"此类别下没有课程" = "No courses under this category";
+"查看更多" = "View more";
+"收起" = "View less";
+"Class list"="Class list";
+"课程详情" = "Course information";
+"含税" = "GST included    ";
+"不含税" = "GST excluded    ";
+"课程亮点" = "Course Highlights";
+"试听视频" = "Audition Video";
+"适用学员" = "Suitable for";
+"教师" = "Teacher";
+"课程大纲及时间表" = "Syllabus and Schedule";
+"课程信息" = "Course Details";
+"查看所有%ld节课" = "View all %ld lessons";
+"一课次" = "1 lesson";
+"%ld课次" = "%ld lessons";
+"节剩余%ld" = "%ld Left";
+"我们会通知你" = "We will notify you!";
+"我们已经将此班级加入到你的愿望清单里" = "We have added this class to your wish list and will email you when there is a new place available!";
+"我知道了" = "I got it";
+"愿望清单" = "Wish List";
+"当有新的名额时将会发邮件通知你" = "We will email you when there is a new place available!";
+"参加诊断考试，为您推荐适合的课程" = "Take the Admission Test to find out which course is best suited for your child ";
+"报名该课程，需进行入学诊断" = "Your child must take the Admission Test before signing up for this course";
+"已通过入学诊断，立即报名" = "Your child has passed the Admission Test, you can sign up now";
+"未通过入学诊断，无法报名本课程" = "Your child's Admission Test results suggest that this course is too difficult";
+"诊断测试" = "Admission Test";
+"您有一张价值%@%@优惠券可使用，请立即报名，享受此次优惠" = "Coupon Description: you have an %@%@ voucher, coupon to use.Sign up now to apply your  discount!";
+"开始学习旅程的%ld个步骤" = "%ld Steps to Start Your Learning Journey";
+"已加入愿望清单" = "Added to Wish List";
+"已从愿望清单移除" = "Removed from wish list";
+"个人信息更改成功" = "Edit Successful";
+"个人信息更改失败" = "Edit failed";
+"已开课" = "Started";
+"折扣价" = "Discount price";
+"无法报名" = "Unable to sign up";
+"您的孩子需要接受报名诊断，才可以报名此课程，诊断联系电话：" = "Your child needs to accept registration diagnosis to register for this course. If you have any questions, please call :";
+"如果您有学而思报名资格码，请在" = "If you have a Think academy registration qualification code, please ";
+"这里兑换" = "redeem here";
+"请输入您的资格码" = "Please enter your code";
+"使用" = "Apply";
+"兑换失败，请重试" = "* Redeem failure,please try again";
+"请参加入学考试" = "Please take the admission test";
+"您的孩子在报名参加本课程之前必须通过入学考试。剩余%ld次尝试" = "Your child must pass the Evaluation before signing up for this course. %ld attempts remaining";
+"兑换资格码" = "Redeem Qualification Code";
+"请绑定您的手机号" = "Link your phone number";
+"绑定手机号，方便您能及时收到老师对于孩子的课堂反馈" = "Link your phone number to the account to receive study reports and progress updates quickly.";
+"若有任何问题，请联系我们的客服：" = "Experiencing difficulties? Contact";
+"手机号码" = "Mobile Number";
+"验证码" = "SMS Verification Code";
+"邮箱验证码" = "Verification Code";
+"发送" = "Send";
+"重新发送" = "Resend";
+"请绑定您的邮箱" = "Link your email address";
+"绑定邮箱，是为了您能及时收到老师发送的免费学习资源以及更多学习咨询" = "Link your email address to receive progress reports and learning resources.";
+"邮箱地址" = "Email address";
+"该班级有优惠活动，APP暂不支持此优惠。您可以点击下方按键，前往新链接享受优惠价格购课" = "This class has a preferential activity, which is not supported by app temporarily.You can click the button below to go to the new link and enjoy the preferential price";
+"若您不需要优惠活动，可继续" = "*If you don't need discounts, you can ";
+"在当前页面购课" = "continue to purchase courses on the current page";
+"优惠价购课" = "Get Discounts";
+"提醒" = "Reminder";
+"自动扣款中" = "Auto pay in process";
+
+"立即报名" = "Enroll";
+"课程结束" = "Course Ended";
+"名额已满" = "Full";
+"待售" = "For Sale";
+"有名额提醒我" = "Get availability alerts";
+"取消报名提醒" = "Cancel availability alerts";
+"取消此班级提醒后当有空余名额时你将收不到通知" = "Once it's cancelled,you will not be notified when there is a new place available";
+"取消" = "Cancel";
+"确认" = "Confirm";
+"开始考试" = "Start Test";
+"各分校联系方式" = "+1-(844)-844-6587";
+
+"课程" = "Course";
+"大纲" = "Schedule";
+"详情" = "Details";
+
+"天" = "DAY";
+"时" = "HOUR";
+"分" = "MIN";
+"秒" = "SEC";
+
+"Mon" = "Monday";
+"Tue" = "Tuesday";
+"Wed" = "Wednesday";
+"Thu" = "Thursday";
+"Fri" = "Friday";
+"Sat" = "Saturday";
+"Sun" = "Sunday";
+
+"周一" = "Monday";
+"周二" = "Tuesday";
+"周三" = "Wednesday";
+"周四" = "Thursday";
+"周五" = "Friday";
+"周六" = "Saturday";
+"周日" = "Sunday";
+
+"孩子的年级" = "Child's Year Group";
+"日期" = "Day";
+"时间" = "Time";
+"邮箱" = "Your email";
+"您的名字" = "Your name";
+"如果没有满足您需求的班级，请填写您的信息" = "If there is no class that meets your requirments, please fill in your information";
+"订阅我们的邮件以接收最新新闻、促销和更新" = "sign up for our mailing list to receive the latest news, promotions and updates";
+"立刻购课" = "Book now";
+"提交成功" = "Submitted successfully";
+"请输入此必填项" = "The input is required.";
+"请输入有效的手机号码" = "The Phone Number seems invalid.";
+"请输入有效的邮箱地址" = "The Email Address seems invalid.";
+
+// 选择学生
+"选择要报名的学生" = "Choose a student";
+"您可以为以下学生购买课程" = "You can book a course for the students below";
+"新增学员" = "Add a student";
+"继续报名" = "Continue to sign up";
+
+// 添加学生
+"添加新账号" = "Add a New Account";
+"昵称" = "Displayname";
+"输入昵称" = "Enter Displayname";
+"姓" = "Last name";
+"输入姓式" = "Enter Last name";
+"名" = "First name";
+"输入名字" = "Enter First name";
+"年级" = "Grade";
+"选择年级" = "Choose grade";
+"保存" = "Add Student";
+"昵称将应用在课堂、评论区等场景" = "Display name will be used during class, comments,etc";
+"关闭弹窗后，系统不会保存已填写的信息" = "Information will not be retainted after the shutdown";
+"继续" = "Continue";
+
+// 完善信息
+"完善学员信息" = "Improve student information";
+"学生信息可以帮助教师了解您的孩子。填写完成后，可单击“继续报名”去付款。" = "Student information can help teachers understand your child.please improve the information";
+"继续报名" = "Continue to sign up";
+"继续注册" = "Continue to registration";
+"查看适合的班级" = "Check available classes";
+"此入学考试成绩是为%@%@班级报名而设" = "This admission test result is for %@ %@ classes registration";
+"推荐" = "Recommend";
+"如果您有报名资格码，请在此处兑换并进行报名，如果您有任何问题，请联系学而思客服" = "Instructions:\n- If you have a registration qualification code, please redeem the code here to continue registration\n- If you have any questitons,please contact Think Academy customer service at ";
+"对不起，这个课程只对新用户开放，来浏览更多的课程吧!" = "Sorry, this course is only avaliable for new users, Come and browse more course!";
+
+// 教师主页
+"简介" = "Profile";
+"课程" = "Courses";
+"教学成果" = "Achievements";
+"短期班" = "Short Term Class";
+"长期班" = "Long Term Class";
+"价格说明" = "Price Description";
+
+// 商场课程引导
+"课程将在" = "The course will begin in ";
+"分钟" = " minutes";
+"后开始" = "";
+"课程已开始，快去上课吧" = "The course has begun. Go to class quickly";
+"设备检查-存储空间不足提示-标题" = "Not Enough Storage";
+"设备检查-存储空间不足提示" = "Not enough storage is available. Please remove unnecessary applications in \"Settings -> General -> iPhone/iPad Storage.\"";
+"设备检查-提示关闭" = "Got it";
+
+"商城-课程-单数" = "lesson";
+"商城-课程-复数" = "lessons";
+
+"录播课" =  "Recorded Courses";

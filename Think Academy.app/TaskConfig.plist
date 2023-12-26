@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>configEntry</key>
+		<string>HWCoursewareBridgeDownloadConfig</string>
+		<key>des</key>
+		<string>bridge</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWCoursewareCommonDownloadConfig</string>
+		<key>des</key>
+		<string>common</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWClassCoursewareDownloadConfig</string>
+		<key>des</key>
+		<string>普通课件</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWGameCenterDownloadConfig</string>
+		<key>des</key>
+		<string>课内游戏</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWClassGraffitiDownloadConfig</string>
+		<key>des</key>
+		<string>回放涂鸦</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWClassMetaInfoDownloadConfig</string>
+		<key>des</key>
+		<string>回放打点</string>
+	</dict>
+	<dict>
+		<key>configEntry</key>
+		<string>HWClassMaterialPdfDownloadConfig</string>
+		<key>des</key>
+		<string>学习资料</string>
+	</dict>
+</array>
+</plist>

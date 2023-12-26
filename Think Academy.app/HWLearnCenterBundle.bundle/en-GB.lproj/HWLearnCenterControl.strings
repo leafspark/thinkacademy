@@ -1,0 +1,375 @@
+"选课" = "Select a Course";
+"我的课程" = "My Courses";
+"状态" = "Status";
+"登录查看你的课程" = "Sign in to see your courses";
+"登录/注册" = "Login / Register";
+"大纲" = "Syllabus";
+"课程详情" = "Course Details";
+"旁听课详情" = "Audit Class Details";
+"选择课程类型" = "Switch course type";
+"确认" = "Confirm";
+"家长入口" = "Parent\naudit";
+"进入" = "Enter";
+"返回" = "Back";
+
+"联系老师" = "Contact Teacher";
+
+
+"进课提醒" = "Attention";
+"当前账号对应学生已在直播课程中" = "Your child is in this live classroom on another device.When entering the classroom, your child will be forced out.";
+"知道了" = "Got it";
+"好的" = "Got it";
+"上课方式" = "How to Attend Class";
+"上课方式之thinkhub" = "Please attend the class using iPad App Thinkhub. If you have any questions, please call \n";
+"上课方式之下载zoom" = "Download Zoom";
+"上课方式之zoom" = " and enter the Zoom ID and password as above. Enter into the classroom 10 minutes before the live session on Zoom and enjoy your Think Academy experience.";
+"上课方式之zoom密码" = "Zoom Password";
+"上课方式之下载classin" = "Download Classin";
+"上课方式之classin" = " and register with the account when you enrolled into the course. Enter into the classroom 10 minutes before the live session on Classin and enjoy your Think Academy experience.";
+"上课方式之classin链接" = "Classin Link";
+"上课方式之直播教室链接" = "Classroom Link";
+"上课方式之offline" = "Please arrive at the classroom 10 minutes before the class and enjoy your Think Academy experience.";
+"上课地点" = "Location";
+"上课方式之电话" = "Phone number";
+"复制" = "Copy";
+"复制成功" = "Copied successfully";
+"如您有任何问题，请联系您的老师" = "If you have any questions, please contact your teacher";
+"截图保存图片，使用微信扫一扫它" = "Save the screenshot and scan it with WeChat";
+"复制并打开微信" = "Copy and open WeChat";
+
+"未开始" = "Start Soon";
+"直播中" = "   Enter   ";
+"回放生成中" = "   Playback Generating   ";
+"看回放" = "   Playback   ";
+"回放已过期" = "Playback Expired";
+"未购买" = "Unpaid";
+"查看上课方式" = "   How to Attend   ";
+"回放生成中提示" = "Playback will be available 2 hours after the class ends.";
+
+"作业待提交" = "  Do Homework  ";
+"作业未开放" = "Unpublished";
+"作业已点评" = "   Reviewed   ";
+"作业已提交" = "   Submitted   ";
+"作业已过期" = "   Expired   ";
+"作业已过期提示" = "The deadline for submission has passed. Please remember to turn in your assignment on time!";
+"作业-查看答案" = "View Solution";
+"作业-关闭" = "Cancel";
+"作业-超时或者互踢" = "Network error (or your account is signed in on another device)";
+"作业-获取作业地址失败" = "System error, Please try later!";
+
+"作业-推送开启提示" = "Open to receive push notifications when your teacher has submitted homework feedback for you.";
+"作业-推送开启提示-标题" = "Open Push Notification";
+"作业-推送开启" = "Open";
+"作业-推送关闭" = "Cancel";
+
+"学习资料" = "Learning Materials";
+"学习资料下载失败" = "Loading failed,please check your connection";
+"学习资料文件" = "File";
+"学习资料文件复数" = "Files";
+"重试下载" = "Retry";
+
+"板书" = "Class notes";
+
+//课堂报告
+"课堂报告" = "Lesson Report";
+
+//课前测
+"课前测试" = "Preview question";
+"课前测试-截止时间" = "Deadline";
+"课前测试-作答时间" = "Answer time";
+"课前测试-题目描述" = "Problem Descriptors";
+"课前测试-开始作答" = "Start";
+"课前测试-查看解析" = "Solution";
+"课前测试-确认标题" = "Do you want to start the preview now?";
+"课前测试-内容前半部分" = "Time limit is ";
+"课前测试-内容后半部分" = ",good luck!";
+"课前测试-确认" = "Yes";
+"课前测试-取消" = "No";
+"课前测-待提交" = "  Start Test  ";
+"课前测-未开放" = "Unpublished";
+"课前测-已点评" = "   Reviewed   ";
+"课前测-已提交" = "   Submitted   ";
+"课前测-已过期" = "   Expired   ";
+"测试已结束，未按时参加" = "You missed the deadline";
+"哎呀，超过作答截止时间了，下次要准时作答哦" = "Oops, this preview is past due.Please do your homework on time !";
+"共" = "Total";
+"分" = "point";
+"分2" = "points";
+
+//课前准备
+"课前准备" = "Preparing the class...";
+"进入课堂" = "Enter classroom";
+"回放进入课堂" = "Enter";
+"修改昵称标题" = "Fill in Your Name";
+"修改昵称提示" = "*Display name will be used during class. 65 letters max. Letters and numbers are supported.";
+"修改昵称确认" = "Confirm";
+"修改昵称输入不合法" = "This input is invalid";
+"课件-已完成" = "Done";
+"网络-已完成" = "Good";
+"网络-一般已完成" = "Normal";
+"课前准备-重试网络" = "  Retest";
+"课前准备-重试下载" = "  Redownload";
+"课前准备-修改昵称" = "  Enter name";
+"课件-主标题" = "Courseware downloading";
+"课件-副标题" = "Downloading courseware in advance saves time in class";
+"课件-中间标题" = "Download completed";
+"课件-失败标题" = "Download failed";
+"昵称-主标题" = "Enter your display name";
+"昵称-副标题" = "How do you want to be called?";
+"网络-主标题" = "Weak internet connection";
+"网络-副标题" = "Try to reconnect, switch network, or use another device";
+"网络-中间标题" = "Testing internet speed";
+"网络-完成中间标题" = "Good internet connection";
+"网络-一般完成中间标题" = "Normal internet connection";
+"确认提示-标题" = "Courseware download incomplete";
+"确认提示-子标题" = "Downloading courseware in advance saves time in class";
+"确认提示-继续" = "Continue";
+"低端机型-主标题" = "Poor device performance";
+"低端机型-副标题" = "Live class activities may not load on this device. Please switch to another device.";
+"课前准备-未绑定课件" = "The course is not associated with courseware";
+"课前准备-回放提示" = "Watch playback if you missed the live classes!";
+
+"报告详情" = "Answer Detail";
+"儿童隐私协议" = "Internet Safety Tips";
+"我知道了" = "I Got it";
+
+"签到" = "Check in";
+"请先进行签到" = "Please check in first";
+//"签到成功" = "Successfully Checked In!";
+"错过签到" = "The class has started... \n You've missed the check-in coins:(";
+
+"小灶课-完成" = "Finished";
+"小灶课-进入" = "Enter";
+"小灶课-查看回放" = "Playback";
+"小灶课-未开始" = "To start";
+"小灶课-回放生成中" = "Producing";
+"小灶课-暂无课程" = "No courses yet";
+"小灶课-回放过期" = "Expired";
+
+
+"设备检查-存储空间不足提示-标题" = "Not Enough Storage";
+"设备检查-存储空间不足提示" = "Not enough storage is available. Please remove unnecessary applications in \"Settings -> General -> iPhone/iPad Storage.\"";
+"设备检查-提示关闭" = "Got it";
+
+"直播课" =  "Live Courses";
+"录播课" =  "Recorded Courses";
+"课程学习" =  "Recorded Course";
+"去上课" =  "Enter";
+
+"去作答" = "Go to Test";
+"已作答" = "Report";
+"已过期" = "Expired";
+"已退费" = "Refunded";
+
+
+"课表页-所有课程" =  "All";
+"课表页-进行中" = "Current";
+"课表页-已结课" = "Completed";
+"课表页-暂无课程" = "No courses yet";
+
+"课件下载中" = "Courseware downloading";
+"提前下载课件，课程体验更流畅" = "Downloading courseware in advance saves time in class";
+"下载完成" = "Download completed";
+"下载失败" = "Download failed";
+"进入教室" = "Enter";
+"下一节课" = " Next Lesson";
+"上课中" = " Class in Session";
+"去旁听" = "Start auditing";
+"课次%@已开始" = "Lesson %@ has been already started";
+
+"课程有效期至：" = "Expiration date：";
+"课程永久有效" = "Courses valid permanently";
+
+"考试-永久有效" = "Valid permanently";
+
+"昵称不能为空" = "You haven't entered your display name";
+
+"报名课程" = "Registration course";
+
+"未找到课程切换账户提示Ipad" = "Can't find the course of your children here? Click here to switch the current student account.";
+
+"未找到课程切换账户提示" = "Can't find the course of your children here? \n Click here to switch the current student account.";
+
+"直播教室" = "Classroom";
+
+"切换当前学生" = "Switch the current student";
+
+"课程确定" = "Confirm";
+
+"课程已开始" =  "Class started ";
+
+"快进入教室"= " ago,come and join us!";
+
+"过去分钟复" = "minutes";
+"过去分钟单" = "minute";
+
+"课程将开始" = "Class starts in ";
+"课程将开始描述" = "";
+
+"登录查看课程" = "Login to view your Think Academy classes";
+
+"您的手机号" = "Your mobile number";
+
+"已注册以下学生账号" = "is registered to the following student accounts";
+"课后作业" = "Homework";
+
+"课程标识-旁听课" = "Audit class";
+"课程标识-临时课" = "Office hour";
+"课程标识-正式课" = "Purchased class";
+
+"阶段考试-未发布" = "Unpublished";
+"阶段考试-已发布" = "Go to Test";
+"阶段考试-已提交" = "Answer Submitted";
+"阶段考试-已批改" = "Test Reviewed";
+"阶段考试-已过期" = "Test Expired";
+"阶段考试-考试开始时间" = "Test Start Time";
+
+"课次角标状态-旁听课" = "Audit class";
+"课次角标状态-回放课" = "Playback only";
+"课次角标状态-调转课" = "Transfered";
+
+// 阶段考试
+"开始作答" = "Start Test";
+"查看报告" = "Check results";
+"查看题目解析" = "Check Solutions";
+"取消" = "Cancel";
+"确定" = "Determine";
+"点击确定" = "Confirm";
+"您是否切换此分校" = "Do you want to switch?";
+"答完有金币奖励哦" = "Coins will be rewarded after completion";
+"考试须知" = "Note";
+"作答提醒" = "Reminder";
+"作答时间共" = "You have";
+"，加油哦！" = " in total. Good Luck!";
+"考试尚未发布哦" = "The exam has not been released yet";
+"测试已结束，未按时参加" = "You missed the deadline.";
+"哎呀，超过作答截止时间了，下次要准时作答哦" = "Oops, this exam is past due. Please do your homework on time next time!";
+
+
+// 课中考试报告
+"课中考试报告已批改" = "   Reviewed   ";
+"课中考试报告已提交" = "   Submitted   ";
+"课中考试报告已过期" = "   Expired   ";
+"课中考试报告日期-前缀" = "Report available from";
+"课中考试报告日期-后缀" = "";
+"   去考试   " = "Go to Test";
+
+"iPad无课程切换多个分校" = "You have courses in multiple schools. Do you want to switch?. You can click here to switch.";
+"无课程切换多个分校" = "You have courses in multiple schools. Do you want to switch?. You can click here to switch.";
+"无课程切换单个分校Left" = "You have courses in the ";
+"无课程切换单个分校Right" = "campus. \n You can click here to switch.";
+"iPad无课程切换单个分校Right" = "campus. You can click here to switch.";
+
+"无课程切换学生账号ipad" = "Can't find the course of your children here? Click here to switch the current student account.";
+"无课程切换学生账号" = "Can't find the course of your children here? \n Click here to switch the current student account.";
+
+"点击此处" = "Click here";
+"点击此处小写" = "click here";
+
+"只有一个子账号%@" = "There are courses under your sub-account \"%@\", click to switch accounts";
+"多个子账号-提示" = "Your have courses in multiple student accounts, click to switch";
+"切换账号" = "Switch student account";
+"多个子账号-弹框" = "You have courses under the following sub-accounts, click to switch";
+
+"只有一个分校%@" = "There are courses under your school \"%@\", click to switch school";
+"多个分校-提示" = "Your have courses in multiple schools, click to switch";
+"切换分校" = "Switch school";
+"多个分校-弹框" = "You have courses under the following schools, click to switch";
+
+"暂无课程数据" = "There is no course under your account, choose the course now!";
+"暂无课程数据_iPad" = "There is no course under your account";
+"去选课程" = "Select a course";
+
+"用户切换失败" = "Failed to switch. Please try again later";
+
+"列表香港" = "Hong Kong";
+"列表美国" = "US";
+"列表英国" = "Branch UK";
+"列表新加坡" = "Singapore";
+"列表Think Math Club" = "Mathink Club";
+"列表澳大利亚" = "Australia";
+"列表马来西亚" = "Malaysia";
+"列表加拿大" = "Canada";
+
+"多学员提示" = "Your family has the following student accounts";
+
+//设备检测翻译文案
+//功能入口部分 - 英文，非HK分校
+"设备检测" = "Device Test";
+"检测描述" = "We recommend testing this device to ensure a better class experience";
+"开始" = "Start";
+
+// 时区
+"您当前的时区是" = "Current time zone ";
+"视频不超过600M" = "Video limit 600M";
+
+
+// 课前准备页
+"麦克风权限未打开" = "Microphone access required";
+"请在系统设置中打开麦克风权限老师无法听到你的发言" = "Please allow Think Academy to access your microphone in the system Settings, otherwise the teacher will not be able to hear you.";
+"权限设置" = "Settings";
+
+"摄像头权限未打开" = "Camera access required";
+"请在系统设置中打开摄像头" = "Please allow Think Academy to access your camera in system Settings, otherwise the teacher will not be able to see you.";
+
+"网络连接较差" = "Poor network connection";
+"网络连接较差文案" = "Poor network connection may cause a delay during class. Please switch to another network or try restarting your router and moving closer to your wireless router to improve your network connection if you are using a Wi-Fi network.";
+
+"网络良好" = "Good network connection";
+"网络良好文案" = "Your internet connection is good and meets the requirements of the Think Academy class.";
+
+"知道了" = "Got it";
+"重新测试" = "Re-test";
+
+"课件下载完成" = "Courseware download complete";
+"剩余时间大于60分钟" = "more than 60 minutes left";
+"请等待课件下载完成" = "Please wait until the file is downloaded";
+"正在下载课件" = "Downloading courseware, ";
+
+"剩余" = "";
+"分钟" = " min";
+"秒" = " sec left";
+
+"支持字母数字和汉字" = "Letters、numbers and Chinese characters are supported, 16 letters max maximum.";
+"设置昵称" = "Set Nickname";
+
+"课件下载失败，请重试" = "Courseware download failed, please try again";
+"课件下载失败" = "Courseware download failed";
+"请检查您的网络并尝试重新下载" = "Please check your network connection and try downloading again";
+"重新下载" = "Redownload";
+
+"进入教室" = "Enter";
+"进入教室中" = "Entering";
+
+"准时到达教室" = "Get to class on time";
+"签到成功" = "Sign in successfully";
+"签到失败" = "Sign in failed";
+"收下" = "Got it";
+
+"该课程没有回放或者回放还未生成" = "This course does not support playback or playback has not been generated";
+"没有回放返回" = "Back";
+"请检查您的网络连接" = "Network abnormal, please check your network connection";
+"重试" = "Retry";
+
+"使用在线课件" = "Online courseware";
+"尝试使用在线课件" = "Try using online courseware when unable to download offline courseware, but this way is not reliable.";
+"确认使用" = "Confirm";
+"正常" = "Great";
+
+"昵称修改失败，请重试" = "Failed to set nickname, please try again";
+
+"昵称长度不能超过16个字哦" = "Please check that the nickname is no longer than 16 characters";
+
+
+//NPS反馈相关↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+"下课啦，这节课学的开心吗" = "Did you enjoy this class?";
+"可以在这里写下详细原因" = "You can write the detailed reason here";
+"告诉我们原因可以帮助Think Academy做的更好" = "Tell us why to help Think Academy do better";
+"提交" = "Submit";
+"提交成功，感谢你的反馈" = "Submit successfully, thank you for your feedback";
+"课程评价" = "Feedback";
+//NPS反馈相关↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+"播放下一个视频" = "Play next video";
+"已切换至%@倍速播放" = "Playback switched to %@x speed";
+"截图已保存至相册" = "The screenshot is saved to gallery";

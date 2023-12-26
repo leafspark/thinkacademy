@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>😊</key>
+	<string>em_1</string>
+	<key>😃</key>
+	<string>em_2</string>
+	<key>😳</key>
+	<string>em_3</string>
+	<key>☺️</key>
+	<string>em_4</string>
+	<key>😁</key>
+	<string>em_5</string>
+	<key>😝</key>
+	<string>em_6</string>
+	<key>😥</key>
+	<string>em_7</string>
+	<key>😖</key>
+	<string>em_8</string>
+	<key>😰</key>
+	<string>em_9</string>
+	<key>😫</key>
+	<string>em_10</string>
+	<key>😭</key>
+	<string>em_11</string>
+	<key>😂</key>
+	<string>em_12</string>
+	<key>😱</key>
+	<string>em_13</string>
+	<key>👿</key>
+	<string>em_14</string>
+	<key>👍</key>
+	<string>em_15</string>
+	<key>👌</key>
+	<string>em_16</string>
+	<key>✌️</key>
+	<string>em_17</string>
+	<key>❤️</key>
+	<string>em_18</string>
+	<key>😆</key>
+	<string>em_19</string>
+</dict>
+</plist>

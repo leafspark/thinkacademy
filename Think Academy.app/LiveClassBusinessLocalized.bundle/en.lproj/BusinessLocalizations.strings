@@ -1,0 +1,461 @@
+/* 
+  LivePlayerLocalizations.strings
+  Pods
+
+  Created by 史茹 on 2020/8/31.
+
+  美式英语语言规则
+  
+*/
+
+//公共
+"取消" = "Cancel";
+"加载中" = "Loading";
+"确定" = "Confirm";
+"辅导老师" = "VIP Teacher";
+"主讲老师" = "Content Teacher";
+"当前没有可用的Wi-Fi,请检查网络" = "No WiFi available. Please check your internet connection.";
+"您的帐号已在其他设备登录，请重新登录" = "Your account has been logged in on another device. Please log in again.";
+
+
+//直播间
+"线路" = "channel";
+"播放卡顿？尝试切换其它线路" = "Video stuck？Try switching to another channel";
+"尝试切换其它线路" = "Try switching to another channel";
+"切换线路" = "Switch channel";
+"确定切换" = "Apply";
+"重试" = "Retry";
+"正在加载视频，请稍候..." = "Video loading, please wait";
+"倍速" = "Speed";
+"主讲回放" = "Playback";
+"课前辅导" = "Pre-lesson Guide";
+"课后辅导" = "Post-lesson Guide";
+"共0人在线" = "0 participant is online";
+"共" = "";
+"人在线" = "participants are online";
+"获取视频资源失败" = "Unable to download video";
+"您当前使用的是3G/4G网络，是否继续观看？" = "You are currently using mobile data, do you wish to continue?";
+"加入房间失败，请退出重试（RTCTokenInvalid）" = "Failure to join, please try again (RTCTokenInvalid)";
+"老师不在直播间，请耐心等待···" = "Your teacher will be here soon";
+"回放视频未生成" = "Video playback not generated";
+"视频播放失败" = "Failed to play the video";
+"连接超时，请检查网络" = "Connection timeout, please check your network status";
+"已调整为x倍速播放" = "Adjusted playback speed to";
+"回显状态" = "My Video";
+"小组回显" = "Team video";
+"我的金币" = "Coins:";
+
+//聊天区
+"老师关闭了发言功能，请认真听课" = "Content teacher just closed the chatbox.";
+"你被老师禁言了，本场直播不能再发言，请认真听课！" = "Your VIP teacher just closed your chatbox.";
+"老师解除了你的禁言，注意文明讨论！" = "Your VIP teacher just opened your chatbox.";
+"%ld秒后才能发送消息" = "Speak after %ld seconds.";
+"请输入有效信息" = "Please enter valid message!";
+"系统" = "System message";
+"我" = "Me";
+"英国老师" = " Tutor Assistant";
+"美国老师" = " VIP Teacher";
+"新加坡老师" = " Guiding Teacher";
+"Chatbox输入框默认文案" = " Say something";
+"老师未开启聊天" = "Chat has not been turned on by the teacher ";
+"聊天服务器连接中..." = "Connecting to chat server...";
+"聊天服务器连接成功" = "Successful connection to chat server";
+"聊天服务器连接失败" = "Failed to connect to chat server";
+"聊天服务器断开连接" = "Disconnected from chat server";
+"网络未知错误" = "Network error";
+"网络不可用" = "Network not available";
+"服务器断开连接" = "Disconnected from server";
+"开启了发言功能，你可以发言了" = "Content teacher just opened the chatbox. ";
+"你被老师单独禁言了" = "You are muted for the rest of the lesson. Please pay attention in class.";
+"老师解除的你的禁言" = "You are unmuted. Join the discussion!";
+"Chatbox仅看老师的开关" = "Teacher Message Only";
+"显示全部聊天消息" = "All chat history";
+"回放期间不能发言" = "Unable to send messages";
+"回放聊天提示" = "Watching Playback";
+"作答期间聊天区禁用" = "Do not use Chat when answering questions";
+"老师已关闭聊天区" = "Chat has been closed by the teacher";
+"老师已禁言" = "Chat is stopped by the teacher";
+"请输入内容" = "Type here";
+"请%ld秒后再发言" = "Please send messages after %ld seconds";
+"网络异常,请稍后再试" = "Internet error. Please try again later.";
+"已被禁言" = "Chatbox Closed";
+"教师私信中" = "Private Message";
+
+"chatbox-连接中" = "Connecting...";
+
+"私聊-发送给" = "Send to:";
+"私聊-所有人" = "All";
+"私聊-老师" = "Teacher";
+"私聊-发给老师" = "【To teacher】";
+"私聊-私聊" = "【Private message】";
+"私聊-弹窗-回复" = "Reply";
+"私聊-弹窗-收到" = "Got it";
+
+"仅看主讲老师消息tips" = "The teacher closed the group chat, you can still send private messages to the teacher";
+"看全员消息tips" = "The teacher opened the group chat";
+"老师关闭了聊天tips" = "Teacher just closed the chatbox";
+"老师开启了聊天tips" = "Teacher just opened the chatbox";
+"班级聊天关闭" = "Chatbox Closed";
+"消息发送过于频繁" = "Speaking too frequently";
+"消息发送过于频繁-大班" = "Sending too often";
+"学员端被禁言的tips" = "You have been muted by the teacher";
+"学员端被解除禁言的tips" = "You have been unmuted by the teacher";
+"学员端被禁言后输入框文案" = "Under mute";
+
+"大班-聊天已关闭" = "Chatbox Closed";
+
+//涂鸦
+"检测到有最新版本，请及时更新，以免影响体验" = "New version available. Please update your software to the latest version for the best experience.";
+"课件加载超时 , 请刷新重试" = "Loading timed out, please refresh and try again.";
+"马上开始上课 , 打起精神来 !" = "Class will start soon!";
+
+
+//课间休息
+"课间休息" = "Break Time";
+
+//课中问题反馈
+"课件" = "Study\nquestion";
+"学术问题" = "APP\nproblem";
+"不得体的行为" = "Inappropriate\nbehavior";
+
+"课件-手机" = "Study question";
+"学术问题-手机" = "APP problem";
+"不得体的行为-手机" = "Inappropriate behavior";
+"题目描述" = "Problem Descriptors";
+
+"其他" = "Others";
+"感谢你的反馈，稍后将有老师与你联系" = "Thank you for your feedback, we will get back to you soon";
+
+//截屏
+"使用截屏功能需要开启相册权限" = "To use the screenshot function, permission to access the album is needed.";
+"去开启" = "Enable";
+"保存图片失败" = "Failed to save the screenshot";
+"截图已保存至相册" = "Screenshot has been saved to the local album";
+
+
+//签到
+"现在开始课前点名" = "Please check in first";
+"签到成功" = "Check in successful";
+"未签到" = "Not checked in";
+"错过签到时间" = "You missed check in";
+"签到" = "Check in";
+"签到失败" = "Failed to sign in";
+
+//投票
+"投票" = "Vote";
+"投票结果" = "Result";
+"你已作答过本题" = "You've answered this question";
+"提交失败，请重试" = "Failed to submit. Please try again.";
+"提交" = "Submit";
+"小黑板提交" = "Done";
+"请选择：" = "Please select:";
+"加载失败，请刷新一下哦！" = "Failed to load the content. Please refresh and try again!";
+"投票-恭喜" = "Congratulations";
+
+//互动题
+"互动题" = "Interactive question";
+"你的答案" = "Your answer";
+"正确答案" = "Correct answer";
+"回答错误" = "Better luck next time!";
+"回答正确无金币" = "Great Job!";
+"回答正确有金币" = "Reward Time!";
+"互动题提交" = "Submit";
+"哎哟" = "Oops!";
+"谢谢你，但是一天只能送三次" = "Thank you! Only three gifts each time :)";
+"金币不够，请继续上课" = "Your coins are not enough:(";
+"请送一个礼物吧" = "Come and send a gift to your teacher!";
+"发送按钮" = "Send";
+"取消按钮" = "Cancel";
+"TRUE" = "TRUE";
+"FALSE" = "FALSE";
+
+//游戏互动
+"游戏互动" = "Game";
+"游戏互动-低端机型提示" = "We've detected poor performance on this device and the game may not work. Please switch to another device.";
+"游戏互动-低端机型确认" = "Got it";
+"网络检测—知道了" = "Got it";
+
+
+//视频连麦
+"  我  " = "  Me  ";
+"允许获取摄像头权限" = "Allow camera access";
+"开启摄像头权限可以使用视频连麦等更多功能" = "Allow camera access to use video related functions";
+"课后记得开启摄像头权限哦~" = "Don't forget to allow camera access after this class!";
+"允许获取麦克风权限" = "Allow microphone access";
+"开启麦克风权限可以使用视频连麦等更多功能" = "Allow microphone access to use more functions such as video chat";
+"课后记得开启麦克风权限哦~" = "Don't forget to allow microphone access after this class!";
+"ThinkAcademyClassroom想要接入你的麦克风" = "\"Think Academy\" would like to access your microphone";
+"在设置中设置参与视频聊天的权限" = "Grant the permission in settings to participate in video chat";
+"设置" = "Settings";
+"拒绝" = "Deny";
+"同意" = "Agree";
+"不同意" = "Deny";
+"视频连麦" = "Video chat";
+"快来连麦吧" = "Come and join the video chat!";
+"举手" = "Raise Hand";
+"禁止举手" = "Wait a moment";
+"正在发言" = "Speaking...";
+"取消" = "Cancel";
+"已取消" = "Canceled";
+"等待举手加入连麦" = "Come and join the video chat!";
+"等待老师选择" = "Waiting for the teacher to select";
+"视频连麦已结束" = "Video chat has ended";
+"异常错误" = "Error";
+
+// 顶部toolBar区域
+"网速很好" = "Good internet connection";
+"网速一般" = "Normal internet connection";
+"网速极差" = "Weak internet connection";
+"尝试重新连接、交换网络或使用其他设备" = "Trying to reconnect, or you can switch network or use another device.";
+
+//课件相关
+"课件加载失败标题" = "Courseware failed to load";
+"课件加载失败子标题" = "Couseware failed to load. Please try again.";
+"课件加载失败重试" = "Reload";
+
+//作业盒子
+"作业盒子-引导确认" = "Got it";
+"作业盒子-查看批改练习" = "Check the graded exercises here";
+"作业盒子-待批改" = "Grading";
+"作业盒子-正确" = "Correct";
+"作业盒子-错误" = "Incorrect";
+"作业盒子-部分正确" = "Partially correct";
+"作业盒子-订正按钮" = "Modify";
+
+"作业盒子-预览弹窗-正确" = "Answer is correct";
+
+"作业盒子-空文案" = "The exercise has not been initiated yet";
+"批改提示-关闭" = "Close";
+"批改提示-查看" = "View Exercise";
+"批改提示-文案" = "The teacher has graded your exercise, come and take a look!";
+"批改提示-文案" = "The teacher has finished grading your exercise, come and take a look";
+"作业盒子-订正文案" = "Retry it and submit again ! Your teacher will provide feedback to you soon";
+"互动结束" = "Interaction ended";
+"批改预览-错误鼓励" = "Not quite...Keep on trying!";
+"批改预览-重新作答" = "Come on, try again";
+
+//toast提示
+"toast-irc提示" = "Network unstable \n Reconnecting";
+"toast-网络异常提示" = "Network unstable \n Please refresh it";
+"toast-RTC质量差" = "The current network is poor, which has affected the normal class process. Please check your network equipment";
+"toast-RTC-关闭" = "Close";
+"toast-弱网网络提示描述" = "Please check your internet connection or try to re-enter classroom";
+"toast-弱网网络提示标题"= "Weak network connection";
+
+"toast-RTC-退出" = "Exit";
+
+//辅导上台
+
+"私聊文案" = "Private Video Call";
+"辅导上台错误文案" = "Oops !  \n Something Wrong…";
+"辅导上台退出文案" = "Exit";
+
+// V1.6.0硬编码部分整改
+"麦克风权限已关闭，进入“设置”，开启麦克风接入" = "Microphone permission is denied. Please enable microphone in settings";
+"老师结束了活动" = "Teacher has ended the activity";
+"恭喜！" = "Congratulations! ";
+"再给你20个金币" = "20 more coins for you!";
+"重试" = "Retry";
+"提交" = "Submit";
+"提交..." = "Submitting...";
+"提交成功" = "Submitted successfully";
+"提交失败" = "Submission failed";
+"完成讲义或草稿纸上的练习" = "Complete the exercise on your handout or scratch paper";
+"点击下面的照片并上传" = "Click below to take a photo and upload it";
+"提交成功后，可以在右上角的方框中查看评分结果" = "After submitting successfully, you may view the grading results in the box in the upper right corner";
+"摄像头权限被拒绝,请在设置中启用摄像头" = "Camera permission is denied. Please enable camera in settings.";
+"请选择上面的一个标签，在这里描述你的问题。" = "Please choose a label above and describe your problem here.";
+
+
+"遗憾!" = "Unfortunately!";
+"这次不行，伙计，下次要更努力了~" = "Not this time buddy… gotta work harder next time~";
+"哎呦！" = "Oops!";
+"你已经打开了这个红包" = "You've opened this red packet already";
+"恭喜!" = "Congrats!";
+"检查结果" = "Check results";
+"金币" = "Coins";
+"截屏" = "Screen shot";
+"礼物名字" = "Gift's name";
+"懂不懂?" = "Do you understand?";
+"加载失败" = "Failed to Load";
+"哎呦，它没起作用！" = "Oops, it didn't work!";
+"再试一次" = "Try again";
+"这些学生刚得到" = "These students just got";
+"请同意将现场教室截屏发给您的主讲老师" = "Agree to take a screenshot and send it to your VIP teacher.";
+
+//连对徽章称号
+"再答对一题就可以升级到-答对" = "Excellent job! Please keep up the good work!";
+"再答对一题就可以升级到-答错" = "No worries! Try your best on the next!";
+"你已经拿到这节课的最高等级啦" = "You've reached the highest level in this class!";
+"参与答题奖励金币-单数" = "Coin for your trying";
+"参与答题奖励金币-复数" = "Coins for your trying";
+"参与答题就可以获得称号升级！" = "Answer questions and get \n your badge level up!";
+"参与答题就可以获得称号升级-勋章详情" = "Answer questions and get your badge level up!";
+"再答对一题就可以升级到-勋章详情" = "Get 1 more correct and advance to ";
+"你已经拿到这节课的最高等级啦-勋章详情" = "You've reached the highest level in this class!";
+"连对徽章-level1" = "Iron";
+"连对徽章-level2" = "Bronze";
+"连对徽章-level3" = "Silver";
+"连对徽章-level4" = "Gold";
+"连对徽章-level5" = "Platinum";
+"连对徽章-level6" = "Diamond";
+"连对徽章-level7" = "Crown";
+
+// 小组回显
+"你已关闭小组回显" = "Group video closed";
+"小组回显-隐藏" = "Hide Video";
+"小组回显-展示" = "Show video";
+
+//在线小班排行榜
+"在线小班排行榜" = "Online SmallClass RankList";
+
+//在线小班功能区
+"功能区-举手" = "Raise Hand";
+"功能区-表情" = "Emoji";
+"功能区-静音" = "Mute";
+"功能区-非静音" = "Unmute";
+"功能区-更多" = "More";
+"功能区-摄像头" = "Camera";
+"功能区-反馈" = "Feedback";
+"功能区-作业" = "Exercise";
+"互动期间不允许操作摄像头" = "This setting is temporarily unavailable";
+"发送太频繁了，稍等一下吧" = "Take a break and try again later";
+"主讲老师请求打开视频" = "Teacher reminds you to turn the camera on.";
+"主讲老师请求打开麦克风" = "Teacher reminds you to turn the microphone on.";
+"主讲老师禁止打开麦克风" = "The teacher doesn’t allow you to turn the microphone on";
+"音视频管控-拒绝" = "Deny";
+"音视频管控-同意" = "Agree";
+"音视频管控-知道了" = "Got it";
+"加入我们" = "Join us now！";
+"表情发生已禁用" = "Emoji closed";
+"发送太频繁啦，请" = "Too many sends, retry in ";
+"秒后再试" = "s";
+
+// 金币
+"金币-本节课获得" = "This lesson";
+"金币-总金币" = "Coins in total";
+
+//判断题
+"判断题-正确" = "T";
+"判断题-错误" = "F";
+
+//随机点名
+"随机点名-其他人" = "The lucky student is";
+"随机点名-自己" = "Congratulations! You're the WINNER!";
+"随机点名-文案" = "Lucky Draw";
+
+//大班课 聊天区域
+"热词-完成" = "Done!";
+"热词-不懂" = "I don’t understand";
+"热词-懂了" = "I understand!";
+"热词-哈哈" = "Hahaha";
+
+//伪小班
+"伪小班-视频" = "Video";
+"伪小班-聊天" = "Chat";
+
+"旁听课提示" = "Class auditing";
+
+
+//送礼物
+"送礼物-我" = "I";
+
+
+//聊天chatbox
+"功能区-聊天" = "Chatbox";
+
+//课中考试
+"考试结束后看报告" = "The report will be available after the exam.";
+"考试报告" = "Exam";
+"好的" = "Confirm";
+
+//表情过期
+"表情包已过使用日期，请重新购买" = "Emojis expired. Buy it again in the coins shop.";
+
+"老师正在观看" = " Teacher checking ";
+"小黑板提交成功" = "Submitted successfully";
+"红包雨-收下金币" = "Collect";
+"红包雨-老师结束了互动" = "Teacher just ended the game";
+"红包雨-游戏加载超时" = "Game failed to load";
+
+"网站访问限制-标题" = "Access denied";
+"网站访问限制-內容" = "Please re-enter the classroom after turn off “Content & Privacy Restrictions” in system settings";
+"网站访问限制-知道了" = "Got it";
+
+"老师暂时不允许关闭麦克风" = "Cannot turn off the microphone";
+
+// 抢答
+"无人抢答，下次一起来抢答哦" = "No one answered. Let's play together next time!";
+"老师结束了互动" = "Teacher just ended the game.";
+"老师正在帮助其他人" = "The teacher is helping others";
+"红包雨-低端机型tips提示文本" = "The game cannot be loaded due to the current device's performance. Please try another device.";
+"红包雨-加载超时tips提示文本" = "Game loading timeout. Please switch to another internet or try another device.";
+"红包雨-加载异常tips关闭" = "Go collect coins!";
+"红包雨-游戏加载中" = "Loading";
+
+"Candy Bomb" = "Candy Bomb";
+"Swipe the candies to get coins!" = "Swipe the candies to get coins!";
+"Swipe the bombs?You lose coins!" = "Swipe the bombs? you lose coins!";
+
+//定向金币
+"定向金币-自己获得金币" = "Congrats!";
+"定向金币-别人获得金币" = "and others";
+"定向金币-通知样式-标题" = "Good job！";
+
+"视频私聊" = "Private call";
+"老师上台中" = "On Stage";
+"我同意将页面截图发送给技术团队" = "I agree to send a screenshot of the page to the tech team";
+"问题反馈" = "Feedback";
+"请在此描述你遇到的问题" = "Please describe your problem and assist us to solve it quickly.";
+
+
+//填一填
+"Submit" = "Submit";
+"请输入答案" = "Type your answer here";
+"答案提交成功" = "Submit successfully";
+"答案提交失败" = "Submit failed, please try again";
+"Clear" = "Clear";
+"My Answer" = "My Answer";
+"NumKeyboard_mask_Title" = "The keyboard does not display properly";
+"NumKeyboard_mask_Subtitle_Mini_Keyboard" = "Please restore the mini keyboard to the fixed keyboard by dragging it to the bottom center of the screen.";
+"NumKeyboard_mask_Subtitle_Floating_Keyboard" = "Please turn off \"Split keyboard\" in \"System Settings - General - Keyboard\"";
+"NumKeyboard_mask_Btn_Title" = "Go to Settings";
+
+//舒尔特方格
+"Schulte_Name"                  = "Schulte Table";
+"Schulte_Number_Natural"        = "Natural Number";
+"Schulte_Number_Prime"          = "Prime Number";
+"Schulte_Mode_Normal"           = "Normal Mode";
+"Schulte_Seconds"               = "s";
+"Schulte_Mode_Shuffle"        = "Shuffle Mode";
+"Schulte_Prepare_Footer"        = "Click on the numbers in order from smallest to largest, the faster you click the more coins you get！";
+"Schulte_Playground_intro_1"    = "Click on #MODE# from #MIN# to #MAX# in ascending order.";
+"Schulte_Playground_Next"       = "Next Number";
+"Schulte_Playground_submit_failed_title" = "Submission Failed";
+"Schulte_Playground_submit_failed_content" = "Server connection timeout. Please check the internet connection and try again.";
+"Schulte_Playground_submit_failed_confirm" = "Try again";
+"Schulte_Victory_Footer"        = "Leaderboard will be published soon！\nAre you ready to check it out?";
+"Schulte_Victory_banner_completed" = "Game Completed";
+"Schulte_Victory_banner_new"        = "New Record";
+"Schulte_Victory_banner_first"        = "First Challenge";
+"Schulte_Victory_record_title_current"        = "Your current time";
+"Schulte_Victory_record_title_best"        = "Your best time";
+"Schulte_Board_Title"           = "Leaderboard";
+"Schulte_Board_Tips_My"         = "Congratulations!";
+"Schulte_Board_Tips_NOMy"       = "Almost there! Try it next time!";
+"Schulte_Time_Up"               = "Game time is up";
+"课件异常，请退出后重新进入教室" = "There's something wrong with the courseware, please re-enter the classroom.";
+"课件校验-确认" = "Confirm";
+"标题-本班暂时没有人上榜" = "No one on the honor roll of this class";
+
+
+"反显-正在讲话" = "Speaking: ";
+"反显-逗号" = ",";
+
+// 0908 - 2190 - 小班课堂布局架构升级
+"EventFeedbackAlertView_title_回答正确" = "Correct, good job!";
+"EventFeedbackAlertView_title_回答错误" = "Oops";
+"EventFeedbackAlertView_title_提交成功" = "Submit successfully";
+"EventFeedbackAlertView_desc_回答错误" = "Better luck next time～";
+"EventFeedbackAlertView_desc_徽章升级到" = "Your badge has been upgraded to Lv ";
+"EventFeedbackAlertView_desc_徽章最高级" = "Your badge has been upgraded to the highest level!";

@@ -1,0 +1,13 @@
+
+"倍速" = "Speed";
+"倍" = "x";
+"倍速播放" = "Playback Speed";
+//"已切换至%@倍速播放" = "Playback switched to %@x speed";
+//"截图已保存至相册" = "The screenshot is saved to gallery";
+"加载中" = "Loading";
+"加载失败" = "Failed to load";
+"重新加载" = "Reload";
+"切换线路" = "Switch channel";
+"切换线路标题" = "Switch channel（Is it slow? Switch your connection channel.）";
+"线路" = "Channel";
+//"播放下一个视频" = "Play next video";

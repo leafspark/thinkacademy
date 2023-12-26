@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>[smile]</string>
+	<string>[XD]</string>
+	<string>[LOL]</string>
+	<string>[party]</string>
+	<string>[the_rock]</string>
+	<string>[thinking]</string>
+	<string>[quiet]</string>
+	<string>[pleading]</string>
+	<string>[sad]</string>
+	<string>[shame]</string>
+	<string>[scream]</string>
+	<string>[cry]</string>
+	<string>[yeah]</string>
+	<string>[like]</string>
+	<string>[hands_up]</string>
+	<string>[clap]</string>
+	<string>[A]</string>
+	<string>[B]</string>
+	<string>[true]</string>
+	<string>[false]</string>
+	<string>[surprise]</string>
+	<string>[heart]</string>
+	<string>[unicorn]</string>
+	<string>[ghost]</string>
+</array>
+</plist>

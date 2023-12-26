@@ -1,0 +1,13 @@
+"进入教室" = "Enter";
+"去旁听" = "Start auditing";
+"课次" = "Lesson";
+"查看" = "View";
+"报告详情" = "Answer Detail";
+"%@的课后报告已生成" = "Your lesson report for \"%@\" is ready.";
+
+// TabBarItem
+"选课" = "Mall";
+"上课" = "Class";
+"发现" = "Discover";
+"我的" = "Mine";
+

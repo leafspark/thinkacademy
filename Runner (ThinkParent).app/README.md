@@ -1,0 +1,1 @@
+iOS apps are a pain to decompile, and can be impossible to get readable code. However I will try to disassemble using IDA Pro, so wait for the next couple commits. Still it is possible to deduce strings and assets so use those as a starting point.

@@ -1,0 +1,30 @@
+/* 
+  LivePlayerLocalizations.strings
+  Pods
+
+  Created by 史茹 on 2020/8/31.
+  
+*/
+
+"加载失败，请刷新一下哦！" = "Failed to load the content. Please refresh and try again!";
+"重试" = "Retry";
+"当前没有可用的Wi-Fi,请检查网络" = "No WiFi available. Please check your internet connection.";
+"确定" = "Confirm";
+"您当前使用的是3G/4G网络，是否继续观看？" = "You are currently using mobile data, do you wish to continue?";
+"返回" = "Back";
+"继续观看" = "Continue";
+"加入房间失败，请退出重试（RTCTokenInvalid）" = "Failure to join, please try again (RTCTokenInvalid)";
+"取消" = "Cancel";
+"获取视频资源失败" = "Unable to download video";
+"回放视频未生成" = "Video playback not generated";
+"视频播放失败" = "Failed to play the video";
+"连接超时，请检查网络" = "Connection timeout, please check your network status";
+
+//课中考试
+"考试结束后看报告" = "The report will be available after the exam.";
+"好的" = "Confirm";
+"Submit" = "Submit";
+"请输入答案" = "Please enter the answer";
+"Clear" = "Clear";
+"My Answer" = "My Answer";
+
