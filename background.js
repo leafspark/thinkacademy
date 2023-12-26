@@ -42160,14 +42160,14 @@
             }, []);
         }
         var b = function () {
-            function e(e, t) {
+            function obj0(e, t) {
                 this._integrations = {};
                 this._numProcessing = 0;
                 this._backend = new e(t);
                 this._options = t;
                 t.dsn && (this._dsn = Object(i.b)(t.dsn));
             }
-            return e.prototype.captureException = function (e, t, n) {
+            return obj0.prototype.captureException = function (e, t, n) {
                 var r = this;
                 if (!Object(o.d)(e)) {
                     var a = t && t.event_id;
@@ -42178,14 +42178,14 @@
                     })), a;
                 }
                 Object(s.b)() && u.c.log('Not capturing exception because it\'s already been captured.');
-            }, e.prototype.captureMessage = function (e, t, n, r) {
+            }, obj0.prototype.captureMessage = function (e, t, n, r) {
                 var a = this, i = n && n.event_id, o = Object(c.j)(e) ? this._getBackend().eventFromMessage(String(e), t, n) : this._getBackend().eventFromException(e, n);
                 return this._process(o.then(function (e) {
                     return a._captureEvent(e, n, r);
                 }).then(function (e) {
                     i = e;
                 })), i;
-            }, e.prototype.captureEvent = function (e, t, n) {
+            }, obj0.prototype.captureEvent = function (e, t, n) {
                 if (!(t && t.originalException && Object(o.d)(t.originalException))) {
                     var r = t && t.event_id;
                     return this._process(this._captureEvent(e, t, n).then(function (e) {
@@ -42193,27 +42193,27 @@
                     })), r;
                 }
                 Object(s.b)() && u.c.log('Not capturing exception because it\'s already been captured.');
-            }, e.prototype.captureSession = function (e) {
+            }, obj0.prototype.captureSession = function (e) {
                 this._isEnabled() ? 'string' != typeof e.release ? Object(s.b)() && u.c.warn('Discarded session because of missing or non-string release') : (this._sendSession(e), e.update({ init: false })) : Object(s.b)() && u.c.warn('SDK not enabled, will not capture session.');
-            }, e.prototype.getDsn = function () {
+            }, obj0.prototype.getDsn = function () {
                 return this._dsn;
-            }, e.prototype.getOptions = function () {
+            }, obj0.prototype.getOptions = function () {
                 return this._options;
-            }, e.prototype.getTransport = function () {
+            }, obj0.prototype.getTransport = function () {
                 return this._getBackend().getTransport();
-            }, e.prototype.flush = function (e) {
+            }, obj0.prototype.flush = function (e) {
                 var t = this;
                 return this._isClientDoneProcessing(e).then(function (n) {
                     return t.getTransport().close(e).then(function (e) {
                         return n && e;
                     });
                 });
-            }, e.prototype.close = function (e) {
+            }, obj0.prototype.close = function (e) {
                 var t = this;
                 return this.flush(e).then(function (e) {
                     return t.getOptions().enabled = false, e;
                 });
-            }, e.prototype.setupIntegrations = function () {
+            }, obj0.prototype.setupIntegrations = function () {
                 this._isEnabled() && !this._integrations.initialized && (this._integrations = function (e) {
                     var t = {};
                     return function (e) {
@@ -42234,13 +42234,13 @@
                         }(e));
                     }), Object(g.a)(t, 'initialized', true), t;
                 }(this._options));
-            }, e.prototype.getIntegration = function (e) {
+            }, obj0.prototype.getIntegration = function (e) {
                 try {
                     return this._integrations[e.id] || null;
                 } catch (t) {
                     return Object(s.b)() && u.c.warn('Cannot retrieve integration ' + e.id + ' from the current Client'), null;
                 }
-            }, e.prototype._updateSessionFromEvent = function (e, t) {
+            }, obj0.prototype._updateSessionFromEvent = function (e, t) {
                 var n, a, i = false, o = false, s = t.exception && t.exception.values;
                 if (s) {
                     o = true;
@@ -42266,20 +42266,20 @@
                 }
                 var p = 'ok' === e.status;
                 (p && 0 === e.errors || p && i) && (e.update(Object(r.a)(Object(r.a)({}, i && { status: 'crashed' }), { errors: e.errors || Number(o || i) })), this.captureSession(e));
-            }, e.prototype._sendSession = function (e) {
+            }, obj0.prototype._sendSession = function (e) {
                 this._getBackend().sendSession(e);
-            }, e.prototype._isClientDoneProcessing = function (e) {
+            }, obj0.prototype._isClientDoneProcessing = function (e) {
                 var t = this;
                 return new l.a(function (n) {
                     var r = 0, a = setInterval(function () {
                         0 == t._numProcessing ? (clearInterval(a), n(true)) : (r += 1, e && r >= e && (clearInterval(a), n(false)));
                     }, 1);
                 });
-            }, e.prototype._getBackend = function () {
+            }, obj0.prototype._getBackend = function () {
                 return this._backend;
-            }, e.prototype._isEnabled = function () {
+            }, obj0.prototype._isEnabled = function () {
                 return false !== this.getOptions().enabled && void 0 !== this._dsn;
-            }, e.prototype._prepareEvent = function (e, t, n) {
+            }, obj0.prototype._prepareEvent = function (e, t, n) {
                 var i = this, s = this.getOptions(), u = s.normalizeDepth, c = void 0 === u ? 3 : u, h = s.normalizeMaxBreadth, m = void 0 === h ? 1000 : h, f = Object(r.a)(Object(r.a)({}, e), {
                     event_id: e.event_id || (n && n.event_id ? n.event_id : Object(o.i)()),
                     timestamp: e.timestamp || Object(p.c)()
@@ -42292,38 +42292,40 @@
                 return g && (y = g.applyToEvent(f, n)), y.then(function (e) {
                     return e && (e.sdkProcessingMetadata = Object(r.a)(Object(r.a)({}, e.sdkProcessingMetadata), { normalizeDepth: Object(d.a)(c) })), 'number' == typeof c && c > 0 ? i._normalizeEvent(e, c, m) : e;
                 });
-            }, e.prototype._normalizeEvent = function (e, t, n) {
-                if (!e) {
+            }, obj0.prototype._normalizeEvent = function (data_1, t, n) {
+                if (!data_1) {
                     return null;
                 }
-                var a = Object(r.a)(Object(r.a)(Object(r.a)(Object(r.a)(Object(r.a)({}, e), e.breadcrumbs && {
-                    breadcrumbs: e.breadcrumbs.map(function (e) {
+                var data_0 = Object(r.a)(Object(r.a)(Object(r.a)(Object(r.a)(Object(r.a)({}, data_1), data_1.breadcrumbs && {
+                    breadcrumbs: data_1.breadcrumbs.map(function (e) {
                         return Object(r.a)(Object(r.a)({}, e), e.data && { data: Object(d.a)(e.data, t, n) });
                     })
-                }), e.user && { user: Object(d.a)(e.user, t, n) }), e.contexts && { contexts: Object(d.a)(e.contexts, t, n) }), e.extra && { extra: Object(d.a)(e.extra, t, n) });
-                return e.contexts && e.contexts.trace && (a.contexts.trace = e.contexts.trace), e.sdkProcessingMetadata = Object(r.a)(Object(r.a)({}, e.sdkProcessingMetadata), { baseClientNormalized: true }), a;
-            }, e.prototype._applyClientOptions = function (e) {
+                }), data_1.user && { user: Object(d.a)(data_1.user, t, n) }), data_1.contexts && { contexts: Object(d.a)(data_1.contexts, t, n) }), data_1.extra && { extra: Object(d.a)(data_1.extra, t, n) });
+                return data_1.contexts && data_1.contexts.trace && (data_0.contexts.trace = data_1.contexts.trace), data_1.sdkProcessingMetadata = Object(r.a)(Object(r.a)({}, data_1.sdkProcessingMetadata), { baseClientNormalized: true }), data_0;
+            }, obj0.prototype._applyClientOptions = function (e) {
                 var t = this.getOptions(), n = t.environment, r = t.release, a = t.dist, i = t.maxValueLength, o = void 0 === i ? 250 : i;
                 'environment' in e || (e.environment = 'environment' in t ? n : 'production');
+
                 void 0 === e.release && void 0 !== r && (e.release = r);
                 void 0 === e.dist && void 0 !== a && (e.dist = a);
+
                 e.message && (e.message = Object(h.e)(e.message, o));
                 var s = e.exception && e.exception.values && e.exception.values[0];
                 s && s.value && (s.value = Object(h.e)(s.value, o));
                 var u = e.request;
                 u && u.url && (u.url = Object(h.e)(u.url, o));
-            }, e.prototype._applyIntegrationsMetadata = function (e) {
+            }, obj0.prototype._applyIntegrationsMetadata = function (e) {
                 var t = Object.keys(this._integrations);
                 t.length > 0 && (e.sdk = e.sdk || {}, e.sdk.integrations = Object(r.f)(e.sdk.integrations || [], t));
-            }, e.prototype._sendEvent = function (e) {
+            }, obj0.prototype._sendEvent = function (e) {
                 this._getBackend().sendEvent(e);
-            }, e.prototype._captureEvent = function (e, t, n) {
+            }, obj0.prototype._captureEvent = function (e, t, n) {
                 return this._processEvent(e, t, n).then(function (e) {
                     return e.event_id;
                 }, function (e) {
                     Object(s.b)() && u.c.error(e);
                 });
-            }, e.prototype._processEvent = function (e, t, n) {
+            }, obj0.prototype._processEvent = function (e, t, n) {
                 var r = this, a = this.getOptions(), i = a.beforeSend, o = a.sampleRate, s = this.getTransport();
                 function u(e, t) {
                     s.recordLostEvent && s.recordLostEvent(e, t);
@@ -42368,7 +42370,7 @@
                         originalException: e
                     }), new m.a('Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.\nReason: ' + e);
                 });
-            }, e.prototype._process = function (e) {
+            }, obj0.prototype._process = function (e) {
                 var t = this;
                 this._numProcessing += 1;
                 e.then(function (e) {
@@ -42376,7 +42378,7 @@
                 }, function (e) {
                     return t._numProcessing -= 1, e;
                 });
-            }, e;
+            }, obj0;
         }();
     },
     function (e, t) {
@@ -42729,7 +42731,7 @@
     function (e, t) {
         e.exports = require('lodash');
     },
-    function (e, t, n) {
+    function (e, t, n) { // Connection Logic (login?)
         'use strict';
         n.d(t, 'a', function () {
             return o;
@@ -43041,7 +43043,7 @@
     function (e, t, n) {
         e.exports = n(636);
     },
-    function (e, t, n) {
+    function (e, t, n) { // ClientInfo
         const r = n(28), a = n(3), { app: i } = n(2), o = i.getPath('userData');
         let s = [
             'production',

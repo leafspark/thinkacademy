@@ -147,7 +147,7 @@
           computed: {
             account: function () {
               return (
-                console.info(
+                console.info( // Vue UI render?
                   '对象函数 account,filePath:renderer/views/ForgotPassword.vue'
                 ),
                 this.accountInfo || null
