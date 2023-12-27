@@ -6,6 +6,7 @@
 
 ##### However, we can assume each computer can run 4 instances. That means in only 7.5 months, with 256k hosts, we can bankrupt TAL Education Group  
 ~~~
+Old Logic:
 32548 decades with 2 instances
 16274 decades with 4 instances
 8137 decades with 8 instances
@@ -35,6 +36,33 @@
 21 days with 8M instances/125k hosts (Host == 64 instances)
 21 days with 8M instances/65k hosts (Host == 128 instances)
 21 days with 8M instances/32k hosts (Host == 256 instances)
+
+Optimized prompt:
+
+1,200,000 years with 1 instance (Optimized prompt)
+600K years with 2 instances
+300K years with 4 instances
+150K years with 8 instances
+75K years with 16 instances
+32.5K years with 32 instances
+16K years with 64 instances
+8K years with 128 instances
+4K years with 256 instances
+2K years with 512 instances
+1K years with 1024 instances
+500 years with 2048 instances
+250 years with 4096 instances
+125 years with 8192 instances
+62.5 years with 16384 instances
+31 years with 32767 instances
+15.5 years with 65536 instances
+7.5 years with 128K instances
+4 years with 256K instances
+2 years with 512K instances
+1 year with 1M instances
+6 months with 2M instances
+3 months with 4M instances
+1.5 months with 8M instances
 ~~~
 
 Why? Because they are unethical and trash.
