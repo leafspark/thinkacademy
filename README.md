@@ -1,6 +1,10 @@
 # thinkacademy-reverse-engineered
 
-ThinkAcademy iOS and Android apps decompiled
+## ThinkAcademy/Think Parent iOS analyzed
+
+#### You may wonder why it says analyzed, and that is because iOS apps as they are compiled in Swift are very difficult to fully decompile.
+
+#### Ghidra will take a while so commits will be pushed later.
 
 ### Decrypted from iPhone 7, iOS 15.7.9, TrollDecrypt
 
