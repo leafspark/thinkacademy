@@ -1,157 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-	<link rel="stylesheet" href="/libs/ui/neosui.min.css?t=" type="text/css">
-	<link rel="stylesheet" href="/libs/talqs/index.min.css?t=" type="text/css">
-	<script src="/libs/talqs/jquery.min.js"></script>
-	<script src="/libs/talqs/index.min.js?t="></script>
-	<script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="stylesheet" href="./libs/ui/neosui.min.css?t=" type="text/css"><link rel="stylesheet" href="./libs/talqs/index.min.css?t=" type="text/css"><script src="./libs/talqs/jquery.min.js"></script><script src="./libs/talqs/index.min.js?t="></script><script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
       MathJax.InputJax.TeX.prefilterHooks.Add(function(data) { if (!data.display) { data.math="\\displaystyle{" +
       data.math + "}" } }); }); MathJax.Hub.Config({ jax: ["input/TeX", "output/SVG" ], extensions: ["tex2jax.js"], TeX: {
       extensions: ["AMSmath.js", "AMSsymbols.js" , "noErrors.js" , "noUndefined.js" ] }, skipStartupTypeset: true,
       showProcessingMessages: false, messageStyle: 'none' , tex2jax: { ignoreClass: 'ignore_math' , preview: "none" ,
       inlineMath: [["$", "$" ], ["\\", "\\" ] ]}, showMathMenu: false, displayAlign: "left" , "SVG" : { minScaleAdjust:
-      100, linebreaks: { automatic: true, width: "container" } } });</script>
-	<title>ThinkAcademy</title>
-	<link href="/static/css/chunk-0b22331a.982b7a13.css" rel="prefetch">
-	<link href="/static/css/chunk-11eec9c1.7c3ebc89.css" rel="prefetch">
-	<link href="/static/css/chunk-15d0a6ac.26ca3ea4.css" rel="prefetch">
-	<link href="/static/css/chunk-1f5d7637.24d81aa1.css" rel="prefetch">
-	<link href="/static/css/chunk-20a1b1ce.04679877.css" rel="prefetch">
-	<link href="/static/css/chunk-2630f156.94134ac6.css" rel="prefetch">
-	<link href="/static/css/chunk-2bc229ac.b852d7ba.css" rel="prefetch">
-	<link href="/static/css/chunk-2ee5cc78.210ca4b7.css" rel="prefetch">
-	<link href="/static/css/chunk-2f487bd5.e9996723.css" rel="prefetch">
-	<link href="/static/css/chunk-31983c92.26a8f897.css" rel="prefetch">
-	<link href="/static/css/chunk-337dbcdc.93eb0c8d.css" rel="prefetch">
-	<link href="/static/css/chunk-38b4c118.65605abb.css" rel="prefetch">
-	<link href="/static/css/chunk-3cbfb822.37f1291c.css" rel="prefetch">
-	<link href="/static/css/chunk-44467a69.ef7c1214.css" rel="prefetch">
-	<link href="/static/css/chunk-459f8285.475d04da.css" rel="prefetch">
-	<link href="/static/css/chunk-4c5e0b48.7c3ebc89.css" rel="prefetch">
-	<link href="/static/css/chunk-5173cda2.6734aae7.css" rel="prefetch">
-	<link href="/static/css/chunk-53d50342.2a33d6f2.css" rel="prefetch">
-	<link href="/static/css/chunk-5b2ae432.3a1afe72.css" rel="prefetch">
-	<link href="/static/css/chunk-6616c64c.2fd25286.css" rel="prefetch">
-	<link href="/static/css/chunk-728975b4.50243fd9.css" rel="prefetch">
-	<link href="/static/css/chunk-7697d2b8.e4686fb3.css" rel="prefetch">
-	<link href="/static/css/chunk-774583b0.1fbd6682.css" rel="prefetch">
-	<link href="/static/css/chunk-796b0337.7e774c8d.css" rel="prefetch">
-	<link href="/static/css/chunk-7977b3b6.e1f023e5.css" rel="prefetch">
-	<link href="/static/css/chunk-7b8ac8c3.008694b2.css" rel="prefetch">
-	<link href="/static/css/chunk-7bc122d5.2a506dc0.css" rel="prefetch">
-	<link href="/static/css/chunk-7bd0aea8.9491974d.css" rel="prefetch">
-	<link href="/static/css/chunk-7c5e815a.78596749.css" rel="prefetch">
-	<link href="/static/css/chunk-84a61f34.b9643368.css" rel="prefetch">
-	<link href="/static/css/chunk-acd3a08a.34fb5d2a.css" rel="prefetch">
-	<link href="/static/css/chunk-c827cafc.16a22db4.css" rel="prefetch">
-	<link href="/static/css/chunk-de6c49f6.76115e1f.css" rel="prefetch">
-	<link href="/static/css/chunk-ea59be38.bf53bc08.css" rel="prefetch">
-	<link href="/static/css/chunk-eb77d058.17cdc0de.css" rel="prefetch">
-	<link href="/static/css/chunk-f8b29358.c6932f48.css" rel="prefetch">
-	<link href="/static/css/chunk-f9fead60.022fa772.css" rel="prefetch">
-	<link href="/static/css/chunk-fd38125e.7d1fac87.css" rel="prefetch">
-	<link href="/static/js/chunk-0b22331a.5bd34eaa.js" rel="prefetch">
-	<link href="/static/js/chunk-11eec9c1.95284fc4.js" rel="prefetch">
-	<link href="/static/js/chunk-15d0a6ac.4b9d8b9a.js" rel="prefetch">
-	<link href="/static/js/chunk-1e986d02.2db3173b.js" rel="prefetch">
-	<link href="/static/js/chunk-1f5d7637.556392f0.js" rel="prefetch">
-	<link href="/static/js/chunk-20a1b1ce.c3aaa9fc.js" rel="prefetch">
-	<link href="/static/js/chunk-256b7dac.02bd426c.js" rel="prefetch">
-	<link href="/static/js/chunk-2630f156.f39fed4d.js" rel="prefetch">
-	<link href="/static/js/chunk-2bc229ac.ce0bb393.js" rel="prefetch">
-	<link href="/static/js/chunk-2d0c4fe6.df5d5bc5.js" rel="prefetch">
-	<link href="/static/js/chunk-2d208d92.a71ad280.js" rel="prefetch">
-	<link href="/static/js/chunk-2ee5cc78.cc186851.js" rel="prefetch">
-	<link href="/static/js/chunk-2f487bd5.41fcc51a.js" rel="prefetch">
-	<link href="/static/js/chunk-31983c92.08c2175f.js" rel="prefetch">
-	<link href="/static/js/chunk-337dbcdc.c16e1870.js" rel="prefetch">
-	<link href="/static/js/chunk-38b4c118.0b7f99c5.js" rel="prefetch">
-	<link href="/static/js/chunk-3cbfb822.898e5bdc.js" rel="prefetch">
-	<link href="/static/js/chunk-44467a69.b9f9d367.js" rel="prefetch">
-	<link href="/static/js/chunk-459f8285.33171876.js" rel="prefetch">
-	<link href="/static/js/chunk-4c5e0b48.65d6a6eb.js" rel="prefetch">
-	<link href="/static/js/chunk-5173cda2.4a9bbf04.js" rel="prefetch">
-	<link href="/static/js/chunk-53d50342.6d19608c.js" rel="prefetch">
-	<link href="/static/js/chunk-5b2ae432.de35b991.js" rel="prefetch">
-	<link href="/static/js/chunk-6616c64c.7a54d961.js" rel="prefetch">
-	<link href="/static/js/chunk-728975b4.f0c7405e.js" rel="prefetch">
-	<link href="/static/js/chunk-7697d2b8.b60e4caf.js" rel="prefetch">
-	<link href="/static/js/chunk-774583b0.b038c744.js" rel="prefetch">
-	<link href="/static/js/chunk-796b0337.2eea647d.js" rel="prefetch">
-	<link href="/static/js/chunk-7977b3b6.4d1e27c6.js" rel="prefetch">
-	<link href="/static/js/chunk-7b8ac8c3.4d8e93a0.js" rel="prefetch">
-	<link href="/static/js/chunk-7bc122d5.219fd9a9.js" rel="prefetch">
-	<link href="/static/js/chunk-7bd0aea8.6c783f4d.js" rel="prefetch">
-	<link href="/static/js/chunk-7c5e815a.c9c3b0fd.js" rel="prefetch">
-	<link href="/static/js/chunk-84a61f34.7772ef50.js" rel="prefetch">
-	<link href="/static/js/chunk-a95d4ac0.b369f8ce.js" rel="prefetch">
-	<link href="/static/js/chunk-acd3a08a.a8ab6a7f.js" rel="prefetch">
-	<link href="/static/js/chunk-c827cafc.9870f584.js" rel="prefetch">
-	<link href="/static/js/chunk-de6c49f6.dbf93e9a.js" rel="prefetch">
-	<link href="/static/js/chunk-df996226.a4ad579a.js" rel="prefetch">
-	<link href="/static/js/chunk-ea59be38.53e81932.js" rel="prefetch">
-	<link href="/static/js/chunk-eb77d058.cd2f206c.js" rel="prefetch">
-	<link href="/static/js/chunk-f8b29358.a8a1c5e4.js" rel="prefetch">
-	<link href="/static/js/chunk-f9fead60.bdf8f486.js" rel="prefetch">
-	<link href="/static/js/chunk-fd38125e.57356061.js" rel="prefetch">
-	<link href="/static/css/chunk-common.9b82aa5a.css" rel="preload" as="style">
-	<link href="/static/css/chunk-vendors.96b0a5a0.css" rel="preload" as="style">
-	<link href="/static/js/chunk-common.ecd79ca7.js" rel="modulepreload" as="script">
-	<link href="/static/js/chunk-vendors.54c18461.js" rel="modulepreload" as="script">
-	<link href="/static/js/index.9b617235.js" rel="modulepreload" as="script">
-	<link href="/static/css/chunk-vendors.96b0a5a0.css" rel="stylesheet">
-	<link href="/static/css/chunk-common.9b82aa5a.css" rel="stylesheet">
-</head>
-
-<body oncontextmenu="return false" onselectstart="return false">
-	<script>document.addEventListener(
-			'drop',
-			function (event) {
-				event.preventDefault() // Disable browser defualt behavior
-				return false
-			},
-			false
-		)
-		document.addEventListener(
-			'dragover',
-			function (event) {
-				event.preventDefault() //Disable browser defualt behavior
-				return false
-			},
-			false
-		)
-		window.addEventListener('popstate', function (event) {
-			window.location.reload()
-		})</script>
-	<div id="app"></div>
-	<script src="/libs/vue/vue.min.js"></script>
-	<script src="/libs/vue/vue-router.min.js"></script>
-	<script src="/libs/vue/vuex.min.js"></script>
-	<script src="/libs/sdk/chat.web.3.2.1.js"></script>
-	<script src="/libs/sdk/hls.min.js?v=2.0.0"></script>
-	<script src="/libs/ui/neosui.umd.min.js?t="></script>
-	<script type="module" src="/static/js/chunk-vendors.54c18461.js"></script>
-	<script type="module" src="/static/js/chunk-common.ecd79ca7.js"></script>
-	<script type="module" src="/static/js/index.9b617235.js"></script>
-	<script>
-		!function () {
-			var object_0 = document,
-				value_0 = object_0.createElement("script");
-			if (!("noModule" in value_0) && "onbeforeload" in value_0) {
-				var var_0 = !1;
-				object_0.addEventListener("beforeload", function (e) {
-					if (e.target === value_0) var_0 = !0;
-					else if (!e.target.hasAttribute("nomodule") || !var_0) return;
-					e.preventDefault()
-				}, !0), value_0.type = "module", value_0.src = ".", object_0.head.appendChild(value_0), value_0.remove()
-			}
-		}();
-	</script>
-</body>
-
-</html>
+      100, linebreaks: { automatic: true, width: "container" } } });</script><title>ThinkAcademy</title><link href="./static/css/Addstudent.96b6d49e.css" rel="prefetch"><link href="./static/css/Assignment.ca13b93b.css" rel="prefetch"><link href="./static/css/Boot.ca6f4b32.css" rel="prefetch"><link href="./static/css/CheckDevice.ebeab9a0.css" rel="prefetch"><link href="./static/css/CheckDevice~ReadyClass.7c3ebc89.css" rel="prefetch"><link href="./static/css/CoinsMall.9bec7414.css" rel="prefetch"><link href="./static/css/CoursesDetail.ae0f7017.css" rel="prefetch"><link href="./static/css/CoursesDetail~CoursesList.e42c3140.css" rel="prefetch"><link href="./static/css/CoursesList.bc90b5b7.css" rel="prefetch"><link href="./static/css/DeviceIntercept.c0d8a685.css" rel="prefetch"><link href="./static/css/ExamReportH5.7f9bd5da.css" rel="prefetch"><link href="./static/css/Feedback.1736b7f3.css" rel="prefetch"><link href="./static/css/ForgotPassword.3d6b87cf.css" rel="prefetch"><link href="./static/css/ForgotPassword~MyPasswordSettings.b9643368.css" rel="prefetch"><link href="./static/css/Home.c5645a68.css" rel="prefetch"><link href="./static/css/LessonReport.e493427a.css" rel="prefetch"><link href="./static/css/LocalSetting.bcb555b0.css" rel="prefetch"><link href="./static/css/Login.f8ece297.css" rel="prefetch"><link href="./static/css/MyAccount.84524de0.css" rel="prefetch"><link href="./static/css/MyPasswordSettings.5c49dd63.css" rel="prefetch"><link href="./static/css/NewAssignment.2512d105.css" rel="prefetch"><link href="./static/css/PersonalInformation.7292d800.css" rel="prefetch"><link href="./static/css/PlaybackLive.5a22c583.css" rel="prefetch"><link href="./static/css/PlaybackLive~RecordCoursesVideo~StudyResources.dc229ed3.css" rel="prefetch"><link href="./static/css/PlaybackReadyClass.714c5fb2.css" rel="prefetch"><link href="./static/css/PlaybackReadyClass~ReadyClass.7f2010a0.css" rel="prefetch"><link href="./static/css/PreviewQuestion.85fabca1.css" rel="prefetch"><link href="./static/css/PreviewQuestionH5.b15632e1.css" rel="prefetch"><link href="./static/css/ReadyClass.8e7b8488.css" rel="prefetch"><link href="./static/css/RecordCoursesDetail.885a3a8a.css" rel="prefetch"><link href="./static/css/RecordCoursesVideo.fbec9ec4.css" rel="prefetch"><link href="./static/css/RewordCoins.bbe5e00d.css" rel="prefetch"><link href="./static/css/StudyResources.fd97ee6f.css" rel="prefetch"><link href="./static/css/TempCourseRegist.fb469415.css" rel="prefetch"><link href="./static/css/WrongQuestionBook.58b6abf6.css" rel="prefetch"><link href="./static/css/chunk-2630f156.94134ac6.css" rel="prefetch"><link href="./static/css/chunk-418d29e8.7a55d65f.css" rel="prefetch"><link href="./static/css/examH5.4d9ea71f.css" rel="prefetch"><link href="./static/css/examIntro.6f10415f.css" rel="prefetch"><link href="./static/js/Addstudent.2eba23d7.js" rel="prefetch"><link href="./static/js/Assignment.f4ce0e2b.js" rel="prefetch"><link href="./static/js/Boot.4939dc98.js" rel="prefetch"><link href="./static/js/CheckDevice.b11bd29f.js" rel="prefetch"><link href="./static/js/CheckDevice~ReadyClass.90946df9.js" rel="prefetch"><link href="./static/js/CoinsMall.d8c9f276.js" rel="prefetch"><link href="./static/js/CoursesDetail.02f50089.js" rel="prefetch"><link href="./static/js/CoursesDetail~CoursesList.bee0d9e8.js" rel="prefetch"><link href="./static/js/CoursesDetail~CoursesList~PlaybackLive~PlaybackReadyClass~ReadyClass.b066da40.js" rel="prefetch"><link href="./static/js/CoursesList.c9e9186e.js" rel="prefetch"><link href="./static/js/DeviceIntercept.234c457e.js" rel="prefetch"><link href="./static/js/ExamReportH5.51d21339.js" rel="prefetch"><link href="./static/js/Feedback.7e873644.js" rel="prefetch"><link href="./static/js/Feedback~PlaybackLive.0ff24a2a.js" rel="prefetch"><link href="./static/js/ForgotPassword.9578ca42.js" rel="prefetch"><link href="./static/js/ForgotPassword~MyPasswordSettings.315cc935.js" rel="prefetch"><link href="./static/js/Home.87fdabee.js" rel="prefetch"><link href="./static/js/Home~PlaybackLive.ab1ebff8.js" rel="prefetch"><link href="./static/js/LessonReport.fb67a558.js" rel="prefetch"><link href="./static/js/LocalSetting.3e71947e.js" rel="prefetch"><link href="./static/js/Login.fba7d99e.js" rel="prefetch"><link href="./static/js/MyAccount.a9a511a0.js" rel="prefetch"><link href="./static/js/MyPasswordSettings.8c102459.js" rel="prefetch"><link href="./static/js/NewAssignment.6152b717.js" rel="prefetch"><link href="./static/js/PersonalInformation.fce0db50.js" rel="prefetch"><link href="./static/js/PlaybackLive.a8cc6ec7.js" rel="prefetch"><link href="./static/js/PlaybackLive~RecordCoursesVideo~StudyResources.89811cc5.js" rel="prefetch"><link href="./static/js/PlaybackReadyClass.eddd090e.js" rel="prefetch"><link href="./static/js/PlaybackReadyClass~ReadyClass.5a41836b.js" rel="prefetch"><link href="./static/js/PreviewQuestion.fc49166c.js" rel="prefetch"><link href="./static/js/PreviewQuestionH5.925c16fa.js" rel="prefetch"><link href="./static/js/ReadyClass.fd9c4ae3.js" rel="prefetch"><link href="./static/js/RecordCoursesDetail.6811539a.js" rel="prefetch"><link href="./static/js/RecordCoursesVideo.66ebcd72.js" rel="prefetch"><link href="./static/js/RefreshRoute.75e92e2d.js" rel="prefetch"><link href="./static/js/RewordCoins.7a85d0e2.js" rel="prefetch"><link href="./static/js/StudyResources.10f59c1d.js" rel="prefetch"><link href="./static/js/TempCourseRegist.4bf46453.js" rel="prefetch"><link href="./static/js/WrongQuestionBook.982c1c9f.js" rel="prefetch"><link href="./static/js/chunk-2630f156.7f74ba1f.js" rel="prefetch"><link href="./static/js/chunk-31232406.d8e50504.js" rel="prefetch"><link href="./static/js/chunk-418d29e8.ba65ce2d.js" rel="prefetch"><link href="./static/js/examH5.53385458.js" rel="prefetch"><link href="./static/js/examIntro.d9b821c5.js" rel="prefetch"><link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style"><link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script"><link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script"><link href="./static/js/index.c2a344d1.js" rel="modulepreload" as="script"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet"><link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet"></head><body oncontextmenu="return false" onselectstart="return false"><script>document.addEventListener(
+        'drop',
+        function(event) {
+          event.preventDefault() //禁止浏览器默认行为
+          return false //禁止浏览器默认行为
+        },
+        false
+      )
+      document.addEventListener(
+        'dragover',
+        function(event) {
+          event.preventDefault() //禁止浏览器默认行为
+          return false //禁止浏览器默认行为
+        },
+        false
+      )
+      window.addEventListener('popstate', function(event) {
+        window.location.reload()
+      })</script><div id="app"></div><script src="./libs/vue/vue.min.js"></script><script src="./libs/vue/vue-router.min.js"></script><script src="./libs/vue/vuex.min.js"></script><script src="./libs/sdk/chat.web.3.2.1.js"></script><script src="./libs/sdk/hls.min.js?v=2.0.0"></script><script src="./libs/ui/neosui.umd.min.js?t="></script><script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script><script type="module" src="./static/js/chunk-common.8f956d7d.js"></script><script type="module" src="./static/js/index.c2a344d1.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script></body></html>

@@ -2,8 +2,9 @@
   "name": "thinkacademy",
   "productName": "ThinkAcademy",
   "description": "ThinkAcademy Student Client",
-  "version": "2.14.0",
+  "version": "3.0.3",
   "private": true,
+  "appId": "com.tal.oversea.stu.macos",
   "main": "background.js",
   "author": "Tal Education Technology Co., Ltd.",
   "dependencies": {
@@ -12,6 +13,7 @@
     "fs-extra": "^9.0.1",
     "lodash": "^4.17.20",
     "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
     "lodash.throttle": "^4.1.1",
     "loudness": "^0.4.1",
     "ws": "^7.3.1"

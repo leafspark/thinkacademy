@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["RefreshRoute"],{"3ccc":function(e,n,t){"use strict";t.r(n);var r=function(){var e=this,n=e._self._c;return n("div")},c=[],u=(t("ac1f"),t("5319"),{name:"refresh",beforeRouteEnter:function(e,n,t){t((function(e){e.$router.replace(n.path)}))}}),o=u,a=t("2877"),f=Object(a["a"])(o,r,c,!1,null,null,null);n["default"]=f.exports}}]);
+//# sourceMappingURL=RefreshRoute.75e92e2d.js.map

@@ -1,123 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-  <title>ThinkAcademy ClassRoom</title>
-  <style>
-    html,
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>ThinkAcademy ClassRoom</title><style>html,
     body {
       height: 100%;
       margin: 0;
       padding: 0;
       background: #1a1a1a;
-    }
-  </style>
-  <link rel="stylesheet" href="/libs/ui/neosui.min.css?t=1679915354717" type="text/css">
-  <link rel="stylesheet" href="/libs/talqs/index.min.css?t=1679915354717" type="text/css">
-  <script src="/libs/talqs/jquery.min.js"></script>
-  <script src="/libs/talqs/index.min.js?t=1679915354717"></script>
-  <script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
+    }</style><link rel="stylesheet" href="./libs/ui/neosui.min.css?t=1705892216105" type="text/css"><link rel="stylesheet" href="./libs/talqs/index.min.css?t=1705892216105" type="text/css"><script src="./libs/talqs/jquery.min.js"></script><script src="./libs/talqs/index.min.js?t=1705892216105"></script><script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
       MathJax.InputJax.TeX.prefilterHooks.Add(function(data) { if (!data.display) { data.math="\\displaystyle{" +
       data.math + "}" } }); }); MathJax.Hub.Config({ jax: ["input/TeX", "output/SVG" ], extensions: ["tex2jax.js"], TeX: {
       extensions: ["AMSmath.js", "AMSsymbols.js" , "noErrors.js" , "noUndefined.js" ] }, skipStartupTypeset: true,
       showProcessingMessages: false, messageStyle: 'none' , tex2jax: { ignoreClass: 'ignore_math' , preview: "none" ,
       inlineMath: [["$", "$" ], ["\\", "\\" ] ]}, showMathMenu: false, displayAlign: "left" , "SVG" : { minScaleAdjust:
-      100, linebreaks: { automatic: true, width: "container" } } });</script>
-  <link href="/static/css/chunk-0935393e.66194496.css" rel="prefetch">
-  <link href="/static/css/chunk-09d4164c.d95d103b.css" rel="prefetch">
-  <link href="/static/css/chunk-0b480b94.47948cdd.css" rel="prefetch">
-  <link href="/static/css/chunk-0c3f1dd4.6b5b13bd.css" rel="prefetch">
-  <link href="/static/css/chunk-14a97d99.a4c2b5ac.css" rel="prefetch">
-  <link href="/static/css/chunk-16c075d8.dc899aec.css" rel="prefetch">
-  <link href="/static/css/chunk-1c3482b2.573c2743.css" rel="prefetch">
-  <link href="/static/css/chunk-21cb9dbc.b2c05241.css" rel="prefetch">
-  <link href="/static/css/chunk-271490e8.dcf6c5b9.css" rel="prefetch">
-  <link href="/static/css/chunk-2ec16a41.c08f8ea4.css" rel="prefetch">
-  <link href="/static/css/chunk-3d75fc56.9282e18c.css" rel="prefetch">
-  <link href="/static/css/chunk-4cfb0224.8111d05f.css" rel="prefetch">
-  <link href="/static/css/chunk-5125c77c.d1738e4f.css" rel="prefetch">
-  <link href="/static/css/chunk-6e54407c.0722f961.css" rel="prefetch">
-  <link href="/static/css/chunk-6fa24106.0ac66689.css" rel="prefetch">
-  <link href="/static/css/chunk-7f66cf6e.6624d027.css" rel="prefetch">
-  <link href="/static/css/chunk-9c37b028.98858406.css" rel="prefetch">
-  <link href="/static/css/chunk-9c43f55c.442c9dd5.css" rel="prefetch">
-  <link href="/static/css/chunk-d5156d36.21154e7f.css" rel="prefetch">
-  <link href="/static/css/chunk-f823038e.c56cd55f.css" rel="prefetch">
-  <link href="/static/js/chunk-0935393e.e9f7d581.js" rel="prefetch">
-  <link href="/static/js/chunk-09d4164c.50c8114a.js" rel="prefetch">
-  <link href="/static/js/chunk-0b480b94.f1c54200.js" rel="prefetch">
-  <link href="/static/js/chunk-0c3f1dd4.b6934393.js" rel="prefetch">
-  <link href="/static/js/chunk-14a97d99.fd3f9688.js" rel="prefetch">
-  <link href="/static/js/chunk-16c075d8.70eae4d1.js" rel="prefetch">
-  <link href="/static/js/chunk-1c3482b2.d9016fdb.js" rel="prefetch">
-  <link href="/static/js/chunk-21cb9dbc.691d8a8c.js" rel="prefetch">
-  <link href="/static/js/chunk-271490e8.5cf3baa4.js" rel="prefetch">
-  <link href="/static/js/chunk-2d0d67ce.9fe70b65.js" rel="prefetch">
-  <link href="/static/js/chunk-2e9cf93e.d01b997d.js" rel="prefetch">
-  <link href="/static/js/chunk-2ec16a41.0c553de0.js" rel="prefetch">
-  <link href="/static/js/chunk-3d75fc56.4e5265e6.js" rel="prefetch">
-  <link href="/static/js/chunk-4cfb0224.33aaacdb.js" rel="prefetch">
-  <link href="/static/js/chunk-5125c77c.3d49a1c2.js" rel="prefetch">
-  <link href="/static/js/chunk-6e54407c.95b46345.js" rel="prefetch">
-  <link href="/static/js/chunk-6fa24106.0852af73.js" rel="prefetch">
-  <link href="/static/js/chunk-74ddfa26.c1f47ab5.js" rel="prefetch">
-  <link href="/static/js/chunk-7f66cf6e.0a47586e.js" rel="prefetch">
-  <link href="/static/js/chunk-9c37b028.f10c61d2.js" rel="prefetch">
-  <link href="/static/js/chunk-9c43f55c.a9eebaa9.js" rel="prefetch">
-  <link href="/static/js/chunk-d5156d36.d0a12b00.js" rel="prefetch">
-  <link href="/static/js/chunk-f823038e.a378e45e.js" rel="prefetch">
-  <link href="/static/css/chunk-common.9b82aa5a.css" rel="preload" as="style">
-  <link href="/static/css/chunk-vendors.96b0a5a0.css" rel="preload" as="style">
-  <link href="/static/css/smallClass.ba2b5f3b.css" rel="preload" as="style">
-  <link href="/static/js/chunk-common.ecd79ca7.js" rel="modulepreload" as="script">
-  <link href="/static/js/chunk-vendors.54c18461.js" rel="modulepreload" as="script">
-  <link href="/static/js/smallClass.d8cabd69.js" rel="modulepreload" as="script">
-  <link href="/static/css/chunk-vendors.96b0a5a0.css" rel="stylesheet">
-  <link href="/static/css/chunk-common.9b82aa5a.css" rel="stylesheet">
-  <link href="/static/css/smallClass.ba2b5f3b.css" rel="stylesheet">
-</head>
-
-<body class="global-small-class">
-  <div id="app"></div>
-  <link rel="stylesheet" href="./libs/mathquill/mathquill.css">
-  <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
-  <script src="./libs/mathquill/jquery.js"></script>
-  <script>if (window.module) module = window.module;</script>
-  <script src="./libs/mathquill/mathquill.js"></script>
-  <script src="/libs/vue/vue.min.js"></script>
-  <script src="/libs/vue/vuex.min.js"></script>
-  <script src="/libs/ui/neosui.umd.min.js?t=1679915354717"></script>
-  <script src="/libs/sdk/hls.min.js?v=2.0.0"></script>
-  <script src="/libs/sdk/chat.web.3.2.1.js"></script>
-  <script async src="https://download-pa-s3.thethinkacademy.com/static-pa/static/libs/mathjax-2.7/MathJax.js"></script>
-  <script type="module" src="/static/js/chunk-vendors.54c18461.js"></script>
-  <script type="module" src="/static/js/chunk-common.ecd79ca7.js"></script>
-  <script type="module" src="/static/js/smallClass.d8cabd69.js"></script>
-  <script>
-    !(function () {
-      var e = document,
-        t = e.createElement("script");
-      if (!("noModule" in t) && "onbeforeload" in t) {
-        var n = !1;
-        e.addEventListener(
-          "beforeload",
-          function (e) {
-            if (e.target === t) n = !0;
-            else if (!e.target.hasAttribute("nomodule") || !n) return;
-            e.preventDefault();
-          },
-          !0
-        ),
-          (t.type = "module"),
-          (t.src = "."),
-          e.head.appendChild(t),
-          t.remove();
-      }
-    })();
-
-  </script>
-</body>
-
-</html>
+      100, linebreaks: { automatic: true, width: "container" } } });</script><link href="./static/css/chunk-06d6e3d4.bee1c60f.css" rel="prefetch"><link href="./static/css/chunk-0c1aef76.bb60185e.css" rel="prefetch"><link href="./static/css/chunk-0d75864e.0ac66689.css" rel="prefetch"><link href="./static/css/chunk-2702196d.0906726f.css" rel="prefetch"><link href="./static/css/chunk-30676b10.19621ed9.css" rel="prefetch"><link href="./static/css/chunk-33b85116.c7044783.css" rel="prefetch"><link href="./static/css/chunk-3d512d94.dc899aec.css" rel="prefetch"><link href="./static/css/chunk-45555e0e.2c6527a3.css" rel="prefetch"><link href="./static/css/chunk-59738786.ee643c42.css" rel="prefetch"><link href="./static/css/chunk-5db599bc.6d2f3770.css" rel="prefetch"><link href="./static/css/chunk-62da6eda.37aaddfe.css" rel="prefetch"><link href="./static/css/chunk-6d17e221.b131c954.css" rel="prefetch"><link href="./static/css/chunk-6f1ac684.fbe1611d.css" rel="prefetch"><link href="./static/css/chunk-77313808.94407e3f.css" rel="prefetch"><link href="./static/css/chunk-bc172820.8351e196.css" rel="prefetch"><link href="./static/js/chunk-06ac8425.2285f634.js" rel="prefetch"><link href="./static/js/chunk-06d6e3d4.f5428fc1.js" rel="prefetch"><link href="./static/js/chunk-0c1aef76.5542e594.js" rel="prefetch"><link href="./static/js/chunk-0d75864e.11f74a50.js" rel="prefetch"><link href="./static/js/chunk-2702196d.26c31ce4.js" rel="prefetch"><link href="./static/js/chunk-30676b10.bd32be6d.js" rel="prefetch"><link href="./static/js/chunk-33b85116.69f1a042.js" rel="prefetch"><link href="./static/js/chunk-3d512d94.ea614e03.js" rel="prefetch"><link href="./static/js/chunk-45555e0e.2206d74b.js" rel="prefetch"><link href="./static/js/chunk-59738786.86284cca.js" rel="prefetch"><link href="./static/js/chunk-5db599bc.4bca80aa.js" rel="prefetch"><link href="./static/js/chunk-62da6eda.39849ccd.js" rel="prefetch"><link href="./static/js/chunk-6d17e221.3beca26c.js" rel="prefetch"><link href="./static/js/chunk-6f1ac684.7ffa8264.js" rel="prefetch"><link href="./static/js/chunk-77313808.d8defc9e.js" rel="prefetch"><link href="./static/js/chunk-bc172820.98cb14c6.js" rel="prefetch"><link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style"><link href="./static/css/smallClass.8d48a358.css" rel="preload" as="style"><link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script"><link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script"><link href="./static/js/smallClass.241a5493.js" rel="modulepreload" as="script"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet"><link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet"><link href="./static/css/smallClass.8d48a358.css" rel="stylesheet"></head><body class="global-small-class"><div id="app"></div><link rel="stylesheet" href="./libs/mathquill/mathquill.css"><script>if (typeof module === 'object') { window.module = module; module = undefined; }</script><script src="./libs/mathquill/jquery.js"></script><script>if (window.module) module = window.module;</script><script src="./libs/mathquill/mathquill.js"></script><script src="./libs/vue/vue.min.js"></script><script src="./libs/vue/vuex.min.js"></script><script src="./libs/ui/neosui.umd.min.js?t=1705892216105"></script><script src="./libs/sdk/chat.web.3.2.1.js"></script><script async src="https://download-pa-s3.thethinkacademy.com/static-pa/static/libs/mathjax-2.7/MathJax.js"></script><script src="./libs/libpag/libpag.min.js"></script><script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script><script type="module" src="./static/js/chunk-common.8f956d7d.js"></script><script type="module" src="./static/js/smallClass.241a5493.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script></body></html>
