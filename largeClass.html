@@ -1,12 +1,113 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>ThinkAcademy ClassRoom</title><style>html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }</style><link rel="stylesheet" href="./libs/ui/neosui.min.css?t=1705892216105" type="text/css"><link rel="stylesheet" href="./libs/talqs/index.min.css?t=1705892216105" type="text/css"><script src="./libs/talqs/jquery.min.js"></script><script src="./libs/talqs/index.min.js?t=1705892216105"></script><script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <title>ThinkAcademy ClassRoom</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="./libs/ui/neosui.min.css?t=1705892216105" type="text/css">
+  <link rel="stylesheet" href="./libs/talqs/index.min.css?t=1705892216105" type="text/css">
+  <script src="./libs/talqs/jquery.min.js"></script>
+  <script src="./libs/talqs/index.min.js?t=1705892216105"></script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
       MathJax.InputJax.TeX.prefilterHooks.Add(function(data) { if (!data.display) { data.math="\\displaystyle{" +
       data.math + "}" } }); }); MathJax.Hub.Config({ jax: ["input/TeX", "output/SVG" ], extensions: ["tex2jax.js"], TeX: {
       extensions: ["AMSmath.js", "AMSsymbols.js" , "noErrors.js" , "noUndefined.js" ] }, skipStartupTypeset: true,
       showProcessingMessages: false, messageStyle: 'none' , tex2jax: { ignoreClass: 'ignore_math' , preview: "none" ,
       inlineMath: [["$", "$" ], ["\\", "\\" ] ]}, showMathMenu: false, displayAlign: "left" , "SVG" : { minScaleAdjust:
-      100, linebreaks: { automatic: true, width: "container" } } });</script><link href="./static/css/chunk-06d6e3d4.bee1c60f.css" rel="prefetch"><link href="./static/css/chunk-0c1aef76.bb60185e.css" rel="prefetch"><link href="./static/css/chunk-0d75864e.0ac66689.css" rel="prefetch"><link href="./static/css/chunk-2702196d.0906726f.css" rel="prefetch"><link href="./static/css/chunk-30676b10.19621ed9.css" rel="prefetch"><link href="./static/css/chunk-33b85116.c7044783.css" rel="prefetch"><link href="./static/css/chunk-3d512d94.dc899aec.css" rel="prefetch"><link href="./static/css/chunk-45555e0e.2c6527a3.css" rel="prefetch"><link href="./static/css/chunk-59738786.ee643c42.css" rel="prefetch"><link href="./static/css/chunk-5db599bc.6d2f3770.css" rel="prefetch"><link href="./static/css/chunk-62da6eda.37aaddfe.css" rel="prefetch"><link href="./static/css/chunk-6d17e221.b131c954.css" rel="prefetch"><link href="./static/css/chunk-6f1ac684.fbe1611d.css" rel="prefetch"><link href="./static/css/chunk-77313808.94407e3f.css" rel="prefetch"><link href="./static/css/chunk-bc172820.8351e196.css" rel="prefetch"><link href="./static/js/chunk-06ac8425.2285f634.js" rel="prefetch"><link href="./static/js/chunk-06d6e3d4.f5428fc1.js" rel="prefetch"><link href="./static/js/chunk-0c1aef76.5542e594.js" rel="prefetch"><link href="./static/js/chunk-0d75864e.11f74a50.js" rel="prefetch"><link href="./static/js/chunk-2702196d.26c31ce4.js" rel="prefetch"><link href="./static/js/chunk-30676b10.bd32be6d.js" rel="prefetch"><link href="./static/js/chunk-33b85116.69f1a042.js" rel="prefetch"><link href="./static/js/chunk-3d512d94.ea614e03.js" rel="prefetch"><link href="./static/js/chunk-45555e0e.2206d74b.js" rel="prefetch"><link href="./static/js/chunk-59738786.86284cca.js" rel="prefetch"><link href="./static/js/chunk-5db599bc.4bca80aa.js" rel="prefetch"><link href="./static/js/chunk-62da6eda.39849ccd.js" rel="prefetch"><link href="./static/js/chunk-6d17e221.3beca26c.js" rel="prefetch"><link href="./static/js/chunk-6f1ac684.7ffa8264.js" rel="prefetch"><link href="./static/js/chunk-77313808.d8defc9e.js" rel="prefetch"><link href="./static/js/chunk-bc172820.98cb14c6.js" rel="prefetch"><link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style"><link href="./static/css/largeClass.d076694c.css" rel="preload" as="style"><link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script"><link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script"><link href="./static/js/largeClass.8df290c6.js" rel="modulepreload" as="script"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet"><link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet"><link href="./static/css/largeClass.d076694c.css" rel="stylesheet"></head><body><div id="live"></div><script src="./libs/vue/vue.min.js"></script><script src="./libs/vue/vuex.min.js"></script><script src="./libs/ui/neosui.umd.min.js?t=1705892216105"></script><script src="./libs/sdk/chat.web.3.2.1.js"></script><script async src="https://download-pa-s3.thethinkacademy.com/static-pa/static/libs/mathjax-2.7/MathJax.js"></script><script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script><script type="module" src="./static/js/chunk-common.8f956d7d.js"></script><script type="module" src="./static/js/largeClass.8df290c6.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script></body></html>
+      100, linebreaks: { automatic: true, width: "container" } } });</script>
+  <link href="./static/css/chunk-06d6e3d4.bee1c60f.css" rel="prefetch">
+  <link href="./static/css/chunk-0c1aef76.bb60185e.css" rel="prefetch">
+  <link href="./static/css/chunk-0d75864e.0ac66689.css" rel="prefetch">
+  <link href="./static/css/chunk-2702196d.0906726f.css" rel="prefetch">
+  <link href="./static/css/chunk-30676b10.19621ed9.css" rel="prefetch">
+  <link href="./static/css/chunk-33b85116.c7044783.css" rel="prefetch">
+  <link href="./static/css/chunk-3d512d94.dc899aec.css" rel="prefetch">
+  <link href="./static/css/chunk-45555e0e.2c6527a3.css" rel="prefetch">
+  <link href="./static/css/chunk-59738786.ee643c42.css" rel="prefetch">
+  <link href="./static/css/chunk-5db599bc.6d2f3770.css" rel="prefetch">
+  <link href="./static/css/chunk-62da6eda.37aaddfe.css" rel="prefetch">
+  <link href="./static/css/chunk-6d17e221.b131c954.css" rel="prefetch">
+  <link href="./static/css/chunk-6f1ac684.fbe1611d.css" rel="prefetch">
+  <link href="./static/css/chunk-77313808.94407e3f.css" rel="prefetch">
+  <link href="./static/css/chunk-bc172820.8351e196.css" rel="prefetch">
+  <link href="./static/js/chunk-06ac8425.2285f634.js" rel="prefetch">
+  <link href="./static/js/chunk-06d6e3d4.f5428fc1.js" rel="prefetch">
+  <link href="./static/js/chunk-0c1aef76.5542e594.js" rel="prefetch">
+  <link href="./static/js/chunk-0d75864e.11f74a50.js" rel="prefetch">
+  <link href="./static/js/chunk-2702196d.26c31ce4.js" rel="prefetch">
+  <link href="./static/js/chunk-30676b10.bd32be6d.js" rel="prefetch">
+  <link href="./static/js/chunk-33b85116.69f1a042.js" rel="prefetch">
+  <link href="./static/js/chunk-3d512d94.ea614e03.js" rel="prefetch">
+  <link href="./static/js/chunk-45555e0e.2206d74b.js" rel="prefetch">
+  <link href="./static/js/chunk-59738786.86284cca.js" rel="prefetch">
+  <link href="./static/js/chunk-5db599bc.4bca80aa.js" rel="prefetch">
+  <link href="./static/js/chunk-62da6eda.39849ccd.js" rel="prefetch">
+  <link href="./static/js/chunk-6d17e221.3beca26c.js" rel="prefetch">
+  <link href="./static/js/chunk-6f1ac684.7ffa8264.js" rel="prefetch">
+  <link href="./static/js/chunk-77313808.d8defc9e.js" rel="prefetch">
+  <link href="./static/js/chunk-bc172820.98cb14c6.js" rel="prefetch">
+  <link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style">
+  <link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style">
+  <link href="./static/css/largeClass.d076694c.css" rel="preload" as="style">
+  <link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script">
+  <link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script">
+  <link href="./static/js/largeClass.8df290c6.js" rel="modulepreload" as="script">
+  <link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet">
+  <link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet">
+  <link href="./static/css/largeClass.d076694c.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="live"></div>
+  <script src="./libs/vue/vue.min.js"></script>
+  <script src="./libs/vue/vuex.min.js"></script>
+  <script src="./libs/ui/neosui.umd.min.js?t=1705892216105"></script>
+  <script src="./libs/sdk/chat.web.3.2.1.js"></script>
+  <script async src="https://download-pa-s3.thethinkacademy.com/static-pa/static/libs/mathjax-2.7/MathJax.js"></script>
+  <script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script>
+  <script type="module" src="./static/js/chunk-common.8f956d7d.js"></script>
+  <script type="module" src="./static/js/largeClass.8df290c6.js"></script>
+  <script>
+    (function () {
+      var documentElement = document;
+      var scriptElement = documentElement.createElement("script");
+
+      // Check if the browser supports ES6 modules and the beforeload event
+      if (!("noModule" in scriptElement) && "onbeforeload" in scriptElement) {
+        var flag = false;
+
+        // Add an event listener for the beforeload event
+        documentElement.addEventListener("beforeload", function (event) {
+          if (event.target === scriptElement) {
+            flag = true;
+          } else if (!event.target.hasAttribute("nomodule") || !flag) {
+            return;
+          }
+          event.preventDefault();
+        }, true);
+
+        // Set the type and source of the script element
+        scriptElement.type = "module";
+        scriptElement.src = ".";
+
+        // Append the script element to the document's head
+        documentElement.head.appendChild(scriptElement);
+
+        // Remove the script element from the document
+        scriptElement.remove();
+      }
+    })();
+
+  </script>
+</body>
+
+</html>

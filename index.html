@@ -1,25 +1,169 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="stylesheet" href="./libs/ui/neosui.min.css?t=" type="text/css"><link rel="stylesheet" href="./libs/talqs/index.min.css?t=" type="text/css"><script src="./libs/talqs/jquery.min.js"></script><script src="./libs/talqs/index.min.js?t="></script><script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="./libs/ui/neosui.min.css?t=" type="text/css">
+  <link rel="stylesheet" href="./libs/talqs/index.min.css?t=" type="text/css">
+  <script src="./libs/talqs/jquery.min.js"></script>
+  <script src="./libs/talqs/index.min.js?t="></script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Register.StartupHook("TeX Jax Ready", function() {
       MathJax.InputJax.TeX.prefilterHooks.Add(function(data) { if (!data.display) { data.math="\\displaystyle{" +
       data.math + "}" } }); }); MathJax.Hub.Config({ jax: ["input/TeX", "output/SVG" ], extensions: ["tex2jax.js"], TeX: {
       extensions: ["AMSmath.js", "AMSsymbols.js" , "noErrors.js" , "noUndefined.js" ] }, skipStartupTypeset: true,
       showProcessingMessages: false, messageStyle: 'none' , tex2jax: { ignoreClass: 'ignore_math' , preview: "none" ,
       inlineMath: [["$", "$" ], ["\\", "\\" ] ]}, showMathMenu: false, displayAlign: "left" , "SVG" : { minScaleAdjust:
-      100, linebreaks: { automatic: true, width: "container" } } });</script><title>ThinkAcademy</title><link href="./static/css/Addstudent.96b6d49e.css" rel="prefetch"><link href="./static/css/Assignment.ca13b93b.css" rel="prefetch"><link href="./static/css/Boot.ca6f4b32.css" rel="prefetch"><link href="./static/css/CheckDevice.ebeab9a0.css" rel="prefetch"><link href="./static/css/CheckDevice~ReadyClass.7c3ebc89.css" rel="prefetch"><link href="./static/css/CoinsMall.9bec7414.css" rel="prefetch"><link href="./static/css/CoursesDetail.ae0f7017.css" rel="prefetch"><link href="./static/css/CoursesDetail~CoursesList.e42c3140.css" rel="prefetch"><link href="./static/css/CoursesList.bc90b5b7.css" rel="prefetch"><link href="./static/css/DeviceIntercept.c0d8a685.css" rel="prefetch"><link href="./static/css/ExamReportH5.7f9bd5da.css" rel="prefetch"><link href="./static/css/Feedback.1736b7f3.css" rel="prefetch"><link href="./static/css/ForgotPassword.3d6b87cf.css" rel="prefetch"><link href="./static/css/ForgotPassword~MyPasswordSettings.b9643368.css" rel="prefetch"><link href="./static/css/Home.c5645a68.css" rel="prefetch"><link href="./static/css/LessonReport.e493427a.css" rel="prefetch"><link href="./static/css/LocalSetting.bcb555b0.css" rel="prefetch"><link href="./static/css/Login.f8ece297.css" rel="prefetch"><link href="./static/css/MyAccount.84524de0.css" rel="prefetch"><link href="./static/css/MyPasswordSettings.5c49dd63.css" rel="prefetch"><link href="./static/css/NewAssignment.2512d105.css" rel="prefetch"><link href="./static/css/PersonalInformation.7292d800.css" rel="prefetch"><link href="./static/css/PlaybackLive.5a22c583.css" rel="prefetch"><link href="./static/css/PlaybackLive~RecordCoursesVideo~StudyResources.dc229ed3.css" rel="prefetch"><link href="./static/css/PlaybackReadyClass.714c5fb2.css" rel="prefetch"><link href="./static/css/PlaybackReadyClass~ReadyClass.7f2010a0.css" rel="prefetch"><link href="./static/css/PreviewQuestion.85fabca1.css" rel="prefetch"><link href="./static/css/PreviewQuestionH5.b15632e1.css" rel="prefetch"><link href="./static/css/ReadyClass.8e7b8488.css" rel="prefetch"><link href="./static/css/RecordCoursesDetail.885a3a8a.css" rel="prefetch"><link href="./static/css/RecordCoursesVideo.fbec9ec4.css" rel="prefetch"><link href="./static/css/RewordCoins.bbe5e00d.css" rel="prefetch"><link href="./static/css/StudyResources.fd97ee6f.css" rel="prefetch"><link href="./static/css/TempCourseRegist.fb469415.css" rel="prefetch"><link href="./static/css/WrongQuestionBook.58b6abf6.css" rel="prefetch"><link href="./static/css/chunk-2630f156.94134ac6.css" rel="prefetch"><link href="./static/css/chunk-418d29e8.7a55d65f.css" rel="prefetch"><link href="./static/css/examH5.4d9ea71f.css" rel="prefetch"><link href="./static/css/examIntro.6f10415f.css" rel="prefetch"><link href="./static/js/Addstudent.2eba23d7.js" rel="prefetch"><link href="./static/js/Assignment.f4ce0e2b.js" rel="prefetch"><link href="./static/js/Boot.4939dc98.js" rel="prefetch"><link href="./static/js/CheckDevice.b11bd29f.js" rel="prefetch"><link href="./static/js/CheckDevice~ReadyClass.90946df9.js" rel="prefetch"><link href="./static/js/CoinsMall.d8c9f276.js" rel="prefetch"><link href="./static/js/CoursesDetail.02f50089.js" rel="prefetch"><link href="./static/js/CoursesDetail~CoursesList.bee0d9e8.js" rel="prefetch"><link href="./static/js/CoursesDetail~CoursesList~PlaybackLive~PlaybackReadyClass~ReadyClass.b066da40.js" rel="prefetch"><link href="./static/js/CoursesList.c9e9186e.js" rel="prefetch"><link href="./static/js/DeviceIntercept.234c457e.js" rel="prefetch"><link href="./static/js/ExamReportH5.51d21339.js" rel="prefetch"><link href="./static/js/Feedback.7e873644.js" rel="prefetch"><link href="./static/js/Feedback~PlaybackLive.0ff24a2a.js" rel="prefetch"><link href="./static/js/ForgotPassword.9578ca42.js" rel="prefetch"><link href="./static/js/ForgotPassword~MyPasswordSettings.315cc935.js" rel="prefetch"><link href="./static/js/Home.87fdabee.js" rel="prefetch"><link href="./static/js/Home~PlaybackLive.ab1ebff8.js" rel="prefetch"><link href="./static/js/LessonReport.fb67a558.js" rel="prefetch"><link href="./static/js/LocalSetting.3e71947e.js" rel="prefetch"><link href="./static/js/Login.fba7d99e.js" rel="prefetch"><link href="./static/js/MyAccount.a9a511a0.js" rel="prefetch"><link href="./static/js/MyPasswordSettings.8c102459.js" rel="prefetch"><link href="./static/js/NewAssignment.6152b717.js" rel="prefetch"><link href="./static/js/PersonalInformation.fce0db50.js" rel="prefetch"><link href="./static/js/PlaybackLive.a8cc6ec7.js" rel="prefetch"><link href="./static/js/PlaybackLive~RecordCoursesVideo~StudyResources.89811cc5.js" rel="prefetch"><link href="./static/js/PlaybackReadyClass.eddd090e.js" rel="prefetch"><link href="./static/js/PlaybackReadyClass~ReadyClass.5a41836b.js" rel="prefetch"><link href="./static/js/PreviewQuestion.fc49166c.js" rel="prefetch"><link href="./static/js/PreviewQuestionH5.925c16fa.js" rel="prefetch"><link href="./static/js/ReadyClass.fd9c4ae3.js" rel="prefetch"><link href="./static/js/RecordCoursesDetail.6811539a.js" rel="prefetch"><link href="./static/js/RecordCoursesVideo.66ebcd72.js" rel="prefetch"><link href="./static/js/RefreshRoute.75e92e2d.js" rel="prefetch"><link href="./static/js/RewordCoins.7a85d0e2.js" rel="prefetch"><link href="./static/js/StudyResources.10f59c1d.js" rel="prefetch"><link href="./static/js/TempCourseRegist.4bf46453.js" rel="prefetch"><link href="./static/js/WrongQuestionBook.982c1c9f.js" rel="prefetch"><link href="./static/js/chunk-2630f156.7f74ba1f.js" rel="prefetch"><link href="./static/js/chunk-31232406.d8e50504.js" rel="prefetch"><link href="./static/js/chunk-418d29e8.ba65ce2d.js" rel="prefetch"><link href="./static/js/examH5.53385458.js" rel="prefetch"><link href="./static/js/examIntro.d9b821c5.js" rel="prefetch"><link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style"><link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script"><link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script"><link href="./static/js/index.c2a344d1.js" rel="modulepreload" as="script"><link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet"><link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet"></head><body oncontextmenu="return false" onselectstart="return false"><script>document.addEventListener(
-        'drop',
-        function(event) {
-          event.preventDefault() //禁止浏览器默认行为
-          return false //禁止浏览器默认行为
-        },
-        false
-      )
-      document.addEventListener(
-        'dragover',
-        function(event) {
-          event.preventDefault() //禁止浏览器默认行为
-          return false //禁止浏览器默认行为
-        },
-        false
-      )
-      window.addEventListener('popstate', function(event) {
-        window.location.reload()
-      })</script><div id="app"></div><script src="./libs/vue/vue.min.js"></script><script src="./libs/vue/vue-router.min.js"></script><script src="./libs/vue/vuex.min.js"></script><script src="./libs/sdk/chat.web.3.2.1.js"></script><script src="./libs/sdk/hls.min.js?v=2.0.0"></script><script src="./libs/ui/neosui.umd.min.js?t="></script><script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script><script type="module" src="./static/js/chunk-common.8f956d7d.js"></script><script type="module" src="./static/js/index.c2a344d1.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script></body></html>
+      100, linebreaks: { automatic: true, width: "container" } } });
+  </script>
+  <title>ThinkAcademy</title>
+  <link href="./static/css/Addstudent.96b6d49e.css" rel="prefetch">
+  <link href="./static/css/Assignment.ca13b93b.css" rel="prefetch">
+  <link href="./static/css/Boot.ca6f4b32.css" rel="prefetch">
+  <link href="./static/css/CheckDevice.ebeab9a0.css" rel="prefetch">
+  <link href="./static/css/CheckDevice~ReadyClass.7c3ebc89.css" rel="prefetch">
+  <link href="./static/css/CoinsMall.9bec7414.css" rel="prefetch">
+  <link href="./static/css/CoursesDetail.ae0f7017.css" rel="prefetch">
+  <link href="./static/css/CoursesDetail~CoursesList.e42c3140.css" rel="prefetch">
+  <link href="./static/css/CoursesList.bc90b5b7.css" rel="prefetch">
+  <link href="./static/css/DeviceIntercept.c0d8a685.css" rel="prefetch">
+  <link href="./static/css/ExamReportH5.7f9bd5da.css" rel="prefetch">
+  <link href="./static/css/Feedback.1736b7f3.css" rel="prefetch">
+  <link href="./static/css/ForgotPassword.3d6b87cf.css" rel="prefetch">
+  <link href="./static/css/ForgotPassword~MyPasswordSettings.b9643368.css" rel="prefetch">
+  <link href="./static/css/Home.c5645a68.css" rel="prefetch">
+  <link href="./static/css/LessonReport.e493427a.css" rel="prefetch">
+  <link href="./static/css/LocalSetting.bcb555b0.css" rel="prefetch">
+  <link href="./static/css/Login.f8ece297.css" rel="prefetch">
+  <link href="./static/css/MyAccount.84524de0.css" rel="prefetch">
+  <link href="./static/css/MyPasswordSettings.5c49dd63.css" rel="prefetch">
+  <link href="./static/css/NewAssignment.2512d105.css" rel="prefetch">
+  <link href="./static/css/PersonalInformation.7292d800.css" rel="prefetch">
+  <link href="./static/css/PlaybackLive.5a22c583.css" rel="prefetch">
+  <link href="./static/css/PlaybackLive~RecordCoursesVideo~StudyResources.dc229ed3.css" rel="prefetch">
+  <link href="./static/css/PlaybackReadyClass.714c5fb2.css" rel="prefetch">
+  <link href="./static/css/PlaybackReadyClass~ReadyClass.7f2010a0.css" rel="prefetch">
+  <link href="./static/css/PreviewQuestion.85fabca1.css" rel="prefetch">
+  <link href="./static/css/PreviewQuestionH5.b15632e1.css" rel="prefetch">
+  <link href="./static/css/ReadyClass.8e7b8488.css" rel="prefetch">
+  <link href="./static/css/RecordCoursesDetail.885a3a8a.css" rel="prefetch">
+  <link href="./static/css/RecordCoursesVideo.fbec9ec4.css" rel="prefetch">
+  <link href="./static/css/RewordCoins.bbe5e00d.css" rel="prefetch">
+  <link href="./static/css/StudyResources.fd97ee6f.css" rel="prefetch">
+  <link href="./static/css/TempCourseRegist.fb469415.css" rel="prefetch">
+  <link href="./static/css/WrongQuestionBook.58b6abf6.css" rel="prefetch">
+  <link href="./static/css/chunk-2630f156.94134ac6.css" rel="prefetch">
+  <link href="./static/css/chunk-418d29e8.7a55d65f.css" rel="prefetch">
+  <link href="./static/css/examH5.4d9ea71f.css" rel="prefetch">
+  <link href="./static/css/examIntro.6f10415f.css" rel="prefetch">
+  <link href="./static/js/Addstudent.2eba23d7.js" rel="prefetch">
+  <link href="./static/js/Assignment.f4ce0e2b.js" rel="prefetch">
+  <link href="./static/js/Boot.4939dc98.js" rel="prefetch">
+  <link href="./static/js/CheckDevice.b11bd29f.js" rel="prefetch">
+  <link href="./static/js/CheckDevice~ReadyClass.90946df9.js" rel="prefetch">
+  <link href="./static/js/CoinsMall.d8c9f276.js" rel="prefetch">
+  <link href="./static/js/CoursesDetail.02f50089.js" rel="prefetch">
+  <link href="./static/js/CoursesDetail~CoursesList.bee0d9e8.js" rel="prefetch">
+  <link href="./static/js/CoursesDetail~CoursesList~PlaybackLive~PlaybackReadyClass~ReadyClass.b066da40.js"
+    rel="prefetch">
+  <link href="./static/js/CoursesList.c9e9186e.js" rel="prefetch">
+  <link href="./static/js/DeviceIntercept.234c457e.js" rel="prefetch">
+  <link href="./static/js/ExamReportH5.51d21339.js" rel="prefetch">
+  <link href="./static/js/Feedback.7e873644.js" rel="prefetch">
+  <link href="./static/js/Feedback~PlaybackLive.0ff24a2a.js" rel="prefetch">
+  <link href="./static/js/ForgotPassword.9578ca42.js" rel="prefetch">
+  <link href="./static/js/ForgotPassword~MyPasswordSettings.315cc935.js" rel="prefetch">
+  <link href="./static/js/Home.87fdabee.js" rel="prefetch">
+  <link href="./static/js/Home~PlaybackLive.ab1ebff8.js" rel="prefetch">
+  <link href="./static/js/LessonReport.fb67a558.js" rel="prefetch">
+  <link href="./static/js/LocalSetting.3e71947e.js" rel="prefetch">
+  <link href="./static/js/Login.fba7d99e.js" rel="prefetch">
+  <link href="./static/js/MyAccount.a9a511a0.js" rel="prefetch">
+  <link href="./static/js/MyPasswordSettings.8c102459.js" rel="prefetch">
+  <link href="./static/js/NewAssignment.6152b717.js" rel="prefetch">
+  <link href="./static/js/PersonalInformation.fce0db50.js" rel="prefetch">
+  <link href="./static/js/PlaybackLive.a8cc6ec7.js" rel="prefetch">
+  <link href="./static/js/PlaybackLive~RecordCoursesVideo~StudyResources.89811cc5.js" rel="prefetch">
+  <link href="./static/js/PlaybackReadyClass.eddd090e.js" rel="prefetch">
+  <link href="./static/js/PlaybackReadyClass~ReadyClass.5a41836b.js" rel="prefetch">
+  <link href="./static/js/PreviewQuestion.fc49166c.js" rel="prefetch">
+  <link href="./static/js/PreviewQuestionH5.925c16fa.js" rel="prefetch">
+  <link href="./static/js/ReadyClass.fd9c4ae3.js" rel="prefetch">
+  <link href="./static/js/RecordCoursesDetail.6811539a.js" rel="prefetch">
+  <link href="./static/js/RecordCoursesVideo.66ebcd72.js" rel="prefetch">
+  <link href="./static/js/RefreshRoute.75e92e2d.js" rel="prefetch">
+  <link href="./static/js/RewordCoins.7a85d0e2.js" rel="prefetch">
+  <link href="./static/js/StudyResources.10f59c1d.js" rel="prefetch">
+  <link href="./static/js/TempCourseRegist.4bf46453.js" rel="prefetch">
+  <link href="./static/js/WrongQuestionBook.982c1c9f.js" rel="prefetch">
+  <link href="./static/js/chunk-2630f156.7f74ba1f.js" rel="prefetch">
+  <link href="./static/js/chunk-31232406.d8e50504.js" rel="prefetch">
+  <link href="./static/js/chunk-418d29e8.ba65ce2d.js" rel="prefetch">
+  <link href="./static/js/examH5.53385458.js" rel="prefetch">
+  <link href="./static/js/examIntro.d9b821c5.js" rel="prefetch">
+  <link href="./static/css/chunk-common.f3984ba6.css" rel="preload" as="style">
+  <link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="preload" as="style">
+  <link href="./static/js/chunk-common.8f956d7d.js" rel="modulepreload" as="script">
+  <link href="./static/js/chunk-vendors.4b5edf5f.js" rel="modulepreload" as="script">
+  <link href="./static/js/index.c2a344d1.js" rel="modulepreload" as="script">
+  <link href="./static/css/chunk-vendors.fbe9ac5e.css" rel="stylesheet">
+  <link href="./static/css/chunk-common.f3984ba6.css" rel="stylesheet">
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false">
+  <script>
+    // Prevent default behavior for drop event
+    document.addEventListener('drop', function (event) {
+      event.preventDefault(); // Prevent default browser behavior
+      return false; // Prevent default browser behavior
+    }, false);
+
+    // Prevent default behavior for dragover event
+    document.addEventListener('dragover', function (event) {
+      event.preventDefault(); // Prevent default browser behavior
+      return false; // Prevent default browser behavior
+    }, false);
+
+    // Reload the page when the browser's history changes
+    window.addEventListener('popstate', function (event) {
+      window.location.reload();
+    });
+  </script>
+  <div id="app"></div>
+  <script src="./libs/vue/vue.min.js"></script>
+  <script src="./libs/vue/vue-router.min.js"></script>
+  <script src="./libs/vue/vuex.min.js"></script>
+  <script src="./libs/sdk/chat.web.3.2.1.js"></script>
+  <script src="./libs/sdk/hls.min.js?v=2.0.0"></script>
+  <script src="./libs/ui/neosui.umd.min.js?t="></script>
+  <script type="module" src="./static/js/chunk-vendors.4b5edf5f.js"></script>
+  <script type="module" src="./static/js/chunk-common.8f956d7d.js"></script>
+  <script type="module" src="./static/js/index.c2a344d1.js"></script>
+  <script>
+    (function () {
+      var doc = document,
+        script = doc.createElement("script");
+
+      if (!("noModule" in script) && "onbeforeload" in script) {
+        var flag = false;
+
+        doc.addEventListener("beforeload", function (evt) {
+          if (evt.target === script) {
+            flag = true;
+          } else if (!evt.target.hasAttribute("nomodule") || !flag) {
+            return;
+          }
+          evt.preventDefault();
+        }, true);
+
+        script.type = "module";
+        script.src = ".";
+        doc.head.appendChild(script);
+        script.remove();
+      }
+    })();
+  </script>
+</body>
+
+</html>
